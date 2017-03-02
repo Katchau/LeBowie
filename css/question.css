@@ -1,0 +1,35 @@
+.question_header{
+  font-size: 2.25em;
+}
+
+.question_Q{
+  color: orange;
+  font-weight: bolder;
+}
+
+.pull-left{
+  margin-right: 0.5em;
+}
+
+.pull-left img{
+  margin-top:10px;
+  border-radius: 100px;
+}
+
+.lead{
+  text-align: justify;
+  font-size:1.25em;
+  background-color: white;
+  padding: 0.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.question_author{
+  font-size: 0.5em;
+  color: hsl(200, 6%, 37%);
+}
+
+.question_author a{
+  color: orange;
+}
