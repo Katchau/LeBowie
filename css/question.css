@@ -8,6 +8,10 @@
 .user_profile_pic {
   border-radius: 100px;
 }
+
+.user_profile_pic2 {
+  border-radius: 5px;
+}
 .question_area .question_details, .answer .answer_details{
   text-align:  right;
 }
