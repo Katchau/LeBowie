@@ -16,12 +16,13 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	<script src="js/navbar.js"></script>
   </head>
   <header>
     <!-- Add your site or application content here -->
 
     <!-- Navbar -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top"> <!-- para tirar o fixo basta remover o navbar-fixed-top-->
       <div class="container-fluid">
         
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,7 +36,8 @@
           </button>
 
           <!-- Brand -->
-          <a class="navbar-brand" href="#">ask<span class="brand-highlight">hub</span></a>
+		  <a class="navbar-brand" href="#">Newton's </a>
+		  <a href="#" class="navbar-left"><img src="doc/images/prototype2.png" onmouseover="changeLogo()" onmouseout="resetLogo()"></a>
           
           <!-- Brand image -->
           <!-- <a class="navbar-brand" href="#">

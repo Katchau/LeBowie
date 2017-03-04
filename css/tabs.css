@@ -1,0 +1,91 @@
+
+#tabs li.active > a{
+	color: white;
+	background-color: orange;
+}
+
+#tabs li > a{
+	color: orange;
+	text-decoration: none;
+	background-color: white;
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+#tabs > div, #tabs .tab-content .question .postBody{
+	
+	padding: 30px;
+	margin-bottom: 30px;
+	
+	background-color: white;
+	
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+	border-radius: 0px 0px 10px 10px;
+	text-align: justify;
+	
+}
+
+#tabs .tab-content .question .questionTitle{
+	margin-top: 0px;
+}
+
+#tabs .tab-content .question .questionTitle a{
+	text-decoration: none;
+	text-align: left;
+	font-weight: bold;
+	color: black;
+}
+
+#tabs .tab-content .question .questionTitle a:hover{
+	text-decoration: underline;
+}
+
+#tabs .tab-content .question .questionInfo{
+	text-align: right;
+	color: gray;
+	font-size: 50%;
+}
+
+#tabs .tab-content .question .writerInfo{
+	text-align: left;
+	color: gray;
+	font-size: 50%;
+}
+
+#tabs .tab-content .question .writer{
+	color: orange;
+}
+
+#tabs .tab-content .bestanswer button{
+  font-size: 0.5em;
+  background-color: orange;
+  border-color: white;
+  color: white;
+  margin-bottom:0.25em;
+}
+#tabs .tab-content .bestanswer button:hover{
+  background-color: #cc8400;
+  color: white;
+  border-color: #cc8400;
+}
+#tabs .tab-content .bestanswer button:active{
+  background-color: gray;
+  color: white;
+  border-color: transparent;
+}
+
+#tabs .tab-content .question .questionInfo .topic{
+	color: orange;
+	font-style: italic;
+}
+
+#tabs {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
