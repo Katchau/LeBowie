@@ -44,7 +44,10 @@
   font-size: 1.5em;
   margin-bottom: 1em;
 }
-.extras .tools_label{
+.extras{
+	margin-bottom: 2em;
+}
+.extras .tools_label, .related_label{
   font-size: 0.75em;
 }
 .extras .tools_label span{
@@ -105,4 +108,23 @@
 .extras{
   text-align: center;
   font-size: 2em;
+  z-index: 2;
+}
+.extras_suggested ul{
+	text-align: left;
+	list-style-type: none;
+}
+.extras_suggested .suggestion{
+	font-size: 0.5em;
+	border: none;
+	border-radius: 0px;
+	background-color: #fCfCfC;
+	border-bottom: 1px solid orange;
+}
+.extras_suggested .suggestion span{
+	background-color: orange;
+}
+.extras_btn{
+	font-size: 0.75em;
+	color: #f3f3f3;
 }
