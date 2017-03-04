@@ -6,9 +6,9 @@ function loadDocument(){
 		var $this = $(this);
 		var $collapse = $this.closest('.collapse-group').find('.collapse');
 		$collapse.collapse('toggle');
-		if($(this).text() == "View moar...")
+		if($(this).text() == "View more..")
 			$(this).text("View less...");
-		else $(this).text("View moar...");
+		else $(this).text("View more..");
 	});
 }
 

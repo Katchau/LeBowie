@@ -14,7 +14,7 @@
 	border-radius: 10px 10px 0px 0px;
 }
 
-#tabs > div, #tabs .tab-content .question{
+#tabs > div, #tabs .tab-content .question .postBody{
 	
 	padding: 30px;
 	margin-bottom: 30px;
@@ -58,6 +58,24 @@
 
 #tabs .tab-content .question .writer{
 	color: orange;
+}
+
+#tabs .tab-content .bestanswer button{
+  font-size: 0.5em;
+  background-color: orange;
+  border-color: white;
+  color: white;
+  margin-bottom:0.25em;
+}
+#tabs .tab-content .bestanswer button:hover{
+  background-color: #cc8400;
+  color: white;
+  border-color: #cc8400;
+}
+#tabs .tab-content .bestanswer button:active{
+  background-color: gray;
+  color: white;
+  border-color: transparent;
 }
 
 #tabs .tab-content .question .questionInfo .topic{
