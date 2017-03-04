@@ -164,6 +164,12 @@ textarea {
     color: #fafafa;
 }
 
+.navbar-default .navbar-left img{
+	margin-top: 5px;
+    width: 30px;
+	height: 30px;
+}
+
 .navbar-default .navbar-brand:hover {
     color: #fafafa;
 }
