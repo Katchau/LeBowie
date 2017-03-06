@@ -18,7 +18,7 @@
 	  <div class="tab-content">
 		<div role="tabpanel" class="tab-pane active" id="hotq">
 				
-			<div class="question">
+			<div class="question well">
 				<h2 class ="questionTitle"><a href="#">Am I doin this right?</a> </h2>
 				<p class="questionInfo">
 					asked by <a href="#" class="writer"> McFeggit </a> on 4/20/6969 in
@@ -62,7 +62,7 @@
 				</div>
 			</div>
 			
-			<div class="question">
+			<div class="question well">
 				<h2 class ="questionTitle"><a href="#">DIY coloring book cliche gentrify keytar microdosing?</a></h2>
 				<p class="questionInfo">
 					asked by <a href="#" class="writer"> LumberJack Pete </a> on 5/10/1945 in

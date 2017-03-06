@@ -1,0 +1,61 @@
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 740px;
+  }
+}
+.question .questionTitle{
+	margin-top: 0px;
+}
+
+.question .questionTitle a{
+	text-decoration: none;
+	text-align: left;
+	font-weight: bold;
+	color: black;
+}
+
+.question .questionTitle a:hover{
+	text-decoration: underline;
+}
+
+.question .questionInfo{
+	text-align: left;
+	color: gray;
+	font-size: 50%;
+}
+
+.question .writerInfo{
+	text-align: left;
+	color: gray;
+	font-size: 50%;
+}
+
+.question .writer{
+	color: orange;
+}
+
+.question .questionInfo .topic{
+	color: orange;
+	font-style: italic;
+}
+
+.question .viewmore{
+	color: orange;
+}
