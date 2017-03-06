@@ -14,7 +14,16 @@
 	border-radius: 10px 10px 0px 0px;
 }
 
-#tabs > div, #tabs .tab-content .question .postBody{
+#tabs .panel-heading{
+	color: white;
+	background-color: orange;
+}
+
+#tabs .panel-heading a{
+	text-decoration: none;
+}
+
+#tabs > div, #tabs .question .postBody{
 	
 	padding: 30px;
 	margin-bottom: 30px;
@@ -29,19 +38,25 @@
 	
 }
 
-#tabs .tab-content .question .questionTitle{
+#tabs .question .questionTitle{
 	margin-top: 0px;
 }
 
-#tabs .tab-content .question .questionTitle a{
+#tabs .question .questionTitle a{
 	text-decoration: none;
 	text-align: left;
 	font-weight: bold;
 	color: black;
 }
 
-#tabs .tab-content .question .questionTitle a:hover{
+#tabs .question .questionTitle a:hover{
 	text-decoration: underline;
+}
+
+#tabs .question .questionInfo{
+	text-align: left;
+	color: gray;
+	font-size: 50%;
 }
 
 #tabs .tab-content .question .questionInfo{
@@ -50,42 +65,57 @@
 	font-size: 50%;
 }
 
-#tabs .tab-content .question .writerInfo{
+#tabs .question .writerInfo{
 	text-align: left;
 	color: gray;
 	font-size: 50%;
 }
 
-#tabs .tab-content .question .writer{
+#tabs .question .writer{
 	color: orange;
 }
 
 #tabs .tab-content .bestanswer button{
-  font-size: 0.5em;
+  font-size: 1.2em;
   background-color: orange;
   border-color: white;
   color: white;
   margin-bottom:0.25em;
 }
-#tabs .tab-content .bestanswer button:hover{
+
+#tabs .panel-collapse .bestanswer button{
+  background-color: orange;
+  border-color: white;
+  color: white;
+  margin-bottom:0.25em;
+}
+
+#tabs  .bestanswer button:hover{
   background-color: #cc8400;
   color: white;
   border-color: #cc8400;
 }
-#tabs .tab-content .bestanswer button:active{
+#tabs  .bestanswer button:active{
   background-color: gray;
   color: white;
   border-color: transparent;
 }
 
-#tabs .tab-content .question .questionInfo .topic{
+#tabs  .question .questionInfo .topic{
 	color: orange;
 	font-style: italic;
 }
 
-#tabs {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  padding-left: 15%;
-  padding-right: 15%;
+#tabs .panel-group{
+	padding-top: 75px;
 }
+
+@media screen and (min-width: 991px){
+	#tabs {
+		padding-top: 50px;
+		padding-bottom: 20px;
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+}
+

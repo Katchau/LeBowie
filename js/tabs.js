@@ -10,6 +10,10 @@ function loadDocument(){
 			$(this).text("View less...");
 		else $(this).text("View more..");
 	});
+	
+	(function($) {
+      fakewaffle.responsiveTabs(['xs', 'sm']);
+	})(jQuery)
 }
 
 $(document).ready(loadDocument);

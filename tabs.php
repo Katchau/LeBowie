@@ -8,14 +8,14 @@
 	<div id="tabs">
 
 	  <!-- Nav tabs -->
-	  <ul class="nav nav-tabs" role="tablist">
+	  <ul class="nav nav-tabs responsive" role="tablist">
 		<li role="presentation" class="active"><a href="#hotq" aria-controls="hotq" role="tab" data-toggle="tab">Hot Questions</a></li>
 		<li role="presentation"><a href="#new" aria-controls="new" role="tab" data-toggle="tab">Fresh Questions</a></li>
-		<li role="presentation"><a href="#sexy" aria-controls="sexy" role="tab" data-toggle="tab">Something Else Xenophobic Yes</a></li>
+		<li role="presentation"><a href="#sexy" aria-controls="sexy" role="tab" data-toggle="tab">Related Questions</a></li>
 	  </ul>
 
 	  <!-- Tab panes -->
-	  <div class="tab-content">
+	  <div class="tab-content responsive">
 		<div role="tabpanel" class="tab-pane active" id="hotq">
 				
 			<div class="question well">
