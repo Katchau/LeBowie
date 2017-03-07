@@ -24,3 +24,13 @@
 .register .btn-google{
   font-size: 1em;
 }
+
+.already_have_account label{
+  padding-right: 0.5em;
+  margin-top: 1em;
+}
+.already_have_account a, .already_have_account a:hover {
+  color: orange;
+  font-weight: bold;
+  text-decoration: none;
+}
