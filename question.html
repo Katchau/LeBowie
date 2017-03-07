@@ -16,11 +16,12 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/question.css">
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-  <!-- Add your site or application content here -->
 
   <!-- Navbar -->
   <nav class="navbar navbar-default">
@@ -28,146 +29,175 @@
 
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-
-		<button type="button" class="navbar-toggle collapsed extras_btn" data-toggle="collapse" data-target=".extras" aria-expanded="false">
-          <span>Toggle Question Toolbar</span>
-        </button>
-
-        <!-- Toggle shows only on mobile or small screens -->
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
+        <button type="button" class="navbar-toggle collapsed" id="side-nav-button" onclick="openNav()">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-
         <!-- Brand -->
-        <a class="navbar-brand" href="#">ask<span class="brand-highlight">hub</span></a>
+        <a class="navbar-brand" href="#">Newton's </a>
+ 			<a href="#" class="navbar-left"><img src="doc/images/prototype2.png" onmouseover="changeLogo()" onmouseout="resetLogo()"></a>
+        <form id="mobile-search">
+          <input id="mobile-search-bar" type="text" class="form-control" placeholder="search">
+        </form>
+        <i id="mobile-extras" class="glyphicon glyphicon-option-vertical navbar-search"></i>
+        <i id="mobile-close-search" class="glyphicon glyphicon-remove navbar-search"></i>
+        <i id="mobile-search-icon" class="glyphicon glyphicon-search navbar-search"></i>
+      </div>
 
-        <!-- Brand image -->
-        <!-- <a class="navbar-brand" href="#">
-        <img alt="Brand" src="img/logo.png">
-      </a> -->
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <!-- Topic chosing dropdown -->
+        <ul class="nav navbar-nav navbar-choose-topic">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">programming <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">mathematics</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">biology</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">rocket science</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="navbar-highlight"><a href="#">ask</a></li>
+          <li><a href="#">sign up</a></li>
+          <li><a href="#">sign in</a></li>
+        </ul>
+
+        <form class="navbar-form navbar-right">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+
+      </div>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div id="my-side-nav" class="side-nav">
+      <div class="side-nav-auth">
+        <a href="#">sign up</a>
+        <a href="#">sign in</a>
+      </div>
+      <hr>
+      <div class="side-nav-options">
+        <a href="#">ask</a>
+      </div>
+      <hr>
+      <div class="side-nav-topics">
+        <a href="#">programming</a>
+        <a href="#">mathematics</a>
+        <a href="#">biology</a>
+        <a href="#">rocket science</a>
+      </div>
+    </div>
 
-      <!-- Topic chosing dropdown -->
-      <ul class="nav navbar-nav navbar-choose-topic">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">programming <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">mathematics</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">biology</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">rocket science</a></li>
+    <div id="extras-side-nav" class="side-nav">
+      <div class="side-nav-options">
+        <a href="#">answer question</a>
+      </div>
+      <hr>
+      <div class="side-nav-options">
+        <a href="#">ask</a>
+      </div>
+      <hr>
+      <div class="side-nav-suggested">
+        <label>suggested questions</label>
+        <a class="suggestion" href="#">How to start up Bootstrap?</a>
+        <a class="suggestion" href="#">How to line divs in CSS?</a>
+        <a class="suggestion" href="#">HTML help?</a>
+        <a class="suggestion" href="#">Can't center divs</a>
+        <a class="suggestion suggestions-more" href="#">More...</a>
+      </div>
+  </nav>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="extras hidden-xs col-sm-4 col-lg-push-8 col-md-push-8 col-sm-push-8">
+        <label class="tools_label"> tools <span class="glyphicon glyphicon-wrench"></span></label>
+        <hr>
+        <div class="extras_tools">
+          <button type="button" class="btn btn-default">
+            <span aria-hidden="true"> answer</span>
+          </button>
+          <button type="button" class="btn btn-default">
+            <span aria-hidden="true"> ask a question</span>
+          </button>
+        </div>
+        <hr>
+        <div class="extras_suggested">
+          <label class="related_label"> related questions </label>
+          <ul class="list-group" >
+            <li><a class="list-group-item suggestion" href="#">How to start up Bootstrap?<span class="badge">12</span></a></li>
+            <li><a class="list-group-item suggestion" href="#">How to line divs in CSS?<span class="badge">30</span></a></li>
+            <li><a class="list-group-item suggestion" href="#">HTML help?<span class="badge">1k</span></a></li>
+            <li><a class="list-group-item suggestion" href="#">Can't center divs<span class="badge">59</span></a></li>
           </ul>
-        </li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li class="navbar-highlight"><a href="#">ask</a></li>
-        <li><a href="#">sign up</a></li>
-        <li><a href="#">sign in</a></li>
-      </ul>
-
-      <form class="navbar-form navbar-right">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search">
-          <div class="input-group-btn">
-            <button class="btn btn-default" type="submit">
-              <i class="glyphicon glyphicon-search"></i>
-            </button>
-          </div>
         </div>
-      </form>
-
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-<div class="container">
-
-  <div class="row">
-
-	<div class="extras sidenav col-sm-4 col-lg-push-8 col-md-push-8 col-sm-push-8">
-
-      <label class="tools_label"> tools <span class="glyphicon glyphicon-wrench"></span></label>
-      <hr>
-      <div class="extras_tools">
-        <button type="button" class="btn btn-default">
-          <span aria-hidden="true"> answer</span>
-        </button>
-        <button type="button" class="btn btn-default">
-          <span aria-hidden="true"> ask a question</span>
-        </button>
+        <hr>
       </div>
-      <hr>
-	  <div class="extras_suggested">
-		<label class="related_label"> related questions </label>
-		<ul class="list-group" >
-			<li><a class="list-group-item suggestion" href="#">How to start up Bootstrap?<span class="badge">12</span></a></li>
-			<li><a class="list-group-item suggestion" href="#">How to line divs in CSS?<span class="badge">30</span></a></li>
-			<li><a class="list-group-item suggestion" href="#">HTML help?<span class="badge">1k</span></a></li>
-			<li><a class="list-group-item suggestion" href="#">Can't center divs<span class="badge">59</span></a></li>
-		</ul>
-	  </div>
-	  <hr>
-    </div>
 
-    <div class="col-sm-8 question_area col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
-      <div class="question">
-        <div class="media">
-          <div class="media-left">
-            <a href="#">
-              <img class="media-object user_profile_pic" src="http://placehold.it/64x64" alt="user_image">
-            </a>
-          </div>
-          <div class="media-body question_area">
-            <h3 class="media-heading"> Lumbersexual tacos tbh authentic vaporware, meditation flexitarian tilde vegan roof party gochujang pickled? </h3>
-            <div class="question_details"> asked by
-              <a class="question_author" href="#">mlady</a>
-              on
-              <span class="question_date">04/20/6969</span>
-              in
-              <a class="question_topic" href="#">lifestyle</a>
+      <div class="col-sm-8 question_area col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
+        <div class="question">
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object user_profile_pic" src="http://placehold.it/64x64" alt="user_image">
+              </a>
             </div>
-            <hr>
-            <div class="question_body">
-              Lumbersexual tacos tbh authentic vaporware, meditation flexitarian tilde vegan roof party gochujang pickled. Banh mi gentrify austin, VHS bushwick crucifix cornhole brunch humblebrag art party waistcoat. Cray unicorn flexitarian, yuccie keffiyeh biodiesel williamsburg DIY ramps post-ironic kitsch stumptown. Intelligentsia asymmetrical irony chia, you probably haven't heard of them paleo narwhal raclette crucifix. Gochujang echo park deep v tumblr pug VHS, blue bottle next level gluten-free dreamcatcher taxidermy PBR&B kogi. Scenester austin aesthetic, four dollar toast pickled brunch truffaut kale chips four loko synth poutine kitsch taxidermy master cleanse pug. Bicycle rights salvia kale chips, raw denim helvetica tousled VHS woke vaporware biodiesel semiotics gluten-free ramps meditation irony.
-              Disrupt fashion axe 90's sustainable mlkshk wolf. Skateboard lo-fi hot chicken la croix cray raclette. Mlkshk pug locavore meggings +1 helvetica. Blog chicharrones brooklyn meh PBR&B. Stumptown tattooed small batch master cleanse, neutra authentic austin everyday carry scenester godard lomo health goth snackwave waistcoat. Organic master cleanse snackwave brooklyn waistcoat. Hammock raw denim tattooed fap normcore.
-              Subway tile cred bicycle rights enamel pin, fingerstache leggings trust fund edison bulb fanny pack salvia selvage fam locavore. Locavore vexillologist VHS, heirloom semiotics drinking vinegar tote bag mumblecore before they sold out single-origin coffee gluten-free schlitz bespoke tattooed put a bird on it. Ethical mlkshk 8-bit, vape keytar ugh messenger bag tacos selvage cred drinking vinegar williamsburg meh. Banh mi raw denim PBR&B ennui, poutine gluten-free vegan. Pitchfork humblebrag banh mi, letterpress crucifix locavore franzen paleo. Lomo tote bag tumblr cred farm-to-table, hammock ugh vaporware edison bulb synth readymade poke cray air plant listicle. Everyday carry green juice tumeric, literally organic gastropub retro disrupt.
-            </div>
-            <div class="question_coda">
-              <div class="question_tags">
-                <a class="label label-default" href="#">vegan</a>
-                <a class="label label-default" href="#">hipster</a>
-                <a class="label label-default" href="#">food</a>
-                <a class="label label-default" href="#">satanism</a>
+            <div class="media-body question_area">
+              <h3 class="media-heading"> Lumbersexual tacos tbh authentic vaporware, meditation flexitarian tilde vegan roof party gochujang pickled? </h3>
+              <div class="question_details"> asked by
+                <a class="question_author" href="#">mlady</a>
+                on
+                <span class="question_date">04/20/6969</span>
+                in
+                <a class="question_topic" href="#">lifestyle</a>
               </div>
-              <div class="question_votes">
-                <label> Was this question relevant? Please leave a vote! </label>
-                <button type="button" class="btn btn-default">
-                  <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
-                </button>
-                <button type="button" class="btn btn-default">
-                  <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> 10</span>
-                </button>
-                <button type="button" class="btn btn-default">
-                  <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> 20</span>
-                </button>
+              <hr>
+              <div class="question_body">
+                Lumbersexual tacos tbh authentic vaporware, meditation flexitarian tilde vegan roof party gochujang pickled. Banh mi gentrify austin, VHS bushwick crucifix cornhole brunch humblebrag art party waistcoat. Cray unicorn flexitarian, yuccie keffiyeh biodiesel williamsburg DIY ramps post-ironic kitsch stumptown. Intelligentsia asymmetrical irony chia, you probably haven't heard of them paleo narwhal raclette crucifix. Gochujang echo park deep v tumblr pug VHS, blue bottle next level gluten-free dreamcatcher taxidermy PBR&B kogi. Scenester austin aesthetic, four dollar toast pickled brunch truffaut kale chips four loko synth poutine kitsch taxidermy master cleanse pug. Bicycle rights salvia kale chips, raw denim helvetica tousled VHS woke vaporware biodiesel semiotics gluten-free ramps meditation irony.
+                Disrupt fashion axe 90's sustainable mlkshk wolf. Skateboard lo-fi hot chicken la croix cray raclette. Mlkshk pug locavore meggings +1 helvetica. Blog chicharrones brooklyn meh PBR&B. Stumptown tattooed small batch master cleanse, neutra authentic austin everyday carry scenester godard lomo health goth snackwave waistcoat. Organic master cleanse snackwave brooklyn waistcoat. Hammock raw denim tattooed fap normcore.
+                Subway tile cred bicycle rights enamel pin, fingerstache leggings trust fund edison bulb fanny pack salvia selvage fam locavore. Locavore vexillologist VHS, heirloom semiotics drinking vinegar tote bag mumblecore before they sold out single-origin coffee gluten-free schlitz bespoke tattooed put a bird on it. Ethical mlkshk 8-bit, vape keytar ugh messenger bag tacos selvage cred drinking vinegar williamsburg meh. Banh mi raw denim PBR&B ennui, poutine gluten-free vegan. Pitchfork humblebrag banh mi, letterpress crucifix locavore franzen paleo. Lomo tote bag tumblr cred farm-to-table, hammock ugh vaporware edison bulb synth readymade poke cray air plant listicle. Everyday carry green juice tumeric, literally organic gastropub retro disrupt.
+              </div>
+              <div class="question_coda">
+                <div class="question_tags">
+                  <a class="label label-default" href="#">vegan</a>
+                  <a class="label label-default" href="#">hipster</a>
+                  <a class="label label-default" href="#">food</a>
+                  <a class="label label-default" href="#">satanism</a>
+                </div>
+                <div class="question_votes">
+                  <label> Was this question relevant? Please leave a vote! </label>
+                  <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> 10</span>
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> 20</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <hr>
       </div>
 
-      <hr>
-    </div>
-
-    <div class="col-lg-8 answers">
+      <div class="col-lg-8 answers">
 
         <div class="answers_header">
           Answers <span class="answer_no">(2)</span>
@@ -264,26 +294,40 @@
           </div>
         </div>
         <hr>
+      </div>
     </div>
   </div>
-</div>
 
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <ul>
+        <li><a href="#">about us</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">help</a></li>
+        <li><a href="#">feedback</a></li>
+      </ul>
+      <p class="text-muted">created by lbaw1651</p>
+      <p class="text-muted">lbaw 2016/17 @ feup</p>
+    </div>
+  </footer>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script>
-(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-  e.src='https://www.google-analytics.com/analytics.js';
-  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-  ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-  </script>
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/navbar.js"></script>
 
-  <!-- Bootstrap javascript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
-</html>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+
+    <!-- Bootstrap javascript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+  </html>
