@@ -81,8 +81,8 @@
   margin-top: 0.25em;
   text-align: right;
 }
-.answer_votes button span{
-  font-size: 1.5em;
+.comment button{
+  font-size: 0.5em;
 }
 .answer .comment div{
    background-color: #dadada;
