@@ -1,5 +1,8 @@
 .profile {
 }
+.profile-q-and-a{
+	font-size:1.5em;
+}
 
 .profile-username{
 	font-size:2em;
@@ -9,6 +12,10 @@
 }
 .profile-image-and-info{
 	float:left;
+	margin-right:1.5em;
+	margin-bottom:1.5em;
+	padding:1em;
+	border:1px solid grey;
 }
 .info-start{
 	color:orange;
