@@ -14,6 +14,11 @@
 	border-radius: 10px 10px 0px 0px;
 }
 
+#tabs > div, #tabs .question .postBody{
+	background-color: white;
+	text-align: justify;
+}	
+
 #tabs .panel-heading{
 	color: white;
 	background-color: orange;
@@ -21,21 +26,6 @@
 
 #tabs .panel-heading a{
 	text-decoration: none;
-}
-
-#tabs > div, #tabs .question .postBody{
-	
-	padding: 30px;
-	margin-bottom: 30px;
-	
-	background-color: white;
-	
-	border-style: solid;
-	border-color: gray;
-	border-width: 1px;
-	border-radius: 0px 0px 10px 10px;
-	text-align: justify;
-	
 }
 
 #tabs .question .questionTitle{
@@ -106,16 +96,45 @@
 	font-style: italic;
 }
 
-#tabs .panel-group{
-	padding-top: 75px;
+@media screen and (max-width: 500px){
+	#tabs .questionInfo button{
+		display:block;
+		width: 100px;
+	}
+}
+
+@media screen and (min-width: 500px){
+	#tabs > div, #tabs .question .postBody{
+	
+	padding: 30px;
+	margin-bottom: 30px;
+	}	
 }
 
 @media screen and (min-width: 991px){
 	#tabs {
-		padding-top: 50px;
+		padding-top: 40px;
 		padding-bottom: 20px;
 		padding-left: 15%;
 		padding-right: 15%;
 	}
+	#tabs > div, #tabs .question .postBody{
+	
+	padding: 30px;
+	margin-bottom: 30px;
+	
+	background-color: white;
+	
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+	border-radius: 0px 0px 10px 10px;
+	text-align: justify;
+	
+	}
 }
 
+#collapse-tabs-0 {
+	padding-top: 0px !important;
+	margin-top: 0px;
+}
