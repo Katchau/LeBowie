@@ -18,6 +18,9 @@
 
   <link rel="stylesheet" href="css/question.css">
   <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
@@ -29,68 +32,106 @@
 
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <!-- Toggle shows only on mobile or small screens -->
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
+        <button type="button" class="navbar-toggle collapsed" id="side-nav-button" onclick="openNav()">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-
         <!-- Brand -->
-        <a class="navbar-brand" href="#">ask<span class="brand-highlight">hub</span></a>
+        <a class="navbar-brand" href="#">Newton's </a>
+ 			<a href="#" class="navbar-left"><img src="doc/images/prototype2.png" onmouseover="changeLogo()" onmouseout="resetLogo()"></a>
+        <form id="mobile-search">
+          <input id="mobile-search-bar" type="text" class="form-control" placeholder="search">
+        </form>
+        <i id="mobile-extras" class="glyphicon glyphicon-option-vertical navbar-search"></i>
+        <i id="mobile-close-search" class="glyphicon glyphicon-remove navbar-search"></i>
+        <i id="mobile-search-icon" class="glyphicon glyphicon-search navbar-search"></i>
+      </div>
 
-        <!-- Brand image -->
-        <!-- <a class="navbar-brand" href="#">
-        <img alt="Brand" src="img/logo.png">
-      </a> -->
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <!-- Topic chosing dropdown -->
+        <ul class="nav navbar-nav navbar-choose-topic">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">programming <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">mathematics</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">biology</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">rocket science</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="navbar-highlight"><a href="#">ask</a></li>
+          <li><a href="#">sign up</a></li>
+          <li><a href="#">sign in</a></li>
+        </ul>
+
+        <form class="navbar-form navbar-right">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+
+      </div>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div id="my-side-nav" class="side-nav">
+      <div class="side-nav-auth">
+        <a href="#">sign up</a>
+        <a href="#">sign in</a>
+      </div>
+      <hr>
+      <div class="side-nav-options">
+        <a href="#">ask</a>
+      </div>
+      <hr>
+      <div class="side-nav-topics">
+        <a href="#">programming</a>
+        <a href="#">mathematics</a>
+        <a href="#">biology</a>
+        <a href="#">rocket science</a>
+      </div>
+    </div>
 
-      <!-- Topic chosing dropdown -->
-      <ul class="nav navbar-nav navbar-choose-topic">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">programming <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">mathematics</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">biology</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">rocket science</a></li>
-          </ul>
-        </li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li class="navbar-highlight"><a href="#">ask</a></li>
-        <li><a href="#">sign up</a></li>
-        <li><a href="#">sign in</a></li>
-      </ul>
-
-      <form class="navbar-form navbar-right">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search">
-          <div class="input-group-btn">
-            <button class="btn btn-default" type="submit">
-              <i class="glyphicon glyphicon-search"></i>
-            </button>
-          </div>
-        </div>
-      </form>
-
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+    <div id="extras-side-nav" class="side-nav">
+      <div class="side-nav-options">
+        <a href="#">answer question</a>
+      </div>
+      <hr>
+      <div class="side-nav-options">
+        <a href="#">ask</a>
+      </div>
+      <hr>
+      <div class="side-nav-suggested">
+        <label>suggested questions</label>
+        <a class="suggestion" href="#">How to start up Bootstrap?</a>
+        <a class="suggestion" href="#">How to line divs in CSS?</a>
+        <a class="suggestion" href="#">HTML help?</a>
+        <a class="suggestion" href="#">Can't center divs</a>
+        <a class="suggestion suggestions-more" href="#">More...</a>
+      </div>
+  </nav>
 <!-- profile area -->
-<div class="container-fluid profile">
+<div class="container profile">
   <div class="row">
 
 	<div class="col-lg-8 media">
     <div class="col-lg-12 profile-upper">
       <div class="profile-image-and-info">
         <img class=" user_profile_pic2" src="img/profile.png" alt="user_image" height="200em">
+		<div class="profile-user-score">
+			<center>12.000 U.S.</center>
+		</div>
         <div class="profile-info">
           <br>
           <span class="info-start">Email:</span>olaola@coldmail.com
@@ -98,6 +139,14 @@
           <span class="info-start">Name:</span>Joaquim
           <br>
           <span class="info-start">Surname:</span>Joao
+          <br>
+          <span class="info-start">Country:</span>Rwanda
+		  <br>
+			<span class="label label-default">2 years club</span>
+			<span class="label label-primary">200 questions</span>
+			<br>
+			<span class="label label-success">400 answers</span>
+			<span class="label label-info">10k user score </span>
         </div>
       </div>
 
@@ -112,8 +161,8 @@
     </div>
     <div class="col-lg-12 profile-down">
 
-      <div class="col-lg-3 profile-topics">
-        Most frequented topics <hr>
+      <div class="col-lg-4 profile-topics">
+        <label class="related_label" style="font-size:1.2em;">Most frequented topics</label> <hr>
         <ul class="">
           <li><a href="#">Programming</a></li>
           <li><a href="#">Cooking</a></li>
@@ -125,7 +174,7 @@
     </div>
   </div>
 
-	<div class="col-lg-4 container-fluid">
+	<div class="col-lg-4 container-fluid profile-q-and-a">
     <div class="extras_suggested">
 		<label class="related_label"> User questions </label>
 		<ul class="list-group" >
@@ -148,6 +197,20 @@
 
   </div>
 </div>
+</div>
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <ul>
+      <li><a href="#">about us</a></li>
+      <li><a href="#">contact</a></li>
+      <li><a href="#">help</a></li>
+      <li><a href="#">feedback</a></li>
+    </ul>
+    <p class="text-muted">created by lbaw1651</p>
+    <p class="text-muted">lbaw 2016/17 @ feup</p>
+  </div>
+</footer>
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
