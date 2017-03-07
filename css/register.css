@@ -1,36 +1,36 @@
 .colorgraph {
-  height: 1px;
-  border-top: 0;
-  background: #ffc04d;
-  border-radius: 5px;
+    height: 1px;
+    border-top: 0;
+    background: #ffc04d;
+    border-radius: 5px;
 }
 
 .register input:focus{
     border-color: orange;
-	  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(265, 165, 0, 0.6);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(265, 165, 0, 0.6);
 }
 
 .container{
-	margin-top: 100px;
+    margin-top: 50px;
 }
 
 .register .btn {
-  border-radius:3px;
-  font-size:0.75em;
-  margin-top: 0.25em;
-  margin-bottom: 0.25em;
+    border-radius:3px;
+    font-size:0.75em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
 }
 
 .register .btn-google{
-  font-size: 1em;
+    font-size: 1em;
 }
 
 .already_have_account label{
-  padding-right: 0.5em;
-  margin-top: 1em;
+    padding-right: 0.5em;
+    margin-top: 1em;
 }
 .already_have_account a, .already_have_account a:hover {
-  color: orange;
-  font-weight: bold;
-  text-decoration: none;
+    color: orange;
+    font-weight: bold;
+    text-decoration: none;
 }
