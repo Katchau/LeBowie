@@ -17,6 +17,11 @@
 	padding:1em;
 	border:1px solid grey;
 }
+.profile-user-score{
+	color:orange;
+	font-style:italic;
+	font-size:2em;
+}
 .info-start{
 	color:orange;
 }
