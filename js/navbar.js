@@ -42,6 +42,14 @@ function closeMobileSearchBar() {
     }
 }
 
+function changeLogo(){
+	$(".navbar-left img").attr('src', 'doc/images/prototype3.png');
+}
+
+function resetLogo(){
+	$(".navbar-left img").attr('src', 'doc/images/prototype2.png');
+}
+
 $(document).ready(function() {
     $('#side-nav-button').on('click touchstart', function() {
 	openNav();
