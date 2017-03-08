@@ -18,6 +18,9 @@
 .question_area h3{
   margin-left: 0.25em;
 }
+.question_body{
+  min-height: 300px;
+}
 .question_area .question_body, .answer .answer_body{
   text-align: justify;
   padding: 0.5em;
