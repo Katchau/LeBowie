@@ -81,6 +81,11 @@
   margin-top: 0.25em;
   text-align: right;
 }
+.answer_votes .badge{
+  background-color: green;
+  font-size: 1.5em;
+  border-radius: 100px;
+}
 .comment button{
   font-size: 0.5em;
 }
