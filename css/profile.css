@@ -1,7 +1,12 @@
 .profile {
 }
 .profile-q-and-a{
-	font-size:1.5em;
+	font-size:2em;
+}
+
+.user_profile_pic2{
+	max-height: 200px;
+	border-radius:0;
 }
 
 .profile-username{
@@ -15,18 +20,23 @@
 	margin-right:1.5em;
 	margin-bottom:1.5em;
 	padding:1em;
-	border:1px solid grey;
+	border-right: 1px solid orange;
 }
 .profile-user-score{
-	color:orange;
-	font-style:italic;
-	font-size:2em;
+	font-size:1.5em;
+}
+.profile-user-score span {
+	color: orange;
+	font-weight: bold;
 }
 .info-start{
 	color:orange;
+	font-weight: bold;
 }
-.profile-user-and-desc{
 
+.profile-badges{
+	margin-top: 0.5em;
+	text-align:center;
 }
 .profile-down{
 	margin-top:2em;
@@ -36,25 +46,20 @@
   font-size: 30px;
   background: #f6f6f6;
 }
-
-.profile-topics div {
-  width: 200px;
-}
-
-.profile-topics h2 {
-  font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
+.profile-topics .info-start{
+	width: 100%;
+	text-align: center;
 }
 
 .profile-topics ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+	text-align: center;
 }
 
 .profile-topics li {
-  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  font: Helvetica, Verdana, sans-serif;
   border-bottom: 1px solid #ccc;
 }
 
@@ -73,7 +78,9 @@
   -ms-transition: font-size 0.2s ease, background-color 0.3s ease;
   transition: font-size 0.2s ease, background-color 0.3s ease;
 }
-
+.mobile_profile img{
+	max-height: 8em;
+}
 .profile-topics li a:hover {
   font-size: 1.2em;
 	color:orange;
