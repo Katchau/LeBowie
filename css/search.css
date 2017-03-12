@@ -3,89 +3,61 @@
   padding-bottom: 10px;
   padding-right: 0px;
   padding-left: 5px;
-
 }
-
 .questionSearch .jumbotrona .dropdown a{
 	color: orange;
 }
-
 .questionSearch .jumbotrona .dropdown li a{
 	color: gray;
 }
-
 #searchBody{
 	text-align: justify;
-}
-
-.questionSearch{
-	margin-top:50px;
-}
-
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 740px;
-  }
 }
 .question .questionTitle{
 	margin-top: 0px;
 }
-
 .question .questionTitle a{
 	text-decoration: none;
 	text-align: left;
 	font-weight: bold;
-	color: black;
+	color: #3f3f3f;
 }
-
 .question .questionTitle a:hover{
 	text-decoration: underline;
 }
-
 .question .questionInfo{
 	text-align: left;
 	color: gray;
 	font-size: 75%;
 }
-
 .question .questionInfo button{
 	font-size: 110%;
 }
-
-
 .question .writerInfo{
 	text-align: left;
 	color: gray;
 	font-size: 50%;
 }
-
 .question .writer{
 	color: orange;
 }
-
 .question .questionInfo .topic{
 	color: orange;
 	font-style: italic;
 }
-
 .question .viewmore{
 	color: orange;
 }
-
 .topic .topicTitle a{
 	text-decoration: none;
 	text-align: left;
 	font-weight: bold;
 	color: orange;
 }
-
 .topic .topicTitle a:hover{
 	font-size: 1.1em;
 }
-
 @media screen and (max-width: 768px) {
-  /* Remove the bottom border on the jumbotron for visual effect */
 	.jumbotrona {
 		text-align: center;
 	}
@@ -103,4 +75,66 @@
 		width: 200px;
 		margin-bottom: 10px;
 	}
+}
+.advanced_search{
+  min-width: 10em;
+  max-height: 544px;
+  padding-right: 0.5em;
+  overflow-y: scroll;
+}
+.advanced_search_label{
+  padding-left: 1em;
+  font-size: 0.5em;
+}
+.advanced_search p{
+  font-size: 0.55em;
+}
+.advanced_search .advanced_topic_dropdown button{
+  width: 10em;
+}
+.advanced_search .input-group{
+  width:auto;
+  display:inline-block;
+}
+.advanced_search .advanced_topic_dropdown ul{
+  width: 100%;
+}
+.advanced_search h3 {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.advanced_search .advanced_tags_search textarea, .advanced_search .advanced_user_search textarea{
+  border-color: gray;
+  border-radius: 10px;
+  resize: none;
+  margin-bottom:1em;
+}
+.advanced_score_limits .glyphicon, .advanced_date_limits .glyphicon {
+  font-size: 0.75em;
+}
+.advanced_score_search .advanced_score_limits, .advanced_date_search .advanced_date_limits{
+  text-align: right;
+}
+.advanced_search .advanced_score_limits textarea{
+  display: inline;
+  resize: none;
+  border-color: gray;
+  width: 5em;
+  font-size: 0.5em;
+  height: 100%;
+  margin-bottom: 0px;
+  border-radius: 5px;
+}
+.advanced_search .advanced_date_limits input{
+  display: inline;
+  resize: none;
+  border-color: gray;
+  width: 10em;
+  font-size: 0.5em;
+  margin-bottom: 0px;
+  border-radius: 5px;
+}
+.advanced_search .apply_filters_btn{
+  font-weight: bold;
 }

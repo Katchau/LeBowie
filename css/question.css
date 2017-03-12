@@ -46,36 +46,6 @@
   font-size: 1.5em;
   margin-bottom: 1em;
 }
-.extras{
-	margin-bottom: 2em;
-}
-.extras .tools_label, .related_label{
-  font-size: 0.75em;
-}
-.extras .tools_label span{
-  font-size: 0.70em;
-}
-.extras button{
-  font-size: 0.5em;
-  background-color: orange;
-  border-color: white;
-  color: white;
-  margin-bottom:0.25em;
-  width: 50%;
-}
-.extras button:hover{
-  background-color: #cc8400;
-  color: white;
-  border-color: #cc8400;
-}
-.extras button:active{
-  background-color: white;
-  color: white;
-  border-color: transparent;
-}
-.extras hr{
-  margin: 0;
-}
 .answers_header .answer_no{
   color:orange;
 }
@@ -112,7 +82,35 @@
 .btn-default:active{
   border-radius: 10px;
 }
+.extras .tools_label, .related_label{
+  font-size: 0.75em;
+}
+.extras .tools_label span{
+  font-size: 0.70em;
+}
+.extras button{
+  font-size: 0.5em;
+  background-color: orange;
+  border-color: white;
+  color: white;
+  margin-bottom:0.25em;
+  width: 50%;
+}
+.extras button:hover{
+  background-color: #cc8400;
+  color: white;
+  border-color: #cc8400;
+}
+.extras button:active{
+  background-color: white;
+  color: white;
+  border-color: transparent;
+}
+.extras hr{
+  margin: 0;
+}
 .extras{
+  margin-bottom: 2em;
   text-align: center;
   font-size: 2em;
   z-index: 2;
