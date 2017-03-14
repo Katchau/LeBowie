@@ -1,18 +1,23 @@
+.mode columns
+.headers on
+.nullvalue NULL
+
 PRAGMA foreign_key = on;
 
 /* USERS */
 DROP TABLE IF EXISTS UserAcc;
-CREATE TABLE UserAcc(
+CREATE TABLE UserAcc
+(
 	id INTEGER PRIMARY KEY,
 	username VARCHAR(16) UNIQUE NOT NULL,
-	passhash VARCHAR(32) NOT NULL,
+	password VARCHAR(32) NOT NULL,
     salt VARCHAR(32) NOT NULL,
-	first_name VARCHAR(32),
-	last_name VARCHAR(32),
-	country VARCHAR(32),
-    birth DATE,
+	first_name VARCHAR(32) NOT NULL,
+	last_name VARCHAR(32) NOT NULL,
+	country VARCHAR(32) NOT NULL,
+    birth DATE NOT NULL,
 	description VARCHAR(256),
-	image VARCHAR(32) DEFAULT 'generic_user.png'
+	image VARCHAR(32)
 );
 
 /* TOPIC */
@@ -27,7 +32,7 @@ CREATE TABLE Topic(
 DROP TABLE IF EXISTS Post;
 CREATE TABLE Post(
 	id INTEGER PRIMARY KEY,
-    user_id INTEGER REFERENCES UserAcc.id,
+	user_id INTEGER NOT NULL,
     created DATE NOT NULL,
     
     description VARCHAR(1024) NOT NULL,
@@ -36,28 +41,43 @@ CREATE TABLE Post(
     down_score INTEGER NOT NULL DEFAULT 0,
     
     edit_by VARCHAR(32),
-    edit_date DATE
+    edit_date DATE,
+	
+	CONSTRAINT UserID FOREIGN KEY (user_id)
+		REFERENCES UserAcc(id)
 );
 
 DROP TABLE IF EXISTS Question;
 CREATE TABLE Question(
-	post_id INTEGER PRIMARY KEY REFERENCES Post.id,
-    topic_id INTEGER NOT NULL REFERENCES Topic.id,
-    title VARCHAR(64) NOT NULL
+	post_id INTEGER PRIMARY KEY,
+    topic_id INTEGER NOT NULL,
+    title VARCHAR(64) NOT NULL,
+	CONSTRAINT PostID FOREIGN KEY (post_id)
+		REFERENCES Post(id),
+	CONSTRAINT TopicID FOREIGN KEY (topic_id)
+		REFERENCES Topic(id)
 );
 
 DROP TABLE IF EXISTS Answer;
 CREATE TABLE Answer(
-	post_id INTEGER PRIMARY KEY REFERENCES Post.id,
+	post_id INTEGER PRIMARY KEY,
     
-    question_id INTEGER NOT NULL REFERENCES Question.post_id
+    question_id INTEGER NOT NULL,
+	
+	CONSTRAINT PostID FOREIGN KEY (post_id)
+		REFERENCES Post(id),
+	CONSTRAINT QuestionID FOREIGN KEY (question_id)
+		REFERENCES Question(id)
 );
 
 DROP TABLE IF EXISTS AnswerComment;
 CREATE TABLE AnswerComment(
 	id INTEGER PRIMARY KEY,
    
-    answer_id INTEGER NOT NULL REFERENCES Answer.post_id
+    answer_id INTEGER NOT NULL,
+	
+	CONSTRAINT AnswerID FOREIGN KEY (answer_id)
+		REFERENCES Answer(post_id)
 );
 
 /* BADGES */
@@ -70,6 +90,12 @@ CREATE TABLE Badge(
 
 DROP TABLE IF EXISTS HasBadge;
 CREATE TABLE HasBadge(
-	user_id INTEGER REFERENCES UserAcc.id,
-    badge_id INTEGER REFERENCES Badge.id
+	id INTEGER PRIMARY KEY,
+	user_id INTEGER NOT NULL,
+    badge_id INTEGER NOT NULL,
+	
+	CONSTRAINT UserID FOREIGN KEY (user_id)
+		REFERENCES UserAcc(id),
+	CONSTRAINT BadgeID FOREIGN KEY (badge_id)
+		REFERENCES Badge(id)
 );
