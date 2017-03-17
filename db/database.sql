@@ -1,6 +1,7 @@
 .mode columns
 .headers on
 .nullvalue NULL
+--estes headers eram de sqlite, nao sei se pintam em postgresql
 
 PRAGMA foreign_key = on;
 
@@ -14,37 +15,77 @@ CREATE TABLE UserAcc
     salt VARCHAR(32) NOT NULL,
 	first_name VARCHAR(32) NOT NULL,
 	last_name VARCHAR(32) NOT NULL,
-	country VARCHAR(32) NOT NULL,
     birth DATE NOT NULL,
+	country INTEGER NOT NULL,
 	description VARCHAR(256),
-	image VARCHAR(32)
+	image VARCHAR(32),
+	score INTEGER DEFAULT 0,
+	google BOOLEAN DEFAULT FALSE,
+	CONSTRAINT Origin FOREIGN KEY country
+		REFERENCES Country(id)
+);
+
+DROP TABLE IF EXISTS Administrator;
+CREATE TABLE Administrator
+(
+	id INTEGER PRIMARY KEY, -- é boa ideia ter 2 ids am i rite?
+	user_id INTEGER UNIQUE NOT NULL,
+	CONSTRAINT UserID FOREIGN KEY user_id
+		REFERENCES UserAcc(id)
+);
+
+DROP TABLE IF EXISTS Moderator;
+CREATE TABLE Moderator
+(
+	id INTEGER PRIMARY KEY, -- é boa ideia ter 2 ids am i rite?
+	user_id INTEGER UNIQUE NOT NULL,
+	CONSTRAINT UserID FOREIGN KEY user_id
+		REFERENCES UserAcc(id)
+);
+
+DROP TABLE IF EXISTS Country;
+CREATE TABLE Country
+(
+	id INTEGER PRIMARY KEY, -- é boa ideia ter 2 ids am i rite?
+	name VARCHAR(32) NOT NULL UNIQUE
 );
 
 /* TOPIC */
 DROP TABLE IF EXISTS Topic;
 CREATE TABLE Topic(
 	id INTEGER PRIMARY KEY,
-    topicname VARCHAR(32) UNIQUE NOT NULL
+    topicname VARCHAR(32) UNIQUE NOT NULL,
+	description VARCHAR(1024) NOT NULL
 );
 
 /* POSTS */
-
 DROP TABLE IF EXISTS Post;
-CREATE TABLE Post(
+CREATE TABLE Post
+(
 	id INTEGER PRIMARY KEY,
-	user_id INTEGER NOT NULL,
-    created DATE NOT NULL,
-    
-    description VARCHAR(1024) NOT NULL,
-    
-    up_score INTEGER NOT NULL DEFAULT 0,
-    down_score INTEGER NOT NULL DEFAULT 0,
-    
-    edit_by VARCHAR(32),
-    edit_date DATE,
 	
-	CONSTRAINT UserID FOREIGN KEY (user_id)
-		REFERENCES UserAcc(id)
+	--currentState BOOLEAN DEFAULT 0, fazer com os poststates (how dafuq lel xD)
+	up_score INTEGER NOT NULL DEFAULT 0,
+    down_score INTEGER NOT NULL DEFAULT 0
+	
+);
+
+
+DROP TABLE IF EXISTS PostInstance;
+CREATE TABLE PostInstance(
+	id INTEGER PRIMARY KEY,
+	post_id INTEGER NOT NULL,
+	--user_id INTEGER NOT NULL, isto é aqui ou no post?
+	
+    description VARCHAR(1024),
+    creation DATE DEFAULT CURRENT_DATE,
+	
+	CONSTRAINT PostID FOREIGN KEY (post_id)
+		REFERENCES Post(id)
+	
+	--CONSTRAINT UserID FOREIGN KEY (user_id) isto é em cima ou aqui??
+		--REFERENCES UserAcc(id)
+	
 );
 
 DROP TABLE IF EXISTS Question;
@@ -53,31 +94,64 @@ CREATE TABLE Question(
     topic_id INTEGER NOT NULL,
     title VARCHAR(64) NOT NULL,
 	CONSTRAINT PostID FOREIGN KEY (post_id)
-		REFERENCES Post(id),
+		REFERENCES PostInstance(id),
 	CONSTRAINT TopicID FOREIGN KEY (topic_id)
 		REFERENCES Topic(id)
+);
+
+
+DROP TABLE IF EXISTS Tag;
+CREATE TABLE Tag
+(
+	id INTEGER PRIMARY KEY,
+	text VARCHAR(32) NOT NULL
 );
 
 DROP TABLE IF EXISTS Answer;
 CREATE TABLE Answer(
 	post_id INTEGER PRIMARY KEY,
-    
     question_id INTEGER NOT NULL,
+	accepted BOOLEAN DEFAULT FALSE,
 	
 	CONSTRAINT PostID FOREIGN KEY (post_id)
 		REFERENCES Post(id),
 	CONSTRAINT QuestionID FOREIGN KEY (question_id)
-		REFERENCES Question(id)
+		REFERENCES Question(post_id)
 );
 
 DROP TABLE IF EXISTS AnswerComment;
 CREATE TABLE AnswerComment(
-	id INTEGER PRIMARY KEY,
-   
+	post_id INTEGER PRIMARY KEY,
     answer_id INTEGER NOT NULL,
 	
-	CONSTRAINT AnswerID FOREIGN KEY (answer_id)
+	CONSTRAINT AnswerID FOREIGN KEY (post_id)
 		REFERENCES Answer(post_id)
+);
+
+DROP TABLE IF EXISTS Report;
+CREATE TABLE Report(
+	id INTEGER PRIMARY KEY,
+    post_id INTEGER NOT NULL,
+	user_id INTEGER NOT NULL,
+	
+	CONSTRAINT PostID FOREIGN KEY (post_id)
+		REFERENCES PostInstance(id),
+	CONSTRAINT UserID FOREIGN KEY (user_id)
+		REFERENCES UserAcc(id)
+);
+
+
+DROP TABLE IF EXISTS Activity;
+CREATE TABLE Report(
+	id INTEGER PRIMARY KEY,
+    post_id INTEGER NOT NULL,
+	user_id INTEGER NOT NULL,
+	-- action ACTION ?????? lel
+	
+	CONSTRAINT PostID FOREIGN KEY (post_id)
+		REFERENCES PostInstance(id),
+	CONSTRAINT UserID FOREIGN KEY (user_id)
+		REFERENCES UserAcc(id)
 );
 
 /* BADGES */
@@ -88,8 +162,13 @@ CREATE TABLE Badge(
     text VARCHAR(16) NOT NULL
 );
 
-DROP TABLE IF EXISTS HasBadge;
-CREATE TABLE HasBadge(
+
+
+-- RelationTables
+-- falta fazer as relações * -- * :) :O :P 
+
+DROP TABLE IF EXISTS OwnsBadge;
+CREATE TABLE OwnsBadge(
 	id INTEGER PRIMARY KEY,
 	user_id INTEGER NOT NULL,
     badge_id INTEGER NOT NULL,
