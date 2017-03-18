@@ -25,6 +25,13 @@ CREATE TABLE UserAcc
 		REFERENCES Country(id)
 );
 
+DROP TABLE IF EXISTS Badge;
+CREATE TABLE Badge(
+	id INTEGER PRIMARY KEY,
+    color VARCHAR(16) NOT NULL,
+    text VARCHAR(16) NOT NULL
+);
+
 DROP TABLE IF EXISTS Administrator;
 CREATE TABLE Administrator
 (
@@ -46,7 +53,7 @@ CREATE TABLE Moderator
 DROP TABLE IF EXISTS Country;
 CREATE TABLE Country
 (
-	id INTEGER PRIMARY KEY, -- é boa ideia ter 2 ids am i rite?
+	id INTEGER PRIMARY KEY,
 	name VARCHAR(32) NOT NULL UNIQUE
 );
 
@@ -54,20 +61,24 @@ CREATE TABLE Country
 DROP TABLE IF EXISTS Topic;
 CREATE TABLE Topic(
 	id INTEGER PRIMARY KEY,
+	admin_id INTEGER NOT NULL,
     topicname VARCHAR(32) UNIQUE NOT NULL,
-	description VARCHAR(1024) NOT NULL
+	description VARCHAR(1024) NOT NULL,
+	CONSTRAINT CreatedBy FOREIGN KEY admin_id
+		REFERENCES Administrator(id)
 );
 
 /* POSTS */
+CREATE TYPE PostState AS ENUM ('Editing', 'Published', 'Deleted');
 DROP TABLE IF EXISTS Post;
 CREATE TABLE Post
 (
 	id INTEGER PRIMARY KEY,
 	
-	--currentState BOOLEAN DEFAULT 0, fazer com os poststates (how dafuq lel xD)
+	currentState PostState NOT NULL,
 	up_score INTEGER NOT NULL DEFAULT 0,
     down_score INTEGER NOT NULL DEFAULT 0
-	
+	--to be updated see instance
 );
 
 
@@ -98,7 +109,6 @@ CREATE TABLE Question(
 	CONSTRAINT TopicID FOREIGN KEY (topic_id)
 		REFERENCES Topic(id)
 );
-
 
 DROP TABLE IF EXISTS Tag;
 CREATE TABLE Tag
@@ -140,26 +150,18 @@ CREATE TABLE Report(
 		REFERENCES UserAcc(id)
 );
 
-
+CREATE TYPE Action AS ENUM ('Create', 'Delete', 'Update', 'Upvote', 'Downvote');
 DROP TABLE IF EXISTS Activity;
-CREATE TABLE Report(
+CREATE TABLE Activity(
 	id INTEGER PRIMARY KEY,
     post_id INTEGER NOT NULL,
 	user_id INTEGER NOT NULL,
-	-- action ACTION ?????? lel
+	action Action NOT NULL,
 	
-	CONSTRAINT PostID FOREIGN KEY (post_id)
-		REFERENCES PostInstance(id),
+	--CONSTRAINT PostID FOREIGN KEY (post_id)
+		--REFERENCES PostInstance(id), mudar quando a tabela for updated
 	CONSTRAINT UserID FOREIGN KEY (user_id)
 		REFERENCES UserAcc(id)
-);
-
-/* BADGES */
-DROP TABLE IF EXISTS Badge;
-CREATE TABLE Badge(
-	id INTEGER PRIMARY KEY,
-    color VARCHAR(16) NOT NULL,
-    text VARCHAR(16) NOT NULL
 );
 
 
@@ -169,7 +171,7 @@ CREATE TABLE Badge(
 
 DROP TABLE IF EXISTS OwnsBadge;
 CREATE TABLE OwnsBadge(
-	id INTEGER PRIMARY KEY,
+	-- id INTEGER PRIMARY KEY,
 	user_id INTEGER NOT NULL,
     badge_id INTEGER NOT NULL,
 	
@@ -177,4 +179,32 @@ CREATE TABLE OwnsBadge(
 		REFERENCES UserAcc(id),
 	CONSTRAINT BadgeID FOREIGN KEY (badge_id)
 		REFERENCES Badge(id)
+);
+
+DROP TABLE IF EXISTS Moderation;
+CREATE TABLE Moderation
+(
+	-- id INTEGER PRIMARY KEY,
+	mod_id INTEGER NOT NULL,
+    topic_id INTEGER NOT NULL,
+	UNIQUE(mod_id,topic_id), 
+	
+	CONSTRAINT ModeratorID FOREIGN KEY (mod_id)
+		REFERENCES Moderator(id),
+	CONSTRAINT TopicID FOREIGN KEY (topic_id)
+		REFERENCES Topic(id)
+);
+
+DROP TABLE IF EXISTS TagAssociation;
+CREATE TABLE TagAssociation
+(
+	-- id INTEGER PRIMARY KEY,
+	question_id INTEGER NOT NULL,
+    tag_id INTEGER NOT NULL,
+	UNIQUE(question_id,tag_id), 
+	
+	CONSTRAINT QuestionID FOREIGN KEY (question_id)
+		REFERENCES Question(post_id),
+	CONSTRAINT TagID FOREIGN KEY (tag_id)
+		REFERENCES Tag(id)
 );
