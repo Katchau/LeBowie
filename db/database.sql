@@ -1,12 +1,21 @@
-.mode columns
-.headers on
-.nullvalue NULL
---estes headers eram de sqlite, nao sei se pintam em postgresql
+--nao tem headers o postgresql
 
-PRAGMA foreign_key = on;
+DROP TABLE IF EXISTS Country CASCADE;
+CREATE TABLE Country
+(
+	id INTEGER PRIMARY KEY,
+	name VARCHAR(32) NOT NULL UNIQUE
+);
+
+DROP TABLE IF EXISTS Badge CASCADE;
+CREATE TABLE Badge(
+	id INTEGER PRIMARY KEY,
+    color VARCHAR(16) NOT NULL,
+    text VARCHAR(16) NOT NULL
+);
 
 /* USERS */
-DROP TABLE IF EXISTS UserAcc;
+DROP TABLE IF EXISTS UserAcc CASCADE;
 CREATE TABLE UserAcc
 (
 	id INTEGER PRIMARY KEY,
@@ -21,56 +30,44 @@ CREATE TABLE UserAcc
 	image VARCHAR(32),
 	score INTEGER DEFAULT 0,
 	google BOOLEAN DEFAULT FALSE,
-	CONSTRAINT Origin FOREIGN KEY country
+	CONSTRAINT Origin FOREIGN KEY (country)
 		REFERENCES Country(id)
 );
 
-DROP TABLE IF EXISTS Badge;
-CREATE TABLE Badge(
-	id INTEGER PRIMARY KEY,
-    color VARCHAR(16) NOT NULL,
-    text VARCHAR(16) NOT NULL
-);
-
-DROP TABLE IF EXISTS Administrator;
+DROP TABLE IF EXISTS Administrator CASCADE;
 CREATE TABLE Administrator
 (
 	id INTEGER PRIMARY KEY, -- é boa ideia ter 2 ids am i rite?
 	user_id INTEGER UNIQUE NOT NULL,
-	CONSTRAINT UserID FOREIGN KEY user_id
+	CONSTRAINT UserID FOREIGN KEY (user_id)
 		REFERENCES UserAcc(id)
 );
 
-DROP TABLE IF EXISTS Moderator;
+DROP TABLE IF EXISTS Moderator CASCADE;
 CREATE TABLE Moderator
 (
 	id INTEGER PRIMARY KEY, -- é boa ideia ter 2 ids am i rite?
 	user_id INTEGER UNIQUE NOT NULL,
-	CONSTRAINT UserID FOREIGN KEY user_id
+	CONSTRAINT UserID FOREIGN KEY (user_id)
 		REFERENCES UserAcc(id)
 );
 
-DROP TABLE IF EXISTS Country;
-CREATE TABLE Country
-(
-	id INTEGER PRIMARY KEY,
-	name VARCHAR(32) NOT NULL UNIQUE
-);
 
 /* TOPIC */
-DROP TABLE IF EXISTS Topic;
+DROP TABLE IF EXISTS Topic CASCADE;
 CREATE TABLE Topic(
 	id INTEGER PRIMARY KEY,
 	admin_id INTEGER NOT NULL,
     topicname VARCHAR(32) UNIQUE NOT NULL,
 	description VARCHAR(1024) NOT NULL,
-	CONSTRAINT CreatedBy FOREIGN KEY admin_id
+	CONSTRAINT CreatedBy FOREIGN KEY (admin_id)
 		REFERENCES Administrator(id)
 );
 
 /* POSTS */
+DROP TYPE IF EXISTS PostState CASCADE;
 CREATE TYPE PostState AS ENUM ('Editing', 'Published', 'Deleted');
-DROP TABLE IF EXISTS Post;
+DROP TABLE IF EXISTS Post CASCADE;
 CREATE TABLE Post
 (
 	id INTEGER PRIMARY KEY,
@@ -82,7 +79,7 @@ CREATE TABLE Post
 );
 
 
-DROP TABLE IF EXISTS PostInstance;
+DROP TABLE IF EXISTS PostInstance CASCADE;
 CREATE TABLE PostInstance(
 	id INTEGER PRIMARY KEY,
 	post_id INTEGER NOT NULL,
@@ -99,7 +96,7 @@ CREATE TABLE PostInstance(
 	
 );
 
-DROP TABLE IF EXISTS Question;
+DROP TABLE IF EXISTS Question CASCADE;
 CREATE TABLE Question(
 	post_id INTEGER PRIMARY KEY,
     topic_id INTEGER NOT NULL,
@@ -110,14 +107,14 @@ CREATE TABLE Question(
 		REFERENCES Topic(id)
 );
 
-DROP TABLE IF EXISTS Tag;
+DROP TABLE IF EXISTS Tag CASCADE;
 CREATE TABLE Tag
 (
 	id INTEGER PRIMARY KEY,
 	text VARCHAR(32) NOT NULL
 );
 
-DROP TABLE IF EXISTS Answer;
+DROP TABLE IF EXISTS Answer CASCADE;
 CREATE TABLE Answer(
 	post_id INTEGER PRIMARY KEY,
     question_id INTEGER NOT NULL,
@@ -129,7 +126,7 @@ CREATE TABLE Answer(
 		REFERENCES Question(post_id)
 );
 
-DROP TABLE IF EXISTS AnswerComment;
+DROP TABLE IF EXISTS AnswerComment CASCADE;
 CREATE TABLE AnswerComment(
 	post_id INTEGER PRIMARY KEY,
     answer_id INTEGER NOT NULL,
@@ -138,7 +135,7 @@ CREATE TABLE AnswerComment(
 		REFERENCES Answer(post_id)
 );
 
-DROP TABLE IF EXISTS Report;
+DROP TABLE IF EXISTS Report CASCADE;
 CREATE TABLE Report(
 	id INTEGER PRIMARY KEY,
     post_id INTEGER NOT NULL,
@@ -150,8 +147,9 @@ CREATE TABLE Report(
 		REFERENCES UserAcc(id)
 );
 
+DROP TYPE IF EXISTS Action CASCADE;
 CREATE TYPE Action AS ENUM ('Create', 'Delete', 'Update', 'Upvote', 'Downvote');
-DROP TABLE IF EXISTS Activity;
+DROP TABLE IF EXISTS Activity CASCADE;
 CREATE TABLE Activity(
 	id INTEGER PRIMARY KEY,
     post_id INTEGER NOT NULL,
@@ -169,7 +167,7 @@ CREATE TABLE Activity(
 -- RelationTables
 -- falta fazer as relações * -- * :) :O :P 
 
-DROP TABLE IF EXISTS OwnsBadge;
+DROP TABLE IF EXISTS OwnsBadge CASCADE;
 CREATE TABLE OwnsBadge(
 	-- id INTEGER PRIMARY KEY,
 	user_id INTEGER NOT NULL,
@@ -181,7 +179,7 @@ CREATE TABLE OwnsBadge(
 		REFERENCES Badge(id)
 );
 
-DROP TABLE IF EXISTS Moderation;
+DROP TABLE IF EXISTS Moderation CASCADE;
 CREATE TABLE Moderation
 (
 	-- id INTEGER PRIMARY KEY,
@@ -195,7 +193,7 @@ CREATE TABLE Moderation
 		REFERENCES Topic(id)
 );
 
-DROP TABLE IF EXISTS TagAssociation;
+DROP TABLE IF EXISTS TagAssociation CASCADE;
 CREATE TABLE TagAssociation
 (
 	-- id INTEGER PRIMARY KEY,
