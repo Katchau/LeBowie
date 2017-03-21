@@ -172,6 +172,7 @@ CREATE TABLE OwnsBadge(
 	-- id INTEGER PRIMARY KEY,
 	user_id INTEGER NOT NULL,
     badge_id INTEGER NOT NULL,
+	PRIMARY KEY (user_id, topic_id),
 	
 	CONSTRAINT UserID FOREIGN KEY (user_id)
 		REFERENCES UserAcc(id),
@@ -185,7 +186,7 @@ CREATE TABLE Moderation
 	-- id INTEGER PRIMARY KEY,
 	mod_id INTEGER NOT NULL,
     topic_id INTEGER NOT NULL,
-	UNIQUE(mod_id,topic_id), 
+	PRIMARY KEY(mod_id,topic_id), 
 	
 	CONSTRAINT ModeratorID FOREIGN KEY (mod_id)
 		REFERENCES Moderator(id),
@@ -199,7 +200,7 @@ CREATE TABLE TagAssociation
 	-- id INTEGER PRIMARY KEY,
 	question_id INTEGER NOT NULL,
     tag_id INTEGER NOT NULL,
-	UNIQUE(question_id,tag_id), 
+	PRIMARY KEY(question_id,tag_id), 
 	
 	CONSTRAINT QuestionID FOREIGN KEY (question_id)
 		REFERENCES Question(post_id),
