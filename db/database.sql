@@ -172,7 +172,7 @@ CREATE TABLE OwnsBadge(
 	-- id INTEGER PRIMARY KEY,
 	user_id INTEGER NOT NULL,
     badge_id INTEGER NOT NULL,
-	PRIMARY KEY (user_id, topic_id),
+	PRIMARY KEY (user_id, badge_id),
 	
 	CONSTRAINT UserID FOREIGN KEY (user_id)
 		REFERENCES UserAcc(id),
