@@ -90,7 +90,7 @@ CREATE TABLE PostInstance(
     creation DATE DEFAULT CURRENT_DATE,
 	
 	CONSTRAINT PostID FOREIGN KEY (post_id)
-		REFERENCES Post(id)
+		REFERENCES Post(id),
 	CONSTRAINT Created FOREIGN KEY (user_id)
 		REFERENCES UserAcc(id)
 	
@@ -140,6 +140,10 @@ CREATE TABLE Report(
 	id INTEGER PRIMARY KEY,
     post_id INTEGER NOT NULL,
 	user_id INTEGER NOT NULL,
+	title VARCHAR(32) NOT NULL,
+	content VARCHAR(128) NOT NULL,
+	reason VARCHAR(64) NOT NULL,
+	created DATE DEFAULT CURRENT_DATE,
 	
 	CONSTRAINT PostID FOREIGN KEY (post_id)
 		REFERENCES PostInstance(id),
@@ -159,7 +163,7 @@ CREATE TABLE Activity(
 	action Action NOT NULL,
 	
 	CONSTRAINT PostID FOREIGN KEY (post_id)
-		REFERENCES PostID(id),
+		REFERENCES Post(id),
 	CONSTRAINT PostInstanceID FOREIGN KEY (postContent_id)
 		REFERENCES PostInstance(id),
 	CONSTRAINT UserID FOREIGN KEY (user_id)
