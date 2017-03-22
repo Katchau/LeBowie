@@ -20,6 +20,7 @@ CREATE TABLE UserAcc
 (
 	id INTEGER PRIMARY KEY,
 	username VARCHAR(16) UNIQUE NOT NULL,
+	email VARCHAR(32) UNIQUE NOT NULL,
 	password VARCHAR(32) NOT NULL,
     salt VARCHAR(32) NOT NULL,
 	first_name VARCHAR(32) NOT NULL,
@@ -37,7 +38,7 @@ CREATE TABLE UserAcc
 DROP TABLE IF EXISTS Administrator CASCADE;
 CREATE TABLE Administrator
 (
-	id INTEGER PRIMARY KEY, -- é boa ideia ter 2 ids am i rite?
+	id INTEGER PRIMARY KEY,
 	user_id INTEGER UNIQUE NOT NULL,
 	CONSTRAINT UserID FOREIGN KEY (user_id)
 		REFERENCES UserAcc(id)
@@ -46,7 +47,7 @@ CREATE TABLE Administrator
 DROP TABLE IF EXISTS Moderator CASCADE;
 CREATE TABLE Moderator
 (
-	id INTEGER PRIMARY KEY, -- é boa ideia ter 2 ids am i rite?
+	id INTEGER PRIMARY KEY,
 	user_id INTEGER UNIQUE NOT NULL,
 	CONSTRAINT UserID FOREIGN KEY (user_id)
 		REFERENCES UserAcc(id)
@@ -67,6 +68,7 @@ CREATE TABLE Topic(
 /* POSTS */
 DROP TYPE IF EXISTS PostState CASCADE;
 CREATE TYPE PostState AS ENUM ('Editing', 'Published', 'Deleted');
+
 DROP TABLE IF EXISTS Post CASCADE;
 CREATE TABLE Post
 (
@@ -75,7 +77,6 @@ CREATE TABLE Post
 	currentState PostState NOT NULL,
 	up_score INTEGER NOT NULL DEFAULT 0,
     down_score INTEGER NOT NULL DEFAULT 0
-	--to be updated see instance
 );
 
 
@@ -83,16 +84,15 @@ DROP TABLE IF EXISTS PostInstance CASCADE;
 CREATE TABLE PostInstance(
 	id INTEGER PRIMARY KEY,
 	post_id INTEGER NOT NULL,
-	--user_id INTEGER NOT NULL, isto é aqui ou no post?
+	user_id INTEGER NOT NULL,
 	
     description VARCHAR(1024),
     creation DATE DEFAULT CURRENT_DATE,
 	
 	CONSTRAINT PostID FOREIGN KEY (post_id)
 		REFERENCES Post(id)
-	
-	--CONSTRAINT UserID FOREIGN KEY (user_id) isto é em cima ou aqui??
-		--REFERENCES UserAcc(id)
+	CONSTRAINT Created FOREIGN KEY (user_id)
+		REFERENCES UserAcc(id)
 	
 );
 
@@ -149,15 +149,19 @@ CREATE TABLE Report(
 
 DROP TYPE IF EXISTS Action CASCADE;
 CREATE TYPE Action AS ENUM ('Create', 'Delete', 'Update', 'Upvote', 'Downvote');
+
 DROP TABLE IF EXISTS Activity CASCADE;
 CREATE TABLE Activity(
 	id INTEGER PRIMARY KEY,
-    post_id INTEGER NOT NULL,
+    postContent_id INTEGER,
+	post_id INTEGER NOT NULL,
 	user_id INTEGER NOT NULL,
 	action Action NOT NULL,
 	
-	--CONSTRAINT PostID FOREIGN KEY (post_id)
-		--REFERENCES PostInstance(id), mudar quando a tabela for updated
+	CONSTRAINT PostID FOREIGN KEY (post_id)
+		REFERENCES PostID(id),
+	CONSTRAINT PostInstanceID FOREIGN KEY (postContent_id)
+		REFERENCES PostInstance(id),
 	CONSTRAINT UserID FOREIGN KEY (user_id)
 		REFERENCES UserAcc(id)
 );
@@ -165,7 +169,6 @@ CREATE TABLE Activity(
 
 
 -- RelationTables
--- falta fazer as relações * -- * :) :O :P 
 
 DROP TABLE IF EXISTS OwnsBadge CASCADE;
 CREATE TABLE OwnsBadge(
