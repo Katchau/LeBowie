@@ -214,3 +214,10 @@ CREATE TABLE TagAssociation
 	CONSTRAINT TagID FOREIGN KEY (tag_id)
 		REFERENCES Tag(id)
 );
+
+CREATE TRIGGER IF NOT EXISTS update_score AFTER UPDATE OF up_score ON Post
+FOR EACH ROW
+BEGIN
+	UPDATE  UserAcc SET score = 1+(SELECT score FROM UserAcc WHERE UserAcc.id = (SELECT user_id FROM Activity WHERE NEW.id = Activity.post_id and Activity.action = 'create'))
+	WHERE UserAcc.id = (SELECT user_id FROM Activity WHERE NEW.id = Activity.post_id and Activity.action = 'create')
+END;
