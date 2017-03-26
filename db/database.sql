@@ -1,24 +1,26 @@
---nao tem headers o postgresql
 
 DROP TABLE IF EXISTS Country CASCADE;
 CREATE TABLE Country
 (
-	id INTEGER PRIMARY KEY,
+	id SERIAL PRIMARY KEY,
 	name VARCHAR(32) NOT NULL UNIQUE
 );
 
 DROP TABLE IF EXISTS Badge CASCADE;
 CREATE TABLE Badge(
-	id INTEGER PRIMARY KEY,
+	id SERIAL PRIMARY KEY,
     color VARCHAR(16) NOT NULL,
     text VARCHAR(16) NOT NULL
 );
+
+DROP TYPE IF EXISTS UserType CASCADE;
+CREATE TYPE UserType AS ENUM ('Registered', 'Moderator', 'Administrator');
 
 /* USERS */
 DROP TABLE IF EXISTS UserAcc CASCADE;
 CREATE TABLE UserAcc
 (
-	id INTEGER PRIMARY KEY,
+	id SERIAL PRIMARY KEY,
 	username VARCHAR(16) UNIQUE NOT NULL,
 	email VARCHAR(32) UNIQUE NOT NULL,
 	password VARCHAR(32) NOT NULL,
@@ -31,38 +33,20 @@ CREATE TABLE UserAcc
 	image VARCHAR(32),
 	score INTEGER DEFAULT 0,
 	google BOOLEAN DEFAULT FALSE,
+	userType UserType NOT NULL DEFAULT 'Registered',
 	CONSTRAINT Origin FOREIGN KEY (country)
 		REFERENCES Country(id)
 );
 
-DROP TABLE IF EXISTS Administrator CASCADE;
-CREATE TABLE Administrator
-(
-	id INTEGER PRIMARY KEY,
-	user_id INTEGER UNIQUE NOT NULL,
-	CONSTRAINT UserID FOREIGN KEY (user_id)
-		REFERENCES UserAcc(id)
-);
-
-DROP TABLE IF EXISTS Moderator CASCADE;
-CREATE TABLE Moderator
-(
-	id INTEGER PRIMARY KEY,
-	user_id INTEGER UNIQUE NOT NULL,
-	CONSTRAINT UserID FOREIGN KEY (user_id)
-		REFERENCES UserAcc(id)
-);
-
-
 /* TOPIC */
 DROP TABLE IF EXISTS Topic CASCADE;
 CREATE TABLE Topic(
-	id INTEGER PRIMARY KEY,
+	id SERIAL PRIMARY KEY,
 	admin_id INTEGER NOT NULL,
     topicname VARCHAR(32) UNIQUE NOT NULL,
 	description VARCHAR(1024) NOT NULL,
 	CONSTRAINT CreatedBy FOREIGN KEY (admin_id)
-		REFERENCES Administrator(id)
+		REFERENCES UserAcc(id)
 );
 
 /* POSTS */
@@ -72,8 +56,7 @@ CREATE TYPE PostState AS ENUM ('Editing', 'Published', 'Deleted');
 DROP TABLE IF EXISTS Post CASCADE;
 CREATE TABLE Post
 (
-	id INTEGER PRIMARY KEY,
-	
+	id SERIAL PRIMARY KEY,
 	currentState PostState NOT NULL,
 	up_score INTEGER NOT NULL DEFAULT 0,
     down_score INTEGER NOT NULL DEFAULT 0
@@ -82,7 +65,7 @@ CREATE TABLE Post
 
 DROP TABLE IF EXISTS PostInstance CASCADE;
 CREATE TABLE PostInstance(
-	id INTEGER PRIMARY KEY,
+	id SERIAL PRIMARY KEY,
 	post_id INTEGER NOT NULL,
 	user_id INTEGER NOT NULL,
 	
@@ -102,7 +85,7 @@ CREATE TABLE Question(
     topic_id INTEGER NOT NULL,
     title VARCHAR(64) NOT NULL,
 	CONSTRAINT PostID FOREIGN KEY (post_id)
-		REFERENCES PostInstance(id),
+		REFERENCES Post(id),
 	CONSTRAINT TopicID FOREIGN KEY (topic_id)
 		REFERENCES Topic(id)
 );
@@ -110,7 +93,7 @@ CREATE TABLE Question(
 DROP TABLE IF EXISTS Tag CASCADE;
 CREATE TABLE Tag
 (
-	id INTEGER PRIMARY KEY,
+	id SERIAL PRIMARY KEY,
 	text VARCHAR(32) NOT NULL
 );
 
@@ -131,13 +114,15 @@ CREATE TABLE AnswerComment(
 	post_id INTEGER PRIMARY KEY,
     answer_id INTEGER NOT NULL,
 	
+	CONSTRAINT PostID FOREIGN KEY (post_id)
+		REFERENCES Post(id),
 	CONSTRAINT AnswerID FOREIGN KEY (post_id)
 		REFERENCES Answer(post_id)
 );
 
 DROP TABLE IF EXISTS Report CASCADE;
 CREATE TABLE Report(
-	id INTEGER PRIMARY KEY,
+	id SERIAL PRIMARY KEY,
     post_id INTEGER NOT NULL,
 	user_id INTEGER NOT NULL,
 	title VARCHAR(32) NOT NULL,
@@ -156,7 +141,7 @@ CREATE TYPE Action AS ENUM ('Create', 'Delete', 'Update', 'Upvote', 'Downvote');
 
 DROP TABLE IF EXISTS Activity CASCADE;
 CREATE TABLE Activity(
-	id INTEGER PRIMARY KEY,
+	id SERIAL PRIMARY KEY,
     postContent_id INTEGER,
 	post_id INTEGER NOT NULL,
 	user_id INTEGER NOT NULL,
@@ -170,13 +155,11 @@ CREATE TABLE Activity(
 		REFERENCES UserAcc(id)
 );
 
-
-
 -- RelationTables
 
-DROP TABLE IF EXISTS OwnsBadge CASCADE;
-CREATE TABLE OwnsBadge(
-	-- id INTEGER PRIMARY KEY,
+DROP TABLE IF EXISTS UserAccBadge CASCADE;
+CREATE TABLE UserAccBadge
+(
 	user_id INTEGER NOT NULL,
     badge_id INTEGER NOT NULL,
 	PRIMARY KEY (user_id, badge_id),
@@ -187,24 +170,22 @@ CREATE TABLE OwnsBadge(
 		REFERENCES Badge(id)
 );
 
-DROP TABLE IF EXISTS Moderation CASCADE;
-CREATE TABLE Moderation
+DROP TABLE IF EXISTS TopicUserAcc CASCADE;
+CREATE TABLE TopicUserAcc
 (
-	-- id INTEGER PRIMARY KEY,
 	mod_id INTEGER NOT NULL,
     topic_id INTEGER NOT NULL,
 	PRIMARY KEY(mod_id,topic_id), 
 	
 	CONSTRAINT ModeratorID FOREIGN KEY (mod_id)
-		REFERENCES Moderator(id),
+		REFERENCES UserAcc(id),
 	CONSTRAINT TopicID FOREIGN KEY (topic_id)
 		REFERENCES Topic(id)
 );
 
-DROP TABLE IF EXISTS TagAssociation CASCADE;
-CREATE TABLE TagAssociation
+DROP TABLE IF EXISTS QuestionTag CASCADE;
+CREATE TABLE QuestionTag
 (
-	-- id INTEGER PRIMARY KEY,
 	question_id INTEGER NOT NULL,
     tag_id INTEGER NOT NULL,
 	PRIMARY KEY(question_id,tag_id), 
