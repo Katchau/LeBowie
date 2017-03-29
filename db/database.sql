@@ -149,7 +149,7 @@ CREATE TABLE Activity(
 	
 	CONSTRAINT PostID FOREIGN KEY (post_id)
 		REFERENCES Post(id),
-	CONSTRAINT PostInstanceID FOREIGN KEY (postContent_id)
+	CONSTRAINT PostInstanceID FOREIGN KEY (post_content_id)
 		REFERENCES PostInstance(id),
 	CONSTRAINT UserID FOREIGN KEY (user_id)
 		REFERENCES UserAcc(id)
