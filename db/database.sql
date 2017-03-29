@@ -21,9 +21,9 @@ DROP TABLE IF EXISTS UserAcc CASCADE;
 CREATE TABLE UserAcc
 (
 	id SERIAL PRIMARY KEY,
-	username VARCHAR(16) UNIQUE NOT NULL,
+	username VARCHAR(32) UNIQUE NOT NULL,
 	email VARCHAR(32) UNIQUE NOT NULL,
-	password VARCHAR(32) NOT NULL,
+	password VARCHAR(64) NOT NULL,
     salt VARCHAR(32) NOT NULL,
 	first_name VARCHAR(32) NOT NULL,
 	last_name VARCHAR(32) NOT NULL,
@@ -69,7 +69,7 @@ CREATE TABLE PostInstance(
 	post_id INTEGER NOT NULL,
 	user_id INTEGER NOT NULL,
 	
-    description VARCHAR(1024),
+    description VARCHAR(32768),
     creation DATE DEFAULT CURRENT_DATE,
 	
 	CONSTRAINT PostID FOREIGN KEY (post_id)
@@ -83,7 +83,7 @@ DROP TABLE IF EXISTS Question CASCADE;
 CREATE TABLE Question(
 	post_id INTEGER PRIMARY KEY,
     topic_id INTEGER NOT NULL,
-    title VARCHAR(64) NOT NULL,
+    title VARCHAR(512) NOT NULL,
 	CONSTRAINT PostID FOREIGN KEY (post_id)
 		REFERENCES Post(id),
 	CONSTRAINT TopicID FOREIGN KEY (topic_id)
@@ -116,7 +116,7 @@ CREATE TABLE AnswerComment(
 	
 	CONSTRAINT PostID FOREIGN KEY (post_id)
 		REFERENCES Post(id),
-	CONSTRAINT AnswerID FOREIGN KEY (post_id)
+	CONSTRAINT AnswerID FOREIGN KEY (answer_id)
 		REFERENCES Answer(post_id)
 );
 
