@@ -10,7 +10,7 @@ DROP TABLE IF EXISTS Badge CASCADE;
 CREATE TABLE Badge(
 	id SERIAL PRIMARY KEY,
     color VARCHAR(16) NOT NULL,
-    text VARCHAR(16) NOT NULL
+    text VARCHAR(32) NOT NULL
 );
 
 DROP TYPE IF EXISTS UserType CASCADE;
@@ -33,7 +33,7 @@ CREATE TABLE UserAcc
 	image VARCHAR(32),
 	score INTEGER DEFAULT 0,
 	google BOOLEAN DEFAULT FALSE,
-	userType UserType NOT NULL DEFAULT 'Registered',
+	user_type UserType NOT NULL DEFAULT 'Registered',
 	CONSTRAINT Origin FOREIGN KEY (country)
 		REFERENCES Country(id)
 );
@@ -57,7 +57,7 @@ DROP TABLE IF EXISTS Post CASCADE;
 CREATE TABLE Post
 (
 	id SERIAL PRIMARY KEY,
-	currentState PostState NOT NULL,
+	current_state PostState NOT NULL,
 	up_score INTEGER NOT NULL DEFAULT 0,
     down_score INTEGER NOT NULL DEFAULT 0
 );
@@ -142,14 +142,14 @@ CREATE TYPE Action AS ENUM ('Create', 'Delete', 'Update', 'Upvote', 'Downvote');
 DROP TABLE IF EXISTS Activity CASCADE;
 CREATE TABLE Activity(
 	id SERIAL PRIMARY KEY,
-    postContent_id INTEGER,
+    post_content_id INTEGER,
 	post_id INTEGER NOT NULL,
 	user_id INTEGER NOT NULL,
 	action Action NOT NULL,
 	
 	CONSTRAINT PostID FOREIGN KEY (post_id)
 		REFERENCES Post(id),
-	CONSTRAINT PostInstanceID FOREIGN KEY (postContent_id)
+	CONSTRAINT PostInstanceID FOREIGN KEY (post_content_id)
 		REFERENCES PostInstance(id),
 	CONSTRAINT UserID FOREIGN KEY (user_id)
 		REFERENCES UserAcc(id)
@@ -196,9 +196,3 @@ CREATE TABLE QuestionTag
 		REFERENCES Tag(id)
 );
 
-CREATE TRIGGER IF NOT EXISTS update_score AFTER UPDATE OF up_score ON Post
-FOR EACH ROW
-BEGIN
-	UPDATE  UserAcc SET score = 1+(SELECT score FROM UserAcc WHERE UserAcc.id = (SELECT user_id FROM Activity WHERE NEW.id = Activity.post_id and Activity.action = 'create'))
-	WHERE UserAcc.id = (SELECT user_id FROM Activity WHERE NEW.id = Activity.post_id and Activity.action = 'create')
-END;
