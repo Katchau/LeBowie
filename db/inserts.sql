@@ -1,121 +1,121 @@
-INSERT INTO country (name) VALUES ("portugal");
-INSERT INTO country (name) VALUES ("france");
-INSERT INTO country (name) VALUES ("spain");
-INSERT INTO country (name) VALUES ("england");
-INSERT INTO country (name) VALUES ("italy");
-INSERT INTO country (name) VALUES ("united states of america");
+INSERT INTO country (name) VALUES ('portugal');
+INSERT INTO country (name) VALUES ('france');
+INSERT INTO country (name) VALUES ('spain');
+INSERT INTO country (name) VALUES ('england');
+INSERT INTO country (name) VALUES ('italy');
+INSERT INTO country (name) VALUES ('united states of america');
 
-INSERT INTO badge (color, text) VALUES ("#343824", "novice");
-INSERT INTO badge (color, text) VALUES ("#4313bf", "enthusiast");
-INSERT INTO badge (color, text) VALUES ("#12d0d2", "expert");
+INSERT INTO badge (color, text) VALUES ('#85d354', 'novice');
+INSERT INTO badge (color, text) VALUES ('#df1d6e', 'enthusiast');
+INSERT INTO badge (color, text) VALUES ('#f8ef2d', 'expert');
 
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("lazygorilla283", "javier.wood@example.com", "a84b5cddb49bf0e1bc8c0645d44e2c049edf62143b611a779ce126e4870ffbbb", "99azLR6O", "javier", "wood", "1956-01-05 16:20:57", 2, "administrator");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("brownwolf421", "tilde.pedersen@example.com", "74ce0ea387237e95c2ed550c19f166fa3fcba99ae12ac6e084e7ec8e6a8d165f", "680bYRpV", "tilde", "pedersen", "1973-02-19 21:12:25", 4, "moderator");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("goldensnake736", "manuel.ross@example.com", "47416aeead24fcbd812ed4ac6b1d07d05e438bc21b1cee23911b91a93252f5cd", "LydvQSfE", "manuel", "ross", "1971-11-24 11:20:58", 2, "moderator");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("beautifulwolf381", "gökhan.eronat@example.com", "7eec81e19d39ab202c251fc50d7927c3f0e725cd3d43199d538c75891849a84b", "jT0DnHYQ", "gökhan", "eronat", "1966-09-11 01:18:22", 4, "moderator");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("organickoala391", "evan.lambert@example.com", "25d0336110df599c442cfbd91e47f889495d8ee5ad1d9286c37825054731a09f", "BJZn3GAN", "evan", "lambert", "1977-11-03 11:25:01", 3, "moderator");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("tinybird843", "saana.aalto@example.com", "7a90f395a1aa1e637565d033d3d37e03de76be08441b6f9340cd32908756d493", "yLnTyx8q", "saana", "aalto", "1990-02-23 03:08:17", 2, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("crazyostrich166", "avery.watkins@example.com", "4d22a007279498afe9d5b6adc74903637b4388871ec2a800dd836ac25215c8f7", "h0AEi7Xe", "avery", "watkins", "1946-12-01 05:56:54", 0, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("whitefish200", "caroline.petersen@example.com", "684ce21b42d57d6b1fe20335de906b7e19fc0ac7d3ca9618b2a07f636f97acc6", "zY6NYFF6", "caroline", "petersen", "1959-08-19 11:01:12", 3, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("beautifulbird673", "francisco.boyd@example.com", "d7e2db7ece88aabc8a43bf73a1a1524f1d810898bdc7c8a625cfcb43d3ed886f", "aK5Kpx2b", "francisco", "boyd", "1961-01-07 01:53:28", 2, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("whitebutterfly885", "sasha.louis@example.com", "a9d8eb80bdedcb9d673eae0b29fa19c2a067878a4ade5eed803b2a3e8f6e10b4", "DW2sc0nN", "sasha", "louis", "1972-06-17 18:58:56", 1, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("yellowkoala784", "helene.kraft@example.com", "304955265afe572417e2ac48145546eb69e4cb028ad3d691a0e27f5718d1c91d", "OoplUxM2", "helene", "kraft", "1988-05-26 04:26:57", 0, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("lazybird430", "peter.horton@example.com", "1a421b2aa73808b82a0bdf14aa921a5a61b7f4eb44fe4b610bbfe782d37e4d84", "JcK2oNoa", "peter", "horton", "1945-05-24 03:06:15", 3, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("goldensnake635", "درسا.یاسمی@example.com", "11ef5339865bcb82b03ada25fad32dd61f2af4bd4cef6dbbe2f66b6918febbf4", "X2GbKWWK", "درسا", "یاسمی", "1947-07-30 04:47:23", 5, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("beautifulostrich658", "henry.hansen@example.com", "bc73b6021ea3931a222b27735928bb94ad26084ea7cce07bd2fcbb9d42b10b90", "M6iSGCUE", "henry", "hansen", "1980-08-26 18:07:25", 4, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("smallkoala489", "hunter.wilson@example.com", "1fe4adc307fa1a812d43137a800a6d8392d24e089446cb42f6dff081750645d9", "2Aeq2BSe", "hunter", "wilson", "1979-02-20 22:03:52", 0, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("greenleopard105", "eli.lewis@example.com", "c5bda545524789ad83015b06dcdb1163a50976c2aa83e2ee40a67bf82de42739", "pwFrTYCT", "eli", "lewis", "1990-10-05 09:06:11", 2, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("greenfrog502", "eva.gagnon@example.com", "250471ee19a3f2e30ef824fd1a6b3dbede4a2a655657c072be25365ae5132cb4", "1QNBUuR3", "eva", "gagnon", "1979-06-24 00:45:52", 3, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("brownduck568", "jennifer.hopkins@example.com", "4f1f24fb13c42f21d5d576535af24297d6c2c121a723f3bbf75971b33b66a67a", "l7ayrdBr", "jennifer", "hopkins", "1946-09-07 00:09:13", 3, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("whitepeacock632", "harper.park@example.com", "83f215484a6c708f2acdc19eaa1e40e87b6d67fb204ec070299bcccda4589f46", "uMPeo71t", "harper", "park", "1968-05-16 13:33:00", 2, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("purplegoose372", "sophie.lowe@example.com", "d51605ad79443ce709dcb6361a99a484ee013700aa4d0b0193fac78f6ab1c361", "PglJMa8p", "sophie", "lowe", "1949-07-09 00:33:20", 5, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("blackpeacock617", "mila.vidal@example.com", "35cb6dc89d9f47cf095cf9f07026614b1afc8a2c6d959a0353833ba1528701fd", "Hj1PqDZq", "mila", "vidal", "1955-06-14 10:31:57", 1, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("orangepanda694", "eleanor.cunningham@example.com", "3f78edae7b1f3997beaad5be4ca180baea396708e544f5f75d7695fb23e3ccfa", "cTh1zsvW", "eleanor", "cunningham", "1952-09-16 11:09:56", 4, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("tinyleopard288", "mae.myers@example.com", "5bc8d73ca5b8779b258ef133ebca5269fd0c2558428fb1166aad65a06d7e1b18", "9p8fxwGO", "mae", "myers", "1962-02-21 01:25:49", 2, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("biggorilla280", "gabriel.baier@example.com", "8fcac9dff0e76f6cd9426ca23c9aefdd5d4653f5839a4b0f87ca43f38483f38d", "CVjjR1HL", "gabriel", "baier", "1958-08-04 15:16:13", 5, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("whiteladybug612", "anthony.ramos@example.com", "bd82cd738cdde63ac19ce6169f815189594295688cc0890af5aaad042da403dd", "FnYQNKK9", "anthony", "ramos", "1956-06-14 01:08:27", 5, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("ticklishwolf403", "maren.urban@example.com", "2120bff9bd27b24dc2328dad496d16993d0dcfbf5854201aca5cab0d89a2cd92", "u6Q3me0b", "maren", "urban", "1951-07-15 18:14:06", 3, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("whitebear256", "hugo.hübner@example.com", "b45fbfdd264b6cdf3f045f6132e731a961d47df1e48296dcba847d326856f878", "PLz8O31i", "hugo", "hübner", "1961-06-01 18:16:18", 1, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("lazybird864", "lily.cunningham@example.com", "b62e62ed47bd36f3a5a37850e4aa44e61a3c32cbdf49c5a09a655d79ee08bce7", "9t2vgLIT", "lily", "cunningham", "1976-04-22 15:21:31", 5, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("blueladybug665", "matthew.frazier@example.com", "d3332bbf802565bc88a4ec0f44be3f39817cd4c5f117c964de4804b6320eb83c", "6AJgKjXp", "matthew", "frazier", "1975-07-31 07:04:55", 5, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("goldenwolf310", "travis.woods@example.com", "aa6e99f64a2b4807209c3915dbaccffe368cec911298e8158b66128a08bcaaa7", "VITWoUbM", "travis", "woods", "1971-01-23 03:33:38", 0, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("beautifulladybug806", "eva.joly@example.com", "3da10ea4cce3b3299f6fac0458276ce89006d49faadcb5e5f928726ece074584", "odgRBuH4", "eva", "joly", "1980-01-13 16:36:54", 4, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("blueostrich238", "nixon.green@example.com", "a4d9cfec7b0e99d8e3a34221e6608864ccb7bc99d99a57ddaf110ea8a302be86", "JSLtJFTC", "nixon", "green", "1968-07-03 23:42:47", 3, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("crazycat396", "christian.döring@example.com", "585fe7a1b6d917993b1193324ededac43b9595575fc0a6b04dd7802451dbd830", "7CgxKIC2", "christian", "döring", "1988-01-03 08:31:28", 5, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("bluedog692", "cohen.clarke@example.com", "56ae7557fc0a37dd6b0846c38317ed240642fedc0f7ce0ac662a0de877b33243", "USoZks8K", "cohen", "clarke", "1946-06-01 14:20:59", 1, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("goldendog555", "ماهان.موسوی@example.com", "5e447a6438c704c4d65ca96466a2e0f5da037add25bc5d768393621da2c64fce", "ccLBlM38", "ماهان", "موسوی", "1992-12-23 21:21:18", 5, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("beautifulwolf752", "curtis.welch@example.com", "db1ec9fb81aff20a2a24b43dd73f4a043b6b64e28f553252d0a177eccdf5486f", "WNeLWTRq", "curtis", "welch", "1975-01-26 21:40:40", 3, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("greenmouse803", "olive.wood@example.com", "06fcccfc07f3e80154a2ed3ec1c4978ecb7cd199c29e3b3ebb131b82d650129e", "xgK6kCmI", "olive", "wood", "1994-07-21 08:48:04", 3, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("goldenostrich235", "یاسمین.یاسمی@example.com", "8d0fc166cd26894666d73a6135cf682cea3b8ab5e6897f3ee7135fa6ea1256ca", "LbD4tGug", "یاسمین", "یاسمی", "1963-06-01 08:19:06", 2, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("beautifulpeacock248", "ralph.fox@example.com", "ebdaac7bfa9b8c9c71943eee702f891107d3160a7f3e94e136e7d5546bd20090", "HWseBR0f", "ralph", "fox", "1994-11-22 15:18:11", 3, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("tinycat457", "tina.schmidt@example.com", "6cd2484aa1ff5ae1cf90d10a7d06b0edf075cb9909df04ccbca76618fb486775", "Vfo9QyT5", "tina", "schmidt", "1966-11-25 10:09:34", 5, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("silverpeacock202", "آرش.احمدی@example.com", "b5fdbd93a7a16c2a44ea7670ec4105d02c7e53cb66667976fb392dc1f7c08afd", "rnjeUDmA", "آرش", "احمدی", "1978-10-26 07:12:46", 0, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("purplerabbit118", "eloane.richard@example.com", "ac4570ae870f890bf3a7b0fd44d2c198f498b732865e0a4eba46b3b2c0c2135b", "VWChjSza", "eloane", "richard", "1959-10-21 11:44:17", 3, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("greenrabbit431", "joshua.rhodes@example.com", "630d9d415170242c1634e20a32ef8115601c828cdc4291257e149e57fe19b22b", "gSBZlTFn", "joshua", "rhodes", "1970-07-11 06:32:23", 1, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("ticklishmouse575", "آوا.سالاری@example.com", "1aff140662a3bb500f5795d1e2cb065d5ee010a5ef0d8ff06e416f99e7a04bff", "bv7mT6VQ", "آوا", "سالاری", "1962-08-11 18:15:12", 1, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("blacksnake265", "marko.maurer@example.com", "7f2c3e382b8f8f3303e3c75f895a8ff4f9d1015e0f3ab2129b3ed087c05e611a", "Lev5wxQI", "marko", "maurer", "1966-09-13 10:22:24", 2, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("brownfish963", "adam.richard@example.com", "4f09f717b4ff9b9db4ef3ab3ae09de1359ab63f393aeefb6c15691533a00fdbc", "ZCqlG8jG", "adam", "richard", "1989-06-12 09:26:53", 1, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("tinyrabbit723", "arquimínio.melo@example.com", "172c111813398b20f2bac5d94e9a899308b1134116ff79de4422435c370c2bbd", "oBbw16QN", "arquimínio", "melo", "1964-03-10 06:06:11", 3, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("whitedog650", "isabella.hermann@example.com", "d73e1135f5ab79d02e3dc9ee96284af360f904b589651b9a27ab77f60fab1cfb", "9MiVnJVG", "isabella", "hermann", "1949-01-25 09:52:32", 4, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("ticklishsnake763", "arturo.santiago@example.com", "c70f62ded5205e82e200b58c851f09456e986da896253e2812ed54641e15854c", "o9JRrddC", "arturo", "santiago", "1960-03-10 17:12:27", 5, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("blackgoose882", "rudie.segaar@example.com", "c23fe3ba78e38118c0dc85deed3a2b3fd4da2f1266b706bc6dda7c18f8afeb28", "nRoNSv21", "rudie", "segaar", "1970-08-06 12:35:26", 4, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("silverbear104", "karen.gregory@example.com", "123963f09fb1e0f36fecc7ea9be8fb4f72a807abd69054c9f02ad65680993686", "gCZ9ltZ8", "karen", "gregory", "1964-09-13 22:42:31", 1, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("ticklishswan884", "hugh.fisher@example.com", "cdb0f0a3c8f966061907f2d1bd155a47e3b4ebff4365e79fc0068ebfc99cb21d", "p0G6AsyS", "hugh", "fisher", "1991-03-03 06:21:55", 4, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("redostrich656", "allan.fletcher@example.com", "5964fbc6fed7a99876ced21af467cff0d3199b51f890cf9802c4eed7a13a5136", "OaQbTGkV", "allan", "fletcher", "1981-10-02 02:50:03", 2, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("crazyswan569", "mohamed.morales@example.com", "4ec5b9c920ff9b1342649355e3b9912398652e1b81013d02f8656341dc091c8a", "VzJHL19v", "mohamed", "morales", "1947-08-16 12:08:39", 1, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("smallfish458", "angeles.castro@example.com", "018bf4588a439168c540e556c7e668ee9f54cce8221daca7f652a5bf1b540899", "eLb4YLUp", "angeles", "castro", "1958-11-22 19:29:25", 4, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("orangeswan257", "lewis.thompson@example.com", "10a20c9babcd4650769f6fd4b876a6b20862cb7512899658f599d117066b5cce", "sEqcxMoP", "lewis", "thompson", "1975-05-30 02:56:57", 0, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("orangetiger547", "angèle.menard@example.com", "3f3579a29cfb4aa9044a821cd4927a039f08e60f98c0112f2b606e31a80641ef", "IV87iEDW", "angèle", "menard", "1971-08-17 06:10:07", 1, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("goldenbird749", "linnea.makinen@example.com", "a4176036380644ac2128c48b94a84d6bf8c8e4efecd3e3a57f02492233ca7c3b", "29W4SuCp", "linnea", "makinen", "1958-10-10 09:35:47", 1, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("bigelephant819", "bernard.taylor@example.com", "d1017d36f3ce76612d04a81cf70bfc4012b29e6c8d66c91ae855c7d53dc53a39", "whPVSWb1", "bernard", "taylor", "1984-10-24 19:40:34", 3, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("smallbird142", "ceyhan.akşit@example.com", "94edd0841ef2ae730631f96c38134868ef9677338399d275a50391f021ab6e76", "17SoA8MA", "ceyhan", "akşit", "1993-03-02 11:51:17", 1, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("whiteostrich762", "sophie.roussel@example.com", "0ac8c731cc1e18533acd34f8161361497b579dd549893f532e4cb393ce062bb0", "I9h0K1Q5", "sophie", "roussel", "1986-12-28 22:24:07", 4, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("orangebear796", "anneloes.weijman@example.com", "a1422f6a1b0ad6b61e6f1dffafc0eff89f7614564d26fd294f8bdec6332e66f1", "mdEvRZ6W", "anneloes", "weijman", "1954-04-01 17:46:52", 5, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("whitebutterfly392", "اميرمحمد.رضایی@example.com", "b35eb63c3f313e385089c5a87a19adb8da0d18d3c00fd133f51370e3cf02d4de", "fYCX7H80", "اميرمحمد", "رضایی", "1951-08-15 00:30:33", 3, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("ticklishgorilla762", "patricia.serrano@example.com", "68d080d983112c7b622017709065770eaeb09ee256e6997086fcb639106cc307", "YVJWe3mi", "patricia", "serrano", "1988-01-13 01:14:58", 3, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("whitebutterfly436", "lilian.guillaume@example.com", "7f87a0de1fd57b33558f55dc69765d79c7c858db926b27b57a03b30fb1a89ef1", "MhnUAtvJ", "lilian", "guillaume", "1949-02-07 01:13:40", 0, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("redgorilla803", "lesa.henderson@example.com", "f6a8a0911717ea2606d1831e3353c3df6fed26da549cac0353d28a108a57137b", "9fEX00F4", "lesa", "henderson", "1951-07-11 05:39:04", 4, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("beautifulswan972", "javier.anderson@example.com", "96cd03d9ba0678eb55323b69383f025d29e225d268cc234f9b56aeff05b33d6f", "77bezOrG", "javier", "anderson", "1988-12-23 16:48:52", 0, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("crazyswan740", "jules.carpentier@example.com", "3706e7506ddc426a7e6a07856f3ba33c67bd472c886fff111e4035fecf9455a1", "Vd7TWYVY", "jules", "carpentier", "1987-12-06 21:01:44", 0, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("silvermeercat245", "sara.adams@example.com", "91536019c3efa402e6b3f5c5649f1b69a9991606418c8f3563202113ae4177a2", "iWhXAXue", "sara", "adams", "1972-08-06 08:26:12", 0, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("tinycat994", "sam.cooper@example.com", "4eb727415c0c092306f4fa7279418a1b2d36123f0bcd7e11527362d7bb73379b", "6RdTqLWO", "sam", "cooper", "1991-02-06 07:51:53", 2, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("organictiger803", "flora.alves@example.com", "023f64a7eb63b615e8fed211c49158d8fd2968712ecd35d1d66f729bffebb75a", "zbuoIcRY", "flora", "alves", "1991-10-03 08:39:48", 1, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("beautifulpanda616", "marcus.christiansen@example.com", "0e6f26146d2f31b4f9916b46cb98005ec50a193ebdc4693d44c16321c7376f05", "ywLFUWxw", "marcus", "christiansen", "1945-10-31 00:41:22", 3, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("blackrabbit689", "leslie.nguyen@example.com", "b01b72f6a79161e7fa8890915359d78435d73734fea78c51a65b16f06d8042a1", "3rtyCE8t", "leslie", "nguyen", "1983-03-12 05:21:37", 1, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("redduck596", "basile.durand@example.com", "7f43acd8c3686c2141a21e1028ee26a48a682f01f1afb5f714ce896a53fe4fb5", "4DmkilGX", "basile", "durand", "1973-04-24 09:51:18", 3, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("goldenostrich853", "cíntia.freitas@example.com", "1e80d22283580e70d1726cb7920953206260a761498ca2e6c59de5cf2e96da9d", "Fc3fUjuP", "cíntia", "freitas", "1986-10-15 10:13:18", 3, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("redkoala170", "maëly.leroux@example.com", "ba6e8d6dfb6c51491b98a9146f750a4d00bba7eadfddd53b368343321b03e350", "JCOyCR2y", "maëly", "leroux", "1965-03-04 11:30:21", 0, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("blackdog129", "cesar.santos@example.com", "691467d4a9574da5e9769bd4c17481d79dc0e95515a6c37d1040bbce86a01977", "3j87Dv5Z", "cesar", "santos", "1979-10-23 17:01:30", 1, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("goldenrabbit363", "jenny.george@example.com", "9514ece385815ca1cf5ae1ebf983d5e5737afe6dfe1e631ff7a730849466e55f", "VPY4hpK5", "jenny", "george", "1964-09-18 12:54:07", 5, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("goldenbird810", "jacira.silva@example.com", "69f8cd757b783011c378a740da54533156b5dea0f2379eb4b9dc86d98cf2a7d2", "EVk5sXEU", "jacira", "silva", "1957-10-31 23:43:21", 2, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("beautifulbear736", "colin.day@example.com", "8d6acd7aafdd87021ec36f442e24f491bab632b60705f9674393f4912928527a", "YUGzVXtH", "colin", "day", "1979-07-18 07:37:25", 0, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("organicbutterfly315", "olivier.smith@example.com", "445f001a9eac38a8dd190fbe378d8bfdd582cfb1fbe7d917bb6f959077597670", "DaXZrZgx", "olivier", "smith", "1948-10-01 09:54:58", 3, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("beautifuldog122", "eduardo.koedijk@example.com", "e31611d8e6749d32e24a61164a4aad2a5daf9ec4091b13e1bc05298550c80598", "WnPMj0Ow", "eduardo", "koedijk", "1983-12-27 09:33:56", 1, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("orangefish207", "daniela.santana@example.com", "13aeb78b32b2c67b5923b2d9bd4fc3ac7d8d9d0055efe7367ab67f4f7878b62a", "7HiocjE6", "daniela", "santana", "1954-06-17 16:53:34", 2, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("bigpanda200", "janwillem.herweijer@example.com", "6cfb9150891ce4c54fa58edc5b845351fc3289073a830dcd34d5b337b00ed4ee", "rplJ5ade", "janwillem", "herweijer", "1954-05-09 10:47:14", 5, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("crazyostrich406", "romane.moreau@example.com", "c298c0e546389a4b93ff184631c74c7206a4de707995aa3ff8f8d7d7e760e3e3", "Eswrg9T4", "romane", "moreau", "1950-08-11 06:14:40", 0, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("bluesnake361", "ستایش.قاسمی@example.com", "37da4a97138395c2c9fff93fac440fbb85908fb6392d779a98be6e13a58fc777", "C8nmQJBM", "ستایش", "قاسمی", "1992-10-16 01:05:56", 5, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("silvergoose924", "german.navarro@example.com", "5b1077e50b6a5391dd900365cc819ca413908d449af3f6e9dad332a33f9624e9", "o39Skc3o", "german", "navarro", "1968-12-25 12:10:07", 5, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("beautifulfrog187", "lylou.morel@example.com", "f43b7b819ad57279d98701a6c5dade6744f2d6618c2476ec3fab66d692918d5a", "PEfk04nx", "lylou", "morel", "1956-05-24 02:51:44", 2, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("smallswan841", "ioque.mendes@example.com", "7f053ba8cc187c6779d183d3848cefec2891923568773ddf7ec68f773c975700", "gVqAZMHP", "ioque", "mendes", "1969-03-02 11:06:47", 1, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("organicelephant840", "carol.caldwell@example.com", "49357165d62d2b86e94ee02f3137fb4402c9b333073157d133e6866b620a162c", "IqR5nOsj", "carol", "caldwell", "1945-01-07 09:29:07", 5, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("bluefish753", "kelly.bryant@example.com", "951cf6d504b71c2ed97d334621ba4cba799ff3745186fbf145a74abd3f0d52f9", "VPiXPcDi", "kelly", "bryant", "1966-01-07 14:49:10", 0, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("orangeleopard922", "sebastian.schwab@example.com", "2582fc62fc1f78e56d420b17fa13f688b32c321dee854a1626fe2901a2151cc3", "7dy4pCzP", "sebastian", "schwab", "1982-11-27 23:49:06", 4, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("purplegorilla108", "olivia.perez@example.com", "7f09d5f7aaa024c93df1b066a6d466979da5a09eef1a6de01f94db159b1828d5", "ttTsKySk", "olivia", "perez", "1958-02-19 17:31:58", 0, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("greentiger422", "helienay.fogaça@example.com", "59164eb34d3da392d609f7c43e687495b22e504eb9a033552657bbbe77b58031", "qhkbpqbt", "helienay", "fogaça", "1972-05-11 08:57:59", 0, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("organicostrich740", "jonathan.wright@example.com", "bc38be198bde9fa6a764d0bcf1a7e4f2c3054ceefd7042b6e350ad9c4e7e89dc", "zYihxMyX", "jonathan", "wright", "1956-05-25 05:06:45", 4, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("whitefrog572", "gerald.bates@example.com", "8c99ba45dd0a84f4391e0cd823c5fdb1929d5cda56daaf25f66bad8dee91e9b5", "2DsTm4E5", "gerald", "bates", "1960-11-21 05:54:42", 0, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("tinypeacock700", "harriet.lewis@example.com", "fb4dc4bbeda25b816b1a7ca239905a249b112564f864a7f735cd369d9b61d6fa", "sFBEjmXi", "harriet", "lewis", "1991-07-27 17:31:21", 2, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("yellowmouse558", "lance.lawson@example.com", "a2715120cb26260563e2fa708b58a93db7bdea28a694e2841c1176c4d9fbb101", "mR3BvC8d", "lance", "lawson", "1965-05-29 11:00:08", 4, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("blacksnake212", "alexia.meunier@example.com", "a40a21e6057518a8c4a68a90ac3523209c7c366d28423d4712bde03401365419", "jNWAFPix", "alexia", "meunier", "1960-07-19 08:35:10", 1, "registered");
-INSERT INTO user (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ("bluemeercat484", "megan.tremblay@example.com", "b4ee96510bb0be50db16cebd545f0d0e294d3875d07e95d0719384a90dc0a360", "Mf2LNPo5", "megan", "tremblay", "1985-04-13 09:53:22", 0, "registered");
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('organicfrog996', 'minttu.wirta@example.com', '7aa283273ece0a83008f9068dfe4604afabb4e1ef0275609dd324f8b5cb8d2b0', 'x4IU2iqk', 'minttu', 'wirta', '1979-07-15 00:02:06', 5, 'Administrator');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('heavydog949', 'daniel.tervo@example.com', 'f4a1ac270bf18597213aa39e322eec014d593e0b96759abb61e857d62f880bbb', 'Upo7BXs2', 'daniel', 'tervo', '1975-04-27 11:53:13', 0, 'Moderator');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('organicladybug718', 'matthew.patel@example.com', '1c72699190d87d4f72a1213c755fe91e13acf4f329d88919234b7fe305cfe597', 'VAYWW3Kc', 'matthew', 'patel', '1992-01-11 22:52:09', 5, 'Moderator');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('crazyswan535', 'ryan.johnson@example.com', 'a446c152330bcfa948e9548d462aceb7a5131f3571565a163c2900a2986a918b', 'DM35f0PP', 'ryan', 'johnson', '1977-03-12 13:17:26', 2, 'Moderator');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('browngoose586', 'مهرسا.احمدی@example.com', '22380317972e16df649b8e78ac0229082f7cc76dbc3d38edf61f7547ebfa455e', 'hd3ft71F', 'مهرسا', 'احمدی', '1956-08-20 15:13:42', 1, 'Moderator');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('organicpeacock674', 'zackary.novak@example.com', '6d8d3b5c43ab29e9dedf0f3bac6f878d2fc9b649e4cabe7c8334b769630f191d', 'UciyVXG7', 'zackary', 'novak', '1960-06-26 11:00:06', 0, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('heavypeacock707', 'ilyès.fontai@example.com', '2c15e1e4ec7c48c876927a91f411c7939fba8b3fc951233af83b01614811da6d', 'ttwugDXp', 'ilyès', 'fontai', '1986-03-24 12:21:58', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('ticklishladybug778', 'alfredo.ruiz@example.com', 'd94966bf3625744889cdf7958bf6fabd939cb780c2e8fd5540640c4335349e67', 'tYDaV9wF', 'alfredo', 'ruiz', '1957-08-25 09:53:02', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('yellowfrog422', 'minervina.duarte@example.com', 'f9ed7fb1bfcd7c90e395b903aa91e6a0726468d9068ae82055d1d7c18438496f', 'rEifcJZT', 'minervina', 'duarte', '1986-07-14 10:18:01', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('whitemeercat674', 'gül.tuğluk@example.com', '2578a7b071479a8ad14189b102a9fc8f9a9c796ba592d6cc776be46d6c34c3a8', 'Mh2IgUdd', 'gül', 'tuğluk', '1973-02-03 18:11:02', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('organiccat644', 'آرمین.پارسا@example.com', '63aaf24f9d75136efb3c12fd0f4ac90c95e64b9cc1fba22c318c6c0d5b9d0f43', 'gcedISHi', 'آرمین', 'پارسا', '1975-05-16 16:42:12', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('heavyswan519', 'andrea.diez@example.com', '8d79ceb87c840a22a9eda40563dd489a4804f6d8269c4b50e4d761beabfc3f8f', 'Oy19P6bA', 'andrea', 'diez', '1945-10-29 13:41:16', 4, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bigdog714', 'milla.makinen@example.com', '1ca14145775aa4e97aedf4ab658172c7c75e7290cd4eace1e96a692fdd9853d1', '3hlOpiof', 'milla', 'makinen', '1974-06-05 17:01:22', 4, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('goldenwolf115', 'hoda.vanwijnbergen@example.com', '0603ceb2a9121deaeac3bfcdb733b168b56fe72cc0486a84668acce98caa5e2b', 'GB3adIA5', 'hoda', 'van wijnbergen', '1989-03-17 22:46:40', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('crazymeercat644', 'tyrone.hale@example.com', '50ce6843c5b2eb6dcad91b689d57683211b90fb8519e45cc5fce9dfc25fe5917', 'e49ckgl9', 'tyrone', 'hale', '1994-06-10 07:34:52', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('lazymeercat938', 'luna.meunier@example.com', '0ba2e1fcc267e5ad748f8245935ca3a718b9dec6a1cbf72c02071a0476a38575', 'GRTsVvLG', 'luna', 'meunier', '1945-05-04 23:21:27', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('tinyfish454', 'rosvita.porto@example.com', 'cb21376823fe3c6ccee2168b44947a096937135930626e7510a56f55b274c4aa', 'qqZ6FChB', 'rosvita', 'porto', '1956-12-22 23:42:04', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('ticklishbear942', 'ariën.augustijn@example.com', 'db1f5e3f93267f2916c44bb202d469328b2e4d25e588f4dc0fa2f05a4f6c28eb', 'yjfx2zkX', 'ariën', 'augustijn', '1948-11-25 20:37:37', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('ticklishleopard970', 'sedef.sezek@example.com', '0cfda81289f161d77d35b5f0591a0b5564a8d1c1006fef4fb143fb841e67ef2d', 'C372oDzc', 'sedef', 'sezek', '1987-12-20 05:15:36', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('whitepeacock946', 'phoenix.hall@example.com', '1c3e6d57053e3c53228ba333772379ed3f47c00be67719f99d305d5e81f84448', 'dypQZgXv', 'phoenix', 'hall', '1951-05-08 15:20:01', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('purplebutterfly808', 'kadir.küçükler@example.com', '07c8950168f5a7fd793f39c394a6ef5a7c1c0472fca3613814ba7598b7f57682', 'WJUSl6tG', 'kadir', 'küçükler', '1989-05-10 21:51:17', 4, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('yellowladybug263', 'bianca.rocha@example.com', '585bd94ba556b8bf36828d8454b62f90f32ce3b17fa65e5ffaa27e6d9d9a2335', 'vxgTgthf', 'bianca', 'rocha', '1995-07-11 06:00:56', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('crazypeacock272', 'akseli.lauri@example.com', '9cb5d0aee284de9e6323b928230065dc3802e26c4c9847112784c121fa1a1166', 'RgEbuGNa', 'akseli', 'lauri', '1990-06-02 17:28:08', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bigcat355', 'kate.nelson@example.com', 'ca80f23189f47703786c14538190f3b53b1870c70bb5b5be226911fe3ffc0c10', 'PTzmj4Ib', 'kate', 'nelson', '1959-02-19 17:06:07', 4, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('blueladybug226', 'vincent.henderson@example.com', '58005522c893816eea908148af0fb6ec5ac7c98e1427aa25f4a37fd8b7de9bf3', 'Iemr4GEb', 'vincent', 'henderson', '1958-03-05 23:52:17', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('reddog601', 'elli.jokela@example.com', 'bd92a492a7350818671cf9319420e26979a67faf6c280479ac1198c5958f4079', 'cxETI5zk', 'elli', 'jokela', '1969-10-17 07:54:01', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('tinypanda925', 'debra.butler@example.com', '73845e17234861d566f206733e1c818d63483f8bab1042f52168ab113e9382a9', 'tZGsjvmA', 'debra', 'butler', '1972-07-29 03:50:08', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('lazyladybug102', 'lori.elliott@example.com', '9e7cf77b69fabb411e3788dbaca75ff5309a51f2506ed42740dae8aca30a7f7e', 'ZXrPgCAy', 'lori', 'elliott', '1981-07-06 10:27:09', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('tinybird267', 'mylan.dufour@example.com', 'e0b246b46f64da71de03527f91d701a61c87630e7b90e11d4e9e2a4e3edd6006', '08FLEjlu', 'mylan', 'dufour', '1959-03-25 21:53:48', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('whitebird943', 'rodney.willis@example.com', 'c000594e586a6528382b1a46b2f328f6b80206c2cb6054d7eb0caf5c294ae640', 'LnL4JWQs', 'rodney', 'willis', '1964-01-04 03:28:24', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('whitecat884', 'layla.castillo@example.com', 'fe1898bf3e1b1860ee773da0947fedc8aeaa55122a90a57efe9e8b94827407dd', 'TaRQmUeN', 'layla', 'castillo', '1967-12-07 11:37:53', 0, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('purplefrog208', 'caitlin.reynolds@example.com', 'b8a03bebd70c8e50487d63fafc38f590e494a7065dd85c162982fa9433f1a821', '9Sm0fL3x', 'caitlin', 'reynolds', '1954-02-23 00:41:03', 4, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('tinyladybug413', 'amelia.davis@example.com', 'ffa828f6de853426447434329bfd4dfa2691f827927e60971ee596abb554711b', 'aJ8lc7L7', 'amelia', 'davis', '1964-06-09 13:29:23', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('purplewolf735', 'riley.hall@example.com', '40d72b9c4dba551a3c1191ae5a16bf7ecb21a01cae38af6c0b98da30e95f8d4d', 'QkZ4Rzyp', 'riley', 'hall', '1947-03-21 10:05:20', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('beautifulkoala331', 'ella.fowler@example.com', '55fbf0e00e8e6f1b10774b7c1eca96fb617179bb671339d32fdf28cc95ac3d76', 'nG4CVi0Y', 'ella', 'fowler', '1979-09-30 14:15:03', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bluesnake145', 'ömür.biçer@example.com', '3bab854020e4fabfc4b79de8c96d49a436c3ce39794b876966d7e6841c806592', 'QIa98np0', 'ömür', 'biçer', '1974-07-19 15:16:11', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('smallmouse753', 'ryder.macdonald@example.com', '2a0999328956d6cfd1b469b817e015cd951ff0ae787cfa64e05f58df305c63ca', 'eGrK6lmd', 'ryder', 'macdonald', '1971-09-02 12:45:03', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('beautifulleopard308', 'genesis.patterson@example.com', 'c1671bae922e8892eef89615166a808e486185c38f5befdc61f23202c7617b05', 'n7m8Gtxr', 'genesis', 'patterson', '1974-04-16 18:08:05', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('greenmouse842', 'baptiste.noel@example.com', 'a103ecb462fc637c1a67964b82075d5c4ae17a1ffbec09dda489fe4c528f48b3', 'FOAmRykF', 'baptiste', 'noel', '1961-06-06 15:38:38', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('brownkoala706', 'sienna.robinson@example.com', '6b62d46caae936a5e86ac6d58c9a0707994c8bb2635ccd68734f7e3e8b62a91b', 'SiOgCKfd', 'sienna', 'robinson', '1952-09-15 16:32:05', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('smallkoala276', 'luca.lee@example.com', '1b9decf74a6131db76ae27f45a9ee7529d76b486eb09b6d88837ec3859f50ddd', 'rsE7g4Ux', 'luca', 'lee', '1990-06-24 17:57:16', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('reddog627', 'ماهان.علیزاده@example.com', '778ff07e0cb734416f86b1e3f1a26366733757d7bea194ab5563ff9e8fcec9c2', 'c1bUde1X', 'ماهان', 'علیزاده', '1986-01-20 00:54:53', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('blackrabbit665', 'lyna.francois@example.com', '27e500fef9fcf9880961b1f4f08698254cec46ab9745c9fd326556342a60adc5', 'YKDHXqyX', 'lyna', 'francois', '1951-03-22 09:32:49', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('heavyfrog529', 'simon.møller@example.com', '55932428361db33c2942efe339d5640c696d208327f929c8011f87806f0a588e', 'Udlxo6hH', 'simon', 'møller', '1971-10-22 04:57:04', 4, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('browndog206', 'nina.li@example.com', '429fc090ee2d9509c1b61c383adeeb3c6d926793a0e406cc5676aa10f131ee02', 'OauXJd8a', 'nina', 'li', '1986-07-25 10:51:01', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bluewolf579', 'tobias.nielsen@example.com', 'bfd39764436891fae30654a7b7e062ee7ed45f57ed37ab3a1d4499d49692d2af', 'XQ1NYj0n', 'tobias', 'nielsen', '1993-03-19 17:32:07', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('redmouse561', 'sadie.moore@example.com', '34f4f8396ae93051de87ff8311aee48ecec41e9edb571b079661519cad5fb527', 'C0exG9lY', 'sadie', 'moore', '1995-06-10 06:49:43', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('heavydog358', 'okan.keseroğlu@example.com', '1ab501cfd3fc1bd2caf1cb994b47ba7b3ba836948c31faaade36a78494aa40e1', 'wOsMk8qr', 'okan', 'keseroğlu', '1976-02-29 20:41:47', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('yellowfish862', 'selma.nielsen@example.com', '0b2798794d368761a983c28b598d9550a22fecefaf0e9cb46779e2c73bc1ef86', '9EDzqb3p', 'selma', 'nielsen', '1961-06-18 04:15:55', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bigmeercat917', 'valentin.hernandez@example.com', '5a6ccc96f4eb37c2c71e96c5247f20d1161fdaafbedd8a880339baebfdde0495', 'jVKoWexf', 'valentin', 'hernandez', '1952-10-26 09:47:11', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('whitepeacock657', 'celia.prieto@example.com', 'd195aed0afb8162da2b0a2cd900169fe8adfdc2c1432a87c7a9a9c5bacff1fa2', 's8K4jQqP', 'celia', 'prieto', '1995-03-15 06:19:27', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('orangegorilla475', 'sophie.fowler@example.com', '5d4a548a6080d7f5528ba725888843f1b2436c1dc403a96eb347b3860de46484', '6x0ZCWY5', 'sophie', 'fowler', '1988-12-13 12:39:58', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('ticklishgoose631', 'colin.larson@example.com', 'e89b186180d0ec36f652899db0ba93b33ea8e3c1cd00257e8c84bd19027dac44', 'NO9PBCtB', 'colin', 'larson', '1962-11-07 05:04:22', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('blackduck757', 'francisco.rojas@example.com', '365440300c83452984f6da618acb0ce1de9765fc4589cac6e7c05d1033442ed7', 'I9FKmfaf', 'francisco', 'rojas', '1947-07-14 09:14:51', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('orangeostrich826', 'jonas.schenk@example.com', '3a57162a3a5b89dc9c2002943740d33b95a33286b41bc46acf5fa01f10a192f8', 'KKz2E7Vc', 'jonas', 'schenk', '1978-11-28 05:41:32', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bigbird714', 'milo.daluz@example.com', '786a143fb2813586b9396e01cd379222f4c970d0ef86007a529ff6410079c79e', 'Xdm9IE5e', 'milo', 'da luz', '1963-12-18 11:28:58', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('browntiger620', 'mildred.hill@example.com', '78cd72f8de60744fc9584deee07314260a9a0c5228d62db251ee26f6d3dae2e6', 'lLZPP2Qx', 'mildred', 'hill', '1963-09-30 02:20:32', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('smallfrog577', 'annika.fricke@example.com', 'cf92280f5bdf539598eb20990f5d8cb1852a68ed37c8bba53db5bfb84ca4395b', 'IDcHQUdQ', 'annika', 'fricke', '1962-05-15 18:38:41', 0, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('purplesnake938', 'stella.siebert@example.com', '6750e46055637663558e39285a82feecbb3c7a7048d11de6396b79555740ae58', '3SxhCvJu', 'stella', 'siebert', '1986-05-29 09:24:03', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('beautifulpeacock237', 'arnold.nichols@example.com', 'b91d7de3e5623e5bf4e9f3ac6803a3e367ee3637b156a1b6aa637cb6f5085f4d', 'IZTY3V4D', 'arnold', 'nichols', '1976-10-17 06:05:42', 0, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('yellowelephant613', 'suzane.monteiro@example.com', '8e08dfcdc29aa06cc55e50288bdc06028200fb613a8765fc556ee4ed777b788f', 'JjhCWVMw', 'suzane', 'monteiro', '1956-10-07 19:17:30', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('goldenmouse335', 'jeanne.roussel@example.com', 'd1f3c8d9e715ca7ed8ee32440c8fa3922e2435f55263eb82a60076983eb3e3ec', 'HUe83Mwr', 'jeanne', 'roussel', '1974-09-23 15:22:58', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('lazyleopard137', 'sven.dietz@example.com', 'eb04e958e29f23b8cd68aa3a389d5f144791939e8e66184adb7a04bb54620602', '6UMYn7Wc', 'sven', 'dietz', '1970-01-03 17:19:52', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('lazyswan374', 'esma.kaplangı@example.com', 'ac3d56de01f9ff6ec8b5adcc1111dd53e18eb4752d449e0e43b94b595d5acc02', 'riOPFntt', 'esma', 'kaplangı', '1986-02-25 06:57:09', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('purpledog852', 'alfred.ward@example.com', 'e81272fb3a3f87ac54337b2923e44c5a11627cafb3c4727ec97bc331154029c9', '4ZLVD34Q', 'alfred', 'ward', '1988-07-09 07:23:53', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('blacksnake478', 'هلیا.کامروا@example.com', '99b353b863c5349d08f64ef4435b2f150d88aae3e7cc1bd36f1cef8c99b7f193', 'n6xneiCw', 'هلیا', 'کامروا', '1978-05-23 02:58:32', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('greentiger628', 'paul.rodriguez@example.com', '7b04a3f486c6654dd4db63fbc11e26dfe161a49d7d1cb99af42fedfe25407c22', 'My94f7aK', 'paul', 'rodriguez', '1983-08-21 06:06:37', 0, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('tinysnake452', 'charles.graves@example.com', 'c8b6441d7363c98a7e39ec093f9e16409c65779710ed0e4cf8af5281bfb5db58', 'UUPFFTFh', 'charles', 'graves', '1974-07-19 21:46:02', 0, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('greengorilla706', 'fernando.cano@example.com', '0744a1f00b4045850143f191af1212b1a8673856363b53550e0509450398a763', 'dplLp0E1', 'fernando', 'cano', '1969-11-28 05:23:41', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('lazyostrich522', 'javier.hansen@example.com', '8b65087797dcb3e9744681beb1a3240472f660a8cf780cea12f94489c2437ff0', 'Lm1uILaw', 'javier', 'hansen', '1967-09-30 13:43:42', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bigdog941', 'maëly.rousseau@example.com', '9297e4f5e48161c041522d850ca15b37be5c7de7d7195abfdf9c596f56ebb024', 'Z2R8Oaeo', 'maëly', 'rousseau', '1973-04-07 07:20:24', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('purplefrog656', 'macit.yeşilkaya@example.com', 'f22810262be966d874f832cdbcd19baadf7f09b5497a1b3898c3473e0af9c16b', 'kT5G7eds', 'macit', 'yeşilkaya', '1945-04-03 19:55:24', 4, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('yellowmeercat477', 'felicia.scott@example.com', '4dedcc7485030edf562c559c11a73f9e84762640db5d6ff7d19308215f74a1e5', 'gAEFimxB', 'felicia', 'scott', '1989-12-29 18:05:00', 4, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('beautifulfrog475', 'enrique.torres@example.com', '0f3780832092ed98b06eb85eeeab5654a8072dd75272eff06d7ab144b8141298', 'vZ62l7m9', 'enrique', 'torres', '1948-04-12 19:38:10', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('purpletiger568', 'nalan.koç@example.com', 'c566449580b4a05c3f5dd7a54d473153fc4f3859ede15f613263767dd6e19413', 'C0eDrEB7', 'nalan', 'koç', '1968-09-11 22:51:20', 0, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('heavylion110', 'ines.soto@example.com', 'ab0e391f51c0354ac15ca9690f2fd0453f53b3c9c8a4d5ac0aee6a676850a24b', 'vtuBwysY', 'ines', 'soto', '1991-04-20 02:01:20', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('redpanda269', 'joscha.schröter@example.com', '64b3538a5f56d92b7a221437ad4ed95eb4f9fff6529eca9fdb70e3ff39146714', 'w3gCHpMN', 'joscha', 'schröter', '1953-11-24 06:44:31', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('blackrabbit217', 'arthur.johnson@example.com', 'dcbab6c264e1b21d529e126896cd0f985b817c80691fc43f5dfc13128211a66e', 'jorTU5SF', 'arthur', 'johnson', '1980-06-13 12:32:42', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('beautifultiger726', 'kaitlin.stevens@example.com', '4623f95fff5620b810fd06021be8c46f2565399ef148a0d116c8d7653129799d', '1QOUH9Zf', 'kaitlin', 'stevens', '1964-05-04 18:19:22', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('tinywolf671', 'پارسا.کریمی@example.com', '20c76520e50262e999e2a47ad57880cc509eeeef361b60fd4961e32bfe5e1f19', '7Jbtdqtw', 'پارسا', 'کریمی', '1973-04-10 22:30:43', 4, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('tinygorilla880', 'baptiste.noel@example.com', '2d6217a044f8395cdd200a9d9d5c994e5d5220f6b3e3efcda73337c838b05820', 'URa5gu8w', 'baptiste', 'noel', '1973-01-30 06:46:17', 4, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('silverdog230', 'mathilde.dubois@example.com', 'cd5066d955f0184cff75085ed8fc4376ea09ffa63e8723ff68dfaf84648f03b5', 'VCVvwU0Z', 'mathilde', 'dubois', '1966-05-07 10:00:19', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('tinybutterfly710', 'emilie.johnson@example.com', '6b081237c0129d6dcc8409338cb2d7332f06e9988ff8bb0370bd3d88f31a339d', 'WQ8gmbyi', 'emilie', 'johnson', '1969-12-10 17:49:45', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('redwolf170', 'noah.chevalier@example.com', 'e618bb21c5b45cf8a4dd22d8e16882883dff3a71601e3c2256d3ad6a092aef88', 'kIhlGSS4', 'noah', 'chevalier', '1991-02-10 09:22:50', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('heavyostrich281', 'ronja.kumpula@example.com', 'a6ae0898517ec0d7dd70ecec0dc35d6bdd656f9ae455adb31205c0a934e0a99b', 'WhS4c1k8', 'ronja', 'kumpula', '1976-05-19 01:23:34', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('yellowkoala961', 'amy.andrews@example.com', 'edcf5f5fb8e13462f8f1b4935d400c61fd4b1881a43bde00487c7ed43b6a5542', '8LkcodwL', 'amy', 'andrews', '1962-04-12 03:24:47', 0, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('crazybird934', 'consuelo.nieto@example.com', '0057aded21d2d5635965330053dd6253916a638f67f7550abf6505537e6e132b', 'wqr2nwxG', 'consuelo', 'nieto', '1956-11-23 20:00:45', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('yellowrabbit955', 'hazel.williams@example.com', '8ff3576b690d81f9219a30cf05977c2d5390cf8e2b0199ae996bb2c5ed79b1b3', 'SaZBXjaJ', 'hazel', 'williams', '1963-09-29 07:50:27', 4, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('purpleladybug158', 'sátiro.lima@example.com', '6361464352e7d23692b021ea1a5aa2e2d1be3fc5fa0699c608d4c002deb33ff1', 'yT03zGUh', 'sátiro', 'lima', '1949-08-02 06:38:47', 4, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bigdog414', 'julian.henderson@example.com', 'd9abfe27151b89062421c503b9ee63bbb3075fd66f68e9b70d0944e4d24878d6', 'v4fSRyTd', 'julian', 'henderson', '1968-08-06 07:49:48', 4, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('whitebutterfly912', 'sebastian.madsen@example.com', '9586b6226166657255039a90a14e615d646c57a286403ae6ed47ce5ded850f01', 'AnemFwMH', 'sebastian', 'madsen', '1950-09-19 11:51:09', 0, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('heavygoose548', 'sophia.stewart@example.com', '6a29b76395bf5275c0031aaf32a891389f78413522e7540cfb200db9e229814d', 'mF3aOSRD', 'sophia', 'stewart', '1957-01-25 19:17:37', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('tinywolf132', 'lino.almeida@example.com', 'e69382fd1d795cb1a9d326ab050cab6d6ba8c46047a9ee5d5875ffdac117935f', 'MJCiuzQF', 'lino', 'almeida', '1966-03-30 20:24:02', 0, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('orangebear143', 'braxton.chen@example.com', '58ac84f3aad937050a5977045e8ba28ebf7a57e9805a782a4c3eba51d5f4ecd1', 'skVlbubj', 'braxton', 'chen', '1981-01-18 08:17:40', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bigswan807', 'anton.manner@example.com', 'c46547fd8a06852c01b2947231ffd3f0c695da211f81510106613cfb16ab79e0', 'ZywbXUEf', 'anton', 'manner', '1957-05-24 19:23:43', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('smallduck590', 'baptiste.morel@example.com', '06da737227ead7b0685d4120ba7b0fa9cea349d688edf24cae039c2090d567b8', 'EPkdWaY2', 'baptiste', 'morel', '1978-07-06 17:47:49', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('lazyleopard158', 'maria.calvo@example.com', 'f00d2d18e463b168de205a082236e232b819c93e37e10d458e585485264d4cbb', 'CK6DsdgW', 'maria', 'calvo', '1947-06-10 20:46:20', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('yellowdog252', 'laura.langer@example.com', '52b2749d0e369ada473b56add982e36ded699b4f0eb33fdaecf05bcdcb89eb19', 'L7x5h0ZZ', 'laura', 'langer', '1988-11-11 22:22:07', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('smallmeercat731', 'okan.adal@example.com', 'ae2df3c9b140c92ba038f1922341fb11d2c98abc5c975ffe135489ceb7b68107', 'twnaSHoi', 'okan', 'adal', '1960-09-07 06:37:12', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bigrabbit487', 'andy.cook@example.com', '77a2afe3ca6ca64c8c38fb1a1e87d7f7730626a81ad52c3eb741fdd693bc6f68', 'Q8gHfjTt', 'andy', 'cook', '1958-08-07 15:39:26', 5, 'Registered');
 
-INSERT INTO topic (admin_id, topicname, description) VALUES (0, "programming", "for programmers, just like you.");
-INSERT INTO topic (admin_id, topicname, description) VALUES (0, "mathematics", "for people studying math at any level.");
-INSERT INTO topic (admin_id, topicname, description) VALUES (0, "aviation", "for aircraft pilots, mechanics and enthusiasts.");
+INSERT INTO topic (admin_id, topicname, description) VALUES (0, 'programming', 'for programmers, just like you.');
+INSERT INTO topic (admin_id, topicname, description) VALUES (0, 'mathematics', 'for people studying math at any level.');
+INSERT INTO topic (admin_id, topicname, description) VALUES (0, 'aviation', 'for aircraft pilots, mechanics and enthusiasts.');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 17445, 11344);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (1, 26, "&lt;p&gt;Here is a piece of C++ code that seems very peculiar. For some strange reason, sorting the data miraculously makes the code almost six times faster.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 17448, 1414);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (1, 79, '&lt;p&gt;Here is a piece of C++ code that seems very peculiar. For some strange reason, sorting the data miraculously makes the code almost six times faster.&lt;/p&gt;
 
 &lt;pre class=&quot;lang-cpp prettyprint-override&quot;&gt;&lt;code&gt;#include &amp;lt;algorithm&amp;gt;
 #include &amp;lt;ctime&amp;gt;
@@ -210,38 +210,40 @@ public class Main
 &lt;li&gt;Why is a sorted array faster to process than an unsorted array?&lt;/li&gt;
 &lt;li&gt;The code is summing up some independent terms, and the order should not matter.&lt;/li&gt;
 &lt;/ul&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (1, 1, "Why is it faster to process a sorted array than an unsorted array?");
-INSERT INTO tag (text) VALUES ("java");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (1, 1, 'Why is it faster to process a sorted array than an unsorted array?');
+INSERT INTO activity (post_id, user_id, action) VALUES (1, 79, 'Create');
+INSERT INTO tag (text) VALUES ('java');
 INSERT INTO questiontag (question_id, tag_id) VALUES (1, 1);
-INSERT INTO tag (text) VALUES ("c++");
+INSERT INTO tag (text) VALUES ('c++');
 INSERT INTO questiontag (question_id, tag_id) VALUES (1, 2);
-INSERT INTO tag (text) VALUES ("performance");
+INSERT INTO tag (text) VALUES ('performance');
 INSERT INTO questiontag (question_id, tag_id) VALUES (1, 3);
-INSERT INTO tag (text) VALUES ("optimization");
+INSERT INTO tag (text) VALUES ('optimization');
 INSERT INTO questiontag (question_id, tag_id) VALUES (1, 4);
-INSERT INTO tag (text) VALUES ("branch-prediction");
+INSERT INTO tag (text) VALUES ('branch-prediction');
 INSERT INTO questiontag (question_id, tag_id) VALUES (1, 5);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 13551, 6228);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (2, 97, "&lt;p&gt;I committed the wrong files to &lt;a href=&quot;https://git-scm.com&quot; rel=&quot;noreferrer&quot;&gt;Git&lt;/a&gt;.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 13553, 1535);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (2, 90, '&lt;p&gt;I committed the wrong files to &lt;a href=&quot;https://git-scm.com&quot; rel=&quot;noreferrer&quot;&gt;Git&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;How can I undo that commit?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (2, 1, "How to undo last commit(s) in Git?");
-INSERT INTO tag (text) VALUES ("git");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (2, 1, 'How to undo last commit(s) in Git?');
+INSERT INTO activity (post_id, user_id, action) VALUES (2, 90, 'Create');
+INSERT INTO tag (text) VALUES ('git');
 INSERT INTO questiontag (question_id, tag_id) VALUES (2, 6);
-INSERT INTO tag (text) VALUES ("git-rebase");
+INSERT INTO tag (text) VALUES ('git-rebase');
 INSERT INTO questiontag (question_id, tag_id) VALUES (2, 7);
-INSERT INTO tag (text) VALUES ("git-commit");
+INSERT INTO tag (text) VALUES ('git-commit');
 INSERT INTO questiontag (question_id, tag_id) VALUES (2, 8);
-INSERT INTO tag (text) VALUES ("git-reset");
+INSERT INTO tag (text) VALUES ('git-reset');
 INSERT INTO questiontag (question_id, tag_id) VALUES (2, 9);
-INSERT INTO tag (text) VALUES ("git-revert");
+INSERT INTO tag (text) VALUES ('git-revert');
 INSERT INTO questiontag (question_id, tag_id) VALUES (2, 10);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 9920, 4208);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (3, 65, "&lt;p&gt;I want to delete a branch both locally and on my remote project fork on &lt;a href=&quot;http://en.wikipedia.org/wiki/GitHub&quot; rel=&quot;noreferrer&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 9922, 5900);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (3, 36, '&lt;p&gt;I want to delete a branch both locally and on my remote project fork on &lt;a href=&quot;http://en.wikipedia.org/wiki/GitHub&quot; rel=&quot;noreferrer&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3&gt;Failed Attempts to Delete Remote Branch&lt;/h3&gt;
 
@@ -265,16 +267,17 @@ Already up-to-date.
 
 &lt;p&gt;What do I need to do differently to successfully delete the
 &lt;code&gt;remotes/origin/bugfix&lt;/code&gt; branch both locally and on GitHub?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (3, 1, "How to delete a Git branch both locally and remotely?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (3, 1, 'How to delete a Git branch both locally and remotely?');
+INSERT INTO activity (post_id, user_id, action) VALUES (3, 36, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (3, 6);
-INSERT INTO tag (text) VALUES ("git-branch");
+INSERT INTO tag (text) VALUES ('git-branch');
 INSERT INTO questiontag (question_id, tag_id) VALUES (3, 11);
-INSERT INTO tag (text) VALUES ("git-remote");
+INSERT INTO tag (text) VALUES ('git-remote');
 INSERT INTO questiontag (question_id, tag_id) VALUES (3, 12);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("deleted", 7719, 6003);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (4, 13, "&lt;p&gt;I&#x27;ve been messing around with &lt;a href=&quot;http://en.wikipedia.org/wiki/JSON&quot; rel=&quot;noreferrer&quot;&gt;JSON&lt;/a&gt; for some time, just pushing it out as text and it hasn&#x27;t hurt anybody (that I know of), but I&#x27;d like to start doing things properly.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 7719, 3167);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (4, 35, '&lt;p&gt;I&#x27;ve been messing around with &lt;a href=&quot;http://en.wikipedia.org/wiki/JSON&quot; rel=&quot;noreferrer&quot;&gt;JSON&lt;/a&gt; for some time, just pushing it out as text and it hasn&#x27;t hurt anybody (that I know of), but I&#x27;d like to start doing things properly.&lt;/p&gt;
 
 &lt;p&gt;I have seen &lt;em&gt;so&lt;/em&gt; many purported &quot;standards&quot; for the JSON content type:&lt;/p&gt;
 
@@ -288,51 +291,55 @@ text/x-json
 &lt;p&gt;But which is correct, or best? I gather that there are security and browser support issues varying between them.&lt;/p&gt;
 
 &lt;p&gt;I know there&#x27;s a similar question, &lt;em&gt;&lt;a href=&quot;http://stackoverflow.com/questions/404470/what-mime-type-if-json-is-being-returned-by-a-rest-api&quot;&gt;What MIME type if JSON is being returned by a REST API?&lt;/a&gt;&lt;/em&gt;, but I&#x27;d like a slightly more targeted answer.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (4, 1, "What is the correct JSON content type?");
-INSERT INTO tag (text) VALUES ("json");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (4, 1, 'What is the correct JSON content type?');
+INSERT INTO activity (post_id, user_id, action) VALUES (4, 35, 'Create');
+INSERT INTO tag (text) VALUES ('json');
 INSERT INTO questiontag (question_id, tag_id) VALUES (4, 13);
-INSERT INTO tag (text) VALUES ("content-type");
+INSERT INTO tag (text) VALUES ('content-type');
 INSERT INTO questiontag (question_id, tag_id) VALUES (4, 14);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 7687, 685);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (5, 26, "&lt;p&gt;I wrote the wrong thing in a commit message. Alternatively, I&#x27;ve forgotten to include some files.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 7687, 6912);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (5, 31, '&lt;p&gt;I wrote the wrong thing in a commit message. Alternatively, I&#x27;ve forgotten to include some files.&lt;/p&gt;
 
 &lt;p&gt;How can I change the commit message/files? The commit has not been pushed yet.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (5, 1, "How to modify existing, unpushed commits?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (5, 1, 'How to modify existing, unpushed commits?');
+INSERT INTO activity (post_id, user_id, action) VALUES (5, 31, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (5, 6);
 INSERT INTO questiontag (question_id, tag_id) VALUES (5, 8);
-INSERT INTO tag (text) VALUES ("git-rewrite-history");
+INSERT INTO tag (text) VALUES ('git-rewrite-history');
 INSERT INTO questiontag (question_id, tag_id) VALUES (5, 15);
-INSERT INTO tag (text) VALUES ("amend");
+INSERT INTO tag (text) VALUES ('amend');
 INSERT INTO questiontag (question_id, tag_id) VALUES (5, 16);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 7580, 2543);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (6, 41, "&lt;p&gt;What are the differences between &lt;code&gt;git pull&lt;/code&gt; and &lt;code&gt;git fetch&lt;/code&gt;?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (6, 1, "What is the difference between &#39;git pull&#39; and &#39;git fetch&#39;?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 7581, 4592);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (6, 79, '&lt;p&gt;What are the differences between &lt;code&gt;git pull&lt;/code&gt; and &lt;code&gt;git fetch&lt;/code&gt;?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (6, 1, 'What is the difference between &#39;git pull&#39; and &#39;git fetch&#39;?');
+INSERT INTO activity (post_id, user_id, action) VALUES (6, 79, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (6, 6);
-INSERT INTO tag (text) VALUES ("git-pull");
+INSERT INTO tag (text) VALUES ('git-pull');
 INSERT INTO questiontag (question_id, tag_id) VALUES (6, 17);
-INSERT INTO tag (text) VALUES ("git-fetch");
+INSERT INTO tag (text) VALUES ('git-fetch');
 INSERT INTO questiontag (question_id, tag_id) VALUES (6, 18);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 7320, 4646);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (7, 78, "&lt;p&gt;How would you explain JavaScript closures to someone with a knowledge of the concepts they consist of (for example functions, variables and the like), but does not understand closures themselves?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 7324, 5744);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (7, 68, '&lt;p&gt;How would you explain JavaScript closures to someone with a knowledge of the concepts they consist of (for example functions, variables and the like), but does not understand closures themselves?&lt;/p&gt;
 
 &lt;p&gt;I have seen &lt;a href=&quot;http://en.wikipedia.org/wiki/Scheme_%28programming_language%29&quot; rel=&quot;noreferrer&quot;&gt;the Scheme example&lt;/a&gt; given on Wikipedia, but unfortunately it did not help.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (7, 1, "How do JavaScript closures work?");
-INSERT INTO tag (text) VALUES ("javascript");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (7, 1, 'How do JavaScript closures work?');
+INSERT INTO activity (post_id, user_id, action) VALUES (7, 68, 'Create');
+INSERT INTO tag (text) VALUES ('javascript');
 INSERT INTO questiontag (question_id, tag_id) VALUES (7, 19);
-INSERT INTO tag (text) VALUES ("scope");
+INSERT INTO tag (text) VALUES ('scope');
 INSERT INTO questiontag (question_id, tag_id) VALUES (7, 20);
-INSERT INTO tag (text) VALUES ("closures");
+INSERT INTO tag (text) VALUES ('closures');
 INSERT INTO questiontag (question_id, tag_id) VALUES (7, 21);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 6352, 2745);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (8, 20, "&lt;p&gt;After reading &lt;a href=&quot;http://groups.google.com/group/comp.lang.c++.moderated/msg/33f173780d58dd20&quot; rel=&quot;noreferrer&quot;&gt;Hidden Features and Dark Corners of C++/STL&lt;/a&gt; on &lt;code&gt;comp.lang.c++.moderated&lt;/code&gt;, I was completely surprised that the following snippet compiled and worked in both Visual Studio 2008 and G++ 4.4.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 6352, 1680);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (8, 34, '&lt;p&gt;After reading &lt;a href=&quot;http://groups.google.com/group/comp.lang.c++.moderated/msg/33f173780d58dd20&quot; rel=&quot;noreferrer&quot;&gt;Hidden Features and Dark Corners of C++/STL&lt;/a&gt; on &lt;code&gt;comp.lang.c++.moderated&lt;/code&gt;, I was completely surprised that the following snippet compiled and worked in both Visual Studio 2008 and G++ 4.4.&lt;/p&gt;
 
 &lt;p&gt;Here&#x27;s the code:&lt;/p&gt;
 
@@ -348,28 +355,30 @@ int main()
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;I&#x27;d assume this is C, since it works in GCC as well. Where is this defined in the standard, and where has it come from?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (8, 1, "What is the &quot;--&gt;&quot; operator in C++?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (8, 1, 'What is the &quot;--&gt;&quot; operator in C++?');
+INSERT INTO activity (post_id, user_id, action) VALUES (8, 34, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (8, 2);
-INSERT INTO tag (text) VALUES ("operators");
+INSERT INTO tag (text) VALUES ('operators');
 INSERT INTO questiontag (question_id, tag_id) VALUES (8, 22);
-INSERT INTO tag (text) VALUES ("code-formatting");
+INSERT INTO tag (text) VALUES ('code-formatting');
 INSERT INTO questiontag (question_id, tag_id) VALUES (8, 23);
-INSERT INTO tag (text) VALUES ("standards-compliance");
+INSERT INTO tag (text) VALUES ('standards-compliance');
 INSERT INTO questiontag (question_id, tag_id) VALUES (8, 24);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 6278, 5675);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (9, 59, "&lt;p&gt;How can I redirect the user from one page to another using javascript or jQuery?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (9, 1, "How to redirect to another webpage in JavaScript/jQuery?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 6281, 3884);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (9, 34, '&lt;p&gt;How can I redirect the user from one page to another using javascript or jQuery?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (9, 1, 'How to redirect to another webpage in JavaScript/jQuery?');
+INSERT INTO activity (post_id, user_id, action) VALUES (9, 34, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (9, 19);
-INSERT INTO tag (text) VALUES ("jquery");
+INSERT INTO tag (text) VALUES ('jquery');
 INSERT INTO questiontag (question_id, tag_id) VALUES (9, 25);
-INSERT INTO tag (text) VALUES ("redirect");
+INSERT INTO tag (text) VALUES ('redirect');
 INSERT INTO questiontag (question_id, tag_id) VALUES (9, 26);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 6172, 2639);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (10, 85, "&lt;p&gt;What is the use of the &lt;code&gt;yield&lt;/code&gt; keyword in Python? What does it do?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 6172, 4767);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (10, 32, '&lt;p&gt;What is the use of the &lt;code&gt;yield&lt;/code&gt; keyword in Python? What does it do?&lt;/p&gt;
 
 &lt;p&gt;For example, I&#x27;m trying to understand this code&lt;sup&gt;&lt;strong&gt;1&lt;/strong&gt;&lt;/sup&gt;:&lt;/p&gt;
 
@@ -399,33 +408,35 @@ Is a list returned? A single element? Is it called again? When will subsequent c
 
 &lt;p&gt;&lt;sub&gt;
 1. The code comes from Jochen Schulz (jrschulz), who made a great Python library for metric spaces. This is the link to the complete source: &lt;a href=&quot;http://well-adjusted.de/~jrschulz/mspace/&quot; rel=&quot;noreferrer&quot;&gt;Module mspace&lt;/a&gt;.&lt;/sub&gt;&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (10, 1, "What does the &quot;yield&quot; keyword do in Python?");
-INSERT INTO tag (text) VALUES ("python");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (10, 1, 'What does the &quot;yield&quot; keyword do in Python?');
+INSERT INTO activity (post_id, user_id, action) VALUES (10, 32, 'Create');
+INSERT INTO tag (text) VALUES ('python');
 INSERT INTO questiontag (question_id, tag_id) VALUES (10, 27);
-INSERT INTO tag (text) VALUES ("iterator");
+INSERT INTO tag (text) VALUES ('iterator');
 INSERT INTO questiontag (question_id, tag_id) VALUES (10, 28);
-INSERT INTO tag (text) VALUES ("generator");
+INSERT INTO tag (text) VALUES ('generator');
 INSERT INTO questiontag (question_id, tag_id) VALUES (10, 29);
-INSERT INTO tag (text) VALUES ("yield");
+INSERT INTO tag (text) VALUES ('yield');
 INSERT INTO questiontag (question_id, tag_id) VALUES (10, 30);
-INSERT INTO tag (text) VALUES ("coroutine");
+INSERT INTO tag (text) VALUES ('coroutine');
 INSERT INTO questiontag (question_id, tag_id) VALUES (10, 31);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 5865, 3078);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (11, 66, "&lt;p&gt;Usually I would expect a &lt;code&gt;String.contains()&lt;/code&gt; method but there doesn&#x27;t seem to be one. What is a reasonable way to check for this?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (11, 1, "How to check whether a string contains a substring in JavaScript?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5865, 5606);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (11, 86, '&lt;p&gt;Usually I would expect a &lt;code&gt;String.contains()&lt;/code&gt; method but there doesn&#x27;t seem to be one. What is a reasonable way to check for this?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (11, 1, 'How to check whether a string contains a substring in JavaScript?');
+INSERT INTO activity (post_id, user_id, action) VALUES (11, 86, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (11, 19);
-INSERT INTO tag (text) VALUES ("string");
+INSERT INTO tag (text) VALUES ('string');
 INSERT INTO questiontag (question_id, tag_id) VALUES (11, 32);
-INSERT INTO tag (text) VALUES ("substring");
+INSERT INTO tag (text) VALUES ('substring');
 INSERT INTO questiontag (question_id, tag_id) VALUES (11, 33);
-INSERT INTO tag (text) VALUES ("string-matching");
+INSERT INTO tag (text) VALUES ('string-matching');
 INSERT INTO questiontag (question_id, tag_id) VALUES (11, 34);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 5846, 4097);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (12, 51, "&lt;p&gt;Programming language books explain that value types are created on the stack, and reference types are created on the heap, without explaining what these two things are. I haven&#x27;t read a clear explanation of this.  I understand what &lt;em&gt;a stack&lt;/em&gt; is, but where and what are they (physically in a real computer&#x27;s memory)?  &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5848, 5421);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (12, 58, '&lt;p&gt;Programming language books explain that value types are created on the stack, and reference types are created on the heap, without explaining what these two things are. I haven&#x27;t read a clear explanation of this.  I understand what &lt;em&gt;a stack&lt;/em&gt; is, but where and what are they (physically in a real computer&#x27;s memory)?  &lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;To what extent are they controlled by the OS or language runtime?&lt;/li&gt;
@@ -433,34 +444,36 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (12, 51, "&lt;p&
 &lt;li&gt;What determines the size of each of them?&lt;/li&gt;
 &lt;li&gt;What makes one faster? &lt;/li&gt;
 &lt;/ul&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (12, 1, "What and where are the stack and heap?");
-INSERT INTO tag (text) VALUES ("memory-management");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (12, 1, 'What and where are the stack and heap?');
+INSERT INTO activity (post_id, user_id, action) VALUES (12, 58, 'Create');
+INSERT INTO tag (text) VALUES ('memory-management');
 INSERT INTO questiontag (question_id, tag_id) VALUES (12, 35);
-INSERT INTO tag (text) VALUES ("language-agnostic");
+INSERT INTO tag (text) VALUES ('language-agnostic');
 INSERT INTO questiontag (question_id, tag_id) VALUES (12, 36);
-INSERT INTO tag (text) VALUES ("stack");
+INSERT INTO tag (text) VALUES ('stack');
 INSERT INTO questiontag (question_id, tag_id) VALUES (12, 37);
-INSERT INTO tag (text) VALUES ("heap");
+INSERT INTO tag (text) VALUES ('heap');
 INSERT INTO questiontag (question_id, tag_id) VALUES (12, 38);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 5763, 2420);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (13, 30, "&lt;p&gt;I mistakenly added files using the command:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5764, 5105);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (13, 19, '&lt;p&gt;I mistakenly added files using the command:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git add myfile.txt
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;I have not yet run &lt;code&gt;git commit&lt;/code&gt;. Is there a way to undo this, so these files won&#x27;t be included in the commit?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (13, 1, "How to undo &#39;git add&#39; before commit?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (13, 1, 'How to undo &#39;git add&#39; before commit?');
+INSERT INTO activity (post_id, user_id, action) VALUES (13, 19, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (13, 6);
-INSERT INTO tag (text) VALUES ("version-control");
+INSERT INTO tag (text) VALUES ('version-control');
 INSERT INTO questiontag (question_id, tag_id) VALUES (13, 39);
-INSERT INTO tag (text) VALUES ("git-stage");
+INSERT INTO tag (text) VALUES ('git-stage');
 INSERT INTO questiontag (question_id, tag_id) VALUES (13, 40);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 5491, 4164);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (14, 69, "&lt;p&gt;Recently, I ran some of my JavaScript code through Crockford&#x27;s &lt;a href=&quot;http://www.jslint.com/&quot; rel=&quot;noreferrer&quot;&gt;JSLint&lt;/a&gt;, and it gave the following error:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5491, 1824);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (14, 92, '&lt;p&gt;Recently, I ran some of my JavaScript code through Crockford&#x27;s &lt;a href=&quot;http://www.jslint.com/&quot; rel=&quot;noreferrer&quot;&gt;JSLint&lt;/a&gt;, and it gave the following error:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Problem at line 1 character 1: Missing &quot;use strict&quot; statement.&lt;/p&gt;
@@ -471,31 +484,33 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (14, 69, "&lt;p&
 &lt;p&gt;So what is &lt;code&gt;&quot;use strict&quot;;&lt;/code&gt; all about, what does it imply, and is it still relevant?&lt;/p&gt;
 
 &lt;p&gt;Do any of the current browsers respond to the &lt;code&gt;&quot;use strict&quot;;&lt;/code&gt; string or is it for future use?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (14, 1, "What does &quot;use strict&quot; do in JavaScript, and what is the reasoning behind it?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (14, 1, 'What does &quot;use strict&quot; do in JavaScript, and what is the reasoning behind it?');
+INSERT INTO activity (post_id, user_id, action) VALUES (14, 92, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (14, 19);
-INSERT INTO tag (text) VALUES ("syntax");
+INSERT INTO tag (text) VALUES ('syntax');
 INSERT INTO questiontag (question_id, tag_id) VALUES (14, 41);
-INSERT INTO tag (text) VALUES ("jslint");
+INSERT INTO tag (text) VALUES ('jslint');
 INSERT INTO questiontag (question_id, tag_id) VALUES (14, 42);
-INSERT INTO tag (text) VALUES ("use-strict");
+INSERT INTO tag (text) VALUES ('use-strict');
 INSERT INTO questiontag (question_id, tag_id) VALUES (14, 43);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 5474, 4085);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (15, 52, "&lt;p&gt;It is possible to toggle the visibility of an element, using the functions &lt;code&gt;.hide()&lt;/code&gt;, &lt;code&gt;.show()&lt;/code&gt; or &lt;code&gt;.toggle()&lt;/code&gt;.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5475, 4042);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (15, 66, '&lt;p&gt;It is possible to toggle the visibility of an element, using the functions &lt;code&gt;.hide()&lt;/code&gt;, &lt;code&gt;.show()&lt;/code&gt; or &lt;code&gt;.toggle()&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;How would you test if an element is visible or hidden?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (15, 1, "How do I check if an element is hidden in jQuery?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (15, 1, 'How do I check if an element is hidden in jQuery?');
+INSERT INTO activity (post_id, user_id, action) VALUES (15, 66, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (15, 19);
 INSERT INTO questiontag (question_id, tag_id) VALUES (15, 25);
-INSERT INTO tag (text) VALUES ("dom");
+INSERT INTO tag (text) VALUES ('dom');
 INSERT INTO questiontag (question_id, tag_id) VALUES (15, 44);
-INSERT INTO tag (text) VALUES ("visibility");
+INSERT INTO tag (text) VALUES ('visibility');
 INSERT INTO questiontag (question_id, tag_id) VALUES (15, 45);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 5180, 5123);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (16, 55, "&lt;p&gt;How come certain random strings produce colors when entered as background colors in HTML? For example:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5182, 2895);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (16, 50, '&lt;p&gt;How come certain random strings produce colors when entered as background colors in HTML? For example:&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&quot;snippet&quot; data-lang=&quot;js&quot; data-hide=&quot;false&quot; data-console=&quot;false&quot; data-babel=&quot;false&quot;&gt;
 &lt;div class=&quot;snippet-code&quot;&gt;
@@ -509,15 +524,16 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (16, 55, "&lt;p&
 &lt;p&gt;Interestingly, while &lt;code&gt;chucknorri&lt;/code&gt; produces a red background as well, &lt;code&gt;chucknorr&lt;/code&gt; produces a yellow background.&lt;/p&gt;
 
 &lt;p&gt;What&#x27;s going on here?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (16, 1, "Why does HTML think “chucknorris” is a color?");
-INSERT INTO tag (text) VALUES ("html");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (16, 1, 'Why does HTML think “chucknorris” is a color?');
+INSERT INTO activity (post_id, user_id, action) VALUES (16, 50, 'Create');
+INSERT INTO tag (text) VALUES ('html');
 INSERT INTO questiontag (question_id, tag_id) VALUES (16, 46);
-INSERT INTO tag (text) VALUES ("background-color");
+INSERT INTO tag (text) VALUES ('background-color');
 INSERT INTO questiontag (question_id, tag_id) VALUES (16, 47);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 5006, 135);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (17, 47, "&lt;p&gt;If I run the following program, which parses two date strings referencing times one second apart and compares them:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5010, 2218);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (17, 64, '&lt;p&gt;If I run the following program, which parses two date strings referencing times one second apart and compares them:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;public static void main(String[] args) throws ParseException {
     SimpleDateFormat sf = new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;);  
@@ -564,16 +580,17 @@ lastRule=null]
 
 Locale(Locale.getDefault()): zh_CN
 &lt;/code&gt;&lt;/pre&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (17, 1, "Why is subtracting these two times (in 1927) giving a strange result?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (17, 1, 'Why is subtracting these two times (in 1927) giving a strange result?');
+INSERT INTO activity (post_id, user_id, action) VALUES (17, 64, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (17, 1);
-INSERT INTO tag (text) VALUES ("date");
+INSERT INTO tag (text) VALUES ('date');
 INSERT INTO questiontag (question_id, tag_id) VALUES (17, 48);
-INSERT INTO tag (text) VALUES ("timezone");
+INSERT INTO tag (text) VALUES ('timezone');
 INSERT INTO questiontag (question_id, tag_id) VALUES (17, 49);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 4907, 4688);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (18, 9, "&lt;p&gt;I&#x27;ve recently started maintaining someone else&#x27;s JavaScript code. I&#x27;m fixing bugs, adding features and also trying to tidy up the code and make it more consistent.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4908, 1271);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (18, 7, '&lt;p&gt;I&#x27;ve recently started maintaining someone else&#x27;s JavaScript code. I&#x27;m fixing bugs, adding features and also trying to tidy up the code and make it more consistent.&lt;/p&gt;
 
 &lt;p&gt;The previous developer uses two ways of declaring functions and I can&#x27;t work out if there is a reason behind it or not.&lt;/p&gt;
 
@@ -592,26 +609,28 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (18, 9, "&lt;p&g
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;What are the reasons for using these two different methods and what are the pros and cons of each? Is there anything that can be done with one method that can&#x27;t be done with the other?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (18, 1, "var functionName = function() {} vs function functionName() {}");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (18, 1, 'var functionName = function() {} vs function functionName() {}');
+INSERT INTO activity (post_id, user_id, action) VALUES (18, 7, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (18, 19);
-INSERT INTO tag (text) VALUES ("function");
+INSERT INTO tag (text) VALUES ('function');
 INSERT INTO questiontag (question_id, tag_id) VALUES (18, 50);
 INSERT INTO questiontag (question_id, tag_id) VALUES (18, 41);
-INSERT INTO tag (text) VALUES ("idioms");
+INSERT INTO tag (text) VALUES ('idioms');
 INSERT INTO questiontag (question_id, tag_id) VALUES (18, 51);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 4897, 89);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (19, 22, "&lt;p&gt;I don&#x27;t want to rename a remote branch, as described in &lt;em&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1526794/rename-master-branch-for-both-local-and-remote-git-repositories?answertab=votes#tab-top&quot;&gt;Rename master branch for both local and remote Git repositories&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4899, 4728);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (19, 30, '&lt;p&gt;I don&#x27;t want to rename a remote branch, as described in &lt;em&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1526794/rename-master-branch-for-both-local-and-remote-git-repositories?answertab=votes#tab-top&quot;&gt;Rename master branch for both local and remote Git repositories&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;How can I rename a local branch which hasn&#x27;t been pushed to a remote branch?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (19, 1, "How do I rename a local Git branch?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (19, 1, 'How do I rename a local Git branch?');
+INSERT INTO activity (post_id, user_id, action) VALUES (19, 30, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (19, 6);
 INSERT INTO questiontag (question_id, tag_id) VALUES (19, 11);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 4535, 2052);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (20, 30, "&lt;p&gt;Suppose I&#x27;m familiar with developing client-side applications in &lt;a href=&quot;http://jquery.com/&quot; rel=&quot;noreferrer&quot;&gt;jQuery&lt;/a&gt;, but now I&#x27;d like to start using &lt;a href=&quot;http://angularjs.org/&quot; rel=&quot;noreferrer&quot;&gt;AngularJS&lt;/a&gt;. Can you describe the paradigm shift that is necessary? Here are a few questions that might help you frame an answer:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4535, 4171);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (20, 4, '&lt;p&gt;Suppose I&#x27;m familiar with developing client-side applications in &lt;a href=&quot;http://jquery.com/&quot; rel=&quot;noreferrer&quot;&gt;jQuery&lt;/a&gt;, but now I&#x27;d like to start using &lt;a href=&quot;http://angularjs.org/&quot; rel=&quot;noreferrer&quot;&gt;AngularJS&lt;/a&gt;. Can you describe the paradigm shift that is necessary? Here are a few questions that might help you frame an answer:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;How do I architect and design client-side web applications differently? What is the biggest difference?&lt;/li&gt;
@@ -620,36 +639,38 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (20, 30, "&lt;p&
 &lt;/ul&gt;
 
 &lt;p&gt;I&#x27;m not looking for a detailed comparison between &lt;code&gt;jQuery&lt;/code&gt; and &lt;code&gt;AngularJS&lt;/code&gt;.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (20, 1, "&quot;Thinking in AngularJS&quot; if I have a jQuery background?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (20, 1, '&quot;Thinking in AngularJS&quot; if I have a jQuery background?');
+INSERT INTO activity (post_id, user_id, action) VALUES (20, 4, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (20, 19);
 INSERT INTO questiontag (question_id, tag_id) VALUES (20, 25);
-INSERT INTO tag (text) VALUES ("angularjs");
+INSERT INTO tag (text) VALUES ('angularjs');
 INSERT INTO questiontag (question_id, tag_id) VALUES (20, 52);
-INSERT INTO tag (text) VALUES ("design");
+INSERT INTO tag (text) VALUES ('design');
 INSERT INTO questiontag (question_id, tag_id) VALUES (20, 53);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 4477, 3367);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (21, 36, "&lt;p&gt;I&#x27;m using &lt;a href=&quot;http://en.wikipedia.org/wiki/JSLint&quot; rel=&quot;noreferrer&quot;&gt;JSLint&lt;/a&gt; to go through JavaScript, and it&#x27;s returning many suggestions to replace &lt;code&gt;==&lt;/code&gt; (two equals signs) with &lt;code&gt;===&lt;/code&gt; (three equals signs) when doing things like comparing &lt;code&gt;idSele_UNVEHtype.value.length == 0&lt;/code&gt; inside of an &lt;code&gt;if&lt;/code&gt; statement.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4478, 2621);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (21, 1, '&lt;p&gt;I&#x27;m using &lt;a href=&quot;http://en.wikipedia.org/wiki/JSLint&quot; rel=&quot;noreferrer&quot;&gt;JSLint&lt;/a&gt; to go through JavaScript, and it&#x27;s returning many suggestions to replace &lt;code&gt;==&lt;/code&gt; (two equals signs) with &lt;code&gt;===&lt;/code&gt; (three equals signs) when doing things like comparing &lt;code&gt;idSele_UNVEHtype.value.length == 0&lt;/code&gt; inside of an &lt;code&gt;if&lt;/code&gt; statement.&lt;/p&gt;
 
 &lt;p&gt;Is there a performance benefit to replacing &lt;code&gt;==&lt;/code&gt; with &lt;code&gt;===&lt;/code&gt;? &lt;/p&gt;
 
 &lt;p&gt;Any performance improvement would be welcomed as many comparison operators exist.&lt;/p&gt;
 
 &lt;p&gt;If no type conversion takes place, would there be a performance gain over &lt;code&gt;==&lt;/code&gt;?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (21, 1, "Which equals operator (== vs ===) should be used in JavaScript comparisons?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (21, 1, 'Which equals operator (== vs ===) should be used in JavaScript comparisons?');
+INSERT INTO activity (post_id, user_id, action) VALUES (21, 1, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (21, 19);
 INSERT INTO questiontag (question_id, tag_id) VALUES (21, 22);
-INSERT INTO tag (text) VALUES ("equality");
+INSERT INTO tag (text) VALUES ('equality');
 INSERT INTO questiontag (question_id, tag_id) VALUES (21, 54);
-INSERT INTO tag (text) VALUES ("equality-operator");
+INSERT INTO tag (text) VALUES ('equality-operator');
 INSERT INTO questiontag (question_id, tag_id) VALUES (21, 55);
-INSERT INTO tag (text) VALUES ("identity-operator");
+INSERT INTO tag (text) VALUES ('identity-operator');
 INSERT INTO questiontag (question_id, tag_id) VALUES (21, 56);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 4434, 1196);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (22, 18, "&lt;h2&gt;Form-based authentication for websites&lt;/h2&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4434, 2958);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (22, 91, '&lt;h2&gt;Form-based authentication for websites&lt;/h2&gt;
 
 &lt;p&gt;We believe that Stack&amp;nbsp;Overflow should not just be a resource for very specific technical questions, but also for general guidelines on how to solve variations on common problems. &quot;Form based authentication for websites&quot; should be a fine topic for such an experiment.&lt;/p&gt;
 
@@ -687,20 +708,21 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (22, 18, "&lt;h2
 &lt;li&gt;Submitting good articles about this subject&lt;/li&gt;
 &lt;li&gt;Editing the official answer&lt;/li&gt;
 &lt;/ol&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (22, 1, "The definitive guide to form-based website authentication");
-INSERT INTO tag (text) VALUES ("security");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (22, 1, 'The definitive guide to form-based website authentication');
+INSERT INTO activity (post_id, user_id, action) VALUES (22, 91, 'Create');
+INSERT INTO tag (text) VALUES ('security');
 INSERT INTO questiontag (question_id, tag_id) VALUES (22, 57);
-INSERT INTO tag (text) VALUES ("http");
+INSERT INTO tag (text) VALUES ('http');
 INSERT INTO questiontag (question_id, tag_id) VALUES (22, 58);
-INSERT INTO tag (text) VALUES ("authentication");
+INSERT INTO tag (text) VALUES ('authentication');
 INSERT INTO questiontag (question_id, tag_id) VALUES (22, 59);
 INSERT INTO questiontag (question_id, tag_id) VALUES (22, 36);
-INSERT INTO tag (text) VALUES ("article");
+INSERT INTO tag (text) VALUES ('article');
 INSERT INTO questiontag (question_id, tag_id) VALUES (22, 60);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 4420, 3737);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (23, 8, "&lt;p&gt;How do I revert from my current state to a snapshot made on a certain commit? &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4422, 4295);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (23, 42, '&lt;p&gt;How do I revert from my current state to a snapshot made on a certain commit? &lt;/p&gt;
 
 &lt;p&gt;If I do &lt;code&gt;git log&lt;/code&gt;, I get the following output:&lt;/p&gt;
 
@@ -731,45 +753,49 @@ Yep, more blah blah.
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;How do revert to the commit from November 3, i.e. commit &lt;code&gt;0d1d7fc&lt;/code&gt;?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (23, 1, "How to revert Git repository to a previous commit?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (23, 1, 'How to revert Git repository to a previous commit?');
+INSERT INTO activity (post_id, user_id, action) VALUES (23, 42, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (23, 6);
 INSERT INTO questiontag (question_id, tag_id) VALUES (23, 9);
 INSERT INTO questiontag (question_id, tag_id) VALUES (23, 10);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 4393, 1246);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (24, 52, "&lt;p&gt;How do you delete untracked local files from your current working tree?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (24, 1, "How to remove local (untracked) files from the current Git working tree?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4394, 3325);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (24, 19, '&lt;p&gt;How do you delete untracked local files from your current working tree?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (24, 1, 'How to remove local (untracked) files from the current Git working tree?');
+INSERT INTO activity (post_id, user_id, action) VALUES (24, 19, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (24, 6);
-INSERT INTO tag (text) VALUES ("branch");
+INSERT INTO tag (text) VALUES ('branch');
 INSERT INTO questiontag (question_id, tag_id) VALUES (24, 61);
 INSERT INTO questiontag (question_id, tag_id) VALUES (24, 11);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 4345, 664);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (25, 87, "&lt;p&gt;Can I use comments inside a JSON file? If so, how?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (25, 1, "Can comments be used in JSON?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4345, 2440);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (25, 28, '&lt;p&gt;Can I use comments inside a JSON file? If so, how?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (25, 1, 'Can comments be used in JSON?');
+INSERT INTO activity (post_id, user_id, action) VALUES (25, 28, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (25, 13);
-INSERT INTO tag (text) VALUES ("comments");
+INSERT INTO tag (text) VALUES ('comments');
 INSERT INTO questiontag (question_id, tag_id) VALUES (25, 62);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 4261, 3908);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (26, 96, "&lt;p&gt;This question attempts to collect the few pearls among the dozens of bad C++ books that are published every year.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4261, 3795);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (26, 14, '&lt;p&gt;This question attempts to collect the few pearls among the dozens of bad C++ books that are published every year.&lt;/p&gt;
 
 &lt;p&gt;Unlike many other programming languages, which are often picked up on the go from tutorials found on the Internet, few are able to quickly pick up C++ without studying a well-written C++ book. It is way too big and complex for doing this. In fact, it is so big and complex, that &lt;strong&gt;&lt;em&gt;there are very many very bad C++ books&lt;/em&gt;&lt;/strong&gt; out there. And we are not talking about bad style, but things like sporting &lt;em&gt;glaringly obvious factual errors&lt;/em&gt; and &lt;em&gt;promoting abysmally bad programming styles&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;Please edit the accepted answer to provide &lt;strong&gt;quality books&lt;/strong&gt; and an approximate skill level — &lt;em&gt;preferably&lt;/em&gt; &lt;strong&gt;after&lt;/strong&gt; &lt;em&gt;discussing your addition in &lt;a href=&quot;http://chat.stackoverflow.com/rooms/10/loungec&quot;&gt;the C++ chat room&lt;/a&gt;&lt;/em&gt;. (The regulars might mercilessly undo your work if they disagree with a recommendation.) Add a short blurb/description about each book that you have personally read/benefited from. Feel free to debate quality, headings, etc. Books that meet the criteria will be added to the list.  Books that have reviews by the Association of C and C++ Users (ACCU) have links to the review. &lt;/p&gt;
 
 &lt;p&gt;&lt;sub&gt;&lt;em&gt;Note: FAQs and other resources can be found in the &lt;a href=&quot;http://stackoverflow.com/tags/c%2b%2b/info&quot;&gt;C++ tag info&lt;/a&gt; and under &lt;a href=&quot;/questions/tagged/c%2b%2b-faq&quot; class=&quot;post-tag&quot; title=&quot;show questions tagged &amp;#39;c++-faq&amp;#39;&quot; rel=&quot;tag&quot;&gt;c++-faq&lt;/a&gt;. There is also a similar post for C: &lt;a href=&quot;http://stackoverflow.com/questions/562303/the-definitive-c-book-guide-and-list&quot;&gt;The Definitive C Book Guide and List&lt;/a&gt;&lt;/em&gt;&lt;/sub&gt;&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (26, 1, "The Definitive C++ Book Guide and List");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (26, 1, 'The Definitive C++ Book Guide and List');
+INSERT INTO activity (post_id, user_id, action) VALUES (26, 14, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (26, 2);
-INSERT INTO tag (text) VALUES ("c++-faq");
+INSERT INTO tag (text) VALUES ('c++-faq');
 INSERT INTO questiontag (question_id, tag_id) VALUES (26, 63);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("deleted", 4240, 2782);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (27, 10, "&lt;p&gt;What is the difference between:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4243, 778);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (27, 22, '&lt;p&gt;What is the difference between:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;px&lt;/code&gt;&lt;/li&gt;
@@ -779,21 +805,22 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (27, 10, "&lt;p&
 &lt;/ul&gt;
 
 &lt;p&gt;on Android?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (27, 1, "What is the difference between &quot;px&quot;, &quot;dp&quot;, &quot;dip&quot; and &quot;sp&quot; on Android?");
-INSERT INTO tag (text) VALUES ("android");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (27, 1, 'What is the difference between &quot;px&quot;, &quot;dp&quot;, &quot;dip&quot; and &quot;sp&quot; on Android?');
+INSERT INTO activity (post_id, user_id, action) VALUES (27, 22, 'Create');
+INSERT INTO tag (text) VALUES ('android');
 INSERT INTO questiontag (question_id, tag_id) VALUES (27, 64);
-INSERT INTO tag (text) VALUES ("android-layout");
+INSERT INTO tag (text) VALUES ('android-layout');
 INSERT INTO questiontag (question_id, tag_id) VALUES (27, 65);
-INSERT INTO tag (text) VALUES ("user-interface");
+INSERT INTO tag (text) VALUES ('user-interface');
 INSERT INTO questiontag (question_id, tag_id) VALUES (27, 66);
-INSERT INTO tag (text) VALUES ("dimension");
+INSERT INTO tag (text) VALUES ('dimension');
 INSERT INTO questiontag (question_id, tag_id) VALUES (27, 67);
-INSERT INTO tag (text) VALUES ("units-of-measurement");
+INSERT INTO tag (text) VALUES ('units-of-measurement');
 INSERT INTO questiontag (question_id, tag_id) VALUES (27, 68);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 4167, 3322);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (28, 47, "&lt;p&gt;We have an employee whose last name is Null. Our employee lookup application is killed when that last name is used as the search term (which happens to be quite often now). The error received (thanks Fiddler!) is:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4167, 3583);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (28, 51, '&lt;p&gt;We have an employee whose last name is Null. Our employee lookup application is killed when that last name is used as the search term (which happens to be quite often now). The error received (thanks Fiddler!) is:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;  &amp;lt;soapenv:Fault&amp;gt;
    &amp;lt;faultcode&amp;gt;soapenv:Server.userException&amp;lt;/faultcode&amp;gt;
@@ -814,80 +841,85 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (28, 47, "&lt;p&
 &lt;/ul&gt;
 
 &lt;p&gt;Note that the error DOES NOT occur when calling the webservice as an object from a ColdFusion page.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (28, 1, "How to pass &quot;Null&quot; (a real surname!) to a SOAP web service in ActionScript 3?");
-INSERT INTO tag (text) VALUES ("flex");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (28, 1, 'How to pass &quot;Null&quot; (a real surname!) to a SOAP web service in ActionScript 3?');
+INSERT INTO activity (post_id, user_id, action) VALUES (28, 51, 'Create');
+INSERT INTO tag (text) VALUES ('flex');
 INSERT INTO questiontag (question_id, tag_id) VALUES (28, 69);
-INSERT INTO tag (text) VALUES ("actionscript");
+INSERT INTO tag (text) VALUES ('actionscript');
 INSERT INTO questiontag (question_id, tag_id) VALUES (28, 70);
-INSERT INTO tag (text) VALUES ("soap");
+INSERT INTO tag (text) VALUES ('soap');
 INSERT INTO questiontag (question_id, tag_id) VALUES (28, 71);
-INSERT INTO tag (text) VALUES ("coldfusion");
+INSERT INTO tag (text) VALUES ('coldfusion');
 INSERT INTO questiontag (question_id, tag_id) VALUES (28, 72);
-INSERT INTO tag (text) VALUES ("wsdl");
+INSERT INTO tag (text) VALUES ('wsdl');
 INSERT INTO questiontag (question_id, tag_id) VALUES (28, 73);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 4157, 175);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (29, 63, "&lt;p&gt;Example (&lt;em&gt;note the case&lt;/em&gt;):&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4157, 331);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (29, 76, '&lt;p&gt;Example (&lt;em&gt;note the case&lt;/em&gt;):&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;string s = &quot;Hello world!&quot;;
 String S = &quot;Hello world!&quot;;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;What are the guidelines for the use of each? And what are the differences?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (29, 1, "What is the difference between String and string in C#?");
-INSERT INTO tag (text) VALUES ("c#");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (29, 1, 'What is the difference between String and string in C#?');
+INSERT INTO activity (post_id, user_id, action) VALUES (29, 76, 'Create');
+INSERT INTO tag (text) VALUES ('c#');
 INSERT INTO questiontag (question_id, tag_id) VALUES (29, 74);
 INSERT INTO questiontag (question_id, tag_id) VALUES (29, 32);
-INSERT INTO tag (text) VALUES ("types");
+INSERT INTO tag (text) VALUES ('types');
 INSERT INTO questiontag (question_id, tag_id) VALUES (29, 75);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 4115, 3638);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (30, 1, "&lt;p&gt;I always thought Java was &lt;strong&gt;pass-by-reference&lt;/strong&gt;; however I&#x27;ve seen a couple of blog posts (for example, &lt;a href=&quot;http://javadude.com/articles/passbyvalue.htm&quot; rel=&quot;noreferrer&quot;&gt;this blog&lt;/a&gt;) that claim it&#x27;s not. I don&#x27;t think I understand the distinction they&#x27;re making. &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4115, 346);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (30, 67, '&lt;p&gt;I always thought Java was &lt;strong&gt;pass-by-reference&lt;/strong&gt;; however I&#x27;ve seen a couple of blog posts (for example, &lt;a href=&quot;http://javadude.com/articles/passbyvalue.htm&quot; rel=&quot;noreferrer&quot;&gt;this blog&lt;/a&gt;) that claim it&#x27;s not. I don&#x27;t think I understand the distinction they&#x27;re making. &lt;/p&gt;
 
 &lt;p&gt;What is the explanation?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (30, 1, "Is Java &quot;pass-by-reference&quot; or &quot;pass-by-value&quot;?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (30, 1, 'Is Java &quot;pass-by-reference&quot; or &quot;pass-by-value&quot;?');
+INSERT INTO activity (post_id, user_id, action) VALUES (30, 67, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (30, 1);
-INSERT INTO tag (text) VALUES ("methods");
+INSERT INTO tag (text) VALUES ('methods');
 INSERT INTO questiontag (question_id, tag_id) VALUES (30, 76);
-INSERT INTO tag (text) VALUES ("parameter-passing");
+INSERT INTO tag (text) VALUES ('parameter-passing');
 INSERT INTO questiontag (question_id, tag_id) VALUES (30, 77);
-INSERT INTO tag (text) VALUES ("pass-by-reference");
+INSERT INTO tag (text) VALUES ('pass-by-reference');
 INSERT INTO questiontag (question_id, tag_id) VALUES (30, 78);
-INSERT INTO tag (text) VALUES ("pass-by-value");
+INSERT INTO tag (text) VALUES ('pass-by-value');
 INSERT INTO questiontag (question_id, tag_id) VALUES (30, 79);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 4093, 315);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (31, 27, "&lt;p&gt;I have an array of integers, which I&#x27;m using the &lt;code&gt;.push()&lt;/code&gt; method to add to.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4094, 1039);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (31, 40, '&lt;p&gt;I have an array of integers, which I&#x27;m using the &lt;code&gt;.push()&lt;/code&gt; method to add to.&lt;/p&gt;
 
 &lt;p&gt;Is there a simple way to remove a specific element from an array? The equivalent of something like &lt;code&gt;array.remove(int);&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;I have to use &lt;em&gt;core&lt;/em&gt; JavaScript - &lt;em&gt;no&lt;/em&gt; frameworks are allowed.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (31, 1, "How to remove a particular element from an array in JavaScript?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (31, 1, 'How to remove a particular element from an array in JavaScript?');
+INSERT INTO activity (post_id, user_id, action) VALUES (31, 40, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (31, 19);
-INSERT INTO tag (text) VALUES ("arrays");
+INSERT INTO tag (text) VALUES ('arrays');
 INSERT INTO questiontag (question_id, tag_id) VALUES (31, 80);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3906, 3134);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (32, 70, "&lt;p&gt;I&#x27;d prefer as little formal definition as possible and simple mathematics.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (32, 1, "What is a plain English explanation of &quot;Big O&quot; notation?");
-INSERT INTO tag (text) VALUES ("algorithm");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 3907, 3011);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (32, 0, '&lt;p&gt;I&#x27;d prefer as little formal definition as possible and simple mathematics.&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (32, 1, 'What is a plain English explanation of &quot;Big O&quot; notation?');
+INSERT INTO activity (post_id, user_id, action) VALUES (32, 0, 'Create');
+INSERT INTO tag (text) VALUES ('algorithm');
 INSERT INTO questiontag (question_id, tag_id) VALUES (32, 81);
-INSERT INTO tag (text) VALUES ("complexity-theory");
+INSERT INTO tag (text) VALUES ('complexity-theory');
 INSERT INTO questiontag (question_id, tag_id) VALUES (32, 82);
-INSERT INTO tag (text) VALUES ("computer-science");
+INSERT INTO tag (text) VALUES ('computer-science');
 INSERT INTO questiontag (question_id, tag_id) VALUES (32, 83);
-INSERT INTO tag (text) VALUES ("big-o");
+INSERT INTO tag (text) VALUES ('big-o');
 INSERT INTO questiontag (question_id, tag_id) VALUES (32, 84);
-INSERT INTO tag (text) VALUES ("time-complexity");
+INSERT INTO tag (text) VALUES ('time-complexity');
 INSERT INTO questiontag (question_id, tag_id) VALUES (32, 85);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3893, 2776);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (33, 95, "&lt;p&gt;Somebody pushed a branch called &lt;code&gt;test&lt;/code&gt; with &lt;code&gt;git push origin test&lt;/code&gt; to a shared repository. I can see the branch with &lt;code&gt;git branch -r&lt;/code&gt;.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3893, 2777);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (33, 69, '&lt;p&gt;Somebody pushed a branch called &lt;code&gt;test&lt;/code&gt; with &lt;code&gt;git push origin test&lt;/code&gt; to a shared repository. I can see the branch with &lt;code&gt;git branch -r&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Now I&#x27;m trying to check out the remote &lt;code&gt;test&lt;/code&gt; branch.&lt;/p&gt;
 
@@ -899,16 +931,17 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (33, 95, "&lt;p&
 &lt;/ul&gt;
 
 &lt;p&gt;How do I check out a remote git branch?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (33, 1, "How to check out a remote Git branch?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (33, 1, 'How to check out a remote Git branch?');
+INSERT INTO activity (post_id, user_id, action) VALUES (33, 69, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (33, 6);
-INSERT INTO tag (text) VALUES ("git-checkout");
+INSERT INTO tag (text) VALUES ('git-checkout');
 INSERT INTO questiontag (question_id, tag_id) VALUES (33, 86);
-INSERT INTO tag (text) VALUES ("remote-branch");
+INSERT INTO tag (text) VALUES ('remote-branch');
 INSERT INTO questiontag (question_id, tag_id) VALUES (33, 87);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3669, 433);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (34, 28, "&lt;p&gt;Say I create an object as follows:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3671, 2047);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (34, 90, '&lt;p&gt;Say I create an object as follows:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;var myObject = {
     &quot;ircEvent&quot;: &quot;PRIVMSG&quot;,
@@ -924,16 +957,17 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (34, 28, "&lt;p&
     &quot;method&quot;: &quot;newURI&quot;
 };
 &lt;/code&gt;&lt;/pre&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (34, 1, "How do I remove a property from a JavaScript object?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (34, 1, 'How do I remove a property from a JavaScript object?');
+INSERT INTO activity (post_id, user_id, action) VALUES (34, 90, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (34, 19);
-INSERT INTO tag (text) VALUES ("javascript-objects");
+INSERT INTO tag (text) VALUES ('javascript-objects');
 INSERT INTO questiontag (question_id, tag_id) VALUES (34, 88);
-INSERT INTO tag (text) VALUES ("object-properties");
+INSERT INTO tag (text) VALUES ('object-properties');
 INSERT INTO questiontag (question_id, tag_id) VALUES (34, 89);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3657, 496);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (35, 88, "&lt;p&gt;How do I force an overwrite of local files on a &lt;code&gt;git pull&lt;/code&gt;?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3657, 815);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (35, 19, '&lt;p&gt;How do I force an overwrite of local files on a &lt;code&gt;git pull&lt;/code&gt;?&lt;/p&gt;
 
 &lt;p&gt;The scenario is following:&lt;/p&gt;
 
@@ -952,70 +986,75 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (35, 88, "&lt;p&
 &lt;/blockquote&gt;
 
 &lt;p&gt;How do I force Git to overwrite them? The person is a designer - usually I resolve all the conflicts by hand, so the server has the most recent version that they just needs to update on their computer.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (35, 1, "How do I force &quot;git pull&quot; to overwrite local files?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (35, 1, 'How do I force &quot;git pull&quot; to overwrite local files?');
+INSERT INTO activity (post_id, user_id, action) VALUES (35, 19, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (35, 6);
 INSERT INTO questiontag (question_id, tag_id) VALUES (35, 39);
-INSERT INTO tag (text) VALUES ("overwrite");
+INSERT INTO tag (text) VALUES ('overwrite');
 INSERT INTO questiontag (question_id, tag_id) VALUES (35, 90);
 INSERT INTO questiontag (question_id, tag_id) VALUES (35, 17);
 INSERT INTO questiontag (question_id, tag_id) VALUES (35, 18);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3563, 2694);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (36, 17, "&lt;p&gt;What is the most efficient way to clone a JavaScript object? I&#x27;ve seen &lt;code&gt;obj = eval(uneval(o));&lt;/code&gt; being used, but &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/uneval&quot; rel=&quot;noreferrer&quot;&gt;that&#x27;s non-standard and only supported by Firefox&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt; I&#x27;ve done things like &lt;code&gt;obj = JSON.parse(JSON.stringify(o));&lt;/code&gt; but question the efficiency. &lt;br/&gt;&lt;br/&gt; I&#x27;ve also seen recursive copying functions with various flaws.
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3564, 948);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (36, 86, '&lt;p&gt;What is the most efficient way to clone a JavaScript object? I&#x27;ve seen &lt;code&gt;obj = eval(uneval(o));&lt;/code&gt; being used, but &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/uneval&quot; rel=&quot;noreferrer&quot;&gt;that&#x27;s non-standard and only supported by Firefox&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt; I&#x27;ve done things like &lt;code&gt;obj = JSON.parse(JSON.stringify(o));&lt;/code&gt; but question the efficiency. &lt;br/&gt;&lt;br/&gt; I&#x27;ve also seen recursive copying functions with various flaws.
 &lt;br /&gt;
 I&#x27;m surprised no canonical solution exists.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (36, 1, "What is the most efficient way to deep clone an object in JavaScript?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (36, 1, 'What is the most efficient way to deep clone an object in JavaScript?');
+INSERT INTO activity (post_id, user_id, action) VALUES (36, 86, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (36, 19);
-INSERT INTO tag (text) VALUES ("object");
+INSERT INTO tag (text) VALUES ('object');
 INSERT INTO questiontag (question_id, tag_id) VALUES (36, 91);
-INSERT INTO tag (text) VALUES ("clone");
+INSERT INTO tag (text) VALUES ('clone');
 INSERT INTO questiontag (question_id, tag_id) VALUES (36, 92);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3554, 1819);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (37, 89, "&lt;p&gt;For anchors that act like buttons (for example, &lt;em&gt;Questions&lt;/em&gt;, &lt;em&gt;Tags&lt;/em&gt;, &lt;em&gt;Users&lt;/em&gt;, etc. at the top of the Stack&amp;nbsp;Overflow page) or tabs, is there a CSS standard way to disable the highlighting effect if the user accidentally selects the text?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3555, 3438);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (37, 52, '&lt;p&gt;For anchors that act like buttons (for example, &lt;em&gt;Questions&lt;/em&gt;, &lt;em&gt;Tags&lt;/em&gt;, &lt;em&gt;Users&lt;/em&gt;, etc. at the top of the Stack&amp;nbsp;Overflow page) or tabs, is there a CSS standard way to disable the highlighting effect if the user accidentally selects the text?&lt;/p&gt;
 
 &lt;p&gt;I realize this could be done with JavaScript, and a little googling yielded the Mozilla-only &lt;code&gt;-moz-user-select&lt;/code&gt; option.&lt;/p&gt;
 
 &lt;p&gt;Is there a standard-compliant way to accomplish this with CSS, and if not, what is the &quot;best practice&quot; approach?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (37, 1, "How to disable text selection highlighting using CSS?");
-INSERT INTO tag (text) VALUES ("css");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (37, 1, 'How to disable text selection highlighting using CSS?');
+INSERT INTO activity (post_id, user_id, action) VALUES (37, 52, 'Create');
+INSERT INTO tag (text) VALUES ('css');
 INSERT INTO questiontag (question_id, tag_id) VALUES (37, 93);
-INSERT INTO tag (text) VALUES ("cross-browser");
+INSERT INTO tag (text) VALUES ('cross-browser');
 INSERT INTO questiontag (question_id, tag_id) VALUES (37, 94);
-INSERT INTO tag (text) VALUES ("highlighting");
+INSERT INTO tag (text) VALUES ('highlighting');
 INSERT INTO questiontag (question_id, tag_id) VALUES (37, 95);
-INSERT INTO tag (text) VALUES ("textselection");
+INSERT INTO tag (text) VALUES ('textselection');
 INSERT INTO questiontag (question_id, tag_id) VALUES (37, 96);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("deleted", 3534, 609);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (38, 19, "&lt;p&gt;What are metaclasses? What do you use them for?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (38, 1, "What is a metaclass in Python?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3534, 2413);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (38, 38, '&lt;p&gt;What are metaclasses? What do you use them for?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (38, 1, 'What is a metaclass in Python?');
+INSERT INTO activity (post_id, user_id, action) VALUES (38, 38, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (38, 27);
-INSERT INTO tag (text) VALUES ("oop");
+INSERT INTO tag (text) VALUES ('oop');
 INSERT INTO questiontag (question_id, tag_id) VALUES (38, 97);
-INSERT INTO tag (text) VALUES ("metaclass");
+INSERT INTO tag (text) VALUES ('metaclass');
 INSERT INTO questiontag (question_id, tag_id) VALUES (38, 98);
-INSERT INTO tag (text) VALUES ("python-datamodel");
+INSERT INTO tag (text) VALUES ('python-datamodel');
 INSERT INTO questiontag (question_id, tag_id) VALUES (38, 99);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3466, 3079);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (39, 5, "&lt;p&gt;Is there a good way to explain how to resolve merge conflicts in Git?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (39, 1, "How to resolve merge conflicts in Git?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3466, 1062);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (39, 9, '&lt;p&gt;Is there a good way to explain how to resolve merge conflicts in Git?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (39, 1, 'How to resolve merge conflicts in Git?');
+INSERT INTO activity (post_id, user_id, action) VALUES (39, 9, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (39, 6);
-INSERT INTO tag (text) VALUES ("git-merge");
+INSERT INTO tag (text) VALUES ('git-merge');
 INSERT INTO questiontag (question_id, tag_id) VALUES (39, 100);
-INSERT INTO tag (text) VALUES ("merge-conflict-resolution");
+INSERT INTO tag (text) VALUES ('merge-conflict-resolution');
 INSERT INTO questiontag (question_id, tag_id) VALUES (39, 101);
-INSERT INTO tag (text) VALUES ("git-conflict-resolution");
+INSERT INTO tag (text) VALUES ('git-conflict-resolution');
 INSERT INTO questiontag (question_id, tag_id) VALUES (39, 102);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3458, 2936);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (40, 96, "&lt;p&gt;According to the HTTP/1.1 Spec: &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3459, 446);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (40, 16, '&lt;p&gt;According to the HTTP/1.1 Spec: &lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;The &lt;strong&gt;&lt;code&gt;POST&lt;/code&gt;&lt;/strong&gt; method is used to request that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the &lt;code&gt;Request-URI&lt;/code&gt; in the &lt;code&gt;Request-Line&lt;/code&gt;&lt;/p&gt;
@@ -1030,61 +1069,65 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (40, 96, "&lt;p&
 &lt;p&gt;That is, &lt;code&gt;PUT&lt;/code&gt; is used to &lt;strong&gt;create or update&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;So, which one should be used to create a resource? Or one needs to support both?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (40, 1, "PUT vs POST in REST");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (40, 1, 'PUT vs POST in REST');
+INSERT INTO activity (post_id, user_id, action) VALUES (40, 16, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (40, 58);
-INSERT INTO tag (text) VALUES ("rest");
+INSERT INTO tag (text) VALUES ('rest');
 INSERT INTO questiontag (question_id, tag_id) VALUES (40, 103);
-INSERT INTO tag (text) VALUES ("post");
+INSERT INTO tag (text) VALUES ('post');
 INSERT INTO questiontag (question_id, tag_id) VALUES (40, 104);
-INSERT INTO tag (text) VALUES ("put");
+INSERT INTO tag (text) VALUES ('put');
 INSERT INTO questiontag (question_id, tag_id) VALUES (40, 105);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3386, 2549);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (41, 94, "&lt;p&gt;What is the maximum length of a URL in different browsers? Does it differ among browsers? &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3386, 1142);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (41, 93, '&lt;p&gt;What is the maximum length of a URL in different browsers? Does it differ among browsers? &lt;/p&gt;
 
 &lt;p&gt;Does the HTTP protocol dictate it?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (41, 1, "What is the maximum length of a URL in different browsers?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (41, 1, 'What is the maximum length of a URL in different browsers?');
+INSERT INTO activity (post_id, user_id, action) VALUES (41, 93, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (41, 58);
-INSERT INTO tag (text) VALUES ("url");
+INSERT INTO tag (text) VALUES ('url');
 INSERT INTO questiontag (question_id, tag_id) VALUES (41, 106);
-INSERT INTO tag (text) VALUES ("browser");
+INSERT INTO tag (text) VALUES ('browser');
 INSERT INTO questiontag (question_id, tag_id) VALUES (41, 107);
-INSERT INTO tag (text) VALUES ("max");
+INSERT INTO tag (text) VALUES ('max');
 INSERT INTO questiontag (question_id, tag_id) VALUES (41, 108);
-INSERT INTO tag (text) VALUES ("content-length");
+INSERT INTO tag (text) VALUES ('content-length');
 INSERT INTO questiontag (question_id, tag_id) VALUES (41, 109);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3296, 2502);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (42, 60, "&lt;p&gt;Also how do &lt;code&gt;LEFT JOIN&lt;/code&gt;, &lt;code&gt;RIGHT JOIN&lt;/code&gt; and &lt;code&gt;FULL JOIN&lt;/code&gt; fit in?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (42, 1, "What is the difference between &quot;INNER JOIN&quot; and &quot;OUTER JOIN&quot;?");
-INSERT INTO tag (text) VALUES ("sql");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3298, 2868);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (42, 4, '&lt;p&gt;Also how do &lt;code&gt;LEFT JOIN&lt;/code&gt;, &lt;code&gt;RIGHT JOIN&lt;/code&gt; and &lt;code&gt;FULL JOIN&lt;/code&gt; fit in?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (42, 1, 'What is the difference between &quot;INNER JOIN&quot; and &quot;OUTER JOIN&quot;?');
+INSERT INTO activity (post_id, user_id, action) VALUES (42, 4, 'Create');
+INSERT INTO tag (text) VALUES ('sql');
 INSERT INTO questiontag (question_id, tag_id) VALUES (42, 110);
-INSERT INTO tag (text) VALUES ("database");
+INSERT INTO tag (text) VALUES ('database');
 INSERT INTO questiontag (question_id, tag_id) VALUES (42, 111);
-INSERT INTO tag (text) VALUES ("join");
+INSERT INTO tag (text) VALUES ('join');
 INSERT INTO questiontag (question_id, tag_id) VALUES (42, 112);
-INSERT INTO tag (text) VALUES ("inner-join");
+INSERT INTO tag (text) VALUES ('inner-join');
 INSERT INTO questiontag (question_id, tag_id) VALUES (42, 113);
-INSERT INTO tag (text) VALUES ("outer-join");
+INSERT INTO tag (text) VALUES ('outer-join');
 INSERT INTO questiontag (question_id, tag_id) VALUES (42, 114);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3276, 2448);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (43, 34, "&lt;p&gt;Is there something in JavaScript similar to &lt;code&gt;@import&lt;/code&gt; in CSS that allows you to include a JavaScript file inside another JavaScript file?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (43, 1, "How do I include a JavaScript file in another JavaScript file?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3276, 639);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (43, 47, '&lt;p&gt;Is there something in JavaScript similar to &lt;code&gt;@import&lt;/code&gt; in CSS that allows you to include a JavaScript file inside another JavaScript file?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (43, 1, 'How do I include a JavaScript file in another JavaScript file?');
+INSERT INTO activity (post_id, user_id, action) VALUES (43, 47, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (43, 19);
-INSERT INTO tag (text) VALUES ("file");
+INSERT INTO tag (text) VALUES ('file');
 INSERT INTO questiontag (question_id, tag_id) VALUES (43, 115);
-INSERT INTO tag (text) VALUES ("import");
+INSERT INTO tag (text) VALUES ('import');
 INSERT INTO questiontag (question_id, tag_id) VALUES (43, 116);
-INSERT INTO tag (text) VALUES ("include");
+INSERT INTO tag (text) VALUES ('include');
 INSERT INTO questiontag (question_id, tag_id) VALUES (43, 117);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3200, 360);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (44, 37, "&lt;p&gt;I need to check the &lt;code&gt;checked&lt;/code&gt; property of a checkbox and perform an action based on the checked property using jQuery.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3200, 1521);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (44, 74, '&lt;p&gt;I need to check the &lt;code&gt;checked&lt;/code&gt; property of a checkbox and perform an action based on the checked property using jQuery.&lt;/p&gt;
 
 &lt;p&gt;For example, if the age checkbox is checked, then I need to show a textbox to enter age, else hide the textbox.&lt;/p&gt;
 
@@ -1098,30 +1141,32 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (44, 37, "&lt;p&
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;How do I successfully query the &lt;code&gt;checked&lt;/code&gt; property?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (44, 1, "How to check whether a checkbox is checked in jQuery?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (44, 1, 'How to check whether a checkbox is checked in jQuery?');
+INSERT INTO activity (post_id, user_id, action) VALUES (44, 74, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (44, 19);
 INSERT INTO questiontag (question_id, tag_id) VALUES (44, 25);
 INSERT INTO questiontag (question_id, tag_id) VALUES (44, 46);
 INSERT INTO questiontag (question_id, tag_id) VALUES (44, 44);
-INSERT INTO tag (text) VALUES ("checkbox");
+INSERT INTO tag (text) VALUES ('checkbox');
 INSERT INTO questiontag (question_id, tag_id) VALUES (44, 118);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3178, 870);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (45, 56, "&lt;p&gt;How do I get the path of the directory in which a &lt;a href=&quot;http://en.wikipedia.org/wiki/Bash_%28Unix_shell%29&quot; rel=&quot;noreferrer&quot;&gt;Bash&lt;/a&gt; script is located, &lt;em&gt;inside&lt;/em&gt; that script?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3179, 2459);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (45, 4, '&lt;p&gt;How do I get the path of the directory in which a &lt;a href=&quot;http://en.wikipedia.org/wiki/Bash_%28Unix_shell%29&quot; rel=&quot;noreferrer&quot;&gt;Bash&lt;/a&gt; script is located, &lt;em&gt;inside&lt;/em&gt; that script?&lt;/p&gt;
 
 &lt;p&gt;For instance, let&#x27;s say I want to use a Bash script as a launcher for another application. I want to change the working directory to the one where the Bash script is located, so I can operate on the files in that directory, like so: &lt;/p&gt;
 
 &lt;pre&gt;$ ./application&lt;/pre&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (45, 1, "Getting the source directory of a Bash script from within");
-INSERT INTO tag (text) VALUES ("bash");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (45, 1, 'Getting the source directory of a Bash script from within');
+INSERT INTO activity (post_id, user_id, action) VALUES (45, 4, 'Create');
+INSERT INTO tag (text) VALUES ('bash');
 INSERT INTO questiontag (question_id, tag_id) VALUES (45, 119);
-INSERT INTO tag (text) VALUES ("directory");
+INSERT INTO tag (text) VALUES ('directory');
 INSERT INTO questiontag (question_id, tag_id) VALUES (45, 120);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3148, 1971);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (46, 37, "&lt;p&gt;The following are two methods of building a link that has the sole purpose of running JavaScript code. Which is better, in terms of functionality, page load speed, validation purposes, etc.?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3148, 2608);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (46, 16, '&lt;p&gt;The following are two methods of building a link that has the sole purpose of running JavaScript code. Which is better, in terms of functionality, page load speed, validation purposes, etc.?&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&quot;snippet&quot; data-lang=&quot;js&quot; data-hide=&quot;false&quot; data-console=&quot;false&quot; data-babel=&quot;false&quot;&gt;
 &lt;div class=&quot;snippet-code&quot;&gt;
@@ -1144,26 +1189,28 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (46, 37, "&lt;p&
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (46, 1, "Which &quot;href&quot; value should I use for JavaScript links, &quot;#&quot; or &quot;javascript:void(0)&quot;?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (46, 1, 'Which &quot;href&quot; value should I use for JavaScript links, &quot;#&quot; or &quot;javascript:void(0)&quot;?');
+INSERT INTO activity (post_id, user_id, action) VALUES (46, 16, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (46, 19);
 INSERT INTO questiontag (question_id, tag_id) VALUES (46, 46);
 INSERT INTO questiontag (question_id, tag_id) VALUES (46, 3);
 INSERT INTO questiontag (question_id, tag_id) VALUES (46, 4);
-INSERT INTO tag (text) VALUES ("href");
+INSERT INTO tag (text) VALUES ('href');
 INSERT INTO questiontag (question_id, tag_id) VALUES (46, 121);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3109, 2155);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (47, 23, "&lt;p&gt;How do I check whether a file exists, without using the &lt;a href=&quot;https://docs.python.org/3.6/reference/compound_stmts.html#try&quot; rel=&quot;noreferrer&quot;&gt;&lt;code&gt;try&lt;/code&gt;&lt;/a&gt; statement?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (47, 1, "How do I check whether a file exists using Python?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3110, 1389);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (47, 48, '&lt;p&gt;How do I check whether a file exists, without using the &lt;a href=&quot;https://docs.python.org/3.6/reference/compound_stmts.html#try&quot; rel=&quot;noreferrer&quot;&gt;&lt;code&gt;try&lt;/code&gt;&lt;/a&gt; statement?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (47, 1, 'How do I check whether a file exists using Python?');
+INSERT INTO activity (post_id, user_id, action) VALUES (47, 48, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (47, 27);
 INSERT INTO questiontag (question_id, tag_id) VALUES (47, 115);
-INSERT INTO tag (text) VALUES ("filesystems");
+INSERT INTO tag (text) VALUES ('filesystems');
 INSERT INTO questiontag (question_id, tag_id) VALUES (47, 122);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3096, 2612);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (48, 35, "&lt;p&gt;Yesterday I was pairing the socks from the clean laundry and figured out the way I was doing it is not very efficient. I was doing a naive search&amp;nbsp;— picking one sock and &quot;iterating&quot; the pile in order to find its pair. This requires iterating over n/2 * n/4 = n&lt;sup&gt;2&lt;/sup&gt;/8 socks on average.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3096, 363);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (48, 46, '&lt;p&gt;Yesterday I was pairing the socks from the clean laundry and figured out the way I was doing it is not very efficient. I was doing a naive search&amp;nbsp;— picking one sock and &quot;iterating&quot; the pile in order to find its pair. This requires iterating over n/2 * n/4 = n&lt;sup&gt;2&lt;/sup&gt;/8 socks on average.&lt;/p&gt;
 
 &lt;p&gt;As a computer scientist I was thinking what I could do? Sorting (according to size/color/...) of course came to mind to achieve an O(NlogN) solution.&lt;/p&gt;
 
@@ -1180,42 +1227,45 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (48, 35, "&lt;p&
 &lt;li&gt;The actual number of socks is not that large, I don&#x27;t believe my spouse and I have more than 30 pairs. (And it is fairly easy to distinguish between my socks and hers; can this be used as well?)&lt;/li&gt;
 &lt;li&gt;Is it equivalent to the &lt;a href=&quot;http://en.wikipedia.org/wiki/Element_distinctness_problem&quot;&gt;element distinctness problem&lt;/a&gt;?&lt;/li&gt;
 &lt;/ul&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (48, 1, "How to pair socks from a pile efficiently?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (48, 1, 'How to pair socks from a pile efficiently?');
+INSERT INTO activity (post_id, user_id, action) VALUES (48, 46, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (48, 81);
-INSERT INTO tag (text) VALUES ("sorting");
+INSERT INTO tag (text) VALUES ('sorting');
 INSERT INTO questiontag (question_id, tag_id) VALUES (48, 123);
 INSERT INTO questiontag (question_id, tag_id) VALUES (48, 36);
-INSERT INTO tag (text) VALUES ("matching");
+INSERT INTO tag (text) VALUES ('matching');
 INSERT INTO questiontag (question_id, tag_id) VALUES (48, 124);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3054, 551);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (49, 63, "&lt;p&gt;I have a &lt;code&gt;master&lt;/code&gt; and a &lt;code&gt;development&lt;/code&gt; branch, both pushed to &lt;a href=&quot;http://en.wikipedia.org/wiki/GitHub&quot; rel=&quot;noreferrer&quot;&gt;GitHub&lt;/a&gt;. I&#x27;ve &lt;code&gt;clone&lt;/code&gt;d, &lt;code&gt;pull&lt;/code&gt;ed, and &lt;code&gt;fetch&lt;/code&gt;ed, but I remain unable to get anything other than the &lt;code&gt;master&lt;/code&gt; branch back.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3054, 2275);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (49, 31, '&lt;p&gt;I have a &lt;code&gt;master&lt;/code&gt; and a &lt;code&gt;development&lt;/code&gt; branch, both pushed to &lt;a href=&quot;http://en.wikipedia.org/wiki/GitHub&quot; rel=&quot;noreferrer&quot;&gt;GitHub&lt;/a&gt;. I&#x27;ve &lt;code&gt;clone&lt;/code&gt;d, &lt;code&gt;pull&lt;/code&gt;ed, and &lt;code&gt;fetch&lt;/code&gt;ed, but I remain unable to get anything other than the &lt;code&gt;master&lt;/code&gt; branch back.&lt;/p&gt;
 
 &lt;p&gt;I&#x27;m sure I&#x27;m missing something obvious, but I have read the manual and I&#x27;m getting no joy at all.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (49, 1, "How to clone all remote branches in Git?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (49, 1, 'How to clone all remote branches in Git?');
+INSERT INTO activity (post_id, user_id, action) VALUES (49, 31, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (49, 6);
 INSERT INTO questiontag (question_id, tag_id) VALUES (49, 11);
-INSERT INTO tag (text) VALUES ("git-clone");
+INSERT INTO tag (text) VALUES ('git-clone');
 INSERT INTO questiontag (question_id, tag_id) VALUES (49, 125);
 INSERT INTO questiontag (question_id, tag_id) VALUES (49, 87);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3044, 1491);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (50, 32, "&lt;p&gt;If Python does not have a ternary conditional operator, is it possible to simulate one using other language constructs?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (50, 1, "Does Python have a ternary conditional operator?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3044, 2052);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (50, 63, '&lt;p&gt;If Python does not have a ternary conditional operator, is it possible to simulate one using other language constructs?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (50, 1, 'Does Python have a ternary conditional operator?');
+INSERT INTO activity (post_id, user_id, action) VALUES (50, 63, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (50, 27);
 INSERT INTO questiontag (question_id, tag_id) VALUES (50, 22);
-INSERT INTO tag (text) VALUES ("ternary-operator");
+INSERT INTO tag (text) VALUES ('ternary-operator');
 INSERT INTO questiontag (question_id, tag_id) VALUES (50, 126);
-INSERT INTO tag (text) VALUES ("conditional-operator");
+INSERT INTO tag (text) VALUES ('conditional-operator');
 INSERT INTO questiontag (question_id, tag_id) VALUES (50, 127);
-INSERT INTO tag (text) VALUES ("python-2.5");
+INSERT INTO tag (text) VALUES ('python-2.5');
 INSERT INTO questiontag (question_id, tag_id) VALUES (50, 128);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 70, 44);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (51, 65, "&lt;p&gt;There are two major approaches:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 70, 9);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (51, 25, '&lt;p&gt;There are two major approaches:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;splice()&lt;/strong&gt;: &lt;code&gt;anArray.splice(index, 1);&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
@@ -1230,11 +1280,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (51, 65, "&lt;p&
 In that case, all indexed &lt;code&gt;for&lt;/code&gt; loops would crash, since indexes are no longer sequential.&lt;/p&gt;
 
 &lt;p&gt;If you are forced to use &lt;code&gt;delete&lt;/code&gt; for some reason, then you should use &lt;a href=&quot;http://stackoverflow.com/questions/9329446/for-each-over-an-array-in-javascript&quot;&gt;&lt;code&gt;for each&lt;/code&gt;&lt;/a&gt; loops when you need to loop through arrays.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (51, 31, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (51, 31, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (51, 25, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3092, 958);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (52, 29, "&lt;h2&gt;Beginner&lt;/h2&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3092, 1329);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (52, 12, '&lt;h2&gt;Beginner&lt;/h2&gt;
 
 &lt;h3&gt;Introductory, no previous programming experience&lt;/h3&gt;
 
@@ -1322,11 +1373,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (52, 29, "&lt;h2
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://rads.stackoverflow.com/amzn/click/0201834545&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;em&gt;Inside the C++ Object Model&lt;/em&gt;&lt;/a&gt; (Stanley Lippman)  If you want to know how virtual member functions are commonly implemented and how base objects are commonly laid out in memory in a multi-inheritance scenario, and how all this affects performance, this is where you will find thorough discussions of such topics.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://rads.stackoverflow.com/amzn/click/0201514591&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;em&gt;The Annotated C++ Reference Manual&lt;/em&gt;&lt;/a&gt; (Bjarne Stroustrup, Margaret A. Ellis) This book is quite outdated in the fact that it explores the 1989 C++ 2.0 version - Templates, exceptions, namespaces and new casts were not yet introduced. Saying that however this is book goes through the entire C++ standard of the time explaining the rationale, the possible implementations and features of the language. This is not a book not learn programming principles and patterns on C++, but to understand every aspect of the C++ language.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (52, 26, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (52, 26, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (52, 12, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 102, 26);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (53, 85, "&lt;p&gt;I tend to learn better by GOOD/BAD comparisons. I like to see working code followed by non-working code that someone is likely to encounter. I put together &lt;a href=&quot;http://jsfiddle.net/KMQZK/&quot; rel=&quot;nofollow noreferrer&quot;&gt;a jsFiddle&lt;/a&gt; that does a comparison and tries to boil down the differences to the simplest explanations I could come up with.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 102, 32);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (53, 52, '&lt;p&gt;I tend to learn better by GOOD/BAD comparisons. I like to see working code followed by non-working code that someone is likely to encounter. I put together &lt;a href=&quot;http://jsfiddle.net/KMQZK/&quot; rel=&quot;nofollow noreferrer&quot;&gt;a jsFiddle&lt;/a&gt; that does a comparison and tries to boil down the differences to the simplest explanations I could come up with.&lt;/p&gt;
 
 &lt;h2&gt;Closures done right:&lt;/h2&gt;
 
@@ -1414,11 +1466,12 @@ for (var index in badArr) {
   n = 10&lt;br&gt;
   n = 10  &lt;/p&gt;
 &lt;/blockquote&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (53, 7, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (53, 7, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (53, 52, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3445, 1735);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (54, 51, "&lt;p&gt;Java is always &lt;strong&gt;pass-by-value&lt;/strong&gt;. Unfortunately, they decided to call the location of an object a &quot;reference&quot;.  When we pass the value of an object, we are passing the &lt;em&gt;reference&lt;/em&gt; to it.  This is confusing to beginners.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3446, 1370);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (54, 82, '&lt;p&gt;Java is always &lt;strong&gt;pass-by-value&lt;/strong&gt;. Unfortunately, they decided to call the location of an object a &quot;reference&quot;.  When we pass the value of an object, we are passing the &lt;em&gt;reference&lt;/em&gt; to it.  This is confusing to beginners.&lt;/p&gt;
 
 &lt;p&gt;It goes like this:&lt;/p&gt;
 
@@ -1458,11 +1511,12 @@ public void foo(Dog d) {
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;In the above example, &lt;code&gt;FiFi&lt;/code&gt; is the dog&#x27;s name after call to &lt;code&gt;foo(aDog)&lt;/code&gt; because the object&#x27;s name was set inside of &lt;code&gt;foo(...)&lt;/code&gt;. Any operations that &lt;code&gt;foo&lt;/code&gt; performs on &lt;code&gt;d&lt;/code&gt; are such that, for all practical purposes, they are performed on &lt;code&gt;aDog&lt;/code&gt; itself (except when &lt;code&gt;d&lt;/code&gt; is changed to point to a different &lt;code&gt;Dog&lt;/code&gt; instance like &lt;code&gt;d = new Dog(&quot;Boxer&quot;)&lt;/code&gt;).&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (54, 30, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (54, 30, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (54, 82, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (55, 81, "&lt;p&gt;On a modern website in 2017 the use of href should be avoided if the element is only using JavaScript functionality (not a real link).&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (55, 75, '&lt;p&gt;On a modern website in 2017 the use of href should be avoided if the element is only using JavaScript functionality (not a real link).&lt;/p&gt;
 
 &lt;p&gt;Why?
 Most pages rely so heavily on JavaScript that they simply don&#x27;t work without JS properly anymore. Besides, the given fallbacks (href to &quot;&quot;, &quot;#&quot;, or &quot;js..(void)) don&#x27;t add any benefit except add the open in new tab functionality that will reopen the same page without the intended function.&lt;/p&gt;
@@ -1471,11 +1525,12 @@ Most pages rely so heavily on JavaScript that they simply don&#x27;t work withou
 
 &lt;p&gt;In regards to IE:
 As of IE8,  element styling (including hover) works if the doctype is set. Other versions of IE are not really supported anymore.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (55, 46, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (55, 46, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (55, 75, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (56, 27, "&lt;p&gt;Another solution, using &lt;strong&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;code&gt;Array#reduce&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (56, 90, '&lt;p&gt;Another solution, using &lt;strong&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;code&gt;Array#reduce&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&quot;snippet&quot; data-lang=&quot;js&quot; data-hide=&quot;false&quot; data-console=&quot;true&quot; data-babel=&quot;false&quot;&gt;
 &lt;div class=&quot;snippet-code&quot;&gt;
@@ -1496,21 +1551,23 @@ console.log(myObject);&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (56, 34, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (56, 34, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (56, 90, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 5, 2);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (57, 51, "&lt;p&gt;Use:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5, 3);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (57, 30, '&lt;p&gt;Use:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git reset HEAD~1 --soft
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Make changes, add, and commit the changes.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (57, 2, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (57, 2, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (57, 30, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 30, 29);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (58, 9, "&lt;p&gt;If you want remove files in the last commit, you can use this:  &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 30, 2);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (58, 19, '&lt;p&gt;If you want remove files in the last commit, you can use this:  &lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git reset --hard HEAD~1
 &lt;/code&gt;&lt;/pre&gt;
@@ -1519,49 +1576,54 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (58, 9, "&lt;p&g
 
 &lt;pre&gt;&lt;code&gt;git reset --soft HEAD~1
 &lt;/code&gt;&lt;/pre&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (58, 2, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (58, 2, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (58, 19, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 9, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (59, 96, "&lt;p&gt;Use this command:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 9, 7);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (59, 52, '&lt;p&gt;Use this command:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git checkout -b old-state number_commit
 &lt;/code&gt;&lt;/pre&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (59, 2, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (59, 2, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (59, 52, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 6, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (60, 37, "&lt;p&gt;You just have to use a single command:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 6, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (60, 71, '&lt;p&gt;You just have to use a single command:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git reset --soft &#x27;HEAD^&#x27; 
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;It works to undo the last local commit to your Git repository.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (60, 2, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (60, 2, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (60, 71, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("deleted", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (61, 24, "&lt;p&gt;I have found &lt;a href=&quot;http://ohshitgit.com/&quot; rel=&quot;nofollow noreferrer&quot;&gt;this&lt;/a&gt; site which describes how to undo things that you have committed into the repository.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (61, 42, '&lt;p&gt;I have found &lt;a href=&quot;http://ohshitgit.com/&quot; rel=&quot;nofollow noreferrer&quot;&gt;this&lt;/a&gt; site which describes how to undo things that you have committed into the repository.&lt;/p&gt;
 
 &lt;p&gt;Some commands:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git commit --amend        # Change last commit
 git reset HEAD~ --soft    # Undo last commit
 &lt;/code&gt;&lt;/pre&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (61, 2, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (61, 2, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (61, 42, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 20, 6);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (62, 39, "&lt;p&gt;If you are working with &lt;strong&gt;&lt;a href=&quot;https://www.sourcetreeapp.com/&quot; rel=&quot;nofollow noreferrer&quot;&gt;SourceTree&lt;/a&gt;&lt;/strong&gt;, this will help you.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 20, 19);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (62, 2, '&lt;p&gt;If you are working with &lt;strong&gt;&lt;a href=&quot;https://www.sourcetreeapp.com/&quot; rel=&quot;nofollow noreferrer&quot;&gt;SourceTree&lt;/a&gt;&lt;/strong&gt;, this will help you.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Right click&lt;/strong&gt; on the commit then &lt;strong&gt;select&lt;/strong&gt; &quot;&lt;em&gt;Reset (current branch)/master to this commit&lt;/em&gt;&quot; and last &lt;strong&gt;select&lt;/strong&gt;  &lt;em&gt;&quot;Soft&quot; reset&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/BSMo2.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/BSMo2.png&quot; alt=&quot;Enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (62, 2, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (62, 2, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (62, 2, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (63, 11, "&lt;p&gt;To be fair the question pre-dates this answer. I add it not to criticise the OP but to help anyone still asking this question.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (63, 52, '&lt;p&gt;To be fair the question pre-dates this answer. I add it not to criticise the OP but to help anyone still asking this question.&lt;/p&gt;
 
 &lt;p&gt;The correct way to determine whether something is visible is to consult your view-model. If you don&#x27;t know what that means then you are about to embark on a journey of discovery that will make your work a great deal less difficult.&lt;/p&gt;
 
@@ -1591,11 +1653,12 @@ ko.applyBinding(vm);
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Notice that the toggle function does not consult the DOM to determine the visibility of the div, it consults the view-model.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (63, 15, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (63, 15, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (63, 52, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 17, 11);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (64, 69, "&lt;h2&gt;WHAT TO USE, &lt;code&gt;reset --soft&lt;/code&gt; or &lt;code&gt;reset --hard&lt;/code&gt;?&lt;/h2&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 17, 9);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (64, 13, '&lt;h2&gt;WHAT TO USE, &lt;code&gt;reset --soft&lt;/code&gt; or &lt;code&gt;reset --hard&lt;/code&gt;?&lt;/h2&gt;
 
 &lt;p&gt;I am just adding two cents for @Kyralessa&#x27;s answer:&lt;/p&gt;
 
@@ -1625,21 +1688,23 @@ git checkout -- file.html # cancel changes
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Credits goes to @Kyralessa.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (64, 2, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (64, 2, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (64, 13, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 31, 25);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (65, 43, "&lt;p&gt;You can use:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 31, 4);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (65, 97, '&lt;p&gt;You can use:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git reset HEAD@{1}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This command will delete your wrong commit without a Git log.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (65, 2, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (65, 2, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (65, 97, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 21, 8);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (66, 56, "&lt;p&gt;&lt;strong&gt;VISUAL STUDIO USERS (2015, etc.)&lt;/strong&gt;&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 21, 7);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (66, 98, '&lt;p&gt;&lt;strong&gt;VISUAL STUDIO USERS (2015, etc.)&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;If you cannot synchronise in Visual Studio as you are not allowed to push to a branch like &quot;development&quot; then as much as I tried, in Visual Studio NEITHER the &lt;strong&gt;REVERT&lt;/strong&gt; NOR the &lt;strong&gt;RESET&lt;/strong&gt; (hard or soft) would work.&lt;/p&gt;
 
@@ -1651,11 +1716,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (66, 56, "&lt;p&
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Backup or zip your files just in case you don&#x27;t wish to lose any work, etc...&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (66, 2, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (66, 2, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (66, 98, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 19, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (67, 83, "&lt;p&gt;I got the commit ID from &lt;code&gt;bitbucket&lt;/code&gt; and then did:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 19, 8);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (67, 20, '&lt;p&gt;I got the commit ID from &lt;code&gt;bitbucket&lt;/code&gt; and then did:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git checkout commitID .
 &lt;/code&gt;&lt;/pre&gt;
@@ -1666,11 +1732,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (67, 83, "&lt;p&
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;And it reverted it back up to that working copy of that commit.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (67, 2, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (67, 2, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (67, 20, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 53, 11);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (68, 4, "&lt;h2&gt;Undo last commit:-&lt;/h2&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 53, 24);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (68, 41, '&lt;h2&gt;Undo last commit:-&lt;/h2&gt;
 
 &lt;p&gt;&lt;code&gt;git reset --soft HEAD^&lt;/code&gt; or &lt;code&gt;git reset --soft HEAD~&lt;/code&gt;&lt;/p&gt;
 
@@ -1688,11 +1755,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (68, 4, "&lt;h2&
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;It will replace the last commit with the new commit.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (68, 2, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (68, 2, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (68, 41, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 49, 47);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (69, 72, "&lt;p&gt;There are many ways to do it:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 49, 10);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (69, 61, '&lt;p&gt;There are many ways to do it:&lt;/p&gt;
 
 &lt;p&gt;Git command to undo the last commit/ previous commits:&lt;/p&gt;
 
@@ -1744,18 +1812,20 @@ bedgfgg function to mulitply two numbers
 
 &lt;pre&gt;&lt;code&gt;$ git reset --help
 &lt;/code&gt;&lt;/pre&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (69, 2, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (69, 2, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (69, 61, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 32, 3);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (70, 17, "&lt;p&gt;To undo your local commit you use &lt;code&gt;git reset &amp;lt;file&amp;gt;&lt;/code&gt;. Also &lt;a href=&quot;https://www.atlassian.com/git/tutorials/undoing-changes/git-reset&quot; rel=&quot;nofollow noreferrer&quot;&gt;that tutorial&lt;/a&gt; is very helpful to show you how it works.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 32, 13);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (70, 30, '&lt;p&gt;To undo your local commit you use &lt;code&gt;git reset &amp;lt;file&amp;gt;&lt;/code&gt;. Also &lt;a href=&quot;https://www.atlassian.com/git/tutorials/undoing-changes/git-reset&quot; rel=&quot;nofollow noreferrer&quot;&gt;that tutorial&lt;/a&gt; is very helpful to show you how it works.&lt;/p&gt;
 
 &lt;p&gt;Alternatively, you can use &lt;code&gt;git revert &amp;lt;commit&amp;gt;&lt;/code&gt;: &lt;a href=&quot;https://www.atlassian.com/git/tutorials/undoing-changes/git-revert/&quot; rel=&quot;nofollow noreferrer&quot;&gt;reverting&lt;/a&gt; should be used when you want to add another commit that rolls back the changes (but keeps them in the project history).&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (70, 2, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (70, 2, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (70, 30, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 30, 23);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (71, 72, "&lt;h3&gt;A Typical Git Cycle&lt;/h3&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 30, 27);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (71, 48, '&lt;h3&gt;A Typical Git Cycle&lt;/h3&gt;
 
 &lt;p&gt;In speaking of Git-related commands in the previous answers, I would like to share my typical Git cycles with all readers which may helpful. Here is how I work with Git,&lt;/p&gt;
 
@@ -1791,16 +1861,18 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (71, 72, "&lt;h3
 
 &lt;p&gt;&lt;code&gt;git push origin head:refs/for/$branch # branch = master, dev, etc.&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (71, 2, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (71, 2, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (71, 48, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 18, 2);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (72, 5, "&lt;p&gt;You can always do a &lt;code&gt;git checkout&lt;/code&gt; (SHA code) of the previous version and then commit again with the new code.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (72, 2, "False");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 18, 12);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (72, 84, '&lt;p&gt;You can always do a &lt;code&gt;git checkout&lt;/code&gt; (SHA code) of the previous version and then commit again with the new code.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (72, 2, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (72, 84, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 25, 17);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (73, 70, "&lt;p&gt;You need to do the easy and fast&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 25, 19);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (73, 94, '&lt;p&gt;You need to do the easy and fast&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;    git commit --amend
 &lt;/code&gt;&lt;/pre&gt;
@@ -1811,11 +1883,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (73, 70, "&lt;p&
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;if it&#x27;s a shared or public branch.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (73, 2, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (73, 2, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (73, 94, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 136, 51);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (74, 69, "&lt;p&gt;&lt;strong&gt;How to undo the last Git commit?&lt;/strong&gt;&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 136, 83);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (74, 92, '&lt;p&gt;&lt;strong&gt;How to undo the last Git commit?&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;To restore everything back to the way it was prior to the last commit, we need to reset to the commit before HEAD.&lt;/p&gt;
 
@@ -1831,11 +1904,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (74, 69, "&lt;p&
 &lt;/ol&gt;
 
 &lt;p&gt;Now check your git log. It will show that our last commit has been removed.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (74, 2, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (74, 2, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (74, 92, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (75, 57, "&lt;p&gt;string is equal to System.String&lt;br&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (75, 82, '&lt;p&gt;string is equal to System.String&lt;br&gt;
 in VS2015 if you write this &lt;br&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;System.String str;
@@ -1845,22 +1919,24 @@ in VS2015 if you write this &lt;br&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;string str;
 &lt;/code&gt;&lt;/pre&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (75, 29, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (75, 29, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (75, 82, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (76, 30, "&lt;p&gt;&lt;strong&gt;Git Revert to Old Commit&lt;/strong&gt;&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (76, 42, '&lt;p&gt;&lt;strong&gt;Git Revert to Old Commit&lt;/strong&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;git reset --hard &lt;strong&gt;&lt;em&gt;hash-to-reverted&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
   
   &lt;p&gt;git push origin HEAD --force&lt;/p&gt;
 &lt;/blockquote&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (76, 2, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (76, 2, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (76, 42, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 8272, 2290);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (77, 7, "&lt;p&gt;It&#x27;s a time zone change on December 31st in Shanghai.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 8276, 6997);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (77, 43, '&lt;p&gt;It&#x27;s a time zone change on December 31st in Shanghai.&lt;/p&gt;
 
 &lt;p&gt;See &lt;a href=&quot;http://www.timeanddate.com/worldclock/clockchange.html?n=237&amp;amp;year=1927&quot; rel=&quot;noreferrer&quot;&gt;this page&lt;/a&gt; for details of 1927 in Shanghai. Basically at midnight at the end of 1927, the clocks went back 5 minutes and 52 seconds. So &quot;1927-12-31 23:54:08&quot; actually happened twice, and it looks like Java is parsing it as the &lt;em&gt;later&lt;/em&gt; possible instant for that local date/time - hence the difference.&lt;/p&gt;
 
@@ -1894,11 +1970,12 @@ public class Test {
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;The code above produces no output on my Windows machine. So any time zone which has any offset other than its standard one at the start of 1900 will count that as a transition. TZDB itself has some data going back earlier than that, and doesn&#x27;t rely on any idea of a &quot;fixed&quot; standard time (which is what &lt;code&gt;getRawOffset&lt;/code&gt; assumes to be a valid concept) so other libraries needn&#x27;t introduce this artificial transition.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (77, 17, "True");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (77, 17, 'True');
+INSERT INTO activity (post_id, user_id, action) VALUES (77, 43, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 131, 35);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (78, 47, "&lt;p&gt;&lt;strong&gt;Moreover you should have clear understanding about the following concepts:&lt;/strong&gt;&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 131, 122);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (78, 82, '&lt;p&gt;&lt;strong&gt;Moreover you should have clear understanding about the following concepts:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Screen size:&lt;/strong&gt;&lt;/p&gt;
 
@@ -1953,11 +2030,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (78, 47, "&lt;p&
 &lt;/blockquote&gt;
 
 &lt;p&gt;Reference: &lt;a href=&quot;http://developer.android.com/guide/practices/screens_support.html#terms&quot; rel=&quot;nofollow noreferrer&quot;&gt;Android developers site&lt;/a&gt;&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (78, 27, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (78, 27, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (78, 82, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (79, 95, "&lt;p&gt;You can use &lt;code&gt;os.system&lt;/code&gt;. This returns 0 if the file exists, and returns 512 if the file does not exist.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (79, 25, '&lt;p&gt;You can use &lt;code&gt;os.system&lt;/code&gt;. This returns 0 if the file exists, and returns 512 if the file does not exist.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;import os
 
@@ -1967,11 +2045,12 @@ if iffile == 0:
 else:
    print &#x27;file does not exist&#x27;
 &lt;/code&gt;&lt;/pre&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (79, 47, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (79, 47, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (79, 25, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (80, 67, "&lt;p&gt;A closure is simply when a function have access to its outside scope even after the scope&#x27;s function has finished executing. 
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (80, 57, '&lt;p&gt;A closure is simply when a function have access to its outside scope even after the scope&#x27;s function has finished executing. 
 Example: &lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;function multiplier(n) {
@@ -1994,159 +2073,192 @@ var x = 10xmultiplier(5); // x= 50
 
 &lt;p&gt;I highly recommend you to read this book by Kyle Simpson: &lt;a href=&quot;https://github.com/getify/You-Dont-Know-JS&quot; rel=&quot;nofollow noreferrer&quot;&gt;2&lt;/a&gt; one part of the book series is dedicated to closures and it is called scope and closures.
 &lt;a href=&quot;https://github.com/getify/You-Dont-Know-JS&quot; rel=&quot;nofollow noreferrer&quot;&gt;you don&#x27;t know js: free reading on github&lt;/a&gt;&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (80, 7, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (80, 7, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (80, 57, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (81, 79, "Addition for, how to add JS functionality to a &amp;quot;link&amp;quot;. Make use of the JS framework that is in place or JQuery.  I.e.: $(&amp;quot;myLinkId&amp;quot;).click(myFunction());");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (81, 30, 'Addition for, how to add JS functionality to a &amp;quot;link&amp;quot;. Make use of the JS framework that is in place or JQuery.  I.e.: $(&amp;quot;myLinkId&amp;quot;).click(myFunction());');
 INSERT INTO answercomment (post_id, answer_id) VALUES (81, 55);
+INSERT INTO activity (post_id, user_id, action) VALUES (81, 30, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (82, 47, "Thanks! I&amp;#39;m glad it helped :)");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (82, 54, 'Thanks! I&amp;#39;m glad it helped :)');
 INSERT INTO answercomment (post_id, answer_id) VALUES (82, 53);
+INSERT INTO activity (post_id, user_id, action) VALUES (82, 54, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (83, 25, "I think this is among the best explanations for JavaScript closures.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (83, 33, 'I think this is among the best explanations for JavaScript closures.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (83, 53);
+INSERT INTO activity (post_id, user_id, action) VALUES (83, 33, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (84, 56, "During Compile time , java behaves as pass by reference.during runtime it&amp;#39;s pass by value.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (84, 88, 'During Compile time , java behaves as pass by reference.during runtime it&amp;#39;s pass by value.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (84, 54);
+INSERT INTO activity (post_id, user_id, action) VALUES (84, 88, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (85, 88, "&lt;code&gt;git reset --hard HEAD~1&lt;/code&gt; is &lt;b&gt;too dangerous&lt;/b&gt;! This will not just &amp;#39;cancel last commit&amp;#39;, but will revert repo completely back to the previous commit. So you will LOOSE all changes committed in the last commit!");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (85, 19, '&lt;code&gt;git reset --hard HEAD~1&lt;/code&gt; is &lt;b&gt;too dangerous&lt;/b&gt;! This will not just &amp;#39;cancel last commit&amp;#39;, but will revert repo completely back to the previous commit. So you will LOOSE all changes committed in the last commit!');
 INSERT INTO answercomment (post_id, answer_id) VALUES (85, 69);
+INSERT INTO activity (post_id, user_id, action) VALUES (85, 19, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (86, 15, "I am Little confused. Can Anyone explain this concept of array being &lt;code&gt;pass by reference&lt;/code&gt;? &lt;a href=&quot;https://gist.github.com/shah-smit/0506d70f7a48b70eeddbe00b59ce6a84&quot; rel=&quot;nofollow noreferrer&quot;&gt;gist.github.com/shah-smit/0506d70f7a48b70eeddbe00b59ce6a84&lt;/a&gt;");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (86, 90, 'I am Little confused. Can Anyone explain this concept of array being &lt;code&gt;pass by reference&lt;/code&gt;? &lt;a href=&quot;https://gist.github.com/shah-smit/0506d70f7a48b70eeddbe00b59ce6a84&quot; rel=&quot;nofollow noreferrer&quot;&gt;gist.github.com/shah-smit/0506d70f7a48b70eeddbe00b59ce6a84&lt;/a&gt;');
 INSERT INTO answercomment (post_id, answer_id) VALUES (86, 54);
+INSERT INTO activity (post_id, user_id, action) VALUES (86, 90, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (87, 61, "Thanks @MKatleast3 , this is good when i need unstage my files.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (87, 40, 'Thanks @MKatleast3 , this is good when i need unstage my files.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (87, 58);
+INSERT INTO activity (post_id, user_id, action) VALUES (87, 40, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (88, 25, "After &lt;code&gt;git reset --soft HEAD~1&lt;/code&gt;, if you need to unstage files, use: &lt;code&gt;git reset&lt;/code&gt;");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (88, 4, 'After &lt;code&gt;git reset --soft HEAD~1&lt;/code&gt;, if you need to unstage files, use: &lt;code&gt;git reset&lt;/code&gt;');
 INSERT INTO answercomment (post_id, answer_id) VALUES (88, 58);
+INSERT INTO activity (post_id, user_id, action) VALUES (88, 4, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (89, 50, "or we can say it is not pass by reference but it is object&amp;#39;s reference passed by value.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (89, 97, 'or we can say it is not pass by reference but it is object&amp;#39;s reference passed by value.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (89, 54);
+INSERT INTO activity (post_id, user_id, action) VALUES (89, 97, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (90, 65, "I would suggest to avoid using those terms altogether within a Java context. Just known how it really works in Java — this example did a great job doing so.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (90, 74, 'I would suggest to avoid using those terms altogether within a Java context. Just known how it really works in Java — this example did a great job doing so.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (90, 54);
+INSERT INTO activity (post_id, user_id, action) VALUES (90, 74, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (91, 31, "thank you @EugenKonkov  I&amp;#39;ll fix it");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (91, 18, 'thank you @EugenKonkov  I&amp;#39;ll fix it');
 INSERT INTO answercomment (post_id, answer_id) VALUES (91, 65);
+INSERT INTO activity (post_id, user_id, action) VALUES (91, 18, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (92, 23, "The very useful description about differences &lt;code&gt;--soft&lt;/code&gt; VS &lt;code&gt;--hard&lt;/code&gt; &lt;a href=&quot;https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting/&quot; rel=&quot;nofollow noreferrer&quot;&gt;atlassian.com/git/tutorials/&amp;hellip;&lt;/a&gt;");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (92, 5, 'The very useful description about differences &lt;code&gt;--soft&lt;/code&gt; VS &lt;code&gt;--hard&lt;/code&gt; &lt;a href=&quot;https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting/&quot; rel=&quot;nofollow noreferrer&quot;&gt;atlassian.com/git/tutorials/&amp;hellip;&lt;/a&gt;');
 INSERT INTO answercomment (post_id, answer_id) VALUES (92, 64);
+INSERT INTO activity (post_id, user_id, action) VALUES (92, 5, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (93, 25, "Be &lt;b&gt;extra&lt;/b&gt; careful when reverting merge commits. You may lose your commits. Read about what Linus says about that: &lt;a href=&quot;https://www.kernel.org/pub/software/scm/git/docs/howto/revert-a-faulty-merge.html&quot; rel=&quot;nofollow noreferrer&quot;&gt;kernel.org/pub/software/scm/git/docs/howto/&amp;hellip;&lt;/a&gt;");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (93, 15, 'Be &lt;b&gt;extra&lt;/b&gt; careful when reverting merge commits. You may lose your commits. Read about what Linus says about that: &lt;a href=&quot;https://www.kernel.org/pub/software/scm/git/docs/howto/revert-a-faulty-merge.html&quot; rel=&quot;nofollow noreferrer&quot;&gt;kernel.org/pub/software/scm/git/docs/howto/&amp;hellip;&lt;/a&gt;');
 INSERT INTO answercomment (post_id, answer_id) VALUES (93, 70);
+INSERT INTO activity (post_id, user_id, action) VALUES (93, 15, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (94, 28, "This can cause SERIOUS problems. Because when you pass an object as parameter in a function, you don&amp;#39;t know wether it will be modified by the user who use the function.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (94, 25, 'This can cause SERIOUS problems. Because when you pass an object as parameter in a function, you don&amp;#39;t know wether it will be modified by the user who use the function.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (94, 54);
+INSERT INTO activity (post_id, user_id, action) VALUES (94, 25, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (95, 21, "@Dhrupal if you want");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (95, 22, '@Dhrupal if you want');
 INSERT INTO answercomment (post_id, answer_id) VALUES (95, 65);
+INSERT INTO activity (post_id, user_id, action) VALUES (95, 22, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (96, 93, "then do we need to commit and push?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (96, 65, 'then do we need to commit and push?');
 INSERT INTO answercomment (post_id, answer_id) VALUES (96, 65);
+INSERT INTO activity (post_id, user_id, action) VALUES (96, 65, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (97, 34, "Or &lt;code&gt;git reset @~&lt;/code&gt;");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (97, 76, 'Or &lt;code&gt;git reset @~&lt;/code&gt;');
 INSERT INTO answercomment (post_id, answer_id) VALUES (97, 65);
+INSERT INTO activity (post_id, user_id, action) VALUES (97, 76, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (98, 55, "@izb the fact that &lt;b&gt;pointers to objects are copied&lt;/b&gt; is different from the notion that &lt;b&gt;objects are passed by reference&lt;/b&gt;. Because they are not passed by reference, their reference is copied.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (98, 16, '@izb the fact that &lt;b&gt;pointers to objects are copied&lt;/b&gt; is different from the notion that &lt;b&gt;objects are passed by reference&lt;/b&gt;. Because they are not passed by reference, their reference is copied.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (98, 54);
+INSERT INTO activity (post_id, user_id, action) VALUES (98, 16, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (99, 22, "No, that&amp;#39;s different. It takes all the files from commit 7991072 and puts them in your working directory, but it won&amp;#39;t change the commit history.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (99, 51, 'No, that&amp;#39;s different. It takes all the files from commit 7991072 and puts them in your working directory, but it won&amp;#39;t change the commit history.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (99, 67);
+INSERT INTO activity (post_id, user_id, action) VALUES (99, 51, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (100, 49, "Ok, so foo(&amp;amp;x) is no different than foo(*x). They both pass a reference by value, so by Java&amp;#39;s definition they are both pass by value. The whole point of pass by reference was never how the actual value you got passed was passed, it&amp;#39;s about how the object the user wants you to have was passed. This definition makes that meaningless. It is completely impossible to pass anything by any means other than by value.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (100, 82, 'Ok, so foo(&amp;amp;x) is no different than foo(*x). They both pass a reference by value, so by Java&amp;#39;s definition they are both pass by value. The whole point of pass by reference was never how the actual value you got passed was passed, it&amp;#39;s about how the object the user wants you to have was passed. This definition makes that meaningless. It is completely impossible to pass anything by any means other than by value.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (100, 54);
+INSERT INTO activity (post_id, user_id, action) VALUES (100, 82, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (101, 26, "@Cdaragorn &lt;i&gt;&amp;quot;In your example (foo(&amp;amp;x)) ... Your passing a reference to x&amp;quot;&lt;/i&gt; Um, that&amp;#39;s the point I was making.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (101, 72, '@Cdaragorn &lt;i&gt;&amp;quot;In your example (foo(&amp;amp;x)) ... Your passing a reference to x&amp;quot;&lt;/i&gt; Um, that&amp;#39;s the point I was making.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (101, 54);
+INSERT INTO activity (post_id, user_id, action) VALUES (101, 72, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (102, 92, "@zeroflagL That&amp;#39;s the problem. It is impossible to ever pass the variable itself. In your example (foo(&amp;amp;x)), you aren&amp;#39;t passing x. Your passing a reference to x. By that definition, there is no such thing as pass by reference because it can never be done.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (102, 20, '@zeroflagL That&amp;#39;s the problem. It is impossible to ever pass the variable itself. In your example (foo(&amp;amp;x)), you aren&amp;#39;t passing x. Your passing a reference to x. By that definition, there is no such thing as pass by reference because it can never be done.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (102, 54);
+INSERT INTO activity (post_id, user_id, action) VALUES (102, 20, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (103, 52, "@Cdaragorn Pass-by-value means that you pass the value of a variable. Pass-by-reference basically means that you pass the variable itself. The point is that this happens &lt;b&gt;implicitly&lt;/b&gt;, i.e. you can call &lt;code&gt;foo(x)&lt;/code&gt; instead of having to call &lt;code&gt;foo(&amp;amp;x)&lt;/code&gt; and dereference &lt;code&gt;x&lt;/code&gt; in &lt;code&gt;foo&lt;/code&gt;. It&amp;#39;s this dichotomy that makes the difference, not the type of value that is passed. Unfortunately many people only focus on just that, which inevitably creates confusion.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (103, 93, '@Cdaragorn Pass-by-value means that you pass the value of a variable. Pass-by-reference basically means that you pass the variable itself. The point is that this happens &lt;b&gt;implicitly&lt;/b&gt;, i.e. you can call &lt;code&gt;foo(x)&lt;/code&gt; instead of having to call &lt;code&gt;foo(&amp;amp;x)&lt;/code&gt; and dereference &lt;code&gt;x&lt;/code&gt; in &lt;code&gt;foo&lt;/code&gt;. It&amp;#39;s this dichotomy that makes the difference, not the type of value that is passed. Unfortunately many people only focus on just that, which inevitably creates confusion.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (103, 54);
+INSERT INTO activity (post_id, user_id, action) VALUES (103, 93, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (104, 81, "I&amp;#39;m sorry, but the fact that you can retarget the reference does not change the fact that what you received was a reference to the actual object. Basically, the entire problem with this definition is that it means there is no such thing as pass by reference in any language, ever. All languages are pass by value according to this reasoning.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (104, 10, 'I&amp;#39;m sorry, but the fact that you can retarget the reference does not change the fact that what you received was a reference to the actual object. Basically, the entire problem with this definition is that it means there is no such thing as pass by reference in any language, ever. All languages are pass by value according to this reasoning.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (104, 54);
+INSERT INTO activity (post_id, user_id, action) VALUES (104, 10, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 19, 6);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (105, 31, "&lt;i&gt;Accelerated C++&lt;/i&gt; is from 2000. Should I worry that it&amp;#39;s out of date?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 19, 4);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (105, 17, '&lt;i&gt;Accelerated C++&lt;/i&gt; is from 2000. Should I worry that it&amp;#39;s out of date?');
 INSERT INTO answercomment (post_id, answer_id) VALUES (105, 52);
+INSERT INTO activity (post_id, user_id, action) VALUES (105, 17, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (106, 39, "Nice addition, thanks. Just to make it more clear one can imagine how the &amp;quot;bad&amp;quot; array is created in the &amp;quot;bad&amp;quot; loop with each iteration:      1st iteration: [function () {return &amp;#39;n = &amp;#39; + 0;}]      2nd iteration: [(function () {return &amp;#39;n = &amp;#39; + 1;}),(function () {return &amp;#39;n = &amp;#39; + 1;})]      3rd iteration: [(function () {return &amp;#39;n = &amp;#39; + 2;}),(function () {return &amp;#39;n = &amp;#39; + 2;}),(function () {return &amp;#39;n = &amp;#39; + 2;})]  etc. So, each time when the index value changes it is reflected in all functions already added to the array.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (106, 17, 'Nice addition, thanks. Just to make it more clear one can imagine how the &amp;quot;bad&amp;quot; array is created in the &amp;quot;bad&amp;quot; loop with each iteration:      1st iteration: [function () {return &amp;#39;n = &amp;#39; + 0;}]      2nd iteration: [(function () {return &amp;#39;n = &amp;#39; + 1;}),(function () {return &amp;#39;n = &amp;#39; + 1;})]      3rd iteration: [(function () {return &amp;#39;n = &amp;#39; + 2;}),(function () {return &amp;#39;n = &amp;#39; + 2;}),(function () {return &amp;#39;n = &amp;#39; + 2;})]  etc. So, each time when the index value changes it is reflected in all functions already added to the array.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (106, 53);
+INSERT INTO activity (post_id, user_id, action) VALUES (106, 17, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (107, 78, "@sksallaj: If you have a look at the first answer, it was pretty short. It doesn&amp;#39;t take very long to find the data if you think you may know where to look...");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (107, 49, '@sksallaj: If you have a look at the first answer, it was pretty short. It doesn&amp;#39;t take very long to find the data if you think you may know where to look...');
 INSERT INTO answercomment (post_id, answer_id) VALUES (107, 77);
+INSERT INTO activity (post_id, user_id, action) VALUES (107, 49, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 5, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (108, 96, "I&amp;#39;m more interested in the times between Jul 27 &amp;#39;11 at 8:15 (the datetime the question was asked).. and the time of Jul 27 &amp;#39;11 at 8:31 (the datetime the question was answered).. was this really a 16 min difference in how long it took Jon Skeet to know this answer AND explain it? Shouldn&amp;#39;t this be much longer? Or am I really underestimating Jon Skeet by asking this question?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5, 3);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (108, 10, 'I&amp;#39;m more interested in the times between Jul 27 &amp;#39;11 at 8:15 (the datetime the question was asked).. and the time of Jul 27 &amp;#39;11 at 8:31 (the datetime the question was answered).. was this really a 16 min difference in how long it took Jon Skeet to know this answer AND explain it? Shouldn&amp;#39;t this be much longer? Or am I really underestimating Jon Skeet by asking this question?');
 INSERT INTO answercomment (post_id, answer_id) VALUES (108, 77);
+INSERT INTO activity (post_id, user_id, action) VALUES (108, 10, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 4, 3);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (109, 53, "@G.Rassovsky on the accu.org website, there&amp;#39;s a book reviews section with ratings. You can search for the C++ ones. Many of them are rated &amp;quot;not recommended&amp;quot;.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (109, 45, '@G.Rassovsky on the accu.org website, there&amp;#39;s a book reviews section with ratings. You can search for the C++ ones. Many of them are rated &amp;quot;not recommended&amp;quot;.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (109, 52);
+INSERT INTO activity (post_id, user_id, action) VALUES (109, 45, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (110, 0, "@RevanthKumar - Hard to tell from the formatting; I assume your special line is the &amp;quot;t = t_.new trial1()&amp;quot; line? If so, then yes. You have a pointer passed to foo. If the special line is run, the parameter t is changed to point to a new trial object, and the string in that new trial1 is changed. If that line is removed, foo follows the pointer to the trial1 passed in and changes its string.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (110, 82, '@RevanthKumar - Hard to tell from the formatting; I assume your special line is the &amp;quot;t = t_.new trial1()&amp;quot; line? If so, then yes. You have a pointer passed to foo. If the special line is run, the parameter t is changed to point to a new trial object, and the string in that new trial1 is changed. If that line is removed, foo follows the pointer to the trial1 passed in and changes its string.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (110, 54);
+INSERT INTO activity (post_id, user_id, action) VALUES (110, 82, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 939, 242);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (111, 21, "&lt;p&gt;I hesitate to ask this question, but I read a lot of the career advice from MathOverflow and math.stackexchange, and I couldn&#x27;t find anything similar. &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 939, 646);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (111, 4, '&lt;p&gt;I hesitate to ask this question, but I read a lot of the career advice from MathOverflow and math.stackexchange, and I couldn&#x27;t find anything similar. &lt;/p&gt;
 
 &lt;p&gt;Four years after the PhD, I am pretty sure that I am going to leave academia soon. I do enjoy teaching and research, but the alpha-maleness, massive egos and pressure to publish are really unappealing to me, and I have never felt that I had the mathematical power to prove interesting results. However, I am really having trouble thinking of anything else to do. Most people seem to think that the main careers open to mathematicians are in banking and finance. I really want to work in some field where I can use mathematics, but it is also important to me to feel like I am contributing something positive or at least not actively doing harm. For this reason, financial speculation is very unappealing to me, although I do find the underlying mathematics quite fascinating.&lt;/p&gt;
 
 &lt;p&gt;Here is my question: what careers which make a positive contribution to society
 might be open to academic mathematicians who want to change careers?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (111, 2, "Can I use my powers for good?");
-INSERT INTO tag (text) VALUES ("soft-question");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (111, 2, 'Can I use my powers for good?');
+INSERT INTO activity (post_id, user_id, action) VALUES (111, 4, 'Create');
+INSERT INTO tag (text) VALUES ('soft-question');
 INSERT INTO questiontag (question_id, tag_id) VALUES (111, 129);
-INSERT INTO tag (text) VALUES ("career-development");
+INSERT INTO tag (text) VALUES ('career-development');
 INSERT INTO questiontag (question_id, tag_id) VALUES (111, 130);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("deleted", 823, 211);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (112, 22, "&lt;p&gt;Since I&#x27;m not that good at (as I like to call it) &#x27;die-hard-mathematics&#x27;, I&#x27;ve always liked concepts like the &lt;a href=&quot;https://en.wikipedia.org/wiki/Golden_ratio&quot;&gt;golden ratio&lt;/a&gt; or the &lt;a href=&quot;http://upload.wikimedia.org/wikipedia/commons/9/97/Dragon_curve_iterations_%282%29.svg&quot;&gt;dragon curve&lt;/a&gt;, which are easy to understand and explain, but are mathematically beautiful at the same time.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 824, 692);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (112, 87, '&lt;p&gt;Since I&#x27;m not that good at (as I like to call it) &#x27;die-hard-mathematics&#x27;, I&#x27;ve always liked concepts like the &lt;a href=&quot;https://en.wikipedia.org/wiki/Golden_ratio&quot;&gt;golden ratio&lt;/a&gt; or the &lt;a href=&quot;http://upload.wikimedia.org/wikipedia/commons/9/97/Dragon_curve_iterations_%282%29.svg&quot;&gt;dragon curve&lt;/a&gt;, which are easy to understand and explain, but are mathematically beautiful at the same time.&lt;/p&gt;
 
 &lt;p&gt;Do you know of any other concepts like these?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (112, 2, "Visually stunning math concepts which are easy to explain");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (112, 2, 'Visually stunning math concepts which are easy to explain');
+INSERT INTO activity (post_id, user_id, action) VALUES (112, 87, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (112, 129);
-INSERT INTO tag (text) VALUES ("education");
+INSERT INTO tag (text) VALUES ('education');
 INSERT INTO questiontag (question_id, tag_id) VALUES (112, 131);
-INSERT INTO tag (text) VALUES ("big-list");
+INSERT INTO tag (text) VALUES ('big-list');
 INSERT INTO questiontag (question_id, tag_id) VALUES (112, 132);
-INSERT INTO tag (text) VALUES ("visualization");
+INSERT INTO tag (text) VALUES ('visualization');
 INSERT INTO questiontag (question_id, tag_id) VALUES (112, 133);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 806, 571);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (113, 49, "&lt;p&gt;So this is supposed to be really simple, and it&#x27;s taken from the following picture:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 806, 13);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (113, 79, '&lt;p&gt;So this is supposed to be really simple, and it&#x27;s taken from the following picture:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.stack.imgur.com/jn7G6.jpg&quot; alt=&quot;book image&quot;&gt;&lt;/p&gt;
 
@@ -2160,32 +2272,34 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (113, 49, "&lt;p
 &lt;p&gt;I don&#x27;t understand what&#x27;s wrong with this question.  I think the student answered the question wrong, yet my friend insists the student got the question right.&lt;/p&gt;
 
 &lt;p&gt;I feel like I&#x27;m missing something critical here. What am I getting wrong here?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (113, 2, "How long will it take Marie to saw another board into 3 pieces?");
-INSERT INTO tag (text) VALUES ("algebra-precalculus");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (113, 2, 'How long will it take Marie to saw another board into 3 pieces?');
+INSERT INTO activity (post_id, user_id, action) VALUES (113, 79, 'Create');
+INSERT INTO tag (text) VALUES ('algebra-precalculus');
 INSERT INTO questiontag (question_id, tag_id) VALUES (113, 134);
-INSERT INTO tag (text) VALUES ("arithmetic");
+INSERT INTO tag (text) VALUES ('arithmetic');
 INSERT INTO questiontag (question_id, tag_id) VALUES (113, 135);
-INSERT INTO tag (text) VALUES ("recreational-mathematics");
+INSERT INTO tag (text) VALUES ('recreational-mathematics');
 INSERT INTO questiontag (question_id, tag_id) VALUES (113, 136);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 690, 590);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (114, 45, "&lt;p&gt;In the book Thomas&#x27;s Calculus (11th edition) it is mentioned (Section 3.8 pg 225) that the derivative $\frac{\textrm{d}y}{\textrm{d}x}$ is not a ratio. Couldn&#x27;t it be interpreted as a ratio, because according to the formula $\textrm{d}y = f&#x27;(x)\textrm{d}x$ we are able to plug in values for $\textrm{d}x$ and calculate a $\textrm{d}y$ (differential). Then if we rearrange we get $\frac{\textrm{d}y}{\textrm{d}x}$ which could be seen as a ratio. &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 690, 115);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (114, 61, '&lt;p&gt;In the book Thomas&#x27;s Calculus (11th edition) it is mentioned (Section 3.8 pg 225) that the derivative $\frac{\textrm{d}y}{\textrm{d}x}$ is not a ratio. Couldn&#x27;t it be interpreted as a ratio, because according to the formula $\textrm{d}y = f&#x27;(x)\textrm{d}x$ we are able to plug in values for $\textrm{d}x$ and calculate a $\textrm{d}y$ (differential). Then if we rearrange we get $\frac{\textrm{d}y}{\textrm{d}x}$ which could be seen as a ratio. &lt;/p&gt;
 
 &lt;p&gt;I wonder if the author say this because $\textrm{d}x$ is an independent variable, and $\textrm{d}y$ is a dependent variable, for $\frac{\textrm{d}y}{\textrm{d}x}$ to be a ratio both variables need to be independent.. maybe?  &lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (114, 2, "Is $\frac{\textrm{d}y}{\textrm{d}x}$ not a ratio?");
-INSERT INTO tag (text) VALUES ("calculus");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (114, 2, 'Is $\frac{\textrm{d}y}{\textrm{d}x}$ not a ratio?');
+INSERT INTO activity (post_id, user_id, action) VALUES (114, 61, 'Create');
+INSERT INTO tag (text) VALUES ('calculus');
 INSERT INTO questiontag (question_id, tag_id) VALUES (114, 137);
-INSERT INTO tag (text) VALUES ("analysis");
+INSERT INTO tag (text) VALUES ('analysis');
 INSERT INTO questiontag (question_id, tag_id) VALUES (114, 138);
-INSERT INTO tag (text) VALUES ("math-history");
+INSERT INTO tag (text) VALUES ('math-history');
 INSERT INTO questiontag (question_id, tag_id) VALUES (114, 139);
-INSERT INTO tag (text) VALUES ("nonstandard-analysis");
+INSERT INTO tag (text) VALUES ('nonstandard-analysis');
 INSERT INTO questiontag (question_id, tag_id) VALUES (114, 140);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 674, 585);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (115, 85, "&lt;p&gt;I&#x27;m a children&#x27;s book writer and illustrator, and I want to to create a book for young readers that exposes the beauty of mathematics. I recently read Paul Lockhart&#x27;s essay &lt;em&gt;&lt;a href=&quot;http://www.maa.org/devlin/lockhartslament.pdf&quot;&gt;&quot;The Mathematician&#x27;s Lament,&quot;&lt;/a&gt;&lt;/em&gt; and found that I, too, lament the uninspiring quality of my elementary math education.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 674, 623);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (115, 5, '&lt;p&gt;I&#x27;m a children&#x27;s book writer and illustrator, and I want to to create a book for young readers that exposes the beauty of mathematics. I recently read Paul Lockhart&#x27;s essay &lt;em&gt;&lt;a href=&quot;http://www.maa.org/devlin/lockhartslament.pdf&quot;&gt;&quot;The Mathematician&#x27;s Lament,&quot;&lt;/a&gt;&lt;/em&gt; and found that I, too, lament the uninspiring quality of my elementary math education.&lt;/p&gt;
 
 &lt;p&gt;I want to make a book that discredits the notion that math is merely a series of calculations, and inspires a sense of awe and genuine curiosity in young readers.&lt;/p&gt;
 
@@ -2196,14 +2310,15 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (115, 85, "&lt;p
 &lt;/blockquote&gt;
 
 &lt;p&gt;For the purposes of this children&#x27;s book, accessible answers would be appreciated.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (115, 2, "What was the first bit of mathematics that made you realize that math is beautiful? (For children&#39;s book)");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (115, 2, 'What was the first bit of mathematics that made you realize that math is beautiful? (For children&#39;s book)');
+INSERT INTO activity (post_id, user_id, action) VALUES (115, 5, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (115, 129);
 INSERT INTO questiontag (question_id, tag_id) VALUES (115, 131);
 INSERT INTO questiontag (question_id, tag_id) VALUES (115, 132);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 579, 297);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (116, 97, "&lt;p&gt;Here&#x27;s my problem. I&#x27;m studying math and when I really work hard, I think I understand things very good, but that comes at a big cost: in the last few years, I&#x27;ve had practically zero physical exercise, I&#x27;ve gained 30&amp;nbsp;kg, I&#x27;ve spent countless hours studying at night, constantly had sleep deprivation, I&#x27;ve lost my social life, and I got health problems. My grades are quite good, but I feel as though I&#x27;m wasting my life.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 579, 76);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (116, 32, '&lt;p&gt;Here&#x27;s my problem. I&#x27;m studying math and when I really work hard, I think I understand things very good, but that comes at a big cost: in the last few years, I&#x27;ve had practically zero physical exercise, I&#x27;ve gained 30&amp;nbsp;kg, I&#x27;ve spent countless hours studying at night, constantly had sleep deprivation, I&#x27;ve lost my social life, and I got health problems. My grades are quite good, but I feel as though I&#x27;m wasting my life.&lt;/p&gt;
 
 &lt;p&gt;I love mathematics when it&#x27;s done my way, but that&#x27;s hardly ever. I would very much like my career to be centered around mathematics (topology, algebra or something similar). I want to really understand things and I want the proofs to be done in a (reasonably) rigorous way. I&#x27;ve been accused of being a formalist before, but I don&#x27;t consider myself one at all. However, I am a perfectionist, I admit. For comparison, the answers of Theo, Arturo, Jim Belk, Mariano, etc. are absolutely rigorous enough for me. From my experience, 80% or more mathematics in our school is done in a sketchy, &quot;hmm, probably true&quot; kind of way (just like reading cooking recipes), which bugs the hell out of me. Most classmates adapt to it. I for some reason can&#x27;t. I don&#x27;t understand things until I understand them (almost) completely. They learn &quot;how one should do things&quot;, but less often do they ask themselves WHY is this correct. I have two friend physicists, who have the exact same problem. One is at the doctorate level, constantly frustrated, while the other abandoned physics altogether after getting a diploma. Apart from one 8, he had a perfect record, only 10s. He said that he doesn&#x27;t feel he understands physics well enough. From my experience, ALL his classmates understand less than he does, they just go with the flow and accept certain statements as true.&lt;/p&gt;
 
@@ -2226,14 +2341,15 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (116, 97, "&lt;p
 
 &lt;p&gt;I have a bunch of sports I like and used to do. Also, I had a perfectly good social life before, so you don&#x27;t need to give advice regarding that. I don&#x27;t socialize and do sport because digesting proofs and trying to understand the ideas behind it all eats up all my time. If I go hiking, it will take away 2 days, 1 to actually walk + 1 to rest and regenerate. If I go train MMA, I won&#x27;t be focused for the whole day. I can&#x27;t just switch from boxing to diagram chasing in a moment. Also, I can&#x27;t just study for half an hour. The way I study is I open the book, search up what I already know but forgot from the previous day, and then go from theorem to theorem, from proof to proof, correcting mistakes, adding clarifications, etc. etc. Also, I have a bad habit of having &lt;strong&gt;difficulty starting&lt;/strong&gt; things, but when I do start &#x27;my engine&#x27;, I have &lt;strong&gt;difficulty stopping&lt;/strong&gt;, especially if it&#x27;s going good. That&#x27;s why I unintentionally spend an hour or two before studying just doing the most irrelevant stuff, just to avoid study. This happens especially when I&#x27;ve had more math than I can shove down my throat, I have mental preparations to begin studying. But when my engine does start and studying goes well (proven a lot, understood a lot), it&#x27;s hard for me to stop, so I often stay late at night, up to 4&amp;nbsp;a.m., 5&amp;nbsp;a.m., 6&amp;nbsp;a.m. When the day of the exam arrives, I don&#x27;t go to sleep at all, and the &lt;strong&gt;night and day are reversed&lt;/strong&gt;. I go to sleep at 13h, and wake at 21h... I know it&#x27;s not good but I can&#x27;t seem to break this habit. If I&#x27;m useless through the whole day, I &lt;strong&gt;feel a need (guilty conscience) to do at least smth. useful before I go to sleep&lt;/strong&gt;. I know this isn&#x27;t supposed to happen if one loves mathematics, but when it&#x27;s &#x27;forced upon you&#x27; what and how much and in what amount of time you have to study, you start being put off by math. It stops being enjoyment/fun and becomes hard work that just needs to be done.
 &lt;img src=&quot;https://i.stack.imgur.com/dDlSD.jpg&quot; alt=&quot;enter image description here&quot;&gt;&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (116, 2, "How to study math to really understand it and have a healthy lifestyle with free time?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (116, 2, 'How to study math to really understand it and have a healthy lifestyle with free time?');
+INSERT INTO activity (post_id, user_id, action) VALUES (116, 32, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (116, 129);
-INSERT INTO tag (text) VALUES ("advice");
+INSERT INTO tag (text) VALUES ('advice');
 INSERT INTO questiontag (question_id, tag_id) VALUES (116, 141);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 542, 238);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (117, 7, "&lt;p&gt;This is a problem that has haunted me for more than a decade. Not all the time - but from time to time, and always on windy or rainy days, it suddenly reappears in my mind, stares at me for half an hour to an hour, and then just grins at me, and whispers whole day: &quot;You will never solve me...&quot;&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 542, 462);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (117, 32, '&lt;p&gt;This is a problem that has haunted me for more than a decade. Not all the time - but from time to time, and always on windy or rainy days, it suddenly reappears in my mind, stares at me for half an hour to an hour, and then just grins at me, and whispers whole day: &quot;You will never solve me...&quot;&lt;/p&gt;
 
 &lt;p&gt;Please save me from this torturer.&lt;/p&gt;
 
@@ -2260,48 +2376,51 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (117, 7, "&lt;p&
 &lt;hr&gt;
 
 &lt;p&gt;I was yesterday in a coffee shop, in a small company. We ordered coffee and some chocolate cakes. As I was cutting my cake for my first bite, I felt sweat on my forehead. Would  some of my buddies just interrupt me and say: Stop! You are not cutting the cake in a fair manner! My hands started shaking in fear of that. But, no, nothing happened. Fortunately.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (117, 2, "Splitting a sandwich and not feeling deceived");
-INSERT INTO tag (text) VALUES ("game-theory");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (117, 2, 'Splitting a sandwich and not feeling deceived');
+INSERT INTO activity (post_id, user_id, action) VALUES (117, 32, 'Create');
+INSERT INTO tag (text) VALUES ('game-theory');
 INSERT INTO questiontag (question_id, tag_id) VALUES (117, 142);
-INSERT INTO tag (text) VALUES ("fair-division");
+INSERT INTO tag (text) VALUES ('fair-division');
 INSERT INTO questiontag (question_id, tag_id) VALUES (117, 143);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 514, 63);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (118, 1, "&lt;p&gt;What is wrong with this?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 514, 79);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (118, 56, '&lt;p&gt;What is wrong with this?&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.stack.imgur.com/GU8wd.jpg&quot; alt=&quot;Is \pi=4?&quot;&gt;
 Is really $\pi = 4?$&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (118, 2, "Is value of $\pi = 4$?");
-INSERT INTO tag (text) VALUES ("geometry");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (118, 2, 'Is value of $\pi = 4$?');
+INSERT INTO activity (post_id, user_id, action) VALUES (118, 56, 'Create');
+INSERT INTO tag (text) VALUES ('geometry');
 INSERT INTO questiontag (question_id, tag_id) VALUES (118, 144);
 INSERT INTO questiontag (question_id, tag_id) VALUES (118, 138);
-INSERT INTO tag (text) VALUES ("pi");
+INSERT INTO tag (text) VALUES ('pi');
 INSERT INTO questiontag (question_id, tag_id) VALUES (118, 145);
-INSERT INTO tag (text) VALUES ("fake-proofs");
+INSERT INTO tag (text) VALUES ('fake-proofs');
 INSERT INTO questiontag (question_id, tag_id) VALUES (118, 146);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 489, 191);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (119, 43, "&lt;p&gt;As I have heard people did not trust Euler when he first discovered the formula (solution of the &lt;a href=&quot;http://en.wikipedia.org/wiki/Basel_problem&quot;&gt;Basel problem&lt;/a&gt;)
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 489, 345);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (119, 67, '&lt;p&gt;As I have heard people did not trust Euler when he first discovered the formula (solution of the &lt;a href=&quot;http://en.wikipedia.org/wiki/Basel_problem&quot;&gt;Basel problem&lt;/a&gt;)
 $$\zeta(2)=\sum_{k=1}^\infty \frac{1}{k^2}=\frac{\pi^2}{6}.$$
 However, Euler was Euler and he gave other proofs. &lt;/p&gt;
 
 &lt;p&gt;I believe many of you know some nice proofs of this, can you please share it with us?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (119, 2, "Different methods to compute $\sum\limits_{k=1}^\infty \frac{1}{k^2}$");
-INSERT INTO tag (text) VALUES ("sequences-and-series");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (119, 2, 'Different methods to compute $\sum\limits_{k=1}^\infty \frac{1}{k^2}$');
+INSERT INTO activity (post_id, user_id, action) VALUES (119, 67, 'Create');
+INSERT INTO tag (text) VALUES ('sequences-and-series');
 INSERT INTO questiontag (question_id, tag_id) VALUES (119, 147);
-INSERT INTO tag (text) VALUES ("number-theory");
+INSERT INTO tag (text) VALUES ('number-theory');
 INSERT INTO questiontag (question_id, tag_id) VALUES (119, 148);
-INSERT INTO tag (text) VALUES ("fourier-analysis");
+INSERT INTO tag (text) VALUES ('fourier-analysis');
 INSERT INTO questiontag (question_id, tag_id) VALUES (119, 149);
 INSERT INTO questiontag (question_id, tag_id) VALUES (119, 132);
-INSERT INTO tag (text) VALUES ("faq");
+INSERT INTO tag (text) VALUES ('faq');
 INSERT INTO questiontag (question_id, tag_id) VALUES (119, 150);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 464, 425);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (120, 81, "&lt;p&gt;My nephew was folding laundry, and turning the occasional shirt right-side-out. I showed him a  &quot;trick&quot; where I turned it right-side-out by pulling the whole thing through a sleeve instead of the bottom or collar of the shirt. He thought it was really cool (kids are easily amused, and so am I).&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 464, 286);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (120, 99, '&lt;p&gt;My nephew was folding laundry, and turning the occasional shirt right-side-out. I showed him a  &quot;trick&quot; where I turned it right-side-out by pulling the whole thing through a sleeve instead of the bottom or collar of the shirt. He thought it was really cool (kids are easily amused, and so am I).&lt;/p&gt;
 
 &lt;p&gt;So he learned that you can turn a shirt or pants right-side-out by pulling the material through any hole, not just certain ones. I told him that even if there was a rip in the shirt, you could use that to turn it inside-out or right-side-out, and he was fascinated by this and asked &quot;why?&quot;&lt;/p&gt;
 
@@ -2314,15 +2433,16 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (120, 81, "&lt;p
 &lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; Wow, I really appreciate all the participation. This is a really pleasant community and I have learned a lot here. It seems that the answer is that you need at least one puncture in the garment through which to push or pull the fabric. It appears that you can have certain handles, although it&#x27;s not usually practical with clothing due to necessary stretching.&lt;/p&gt;
 
 &lt;p&gt;Accepted (a while ago actually -- sorry for not updating sooner) Dan&#x27;s answer because among the answers that I understand, it is the highest ranked by this community.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (120, 2, "Why can you turn clothing right-side-out?");
-INSERT INTO tag (text) VALUES ("general-topology");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (120, 2, 'Why can you turn clothing right-side-out?');
+INSERT INTO activity (post_id, user_id, action) VALUES (120, 99, 'Create');
+INSERT INTO tag (text) VALUES ('general-topology');
 INSERT INTO questiontag (question_id, tag_id) VALUES (120, 151);
-INSERT INTO tag (text) VALUES ("algebraic-topology");
+INSERT INTO tag (text) VALUES ('algebraic-topology');
 INSERT INTO questiontag (question_id, tag_id) VALUES (120, 152);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 453, 193);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (121, 93, "&lt;p&gt;I came across the &lt;a href=&quot;https://i.stack.imgur.com/ogaxS.png&quot;&gt;following image&lt;/a&gt;, which states:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 453, 403);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (121, 24, '&lt;p&gt;I came across the &lt;a href=&quot;https://i.stack.imgur.com/ogaxS.png&quot;&gt;following image&lt;/a&gt;, which states:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;$\pi$ Pi&lt;/p&gt;
@@ -2336,15 +2456,16 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (121, 93, "&lt;p
 &lt;/blockquote&gt;
 
 &lt;p&gt;Is this true? Does it make absolutely any sense ?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (121, 2, "Does Pi contain all possible number combinations?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (121, 2, 'Does Pi contain all possible number combinations?');
+INSERT INTO activity (post_id, user_id, action) VALUES (121, 24, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (121, 148);
-INSERT INTO tag (text) VALUES ("irrational-numbers");
+INSERT INTO tag (text) VALUES ('irrational-numbers');
 INSERT INTO questiontag (question_id, tag_id) VALUES (121, 153);
 INSERT INTO questiontag (question_id, tag_id) VALUES (121, 145);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 438, 348);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (122, 31, "&lt;p&gt;So we all know that the continued fraction containing all $1$s...&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 438, 2);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (122, 22, '&lt;p&gt;So we all know that the continued fraction containing all $1$s...&lt;/p&gt;
 
 &lt;p&gt;$$
 x = 1 + \frac{1}{1 + \frac{1}{1 + \ldots}}
@@ -2372,17 +2493,18 @@ x^2 - x + 1 &amp;amp;= 0
 &lt;p&gt;Ummm... why does a continued fraction containing only $1$s, subtraction and division result in one of two complex (as opposed to real) numbers?&lt;/p&gt;
 
 &lt;p&gt;(I have a feeling this is something like the $\sum_i (-1)^i$ thing, that the infinite continued fraction isn&#x27;t well-defined unless we can express it as the limit of a converging series, because the truncated fractions $1 - \frac{1}{1-1}$ etc. aren&#x27;t well-defined, but I thought I&#x27;d ask for a well-founded answer. Even if this is the case, do the two complex numbers have any &quot;meaning&quot;?)&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (122, 2, "Why is $1 - \frac{1}{1 - \frac{1}{1 - \ldots}}$ not real?");
-INSERT INTO tag (text) VALUES ("complex-numbers");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (122, 2, 'Why is $1 - \frac{1}{1 - \frac{1}{1 - \ldots}}$ not real?');
+INSERT INTO activity (post_id, user_id, action) VALUES (122, 22, 'Create');
+INSERT INTO tag (text) VALUES ('complex-numbers');
 INSERT INTO questiontag (question_id, tag_id) VALUES (122, 154);
-INSERT INTO tag (text) VALUES ("recursion");
+INSERT INTO tag (text) VALUES ('recursion');
 INSERT INTO questiontag (question_id, tag_id) VALUES (122, 155);
-INSERT INTO tag (text) VALUES ("continued-fractions");
+INSERT INTO tag (text) VALUES ('continued-fractions');
 INSERT INTO questiontag (question_id, tag_id) VALUES (122, 156);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 435, 19);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (123, 0, "&lt;p&gt;The division of the &lt;a href=&quot;http://en.wikipedia.org/wiki/Chromatic_scale&quot;&gt;chromatic scale&lt;/a&gt; in $7$ natural notes (white keys in a piano) and $5$ &lt;a href=&quot;http://en.wikipedia.org/wiki/Accidental_%28music%29&quot;&gt;accidental&lt;/a&gt; ones (black) seems a bit arbitrary to me.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 435, 29);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (123, 34, '&lt;p&gt;The division of the &lt;a href=&quot;http://en.wikipedia.org/wiki/Chromatic_scale&quot;&gt;chromatic scale&lt;/a&gt; in $7$ natural notes (white keys in a piano) and $5$ &lt;a href=&quot;http://en.wikipedia.org/wiki/Accidental_%28music%29&quot;&gt;accidental&lt;/a&gt; ones (black) seems a bit arbitrary to me.&lt;/p&gt;
 
 &lt;p&gt;Apparently, adjacent notes in a piano (including white or black) are always separated by a semitone. Why the distinction, then? Why not just have scales with $12$ notes? (apparently there&#x27;s a musical scale called &lt;a href=&quot;http://en.wikipedia.org/wiki/Swara&quot;&gt;Swara&lt;/a&gt; that does just that)&lt;/p&gt;
 
@@ -2391,24 +2513,26 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (123, 0, "&lt;p&
 &lt;p&gt;I need some mathematician with musical knowledge (or a musician with mathematical knowledge) to help me out with this.&lt;/p&gt;
 
 &lt;p&gt;Mathematically, is there any difference between white and black notes, or do we make the distinction just for historical reasons?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (123, 2, "Mathematical difference between white and black notes in a piano");
-INSERT INTO tag (text) VALUES ("music-theory");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (123, 2, 'Mathematical difference between white and black notes in a piano');
+INSERT INTO activity (post_id, user_id, action) VALUES (123, 34, 'Create');
+INSERT INTO tag (text) VALUES ('music-theory');
 INSERT INTO questiontag (question_id, tag_id) VALUES (123, 157);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 430, 366);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (124, 69, "&lt;p&gt;In my linear algebra class, we just talked about determinants. So far I’ve been understanding the material okay, but now I’m very confused. I get that when the determinant is zero, the matrix doesn’t have an inverse. I can find the determinant of a $2\times 2$ matrix by the formula. Our teacher showed us how to compute the determinant of an $N \times N$ matrix by breaking it up into the determinants of smaller matrices, and apparently there is a way by summing over a bunch of permutations. But the notation is really hard for me and I don’t really know what’s going on with them anymore. Can someone help me figure out what a determinant is, intuitively, and how all those definitions of it are related?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (124, 2, "What&#39;s an intuitive way to think about the determinant?");
-INSERT INTO tag (text) VALUES ("linear-algebra");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 430, 254);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (124, 70, '&lt;p&gt;In my linear algebra class, we just talked about determinants. So far I’ve been understanding the material okay, but now I’m very confused. I get that when the determinant is zero, the matrix doesn’t have an inverse. I can find the determinant of a $2\times 2$ matrix by the formula. Our teacher showed us how to compute the determinant of an $N \times N$ matrix by breaking it up into the determinants of smaller matrices, and apparently there is a way by summing over a bunch of permutations. But the notation is really hard for me and I don’t really know what’s going on with them anymore. Can someone help me figure out what a determinant is, intuitively, and how all those definitions of it are related?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (124, 2, 'What&#39;s an intuitive way to think about the determinant?');
+INSERT INTO activity (post_id, user_id, action) VALUES (124, 70, 'Create');
+INSERT INTO tag (text) VALUES ('linear-algebra');
 INSERT INTO questiontag (question_id, tag_id) VALUES (124, 158);
-INSERT INTO tag (text) VALUES ("intuition");
+INSERT INTO tag (text) VALUES ('intuition');
 INSERT INTO questiontag (question_id, tag_id) VALUES (124, 159);
-INSERT INTO tag (text) VALUES ("determinant");
+INSERT INTO tag (text) VALUES ('determinant');
 INSERT INTO questiontag (question_id, tag_id) VALUES (124, 160);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 429, 374);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (125, 81, "&lt;p&gt;If $R$ is a commutative ring, it is easy to prove $\dim(R[T]) \geq \dim(R)+1$. For noetherian $R$, we have equality. Every proof I&#x27;m aware of uses quite a bit of commutative algebra and non-trivial theorems such as Krull&#x27;s intersection theorem.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 429, 161);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (125, 98, '&lt;p&gt;If $R$ is a commutative ring, it is easy to prove $\dim(R[T]) \geq \dim(R)+1$. For noetherian $R$, we have equality. Every proof I&#x27;m aware of uses quite a bit of commutative algebra and non-trivial theorems such as Krull&#x27;s intersection theorem.&lt;/p&gt;
 
 &lt;p&gt;Recently T. Coquand and H. Lombardi have found a surprisingly elementary &quot;almost&quot; first-order characterization of the Krull dimension, see &lt;a href=&quot;http://hlombardi.free.fr/publis/KrullMathMonth.pdf&quot;&gt;here&lt;/a&gt;. It states:&lt;/p&gt;
 
@@ -2423,44 +2547,47 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (125, 81, "&lt;p
 &lt;/blockquote&gt;
 
 &lt;p&gt;Maybe this question is a bit naive. I suspect that this can only work if we find a first-order property of rings which is equivalent or even weaker than noetherian and prove the formula for these rings. Notice that in contrast to that the Gelfand-Kirillov dimension satisfies $\mathrm{GK}\dim(R[T])=\mathrm{GK}\dim(R)+1$ (see &lt;a href=&quot;http://ysharifi.wordpress.com/2011/04/26/gk-dimension-of-polynomial-rings/&quot;&gt;here&lt;/a&gt;) for every $K$-algebra $R$.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (125, 2, "A short proof for $\dim(R[T])=\dim(R)+1$?");
-INSERT INTO tag (text) VALUES ("commutative-algebra");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (125, 2, 'A short proof for $\dim(R[T])=\dim(R)+1$?');
+INSERT INTO activity (post_id, user_id, action) VALUES (125, 98, 'Create');
+INSERT INTO tag (text) VALUES ('commutative-algebra');
 INSERT INTO questiontag (question_id, tag_id) VALUES (125, 161);
-INSERT INTO tag (text) VALUES ("ring-theory");
+INSERT INTO tag (text) VALUES ('ring-theory');
 INSERT INTO questiontag (question_id, tag_id) VALUES (125, 162);
-INSERT INTO tag (text) VALUES ("dimension-theory");
+INSERT INTO tag (text) VALUES ('dimension-theory');
 INSERT INTO questiontag (question_id, tag_id) VALUES (125, 163);
-INSERT INTO tag (text) VALUES ("krull-dimension");
+INSERT INTO tag (text) VALUES ('krull-dimension');
 INSERT INTO questiontag (question_id, tag_id) VALUES (125, 164);
-INSERT INTO tag (text) VALUES ("noetherian");
+INSERT INTO tag (text) VALUES ('noetherian');
 INSERT INTO questiontag (question_id, tag_id) VALUES (125, 165);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 426, 20);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (126, 27, "&lt;p&gt;&lt;a href=&quot;http://www.hardocp.com/news/2011/07/29/batman_equation/&quot;&gt;HardOCP&lt;/a&gt; has an image with an equation which apparently draws the Batman logo.  Is this for real?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 426, 167);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (126, 15, '&lt;p&gt;&lt;a href=&quot;http://www.hardocp.com/news/2011/07/29/batman_equation/&quot;&gt;HardOCP&lt;/a&gt; has an image with an equation which apparently draws the Batman logo.  Is this for real?&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.stack.imgur.com/VYKfg.jpg&quot; alt=&quot;Batman logo&quot;&gt;&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (126, 2, "Is this Batman equation for real?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (126, 2, 'Is this Batman equation for real?');
+INSERT INTO activity (post_id, user_id, action) VALUES (126, 15, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (126, 144);
 INSERT INTO questiontag (question_id, tag_id) VALUES (126, 134);
-INSERT INTO tag (text) VALUES ("graphing-functions");
+INSERT INTO tag (text) VALUES ('graphing-functions');
 INSERT INTO questiontag (question_id, tag_id) VALUES (126, 166);
-INSERT INTO tag (text) VALUES ("plane-curves");
+INSERT INTO tag (text) VALUES ('plane-curves');
 INSERT INTO questiontag (question_id, tag_id) VALUES (126, 167);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 412, 53);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (127, 19, "&lt;p&gt;At school I really struggled to understand the concept of imaginary numbers.  My teacher told us that an imaginary number is a number which has something to do with the square root of $-1$.  When I tried to calculate the square root of $-1$ on my calculator, it gave me an error.  To this day I do not understand imaginary numbers.  It makes no sense to me at all.  Is there someone here who totally gets it and can explain it?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 412, 286);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (127, 93, '&lt;p&gt;At school I really struggled to understand the concept of imaginary numbers.  My teacher told us that an imaginary number is a number which has something to do with the square root of $-1$.  When I tried to calculate the square root of $-1$ on my calculator, it gave me an error.  To this day I do not understand imaginary numbers.  It makes no sense to me at all.  Is there someone here who totally gets it and can explain it?&lt;/p&gt;
 
 &lt;p&gt;Why is the concept even useful?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (127, 2, "What are imaginary numbers?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (127, 2, 'What are imaginary numbers?');
+INSERT INTO activity (post_id, user_id, action) VALUES (127, 93, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (127, 154);
-INSERT INTO tag (text) VALUES ("definition");
+INSERT INTO tag (text) VALUES ('definition');
 INSERT INTO questiontag (question_id, tag_id) VALUES (127, 168);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 401, 267);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (128, 39, "&lt;p&gt;Often, when I try to describe mathematics to the layman, I find myself struggling to convince them of the importance and consequence of &#x27;proof&#x27;. I receive responses like: &quot;surely if the Collatz Conjecture is true up to $20 \times 2^{58}$, then it must always be true?&#x27;; and &quot;the sequence of number of edges on a complete graph starts $0,1,3,6,10$, so the next term must be $15$ etc&quot;.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 401, 387);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (128, 74, '&lt;p&gt;Often, when I try to describe mathematics to the layman, I find myself struggling to convince them of the importance and consequence of &#x27;proof&#x27;. I receive responses like: &quot;surely if the Collatz Conjecture is true up to $20 \times 2^{58}$, then it must always be true?&#x27;; and &quot;the sequence of number of edges on a complete graph starts $0,1,3,6,10$, so the next term must be $15$ etc&quot;.&lt;/p&gt;
 
 &lt;p&gt;Granted, this second statement is less logically unsound than the first since it&#x27;s not difficult to see the reason why the sequence must continue as such; nevertheless, the statement was made on a premise that boils down to &quot;interesting patterns must always continue&quot;.&lt;/p&gt;
 
@@ -2476,26 +2603,28 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (128, 39, "&lt;p
 &lt;/ol&gt;
 
 &lt;p&gt;I believe conditions 1. and 2. make my question specific enough to have in some sense a &quot;right&quot; (or at least a &quot;not wrong&quot;) answer; but I&#x27;d be happy to clarify if this is not the case. I suppose I&#x27;m expecting an answer to come from number theory, but can see that areas like graph theory, combinatorics more generally and set theory could potentially offer suitable answers.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (128, 2, "Examples of apparent patterns that eventually fail");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (128, 2, 'Examples of apparent patterns that eventually fail');
+INSERT INTO activity (post_id, user_id, action) VALUES (128, 74, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (128, 132);
-INSERT INTO tag (text) VALUES ("examples-counterexamples");
+INSERT INTO tag (text) VALUES ('examples-counterexamples');
 INSERT INTO questiontag (question_id, tag_id) VALUES (128, 169);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 387, 205);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (129, 93, "&lt;p&gt;Complex numbers involve the square root of negative one, and most non-mathematicians find it hard to accept that such a number is meaningful. In contrast, they feel that real numbers have an obvious and intuitive meaning. What&#x27;s the best way to explain &lt;strong&gt;to a non-mathematician&lt;/strong&gt; that complex numbers are necessary and meaningful, in the same way that real numbers are?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 387, 48);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (129, 72, '&lt;p&gt;Complex numbers involve the square root of negative one, and most non-mathematicians find it hard to accept that such a number is meaningful. In contrast, they feel that real numbers have an obvious and intuitive meaning. What&#x27;s the best way to explain &lt;strong&gt;to a non-mathematician&lt;/strong&gt; that complex numbers are necessary and meaningful, in the same way that real numbers are?&lt;/p&gt;
 
 &lt;p&gt;This is not a Platonic question about the reality of mathematics, or whether abstractions are as real as physical entities, but an attempt to bridge a comprehension gap that many people experience when encountering complex numbers for the first time. The wording, although provocative, is deliberately designed to match the way that many people do in fact ask this question.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (129, 2, "Do complex numbers really exist?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (129, 2, 'Do complex numbers really exist?');
+INSERT INTO activity (post_id, user_id, action) VALUES (129, 72, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (129, 129);
 INSERT INTO questiontag (question_id, tag_id) VALUES (129, 154);
 INSERT INTO questiontag (question_id, tag_id) VALUES (129, 131);
-INSERT INTO tag (text) VALUES ("philosophy");
+INSERT INTO tag (text) VALUES ('philosophy');
 INSERT INTO questiontag (question_id, tag_id) VALUES (129, 170);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 384, 82);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (130, 16, "&lt;p&gt;My youngest son is in $6$th grade. He likes to play with numbers. Today he showed me his latest finding. I call it his &quot;Sum of Some&quot; because he adds up some selected numbers from a series of numbers, and the sum equals a later number in that same series. I have translated his finding into this equation.
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 384, 147);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (130, 73, '&lt;p&gt;My youngest son is in $6$th grade. He likes to play with numbers. Today he showed me his latest finding. I call it his &quot;Sum of Some&quot; because he adds up some selected numbers from a series of numbers, and the sum equals a later number in that same series. I have translated his finding into this equation.
 $$(100\times2^n)+(10\times2^{n+1})+2^{n+3}=2^{n+7}$$ &lt;/p&gt;
 
 &lt;p&gt;Why is this so? What is the proof or explanation? Is it true for any $n$?&lt;/p&gt;
@@ -2506,12 +2635,13 @@ $$(100\times2^n)+(10\times2^{n+1})+2^{n+3}=2^{n+7}$$ &lt;/p&gt;
 $1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192$.&lt;br/&gt;
 I pick any one of them, times $100$. Then I add the next one, times $10$. Then I skip the next one. Then I add the one after that.&lt;br/&gt;
 If I then skip three ones and read the fourth, that one equals my sum!&lt;/em&gt;&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (130, 2, "My son&#39;s Sum of Some is beautiful! But what is the proof or explanation?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (130, 2, 'My son&#39;s Sum of Some is beautiful! But what is the proof or explanation?');
+INSERT INTO activity (post_id, user_id, action) VALUES (130, 73, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (130, 147);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 383, 369);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (131, 3, "&lt;p&gt;In &lt;a href=&quot;http://mathoverflow.net/questions/108581/number-of-normal-subgroups-in-a-p-group/108584#108584&quot;&gt;this MO post&lt;/a&gt;, I ran into the following family of polynomials: $$f_n(x)=\sum_{m=0}^{n}\prod_{k=0}^{m-1}\frac{x^n-x^k}{x^m-x^k}.$$
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 383, 276);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (131, 19, '&lt;p&gt;In &lt;a href=&quot;http://mathoverflow.net/questions/108581/number-of-normal-subgroups-in-a-p-group/108584#108584&quot;&gt;this MO post&lt;/a&gt;, I ran into the following family of polynomials: $$f_n(x)=\sum_{m=0}^{n}\prod_{k=0}^{m-1}\frac{x^n-x^k}{x^m-x^k}.$$
 In the context of the post, $x$ was a prime number, and $f_n(x)$ counted the number of subspaces of an $n$-dimensional vector space over $GF(x)$ (which I was using to determine the number of subgroups of an elementary abelian group $E_{x^n}$).&lt;/p&gt;
 
 &lt;p&gt;Anyway, while I was investigating asymptotic behavior of $f_n(x)$ in Mathematica, I got sidetracked and (just for fun) looked at the set of complex roots when I set $f_n(x)=0$.  For $n=24$, the plot looked like this: (The real and imaginary axes are from $-1$ to $1$.)&lt;/p&gt;
@@ -2595,29 +2725,31 @@ I made an $Arg$ plot of $1+\prod_{m=1}^r \frac{1}{1-x^m}$ for up to $r=24$ to se
 &lt;p&gt;&lt;img src=&quot;https://i.stack.imgur.com/Rb6Lx.gif&quot; alt=&quot;enter image description here&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Purely based off the plots, it seems not entirely unlikely that $f_n(x)$ is going to the same place this is, at least inside the unit disc.  Now the question is, how do we determine the solution set at the limit?  I speculate that the unit circle may become a dense combination of zeroes and singularities, with fractal-like concentric &quot;circles of singularity&quot; around the roots of unity...  :)&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (131, 2, "&quot;The Egg:&quot; Bizarre behavior of the roots of a family of polynomials.");
-INSERT INTO tag (text) VALUES ("abstract-algebra");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (131, 2, '&quot;The Egg:&quot; Bizarre behavior of the roots of a family of polynomials.');
+INSERT INTO activity (post_id, user_id, action) VALUES (131, 19, 'Create');
+INSERT INTO tag (text) VALUES ('abstract-algebra');
 INSERT INTO questiontag (question_id, tag_id) VALUES (131, 171);
-INSERT INTO tag (text) VALUES ("complex-analysis");
+INSERT INTO tag (text) VALUES ('complex-analysis');
 INSERT INTO questiontag (question_id, tag_id) VALUES (131, 172);
-INSERT INTO tag (text) VALUES ("algebraic-geometry");
+INSERT INTO tag (text) VALUES ('algebraic-geometry');
 INSERT INTO questiontag (question_id, tag_id) VALUES (131, 173);
-INSERT INTO tag (text) VALUES ("numerical-methods");
+INSERT INTO tag (text) VALUES ('numerical-methods');
 INSERT INTO questiontag (question_id, tag_id) VALUES (131, 174);
 INSERT INTO questiontag (question_id, tag_id) VALUES (131, 136);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 326, 280);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (132, 24, "&lt;p&gt;There are mathematical proofs that have that &quot;wow&quot; factor in being elegant, simplifying one&#x27;s view of mathematics, lifting one&#x27;s perception into the light of knowledge etc.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 326, 15);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (132, 5, '&lt;p&gt;There are mathematical proofs that have that &quot;wow&quot; factor in being elegant, simplifying one&#x27;s view of mathematics, lifting one&#x27;s perception into the light of knowledge etc.&lt;/p&gt;
 
 &lt;p&gt;So I&#x27;d like to know what mathematical proofs you&#x27;ve come across that you think other mathematicans should know, and why.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (132, 2, "Proofs that every mathematician should know?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (132, 2, 'Proofs that every mathematician should know?');
+INSERT INTO activity (post_id, user_id, action) VALUES (132, 5, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (132, 129);
 INSERT INTO questiontag (question_id, tag_id) VALUES (132, 132);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 311, 48);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (133, 60, "&lt;p&gt;Anyone trying to learn mathematics &lt;em&gt;on his/her own&lt;/em&gt; has had the experience of &quot;going down the Math Rabbit Hole&quot;.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 311, 215);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (133, 21, '&lt;p&gt;Anyone trying to learn mathematics &lt;em&gt;on his/her own&lt;/em&gt; has had the experience of &quot;going down the Math Rabbit Hole&quot;.&lt;/p&gt;
 
 &lt;p&gt;For example, suppose you come across the novel term &lt;em&gt;vector space&lt;/em&gt;, and want to learn more about it.  You look up various definitions, and they all refer to something called a &lt;em&gt;field&lt;/em&gt;.  So now you&#x27;re off to learn what a &lt;em&gt;field&lt;/em&gt; is, but it&#x27;s the same story all over again: all the definitions you find refer to something called a &lt;em&gt;group&lt;/em&gt;.  Off to learn about what a &lt;em&gt;group&lt;/em&gt; is.  Ad infinitum.  That&#x27;s what I&#x27;m calling here &quot;to go down the &lt;em&gt;Math Rabbit Hole&lt;/em&gt;.&quot;&lt;/p&gt;
 
@@ -2638,14 +2770,15 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (133, 60, "&lt;p
 &lt;p&gt;I&#x27;m sure that when one mathematician asks another for an introduction to some branch of math, the latter does not start spewing all these formal technicalities, but instead gives a big-picture account, based on simple examples.  I wish authors of mathematics books sometimes wrote books in such an informal vein.  Note that I&#x27;m not talking here about books written for math-phobes (in fact I detest it when a math book adopts a condescending &quot;for-dummies&quot;, &quot;let&#x27;s-not-fry-our-little-brains-now&quot; tone).  Informal does not mean &quot;dumbed down&quot;.  There&#x27;s a huge gap in the mathematics literature (at least in English), and I can&#x27;t figure out why.&lt;/p&gt;
 
 &lt;p&gt;(BTW, I&#x27;m glad that MJD brought up Strang&#x27;s &lt;em&gt;Linear Algebra&lt;/em&gt; book, because it&#x27;s a concrete example that shows it&#x27;s not impossible to write a successful math textbook that stays on the big picture, and doesn&#x27;t fuss over technicalities.  It goes without saying that I&#x27;m not advocating that all math books be written this way.  Attention to such technical details, precision, and rigor are all essential to doing mathematics, but they can easily overwhelm an introductory exposition.)&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (133, 2, "On &quot;familiarity&quot; (or How to avoid &quot;going down the Math Rabbit Hole&quot;?)");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (133, 2, 'On &quot;familiarity&quot; (or How to avoid &quot;going down the Math Rabbit Hole&quot;?)');
+INSERT INTO activity (post_id, user_id, action) VALUES (133, 21, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (133, 129);
-INSERT INTO tag (text) VALUES ("self-learning");
+INSERT INTO tag (text) VALUES ('self-learning');
 INSERT INTO questiontag (question_id, tag_id) VALUES (133, 175);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 306, 177);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (134, 30, "&lt;p&gt;My 13-year-old sister has a problem which, given the way math is currently taught, I doubt is anything but all too common. She has a low grade in her math course and only ever attempts to memorize formulas and tricks, but never actually learn any of the reasoning behind the math. Cross multiplication is the perfect example. &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 306, 32);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (134, 20, '&lt;p&gt;My 13-year-old sister has a problem which, given the way math is currently taught, I doubt is anything but all too common. She has a low grade in her math course and only ever attempts to memorize formulas and tricks, but never actually learn any of the reasoning behind the math. Cross multiplication is the perfect example. &lt;/p&gt;
 
 &lt;p&gt;She knows that from&lt;/p&gt;
 
@@ -2696,15 +2829,16 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (134, 30, "&lt;p
 &lt;p&gt;She doesn&#x27;t have any learning disabilities or mental handicaps, so it irritates me to no end that she won&#x27;t put any effort into learning things that are essential to her understanding and that she could easily grasp. &lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;How do you teach someone to understand math when they are capable but unwilling to do so?&lt;/strong&gt;&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (134, 2, "My sister absolutely refuses to learn math");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (134, 2, 'My sister absolutely refuses to learn math');
+INSERT INTO activity (post_id, user_id, action) VALUES (134, 20, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (134, 129);
 INSERT INTO questiontag (question_id, tag_id) VALUES (134, 131);
-INSERT INTO tag (text) VALUES ("learning");
+INSERT INTO tag (text) VALUES ('learning');
 INSERT INTO questiontag (question_id, tag_id) VALUES (134, 176);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 305, 206);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (135, 90, "&lt;p&gt;I need help with this integral:
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 305, 259);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (135, 39, '&lt;p&gt;I need help with this integral:
 $$I=\int_{-1}^1\frac1x\sqrt{\frac{1+x}{1-x}}\ln\left(\frac{2\,x^2+2\,x+1}{2\,x^2-2\,x+1}\right)\ \mathrm dx.$$
 The integrand graph looks like this:&lt;/p&gt;
 
@@ -2716,20 +2850,21 @@ $$I\approx8.372211626601275661625747121...$$&lt;/p&gt;
 &lt;p&gt;Neither &lt;em&gt;Mathematica&lt;/em&gt; nor &lt;em&gt;Maple&lt;/em&gt; could find a closed form for this integral, and lookups of the approximate numeric value in &lt;a href=&quot;http://www.wolframalpha.com&quot;&gt;&lt;em&gt;WolframAlpha&lt;/em&gt;&lt;/a&gt; and &lt;a href=&quot;http://isc.carma.newcastle.edu.au&quot;&gt;ISC+&lt;/a&gt; did not return plausible closed form candidates either. But I still hope there might be a closed form for it. &lt;/p&gt;
 
 &lt;p&gt;I am also interested in cases when only numerator or only denominator is present under the logarithm.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (135, 2, "Integral $\int_{-1}^1\frac1x\sqrt{\frac{1+x}{1-x}}\ln\left(\frac{2\,x^2+2\,x+1}{2\,x^2-2\,x+1}\right) \ \mathrm dx$");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (135, 2, 'Integral $\int_{-1}^1\frac1x\sqrt{\frac{1+x}{1-x}}\ln\left(\frac{2\,x^2+2\,x+1}{2\,x^2-2\,x+1}\right) \ \mathrm dx$');
+INSERT INTO activity (post_id, user_id, action) VALUES (135, 39, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (135, 137);
-INSERT INTO tag (text) VALUES ("integration");
+INSERT INTO tag (text) VALUES ('integration');
 INSERT INTO questiontag (question_id, tag_id) VALUES (135, 177);
-INSERT INTO tag (text) VALUES ("definite-integrals");
+INSERT INTO tag (text) VALUES ('definite-integrals');
 INSERT INTO questiontag (question_id, tag_id) VALUES (135, 178);
-INSERT INTO tag (text) VALUES ("contour-integration");
+INSERT INTO tag (text) VALUES ('contour-integration');
 INSERT INTO questiontag (question_id, tag_id) VALUES (135, 179);
-INSERT INTO tag (text) VALUES ("closed-form");
+INSERT INTO tag (text) VALUES ('closed-form');
 INSERT INTO questiontag (question_id, tag_id) VALUES (135, 180);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 304, 295);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (136, 14, "&lt;p&gt;One of the commonest mistakes made by students, appearing at every level of maths education up to about early undergraduate, is the so-called “Law of Universal Linearity”:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 304, 184);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (136, 5, '&lt;p&gt;One of the commonest mistakes made by students, appearing at every level of maths education up to about early undergraduate, is the so-called “Law of Universal Linearity”:&lt;/p&gt;
 
 &lt;p&gt;$$ \frac{1}{a+b} \mathrel{\text{“=”}} \frac{1}{a} + \frac{1}{b} $$&lt;/p&gt;
 
@@ -2742,28 +2877,30 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (136, 14, "&lt;p
 &lt;p&gt;&lt;strong&gt;Does anyone have a good cure for this — a particularly clear and memorable explanation that will stick with students?&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;I’ve tried explaining it several ways, but never found an approach that I was really happy with, from a pedagogical point of view.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (136, 2, "Pedagogy: How to cure students of the &quot;law of universal linearity&quot;?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (136, 2, 'Pedagogy: How to cure students of the &quot;law of universal linearity&quot;?');
+INSERT INTO activity (post_id, user_id, action) VALUES (136, 5, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (136, 134);
 INSERT INTO questiontag (question_id, tag_id) VALUES (136, 131);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 296, 105);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (137, 90, "&lt;p&gt;$\displaystyle\sum_{n=1}^\infty \frac{1}{n^s}$ only converges to $\zeta(s)$ if $\text{Re}(s) &amp;gt; 1$.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 296, 6);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (137, 9, '&lt;p&gt;$\displaystyle\sum_{n=1}^\infty \frac{1}{n^s}$ only converges to $\zeta(s)$ if $\text{Re}(s) &amp;gt; 1$.&lt;/p&gt;
 
 &lt;p&gt;Why should analytically continuing to $\zeta(-1)$ give the right answer?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (137, 2, "Why does $1+2+3+\cdots = -\frac{1}{12}$?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (137, 2, 'Why does $1+2+3+\cdots = -\frac{1}{12}$?');
+INSERT INTO activity (post_id, user_id, action) VALUES (137, 9, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (137, 172);
 INSERT INTO questiontag (question_id, tag_id) VALUES (137, 138);
-INSERT INTO tag (text) VALUES ("summation");
+INSERT INTO tag (text) VALUES ('summation');
 INSERT INTO questiontag (question_id, tag_id) VALUES (137, 181);
-INSERT INTO tag (text) VALUES ("riemann-zeta");
+INSERT INTO tag (text) VALUES ('riemann-zeta');
 INSERT INTO questiontag (question_id, tag_id) VALUES (137, 182);
-INSERT INTO tag (text) VALUES ("divergent-series");
+INSERT INTO tag (text) VALUES ('divergent-series');
 INSERT INTO questiontag (question_id, tag_id) VALUES (137, 183);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 281, 126);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (138, 18, "&lt;p&gt;Find a positive integer solution $(x,y,z,a,b)$ for which&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 281, 79);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (138, 22, '&lt;p&gt;Find a positive integer solution $(x,y,z,a,b)$ for which&lt;/p&gt;
 
 &lt;p&gt;$$\frac{1}{x}+ \frac{1}{y} + \frac{1}{z} + \frac{1}{a} + \frac{1}{b} = 1\;.$$&lt;/p&gt;
 
@@ -2772,19 +2909,20 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (138, 18, "&lt;p
 &lt;p&gt;I was surprised that a teacher would assign this kind of problem to a 5th grade child. (I&#x27;m a college student tutor) This girl goes to a private school in a wealthy neighborhood.&lt;/p&gt;
 
 &lt;p&gt;Please avoid the trivial $x=y=z=a=b=5$. Try looking for a solution where $ x \neq y \neq z \neq a \neq b$ or if not, look for one where one variable equals to another, but explain your reasoning. The girl was covering &quot;unit fractions&quot; in her class. &lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (138, 2, "Find five positive integers whose reciprocals sum to $1$");
-INSERT INTO tag (text) VALUES ("elementary-number-theory");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (138, 2, 'Find five positive integers whose reciprocals sum to $1$');
+INSERT INTO activity (post_id, user_id, action) VALUES (138, 22, 'Create');
+INSERT INTO tag (text) VALUES ('elementary-number-theory');
 INSERT INTO questiontag (question_id, tag_id) VALUES (138, 184);
-INSERT INTO tag (text) VALUES ("diophantine-equations");
+INSERT INTO tag (text) VALUES ('diophantine-equations');
 INSERT INTO questiontag (question_id, tag_id) VALUES (138, 185);
-INSERT INTO tag (text) VALUES ("fractions");
+INSERT INTO tag (text) VALUES ('fractions');
 INSERT INTO questiontag (question_id, tag_id) VALUES (138, 186);
-INSERT INTO tag (text) VALUES ("egyptian-fractions");
+INSERT INTO tag (text) VALUES ('egyptian-fractions');
 INSERT INTO questiontag (question_id, tag_id) VALUES (138, 187);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 276, 187);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (139, 83, "&lt;p&gt;The following is a quote from &lt;em&gt;Surely you&#x27;re joking, Mr. Feynman&lt;/em&gt; .  The question is: are there any interesting theorems that you think would be a good example to tell Richard Feynman, as an answer to his challenge?  Theorems should be totally counter-intuitive, and be easily translatable to everyday language.  (Apparently Banach-Tarski paradox was not a good example.)&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 276, 62);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (139, 77, '&lt;p&gt;The following is a quote from &lt;em&gt;Surely you&#x27;re joking, Mr. Feynman&lt;/em&gt; .  The question is: are there any interesting theorems that you think would be a good example to tell Richard Feynman, as an answer to his challenge?  Theorems should be totally counter-intuitive, and be easily translatable to everyday language.  (Apparently Banach-Tarski paradox was not a good example.)&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Then I got an idea.  I challenged
@@ -2827,24 +2965,26 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (139, 83, "&lt;p
   find in their simplification that they
   left out. &lt;/p&gt;
 &lt;/blockquote&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (139, 2, "A challenge by R. P. Feynman: give counter-intuitive theorems that can be translated into everyday language");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (139, 2, 'A challenge by R. P. Feynman: give counter-intuitive theorems that can be translated into everyday language');
+INSERT INTO activity (post_id, user_id, action) VALUES (139, 77, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (139, 129);
 INSERT INTO questiontag (question_id, tag_id) VALUES (139, 132);
 INSERT INTO questiontag (question_id, tag_id) VALUES (139, 169);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 269, 55);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (140, 54, "&lt;p&gt;A vague question of Kevin Lin which didn&#x27;t quite fit at &lt;a href=&quot;http://mathoverflow.net/questions/446&quot;&gt;Mathoverflow&lt;/a&gt;:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 269, 203);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (140, 5, '&lt;p&gt;A vague question of Kevin Lin which didn&#x27;t quite fit at &lt;a href=&quot;http://mathoverflow.net/questions/446&quot;&gt;Mathoverflow&lt;/a&gt;:&lt;/p&gt;
 
 &lt;p&gt;So ... what is the Fourier transform? What does it do? Why is it useful (both in math and in engineering, physics, etc)?&lt;/p&gt;
 
 &lt;p&gt;(Answers at any level of sophistication are welcome.)&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (140, 2, "Fourier transform for dummies");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (140, 2, 'Fourier transform for dummies');
+INSERT INTO activity (post_id, user_id, action) VALUES (140, 5, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (140, 149);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 265, 55);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (141, 61, "&lt;p&gt;Let me start by apologizing if there is another thread on math.se that subsumes this.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 265, 158);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (141, 6, '&lt;p&gt;Let me start by apologizing if there is another thread on math.se that subsumes this.&lt;/p&gt;
 
 &lt;p&gt;I was updating my answer to the question &lt;a href=&quot;http://math.stackexchange.com/questions/94827/books-that-every-student-needs-to-go-through&quot;&gt;here&lt;/a&gt; during which I made the claim that &quot;I spend a lot of time sifting through books to find [the best source]&quot;. It strikes me now that while I love books (I really do) I often find that I learn best from sets of lecture notes and short articles. There are three particular reasons that make me feel this way.&lt;/p&gt;
 
@@ -2976,26 +3116,28 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (141, 61, "&lt;p
 &lt;/ol&gt;
 
 &lt;p&gt;NOTE: This may come in handy for those who, like me, don&#x27;t like a metric ton of PDFs associated to a single document: &lt;a href=&quot;http://www.pdfmerge.com/&quot; rel=&quot;noreferrer&quot;&gt;http://www.pdfmerge.com/&lt;/a&gt;&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (141, 2, "Best Sets of Lecture Notes and Articles");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (141, 2, 'Best Sets of Lecture Notes and Articles');
+INSERT INTO activity (post_id, user_id, action) VALUES (141, 6, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (141, 175);
 INSERT INTO questiontag (question_id, tag_id) VALUES (141, 132);
 INSERT INTO questiontag (question_id, tag_id) VALUES (141, 176);
-INSERT INTO tag (text) VALUES ("online-resources");
+INSERT INTO tag (text) VALUES ('online-resources');
 INSERT INTO questiontag (question_id, tag_id) VALUES (141, 188);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 264, 86);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (142, 8, "&lt;p&gt;Before the concept of imaginary numbers, the number $i = \sqrt{-1}$ was shown to have no solution among the numbers that we had, so we said $i$ to be a new type of number. How come we don&#x27;t do the same for other &quot;impossible&quot; equations, such as
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 264, 121);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (142, 46, '&lt;p&gt;Before the concept of imaginary numbers, the number $i = \sqrt{-1}$ was shown to have no solution among the numbers that we had, so we said $i$ to be a new type of number. How come we don&#x27;t do the same for other &quot;impossible&quot; equations, such as
 $x = x + 1$, or $x = 1/0$?&lt;/p&gt;
 
 &lt;p&gt;Edit:
 OK, a lot of people have said that a number $x$ such that $x = x + 1$ would break the rule that $0 \neq 1$. However, let&#x27;s look at the extension from whole numbers to include negative numbers (yes, I said that I wasn&#x27;t going to include this) by defining $-1$ to be the number such that $-1 + 1 = 0$. Note that this breaks the &quot;rule&quot; that &quot;if $x \leq y$, then $ax \leq ay$&quot;, which was true for all $a, x, y$ before the introduction of negative numbers. So I&#x27;m not convinced that &quot;That would break some obvious truth about all numbers&quot; is necessarily an argument against this sort of thing.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (142, 2, "Why don&#39;t we define &quot;imaginary&quot; numbers for every &quot;impossibility&quot;?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (142, 2, 'Why don&#39;t we define &quot;imaginary&quot; numbers for every &quot;impossibility&quot;?');
+INSERT INTO activity (post_id, user_id, action) VALUES (142, 46, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (142, 129);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 263, 225);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (143, 20, "&lt;p&gt;&lt;strong&gt;Fun with Math&lt;/strong&gt; time. &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 263, 250);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (143, 90, '&lt;p&gt;&lt;strong&gt;Fun with Math&lt;/strong&gt; time. &lt;/p&gt;
 
 &lt;p&gt;My mom gave me a roll of toilet paper to put it in the bathroom, and looking at it I immediately wondered about this: is it possible, through very simple math, to calculate (with small error) the total paper length of a toilet roll? &lt;/p&gt;
 
@@ -3070,31 +3212,33 @@ $$&lt;/p&gt;
 &lt;p&gt;3) Could exist a similar calculation via integration over a spiral path? Because actually it&#x27;s what it is: a spiral.&lt;/p&gt;
 
 &lt;p&gt;Thank you so much for the time spent for this maybe tedious maybe boring maybe funny question!&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (143, 2, "The length of toilet roll");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (143, 2, 'The length of toilet roll');
+INSERT INTO activity (post_id, user_id, action) VALUES (143, 90, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (143, 137);
 INSERT INTO questiontag (question_id, tag_id) VALUES (143, 177);
 INSERT INTO questiontag (question_id, tag_id) VALUES (143, 181);
 INSERT INTO questiontag (question_id, tag_id) VALUES (143, 136);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 255, 44);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (144, 23, "&lt;p&gt;How can one prove the statement
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 256, 129);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (144, 53, '&lt;p&gt;How can one prove the statement
 $$\lim\limits_{x\to 0}\frac{\sin x}x=1$$
 without using the Taylor series of $\sin$, $\cos$ and $\tan$? Best would be a geometrical solution.&lt;/p&gt;
 
 &lt;p&gt;This is &lt;em&gt;homework&lt;/em&gt;. In my math class, we are about to prove that $\sin$ is continuous. We found out, that proving the above statement is enough for proving the continuity of $\sin$, but I can&#x27;t find out how. Any help is appreciated.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (144, 2, "How to prove that $\lim\limits_{x\to0}\frac{\sin x}x=1$?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (144, 2, 'How to prove that $\lim\limits_{x\to0}\frac{\sin x}x=1$?');
+INSERT INTO activity (post_id, user_id, action) VALUES (144, 53, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (144, 137);
-INSERT INTO tag (text) VALUES ("limits");
+INSERT INTO tag (text) VALUES ('limits');
 INSERT INTO questiontag (question_id, tag_id) VALUES (144, 189);
-INSERT INTO tag (text) VALUES ("trigonometry");
+INSERT INTO tag (text) VALUES ('trigonometry');
 INSERT INTO questiontag (question_id, tag_id) VALUES (144, 190);
-INSERT INTO tag (text) VALUES ("limits-without-lhopital");
+INSERT INTO tag (text) VALUES ('limits-without-lhopital');
 INSERT INTO questiontag (question_id, tag_id) VALUES (144, 191);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 255, 151);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (145, 58, "&lt;p&gt;I found this math &quot;problem&quot; on the internet, and I&#x27;m wondering if it has an answer:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 255, 73);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (145, 11, '&lt;p&gt;I found this math &quot;problem&quot; on the internet, and I&#x27;m wondering if it has an answer:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; If you choose an answer to this question at random, what is the probability that you will be correct?&lt;/p&gt;
@@ -3109,13 +3253,14 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (145, 58, "&lt;p
 &lt;/blockquote&gt;
 
 &lt;p&gt;Does this question have a correct answer?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (145, 2, "Multiple-choice question about the probability of a random answer to itself being correct");
-INSERT INTO tag (text) VALUES ("probability");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (145, 2, 'Multiple-choice question about the probability of a random answer to itself being correct');
+INSERT INTO activity (post_id, user_id, action) VALUES (145, 11, 'Create');
+INSERT INTO tag (text) VALUES ('probability');
 INSERT INTO questiontag (question_id, tag_id) VALUES (145, 192);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 255, 71);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (146, 2, "&lt;p&gt;Assume that we are playing a game of Russian roulette (6 chambers). Assume that there is no shuffling after the shot is fired.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 255, 61);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (146, 26, '&lt;p&gt;Assume that we are playing a game of Russian roulette (6 chambers). Assume that there is no shuffling after the shot is fired.&lt;/p&gt;
 
 &lt;p&gt;I was wondering if you have an advantage in going first?&lt;/p&gt;
 
@@ -3128,25 +3273,27 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (146, 2, "&lt;p&
 &lt;p&gt;If $n=3$, then maybe the other guy has an advantage. The person who goes second should have an advantage. &lt;/p&gt;
 
 &lt;p&gt;Or maybe I&#x27;m wrong.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (146, 2, "In Russian roulette, is it best to go first?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (146, 2, 'In Russian roulette, is it best to go first?');
+INSERT INTO activity (post_id, user_id, action) VALUES (146, 26, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (146, 192);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 252, 17);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (147, 33, "&lt;p&gt;Are there some proofs that can only be shown by contradiction or can everything that can be shown by contradiction also be shown without contradiction? What are the advantage/disadvantages of proving by contradiction?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 252, 84);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (147, 72, '&lt;p&gt;Are there some proofs that can only be shown by contradiction or can everything that can be shown by contradiction also be shown without contradiction? What are the advantage/disadvantages of proving by contradiction?&lt;/p&gt;
 
 &lt;p&gt;As an aside, how is proving by contradiction viewed in general by &#x27;advanced&#x27; mathematicians, is it a bit of an &#x27;easy way out&#x27; when it comes to trying to show something or is it perfectly fine? I ask because one of our tutors said something to that effect and said that he isn&#x27;t fond of proof by contradiction.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (147, 2, "Can every proof by contradiction also be shown without contradiction?");
-INSERT INTO tag (text) VALUES ("logic");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (147, 2, 'Can every proof by contradiction also be shown without contradiction?');
+INSERT INTO activity (post_id, user_id, action) VALUES (147, 72, 'Create');
+INSERT INTO tag (text) VALUES ('logic');
 INSERT INTO questiontag (question_id, tag_id) VALUES (147, 193);
-INSERT INTO tag (text) VALUES ("proof-writing");
+INSERT INTO tag (text) VALUES ('proof-writing');
 INSERT INTO questiontag (question_id, tag_id) VALUES (147, 194);
-INSERT INTO tag (text) VALUES ("proof-theory");
+INSERT INTO tag (text) VALUES ('proof-theory');
 INSERT INTO questiontag (question_id, tag_id) VALUES (147, 195);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 251, 8);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (148, 82, "&lt;p&gt;It&#x27;s one of my real analysis professor&#x27;s favourite sayings that &quot;being obvious does not imply that it&#x27;s true&quot;.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 251, 195);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (148, 67, '&lt;p&gt;It&#x27;s one of my real analysis professor&#x27;s favourite sayings that &quot;being obvious does not imply that it&#x27;s true&quot;.&lt;/p&gt;
 
 &lt;p&gt;Now, I know a fair few examples of things that are obviously true and that can be proved to be true (like the Jordan curve theorem).&lt;/p&gt;
 
@@ -3161,13 +3308,14 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (148, 82, "&lt;p
 &lt;p&gt;I&#x27;m looking &lt;strong&gt;just&lt;/strong&gt; for theorems and not their (dis)proof -- I&#x27;m happy to research that myself.&lt;/p&gt;
 
 &lt;p&gt;Thanks!&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (148, 2, "&#39;Obvious&#39; theorems that are actually false");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (148, 2, '&#39;Obvious&#39; theorems that are actually false');
+INSERT INTO activity (post_id, user_id, action) VALUES (148, 67, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (148, 129);
 INSERT INTO questiontag (question_id, tag_id) VALUES (148, 132);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 243, 67);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (149, 85, "&lt;p&gt;I am a big fan of the oldschool games and I once noticed that there is a sort parity associated to one and only one Tetris piece, the $\color{purple}{\text{T}}$ piece.  This parity is found with no other piece in the game.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 243, 20);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (149, 34, '&lt;p&gt;I am a big fan of the oldschool games and I once noticed that there is a sort parity associated to one and only one Tetris piece, the $\color{purple}{\text{T}}$ piece.  This parity is found with no other piece in the game.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; The Tetris playing field has width $10$.  Rotation is allowed, so there are then exactly $7$ unique pieces, each of which is composed of $4$ blocks.&lt;/p&gt;
 
@@ -3186,30 +3334,32 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (149, 85, "&lt;p
 &lt;p&gt;I have verified the second part; all of the other pieces can give a perfect clear with either an odd or an even number used.  However, I am not sure how to prove the first part.  I think that assigning some kind of invariant to the pieces must be the right way to go, but I am not sure.&lt;/p&gt;
 
 &lt;p&gt;Thank you,&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (149, 2, "The Mathematics of Tetris");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (149, 2, 'The Mathematics of Tetris');
+INSERT INTO activity (post_id, user_id, action) VALUES (149, 34, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (149, 136);
-INSERT INTO tag (text) VALUES ("problem-solving");
+INSERT INTO tag (text) VALUES ('problem-solving');
 INSERT INTO questiontag (question_id, tag_id) VALUES (149, 196);
-INSERT INTO tag (text) VALUES ("packing-problem");
+INSERT INTO tag (text) VALUES ('packing-problem');
 INSERT INTO questiontag (question_id, tag_id) VALUES (149, 197);
-INSERT INTO tag (text) VALUES ("parity");
+INSERT INTO tag (text) VALUES ('parity');
 INSERT INTO questiontag (question_id, tag_id) VALUES (149, 198);
-INSERT INTO tag (text) VALUES ("invariance");
+INSERT INTO tag (text) VALUES ('invariance');
 INSERT INTO questiontag (question_id, tag_id) VALUES (149, 199);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 241, 137);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (150, 76, "&lt;p&gt;Singular value decomposition (&lt;a href=&quot;http://en.wikipedia.org/wiki/Singular_value_decomposition&quot;&gt;SVD&lt;/a&gt;) and principal component analysis (&lt;a href=&quot;https://en.wikipedia.org/wiki/Principal_component_analysis&quot;&gt;PCA&lt;/a&gt;) are two eigenvalue methods used to reduce a high-dimensional dataset into fewer dimensions while retaining important information. Articles online say that these methods are &#x27;related&#x27; but never specify the exact relation.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 241, 43);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (150, 11, '&lt;p&gt;Singular value decomposition (&lt;a href=&quot;http://en.wikipedia.org/wiki/Singular_value_decomposition&quot;&gt;SVD&lt;/a&gt;) and principal component analysis (&lt;a href=&quot;https://en.wikipedia.org/wiki/Principal_component_analysis&quot;&gt;PCA&lt;/a&gt;) are two eigenvalue methods used to reduce a high-dimensional dataset into fewer dimensions while retaining important information. Articles online say that these methods are &#x27;related&#x27; but never specify the exact relation.&lt;/p&gt;
 
 &lt;p&gt;What is the intuitive relationship between PCA and SVD? As PCA uses the SVD in its calculation, clearly there is some &#x27;extra&#x27; analysis done. What does PCA &#x27;pay attention&#x27; to differently than the SVD? What kinds of relationships do each method utilize more in their calculations? Is one method &#x27;blind&#x27; to a certain type of data that the other is not?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (150, 2, "What is the intuitive relationship between SVD and PCA");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (150, 2, 'What is the intuitive relationship between SVD and PCA');
+INSERT INTO activity (post_id, user_id, action) VALUES (150, 11, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (150, 158);
-INSERT INTO tag (text) VALUES ("statistics");
+INSERT INTO tag (text) VALUES ('statistics');
 INSERT INTO questiontag (question_id, tag_id) VALUES (150, 200);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 239, 108);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (151, 87, "&lt;p&gt;What are some surprising equations / identities that you have seen, which you would not have expected?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 239, 72);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (151, 94, '&lt;p&gt;What are some surprising equations / identities that you have seen, which you would not have expected?&lt;/p&gt;
 
 &lt;p&gt;This could be complex numbers, trigonometric identities, combinatorial results, algebraic results, etc.&lt;/p&gt;
 
@@ -3218,30 +3368,32 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (151, 87, "&lt;p
 &lt;p&gt;Please write a single identity (or group of identities) in each answer.&lt;/p&gt;
 
 &lt;p&gt;I found this list of &lt;a href=&quot;http://math.stackexchange.com/questions/8814/funny-identities?rq=1&quot;&gt;Funny identities&lt;/a&gt;, in which there is some overlap.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (151, 2, "Surprising identities / equations");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (151, 2, 'Surprising identities / equations');
+INSERT INTO activity (post_id, user_id, action) VALUES (151, 94, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (151, 129);
 INSERT INTO questiontag (question_id, tag_id) VALUES (151, 132);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 237, 74);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (152, 99, "&lt;p&gt;How can I evaluate&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 237, 195);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (152, 18, '&lt;p&gt;How can I evaluate&lt;/p&gt;
 
 &lt;p&gt;$$ \sum_{n=1}^\infty \frac{2n}{3^{n+1}} $$&lt;/p&gt;
 
 &lt;p&gt;I know the answer thanks to &lt;a href=&quot;http://www.wolframalpha.com/input/?i=Sum%5B%282n%29/3%5E%28n%20%2b%201%29,%20%7Bn,%201,%20Infinity%7D%5D&quot;&gt;Wolfram Alpha&lt;/a&gt;, but I&#x27;m more concerned with how I can derive that answer.  It cites tests to prove that it is convergent, but my class has never learned these before so I feel that there must be a simpler method.&lt;/p&gt;
 
 &lt;p&gt;In general, how can I evaluate $$\sum_{n=0}^\infty (n+1)x^n?$$&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (152, 2, "How can I evaluate $\sum_{n=0}^\infty (n+1)x^n$");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (152, 2, 'How can I evaluate $\sum_{n=0}^\infty (n+1)x^n$');
+INSERT INTO activity (post_id, user_id, action) VALUES (152, 18, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (152, 147);
-INSERT INTO tag (text) VALUES ("convergence");
+INSERT INTO tag (text) VALUES ('convergence');
 INSERT INTO questiontag (question_id, tag_id) VALUES (152, 201);
-INSERT INTO tag (text) VALUES ("power-series");
+INSERT INTO tag (text) VALUES ('power-series');
 INSERT INTO questiontag (question_id, tag_id) VALUES (152, 202);
 INSERT INTO questiontag (question_id, tag_id) VALUES (152, 150);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 236, 97);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (153, 93, "&lt;p&gt;Could someone provide me with good explanation of why $0^0 = 1$?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 236, 5);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (153, 27, '&lt;p&gt;Could someone provide me with good explanation of why $0^0 = 1$?&lt;/p&gt;
 
 &lt;p&gt;My train of thought:&lt;/p&gt;
 
@@ -3259,19 +3411,20 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (153, 93, "&lt;p
 &lt;/ol&gt;
 
 &lt;p&gt;PS. I&#x27;ve read the &lt;a href=&quot;http://mathforum.org/dr.math/faq/faq.0.to.0.power.html&quot; rel=&quot;nofollow noreferrer&quot;&gt;explanation&lt;/a&gt; on mathforum.org, but it isn&#x27;t clear to me.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (153, 2, "Zero to the zero power - is $0^0=1$?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (153, 2, 'Zero to the zero power - is $0^0=1$?');
+INSERT INTO activity (post_id, user_id, action) VALUES (153, 27, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (153, 134);
-INSERT INTO tag (text) VALUES ("discrete-mathematics");
+INSERT INTO tag (text) VALUES ('discrete-mathematics');
 INSERT INTO questiontag (question_id, tag_id) VALUES (153, 203);
-INSERT INTO tag (text) VALUES ("exponentiation");
+INSERT INTO tag (text) VALUES ('exponentiation');
 INSERT INTO questiontag (question_id, tag_id) VALUES (153, 204);
-INSERT INTO tag (text) VALUES ("indeterminate-forms");
+INSERT INTO tag (text) VALUES ('indeterminate-forms');
 INSERT INTO questiontag (question_id, tag_id) VALUES (153, 205);
 INSERT INTO questiontag (question_id, tag_id) VALUES (153, 150);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 234, 204);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (154, 8, "&lt;p&gt;&lt;img src=&quot;https://i.stack.imgur.com/ldNco.png&quot; alt=&quot;Every base is base 10&quot;&gt;&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 234, 170);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (154, 86, '&lt;p&gt;&lt;img src=&quot;https://i.stack.imgur.com/ldNco.png&quot; alt=&quot;Every base is base 10&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;It&#x27;s a hilarious witty joke that points out how every base is &#x27;10&#x27; in its base. Like,&lt;/p&gt;
 
@@ -3280,14 +3433,15 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (154, 8, "&lt;p&
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;My question is if whoever invented the decimal system had chosen 9 numbers or 11, or whatever, would this still be applicable? I am confused - Is 10 a special number which we had chosen several centuries ago or am I just missing some point?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (154, 2, "Is &#39;10&#39; a magical number or I am missing something?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (154, 2, 'Is &#39;10&#39; a magical number or I am missing something?');
+INSERT INTO activity (post_id, user_id, action) VALUES (154, 86, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (154, 148);
-INSERT INTO tag (text) VALUES ("number-systems");
+INSERT INTO tag (text) VALUES ('number-systems');
 INSERT INTO questiontag (question_id, tag_id) VALUES (154, 206);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 234, 45);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (155, 70, "&lt;p&gt;I awoke with the following puzzle and I would like to investigate but the answer may require some programming (it may not either).  I have asked on the meta site and believe the question to be suitable and hopefully interesting for the community.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 234, 66);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (155, 56, '&lt;p&gt;I awoke with the following puzzle and I would like to investigate but the answer may require some programming (it may not either).  I have asked on the meta site and believe the question to be suitable and hopefully interesting for the community.&lt;/p&gt;
 
 &lt;p&gt;I will try to explain the puzzle as best I can then detail the questions I am interested in after.&lt;/p&gt;
 
@@ -3314,16 +3468,17 @@ Thanks.&lt;/p&gt;
 &lt;p&gt;Any questions I&#x27;ll do my best to clarify.&lt;/p&gt;
 
 &lt;p&gt;Side note: I observed that initially at least the pattern likes to cling to itself but I suspect it doesn&#x27;t later on.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (155, 2, "Help with a prime number spiral which turns 90 degrees at each prime");
-INSERT INTO tag (text) VALUES ("prime-numbers");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (155, 2, 'Help with a prime number spiral which turns 90 degrees at each prime');
+INSERT INTO activity (post_id, user_id, action) VALUES (155, 56, 'Create');
+INSERT INTO tag (text) VALUES ('prime-numbers');
 INSERT INTO questiontag (question_id, tag_id) VALUES (155, 207);
 INSERT INTO questiontag (question_id, tag_id) VALUES (155, 133);
-INSERT INTO tag (text) VALUES ("pattern-recognition");
+INSERT INTO tag (text) VALUES ('pattern-recognition');
 INSERT INTO questiontag (question_id, tag_id) VALUES (155, 208);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 233, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (156, 61, "&lt;p&gt;I recently read about the Ring Game on &lt;a href=&quot;http://mathoverflow.net/questions/93276/a-game-on-noetherian-rings&quot;&gt;MathOverflow&lt;/a&gt;, and have been trying to determine winning strategies for each player on various rings. The game has two players and begins with a commutative Noetherian ring $R$. Player one mods out a nonzero non-unit, and gives the resulting ring to player 2, who repeats the process. The last person to make a legal move (i.e. whoever produces a field) wins. For PIDs the game is trivial: player 1 wins by modding out a single prime element. However, the game becomes far more complicated even in the case of 2-dimensional UFDs. After several days I was unable to determine a winning strategy for either player for $\mathbb Z[x]$. &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 233, 75);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (156, 81, '&lt;p&gt;I recently read about the Ring Game on &lt;a href=&quot;http://mathoverflow.net/questions/93276/a-game-on-noetherian-rings&quot;&gt;MathOverflow&lt;/a&gt;, and have been trying to determine winning strategies for each player on various rings. The game has two players and begins with a commutative Noetherian ring $R$. Player one mods out a nonzero non-unit, and gives the resulting ring to player 2, who repeats the process. The last person to make a legal move (i.e. whoever produces a field) wins. For PIDs the game is trivial: player 1 wins by modding out a single prime element. However, the game becomes far more complicated even in the case of 2-dimensional UFDs. After several days I was unable to determine a winning strategy for either player for $\mathbb Z[x]$. &lt;/p&gt;
 
 &lt;p&gt;I believe the most tractable class of rings are finitely generated commutative algebras over an algebraically closed field $K$, as for these we can take advantage of the nullstellensatz. So far, I&#x27;ve been able to deal with the cases of $K[x]$ and $K[x,y]$. Player 1 has a trivial winning strategy for $K[x]$, as it is a PID. For $K[x,y]$, player 1 has a winning strategy as follows:&lt;/p&gt;
 
@@ -3338,15 +3493,16 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (156, 61, "&lt;p
 &lt;p&gt;So my question is: which player has a winning strategy for $K[x,y,z]$, and what is one such strategy?&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Edit:&lt;/strong&gt; As pointed out in the comments, this winning strategy is wrong.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (156, 2, "The Ring Game on $K[x,y,z]$");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (156, 2, 'The Ring Game on $K[x,y,z]$');
+INSERT INTO activity (post_id, user_id, action) VALUES (156, 81, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (156, 161);
-INSERT INTO tag (text) VALUES ("combinatorial-game-theory");
+INSERT INTO tag (text) VALUES ('combinatorial-game-theory');
 INSERT INTO questiontag (question_id, tag_id) VALUES (156, 209);
 INSERT INTO questiontag (question_id, tag_id) VALUES (156, 165);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 233, 109);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (157, 32, "&lt;p&gt;I&#x27;ve recently heard a riddle, which looks quite simple, but I can&#x27;t solve it :/&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 233, 73);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (157, 29, '&lt;p&gt;I&#x27;ve recently heard a riddle, which looks quite simple, but I can&#x27;t solve it :/&lt;/p&gt;
 
 &lt;p&gt;The girl thinks of a number which is 1, 2, or 3&lt;/p&gt;
 
@@ -3367,49 +3523,53 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (157, 32, "&lt;p
 &lt;blockquote class=&quot;spoiler&quot;&gt;
   &lt;p&gt; &quot;I&#x27;m also thinking of a number. It&#x27;s either 1 or 2. Is my number less than yours?&quot;&lt;/p&gt;
 &lt;/blockquote&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (157, 2, "Riddle: 1 question to know if the number is 1, 2 or 3");
-INSERT INTO tag (text) VALUES ("puzzle");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (157, 2, 'Riddle: 1 question to know if the number is 1, 2 or 3');
+INSERT INTO activity (post_id, user_id, action) VALUES (157, 29, 'Create');
+INSERT INTO tag (text) VALUES ('puzzle');
 INSERT INTO questiontag (question_id, tag_id) VALUES (157, 210);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 230, 165);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (158, 71, "&lt;p&gt;Of course, we&#x27;ve all heard the colloquialism &quot;If a bunch of monkeys pound on a typewriter, eventually one of them will write Hamlet.&quot;&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 230, 95);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (158, 96, '&lt;p&gt;Of course, we&#x27;ve all heard the colloquialism &quot;If a bunch of monkeys pound on a typewriter, eventually one of them will write Hamlet.&quot;&lt;/p&gt;
 
 &lt;p&gt;I have a (not very mathematically intelligent) friend who presented it as if it were a mathematical fact.  Which got me thinking... Is this really true?  Of course, I&#x27;ve learned that dealing with infinity can be tricky, but my intuition says that time is countably infinite while the number of works the monkeys could produce is uncountably infinite.  Therefore, it isn&#x27;t necessarily given that the monkeys would write Hamlet.&lt;/p&gt;
 
 &lt;p&gt;Could someone who&#x27;s better at this kind of math than me tell me if this is correct?  Or is there more to it than I&#x27;m thinking?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (158, 2, "Given an infinite number of monkeys and an infinite amount of time, would one of them write Hamlet?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (158, 2, 'Given an infinite number of monkeys and an infinite amount of time, would one of them write Hamlet?');
+INSERT INTO activity (post_id, user_id, action) VALUES (158, 96, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (158, 192);
-INSERT INTO tag (text) VALUES ("infinity");
+INSERT INTO tag (text) VALUES ('infinity');
 INSERT INTO questiontag (question_id, tag_id) VALUES (158, 211);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 228, 12);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (159, 99, "&lt;blockquote&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 228, 100);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (159, 47, '&lt;blockquote&gt;
   &lt;p&gt;I am searching for some groups, where it is not so obvious that they are groups.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;In the lectures script there are only examples like $\mathbb{Z}$ under 
 addition and other things like that. I don&#x27;t think that these examples are helpful to understand the real properties of a group, when only looking to such trivial examples. I am searching for some more exotic examples, like the power set of a set together with the symmetric difference, or an elliptic curve with its group law. &lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (159, 2, "Nice examples of groups which are not obviously groups");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (159, 2, 'Nice examples of groups which are not obviously groups');
+INSERT INTO activity (post_id, user_id, action) VALUES (159, 47, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (159, 171);
-INSERT INTO tag (text) VALUES ("group-theory");
+INSERT INTO tag (text) VALUES ('group-theory');
 INSERT INTO questiontag (question_id, tag_id) VALUES (159, 212);
 INSERT INTO questiontag (question_id, tag_id) VALUES (159, 169);
 INSERT INTO questiontag (question_id, tag_id) VALUES (159, 132);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 225, 193);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (160, 33, "&lt;p&gt;Here is a funny exercise 
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 225, 132);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (160, 45, '&lt;p&gt;Here is a funny exercise 
 $$\sin(x - y) \sin(x + y) = (\sin x - \sin y)(\sin x + \sin y).$$
 (If you prove it don&#x27;t publish it here please).
 Do you have similar examples?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (160, 2, "Funny identities");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (160, 2, 'Funny identities');
+INSERT INTO activity (post_id, user_id, action) VALUES (160, 45, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (160, 132);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 49, 31);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (161, 42, "&lt;p&gt;Facts about $\pi$ are always fun!&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 49, 47);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (161, 91, '&lt;p&gt;Facts about $\pi$ are always fun!&lt;/p&gt;
 
 &lt;p&gt;\begin{equation}
 \frac{\pi}{2} = \frac{2}{1}\cdot\frac{2}{3}\cdot\frac{4}{3}\cdot\frac{4}{5}\cdot\frac{6}{5}\cdot\frac{6}{7}\cdot\frac{8}{7}\cdot\ldots\\
@@ -3432,18 +3592,20 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (161, 42, "&lt;p
 \begin{equation}
 \pi = \cfrac{4}{1+\cfrac{1^2}{3+\cfrac{2^2}{5+\cfrac{3^2}{7+\cfrac{4^2}{9+\ldots}}}}}\\
 \end{equation}&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (161, 160, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (161, 160, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (161, 91, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 17, 9);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (162, 54, "&lt;p&gt;The use of positive integer exponents appears in arithmetic as a shorthand notation for repeated multiplication. The notation is then extended in algebra to the case of zero exponent. The justification for such an extension is algebraic. Furthermore, in abstract algebra, if $G$ is a multiplicative monoid with identity $e$, and $x$ is an element of $G$, then $x^0$ is defined to be $e$. Now, the set of real numbers with multiplication is precisely such a monoid with $e=1$. Therefore, in the most abstract algebraic setting, $0^0=1$.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 17, 14);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (162, 52, '&lt;p&gt;The use of positive integer exponents appears in arithmetic as a shorthand notation for repeated multiplication. The notation is then extended in algebra to the case of zero exponent. The justification for such an extension is algebraic. Furthermore, in abstract algebra, if $G$ is a multiplicative monoid with identity $e$, and $x$ is an element of $G$, then $x^0$ is defined to be $e$. Now, the set of real numbers with multiplication is precisely such a monoid with $e=1$. Therefore, in the most abstract algebraic setting, $0^0=1$.&lt;/p&gt;
 
 &lt;p&gt;Continuity of $x^y$ is irrelevant. While there are theorems that state that if $x_n \to x$ and $y_n \to y,$ then $(x_n + y_n) \to x+y$ and $(x_n)(y_n) \to xy$, there is no corresponding theorem that states that $(x_n)^{(y_n)} \to x^y$. I don&#x27;t know why people keep beating this straw man to conclude that $0^0$ can&#x27;t or shouldn&#x27;t be defined.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (162, 153, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (162, 153, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (162, 52, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("deleted", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (163, 55, "&lt;p&gt;It has surprised me that&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (163, 8, '&lt;p&gt;It has surprised me that&lt;/p&gt;
 
 &lt;p&gt;$$F_n^\star=\frac{\phi^n-(-\phi)^{-n}}{\sqrt5}$$&lt;/p&gt;
 
@@ -3470,11 +3632,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (163, 55, "&lt;p
 &lt;p&gt;$$a_kr^k+a_{k-1}r^{k-1}+\dots+a_0=0$$&lt;/p&gt;
 
 &lt;p&gt;again assuming roots do not repeat.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (163, 151, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (163, 151, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (163, 8, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (164, 98, "&lt;p&gt;One of the easier ways I think about it is using l&#x27;Hopital&#x27;s Rule stating the following :
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (164, 41, '&lt;p&gt;One of the easier ways I think about it is using l&#x27;Hopital&#x27;s Rule stating the following :
 $$\lim_{x\to0} \frac{f(x)}{g(x)} = \lim_{x\to0} \frac{f&#x27;(x)}{g&#x27;(x)} $$
 where $f&#x27;(x),g&#x27;(x)$ are the derivatives of $f(x), g(x)$&lt;/p&gt;
 
@@ -3482,11 +3645,12 @@ where $f&#x27;(x),g&#x27;(x)$ are the derivatives of $f(x), g(x)$&lt;/p&gt;
 
 &lt;p&gt;$$\lim_{x\to0} \frac{f(x)}{g(x)}= \lim_{x\to0} \frac{sin(x)}{x} = \lim_{x\to0} \frac{cos(x)}{1}= 1 $$ 
 using the algebra of limits .&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (164, 144, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (164, 144, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (164, 41, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (165, 77, "&lt;p&gt;Here was an interesting example for me:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (165, 38, '&lt;p&gt;Here was an interesting example for me:&lt;/p&gt;
 
 &lt;p&gt;Let $X_1,X_2$ be  compact $n$-manifolds with boundary. We say that they are cobordant if there exists an $n+1$ dimensional manifold with boundary so that
 $\partial Y=X_1 \sqcup X_2$ (this is an equivalence relation that we will denote by $\sim$. &lt;/p&gt;
@@ -3503,27 +3667,30 @@ $[X \sqcup X]=\partial (M \times [0,1])$ so in fact, $[X]+[X]=[\emptyset]$, and 
 &lt;p&gt;I&#x27;ll list below the first few from wikipedia:, starting with $\mathcal{R}_1$ and increasing in dimension:&lt;/p&gt;
 
 &lt;p&gt;$$\mathbb Z/2, 0, \mathbb Z/2, 0, \mathbb Z/2 \oplus \mathbb Z/2, \mathbb Z/2.$$&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (165, 159, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (165, 159, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (165, 38, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (166, 54, "&lt;p&gt;For my money (as it were), a pretty simple example is this:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (166, 97, '&lt;p&gt;For my money (as it were), a pretty simple example is this:&lt;/p&gt;
 
 &lt;p&gt;&quot;There are two games of chance such that: (a) If you play an unbounded sequence of rounds of either game by itself, you &lt;strong&gt;must&lt;/strong&gt; eventually lose all of your money; (b) If you play a sequence of rounds of both games, where you are allowed to pick which game to play on each round, then it is possible to make a net profit.&quot;&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (166, 139, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (166, 139, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (166, 97, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (167, 63, "&lt;p&gt;&lt;a href=&quot;https://wikis.uit.tufts.edu/confluence/download/attachments/21933250/flp.pdf&quot; rel=&quot;nofollow noreferrer&quot;&gt;Six&lt;/a&gt; ways to foliate a surface.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (167, 6, '&lt;p&gt;&lt;a href=&quot;https://wikis.uit.tufts.edu/confluence/download/attachments/21933250/flp.pdf&quot; rel=&quot;nofollow noreferrer&quot;&gt;Six&lt;/a&gt; ways to foliate a surface.&lt;/p&gt;
 
 &lt;p&gt;(I think this could be accurately and concisely described in words R P F would understand.)&lt;/p&gt;
 
 &lt;p&gt;Sources: FLP, &lt;a href=&quot;https://books.google.com/books?id=GwW1FQla4noC&amp;amp;output=embed&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://books.google.com/books?id=GwW1FQla4noC&amp;amp;output=embed&lt;/a&gt;&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (167, 139, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (167, 139, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (167, 6, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (168, 83, "&lt;p&gt;No one like finite calculus notation? Unbelievable :( &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (168, 11, '&lt;p&gt;No one like finite calculus notation? Unbelievable :( &lt;/p&gt;
 
 &lt;p&gt;I &lt;em&gt;must&lt;/em&gt; add an answer in the form of finite calculus. You can read about this topic in the book &lt;em&gt;Concrete Mathematics&lt;/em&gt; of Graham and Knuth, or &lt;a href=&quot;https://www.cs.purdue.edu/homes/dgleich/publications/Gleich%202005%20-%20finite%20calculus.pdf&quot; rel=&quot;nofollow noreferrer&quot;&gt;this paper&lt;/a&gt;.&lt;/p&gt;
 
@@ -3554,16 +3721,18 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (168, 83, "&lt;p
 &lt;p&gt;Then the above is finite when $|x|&amp;lt;1$, in this case we have that&lt;/p&gt;
 
 &lt;p&gt;$$\sum_{k=0}^\infty (k+1)x^k=-\frac1{x-1}+\frac{x}{(x-1)^2}=\frac1{(x-1)^2}$$&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (168, 152, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (168, 152, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (168, 11, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (169, 11, "&lt;p&gt;&lt;a href=&quot;http://mathoverflow.net/questions/115/&quot;&gt;27&lt;/a&gt; lines on a cubic. The question is &quot;in terms [Feynman] could understand&quot;, which I think includes del Pezzo surfaces.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (169, 139, "False");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (169, 32, '&lt;p&gt;&lt;a href=&quot;http://mathoverflow.net/questions/115/&quot;&gt;27&lt;/a&gt; lines on a cubic. The question is &quot;in terms [Feynman] could understand&quot;, which I think includes del Pezzo surfaces.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (169, 139, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (169, 32, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (170, 70, "&lt;p&gt;I have used the &lt;a href=&quot;https://oeis.org/A001228&quot; rel=&quot;nofollow noreferrer&quot;&gt;orders of sporadic groups&lt;/a&gt;, &lt;a href=&quot;https://oeis.org/wiki/Classification_of_finite_simple_groups&quot; rel=&quot;nofollow noreferrer&quot;&gt;classification of finite simple groups&lt;/a&gt;, and &lt;a href=&quot;https://oeis.org/A001676&quot; rel=&quot;nofollow noreferrer&quot;&gt;stable homotopy groups of spheres&lt;/a&gt; to impress non-mathematicians. I call these sequences &quot;a joke written by‡ G_d&quot;. I bet A-D-E theory and Coxeter groups could be entertaining &amp;amp; comprehensible if someone cooked up a good demonstration.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (170, 74, '&lt;p&gt;I have used the &lt;a href=&quot;https://oeis.org/A001228&quot; rel=&quot;nofollow noreferrer&quot;&gt;orders of sporadic groups&lt;/a&gt;, &lt;a href=&quot;https://oeis.org/wiki/Classification_of_finite_simple_groups&quot; rel=&quot;nofollow noreferrer&quot;&gt;classification of finite simple groups&lt;/a&gt;, and &lt;a href=&quot;https://oeis.org/A001676&quot; rel=&quot;nofollow noreferrer&quot;&gt;stable homotopy groups of spheres&lt;/a&gt; to impress non-mathematicians. I call these sequences &quot;a joke written by‡ G_d&quot;. I bet A-D-E theory and Coxeter groups could be entertaining &amp;amp; comprehensible if someone cooked up a good demonstration.&lt;/p&gt;
 
 &lt;p&gt;How do I explain cobordisms or groups intuitively? I refer to topology as &quot;squishy maths&quot; or &quot;the logic of stretchy things&quot; and groups as &quot;every possible multiplication٭ table&quot;. I say that the quest to understand the breadth and depth of every possible multiplication table took a hundred years. 2-homotopies are easy enough to indicate with objects commonly available at a party: wave a sheet, blanket, or napkin.&lt;/p&gt;
 
@@ -3580,17 +3749,19 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (170, 70, "&lt;p
 &lt;p&gt;I don’t know if making use of &lt;code&gt;OEIS&lt;/code&gt; or YouTube via someone’s phone at a bar/party counts (since mathematicians partying with Feynman couldn&#x27;t), but it did work.&lt;/p&gt;
 
 &lt;p&gt;In the video of &lt;a href=&quot;https://www.youtube.com/watch?v=1LwkljjLBns&quot; rel=&quot;nofollow noreferrer&quot;&gt;Milnor in 1963&lt;/a&gt; you can observe that he &lt;strong&gt;&lt;em&gt;gets laughs&lt;/em&gt;&lt;/strong&gt; from the audience when he slowly reads off &lt;a href=&quot;https://oeis.org/A001676&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://oeis.org/A001676&lt;/a&gt;. Lots of people who went through school have probably realised that &lt;a href=&quot;https://tsungfruve.wordpress.com/2013/12/03/there-is-no-one-true-sequence-starting-with/&quot; rel=&quot;nofollow noreferrer&quot;&gt;&quot;what comes next in this sequence?&quot;&lt;/a&gt; is as much a game of figuring out how the schoolmaster thinks, what objects and patterns educators have decided are &quot;important&quot; or classical, as getting &quot;the&quot; pattern. That natural desire to not be &lt;a href=&quot;https://youtu.be/vQXPiBUQaIk&quot; rel=&quot;nofollow noreferrer&quot;&gt;forced to agree with people with social power over you&lt;/a&gt; is a useful lever one can pull in talking about mathematics to non-mathematicians.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (170, 139, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (170, 139, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (170, 74, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", -2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (171, 24, "&lt;p&gt;Ten minutes.&lt;a href=&quot;https://i.stack.imgur.com/aBNS9.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/aBNS9.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', -2, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (171, 79, '&lt;p&gt;Ten minutes.&lt;a href=&quot;https://i.stack.imgur.com/aBNS9.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/aBNS9.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;
 $\ \ \ $ $\ \ \ $ $\ \ \ $ $\ \ \ $&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (171, 113, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (171, 113, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (171, 79, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (172, 83, "&lt;h3&gt;&quot;There are exactly 17 possible tessellations.&quot;&lt;/h3&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (172, 64, '&lt;h3&gt;&quot;There are exactly 17 possible tessellations.&quot;&lt;/h3&gt;
 
 &lt;p&gt;To trick Dr Feynman, pick another number besides 17 and have a good poker face.&lt;/p&gt;
 
@@ -3603,21 +3774,24 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (172, 83, "&lt;h
 &lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Wallpaper_group&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://en.wikipedia.org/wiki/Wallpaper_group&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://link.springer.com/book/10.1007%2F978-3-642-61572-6&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://link.springer.com/book/10.1007%2F978-3-642-61572-6&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (172, 139, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (172, 139, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (172, 64, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (173, 50, "&lt;p&gt;The series $$\sum_{n=1}^{\infty} \frac{n^{13}}{e^{2\pi n} - 1} = \frac{1}{24}$$ is not entirely obvious. (At this time &lt;a href=&quot;http://www.wolframalpha.com/input/?i=sum%20of%20n%5E13%20%2F%20(e%5E(2*pi*n)%20-%201)%20for%20n%3D1%20to%20inf&quot; rel=&quot;nofollow noreferrer&quot;&gt;WolframAlpha&lt;/a&gt; is unable to find its closed form.)&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (173, 151, "False");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (173, 33, '&lt;p&gt;The series $$\sum_{n=1}^{\infty} \frac{n^{13}}{e^{2\pi n} - 1} = \frac{1}{24}$$ is not entirely obvious. (At this time &lt;a href=&quot;http://www.wolframalpha.com/input/?i=sum%20of%20n%5E13%20%2F%20(e%5E(2*pi*n)%20-%201)%20for%20n%3D1%20to%20inf&quot; rel=&quot;nofollow noreferrer&quot;&gt;WolframAlpha&lt;/a&gt; is unable to find its closed form.)&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (173, 151, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (173, 33, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (174, 80, "&lt;p&gt;I think &lt;a href=&quot;https://en.wikipedia.org/wiki/Penney&amp;#39;s_game&quot; rel=&quot;nofollow noreferrer&quot;&gt;Penney&#x27;s Game&lt;/a&gt; is a good example. It&#x27;s counter intuitive enough. You can watch it in this amazing &lt;a href=&quot;http://www.youtube.com/watch?v=Sa9jLWKrX0c&quot; rel=&quot;nofollow noreferrer&quot;&gt;video&lt;/a&gt; of numberphile:&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (174, 139, "False");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (174, 32, '&lt;p&gt;I think &lt;a href=&quot;https://en.wikipedia.org/wiki/Penney&amp;#39;s_game&quot; rel=&quot;nofollow noreferrer&quot;&gt;Penney&#x27;s Game&lt;/a&gt; is a good example. It&#x27;s counter intuitive enough. You can watch it in this amazing &lt;a href=&quot;http://www.youtube.com/watch?v=Sa9jLWKrX0c&quot; rel=&quot;nofollow noreferrer&quot;&gt;video&lt;/a&gt; of numberphile:&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (174, 139, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (174, 32, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 2, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (175, 51, "&lt;p&gt;There are excellent answers here that are very detailed.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (175, 60, '&lt;p&gt;There are excellent answers here that are very detailed.&lt;/p&gt;
 
 &lt;p&gt;Here I provide a simpler answer, also discussed &lt;a href=&quot;https://en.wikipedia.org/wiki/Determinant#2_.C3.97_2_matrices&quot; rel=&quot;nofollow noreferrer&quot;&gt;in wikipedia&lt;/a&gt;. Think of the determinant as the &lt;strong&gt;area&lt;/strong&gt; (in 2D; in 3D it would be the volume, etc.) of the parallelogram made by the vectors:&lt;/p&gt;
 
@@ -3632,11 +3806,12 @@ c &amp;amp; d
 \end{vmatrix}
 = ad - bc = Area_{parallelogram}
 $$&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (175, 124, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (175, 124, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (175, 60, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("deleted", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (176, 47, "&lt;p&gt;Here is a useful place for Euler&#x27;s transform and the Dirichlet eta function:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (176, 24, '&lt;p&gt;Here is a useful place for Euler&#x27;s transform and the Dirichlet eta function:&lt;/p&gt;
 
 &lt;p&gt;$$\zeta(s)=\sum_{n=1}^\infty\frac1{n^s}$$&lt;/p&gt;
 
@@ -3663,11 +3838,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (176, 47, "&lt;p
 &lt;p&gt;And at $s=-1$,&lt;/p&gt;
 
 &lt;p&gt;$$\zeta(-1)=\frac{-1}{12}$$&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (176, 137, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (176, 137, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (176, 24, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", -2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (177, 78, "&lt;p&gt;Note 0^0 = 0/0
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', -2, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (177, 1, '&lt;p&gt;Note 0^0 = 0/0
 given that 
 n^0 = 1
 so
@@ -3676,39 +3852,43 @@ then
 n^(0* infinity) = n^0
 so 
 0/0 = 0&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (177, 153, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (177, 153, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (177, 1, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 32, 26);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (178, 75, "&lt;p&gt;Of &lt;strong&gt;course&lt;/strong&gt; it is a ratio. &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 32, 4);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (178, 91, '&lt;p&gt;Of &lt;strong&gt;course&lt;/strong&gt; it is a ratio. &lt;/p&gt;
 
 &lt;p&gt;$dy$ and $dx$ are differentials. Thus they act on tangent vectors, not on points. That is, they are functions on the tangent manifold that are linear on each fiber. On the tangent manifold the &lt;strong&gt;ratio&lt;/strong&gt; of the two differentials $\frac{dy}{dx}$ is just a ratio of two functions and is constant on every fiber (except being ill defined on the zero section) Therefore it &lt;strong&gt;descends&lt;/strong&gt; to a well defined function on the base manifold. We refer to that function as the derivative.&lt;/p&gt;
 
 &lt;p&gt;As pointed out in the original question many calculus one books these days even try to define differentials loosely and at least informally point out that for differentials $dy = f&#x27;(x) dx$ (Note that both sides of this equation act on vectors, not on points). Both $dy$ and $dx$ are perfectly well defined functions on vectors and their ratio is therefore a perfectly meaningful function on vectors. Since it is constant on fibers (minus the zero section), then that well defined ratio descends to a function on the original space.&lt;/p&gt;
 
 &lt;p&gt;At worst one could object that the ratio $\frac{dy}{dx}$ is not defined on the zero section. &lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (178, 114, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (178, 114, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (178, 91, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 19, 17);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (179, 96, "&lt;p&gt;In most formulations, $\frac{dx}{dy}$ can not be interpreted as a ratio, as $dx$ and $dy$ do not actually exist in them. An exception to this is shown in &lt;a href=&quot;http://en.wikipedia.org/wiki/Elementary_Calculus:_An_Infinitesimal_Approach&quot; rel=&quot;nofollow noreferrer&quot;&gt;this book&lt;/a&gt;. How it works, as Arturo said, is we allow infinitesimals (by using the hyperreal number system). It is well formulated, and I prefer it to limit notions, as this is how it was invented. Its just that they weren&#x27;t able to formulate it correctly back then. I will give a slightly simplified example. Let us say you are differentiating $y=x^2$. Now let $dx$ be a miscellaneous infinitesimals (it is the same no matter which you choose if your function is differentiate-able at that point.) $$dy=(x+dx)^2-x^2$$
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 19, 6);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (179, 48, '&lt;p&gt;In most formulations, $\frac{dx}{dy}$ can not be interpreted as a ratio, as $dx$ and $dy$ do not actually exist in them. An exception to this is shown in &lt;a href=&quot;http://en.wikipedia.org/wiki/Elementary_Calculus:_An_Infinitesimal_Approach&quot; rel=&quot;nofollow noreferrer&quot;&gt;this book&lt;/a&gt;. How it works, as Arturo said, is we allow infinitesimals (by using the hyperreal number system). It is well formulated, and I prefer it to limit notions, as this is how it was invented. Its just that they weren&#x27;t able to formulate it correctly back then. I will give a slightly simplified example. Let us say you are differentiating $y=x^2$. Now let $dx$ be a miscellaneous infinitesimals (it is the same no matter which you choose if your function is differentiate-able at that point.) $$dy=(x+dx)^2-x^2$$
 $$dy=2x\times dx+dx^2$$
 Now when we take the ratio, it is:
 $$\frac{dy}{dx}=2x+dx$$&lt;/p&gt;
 
 &lt;p&gt;(Note:Actually,$\frac{\Delta y}{\Delta x}$ is what we found in the beginning, and $dy$ is defined so that $\frac{dy}{dx}$ is $\frac{\Delta y}{\Delta x}$ rounded to the nearest real number.)&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (179, 114, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (179, 114, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (179, 48, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3, 2);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (180, 67, "&lt;p&gt;I am going to join @Jesse Madnick here, and try to interpret $\frac{dy}{dx}$ as a ratio. The idea is: lets interpret $dx$ and $dy$ as functions on $T\mathbb R^2$, as if they were differential forms. For each tangent vector $v$, set $dx(v):=v(x)$. If we identify $T\mathbb R^2$ with $\mathbb R^4$, we get that $(x,y,dx,dy)$ is just the canonical coordinate system for $\mathbb R^4$. If we exclude the points where $dx=0$, then $\frac{dy}{dx} = 2x$ is a perfectly healthy equation, its solutions form a subset of $\mathbb R^4$. &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (180, 95, '&lt;p&gt;I am going to join @Jesse Madnick here, and try to interpret $\frac{dy}{dx}$ as a ratio. The idea is: lets interpret $dx$ and $dy$ as functions on $T\mathbb R^2$, as if they were differential forms. For each tangent vector $v$, set $dx(v):=v(x)$. If we identify $T\mathbb R^2$ with $\mathbb R^4$, we get that $(x,y,dx,dy)$ is just the canonical coordinate system for $\mathbb R^4$. If we exclude the points where $dx=0$, then $\frac{dy}{dx} = 2x$ is a perfectly healthy equation, its solutions form a subset of $\mathbb R^4$. &lt;/p&gt;
 
 &lt;p&gt;Let&#x27;s see if it makes any sense. If we fix $x$ and $y$, the solutions form a straight line through the origin of the tangent space at $(x,y)$, its slope is $2x$. So, the set of all solutions is a distribution, and the integral manifolds happen to be the parabolas $y=x^2+c$. Exactly the solutions of the differential equation that we would write as $\frac{dy}{dx} = 2x$. Of course, we can write it as $dy = 2xdx$ as well. I think this is at least a little bit interesting. Any thoughts?&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (180, 114, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (180, 114, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (180, 95, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 4, 3);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (181, 53, "&lt;p&gt;As a point of interest, we over at PPCG decided to try some more diverse renderings of this walk.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4, 2);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (181, 10, '&lt;p&gt;As a point of interest, we over at PPCG decided to try some more diverse renderings of this walk.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Progressively Changing Angles&lt;/strong&gt;
 &lt;a href=&quot;https://i.stack.imgur.com/jxJIL.gif&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/jxJIL.gif&quot; alt=&quot;Progressively Changing Angles&quot;&gt;&lt;/a&gt;
@@ -3728,18 +3908,20 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (181, 53, "&lt;p
 &lt;p&gt;&lt;a href=&quot;https://i.gyazo.com/1f138523da1f34265f21ee6885a4332c.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.gyazo.com/1f138523da1f34265f21ee6885a4332c.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;If you didn&#x27;t spot it, the pipes are really just the 120 degree turn graph, with some visual trickery.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (181, 155, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (181, 155, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (181, 10, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 17, 11);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (182, 64, "&lt;p&gt;Yes, ten ( ..... ..... ) &lt;em&gt;is&lt;/em&gt; a special number. Not magical but special because it is a very convenient base for species that have ten fingers.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 17, 6);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (182, 51, '&lt;p&gt;Yes, ten ( ..... ..... ) &lt;em&gt;is&lt;/em&gt; a special number. Not magical but special because it is a very convenient base for species that have ten fingers.&lt;/p&gt;
 
 &lt;p&gt;Arguably we can use hands and fingers to encode 1024 numbers using the binary system, but that would be less robust across reading directions and some configurations/gestures are physiologically hard to do.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (182, 154, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (182, 154, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (182, 51, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 72, 47);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (183, 51, "&lt;p&gt;You already have an answer, so this should be a comment, but it contains images, the pattern for $n$ up to $1000$ and $10\,000$. The red point, if you can see it, is the starting point.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 72, 15);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (183, 27, '&lt;p&gt;You already have an answer, so this should be a comment, but it contains images, the pattern for $n$ up to $1000$ and $10\,000$. The red point, if you can see it, is the starting point.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/COVAi.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/COVAi.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -3768,11 +3950,12 @@ Red, PointSize[Large], Point[{0, 0}],(*starting point*)
 Blue,Point[Last[points]](*last point*)
 }]
 &lt;/code&gt;&lt;/pre&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (183, 155, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (183, 155, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (183, 27, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (184, 0, "&lt;p&gt;Originally posted on the &lt;a href=&quot;http://mathoverflow.net/a/8932/91465&quot;&gt;proofs without words post&lt;/a&gt;, here is a simple image that explains the derivative of $\sin(x)$, which as we all know, is directly related to the limit at hand.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (184, 52, '&lt;p&gt;Originally posted on the &lt;a href=&quot;http://mathoverflow.net/a/8932/91465&quot;&gt;proofs without words post&lt;/a&gt;, here is a simple image that explains the derivative of $\sin(x)$, which as we all know, is directly related to the limit at hand.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/k4Boe.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/k4Boe.jpg&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -3787,11 +3970,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (184, 0, "&lt;p&
 &lt;p&gt;$$
 \begin{align}\frac{d}{dx}\sin(x)&amp;amp;=\lim_{h\to0}\frac{\sin(x+h)-\sin(x)}h\\\text{picture above}&amp;amp;=\lim_{h\to0}\frac{\sin(x)\cos(h)+\cos(x)\sin(h)-\sin(x)}h\\\cos(x)&amp;amp;=\lim_{h\to0}\sin(x)\frac{\cos(h)-1}h+\cos(x)\frac{\sin(h)}h\\\cos(0)&amp;amp;=\lim_{h\to0}\frac{\sin(h)}h\end{align}
 $$&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (184, 144, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (184, 144, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (184, 52, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 5, 2);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (185, 58, "&lt;p&gt;Here&#x27;s some Python code that plots this prime spiral path for primes less than &lt;code&gt;num&lt;/code&gt;, with the grid cell colour determined by the number of times the path has visited it. Unvisited cells are black, visited cells are coloured by cycling through {red, yellow, green, cyan, blue, magenta}. Thus cells that have been visited once are red, cells that have been visited twice are yellow, thrice-visited cells are green, etc. When we get to the end of the colour list we go back to red, so a cell that&#x27;s been visited 7, 13, ... times is red.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (185, 17, '&lt;p&gt;Here&#x27;s some Python code that plots this prime spiral path for primes less than &lt;code&gt;num&lt;/code&gt;, with the grid cell colour determined by the number of times the path has visited it. Unvisited cells are black, visited cells are coloured by cycling through {red, yellow, green, cyan, blue, magenta}. Thus cells that have been visited once are red, cells that have been visited twice are yellow, thrice-visited cells are green, etc. When we get to the end of the colour list we go back to red, so a cell that&#x27;s been visited 7, 13, ... times is red.&lt;/p&gt;
 
 &lt;p&gt;The origin cell (i.e., the cell containing 1) is re-coloured white at the end of the plotting process, but it&#x27;s not easy to find when &lt;code&gt;num&lt;/code&gt; is large.&lt;/p&gt;
 
@@ -4042,11 +4226,12 @@ print()
 
 &lt;pre&gt;&lt;code&gt;    dx = 1 if i % 4 == 1 else -1
 &lt;/code&gt;&lt;/pre&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (185, 155, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (185, 155, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (185, 17, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 159, 31);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (186, 76, "&lt;p&gt;I&#x27;m going to try to give a lighter-flavoured version of my previous answer.  I&#x27;d rather not edit the previous one anymore so here goes another response.  I want to make clear, this response is to &lt;em&gt;you&lt;/em&gt;, not your 10-year-old nephew.  How you translate this response to any person depends more on you and that person than anything else. &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 159, 50);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (186, 26, '&lt;p&gt;I&#x27;m going to try to give a lighter-flavoured version of my previous answer.  I&#x27;d rather not edit the previous one anymore so here goes another response.  I want to make clear, this response is to &lt;em&gt;you&lt;/em&gt;, not your 10-year-old nephew.  How you translate this response to any person depends more on you and that person than anything else. &lt;/p&gt;
 
 &lt;p&gt;Take a look at the &lt;a href=&quot;http://en.wikipedia.org/wiki/Diffeomorphism&quot; rel=&quot;nofollow noreferrer&quot;&gt;Wikipedia page for diffeomorphism&lt;/a&gt;. In particular,the lead image &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Diffeomorphism_of_a_square.svg/220px-Diffeomorphism_of_a_square.svg.png&quot;&gt;&lt;/p&gt;
 
@@ -4099,11 +4284,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (186, 76, "&lt;p
 &lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/46424505/MathOverflow/MyScreenshot.png&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Technically, this in the Poincare model for hyperbolic space, which gives it the jagged/curvy appearance. &lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (186, 120, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (186, 120, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (186, 26, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (187, 90, "&lt;p&gt;I recently find some stunning visualizations... I prefer to share them all:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (187, 40, '&lt;p&gt;I recently find some stunning visualizations... I prefer to share them all:&lt;/p&gt;
 
 &lt;p&gt;$5)$ Mean inequalities [from &lt;a href=&quot;https://books.google.com/books/about/Proofs_Without_Words.html?id=Kx2cjyzTIYkC&quot; rel=&quot;nofollow noreferrer&quot;&gt;Proof without words]
 &lt;/a&gt;&lt;/p&gt;
@@ -4126,11 +4312,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (187, 90, "&lt;p
 &lt;p&gt;$1)$ Polynomial Roots [by &lt;a href=&quot;http://www.math.ucr.edu/home/baez/&quot; rel=&quot;nofollow noreferrer&quot;&gt;J.Baez]&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/W7ot9.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/W7ot9.jpg&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (187, 112, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (187, 112, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (187, 40, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 6, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (188, 73, "&lt;p&gt;As @ajotatxe explained, the point between $2$ and $12$ can never be crossed, but as regards your grid, the first time the point between $33$ and $27$ is reached at $6\ 716\ 606$:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 6, 4);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (188, 0, '&lt;p&gt;As @ajotatxe explained, the point between $2$ and $12$ can never be crossed, but as regards your grid, the first time the point between $33$ and $27$ is reached at $6\ 716\ 606$:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Position[AnglePath[-Pi/2 Boole[PrimeQ[Range[10^7]]]],{2,-3}][[1, 1]]
 &lt;/code&gt;&lt;/pre&gt;
@@ -4139,11 +4326,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (188, 73, "&lt;p
 
 &lt;pre&gt;&lt;code&gt;With[{a = AnglePath[-Pi/2 Boole@PrimeQ@Range@6716606]}, Graphics[{Black, PointSize@0.002, Point@Last@a, Blue, Line@a, Thick, Red, Line@Take[a, 45]}, ImageSize -&amp;gt; 5000]]
 &lt;/code&gt;&lt;/pre&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (188, 155, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (188, 155, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (188, 0, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 76, 58);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (189, 44, "&lt;p&gt;Inspired by the outstanding answers I had the idea of building part of the pattern with Legos. I hope it is OK to add for interest.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 76, 56);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (189, 65, '&lt;p&gt;Inspired by the outstanding answers I had the idea of building part of the pattern with Legos. I hope it is OK to add for interest.&lt;/p&gt;
 
 &lt;p&gt;Each colour is for each layer. Red is the number one and blue for the first layer.&lt;/p&gt;
 
@@ -4152,11 +4340,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (189, 44, "&lt;p
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/bYMYd.jpg&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/bYMYd.jpg&quot; alt=&quot;Image of Legos depicting prime graph&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/wCiWp.jpg&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/wCiWp.jpg&quot; alt=&quot;Image of Legos depicting prime graph&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (189, 155, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (189, 155, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (189, 65, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 25, 17);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (190, 24, "&lt;p&gt;I was curious about the behavior of this with an angle other than $-90^\circ$, so I created an animation, shown below, of all the integer degree angles in $[1^\circ, 300^\circ]$ (would go to $359^\circ$ but the gif maker I used only allowed up to 300 images):&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 25, 18);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (190, 53, '&lt;p&gt;I was curious about the behavior of this with an angle other than $-90^\circ$, so I created an animation, shown below, of all the integer degree angles in $[1^\circ, 300^\circ]$ (would go to $359^\circ$ but the gif maker I used only allowed up to 300 images):&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/HmOGa.gif&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/HmOGa.gif&quot; alt=&quot;Angles from 0 through 300&quot;&gt;&lt;/a&gt;
 &lt;em&gt;Note: the above may be hard to see, depending on monitor and proximity of face to said monitor. Also, it made from jpegs, so the quality is suboptimal.&lt;/em&gt;&lt;/p&gt;
@@ -4175,168 +4364,202 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (190, 24, "&lt;p
 
 &lt;p&gt;$\Delta\theta=\frac{2262^\circ}{16}=141.375^\circ$ was also curious, because it clearly had to go out one way, come back, and go out the other way:
 &lt;a href=&quot;https://i.stack.imgur.com/7LTph.jpg&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/7LTph.jpg&quot; alt=&quot;Branched result&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (190, 155, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (190, 155, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (190, 53, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (191, 82, "Interesting, I haven&amp;#39;t seen the alternating odd reciprocal cubes one yet.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (191, 53, 'Interesting, I haven&amp;#39;t seen the alternating odd reciprocal cubes one yet.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (191, 161);
+INSERT INTO activity (post_id, user_id, action) VALUES (191, 53, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (192, 13, "@Leucippus. Why does it not answer the question? There&amp;#39;s nothing in the question posed that says the cut must be a straight line (or are we meant to teach children to think in straight lines?).");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (192, 98, '@Leucippus. Why does it not answer the question? There&amp;#39;s nothing in the question posed that says the cut must be a straight line (or are we meant to teach children to think in straight lines?).');
 INSERT INTO answercomment (post_id, answer_id) VALUES (192, 171);
+INSERT INTO activity (post_id, user_id, action) VALUES (192, 98, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (193, 6, "@pjs36. The dotted line is meant to be one sawcut = 10 mins.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (193, 63, '@pjs36. The dotted line is meant to be one sawcut = 10 mins.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (193, 171);
+INSERT INTO activity (post_id, user_id, action) VALUES (193, 63, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (194, 67, "Cryptic. $\_\_\_$");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (194, 36, 'Cryptic. $\_\_\_$');
 INSERT INTO answercomment (post_id, answer_id) VALUES (194, 171);
+INSERT INTO activity (post_id, user_id, action) VALUES (194, 36, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (195, 94, "How do you simplify all this to the more special-case level of basic calculus where all spaces are Euclidean? The invocations of manifold theory suggest this is an approach that is designed for &lt;i&gt;non&lt;/i&gt;-Euclidean geometries.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (195, 5, 'How do you simplify all this to the more special-case level of basic calculus where all spaces are Euclidean? The invocations of manifold theory suggest this is an approach that is designed for &lt;i&gt;non&lt;/i&gt;-Euclidean geometries.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (195, 178);
+INSERT INTO activity (post_id, user_id, action) VALUES (195, 5, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (196, 57, "this is great.  I was going to put it on code golf but during term time I get side tracked teaching.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (196, 58, 'this is great.  I was going to put it on code golf but during term time I get side tracked teaching.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (196, 181);
+INSERT INTO activity (post_id, user_id, action) VALUES (196, 58, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("deleted", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (197, 78, "@Taco this is great. I wanted to put it on the code golf exchange but during term time I get side tracked too easily teaching.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (197, 98, '@Taco this is great. I wanted to put it on the code golf exchange but during term time I get side tracked too easily teaching.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (197, 181);
+INSERT INTO activity (post_id, user_id, action) VALUES (197, 98, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (198, 43, "@Ryan See the code added to the answer.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (198, 17, '@Ryan See the code added to the answer.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (198, 183);
+INSERT INTO activity (post_id, user_id, action) VALUES (198, 17, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (199, 17, "@FUZxxl Since you still seem unhappy, I&amp;#39;ve added a better &amp;quot;squeeze theorem&amp;quot; type thing for the derivative of $\sin(x)$.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (199, 26, '@FUZxxl Since you still seem unhappy, I&amp;#39;ve added a better &amp;quot;squeeze theorem&amp;quot; type thing for the derivative of $\sin(x)$.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (199, 184);
+INSERT INTO activity (post_id, user_id, action) VALUES (199, 26, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (200, 61, "@Karl No worries. I&amp;#39;ve just added some more code that shows when a new maximum number of visits is reached.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (200, 45, '@Karl No worries. I&amp;#39;ve just added some more code that shows when a new maximum number of visits is reached.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (200, 185);
+INSERT INTO activity (post_id, user_id, action) VALUES (200, 45, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (201, 21, "Thanks.  This is really helping me.  I&amp;#39;ve gone from python noob to at least replicating previous  images using sage cloud.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (201, 15, 'Thanks.  This is really helping me.  I&amp;#39;ve gone from python noob to at least replicating previous  images using sage cloud.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (201, 185);
+INSERT INTO activity (post_id, user_id, action) VALUES (201, 15, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (202, 70, "@Karl BTW, if you just want to use my code for calculating the maximum number of crossings (and not generate an image) you can delete the &lt;code&gt;import numpy as np&lt;/code&gt; and &lt;code&gt;from PIL import Image&lt;/code&gt; lines near the top, and everything after the &lt;code&gt;# find bounds, adding a border of 1&lt;/code&gt; line, apart from the &lt;code&gt;print(&amp;#39;max crosssings:&amp;#39;, max(points.values()))&lt;/code&gt; line. And then it will run on a standard Python installation without needing to install Numpy or Pillow.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (202, 64, '@Karl BTW, if you just want to use my code for calculating the maximum number of crossings (and not generate an image) you can delete the &lt;code&gt;import numpy as np&lt;/code&gt; and &lt;code&gt;from PIL import Image&lt;/code&gt; lines near the top, and everything after the &lt;code&gt;# find bounds, adding a border of 1&lt;/code&gt; line, apart from the &lt;code&gt;print(&amp;#39;max crosssings:&amp;#39;, max(points.values()))&lt;/code&gt; line. And then it will run on a standard Python installation without needing to install Numpy or Pillow.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (202, 185);
+INSERT INTO activity (post_id, user_id, action) VALUES (202, 64, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (203, 60, "@Karl No, that&amp;#39;s just a spooky coincidence. Eg, if we stopped the path just before the 19th crossing then the max would be 18.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (203, 44, '@Karl No, that&amp;#39;s just a spooky coincidence. Eg, if we stopped the path just before the 19th crossing then the max would be 18.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (203, 185);
+INSERT INTO activity (post_id, user_id, action) VALUES (203, 44, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (204, 94, "All prime numbers.  Wonder if the number of crossings is always prime?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (204, 96, 'All prime numbers.  Wonder if the number of crossings is always prime?');
 INSERT INTO answercomment (post_id, answer_id) VALUES (204, 185);
+INSERT INTO activity (post_id, user_id, action) VALUES (204, 96, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (205, 15, "@Karl Thanks! I &lt;i&gt;guess&lt;/i&gt; that the number of crossings will grow arbitrarily large, but slowly. For &lt;code&gt;num&lt;/code&gt; in {100, 1000, 10000, 100000, 1000000, 10000000} I get {5, 5, 7, 11, 13, 19} respectively for the maximum numbers of crossings. I&amp;#39;ve just added a line to my program that prints the maximum number of crossings; I should&amp;#39;ve done that earlier. :)");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (205, 10, '@Karl Thanks! I &lt;i&gt;guess&lt;/i&gt; that the number of crossings will grow arbitrarily large, but slowly. For &lt;code&gt;num&lt;/code&gt; in {100, 1000, 10000, 100000, 1000000, 10000000} I get {5, 5, 7, 11, 13, 19} respectively for the maximum numbers of crossings. I&amp;#39;ve just added a line to my program that prints the maximum number of crossings; I should&amp;#39;ve done that earlier. :)');
 INSERT INTO answercomment (post_id, answer_id) VALUES (205, 185);
+INSERT INTO activity (post_id, user_id, action) VALUES (205, 10, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (206, 26, "that is great.  The number of crossings are arbitrarily large?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (206, 83, 'that is great.  The number of crossings are arbitrarily large?');
 INSERT INTO answercomment (post_id, answer_id) VALUES (206, 185);
+INSERT INTO activity (post_id, user_id, action) VALUES (206, 83, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (207, 8, "@JGreenwell: &amp;quot;concrete&amp;quot; I see what you did there :D");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (207, 50, '@JGreenwell: &amp;quot;concrete&amp;quot; I see what you did there :D');
 INSERT INTO answercomment (post_id, answer_id) VALUES (207, 189);
+INSERT INTO activity (post_id, user_id, action) VALUES (207, 50, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (208, 84, "@Karl I assume that it&amp;#39;s loopy because $\frac{19}{16} = 1.1875 \approx 0$, so as the primes move, they turn only a little bit, and create very shallow curves.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (208, 94, '@Karl I assume that it&amp;#39;s loopy because $\frac{19}{16} = 1.1875 \approx 0$, so as the primes move, they turn only a little bit, and create very shallow curves.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (208, 190);
+INSERT INTO activity (post_id, user_id, action) VALUES (208, 94, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (209, 49, "I wonder why $\frac{19}{16}$ is so loopy? My next thought is to turn at a given number of factors eg 4 or 5 to see what happens.  I then intend to track where a specific  number &amp;#39;moves&amp;#39; after each path.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (209, 22, 'I wonder why $\frac{19}{16}$ is so loopy? My next thought is to turn at a given number of factors eg 4 or 5 to see what happens.  I then intend to track where a specific  number &amp;#39;moves&amp;#39; after each path.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (209, 190);
+INSERT INTO activity (post_id, user_id, action) VALUES (209, 22, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (210, 45, "this is great. Very interesting.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (210, 32, 'this is great. Very interesting.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (210, 190);
+INSERT INTO activity (post_id, user_id, action) VALUES (210, 32, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 7, 4);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (211, 29, "This completely inspires me to use lego blocks to teach analytic concepts and graphs to my students - I never even considered this as a concrete teaching method before seeing this.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 7, 2);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (211, 31, 'This completely inspires me to use lego blocks to teach analytic concepts and graphs to my students - I never even considered this as a concrete teaching method before seeing this.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (211, 189);
+INSERT INTO activity (post_id, user_id, action) VALUES (211, 31, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (212, 65, "@user243301 thanks I&amp;#39;ll look at it. I&amp;#39;ve seen Cedric before with his beetle? and he is amazing.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (212, 86, '@user243301 thanks I&amp;#39;ll look at it. I&amp;#39;ve seen Cedric before with his beetle? and he is amazing.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (212, 189);
+INSERT INTO activity (post_id, user_id, action) VALUES (212, 86, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (213, 55, "Can you share your code?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (213, 70, 'Can you share your code?');
 INSERT INTO answercomment (post_id, answer_id) VALUES (213, 183);
+INSERT INTO activity (post_id, user_id, action) VALUES (213, 70, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (214, 9, "@wojowu they are amazing! I&amp;#39;ve lost the orientation somewhat but they are cool. You really aught to put as an answer.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (214, 49, '@wojowu they are amazing! I&amp;#39;ve lost the orientation somewhat but they are cool. You really aught to put as an answer.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (214, 183);
+INSERT INTO activity (post_id, user_id, action) VALUES (214, 49, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (215, 84, "&lt;a href=&quot;http://puu.sh/t1DHz/d658e07e0f.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;Up to $10^7$, only primes starting gaps larger than 10 shown&lt;/a&gt; (the computation time mostly depends on the amount of points to be drawn, so I&amp;#39;m cuttng it however I can). Damn, generating these images is so cool :)");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (215, 3, '&lt;a href=&quot;http://puu.sh/t1DHz/d658e07e0f.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;Up to $10^7$, only primes starting gaps larger than 10 shown&lt;/a&gt; (the computation time mostly depends on the amount of points to be drawn, so I&amp;#39;m cuttng it however I can). Damn, generating these images is so cool :)');
 INSERT INTO answercomment (post_id, answer_id) VALUES (215, 183);
+INSERT INTO activity (post_id, user_id, action) VALUES (215, 3, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (216, 66, "@Karl I am using &lt;a href=&quot;https://cloud.sagemath.com/&quot; rel=&quot;nofollow noreferrer&quot;&gt;Sage&lt;/a&gt;, a programming language designed by and for mathematicians (a bit like Mathematica, but completely free!).");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (216, 47, '@Karl I am using &lt;a href=&quot;https://cloud.sagemath.com/&quot; rel=&quot;nofollow noreferrer&quot;&gt;Sage&lt;/a&gt;, a programming language designed by and for mathematicians (a bit like Mathematica, but completely free!).');
 INSERT INTO answercomment (post_id, answer_id) VALUES (216, 183);
+INSERT INTO activity (post_id, user_id, action) VALUES (216, 47, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (217, 26, "@wojowu that is beautiful.  Can I ask which program generates these images? They&amp;#39;re great.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (217, 1, '@wojowu that is beautiful.  Can I ask which program generates these images? They&amp;#39;re great.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (217, 183);
+INSERT INTO activity (post_id, user_id, action) VALUES (217, 1, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 5, 4);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (218, 46, "Here is how it looks like for all number up to $10^6$: &lt;a href=&quot;http://puu.sh/t1CFU/08519ca859.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;puu.sh/t1CFU/08519ca859.png&lt;/a&gt; (only prime number (i.e. turns) have been plotted). You can see a rather erratic behaviour, for now showing a bias toward a downwards direction, but I can imagine it changes eventually.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5, 2);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (218, 6, 'Here is how it looks like for all number up to $10^6$: &lt;a href=&quot;http://puu.sh/t1CFU/08519ca859.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;puu.sh/t1CFU/08519ca859.png&lt;/a&gt; (only prime number (i.e. turns) have been plotted). You can see a rather erratic behaviour, for now showing a bias toward a downwards direction, but I can imagine it changes eventually.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (218, 183);
+INSERT INTO activity (post_id, user_id, action) VALUES (218, 6, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (219, 82, "@ajotatxe Going to $10^5$ numbers we find the pattern goes significantly down. I&amp;#39;d guess that, in the end, the whole pattern won&amp;#39;t show an extreme bias towards any of the sides.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (219, 47, '@ajotatxe Going to $10^5$ numbers we find the pattern goes significantly down. I&amp;#39;d guess that, in the end, the whole pattern won&amp;#39;t show an extreme bias towards any of the sides.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (219, 183);
+INSERT INTO activity (post_id, user_id, action) VALUES (219, 47, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 2, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (220, 11, "The pattern seems to grow to the left. I wonder if gaps between $p_{4k+2}$ and $p_{4k+3}$ are asymptotically larger than others ($p_n$ is the $n$th prime).");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (220, 67, 'The pattern seems to grow to the left. I wonder if gaps between $p_{4k+2}$ and $p_{4k+3}$ are asymptotically larger than others ($p_n$ is the $n$th prime).');
 INSERT INTO answercomment (post_id, answer_id) VALUES (220, 183);
+INSERT INTO activity (post_id, user_id, action) VALUES (220, 67, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 186, 169);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (221, 99, "&lt;p&gt;On most A-10s I have seen, the area under the cockpit is darker than the rest of the plane. Is there a reason for this?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 186, 65);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (221, 93, '&lt;p&gt;On most A-10s I have seen, the area under the cockpit is darker than the rest of the plane. Is there a reason for this?&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.stack.imgur.com/7Q2HT.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (221, 3, "What is the dark spot visible below the cockpit on A-10s?");
-INSERT INTO tag (text) VALUES ("military");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (221, 3, 'What is the dark spot visible below the cockpit on A-10s?');
+INSERT INTO activity (post_id, user_id, action) VALUES (221, 93, 'Create');
+INSERT INTO tag (text) VALUES ('military');
 INSERT INTO questiontag (question_id, tag_id) VALUES (221, 213);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 122, 50);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (222, 73, "&lt;p&gt;Microsoft Flight Simulator has &quot;flight lessons&quot; with a virtual flight instructor, some of which teach concepts that are taught during actual flight training.  These simulators are becoming &lt;em&gt;very&lt;/em&gt; realistic, and I can see them being helpful as an introduction to a subject prior to running the hobbs meter and paying for actual flight time.  Will this experience help or hurt someone who decides to become a real pilot?  Is it a tool which can help students/instructors in an actual training environment? &lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (222, 3, "Can Microsoft Flight Simulator help me learn to fly (or make me a better pilot)?");
-INSERT INTO tag (text) VALUES ("flight-training");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 122, 21);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (222, 25, '&lt;p&gt;Microsoft Flight Simulator has &quot;flight lessons&quot; with a virtual flight instructor, some of which teach concepts that are taught during actual flight training.  These simulators are becoming &lt;em&gt;very&lt;/em&gt; realistic, and I can see them being helpful as an introduction to a subject prior to running the hobbs meter and paying for actual flight time.  Will this experience help or hurt someone who decides to become a real pilot?  Is it a tool which can help students/instructors in an actual training environment? &lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (222, 3, 'Can Microsoft Flight Simulator help me learn to fly (or make me a better pilot)?');
+INSERT INTO activity (post_id, user_id, action) VALUES (222, 25, 'Create');
+INSERT INTO tag (text) VALUES ('flight-training');
 INSERT INTO questiontag (question_id, tag_id) VALUES (222, 214);
-INSERT INTO tag (text) VALUES ("flight-simulator");
+INSERT INTO tag (text) VALUES ('flight-simulator');
 INSERT INTO questiontag (question_id, tag_id) VALUES (222, 215);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 96, 45);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (223, 98, "&lt;p&gt;I have a picture of Air Force One I took fairly up close several years ago.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 96, 26);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (223, 76, '&lt;p&gt;I have a picture of Air Force One I took fairly up close several years ago.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/IWD2X.jpg&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/IWD2X.jpg&quot; alt=&quot;Air Force One at KBFI&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Unfortunately, I don&#x27;t remember if that was on arrival or departure.&lt;/p&gt;
 
 &lt;p&gt;Is there anything visible in the airplane&#x27;s configuration (flaps, angle of gear?) that would indicate if this is arrival or departure?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (223, 3, "Is this plane landing or departing?");
-INSERT INTO tag (text) VALUES ("landing");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (223, 3, 'Is this plane landing or departing?');
+INSERT INTO activity (post_id, user_id, action) VALUES (223, 76, 'Create');
+INSERT INTO tag (text) VALUES ('landing');
 INSERT INTO questiontag (question_id, tag_id) VALUES (223, 216);
-INSERT INTO tag (text) VALUES ("flaps");
+INSERT INTO tag (text) VALUES ('flaps');
 INSERT INTO questiontag (question_id, tag_id) VALUES (223, 217);
-INSERT INTO tag (text) VALUES ("airforceone");
+INSERT INTO tag (text) VALUES ('airforceone');
 INSERT INTO questiontag (question_id, tag_id) VALUES (223, 218);
-INSERT INTO tag (text) VALUES ("configuration");
+INSERT INTO tag (text) VALUES ('configuration');
 INSERT INTO questiontag (question_id, tag_id) VALUES (223, 219);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 89, 8);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (224, 68, "&lt;p&gt;I was tracking flight NKS739 from LAX to SEA this morning and saw that it made some some odd turns. If you look at the track from FlightRadar24.com you can see that it was heading toward SEA then it took a large turn to the right then to the left then returned to its original course.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 89, 61);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (224, 35, '&lt;p&gt;I was tracking flight NKS739 from LAX to SEA this morning and saw that it made some some odd turns. If you look at the track from FlightRadar24.com you can see that it was heading toward SEA then it took a large turn to the right then to the left then returned to its original course.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/Kqtc2.jpg&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/Kqtc2.jpg&quot; alt=&quot;FlightRadar24 screenshot showing Spirit Airlines flight NK739 flying in a zizgag some 400 km before its destination of Seattle and then flying in a mostly straight line again afterwards.&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -4345,15 +4568,16 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (224, 68, "&lt;p
 &lt;p&gt;I can&#x27;t come up with any reason for such an odd deviation. The aircraft arrived in SEA and there didn&#x27;t seem to be any problem. It immediately turned around and made another flight which was uneventful. &lt;/p&gt;
 
 &lt;p&gt;Is there anything that might explain this deviation? Is it just a glitch?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (224, 3, "Why did this plane fly in a zigzag pattern?");
-INSERT INTO tag (text) VALUES ("air-traffic-control");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (224, 3, 'Why did this plane fly in a zigzag pattern?');
+INSERT INTO activity (post_id, user_id, action) VALUES (224, 35, 'Create');
+INSERT INTO tag (text) VALUES ('air-traffic-control');
 INSERT INTO questiontag (question_id, tag_id) VALUES (224, 220);
-INSERT INTO tag (text) VALUES ("flight-planning");
+INSERT INTO tag (text) VALUES ('flight-planning');
 INSERT INTO questiontag (question_id, tag_id) VALUES (224, 221);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 86, 7);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (225, 32, "&lt;p&gt;Currently Australia is &lt;a href=&quot;http://www.abc.net.au/news/2014-09-18/prime-minister-to-farewell-troops-at-williamtown-raaf-base/5753396&quot;&gt;deploying F/A-18E/F Super Hornets to the UAE&lt;/a&gt; to fight in Iraq. Obviously the UAE (and Iraq) is a very long way from Australia and well beyond the typical range of one of these aircraft.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 86, 46);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (225, 87, '&lt;p&gt;Currently Australia is &lt;a href=&quot;http://www.abc.net.au/news/2014-09-18/prime-minister-to-farewell-troops-at-williamtown-raaf-base/5753396&quot;&gt;deploying F/A-18E/F Super Hornets to the UAE&lt;/a&gt; to fight in Iraq. Obviously the UAE (and Iraq) is a very long way from Australia and well beyond the typical range of one of these aircraft.&lt;/p&gt;
 
 &lt;p&gt;On TV they literally showed the Australian Prime Minister waving goodbye while the jets took off and flew into the distance, which for some reason seemed odd and made me wonder about how fighter jets are typically ferried to a distant war.&lt;/p&gt;
 
@@ -4370,18 +4594,19 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (225, 32, "&lt;p
 &lt;/ul&gt;
 
 &lt;p&gt;Answers don&#x27;t necessarily have to be Australia -&gt; UAE specific, I&#x27;d also be interested to know how the US deployed to Iraq and Afghanistan for example and if the process is consistent or depends on the aircraft and location.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (225, 3, "How do jet fighters get to war?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (225, 3, 'How do jet fighters get to war?');
+INSERT INTO activity (post_id, user_id, action) VALUES (225, 87, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (225, 213);
-INSERT INTO tag (text) VALUES ("fighter-jet");
+INSERT INTO tag (text) VALUES ('fighter-jet');
 INSERT INTO questiontag (question_id, tag_id) VALUES (225, 222);
-INSERT INTO tag (text) VALUES ("range");
+INSERT INTO tag (text) VALUES ('range');
 INSERT INTO questiontag (question_id, tag_id) VALUES (225, 223);
-INSERT INTO tag (text) VALUES ("ferry-flight");
+INSERT INTO tag (text) VALUES ('ferry-flight');
 INSERT INTO questiontag (question_id, tag_id) VALUES (225, 224);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 83, 53);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (226, 63, "&lt;p&gt;In the wake of &lt;a href=&quot;https://en.wikipedia.org/wiki/Germanwings_Flight_9525&quot; rel=&quot;noreferrer&quot;&gt;GermanWings&#x27; terrible incident of flight 9525&lt;/a&gt;, I have noticed that the crash location is quite far from the great circle route connecting the two airports.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 83, 7);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (226, 51, '&lt;p&gt;In the wake of &lt;a href=&quot;https://en.wikipedia.org/wiki/Germanwings_Flight_9525&quot; rel=&quot;noreferrer&quot;&gt;GermanWings&#x27; terrible incident of flight 9525&lt;/a&gt;, I have noticed that the crash location is quite far from the great circle route connecting the two airports.&lt;/p&gt;
 
 &lt;p&gt;I then went on FlightRadar24&#x27;s website and checked that this is the normal route for this flight (and that there is an alternate one that reaches equally far on the other side):&lt;/p&gt;
 
@@ -4391,18 +4616,19 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (226, 63, "&lt;p
 &lt;p&gt;Other companies that fly the same route (Vueling 1894, Airberlin 8947) follow the same flight paths.&lt;/p&gt;
 
 &lt;p&gt;Why is this? What limitations are in place that prevent these aircraft from flying over Lyon (and &quot;nearby&quot; region)?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (226, 3, "Why don&#39;t airlines fly a great circle route between Barcelona and D&#252;sseldorf?");
-INSERT INTO tag (text) VALUES ("airline-operations");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (226, 3, 'Why don&#39;t airlines fly a great circle route between Barcelona and D&#252;sseldorf?');
+INSERT INTO activity (post_id, user_id, action) VALUES (226, 51, 'Create');
+INSERT INTO tag (text) VALUES ('airline-operations');
 INSERT INTO questiontag (question_id, tag_id) VALUES (226, 225);
 INSERT INTO questiontag (question_id, tag_id) VALUES (226, 221);
-INSERT INTO tag (text) VALUES ("route");
+INSERT INTO tag (text) VALUES ('route');
 INSERT INTO questiontag (question_id, tag_id) VALUES (226, 226);
-INSERT INTO tag (text) VALUES ("france");
+INSERT INTO tag (text) VALUES ('france');
 INSERT INTO questiontag (question_id, tag_id) VALUES (226, 227);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 81, 73);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (227, 38, "&lt;p&gt;When planes come off the assembly line at the factory, they&#x27;re green:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 81, 40);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (227, 43, '&lt;p&gt;When planes come off the assembly line at the factory, they&#x27;re green:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.stack.imgur.com/A2B8w.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 
@@ -4419,57 +4645,62 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (227, 38, "&lt;p
 &lt;p&gt;&lt;div class=&quot;youtube-embed&quot;&gt;&lt;div&gt;
                 &lt;iframe width=&quot;640px&quot; height=&quot;395px&quot; src=&quot;https://www.youtube.com/embed/Lk7UFNeRDSQ?start=0&quot;&gt;&lt;/iframe&gt;
             &lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (227, 3, "Why are planes generally painted white?");
-INSERT INTO tag (text) VALUES ("airliner");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (227, 3, 'Why are planes generally painted white?');
+INSERT INTO activity (post_id, user_id, action) VALUES (227, 43, 'Create');
+INSERT INTO tag (text) VALUES ('airliner');
 INSERT INTO questiontag (question_id, tag_id) VALUES (227, 228);
-INSERT INTO tag (text) VALUES ("livery");
+INSERT INTO tag (text) VALUES ('livery');
 INSERT INTO questiontag (question_id, tag_id) VALUES (227, 229);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 81, 54);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (228, 89, "&lt;p&gt;Reading about the characteristics of the newest fighter aircraft, I observed that their maximum speed is lower than of the aircraft in the same roles half a century ago.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 81, 23);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (228, 72, '&lt;p&gt;Reading about the characteristics of the newest fighter aircraft, I observed that their maximum speed is lower than of the aircraft in the same roles half a century ago.&lt;/p&gt;
 
 &lt;p&gt;For example, the iconic F-14 and Mig-25 have a higher maximum speed than their modern equivalents.&lt;/p&gt;
 
 &lt;p&gt;After the Cold War ended, the major air forces are only engaged in ground support and bombing against low-tech opponents who use asymmetrical warfare, and no modern scenario would see the top fighter aircrafts directly engaging each other any time soon. However, for any fighter aircraft in the interceptor role, I would expect speed should be an important characteristic. Also, military aircraft are designed and introduced over a long time period, and are expected to be used for many decades. Why did maximum speed become less important? Wouldn&#x27;t it be easier to design even faster fighters now than with the technology available 50 years ago?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (228, 3, "Why is the maximum speed of current fighter aircraft lower than those from the 1960&#39;s and 1970&#39;s?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (228, 3, 'Why is the maximum speed of current fighter aircraft lower than those from the 1960&#39;s and 1970&#39;s?');
+INSERT INTO activity (post_id, user_id, action) VALUES (228, 72, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (228, 222);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("deleted", 77, 72);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (229, 27, "&lt;p&gt;Does anyone know why we use Affirm and Negative in RT, rather than Yes and No? I assume it&#x27;s to prevent confusion with accents and other languages - but Yes and No sound very different to me!&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (229, 3, "Why is &quot;Affirm / Negative&quot; used instead of &quot;Yes / No&quot;?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 77, 12);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (229, 35, '&lt;p&gt;Does anyone know why we use Affirm and Negative in RT, rather than Yes and No? I assume it&#x27;s to prevent confusion with accents and other languages - but Yes and No sound very different to me!&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (229, 3, 'Why is &quot;Affirm / Negative&quot; used instead of &quot;Yes / No&quot;?');
+INSERT INTO activity (post_id, user_id, action) VALUES (229, 35, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (229, 220);
-INSERT INTO tag (text) VALUES ("radio-communications");
+INSERT INTO tag (text) VALUES ('radio-communications');
 INSERT INTO questiontag (question_id, tag_id) VALUES (229, 230);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 74, 72);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (230, 58, "&lt;p&gt;Yes, this is a question from the movies.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 74, 23);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (230, 6, '&lt;p&gt;Yes, this is a question from the movies.&lt;/p&gt;
 
 &lt;p&gt;Assume plane is in flight and in perfect mechanical conditions. All the pilots are suddenly incapacitated.&lt;/p&gt;
 
 &lt;p&gt;Can a passenger, without any previous flight experience, realistically save the plane and take it to a safe landing, only by remote radio help.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (230, 3, "Can a passenger realistically replace suddenly incapacitated pilots?");
-INSERT INTO tag (text) VALUES ("passenger");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (230, 3, 'Can a passenger realistically replace suddenly incapacitated pilots?');
+INSERT INTO activity (post_id, user_id, action) VALUES (230, 6, 'Create');
+INSERT INTO tag (text) VALUES ('passenger');
 INSERT INTO questiontag (question_id, tag_id) VALUES (230, 231);
-INSERT INTO tag (text) VALUES ("pilots");
+INSERT INTO tag (text) VALUES ('pilots');
 INSERT INTO questiontag (question_id, tag_id) VALUES (230, 232);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 73, 69);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (231, 46, "&lt;p&gt;Is there any theoretical or practical limit to the maximum number of passengers - and therefore size - one can build an airplane for?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (231, 3, "Is there a maximum possible size for an airplane?");
-INSERT INTO tag (text) VALUES ("aircraft-design");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 73, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (231, 9, '&lt;p&gt;Is there any theoretical or practical limit to the maximum number of passengers - and therefore size - one can build an airplane for?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (231, 3, 'Is there a maximum possible size for an airplane?');
+INSERT INTO activity (post_id, user_id, action) VALUES (231, 9, 'Create');
+INSERT INTO tag (text) VALUES ('aircraft-design');
 INSERT INTO questiontag (question_id, tag_id) VALUES (231, 233);
-INSERT INTO tag (text) VALUES ("aerodynamics");
+INSERT INTO tag (text) VALUES ('aerodynamics');
 INSERT INTO questiontag (question_id, tag_id) VALUES (231, 234);
-INSERT INTO tag (text) VALUES ("commercial-aviation");
+INSERT INTO tag (text) VALUES ('commercial-aviation');
 INSERT INTO questiontag (question_id, tag_id) VALUES (231, 235);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 73, 14);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (232, 58, "&lt;p&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/US_Airways_Flight_1549&quot;&gt;&quot;miracle on the Hudson&quot;&lt;/a&gt; was extremely unusual - dual engine failures and successful off-field landings in commercial A320-size aircraft are very rare. The event has been &lt;a href=&quot;https://en.wikipedia.org/wiki/Sully_%28film%29&quot;&gt;dramatized&lt;/a&gt; and the crew (and captain &quot;Sully&quot; in particular) have been widely praised as heroes.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 73, 46);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (232, 6, '&lt;p&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/US_Airways_Flight_1549&quot;&gt;&quot;miracle on the Hudson&quot;&lt;/a&gt; was extremely unusual - dual engine failures and successful off-field landings in commercial A320-size aircraft are very rare. The event has been &lt;a href=&quot;https://en.wikipedia.org/wiki/Sully_%28film%29&quot;&gt;dramatized&lt;/a&gt; and the crew (and captain &quot;Sully&quot; in particular) have been widely praised as heroes.&lt;/p&gt;
 
 &lt;p&gt;The crew certainly did an excellent job ensuring that all those aboard lived to tell the tale. But was it really exceptional? Aren&#x27;t all commercial pilots trained to handle emergencies? I don&#x27;t want to belittle the fantastic job the crew did, but I wonder whether they did something no other crew could do or whether this is something most crew would be able to handle if called upon.&lt;/p&gt;
 
@@ -4480,76 +4711,82 @@ If a random commercial airline crew were placed in the same situation as the cre
 &lt;/blockquote&gt;
 
 &lt;p&gt;I understand that to a certain extent this is a matter of opinion, but I hope people can provide some objective comments about what situations crews are trained for and whether there are other comparable examples with similar or differing outcomes.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (232, 3, "How miraculous was the miracle on the Hudson?");
-INSERT INTO tag (text) VALUES ("emergency");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (232, 3, 'How miraculous was the miracle on the Hudson?');
+INSERT INTO activity (post_id, user_id, action) VALUES (232, 6, 'Create');
+INSERT INTO tag (text) VALUES ('emergency');
 INSERT INTO questiontag (question_id, tag_id) VALUES (232, 236);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 72, 46);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (233, 41, "&lt;p&gt;High-end mechanical wristwatches from Swiss and German manufacturers (e.g. Breitling, Rolex etc.) are often marketed as &quot;pilot&#x27;s watches&quot;, and have chronometer features to supposedly help pilots perform flight-related computations.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 72, 10);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (233, 94, '&lt;p&gt;High-end mechanical wristwatches from Swiss and German manufacturers (e.g. Breitling, Rolex etc.) are often marketed as &quot;pilot&#x27;s watches&quot;, and have chronometer features to supposedly help pilots perform flight-related computations.&lt;/p&gt;
 
 &lt;p&gt;While I know next to nothing about aviation, I find it difficult to imagine that such a mechanical watch (which, for example, simply stops working if it is not moved for a few days) would be preferable to a modern quartz and/or digital watch, which keeps running for years on a single battery, self-adjusts with millisecond precision based on radio signals and even without that signal maintains time an order of magnitude more accurately than any mechanical watch.&lt;/p&gt;
 
 &lt;p&gt;To summarize: What kind of watches do modern commercial pilots actually wear? Or do they nowadays just use their cellphones for timekeeping tasks like everyone else?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (233, 3, "Do pilots really wear &quot;pilot&#39;s watches&quot;?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (233, 3, 'Do pilots really wear &quot;pilot&#39;s watches&quot;?');
+INSERT INTO activity (post_id, user_id, action) VALUES (233, 94, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (233, 232);
-INSERT INTO tag (text) VALUES ("equipment");
+INSERT INTO tag (text) VALUES ('equipment');
 INSERT INTO questiontag (question_id, tag_id) VALUES (233, 237);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("deleted", 71, 34);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (234, 70, "&lt;p&gt;For a layman like myself, the cockpit of every single modern airplane that I&#x27;ve laid my eyes on seems like a complex, intimidating mess with knobs, buttons, screens and levers literally covering every single square centimeter. Every time when seeing this, from my point of view, chaos of control surfaces and indicators, I&#x27;m always thinking to myself &quot;This HAS to be possible to make easier!&quot;&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 71, 3);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (234, 82, '&lt;p&gt;For a layman like myself, the cockpit of every single modern airplane that I&#x27;ve laid my eyes on seems like a complex, intimidating mess with knobs, buttons, screens and levers literally covering every single square centimeter. Every time when seeing this, from my point of view, chaos of control surfaces and indicators, I&#x27;m always thinking to myself &quot;This HAS to be possible to make easier!&quot;&lt;/p&gt;
 
 &lt;p&gt;Maybe my intuition is correct. Maybe it isn&#x27;t. Anyhow, I can see a lot of possible reasons why one actually would want cockpits to be designed in this way. Maybe it makes it harder for an amateur to just wing it (no pun intended) and make it looks like (s)he knows what (s)he&#x27;s doing. Maybe it forces the pilot to really understand every single nuance of the plane and its operation before even being able to taxiing. Maybe it fosters speed and security in an emergency situation by having everything accessible right away, accessible through muscle memory on the part of the pilot.&lt;/p&gt;
 
 &lt;p&gt;Or maybe most cockpit designers like to make the operation of aircraft a pain in the behind for everybody else. I don&#x27;t know.&lt;/p&gt;
 
 &lt;p&gt;What&#x27;s the design philosophy behind the design of the cockpit controls?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (234, 3, "Why are the cockpit controls of airplanes so complicated?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (234, 3, 'Why are the cockpit controls of airplanes so complicated?');
+INSERT INTO activity (post_id, user_id, action) VALUES (234, 82, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (234, 233);
-INSERT INTO tag (text) VALUES ("flight-controls");
+INSERT INTO tag (text) VALUES ('flight-controls');
 INSERT INTO questiontag (question_id, tag_id) VALUES (234, 238);
-INSERT INTO tag (text) VALUES ("cockpit");
+INSERT INTO tag (text) VALUES ('cockpit');
 INSERT INTO questiontag (question_id, tag_id) VALUES (234, 239);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 70, 43);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (235, 85, "&lt;p&gt;It is quite a common phrase, usually without having anything to do with radar or aviation. But. Is there such a thing as &#x27;flying &lt;em&gt;under&lt;/em&gt; the radar&#x27;? If so, why is this (and how low is that)?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (235, 3, "Can someone actually &quot;fly under the radar&quot;?");
-INSERT INTO tag (text) VALUES ("radar");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 70, 34);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (235, 86, '&lt;p&gt;It is quite a common phrase, usually without having anything to do with radar or aviation. But. Is there such a thing as &#x27;flying &lt;em&gt;under&lt;/em&gt; the radar&#x27;? If so, why is this (and how low is that)?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (235, 3, 'Can someone actually &quot;fly under the radar&quot;?');
+INSERT INTO activity (post_id, user_id, action) VALUES (235, 86, 'Create');
+INSERT INTO tag (text) VALUES ('radar');
 INSERT INTO questiontag (question_id, tag_id) VALUES (235, 240);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 68, 12);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (236, 6, "&lt;p&gt;With the recent advances in drone and remote control technology, why are there still commercial and military pilots?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 68, 7);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (236, 26, '&lt;p&gt;With the recent advances in drone and remote control technology, why are there still commercial and military pilots?&lt;/p&gt;
 
 &lt;p&gt;I understand that there can be some serious tactical advantages to human pilots in military operations, but for patrol and commercial flights what are the advantages of a human pilot in the aircraft as opposed to a drone or a remotely controlled airplane?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (236, 3, "Why do we still use pilots to fly airplanes?");
-INSERT INTO tag (text) VALUES ("autopilot");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (236, 3, 'Why do we still use pilots to fly airplanes?');
+INSERT INTO activity (post_id, user_id, action) VALUES (236, 26, 'Create');
+INSERT INTO tag (text) VALUES ('autopilot');
 INSERT INTO questiontag (question_id, tag_id) VALUES (236, 241);
-INSERT INTO tag (text) VALUES ("unmanned-aerial-vehicle");
+INSERT INTO tag (text) VALUES ('unmanned-aerial-vehicle');
 INSERT INTO questiontag (question_id, tag_id) VALUES (236, 242);
 INSERT INTO questiontag (question_id, tag_id) VALUES (236, 232);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 68, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (237, 16, "&lt;p&gt;There seems to be a tendency that aircraft models are more long-lived for cargo than for passenger service.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 68, 5);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (237, 37, '&lt;p&gt;There seems to be a tendency that aircraft models are more long-lived for cargo than for passenger service.&lt;/p&gt;
 
 &lt;p&gt;For example, both the A300 and MD-11 are all but extinct in scheduled passenger service, but FedEx and UPS still fly scores of them.&lt;/p&gt;
 
 &lt;p&gt;My understanding is that the reason an aircraft model goes out of service is not that the planes are too old to possibly continue flying, but that it becomes economically favorable to replace them with newer models with better fuel or maintenance economy etc. Shouldn&#x27;t those considerations apply with equal strength to cargo planes?&lt;/p&gt;
 
 &lt;p&gt;Which factors contribute to passenger aircraft obsolescence &lt;strong&gt;that do not apply equally well to freight&lt;/strong&gt;?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (237, 3, "Why do aircraft models end their life as freighters?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (237, 3, 'Why do aircraft models end their life as freighters?');
+INSERT INTO activity (post_id, user_id, action) VALUES (237, 37, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (237, 228);
-INSERT INTO tag (text) VALUES ("cargo");
+INSERT INTO tag (text) VALUES ('cargo');
 INSERT INTO questiontag (question_id, tag_id) VALUES (237, 243);
-INSERT INTO tag (text) VALUES ("economics");
+INSERT INTO tag (text) VALUES ('economics');
 INSERT INTO questiontag (question_id, tag_id) VALUES (237, 244);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 66, 20);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (238, 16, "&lt;p&gt;As seen in multiple pictures:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 66, 47);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (238, 28, '&lt;p&gt;As seen in multiple pictures:&lt;/p&gt;
 
 &lt;p&gt;First, this one, it appears the aircraft is spraying copious amounts of fuel into the exhaust!&lt;/p&gt;
 
@@ -4566,27 +4803,29 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (238, 16, "&lt;p
 &lt;p&gt;EDIT: &lt;a href=&quot;https://www.youtube.com/watch?v=WpPEdOMSIgQ&quot;&gt;YouTube video!&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;EDIT: Can any other aircraft perform this?&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (238, 3, "Why does the F-111 sometimes squirt a giant fire plume behind it? (NOT afterburners!)");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (238, 3, 'Why does the F-111 sometimes squirt a giant fire plume behind it? (NOT afterburners!)');
+INSERT INTO activity (post_id, user_id, action) VALUES (238, 28, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (238, 213);
-INSERT INTO tag (text) VALUES ("fuel");
+INSERT INTO tag (text) VALUES ('fuel');
 INSERT INTO questiontag (question_id, tag_id) VALUES (238, 245);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 65, 36);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (239, 68, "&lt;p&gt;I noticed that the &quot;new&quot; F-35 still has a GAU-22/A cannon installed in it -- albeit with only  182 rounds (more with ammo pods). &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 65, 56);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (239, 13, '&lt;p&gt;I noticed that the &quot;new&quot; F-35 still has a GAU-22/A cannon installed in it -- albeit with only  182 rounds (more with ammo pods). &lt;/p&gt;
 
 &lt;p&gt;Why do fighters still have cannon? The day of dogfighting is long over, now it&#x27;s just fire some missiles and forget.  Even if they expended all their missiles, 182 cannon rounds is only 6 seconds of firing  (I think the GAU is rated to 1800 rpm).&lt;/p&gt;
 
 &lt;p&gt;The only reason (and I&#x27;m not sure if I should answer my own question) is that they need something to shoot warning shots over the bow of another airplane. But that seems an awful amount of weight for this rare occasion. And it&#x27;d mean loading tracer rounds.&lt;/p&gt;
 
 &lt;p&gt;Or is just a vestigial organ, like the sabres on the side of full dress military uniforms?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (239, 3, "Why do fighter jets still have guns/cannons?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (239, 3, 'Why do fighter jets still have guns/cannons?');
+INSERT INTO activity (post_id, user_id, action) VALUES (239, 13, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (239, 213);
 INSERT INTO questiontag (question_id, tag_id) VALUES (239, 222);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 64, 52);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (240, 83, "&lt;p&gt;This question is about light, tricycle, single engine aircraft.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 64, 51);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (240, 56, '&lt;p&gt;This question is about light, tricycle, single engine aircraft.&lt;/p&gt;
 
 &lt;p&gt;I have made it a habit to raise the flaps right after touchdown (when the nosewheel is on the ground). My instructor used to do that every time during initial training so I took over the habit.&lt;/p&gt;
 
@@ -4603,24 +4842,26 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (240, 83, "&lt;p
 &lt;p&gt;My question is: &lt;strong&gt;Is it really a bad idea to raise the flaps that soon after landing? Or is it actually a good habit?&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;(I noticed that most airliners also wait until they&#x27;re clear of the runway, but these jets have spoilers to get rid of all the lift)&lt;/em&gt;&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (240, 3, "Is it considered good or bad practice to raise the flaps right after touchdown?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (240, 3, 'Is it considered good or bad practice to raise the flaps right after touchdown?');
+INSERT INTO activity (post_id, user_id, action) VALUES (240, 56, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (240, 216);
-INSERT INTO tag (text) VALUES ("single-engine");
+INSERT INTO tag (text) VALUES ('single-engine');
 INSERT INTO questiontag (question_id, tag_id) VALUES (240, 246);
 INSERT INTO questiontag (question_id, tag_id) VALUES (240, 217);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 64, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (241, 2, "&lt;p&gt;Why are quadcopters not flown by human pilots yet?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 64, 3);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (241, 68, '&lt;p&gt;Why are quadcopters not flown by human pilots yet?&lt;/p&gt;
 
 &lt;p&gt;Wouldn&#x27;t they be more stable and easier to control than helicopters?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (241, 3, "Why haven&#39;t quadcopters been scaled up yet?");
-INSERT INTO tag (text) VALUES ("helicopter");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (241, 3, 'Why haven&#39;t quadcopters been scaled up yet?');
+INSERT INTO activity (post_id, user_id, action) VALUES (241, 68, 'Create');
+INSERT INTO tag (text) VALUES ('helicopter');
 INSERT INTO questiontag (question_id, tag_id) VALUES (241, 247);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 64, 4);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (242, 54, "&lt;p&gt;Imagine that the pilots on a jet aircraft determine that it will crash. Consider what would happen if the design of the craft allowed it to:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 64, 16);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (242, 77, '&lt;p&gt;Imagine that the pilots on a jet aircraft determine that it will crash. Consider what would happen if the design of the craft allowed it to:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Break into four pieces&lt;/li&gt;
@@ -4629,68 +4870,74 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (242, 54, "&lt;p
 &lt;/ul&gt;
 
 &lt;p&gt;Would that not work so that passenger jets are brought down safely instead of crashing?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (242, 3, "Why don&#39;t commercial jet aircraft have a break-apart, parachute escape system?");
-INSERT INTO tag (text) VALUES ("safety");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (242, 3, 'Why don&#39;t commercial jet aircraft have a break-apart, parachute escape system?');
+INSERT INTO activity (post_id, user_id, action) VALUES (242, 77, 'Create');
+INSERT INTO tag (text) VALUES ('safety');
 INSERT INTO questiontag (question_id, tag_id) VALUES (242, 248);
 INSERT INTO questiontag (question_id, tag_id) VALUES (242, 231);
-INSERT INTO tag (text) VALUES ("jet");
+INSERT INTO tag (text) VALUES ('jet');
 INSERT INTO questiontag (question_id, tag_id) VALUES (242, 249);
-INSERT INTO tag (text) VALUES ("airframe-parachute");
+INSERT INTO tag (text) VALUES ('airframe-parachute');
 INSERT INTO questiontag (question_id, tag_id) VALUES (242, 250);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("deleted", 64, 25);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (243, 90, "&lt;p&gt;In the answer to &lt;a href=&quot;http://aviation.stackexchange.com/q/21594/8730&quot;&gt;this question&lt;/a&gt; it is noted that the B-52 takes off without &lt;a href=&quot;https://en.wikipedia.org/wiki/Rotation_%28aeronautics%29&quot;&gt;rotating&lt;/a&gt; and climbs out in a nose-down attitude. Why was it designed this way?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (243, 3, "Why does the B-52 take off without rotating?");
-INSERT INTO tag (text) VALUES ("takeoff");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 64, 27);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (243, 9, '&lt;p&gt;In the answer to &lt;a href=&quot;http://aviation.stackexchange.com/q/21594/8730&quot;&gt;this question&lt;/a&gt; it is noted that the B-52 takes off without &lt;a href=&quot;https://en.wikipedia.org/wiki/Rotation_%28aeronautics%29&quot;&gt;rotating&lt;/a&gt; and climbs out in a nose-down attitude. Why was it designed this way?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (243, 3, 'Why does the B-52 take off without rotating?');
+INSERT INTO activity (post_id, user_id, action) VALUES (243, 9, 'Create');
+INSERT INTO tag (text) VALUES ('takeoff');
 INSERT INTO questiontag (question_id, tag_id) VALUES (243, 251);
-INSERT INTO tag (text) VALUES ("attitude");
+INSERT INTO tag (text) VALUES ('attitude');
 INSERT INTO questiontag (question_id, tag_id) VALUES (243, 252);
-INSERT INTO tag (text) VALUES ("angle-of-attack");
+INSERT INTO tag (text) VALUES ('angle-of-attack');
 INSERT INTO questiontag (question_id, tag_id) VALUES (243, 253);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 63, 50);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (244, 27, "&lt;p&gt;Hypothetical: Let&#x27;s say (for whatever reason) a pilot became distracted or disorientated, and found themselves in &lt;a href=&quot;https://en.wikipedia.org/wiki/Airspace_class_%28United_States%29#Class_B&quot;&gt;class B airspace&lt;/a&gt;.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 63, 9);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (244, 49, '&lt;p&gt;Hypothetical: Let&#x27;s say (for whatever reason) a pilot became distracted or disorientated, and found themselves in &lt;a href=&quot;https://en.wikipedia.org/wiki/Airspace_class_%28United_States%29#Class_B&quot;&gt;class B airspace&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;What steps should they take immediately and after landing to be safe and avoid any backlash from authorities?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (244, 3, "I just flew into class B airspace without a clearance! Now what?");
-INSERT INTO tag (text) VALUES ("faa-regulations");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (244, 3, 'I just flew into class B airspace without a clearance! Now what?');
+INSERT INTO activity (post_id, user_id, action) VALUES (244, 49, 'Create');
+INSERT INTO tag (text) VALUES ('faa-regulations');
 INSERT INTO questiontag (question_id, tag_id) VALUES (244, 254);
 INSERT INTO questiontag (question_id, tag_id) VALUES (244, 248);
-INSERT INTO tag (text) VALUES ("airspace");
+INSERT INTO tag (text) VALUES ('airspace');
 INSERT INTO questiontag (question_id, tag_id) VALUES (244, 255);
-INSERT INTO tag (text) VALUES ("class-b-airspace");
+INSERT INTO tag (text) VALUES ('class-b-airspace');
 INSERT INTO questiontag (question_id, tag_id) VALUES (244, 256);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 63, 6);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (245, 66, "&lt;p&gt;In many non-English speaking countries, communication with ATC may be conducted either in English or the native language. Famous examples are China, Russia, France and possibly Germany. &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 63, 60);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (245, 27, '&lt;p&gt;In many non-English speaking countries, communication with ATC may be conducted either in English or the native language. Famous examples are China, Russia, France and possibly Germany. &lt;/p&gt;
 
 &lt;p&gt;When a pilot who is a non-speaker of the native language hears such communication, which is he to do? Just sit back with no idea of what is going on?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (245, 3, "What happens if a language other than English is used over the radio?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (245, 3, 'What happens if a language other than English is used over the radio?');
+INSERT INTO activity (post_id, user_id, action) VALUES (245, 27, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (245, 230);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 63, 23);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (246, 85, "&lt;p&gt;The piece &lt;a href=&quot;https://en.wikipedia.org/wiki/Tom_Cruise&quot; rel=&quot;nofollow noreferrer&quot;&gt;Tom Cruise&lt;/a&gt; is holding onto on this moving plane seems useless as a component, maybe even inductive of drag. Is this a real airplane component, or just a film prop?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 63, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (246, 28, '&lt;p&gt;The piece &lt;a href=&quot;https://en.wikipedia.org/wiki/Tom_Cruise&quot; rel=&quot;nofollow noreferrer&quot;&gt;Tom Cruise&lt;/a&gt; is holding onto on this moving plane seems useless as a component, maybe even inductive of drag. Is this a real airplane component, or just a film prop?&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/ZOStV.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/ZOStV.jpg&quot; alt=&quot;Enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I don&#x27;t know the model of the airplane; I&#x27;m hoping maybe the shape is recognizable to some of you, or maybe it&#x27;s even a &quot;no-brainer&quot;. &lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (246, 3, "Do any airplanes really have this piece Tom Cruise is hanging onto in this movie?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (246, 3, 'Do any airplanes really have this piece Tom Cruise is hanging onto in this movie?');
+INSERT INTO activity (post_id, user_id, action) VALUES (246, 28, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (246, 233);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("deleted", 62, 32);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (247, 99, "&lt;p&gt;Has there ever been an airplane where the pilot, or cockpit were not located near the nose of the airplane? &lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (247, 3, "Has there ever been a plane not controlled from the nose?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 62, 24);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (247, 64, '&lt;p&gt;Has there ever been an airplane where the pilot, or cockpit were not located near the nose of the airplane? &lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (247, 3, 'Has there ever been a plane not controlled from the nose?');
+INSERT INTO activity (post_id, user_id, action) VALUES (247, 64, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (247, 233);
 INSERT INTO questiontag (question_id, tag_id) VALUES (247, 239);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 62, 60);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (248, 34, "&lt;p&gt;I came across this interesting factoid in another SE Aviation answer (&lt;a href=&quot;http://aviation.stackexchange.com/questions/11857/how-flat-does-a-runway-need-to-be&quot;&gt;How flat does a runway need to be?&lt;/a&gt;):&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 62, 42);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (248, 73, '&lt;p&gt;I came across this interesting factoid in another SE Aviation answer (&lt;a href=&quot;http://aviation.stackexchange.com/questions/11857/how-flat-does-a-runway-need-to-be&quot;&gt;How flat does a runway need to be?&lt;/a&gt;):&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;seaplanes often use a curved takeoff run.&lt;/p&gt;
@@ -4699,140 +4946,151 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (248, 34, "&lt;p
 &lt;p&gt;I&#x27;m trying to imagine why but cannot come up with a good reason. &lt;/p&gt;
 
 &lt;p&gt;Does anyone know why?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (248, 3, "Why would seaplanes use a curved takeoff run?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (248, 3, 'Why would seaplanes use a curved takeoff run?');
+INSERT INTO activity (post_id, user_id, action) VALUES (248, 73, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (248, 251);
-INSERT INTO tag (text) VALUES ("seaplane");
+INSERT INTO tag (text) VALUES ('seaplane');
 INSERT INTO questiontag (question_id, tag_id) VALUES (248, 257);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 62, 32);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (249, 32, "&lt;p&gt;I&#x27;ve seen reports of flight passengers/crew suffering hypoxia, and many times without knowing it.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 62, 43);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (249, 30, '&lt;p&gt;I&#x27;ve seen reports of flight passengers/crew suffering hypoxia, and many times without knowing it.&lt;/p&gt;
 
 &lt;p&gt;My question is, how could you not be aware of it? For example, at above 10000ft, if your body is suffering from a lack of oxygen, doesn&#x27;t it make you breathe faster and harder? (which in turn, makes you aware that something is wrong in the air you&#x27;re breathing)&lt;/p&gt;
 
 &lt;p&gt;Second question: if you&#x27;re dealing with air containing half as much oxygen, is it not enough (sustainable) to inhale (faster) twice as much air when breathing (without oxygen mask of course) ?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (249, 3, "How do people suffering from hypoxia not realize they aren&#39;t getting enough oxygen?");
-INSERT INTO tag (text) VALUES ("medical");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (249, 3, 'How do people suffering from hypoxia not realize they aren&#39;t getting enough oxygen?');
+INSERT INTO activity (post_id, user_id, action) VALUES (249, 30, 'Create');
+INSERT INTO tag (text) VALUES ('medical');
 INSERT INTO questiontag (question_id, tag_id) VALUES (249, 258);
-INSERT INTO tag (text) VALUES ("oxygen");
+INSERT INTO tag (text) VALUES ('oxygen');
 INSERT INTO questiontag (question_id, tag_id) VALUES (249, 259);
-INSERT INTO tag (text) VALUES ("hypoxia");
+INSERT INTO tag (text) VALUES ('hypoxia');
 INSERT INTO questiontag (question_id, tag_id) VALUES (249, 260);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 61, 30);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (250, 48, "&lt;p&gt;The Boeing VC-25A (&quot;Air Force One&quot;) is a heavily modified 747-200. The two current airframes (SAM 28000 and 29000) were put into duty in 1990 and are slated to be replaced in 2017, although I suspect that latter date is optimistic. &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 61, 59);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (250, 5, '&lt;p&gt;The Boeing VC-25A (&quot;Air Force One&quot;) is a heavily modified 747-200. The two current airframes (SAM 28000 and 29000) were put into duty in 1990 and are slated to be replaced in 2017, although I suspect that latter date is optimistic. &lt;/p&gt;
 
 &lt;p&gt;These two 747-200s are among the last remaining 747-200s in service. I suspect that they are the best-maintained 747-200s in the world and they have considerable sunk costs in their custom rigging, but even when the aircraft were put in service in 1990 their model had already been replaced by the 747-300 (1982) and 747-400 (1989).&lt;/p&gt;
 
 &lt;p&gt;Why hasn&#x27;t the VC-25A been replaced to keep up with the times? A 747-400 airframe is lighter, faster, and bigger (let alone a 747-8). These would all seem to be suitable features for what is most probably the most important aircraft in the USAF fleet. Is there some attribute of the 747-200 that makes it particularly well-suited for this role despite its obsolescence in the market?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (250, 3, "Why does the US President fly in an obsolete 747-200?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (250, 3, 'Why does the US President fly in an obsolete 747-200?');
+INSERT INTO activity (post_id, user_id, action) VALUES (250, 5, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (250, 213);
-INSERT INTO tag (text) VALUES ("boeing-747");
+INSERT INTO tag (text) VALUES ('boeing-747');
 INSERT INTO questiontag (question_id, tag_id) VALUES (250, 261);
-INSERT INTO tag (text) VALUES ("us-air-force");
+INSERT INTO tag (text) VALUES ('us-air-force');
 INSERT INTO questiontag (question_id, tag_id) VALUES (250, 262);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 61, 53);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (251, 38, "&lt;p&gt;As kinetic energy is not stored or recycled, large quantities of heat have to be evacuated in a short period of time when aircraft abort their takeoff or land:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 61, 8);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (251, 55, '&lt;p&gt;As kinetic energy is not stored or recycled, large quantities of heat have to be evacuated in a short period of time when aircraft abort their takeoff or land:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/MJNRV.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/MJNRV.jpg&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;br&gt;
 &lt;sup&gt;B777 brake test, &lt;a href=&quot;https://www.youtube.com/watch?v=Mr4V680UQ-k&quot; rel=&quot;nofollow noreferrer&quot;&gt;Youtube&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;Which approximate quantity of energy is transferred to the brakes in a rejected takeoff for heavy aircraft, e.g. B777/A380? What are the typical systems used to cool brakes on these heavy aircraft? Is cooled air or liquid used, or just ram air?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (251, 3, "How are brakes cooled on heavy aircraft?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (251, 3, 'How are brakes cooled on heavy aircraft?');
+INSERT INTO activity (post_id, user_id, action) VALUES (251, 55, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (251, 233);
-INSERT INTO tag (text) VALUES ("landing-gear");
+INSERT INTO tag (text) VALUES ('landing-gear');
 INSERT INTO questiontag (question_id, tag_id) VALUES (251, 263);
-INSERT INTO tag (text) VALUES ("aircraft-heavy");
+INSERT INTO tag (text) VALUES ('aircraft-heavy');
 INSERT INTO questiontag (question_id, tag_id) VALUES (251, 264);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 61, 5);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (252, 75, "&lt;p&gt;I was travelling from Mumbai to Newark Liberty Intl on United Airlines 49, a Boeing  777-200. I was sitting in the economy section, last row, last seat to the plane&#x27;s left, basically, I was literally the passenger on the last seat of the aircraft.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 61, 35);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (252, 33, '&lt;p&gt;I was travelling from Mumbai to Newark Liberty Intl on United Airlines 49, a Boeing  777-200. I was sitting in the economy section, last row, last seat to the plane&#x27;s left, basically, I was literally the passenger on the last seat of the aircraft.&lt;/p&gt;
 
 &lt;p&gt;When I sat down, I plugged my earphones into the headphone jack and I could hear the conversation between ATC and the pilot, all I had to do was just twist the and hold the jack in a certain position. I could hear them talk to Mumbai ATC, the Islamabad ATC, Kabul ATC, even up to Iceland. My question is, how is this possible? What could have happened? Did the pilot or the airline know about this? Should I have told them about this? Is it illegal to listen to this chatter? Can this happen next time I travel or was I just lucky?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (252, 3, "How was I able to just plug in my headphones and listen to ATC and pilot chatter?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (252, 3, 'How was I able to just plug in my headphones and listen to ATC and pilot chatter?');
+INSERT INTO activity (post_id, user_id, action) VALUES (252, 33, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (252, 220);
 INSERT INTO questiontag (question_id, tag_id) VALUES (252, 230);
-INSERT INTO tag (text) VALUES ("boeing-777");
+INSERT INTO tag (text) VALUES ('boeing-777');
 INSERT INTO questiontag (question_id, tag_id) VALUES (252, 265);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 59, 4);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (253, 78, "&lt;p&gt;In a commercial airplane, when a landing has been a bit firm, a passenger may think it was not perfect, or maybe performed by an inexperienced pilot.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 59, 55);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (253, 90, '&lt;p&gt;In a commercial airplane, when a landing has been a bit firm, a passenger may think it was not perfect, or maybe performed by an inexperienced pilot.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/GLO6F.jpg&quot; rel=&quot;noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/GLO6F.jpg&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;br&gt;
 &lt;sup&gt;(&lt;a href=&quot;http://vinemoments.com/tnt-boeing-747-400-hard-landing-dusseldorf/&quot; rel=&quot;noreferrer&quot;&gt;Source&lt;/a&gt;)&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;A perfect landing is seen by passengers as one where the contact with the runway is almost imperceptible. Is that true? are there other technical or regulatory explanations?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (253, 3, "Is a firm landing an indication of the pilot inexperience?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (253, 3, 'Is a firm landing an indication of the pilot inexperience?');
+INSERT INTO activity (post_id, user_id, action) VALUES (253, 90, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (253, 235);
 INSERT INTO questiontag (question_id, tag_id) VALUES (253, 216);
-INSERT INTO tag (text) VALUES ("pilot-technique");
+INSERT INTO tag (text) VALUES ('pilot-technique');
 INSERT INTO questiontag (question_id, tag_id) VALUES (253, 266);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 57, 5);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (254, 90, "&lt;p&gt;When a non-pilot hears the word stall, it brings to mind what happens when a car stalls -  the engine quits. It seems like that would be a dangerous scenario in an airplane. &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 57, 5);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (254, 83, '&lt;p&gt;When a non-pilot hears the word stall, it brings to mind what happens when a car stalls -  the engine quits. It seems like that would be a dangerous scenario in an airplane. &lt;/p&gt;
 
 &lt;p&gt;From a non-pilot perspective, what happens when an airplane stalls and why is it important for pilots to practice it?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (254, 3, "What happens when an airplane stalls and why do pilots practice it?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (254, 3, 'What happens when an airplane stalls and why do pilots practice it?');
+INSERT INTO activity (post_id, user_id, action) VALUES (254, 83, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (254, 234);
 INSERT INTO questiontag (question_id, tag_id) VALUES (254, 233);
 INSERT INTO questiontag (question_id, tag_id) VALUES (254, 214);
-INSERT INTO tag (text) VALUES ("stall");
+INSERT INTO tag (text) VALUES ('stall');
 INSERT INTO questiontag (question_id, tag_id) VALUES (254, 267);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 57, 45);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (255, 97, "&lt;p&gt;I understand that commercial flights are equipped with life vests. I also understand that most military jets are equipped with ejection seats. It may be costly and technically challenging to equip passenger planes with ejection seats. Having seen air-borne personnel lining up and parachuting out of a C130, what is preventing flights from equipping each passenger with a life-saving parachute? Is it very technically challenging for an untrained person to deploy a parachute, or are there other reasons?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (255, 3, "Why are commercial flights not equipped with parachutes for the passengers?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 57, 49);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (255, 62, '&lt;p&gt;I understand that commercial flights are equipped with life vests. I also understand that most military jets are equipped with ejection seats. It may be costly and technically challenging to equip passenger planes with ejection seats. Having seen air-borne personnel lining up and parachuting out of a C130, what is preventing flights from equipping each passenger with a life-saving parachute? Is it very technically challenging for an untrained person to deploy a parachute, or are there other reasons?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (255, 3, 'Why are commercial flights not equipped with parachutes for the passengers?');
+INSERT INTO activity (post_id, user_id, action) VALUES (255, 62, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (255, 248);
 INSERT INTO questiontag (question_id, tag_id) VALUES (255, 236);
 INSERT INTO questiontag (question_id, tag_id) VALUES (255, 235);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 57, 54);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (256, 96, "&lt;p&gt;Military drones, such as the Predator drone or the Global Hawk, tend to have a weird shape with a whale-like head, and engines concentrated at the back. The wings tend to be of very high aspect ratio, and v-shaped tails seem to be popular:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 57, 36);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (256, 62, '&lt;p&gt;Military drones, such as the Predator drone or the Global Hawk, tend to have a weird shape with a whale-like head, and engines concentrated at the back. The wings tend to be of very high aspect ratio, and v-shaped tails seem to be popular:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/5ufvW.jpg&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/5ufvW.jpg&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;
 &lt;a href=&quot;https://i.stack.imgur.com/NwxJY.jpg&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/NwxJY.jpg&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;
 &lt;a href=&quot;https://i.stack.imgur.com/Hwtng.jpg&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/Hwtng.jpg&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Why aren&#x27;t there, say, Cessna-shaped drones? If Cessna 172s work fine for human pilots, why not for computer pilots? The Cessna 172&#x27;s low speed and stability also seems like a good asset for military recon drones.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (256, 3, "Why are military drones shaped so strangely?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (256, 3, 'Why are military drones shaped so strangely?');
+INSERT INTO activity (post_id, user_id, action) VALUES (256, 62, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (256, 233);
 INSERT INTO questiontag (question_id, tag_id) VALUES (256, 213);
 INSERT INTO questiontag (question_id, tag_id) VALUES (256, 242);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 56, 49);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (257, 20, "&lt;p&gt;What were the advantages and why was it never produced?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 56, 43);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (257, 38, '&lt;p&gt;What were the advantages and why was it never produced?&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/SZgDm.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/SZgDm.jpg&quot; alt=&quot;Spinning wing airliner diagram&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (257, 3, "What are the advantages of a Spinning Wing (Magnus Effect) and why haven&#39;t any been commercially produced?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (257, 3, 'What are the advantages of a Spinning Wing (Magnus Effect) and why haven&#39;t any been commercially produced?');
+INSERT INTO activity (post_id, user_id, action) VALUES (257, 38, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (257, 233);
-INSERT INTO tag (text) VALUES ("wing");
+INSERT INTO tag (text) VALUES ('wing');
 INSERT INTO questiontag (question_id, tag_id) VALUES (257, 268);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 55, 49);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (258, 86, "&lt;p&gt;Aircraft with a &lt;a href=&quot;https://en.wikipedia.org/wiki/Heavy_(aeronautics)&quot; rel=&quot;noreferrer&quot;&gt;maximum takeoff weight of at least 300,000 pounds&lt;/a&gt; add the word &quot;Heavy&quot; to their callsign.  (Example: Lufthansa 415 Heavy &lt;a href=&quot;https://www.youtube.com/watch?v=3f2rnExvudA&quot; rel=&quot;noreferrer&quot;&gt;in this video&lt;/a&gt;.) &lt;a href=&quot;http://www.boeing.com/defense/air-force-one/index.page&quot; rel=&quot;noreferrer&quot;&gt;The current Presidential 747&#x27;s have a maximum takeoff weight of 833,000 pounds&lt;/a&gt;.  Yet, it flies (when the President is on board) with the callsign &quot;Air Force One&quot;, not &quot;Air Force One Heavy.&quot;&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 55, 21);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (258, 89, '&lt;p&gt;Aircraft with a &lt;a href=&quot;https://en.wikipedia.org/wiki/Heavy_(aeronautics)&quot; rel=&quot;noreferrer&quot;&gt;maximum takeoff weight of at least 300,000 pounds&lt;/a&gt; add the word &quot;Heavy&quot; to their callsign.  (Example: Lufthansa 415 Heavy &lt;a href=&quot;https://www.youtube.com/watch?v=3f2rnExvudA&quot; rel=&quot;noreferrer&quot;&gt;in this video&lt;/a&gt;.) &lt;a href=&quot;http://www.boeing.com/defense/air-force-one/index.page&quot; rel=&quot;noreferrer&quot;&gt;The current Presidential 747&#x27;s have a maximum takeoff weight of 833,000 pounds&lt;/a&gt;.  Yet, it flies (when the President is on board) with the callsign &quot;Air Force One&quot;, not &quot;Air Force One Heavy.&quot;&lt;/p&gt;
 
 &lt;p&gt;Why not?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (258, 3, "Why isn&#39;t the Presidential 747 &quot;Air Force One Heavy&quot;?");
-INSERT INTO tag (text) VALUES ("usa");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (258, 3, 'Why isn&#39;t the Presidential 747 &quot;Air Force One Heavy&quot;?');
+INSERT INTO activity (post_id, user_id, action) VALUES (258, 89, 'Create');
+INSERT INTO tag (text) VALUES ('usa');
 INSERT INTO questiontag (question_id, tag_id) VALUES (258, 269);
-INSERT INTO tag (text) VALUES ("wake-turbulence");
+INSERT INTO tag (text) VALUES ('wake-turbulence');
 INSERT INTO questiontag (question_id, tag_id) VALUES (258, 270);
-INSERT INTO tag (text) VALUES ("call-sign");
+INSERT INTO tag (text) VALUES ('call-sign');
 INSERT INTO questiontag (question_id, tag_id) VALUES (258, 271);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 54, 25);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (259, 56, "&lt;p&gt;This is based upon events portrayed in the movie &lt;a href=&quot;http://www.imdb.com/title/tt3263904/?pf_rd_m=A2FGELUUNOQJNL&amp;amp;pf_rd_p=2495768522&amp;amp;pf_rd_r=0PGBHEQG213D6X5YK0QK&amp;amp;pf_rd_s=right-7&amp;amp;pf_rd_t=15061&amp;amp;pf_rd_i=homepage&amp;amp;ref_=hm_cht_t0&quot;&gt;Sully&lt;/a&gt;.  If the film is taken at face value, what we basically see is a (fairly brazen) stitch-up attempt by the NTSB (National Transportation Safety Board), where they try to steer an investigation towards a predetermined conclusion of &#x27;pilot error&#x27; (and very nearly succeed) using:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 54, 26);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (259, 48, '&lt;p&gt;This is based upon events portrayed in the movie &lt;a href=&quot;http://www.imdb.com/title/tt3263904/?pf_rd_m=A2FGELUUNOQJNL&amp;amp;pf_rd_p=2495768522&amp;amp;pf_rd_r=0PGBHEQG213D6X5YK0QK&amp;amp;pf_rd_s=right-7&amp;amp;pf_rd_t=15061&amp;amp;pf_rd_i=homepage&amp;amp;ref_=hm_cht_t0&quot;&gt;Sully&lt;/a&gt;.  If the film is taken at face value, what we basically see is a (fairly brazen) stitch-up attempt by the NTSB (National Transportation Safety Board), where they try to steer an investigation towards a predetermined conclusion of &#x27;pilot error&#x27; (and very nearly succeed) using:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Naively unrealistic computer simulations that assume a pilot would divert towards the nearest landing strip immediately after a birdstrike without needing any time to evaluate the damage to their aircraft, attempt to diagnose and troubleshoot the problem, or coordinate with air-traffic-control.&lt;/li&gt;
@@ -4847,166 +5105,180 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (259, 56, "&lt;p
 &lt;li&gt;Why would the NTSB care about acting in the interest of insurance companies (particularly to the extent that they&#x27;d be willing to throw pilots under the bus to do so)?&lt;/li&gt;
 &lt;li&gt;Does an insurance company avoid a payout in the case where an aircraft is lost due to pilot error (as opposed to mechanical failure, birdstrike, or other unavoidable scenario)? &lt;/li&gt;
 &lt;/ol&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (259, 3, "Is the NTSB hostile to pilots, as depicted in the movie &#39;Sully&#39;?");
-INSERT INTO tag (text) VALUES ("accident-investigation");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (259, 3, 'Is the NTSB hostile to pilots, as depicted in the movie &#39;Sully&#39;?');
+INSERT INTO activity (post_id, user_id, action) VALUES (259, 48, 'Create');
+INSERT INTO tag (text) VALUES ('accident-investigation');
 INSERT INTO questiontag (question_id, tag_id) VALUES (259, 272);
-INSERT INTO tag (text) VALUES ("ntsb");
+INSERT INTO tag (text) VALUES ('ntsb');
 INSERT INTO questiontag (question_id, tag_id) VALUES (259, 273);
-INSERT INTO tag (text) VALUES ("us1549-accident");
+INSERT INTO tag (text) VALUES ('us1549-accident');
 INSERT INTO questiontag (question_id, tag_id) VALUES (259, 274);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 53, 48);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (260, 5, "&lt;p&gt;I was reading &lt;a href=&quot;http://aviation.stackexchange.com/questions/11310/what-information-does-a-pilot-have-about-aircraft-operating-on-an-intersecting-r&quot;&gt;What information does a pilot have about aircraft operating on an intersecting runway?&lt;/a&gt;, and noticed something in the map:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 53, 21);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (260, 11, '&lt;p&gt;I was reading &lt;a href=&quot;http://aviation.stackexchange.com/questions/11310/what-information-does-a-pilot-have-about-aircraft-operating-on-an-intersecting-r&quot;&gt;What information does a pilot have about aircraft operating on an intersecting runway?&lt;/a&gt;, and noticed something in the map:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.stack.imgur.com/oodEz.jpg&quot; alt=&quot;enter image description here&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Why is a &quot;penalty box&quot; marked on the map? What is it? What is it used for?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (260, 3, "Why does Chicago O&#39;Hare have a penalty box?");
-INSERT INTO tag (text) VALUES ("airport");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (260, 3, 'Why does Chicago O&#39;Hare have a penalty box?');
+INSERT INTO activity (post_id, user_id, action) VALUES (260, 11, 'Create');
+INSERT INTO tag (text) VALUES ('airport');
 INSERT INTO questiontag (question_id, tag_id) VALUES (260, 275);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 53, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (261, 78, "&lt;p&gt;Why are the windows of an airplane usually curved, or rather rounded at the edges? &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 53, 35);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (261, 53, '&lt;p&gt;Why are the windows of an airplane usually curved, or rather rounded at the edges? &lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.stack.imgur.com/nb1ZZ.jpg&quot; alt=&quot;enter image description here&quot;&gt;&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (261, 3, "Why do airplanes have curved windows?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (261, 3, 'Why do airplanes have curved windows?');
+INSERT INTO activity (post_id, user_id, action) VALUES (261, 53, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (261, 233);
-INSERT INTO tag (text) VALUES ("windows");
+INSERT INTO tag (text) VALUES ('windows');
 INSERT INTO questiontag (question_id, tag_id) VALUES (261, 276);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 53, 4);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (262, 76, "&lt;p&gt;Almost all cockpit panels of Russian aircraft types are painted in turquoise, whereas elsewhere the cockpit panels usually exhibit a dark grey color.
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 53, 35);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (262, 17, '&lt;p&gt;Almost all cockpit panels of Russian aircraft types are painted in turquoise, whereas elsewhere the cockpit panels usually exhibit a dark grey color.
 As this &quot;rule&quot; seems to be quite prevalent, I am curious as to the reason/origin.&lt;/p&gt;
 
 &lt;p&gt;This can be seen in the cockpit of &lt;a href=&quot;https://en.wikipedia.org/wiki/Mikoyan_MiG-31&quot; rel=&quot;nofollow noreferrer&quot;&gt;Mikoyan MiG-31&lt;/a&gt;:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/XKtET.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/XKtET.jpg&quot; alt=&quot;MiG-31 cockpit&quot;&gt;&lt;/a&gt;&lt;br&gt;
 &lt;sup&gt;&lt;em&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Cockpit_of_Mikoyan-Gurevich_MiG-31_(2).jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;Image Source&lt;/a&gt;&lt;/em&gt;&lt;/sup&gt;&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (262, 3, "Why are Russian cockpit panels painted in turquoise?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (262, 3, 'Why are Russian cockpit panels painted in turquoise?');
+INSERT INTO activity (post_id, user_id, action) VALUES (262, 17, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (262, 233);
 INSERT INTO questiontag (question_id, tag_id) VALUES (262, 213);
 INSERT INTO questiontag (question_id, tag_id) VALUES (262, 239);
-INSERT INTO tag (text) VALUES ("russia");
+INSERT INTO tag (text) VALUES ('russia');
 INSERT INTO questiontag (question_id, tag_id) VALUES (262, 277);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 53, 39);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (263, 26, "&lt;p&gt;Being a commercial airline pilot regularly appears around the top of &quot;most stressful jobs&quot; lists.  I do not doubt that this is a stressful job, but as an outsider with no aviation experience whatsoever I do not understand why.  I am curious to hear a first-hand explanation.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 53, 27);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (263, 14, '&lt;p&gt;Being a commercial airline pilot regularly appears around the top of &quot;most stressful jobs&quot; lists.  I do not doubt that this is a stressful job, but as an outsider with no aviation experience whatsoever I do not understand why.  I am curious to hear a first-hand explanation.&lt;/p&gt;
 
 &lt;p&gt;I have always imagined flying long-haul to become very tedious and repetitive after a while.  The only significant source of stress I can see is time away from family/relationships (which admittedly I couldn&#x27;t cope with, but it doesn&#x27;t seem sufficient a reason to propel this to the front of most stressful professions).&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (263, 3, "Why is being a commercial pilot stressful?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (263, 3, 'Why is being a commercial pilot stressful?');
+INSERT INTO activity (post_id, user_id, action) VALUES (263, 14, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (263, 232);
-INSERT INTO tag (text) VALUES ("airline-pilot");
+INSERT INTO tag (text) VALUES ('airline-pilot');
 INSERT INTO questiontag (question_id, tag_id) VALUES (263, 278);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 53, 30);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (264, 11, "&lt;p&gt;Are the (built-in) guns on fighter jets fixed, or can they be elevated up and down or panned right and left for aiming?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 53, 14);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (264, 49, '&lt;p&gt;Are the (built-in) guns on fighter jets fixed, or can they be elevated up and down or panned right and left for aiming?&lt;/p&gt;
 
 &lt;p&gt;In other words are fighter jet guns aimed by pointing the whole aircraft at the target or can they be aimed independently?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (264, 3, "Are the guns on a fighter jet fixed or can they be aimed?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (264, 3, 'Are the guns on a fighter jet fixed or can they be aimed?');
+INSERT INTO activity (post_id, user_id, action) VALUES (264, 49, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (264, 249);
-INSERT INTO tag (text) VALUES ("fighter");
+INSERT INTO tag (text) VALUES ('fighter');
 INSERT INTO questiontag (question_id, tag_id) VALUES (264, 279);
-INSERT INTO tag (text) VALUES ("defense-aviation");
+INSERT INTO tag (text) VALUES ('defense-aviation');
 INSERT INTO questiontag (question_id, tag_id) VALUES (264, 280);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 52, 29);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (265, 20, "&lt;p&gt;What factors determine the maximum altitude for a plane?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 52, 20);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (265, 21, '&lt;p&gt;What factors determine the maximum altitude for a plane?&lt;/p&gt;
 
 &lt;p&gt;Is it limited by wing design, engine thrust, and so on?&lt;/p&gt;
 
 &lt;p&gt;Is there a formula by which one can calculate the maximum altitude a plane can reach?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (265, 3, "What determines the maximum altitude a plane can reach?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (265, 3, 'What determines the maximum altitude a plane can reach?');
+INSERT INTO activity (post_id, user_id, action) VALUES (265, 21, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (265, 233);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 52, 43);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (266, 25, "&lt;p&gt;Stealth planes can&#x27;t be seen (very well) on radar. So one stealth plane should be unable to locate another stealth plane on its radar and vice versa.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 52, 43);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (266, 61, '&lt;p&gt;Stealth planes can&#x27;t be seen (very well) on radar. So one stealth plane should be unable to locate another stealth plane on its radar and vice versa.&lt;/p&gt;
 
 &lt;p&gt;So how would one stealth plane locate another, friendly, stealth plane?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (266, 3, "How do friendly stealth planes locate each other?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (266, 3, 'How do friendly stealth planes locate each other?');
+INSERT INTO activity (post_id, user_id, action) VALUES (266, 61, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (266, 213);
-INSERT INTO tag (text) VALUES ("stealth");
+INSERT INTO tag (text) VALUES ('stealth');
 INSERT INTO questiontag (question_id, tag_id) VALUES (266, 281);
-INSERT INTO tag (text) VALUES ("flying-in-formation");
+INSERT INTO tag (text) VALUES ('flying-in-formation');
 INSERT INTO questiontag (question_id, tag_id) VALUES (266, 282);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 52, 20);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (267, 2, "&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/Sxq4R.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/Sxq4R.jpg&quot; alt=&quot;NASA Helios&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 52, 31);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (267, 95, '&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/Sxq4R.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/Sxq4R.jpg&quot; alt=&quot;NASA Helios&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Many solar planes, like &lt;a href=&quot;https://en.wikipedia.org/wiki/Helios_Prototype&quot; rel=&quot;nofollow noreferrer&quot;&gt;NASA&#x27;s Helios&lt;/a&gt; (pictured above), &lt;a href=&quot;https://en.wikipedia.org/wiki/NASA_Pathfinder&quot; rel=&quot;nofollow noreferrer&quot;&gt;NASA&#x27;s Pathfinder&lt;/a&gt;, and to a lesser extent &lt;a href=&quot;https://www.facebook.com/notes/mark-zuckerberg/the-technology-behind-aquila/10153916136506634/&quot; rel=&quot;nofollow noreferrer&quot;&gt;Facebook&#x27;s Aquila&lt;/a&gt; employ the use of many small motor propeller sets instead of one or two engines like most planes. Why is this?&lt;/p&gt;
 
 &lt;p&gt;Smaller motors tend to have slightly higher power density, but aren&#x27;t the relative losses higher on the smaller airfoils of these propellers?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (267, 3, "Why do solar planes have many small propellers instead of fewer large ones?");
-INSERT INTO tag (text) VALUES ("propeller");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (267, 3, 'Why do solar planes have many small propellers instead of fewer large ones?');
+INSERT INTO activity (post_id, user_id, action) VALUES (267, 95, 'Create');
+INSERT INTO tag (text) VALUES ('propeller');
 INSERT INTO questiontag (question_id, tag_id) VALUES (267, 283);
-INSERT INTO tag (text) VALUES ("airfoil");
+INSERT INTO tag (text) VALUES ('airfoil');
 INSERT INTO questiontag (question_id, tag_id) VALUES (267, 284);
-INSERT INTO tag (text) VALUES ("electric-engine");
+INSERT INTO tag (text) VALUES ('electric-engine');
 INSERT INTO questiontag (question_id, tag_id) VALUES (267, 285);
-INSERT INTO tag (text) VALUES ("solar-impulse");
+INSERT INTO tag (text) VALUES ('solar-impulse');
 INSERT INTO questiontag (question_id, tag_id) VALUES (267, 286);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 50, 2);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (268, 34, "&lt;p&gt;Some people consider flying small planes very dangerous. Just how dangerous is it to fly in a light single-engine plane? For example, how does the fatality rate compare to driving a car, riding a motorcycle, etc.?&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (268, 3, "How dangerous is flying in a single-engine plane?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 50, 20);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (268, 55, '&lt;p&gt;Some people consider flying small planes very dangerous. Just how dangerous is it to fly in a light single-engine plane? For example, how does the fatality rate compare to driving a car, riding a motorcycle, etc.?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (268, 3, 'How dangerous is flying in a single-engine plane?');
+INSERT INTO activity (post_id, user_id, action) VALUES (268, 55, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (268, 248);
-INSERT INTO tag (text) VALUES ("accidents");
+INSERT INTO tag (text) VALUES ('accidents');
 INSERT INTO questiontag (question_id, tag_id) VALUES (268, 287);
 INSERT INTO questiontag (question_id, tag_id) VALUES (268, 246);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 50, 41);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (269, 65, "&lt;p&gt;These days, on larger/newer aircraft at least, it seems like GPS navigation is pretty much ubiquitous.  So it doesn&#x27;t seem like &lt;a href=&quot;http://en.wikipedia.org/wiki/VHF_omnidirectional_range&quot;&gt;VOR&lt;/a&gt;s and &lt;a href=&quot;http://en.wikipedia.org/wiki/Non-directional_beacon&quot;&gt;Non-directional Beacons&lt;/a&gt; (NDBs) would really get a lot of usage and, as I recall, the reason we have airways is because they were the connection points between VORs and NDBs, right?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 50, 37);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (269, 66, '&lt;p&gt;These days, on larger/newer aircraft at least, it seems like GPS navigation is pretty much ubiquitous.  So it doesn&#x27;t seem like &lt;a href=&quot;http://en.wikipedia.org/wiki/VHF_omnidirectional_range&quot;&gt;VOR&lt;/a&gt;s and &lt;a href=&quot;http://en.wikipedia.org/wiki/Non-directional_beacon&quot;&gt;Non-directional Beacons&lt;/a&gt; (NDBs) would really get a lot of usage and, as I recall, the reason we have airways is because they were the connection points between VORs and NDBs, right?&lt;/p&gt;
 
 &lt;p&gt;Nowadays it seems like a pilot could &quot;fly direct&quot; (go directly from one airport to the other without using any intermediary checkpoints) really very easily.  And yet I&#x27;ve been told on several occasions that most pilots use airways.  &lt;/p&gt;
 
 &lt;p&gt;Why is that? Why do pilots use airways instead of flying direct every time? &lt;/p&gt;
 
 &lt;p&gt;(Or am I wrong and everyone is flying direct and I&#x27;m being dumb?)&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (269, 3, "Why do pilots use airways instead of just &quot;flying direct&quot; every time?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (269, 3, 'Why do pilots use airways instead of just &quot;flying direct&quot; every time?');
+INSERT INTO activity (post_id, user_id, action) VALUES (269, 66, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (269, 220);
-INSERT INTO tag (text) VALUES ("navigation");
+INSERT INTO tag (text) VALUES ('navigation');
 INSERT INTO questiontag (question_id, tag_id) VALUES (269, 288);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 50, 35);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (270, 5, "&lt;p&gt;A few days ago, I took a flight home. Towards the end of the journey, the captain asked us to shut down any electronic device that we had on board, including iPods, CD players, phones and so on, because there was very low visibility, and we were starting an instrument approach.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 50, 48);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (270, 57, '&lt;p&gt;A few days ago, I took a flight home. Towards the end of the journey, the captain asked us to shut down any electronic device that we had on board, including iPods, CD players, phones and so on, because there was very low visibility, and we were starting an instrument approach.&lt;/p&gt;
 
 &lt;p&gt;From what I could understand, an &lt;a href=&quot;http://en.wikipedia.org/wiki/Instrument_landing_system&quot;&gt;Instrument Landing  System (ILS)&lt;/a&gt; allows an aircraft to be centred on the approach path, assisted by radio signals delivered by an ILS (a localiser and a glide slope), without any visual reference. These signals are in the 110 MHz (LOC) and 330 MHz (GS) frequency range.&lt;/p&gt;
 
 &lt;p&gt;Given that for the take off, visual landing, and the journey itself, shutting off the devices is no longer required (even though there are radio signals being used for communications and navigation), why this extra precaution on a low-visibility ILS approach? What interference could a CD Player possibly produce with the instrumentation to an extent that it&#x27;s more dangerous than with the normal take off,en route, and landing phases?&lt;/p&gt;
 
 &lt;p&gt;On a side note: as you probably understood, my level of expertise is very low, so forgive any dumb mistake or oversight.&lt;/p&gt;
-");
-INSERT INTO question (post_id, topic_id, title) VALUES (270, 3, "Instrument landing: why do all electronic devices need to be shut off?");
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (270, 3, 'Instrument landing: why do all electronic devices need to be shut off?');
+INSERT INTO activity (post_id, user_id, action) VALUES (270, 57, 'Create');
 INSERT INTO questiontag (question_id, tag_id) VALUES (270, 216);
-INSERT INTO tag (text) VALUES ("instrument-flight-rules");
+INSERT INTO tag (text) VALUES ('instrument-flight-rules');
 INSERT INTO questiontag (question_id, tag_id) VALUES (270, 289);
-INSERT INTO tag (text) VALUES ("electronics");
+INSERT INTO tag (text) VALUES ('electronics');
 INSERT INTO questiontag (question_id, tag_id) VALUES (270, 290);
-INSERT INTO tag (text) VALUES ("ils");
+INSERT INTO tag (text) VALUES ('ils');
 INSERT INTO questiontag (question_id, tag_id) VALUES (270, 291);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 39, 36);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (271, 45, "&lt;p&gt;ATC and aircraft communications (at least in the US) are not restricted for receiving. Anyone can purchase (or make) an &quot;Air band&quot; receiver (or scanner radio) tunable through (roughly) 118-140 MHz and listen to ATC and aircraft communications.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (271, 252, "False");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 39, 25);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (271, 16, '&lt;p&gt;ATC and aircraft communications (at least in the US) are not restricted for receiving. Anyone can purchase (or make) an &quot;Air band&quot; receiver (or scanner radio) tunable through (roughly) 118-140 MHz and listen to ATC and aircraft communications.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (271, 252, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (271, 16, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 90, 89);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (272, 44, "&lt;p&gt;This is a feature offered on some United Airlines aircraft and flights. It&#x27;s an interesting way to hear what&#x27;s going on in the cockpit. You can find lots of information by searching for &lt;a href=&quot;https://www.google.com/search?q=united+channel+9&quot; rel=&quot;noreferrer&quot;&gt;United channel 9&lt;/a&gt;.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (272, 252, "True");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 90, 48);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (272, 84, '&lt;p&gt;This is a feature offered on some United Airlines aircraft and flights. It&#x27;s an interesting way to hear what&#x27;s going on in the cockpit. You can find lots of information by searching for &lt;a href=&quot;https://www.google.com/search?q=united+channel+9&quot; rel=&quot;noreferrer&quot;&gt;United channel 9&lt;/a&gt;.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (272, 252, 'True');
+INSERT INTO activity (post_id, user_id, action) VALUES (272, 84, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 34, 26);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (273, 58, "&lt;p&gt;Disclosure: I am both a watch enthusiast and a Pilot but on any note...&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 34, 13);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (273, 18, '&lt;p&gt;Disclosure: I am both a watch enthusiast and a Pilot but on any note...&lt;/p&gt;
 
 &lt;p&gt;The answer to your question is generally no, but that varies by personal taste as well as personal choice. There are lots of threads on the various watch forums discussing this very topic &lt;a href=&quot;http://forums.watchuseek.com/f2/what-watches-do-pilots-really-wear-799468.html&quot; rel=&quot;nofollow noreferrer&quot;&gt;here&lt;/a&gt;, &lt;a href=&quot;http://forums.watchuseek.com/f7/do-pilots-wear-pilot-watches-1366353.html&quot; rel=&quot;nofollow noreferrer&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://www.askcaptainlim.com/general-propilot-76/21-are-breitling-watches-worn-by-many-pilots.html&quot; rel=&quot;nofollow noreferrer&quot;&gt;here&lt;/a&gt;. The consensus is basically a few things. First off pilots no longer make the kind of money the once did and swiss watches have only shot up in price since say the 70&#x27;s. If you are talking about an entry level professional &lt;a href=&quot;http://www.forbes.com/sites/johngoglia/2013/07/31/what-do-entry-level-regional-pilots-and-mcdonalds-workers-have-in-common/&quot; rel=&quot;nofollow noreferrer&quot;&gt;pilot making in the very low 5 figures&lt;/a&gt; the chances they are going out and buying a $5,000+ watch is low. Now lets talk function. When you are in the cockpit a watch can be useful (provided you can read it). If your heading indicator fails you can use a watch and your turn coordinator to time your turns which can save your life in the clouds. I generally start my chronograph (omega speedmaster) when I take off, this gives me not only en route time but markers of the half hour blocks when I need to switch my tanks (on a &lt;a href=&quot;http://www.aopa.org/Pilot-Resources/Aircraft-Ownership/Aircraft-Fact-Sheets/Piper-Warrior&quot; rel=&quot;nofollow noreferrer&quot;&gt;piper warrior&lt;/a&gt;). For what its worth there is a clock in the plane as well as a timer so I don&#x27;t need a watch but I enjoy wearing one. When I fly &lt;a href=&quot;https://en.wikipedia.org/wiki/Dead_reckoning&quot; rel=&quot;nofollow noreferrer&quot;&gt;dead reckoning&lt;/a&gt; I carry an all mechanical &lt;a href=&quot;http://www.onthedash.com/Guide/_Stopwatches/f.60-Minute_Stopwatches/&quot; rel=&quot;nofollow noreferrer&quot;&gt;Heuer Stop watch&lt;/a&gt; to time my legs. Again these things are in the plane but I find the hand held stop watch easier to use. Some fancy aviation watches provide flight computers on the bezels like breitlings but there is no way you are reading that in the air unless its really smooth up there. &lt;/p&gt;
 
@@ -5035,23 +5307,26 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (273, 58, "&lt;p
 
 &lt;p&gt;Heuer even had an &lt;a href=&quot;http://www.onthedash.com/Guide/_DashMounted/Other_Models/IFR/&quot; rel=&quot;nofollow noreferrer&quot;&gt;IFR stop watch&lt;/a&gt; 
 &lt;a href=&quot;https://i.stack.imgur.com/2YCwN.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/DS5gx.jpg&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (273, 233, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (273, 233, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (273, 18, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (274, 66, "&lt;p&gt;Im a professional pilot, and i do wear mechanical swiss watches all the time, specially my IWC Big Pilot, Breitling Navitimer, Chronomat and the Zenith Pilot. A reliable watch is a need for any pilot (since flights are always schedule-based). But wear a expensive swiss watch is a matter of style and affordability. Since im from a family of pilots for generations, the pilot&#x27;s watch is like a heritage to us. The watch is the pilot&#x27;s jewel (since the pioneers like S.Dumont, Louie Blériot, until the famous pilots like John Travolta, the Red Bull Racer pilots, the astronauts...those distinguished pilots always wears a good watch). But since a jewel is just a matter of looks (and affordability) my coleagues pilots wear mostly citizens brand and other watches (beause the luxury swiss watches are too expensive). But they always wear some good (dependable) watch. &lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (274, 233, "False");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (274, 89, '&lt;p&gt;Im a professional pilot, and i do wear mechanical swiss watches all the time, specially my IWC Big Pilot, Breitling Navitimer, Chronomat and the Zenith Pilot. A reliable watch is a need for any pilot (since flights are always schedule-based). But wear a expensive swiss watch is a matter of style and affordability. Since im from a family of pilots for generations, the pilot&#x27;s watch is like a heritage to us. The watch is the pilot&#x27;s jewel (since the pioneers like S.Dumont, Louie Blériot, until the famous pilots like John Travolta, the Red Bull Racer pilots, the astronauts...those distinguished pilots always wears a good watch). But since a jewel is just a matter of looks (and affordability) my coleagues pilots wear mostly citizens brand and other watches (beause the luxury swiss watches are too expensive). But they always wear some good (dependable) watch. &lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (274, 233, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (274, 89, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (275, 13, "&lt;p&gt;The special cargo versions of various aircraft models are even produced longer as the passenger versions. 
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (275, 53, '&lt;p&gt;The special cargo versions of various aircraft models are even produced longer as the passenger versions. 
 Passengers demand a certain level of luxury, which can&#x27;t be easily included in older models. Mostly it needs a new wiring plan and some other changes. This makes it cheaper to create a new model and incorporate new technology and other demands of the airlines as well.
 Cargo isn&#x27;t very demanding and the interior of cargo planes are much simpler. Older aicraft models are cheaper as the new ones. New aircraft models come with a cargo version after 5 to 10 years.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (275, 237, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (275, 237, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (275, 53, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 13, 12);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (276, 85, "&lt;p&gt;If just like to add to the answers here and address a few inaccuracies made about air cargo. What you ask is true, some of the oldest aircraft out there are flying cargo, and most of the answers here are accurate, but some things are based on false assumptions. &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 13, 6);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (276, 13, '&lt;p&gt;If just like to add to the answers here and address a few inaccuracies made about air cargo. What you ask is true, some of the oldest aircraft out there are flying cargo, and most of the answers here are accurate, but some things are based on false assumptions. &lt;/p&gt;
 
 &lt;p&gt;The question mentions full size airliners so I am focusing on that. I use FedEx as an example because I&#x27;m most familiar with their system. Some things that apply to a large cargo-only carrier may not apply to other parts of the industry. &lt;/p&gt;
 
@@ -5096,11 +5371,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (276, 85, "&lt;p
 &lt;p&gt;I was a bit surprised that the number of flights were so close. The UA aircraft spent slightly more hours in the air and the FedEx aircraft spent slightly more time on the ground&lt;/p&gt;
 
 &lt;p&gt;Like I said, such a small sample from two airlines is not very scientific. I&#x27;m not sure if this would bear itself out over the entire fleet, but I can&#x27;t find numbers anywhere.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (276, 237, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (276, 237, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (276, 13, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 87, 84);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (277, 67, "&lt;p&gt;Practically speaking, the &#x27;heavy&#x27; designator (&#x27;super&#x27; for A380 and An225) is to help enforce separation requirements due to wake turbulence. In case of AF1, it is not as if other aircraft are going to be allowed near it, so the designator is redundant.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 87, 62);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (277, 11, '&lt;p&gt;Practically speaking, the &#x27;heavy&#x27; designator (&#x27;super&#x27; for A380 and An225) is to help enforce separation requirements due to wake turbulence. In case of AF1, it is not as if other aircraft are going to be allowed near it, so the designator is redundant.&lt;/p&gt;
 
 &lt;p&gt;Regulation wise, FAA &lt;a href=&quot;http://tfmlearning.faa.gov/Publications/atpubs/ATC/atc0204.html&quot; rel=&quot;noreferrer&quot;&gt;JO 7110.65T Section 4. Radio and Interphone Communications&lt;/a&gt;, specifically states that the &#x27;heavy&#x27; designator should not be used:&lt;/p&gt;
 
@@ -5109,27 +5385,30 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (277, 67, "&lt;p
   &lt;li&gt;When in radio communications with “Air Force One” or “Air Force Two,” do not add the heavy designator to the call sign. State only the call sign “Air Force One/Two” regardless of the type aircraft.&lt;/li&gt;
   &lt;/ol&gt;
 &lt;/blockquote&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (277, 258, "True");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (277, 258, 'True');
+INSERT INTO activity (post_id, user_id, action) VALUES (277, 11, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 19, 11);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (278, 0, "&lt;p&gt;The purpose of the &quot;heavy&quot; designator is create situational awareness because of its wake turbulence. There are also different separation requirements when following a heavy aircraft. Since all air traffic around Air Force 1 is likely to be heavily controlled, there&#x27;s no need to call out that it&#x27;s a heavy.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (278, 258, "False");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 19, 3);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (278, 85, '&lt;p&gt;The purpose of the &quot;heavy&quot; designator is create situational awareness because of its wake turbulence. There are also different separation requirements when following a heavy aircraft. Since all air traffic around Air Force 1 is likely to be heavily controlled, there&#x27;s no need to call out that it&#x27;s a heavy.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (278, 258, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (278, 85, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (279, 59, "&lt;p&gt;Usually a passenger aircraft needs a lot of attention and budget to keep it satisfactory for passengers. Besides cleaning and decoration the engine sound also needs to stay smooth. &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (279, 25, '&lt;p&gt;Usually a passenger aircraft needs a lot of attention and budget to keep it satisfactory for passengers. Besides cleaning and decoration the engine sound also needs to stay smooth. &lt;/p&gt;
 
 &lt;p&gt;There is a difference between old engine and new engine sounds. Old engines, may be still running perfectly, yet it is bound to make extra noises. &lt;/p&gt;
 
 &lt;p&gt;An older aircraft engine and interior will make some extra sound. (You know if you ever traveled some old crafts from some Asian countries. They keep using the aircraft as passengers careers even after the expiry period is over.) &lt;/p&gt;
 
 &lt;p&gt;While these noise and other issues are no problem if the aircraft is carrying cargo instead of passengers. &lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (279, 237, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (279, 237, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (279, 25, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3, 2);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (280, 82, "&lt;p&gt;I would say that the factor that differs most between passenger and freight is the &quot;Value of Reliability&quot;.  A passenger flight has a very high cost of unscheduled unavailability.  Especially in hub and spoke networks, a plane being late or cancelled causes follow-on problems as passengers miss connecting flights. There is a cost in customer satisfaction, and extra expenses.  And, presumably, customers value their own time or their employers do, so time wasted is value lost.  In freight, reliability is also important, but the costs of being delayed may not be nearly as high.  When it is, newer planes will be used.  Factors that make freight reliability worth paying for are:  perishable cargo, cost of being out of stock, need for cargo for a production process, and high value cargo which has an intrinsic interest cost.  A need for a parcel to make it to a hub on time would also make the Value of Reliability higher.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 3, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (280, 68, '&lt;p&gt;I would say that the factor that differs most between passenger and freight is the &quot;Value of Reliability&quot;.  A passenger flight has a very high cost of unscheduled unavailability.  Especially in hub and spoke networks, a plane being late or cancelled causes follow-on problems as passengers miss connecting flights. There is a cost in customer satisfaction, and extra expenses.  And, presumably, customers value their own time or their employers do, so time wasted is value lost.  In freight, reliability is also important, but the costs of being delayed may not be nearly as high.  When it is, newer planes will be used.  Factors that make freight reliability worth paying for are:  perishable cargo, cost of being out of stock, need for cargo for a production process, and high value cargo which has an intrinsic interest cost.  A need for a parcel to make it to a hub on time would also make the Value of Reliability higher.&lt;/p&gt;
 
 &lt;p&gt;Transportation analysis uses the Base Cost, Value of Time and Value of Reliability to help determine what trade-offs are more tolerable.  The terms &quot;Willingness-to-Pay&quot; and &quot;Willingness to Accept&quot; are used, and market participants are surveyed in a sophisticated way to figure out what values they put on trade-offs.  &lt;/p&gt;
 
@@ -5138,11 +5417,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (280, 82, "&lt;p
 &lt;p&gt;Some kinds of freight fit the characteristics that the freight&#x27;s time isn&#x27;t really valuable and being late won&#x27;t cause too much of a problem.  For these products, customers expect a corresponding lower base cost than the cost of a passenger ticket per pound.  Most freight also has a lower Value of Time than passengers -- your package is OK with a 3-day journey, but passengers would not be.  To meet the the lower cost necessary to satisfy freight customers, who have a lower penalty (loss of economic utility) for delays, older planes can do the job.&lt;/p&gt;
 
 &lt;p&gt;Older planes are not &quot;unreliable&quot; in that safety is not directly related to aircraft age, it&#x27;s just that some components are going to have to be removed more often than on a new plane, and therefore &quot;availability reliability&quot; will be lower.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (280, 237, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (280, 237, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (280, 68, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("deleted", 76, 55);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (281, 47, "&lt;p&gt;Passenger operations are overwhelmingly scheduled whereas cargo is on demand and thus less easy to plan. The upside: A cargo plane crew will fly quite diverse routes. The downside: Capacity utilisation is much worse. This shifts the balance of cost such that fixed cost must be much lower than what is possible with scheduled services. As a consequence, older aircraft with much lower depreciation cost are preferred. With them it is less costly if they don&#x27;t move for some hours or even days.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 76, 3);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (281, 74, '&lt;p&gt;Passenger operations are overwhelmingly scheduled whereas cargo is on demand and thus less easy to plan. The upside: A cargo plane crew will fly quite diverse routes. The downside: Capacity utilisation is much worse. This shifts the balance of cost such that fixed cost must be much lower than what is possible with scheduled services. As a consequence, older aircraft with much lower depreciation cost are preferred. With them it is less costly if they don&#x27;t move for some hours or even days.&lt;/p&gt;
 
 &lt;p&gt;Operating cost are more important when the aircraft flies as much as technically possible. Especially low cost airlines need to operate hardware with the lowest operating cost possible so they survive the next price war. Premium airlines also have a need for the newest planes: This makes them look premium and more safe. Cargo operators have no such incentive to prefer the newest airplanes; they profit from the need of passenger airlines to sell their older hardware off.&lt;/p&gt;
 
@@ -5160,16 +5440,18 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (281, 47, "&lt;p
 &lt;/blockquote&gt;
 
 &lt;p&gt;If an airline is large enough, ordering new aircraft has the added benefit of saturating supply and denying the same aircraft to its competitors. If oil prices are high, this airline will have won the price war before it started in earnest.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (281, 237, "True");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (281, 237, 'True');
+INSERT INTO activity (post_id, user_id, action) VALUES (281, 74, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 30, 13);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (282, 66, "&lt;p&gt;Freight planes fly less.  Since they&#x27;re not in constant use like a passenger airliner, it makes more sense to pay less up front (fixed costs).&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (282, 237, "False");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 30, 27);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (282, 86, '&lt;p&gt;Freight planes fly less.  Since they&#x27;re not in constant use like a passenger airliner, it makes more sense to pay less up front (fixed costs).&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (282, 237, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (282, 86, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("deleted", 9, 8);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (283, 10, "&lt;p&gt;Aircraft models are longer lived in their cargo versions because that is where they end up. Most of the cargo aircraft are older passenger aircraft that have been converted into cargo aircraft. As a result, the capital costs are lower compared to that of the passenger aircraft. Your aircraft is cheaper, and as a result, you have more leeway in direct operating costs (compared to passenger aircraft, that is).&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 9, 2);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (283, 22, '&lt;p&gt;Aircraft models are longer lived in their cargo versions because that is where they end up. Most of the cargo aircraft are older passenger aircraft that have been converted into cargo aircraft. As a result, the capital costs are lower compared to that of the passenger aircraft. Your aircraft is cheaper, and as a result, you have more leeway in direct operating costs (compared to passenger aircraft, that is).&lt;/p&gt;
 
 &lt;p&gt;As a &lt;a href=&quot;http://siteresources.worldbank.org/EXTAIRTRANSPORT/Resources/515180-1262792532589/6683177-1268747346047/air_cargo_ch4.pdf&quot; rel=&quot;noreferrer&quot;&gt;World bank report notes&lt;/a&gt;:&lt;/p&gt;
 
@@ -5189,18 +5471,20 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (283, 10, "&lt;p
 &lt;p&gt;Another thing about cargo aircraft is that the pricing is dependent on the LOS (Level of Service) offered- higher cost for a better LOS. By offering improved LOS, the cargo airlines can improve their direct revenue unlike the scheduled passenger flights.&lt;/p&gt;
 
 &lt;p&gt;Also, it is not entirely true that all cargo aircraft are old. Integrators (Companies which manage an operate the entire logistical chain from door to door) prefer newer aircraft as they are more efficient, while pure cargo airliners prefer the other way. For example, the Boeing 767 frieghter line is solely dedicated to FedEx.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (283, 237, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (283, 237, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (283, 22, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 5, 2);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (284, 91, "&lt;p&gt;As you want to offer your passengers maximum comfort and a quiet airplane which also should be economic and efficient passenger aircraft are replaced by newer models quite often whereas for cargo airplanes the comfort doesn&#x27;t matter at all. &quot;Fracht motzt nicht, Fracht kotzt nicht&quot; (Cargo doesn&#x27;t shout, Cargo doesn&#x27;t spill) as we say here in Germany illustrates this. As long as it&#x27;s rentable for a cargo airline to use an airplane it&#x27;ll be used.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (284, 58, '&lt;p&gt;As you want to offer your passengers maximum comfort and a quiet airplane which also should be economic and efficient passenger aircraft are replaced by newer models quite often whereas for cargo airplanes the comfort doesn&#x27;t matter at all. &quot;Fracht motzt nicht, Fracht kotzt nicht&quot; (Cargo doesn&#x27;t shout, Cargo doesn&#x27;t spill) as we say here in Germany illustrates this. As long as it&#x27;s rentable for a cargo airline to use an airplane it&#x27;ll be used.&lt;/p&gt;
 
 &lt;p&gt;After thinking about this it sounds quiet logically to use the replaced passenger aircraft as cargo planes if they are big enough, doesn&#x27;t it?&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (284, 237, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (284, 237, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (284, 58, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (285, 52, "&lt;p&gt;In short, aviation, especially at the commercial level, is a little more complex than a car or other vehicle, and even those other vehicle interfaces are complex if you&#x27;re unfamiliar with them.  A car can have lots of items on it that are intimidating to anyone unfamiliar, and just like and airplane cockpit, there are so many of them there&#x27;s not way to &quot;logically&quot; arrange or eliminate most of them.  What are a battery voltage indicator, tachometer, and oil temperature gauge used for?  What are paddle shifters?  What&#x27;s an odometer and why would it be in a car that already has GPS navigation?  Why do I have a separate foot and parking brake?  What does this bluetooth phone button do?  Then don&#x27;t even get me started on some of the exotic controls in race cars, electric vehicles, hybrid vehicles, infotainment devices, etc.  Just as a car can be complicated, I would similarly expect a cockpit to be familiar to someone experienced with it, but complex to someone who hasn&#x27;t seen it.&lt;br&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (285, 45, '&lt;p&gt;In short, aviation, especially at the commercial level, is a little more complex than a car or other vehicle, and even those other vehicle interfaces are complex if you&#x27;re unfamiliar with them.  A car can have lots of items on it that are intimidating to anyone unfamiliar, and just like and airplane cockpit, there are so many of them there&#x27;s not way to &quot;logically&quot; arrange or eliminate most of them.  What are a battery voltage indicator, tachometer, and oil temperature gauge used for?  What are paddle shifters?  What&#x27;s an odometer and why would it be in a car that already has GPS navigation?  Why do I have a separate foot and parking brake?  What does this bluetooth phone button do?  Then don&#x27;t even get me started on some of the exotic controls in race cars, electric vehicles, hybrid vehicles, infotainment devices, etc.  Just as a car can be complicated, I would similarly expect a cockpit to be familiar to someone experienced with it, but complex to someone who hasn&#x27;t seen it.&lt;br&gt;
 &lt;a href=&quot;https://i.stack.imgur.com/7b0iD.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/7b0iD.jpg&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;That being said, aviation cockpits are more complicated for several reasons that aren&#x27;t fully covered in other answers:&lt;/p&gt;
@@ -5214,29 +5498,32 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (285, 52, "&lt;p
 &lt;p&gt;Then there are the extra features for maintenance controls that make the cockpit more complicated.  As others have pointed out, if almost anything breaks on a car or boat you can get to safety quickly.  In an airplane that isn&#x27;t true.  As such you need backup backup displays, more complicated fuel flow controls, fire extinguishers, extra gauges to warn about dangerous situations like a turbine temperature gauge, and safety features to disable inoperative systems like circuit breakers and feathering controls.  In summary, for safety you may need manual controls for things that could be automatic, extra displays and indicators, and extra buttons and switches to activate safety features.&lt;/p&gt;
 
 &lt;p&gt;So in short, airplane cockpits are complicated for several reasons.  First, they&#x27;re unfamiliar to you and so of course they seem foreign and confusing.  Second, aviation has developed some complex and often redundant devices for accomplishing even simple tasks like navigation, so simplifying the user interface would either involve removing important features or standardizing, grouping, and unifying industry technologies to eliminate redundancies while maintaining all the strengths of each.  Third, aviation as an industry is more complicated.  Navigating in six degrees of freedom at high altitude in zero visibility requires a little more complexity.  Finally, the high safety demands of aviation demand more controls and indicators to maintain safe flying even in unusual conditions and failure modes.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (285, 234, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (285, 234, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (285, 45, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (286, 89, "&lt;p&gt;There were at least MiG-15SU and MiG-17SP experimental fighters with a moving gun carriage V-1-25-Sh-3 with 2 Sh-3-23 guns mounted on it. Pilot could remotely adjust guns in combat (11 grad up or 7 - down), thus reducing time needed to get in firing position against maneuvering enemy. The system had no guidance of course.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (286, 35, '&lt;p&gt;There were at least MiG-15SU and MiG-17SP experimental fighters with a moving gun carriage V-1-25-Sh-3 with 2 Sh-3-23 guns mounted on it. Pilot could remotely adjust guns in combat (11 grad up or 7 - down), thus reducing time needed to get in firing position against maneuvering enemy. The system had no guidance of course.&lt;/p&gt;
 
 &lt;p&gt;Although I have no idea if this device was ever put in production, I believe in later aircraft designs stakes were made on missiles as primary weapon, leaving guns secondary role. &lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (286, 264, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (286, 264, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (286, 35, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (287, 55, "&lt;p&gt;I am not a powered aircraft pilot, and have not flown for years. But I would like to think I am still an aviator&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (287, 40, '&lt;p&gt;I am not a powered aircraft pilot, and have not flown for years. But I would like to think I am still an aviator&lt;/p&gt;
 
 &lt;p&gt;I have long wondered why pilots of powered aircraft, whether large or small, do not pull back on the stick and use their elevators to increase aerodynamic drag and therefore braking effect on landing&lt;/p&gt;
 
 &lt;p&gt;My experience is purely in gliders. I am used to regulating my descent to land using elevator and judicious use of air brakes to maintain the desired speed. But after landing, and below stall speed, full application of the elevator and full air brakes in combination produce the greatest braking effect. Only expensive gliders had wheel brakes when I flew.&lt;/p&gt;
 
 &lt;p&gt;I assume this works the same way on powered aircraft.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (287, 240, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (287, 240, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (287, 40, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 17, 10);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (288, 67, "&lt;p&gt;This picture is most likely taken during landing. The flaps configuration is the best clue. Flaps are extended more for landing than they are for takeoff. Compare with other pictures of Air Force One:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 17, 10);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (288, 16, '&lt;p&gt;This picture is most likely taken during landing. The flaps configuration is the best clue. Flaps are extended more for landing than they are for takeoff. Compare with other pictures of Air Force One:&lt;/p&gt;
 
 &lt;p&gt;OP, brightness adjusted:&lt;/p&gt;
 
@@ -5279,11 +5566,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (288, 67, "&lt;p
 &lt;p&gt;October 2010 - AF1 flew into KBFI, looking for a good reference.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.cleveland.com/nation/index.ssf/2010/08/mystery_booms_during_obama_vis.html&quot; rel=&quot;nofollow noreferrer&quot;&gt;August 2010&lt;/a&gt; - AF1 arrived in the evening, and left during the afternoon. If the OP is from 2010 this would support a departure. But the photo of the departure has different lighting than the OP.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (288, 223, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (288, 223, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (288, 16, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 74, 45);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (289, 43, "&lt;p&gt;&lt;strike&gt;The plane is probably taking off.&lt;/strike&gt;  The flaps are hard to see but they don&#x27;t quite look to be extended enough for landing (Looks like flaps 20).  On a 747 they extend to around 45 degrees (flaps 30, but they curve around more than that) for landing and have a huge, unmistakable profile.  Further, we know it&#x27;s KBFI and we know the plane is on 31L from the photo.  Looking at the area we can deduce... (click for bigger)&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 74, 27);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (289, 23, '&lt;p&gt;&lt;strike&gt;The plane is probably taking off.&lt;/strike&gt;  The flaps are hard to see but they don&#x27;t quite look to be extended enough for landing (Looks like flaps 20).  On a 747 they extend to around 45 degrees (flaps 30, but they curve around more than that) for landing and have a huge, unmistakable profile.  Further, we know it&#x27;s KBFI and we know the plane is on 31L from the photo.  Looking at the area we can deduce... (click for bigger)&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/Z9CwU.jpg&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/Z9CwU.jpg&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -5300,11 +5588,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (289, 43, "&lt;p
 &lt;p&gt;EDIT&lt;/p&gt;
 
 &lt;p&gt;After running a series of simulations, it seems difficult for the VC-25 to be able to takeoff from where we see it, even when starting from B10. The VC-25 is 525,000lbs empty.  With only 100,000lbs load (fuel+people) it can takeoff by B5 at flaps 20, but only by lifting off below V2 (no wind).  This has to be a landing (confirmed by the newly discovered set of photos), but it is a very late landing indeed.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (289, 223, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (289, 223, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (289, 23, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 34, 9);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (290, 78, "&lt;p&gt;&lt;em&gt;Please skip to the edit after the picture to see my actual answer.  I&#x27;m leaving my original answer intact though, since other answers have referenced it.&lt;/em&gt;&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 34, 19);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (290, 12, '&lt;p&gt;&lt;em&gt;Please skip to the edit after the picture to see my actual answer.  I&#x27;m leaving my original answer intact though, since other answers have referenced it.&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -5351,27 +5640,30 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (290, 78, "&lt;p
 &lt;p&gt;&lt;strong&gt;Conclusion:&lt;/strong&gt;  Seriously folks, this can go in either direction.  This has basically become the &quot;Blue Dress&quot; of Aviation.SE.  You can&#x27;t easily tell if it&#x27;s taking off or landing from the picture.  Now, if someone else who was there that day could show up...maybe with weight and balance numbers...and some idea of how quickly Air Force One may have wanted to take off...maybe a grainy sound recording from the grassy knoll...and maybe a full video, verified by an independent panel of plane watches, the FAA, The Air Force, and the NTSB...  Then we&#x27;d know ;).&lt;/p&gt;
 
 &lt;p&gt;But as it stands, it simply isn&#x27;t possible to tell.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (290, 223, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (290, 223, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (290, 12, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 16, 11);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (291, 13, "&lt;p&gt;Measured directly on the image, the angle between the cheatline and the runway is 5.5°; the true pitch angle of the plane will be slightly less than that, because of a little perspective foreshortening.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 16, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (291, 76, '&lt;p&gt;Measured directly on the image, the angle between the cheatline and the runway is 5.5°; the true pitch angle of the plane will be slightly less than that, because of a little perspective foreshortening.&lt;/p&gt;
 
 &lt;p&gt;According to &lt;a href=&quot;http://www.boeing.com/commercial/aeromagazine/articles/qtr_02_09/pdfs/AERO_Q209_article04.pdf&quot;&gt;this document from Boeing&lt;/a&gt;, a typical liftoff attitude for a 747-400 is 10°. (The VC-25 in the picture is a modified 747-200, but none of the various aircraft in Boeing&#x27;s diagram show a liftoff attitude of less than 7°).&lt;/p&gt;
 
 &lt;p&gt;Furthermore, the recommended rotation rate is 2 to 3 degrees per second, so if this image shows a departure, we must be looking at a moment only about &lt;strong&gt;two seconds&lt;/strong&gt; after rotation was initiated.&lt;/p&gt;
 
 &lt;p&gt;Since the aircraft in the picture is definitely airborne (no matter which part of the picture is the runway, it is unmistakable that &lt;em&gt;none&lt;/em&gt; of the main gear bogies have all four wheels on the ground), I conclude that it cannot be a takeoff&amp;nbsp;&amp;ndash; at least not an ordinary uneventful one.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (291, 223, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (291, 223, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (291, 76, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 8, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (292, 3, "&lt;p&gt;Another way to possibly determine the answer to the question: check the photo&#x27;s exif data to see time photo taken, then google where potus was going that day which will determine if this was origin or destination. Google that day&#x27;s news for further clues on potus schedule and location, if necessary.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (292, 223, "False");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 8, 6);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (292, 10, '&lt;p&gt;Another way to possibly determine the answer to the question: check the photo&#x27;s exif data to see time photo taken, then google where potus was going that day which will determine if this was origin or destination. Google that day&#x27;s news for further clues on potus schedule and location, if necessary.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (292, 223, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (292, 10, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (293, 38, "&lt;p&gt;The absence of any smoke from the tires is reason #1 to suspect takeoff.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (293, 41, '&lt;p&gt;The absence of any smoke from the tires is reason #1 to suspect takeoff.&lt;/p&gt;
 
 &lt;p&gt;The flaps definitely aren&#x27;t fully extended, but they&#x27;re extended more than the minimum for takeoff.  This means that more analysis has to happen before taking the position of the flaps as definitive:&lt;/p&gt;
 
@@ -5382,11 +5674,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (293, 38, "&lt;p
 &lt;p&gt;Beyond that, the absence of spoilers isn&#x27;t definitive, they take some amount of time to extend upon touchdown. Likewise, reverse thrust deployment wouldn&#x27;t occur until the aircraft is definitely on the ground, so its absence in the photo doesn&#x27;t drive any conclusion either way.&lt;/p&gt;
 
 &lt;p&gt;My best thought is, it&#x27;s a takeoff.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (293, 223, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (293, 223, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (293, 41, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 9, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (294, 29, "&lt;p&gt;Why don&#x27;t we actually analyze videos of Air Force One landing and taking off instead of just analyzing the pictures?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 9, 6);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (294, 38, '&lt;p&gt;Why don&#x27;t we actually analyze videos of Air Force One landing and taking off instead of just analyzing the pictures?&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=csdWLWASfSQ&quot;&gt;Here&lt;/a&gt; is a video of it taking of at Boeing Field on 13R (the same runway, but opposite direction).&lt;/p&gt;
 
@@ -5414,22 +5707,24 @@ between A10 and A9 when it touches down.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Therefore, I conclude: the plane is landing with a faster-than-average approach speed and a less-than-average flap setting.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (294, 223, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (294, 223, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (294, 38, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 8, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (295, 60, "&lt;p&gt;Don&#x27;t be fooled by the black line which looks like that the plane is on the ground.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 8, 4);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (295, 39, '&lt;p&gt;Don&#x27;t be fooled by the black line which looks like that the plane is on the ground.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/TNe5W.jpg&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/TNe5W.jpg&quot; alt=&quot;Enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;The runway is marked with a white line, so the plane is still 3+ m in the air.&lt;/p&gt;
 
 &lt;p&gt;So I think it&#x27;s landing.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (295, 223, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (295, 223, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (295, 39, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", -6, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (296, 81, "&lt;p&gt;This is a picture of a takeoff:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', -6, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (296, 52, '&lt;p&gt;This is a picture of a takeoff:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/ujlnN.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/ujlnN.jpg&quot; alt=&quot;plane taking off&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -5451,11 +5746,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (296, 81, "&lt;p
 &lt;p&gt;(If my picture sources weren&#x27;t accurate and reliable sources of information, please let me know)&lt;/p&gt;
 
 &lt;p&gt;P.S. Just a tip, @JayCarr, you said &quot;The wheels would not be level if it were in the air&quot;. The wheels are not level. If you notice the angle of the white line on the runway, you&#x27;ll see that this picture was taken at a tilt. If you turned the image (or your head) a bit to the side, you would see some significant differences with what you stated in your answer. However, you could find something significant, as well. Good luck!&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (296, 223, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (296, 223, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (296, 52, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (297, 50, "&lt;p&gt;A few points why &#x27;aimable&#x27; cannons/turrets wouldn&#x27;t be feasible:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (297, 96, '&lt;p&gt;A few points why &#x27;aimable&#x27; cannons/turrets wouldn&#x27;t be feasible:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;In dogfight it is usually easiest just to fly the aircraft. &lt;/li&gt;
@@ -5463,11 +5759,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (297, 50, "&lt;p
 &lt;li&gt;&lt;em&gt;Helicopter-type turret&lt;/em&gt;: not very aerodynamic, would cause drag and break up easily by G-forces. Possibly difficult to aim at opponent in dogfight. Fuselage gets in the way while aiming. Precise firing would require a lot of reliable data on the target. Helicopters are (generally) often in level flight firing at slow moving ground targets.&lt;/li&gt;
 &lt;li&gt;Checking for friendlies in the target&#x27;s background gets harder when not firing forward and when not in level flight.&lt;/li&gt;
 &lt;/ul&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (297, 264, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (297, 264, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (297, 96, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 16, 11);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (298, 7, "&lt;p&gt;I was a light attack pilot in the 1980s and flew off the &lt;a href=&quot;https://en.wikipedia.org/wiki/USS_Nimitz&quot; rel=&quot;nofollow noreferrer&quot;&gt;USS Nimitz&lt;/a&gt;. I don&#x27;t want to give anyone the idea that air-to-air warfare is something that can be scripted. It is highly complex, like chess, constantly changing, where deception and trickery often win the engagement over technology and a high performance airframe.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 16, 5);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (298, 44, '&lt;p&gt;I was a light attack pilot in the 1980s and flew off the &lt;a href=&quot;https://en.wikipedia.org/wiki/USS_Nimitz&quot; rel=&quot;nofollow noreferrer&quot;&gt;USS Nimitz&lt;/a&gt;. I don&#x27;t want to give anyone the idea that air-to-air warfare is something that can be scripted. It is highly complex, like chess, constantly changing, where deception and trickery often win the engagement over technology and a high performance airframe.&lt;/p&gt;
 
 &lt;p&gt;Consider this: A light single prop aircraft, maybe something like the &lt;a href=&quot;https://en.wikipedia.org/wiki/Douglas_A-1_Skyraider&quot; rel=&quot;nofollow noreferrer&quot;&gt;Douglas A-1 Skyraider&lt;/a&gt;, can be a formidable threat when attacking a carrier with even a small bomb hung under the wing. It is slow with a tight turn radius, can fly very low, and has a very small heat signature. All these things can be used to its advantage.&lt;/p&gt;
 
@@ -5480,11 +5777,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (298, 7, "&lt;p&
 &lt;p&gt;Later in the mid-1980s things had changed and we were being taught the snapshot. Israeli experience showed that most dogfights quickly degrade in to &quot;furballs&quot; with many-to-many engagements. If you track a target for six seconds in such an engagement you will be dead. Essentially, there is always someone finding themselves at your 6 o&#x27;clock. So we were taught to attempt to position yourself outside the furball and blow through the fight without engaging any particular target too long, taking shots of opportunity. These shots typically had to be taken with large angles and lots of closure. Picture someone crossing your canopy from left to right in a high-g turn. You would use &quot;Kentucky windage&quot; and take your shot so the opposing aircraft ended up flying through the 20 mm cannon shells you fired at 6000 rounds per minute. So much for &quot;aiming.&quot;&lt;/p&gt;
 
 &lt;p&gt;One final comment. The &lt;a href=&quot;https://en.wikipedia.org/wiki/McDonnell_Douglas_F-4_Phantom_II&quot; rel=&quot;nofollow noreferrer&quot;&gt;F-4 Phantom&lt;/a&gt; was designed without an air-to-air cannon and carried only missiles. On the F-14&#x27;s, for example these weapons were close in missiles, e.g. the AIM-9, and longer range (over the horizon), e.g. the Phoenix and Sparrow missiles. There was no gun on the F-4, because prior to Vietnam it was thought that aerial dog fights were a thing of the past with the advancing technology. This of course turned out to be a mistake, and gun pods were mounted on F-4&#x27;s to give them a close-in capability, while at the same time sacrificing performance. The number of missiles carried on one aircraft are expended rapidly against a large number of targets, and then one is reduced to battling it out close-in.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (298, 264, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (298, 264, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (298, 44, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 74, 15);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (299, 22, "&lt;p&gt;They are fixed, and many attempts were made over the years to have an aiming capability - and all failed. That should tell you something.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 74, 32);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (299, 54, '&lt;p&gt;They are fixed, and many attempts were made over the years to have an aiming capability - and all failed. That should tell you something.&lt;/p&gt;
 
 &lt;p&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/Italo-Turkish_War&quot;&gt;earliest aereal combats&lt;/a&gt; used indeed handguns which were pointed at the adversary by the pilot. But it soon became obvious that only the rapid fire of a machine-gun will give the pilot a realistic chance of hitting a fast-moving target.&lt;/p&gt;
 
@@ -5513,185 +5811,322 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (299, 22, "&lt;p
 &lt;p&gt;&lt;sub&gt;Gun calibration on a jacked-up P-47 (picture &lt;a href=&quot;http://i53.photobucket.com/albums/g64/PoorOldSpike/Photos%20Three/P-47-gun-calibration.jpg~original&quot;&gt;source&lt;/a&gt;)&lt;/sub&gt;&lt;/p&gt;
 
 &lt;p&gt;Modern &lt;a href=&quot;https://theaviationist.com/tag/high-off-boresight/&quot;&gt;high-off-boresight missiles&lt;/a&gt; with helmet-mounted cueing (or &lt;a href=&quot;http://aviation.stackexchange.com/questions/25229/in-what-manner-was-the-vympel-r-73-aa-11-archer-a-game-changer-in-comparison-w/25234#25234&quot;&gt;sight-controlled missile targeting&lt;/a&gt;) have turned that longtime dream of shooting at what the pilot is looking into reality, and the gun is carried largely as a &lt;a href=&quot;http://aviation.stackexchange.com/questions/8686/why-do-fighter-jets-still-have-guns-cannons&quot;&gt;low-priority weapon of last resort&lt;/a&gt;. &lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (299, 264, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (299, 264, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (299, 54, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (300, 60, "&lt;p&gt;Fixed wing - No, Rotary Wing - yes.  As they have previously stated the guns are attached to the airframe.  They do have revolving barrels, lots of rounds (that they go through at a very fast rate) but everything is aimed by the pilot.  We are good, but not that good yet.  It will be interesting looking aircraft when we can do that though.  Interesting question.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (300, 96, '&lt;p&gt;Fixed wing - No, Rotary Wing - yes.  As they have previously stated the guns are attached to the airframe.  They do have revolving barrels, lots of rounds (that they go through at a very fast rate) but everything is aimed by the pilot.  We are good, but not that good yet.  It will be interesting looking aircraft when we can do that though.  Interesting question.&lt;/p&gt;
 
 &lt;p&gt;About the helmets in the F-15, 16, and 18.  That could be interesting as well.  However, currently in the helo community they are used to point say the M197 gun at the target.  I think in fixed wing, they may be used to point the aircraft.  &lt;/p&gt;
 
 &lt;p&gt;This still proves what has already been posted though.  There is no way to point the weapon system without pointing the aircraft for fixed wing.&lt;/p&gt;
-");
-INSERT INTO answer (post_id, question_id, accepted) VALUES (300, 264, "False");
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (300, 264, 'False');
+INSERT INTO activity (post_id, user_id, action) VALUES (300, 96, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (301, 81, "@pericynthion and the &amp;quot;previous passenger&amp;quot; was likely cabin crew, as they often sit in the very back row.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (301, 79, '@pericynthion and the &amp;quot;previous passenger&amp;quot; was likely cabin crew, as they often sit in the very back row.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (301, 272);
+INSERT INTO activity (post_id, user_id, action) VALUES (301, 79, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 4, 3);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (302, 75, "@JamesMundy From the ATC recordings I&amp;#39;ve heard of pilots working emergencies, I&amp;#39;d be significantly &lt;i&gt;calmed&lt;/i&gt; by being able to hear them. Pilots and ATC tend to be cool as a cucumber when things are going wrong and it&amp;#39;s quite impressive.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (302, 65, '@JamesMundy From the ATC recordings I&amp;#39;ve heard of pilots working emergencies, I&amp;#39;d be significantly &lt;i&gt;calmed&lt;/i&gt; by being able to hear them. Pilots and ATC tend to be cool as a cucumber when things are going wrong and it&amp;#39;s quite impressive.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (302, 272);
+INSERT INTO activity (post_id, user_id, action) VALUES (302, 65, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (303, 91, "Would Channel 9 be disabled in case of an emergency? To stop people panicking.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (303, 8, 'Would Channel 9 be disabled in case of an emergency? To stop people panicking.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (303, 272);
+INSERT INTO activity (post_id, user_id, action) VALUES (303, 8, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (304, 71, "I remember that back in the 70&amp;#39;s they had the United DC-10 &amp;quot;Friendship&amp;quot; and I could hear the pilots on channel 9.  We had engine problems and lost a lot of altitude and I heard them describing it all.  It was an odd feeling to look around and realize that none of the other passengers knew our pilot was freaking out until they got a restart.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (304, 54, 'I remember that back in the 70&amp;#39;s they had the United DC-10 &amp;quot;Friendship&amp;quot; and I could hear the pilots on channel 9.  We had engine problems and lost a lot of altitude and I heard them describing it all.  It was an odd feeling to look around and realize that none of the other passengers knew our pilot was freaking out until they got a restart.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (304, 272);
+INSERT INTO activity (post_id, user_id, action) VALUES (304, 54, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (305, 83, "@BoundaryImposition: &amp;quot;&lt;i&gt;nothing that you just said has anything to do with Stack Exchange policy&lt;/i&gt;&amp;quot;, really? Can you explain on the chat what you mean Tom?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (305, 82, '@BoundaryImposition: &amp;quot;&lt;i&gt;nothing that you just said has anything to do with Stack Exchange policy&lt;/i&gt;&amp;quot;, really? Can you explain on the chat what you mean Tom?');
 INSERT INTO answercomment (post_id, answer_id) VALUES (305, 271);
+INSERT INTO activity (post_id, user_id, action) VALUES (305, 82, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (306, 31, "@mins: I don&amp;#39;t know whether you meant to address your comment to somebody else, but nothing that you just said has anything to do with Stack Exchange policy.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (306, 89, '@mins: I don&amp;#39;t know whether you meant to address your comment to somebody else, but nothing that you just said has anything to do with Stack Exchange policy.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (306, 271);
+INSERT INTO activity (post_id, user_id, action) VALUES (306, 89, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (307, 44, "@DavidRicherby LOL, I was expecting this reply to my comment from someone here. Did not disappoint! Yeah, don&amp;#39;t read too much into the correctness in my poorly written analogy. It was there to just convey the point and I&amp;#39;m sure it did!");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (307, 74, '@DavidRicherby LOL, I was expecting this reply to my comment from someone here. Did not disappoint! Yeah, don&amp;#39;t read too much into the correctness in my poorly written analogy. It was there to just convey the point and I&amp;#39;m sure it did!');
 INSERT INTO answercomment (post_id, answer_id) VALUES (307, 272);
+INSERT INTO activity (post_id, user_id, action) VALUES (307, 74, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("deleted", 4, 2);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (308, 87, "@Di437 If your plane from New York to Beijing is anywhere near London, the pilot is &lt;a href=&quot;http://www.gcmap.com/mapui?P=jfk-PEK&quot; rel=&quot;nofollow noreferrer&quot;&gt;badly, badly lost&lt;/a&gt;.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (308, 77, '@Di437 If your plane from New York to Beijing is anywhere near London, the pilot is &lt;a href=&quot;http://www.gcmap.com/mapui?P=jfk-PEK&quot; rel=&quot;nofollow noreferrer&quot;&gt;badly, badly lost&lt;/a&gt;.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (308, 272);
+INSERT INTO activity (post_id, user_id, action) VALUES (308, 77, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (309, 65, "@BoundaryImposition: I don&amp;#39;t find a good match between this answer about radio and a situation where the passenger is connected to the wired audio system of the plane, for me it&amp;#39;s a bit remote, not mentioning the main elements not answered.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (309, 62, '@BoundaryImposition: I don&amp;#39;t find a good match between this answer about radio and a situation where the passenger is connected to the wired audio system of the plane, for me it&amp;#39;s a bit remote, not mentioning the main elements not answered.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (309, 271);
+INSERT INTO activity (post_id, user_id, action) VALUES (309, 62, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (310, 97, "@Di437 If you&amp;#39;re not a UK citizen, then you&amp;#39;re not bound by UK laws unless you&amp;#39;re in the UK. Being in UK airspace may make a slight difference, but in all practicality, you&amp;#39;ll be just fine. It also seem to be consensus that if you&amp;#39;re not the one with the radio equipment, you&amp;#39;re not breaking any laws. So if you&amp;#39;re on a flight such as this one, and it offers that &amp;quot;channel&amp;quot; over the entertainment system, you&amp;#39;re in violation of no laws.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (310, 63, '@Di437 If you&amp;#39;re not a UK citizen, then you&amp;#39;re not bound by UK laws unless you&amp;#39;re in the UK. Being in UK airspace may make a slight difference, but in all practicality, you&amp;#39;ll be just fine. It also seem to be consensus that if you&amp;#39;re not the one with the radio equipment, you&amp;#39;re not breaking any laws. So if you&amp;#39;re on a flight such as this one, and it offers that &amp;quot;channel&amp;quot; over the entertainment system, you&amp;#39;re in violation of no laws.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (310, 272);
+INSERT INTO activity (post_id, user_id, action) VALUES (310, 63, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (311, 33, "@Tim So, if a plane is flying from New York to Beijing over London, I can listen to conversations everywhere else, except London?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (311, 72, '@Tim So, if a plane is flying from New York to Beijing over London, I can listen to conversations everywhere else, except London?');
 INSERT INTO answercomment (post_id, answer_id) VALUES (311, 272);
+INSERT INTO activity (post_id, user_id, action) VALUES (311, 72, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (312, 90, "@Tim Well, you Euro&amp;#39;s and your crazy laws ;-P Although, it seems, simply listening to LiveATC (the website) is not a violation of the law. If you setup radio equipment in your home to do so, then you would be. IANAL. In the US, and other sane parts of the world, you can listen to freely, and clearly transmitted radio signals so long as you don&amp;#39;t broadcast without the appropriate license.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3, 2);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (312, 65, '@Tim Well, you Euro&amp;#39;s and your crazy laws ;-P Although, it seems, simply listening to LiveATC (the website) is not a violation of the law. If you setup radio equipment in your home to do so, then you would be. IANAL. In the US, and other sane parts of the world, you can listen to freely, and clearly transmitted radio signals so long as you don&amp;#39;t broadcast without the appropriate license.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (312, 272);
+INSERT INTO activity (post_id, user_id, action) VALUES (312, 65, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (313, 27, "@SnakeDoc except for in the UK, where the law still prevents me from listening in on it...");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (313, 85, '@SnakeDoc except for in the UK, where the law still prevents me from listening in on it...');
 INSERT INTO answercomment (post_id, answer_id) VALUES (313, 272);
+INSERT INTO activity (post_id, user_id, action) VALUES (313, 85, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 7, 5);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (314, 73, "@Di437 There&amp;#39;s no secrets in the communications between ATC and pilots. It&amp;#39;s all freely broadcast, and if you have the correct equipment, you can listen in too. A easy way to do so is using the free website LiveATC (&lt;a href=&quot;https://www.liveatc.net/&quot; rel=&quot;nofollow noreferrer&quot;&gt;liveatc.net&lt;/a&gt;). It&amp;#39;s quite neat if you&amp;#39;re curious, or into aviation as a hobby or profession.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 7, 6);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (314, 85, '@Di437 There&amp;#39;s no secrets in the communications between ATC and pilots. It&amp;#39;s all freely broadcast, and if you have the correct equipment, you can listen in too. A easy way to do so is using the free website LiveATC (&lt;a href=&quot;https://www.liveatc.net/&quot; rel=&quot;nofollow noreferrer&quot;&gt;liveatc.net&lt;/a&gt;). It&amp;#39;s quite neat if you&amp;#39;re curious, or into aviation as a hobby or profession.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (314, 272);
+INSERT INTO activity (post_id, user_id, action) VALUES (314, 85, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("deleted", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (315, 60, "Haha, it was my headphone jack and it&amp;#39;s a UA flight. What more can we expect?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (315, 86, 'Haha, it was my headphone jack and it&amp;#39;s a UA flight. What more can we expect?');
 INSERT INTO answercomment (post_id, answer_id) VALUES (315, 272);
+INSERT INTO activity (post_id, user_id, action) VALUES (315, 86, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 13, 8);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (316, 30, "@mins: No, it answers [a large part of] the question. Answers do not go in comments. Comments are for requesting clarification and critiquing, &lt;i&gt;nothing more&lt;/i&gt;.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 13, 9);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (316, 70, '@mins: No, it answers [a large part of] the question. Answers do not go in comments. Comments are for requesting clarification and critiquing, &lt;i&gt;nothing more&lt;/i&gt;.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (316, 271);
+INSERT INTO activity (post_id, user_id, action) VALUES (316, 70, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 34, 5);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (317, 52, "@mins it was an answer to at least part of the question, namely &amp;quot;Is it illegal to listen to this chatter?&amp;quot;");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 34, 31);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (317, 93, '@mins it was an answer to at least part of the question, namely &amp;quot;Is it illegal to listen to this chatter?&amp;quot;');
 INSERT INTO answercomment (post_id, answer_id) VALUES (317, 271);
+INSERT INTO activity (post_id, user_id, action) VALUES (317, 93, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (318, 16, "Welcome to the Aviation stack. That&amp;#39;s a good addition, but it should be a comment (you&amp;#39;ll be able to comment after posting a couple of questions/answers).");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (318, 78, 'Welcome to the Aviation stack. That&amp;#39;s a good addition, but it should be a comment (you&amp;#39;ll be able to comment after posting a couple of questions/answers).');
 INSERT INTO answercomment (post_id, answer_id) VALUES (318, 271);
+INSERT INTO activity (post_id, user_id, action) VALUES (318, 78, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 35, 5);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (319, 34, "And if you had to twist and hold the connector that just sounds like a bad connector.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 35, 12);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (319, 39, 'And if you had to twist and hold the connector that just sounds like a bad connector.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (319, 272);
+INSERT INTO activity (post_id, user_id, action) VALUES (319, 39, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 65, 22);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (320, 36, "It was left on channel 9 by the previous passenger.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 65, 13);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (320, 63, 'It was left on channel 9 by the previous passenger.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (320, 272);
+INSERT INTO activity (post_id, user_id, action) VALUES (320, 63, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (321, 64, "But, I did not switch to any channel at all, just plugged in my earphones and it worked! How&amp;#39;s that possible?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (321, 56, 'But, I did not switch to any channel at all, just plugged in my earphones and it worked! How&amp;#39;s that possible?');
 INSERT INTO answercomment (post_id, answer_id) VALUES (321, 272);
+INSERT INTO activity (post_id, user_id, action) VALUES (321, 56, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (322, 55, "@FreeMan ah, odd... &lt;a href=&quot;https://www.bloomberg.com/news/articles/2017-02-08/investigators-said-to-probe-plane-too-close-to-air-force-one&quot; rel=&quot;nofollow noreferrer&quot;&gt;Here&amp;#39;s a link to Bloomberg&lt;/a&gt;, hopefully it stays up.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (322, 79, '@FreeMan ah, odd... &lt;a href=&quot;https://www.bloomberg.com/news/articles/2017-02-08/investigators-said-to-probe-plane-too-close-to-air-force-one&quot; rel=&quot;nofollow noreferrer&quot;&gt;Here&amp;#39;s a link to Bloomberg&lt;/a&gt;, hopefully it stays up.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (322, 277);
+INSERT INTO activity (post_id, user_id, action) VALUES (322, 79, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (323, 49, "@BruceWayne - can you check that link, please. At the moment, at least, the domain isn&amp;#39;t found.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (323, 4, '@BruceWayne - can you check that link, please. At the moment, at least, the domain isn&amp;#39;t found.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (323, 277);
+INSERT INTO activity (post_id, user_id, action) VALUES (323, 4, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (324, 35, "@digitgopher I&amp;#39;m not sure about the specific rules, but most of the times I&amp;#39;ve seen where Air Force One was moving on the field, all other movement was stopped, even at major international airports.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (324, 20, '@digitgopher I&amp;#39;m not sure about the specific rules, but most of the times I&amp;#39;ve seen where Air Force One was moving on the field, all other movement was stopped, even at major international airports.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (324, 277);
+INSERT INTO activity (post_id, user_id, action) VALUES (324, 20, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (325, 27, "@Alexander the President is the Secret Service&amp;#39;s boss. He tells THEM what to do, not the other way around. They will strongly recommend that he doesn&amp;#39;t fly any jet besides AF1, but he has the final word");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (325, 49, '@Alexander the President is the Secret Service&amp;#39;s boss. He tells THEM what to do, not the other way around. They will strongly recommend that he doesn&amp;#39;t fly any jet besides AF1, but he has the final word');
 INSERT INTO answercomment (post_id, answer_id) VALUES (325, 277);
+INSERT INTO activity (post_id, user_id, action) VALUES (325, 49, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (326, 4, "@DavidRicherby I might note that volume at FedEx is down this month. Typical for February.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (326, 93, '@DavidRicherby I might note that volume at FedEx is down this month. Typical for February.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (326, 276);
+INSERT INTO activity (post_id, user_id, action) VALUES (326, 93, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (327, 86, "@DavidRicherby Out of curiosity I got creative and made a little table from a random sample. Took a while, so I appended it onto the answer");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (327, 66, '@DavidRicherby Out of curiosity I got creative and made a little table from a random sample. Took a while, so I appended it onto the answer');
 INSERT INTO answercomment (post_id, answer_id) VALUES (327, 276);
+INSERT INTO activity (post_id, user_id, action) VALUES (327, 66, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 5, 2);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (328, 88, "@digitgopher do you think when AF1 flies, they let other planes get close enough to be in its wake? As for what ensures no other aircraft gets close, I&amp;#39;m sure the Air Force fighter jets that fly with it provide a good enough deterrent :P  Edit: &lt;a href=&quot;https://www.aviationcv.com/aviation-blog/2017/plane-got-too-close-to-air-force-one&quot; rel=&quot;nofollow noreferrer&quot;&gt;Here&amp;#39;s an article&lt;/a&gt; mentioning the FAA is investigating a plane that came within 3 nautical miles of AF1 this month.");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (328, 16, '@digitgopher do you think when AF1 flies, they let other planes get close enough to be in its wake? As for what ensures no other aircraft gets close, I&amp;#39;m sure the Air Force fighter jets that fly with it provide a good enough deterrent :P  Edit: &lt;a href=&quot;https://www.aviationcv.com/aviation-blog/2017/plane-got-too-close-to-air-force-one&quot; rel=&quot;nofollow noreferrer&quot;&gt;Here&amp;#39;s an article&lt;/a&gt; mentioning the FAA is investigating a plane that came within 3 nautical miles of AF1 this month.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (328, 277);
+INSERT INTO activity (post_id, user_id, action) VALUES (328, 16, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (329, 73, "@reirab I&amp;#39;m unaware of any special separation rules for Air Force One. What ensures no other aircraft will be close enough for wake turbulence to be a factor?");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (329, 74, '@reirab I&amp;#39;m unaware of any special separation rules for Air Force One. What ensures no other aircraft will be close enough for wake turbulence to be a factor?');
 INSERT INTO answercomment (post_id, answer_id) VALUES (329, 277);
+INSERT INTO activity (post_id, user_id, action) VALUES (329, 74, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ("published", 3, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (330, 63, "@digitgopher It means what it sounds like - no other aircraft will be allowed to follow closely enough to Air Force One for its wake turbulence to be a concern (at least not in the U.S., anyway.)");
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 3, 2);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (330, 33, '@digitgopher It means what it sounds like - no other aircraft will be allowed to follow closely enough to Air Force One for its wake turbulence to be a concern (at least not in the U.S., anyway.)');
 INSERT INTO answercomment (post_id, answer_id) VALUES (330, 277);
+INSERT INTO activity (post_id, user_id, action) VALUES (330, 33, 'Create');
 
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (80, 71, "i do not like this post one bit", "not the first time this user has done it", "other");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (33, 62, "this post is off-topic", "i do not think this kind of post belongs here", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (288, 12, "this post is offensive", "this is really poor taste", "off-topic");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (272, 63, "this post is off-topic", "i do not think this kind of post belongs here", "other");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (213, 63, "i do not like this post one bit", "i do not think this kind of post belongs here", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (268, 17, "this post is offensive", "i do not think this kind of post belongs here", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (86, 62, "i do not like this post one bit", "not the first time this user has done it", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (272, 98, "this post is offensive", "this is really poor taste", "off-topic");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (284, 17, "this post is off-topic", "not the first time this user has done it", "other");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (213, 1, "this post is off-topic", "this is really poor taste", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (16, 12, "this post is off-topic", "not the first time this user has done it", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (49, 74, "this post is off-topic", "i do not think this kind of post belongs here", "other");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (222, 48, "this post is offensive", "this is really poor taste", "other");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (31, 52, "this post is off-topic", "i do not think this kind of post belongs here", "other");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (196, 30, "this post is offensive", "this is really poor taste", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (158, 20, "this post is off-topic", "this is really poor taste", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (246, 59, "this post is offensive", "this is really poor taste", "other");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (34, 67, "i do not like this post one bit", "i do not think this kind of post belongs here", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (234, 18, "this post is offensive", "not the first time this user has done it", "off-topic");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (237, 85, "test report", "this is really poor taste", "off-topic");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (67, 49, "i do not like this post one bit", "not the first time this user has done it", "off-topic");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (148, 69, "this post is off-topic", "i do not think this kind of post belongs here", "off-topic");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (174, 26, "this post is offensive", "i do not think this kind of post belongs here", "other");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (16, 38, "test report", "this is really poor taste", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (151, 98, "i do not like this post one bit", "i do not think this kind of post belongs here", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (144, 76, "this post is offensive", "i do not think this kind of post belongs here", "other");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (209, 61, "test report", "this is really poor taste", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (162, 32, "test report", "this is really poor taste", "other");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (168, 54, "this post is off-topic", "this is really poor taste", "off-topic");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (33, 66, "this post is offensive", "i do not think this kind of post belongs here", "other");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (188, 91, "test report", "not the first time this user has done it", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (213, 63, "this post is off-topic", "not the first time this user has done it", "off-topic");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (266, 47, "test report", "this is really poor taste", "other");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (293, 9, "test report", "this is really poor taste", "other");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (169, 51, "this post is offensive", "i do not think this kind of post belongs here", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (86, 81, "i do not like this post one bit", "i do not think this kind of post belongs here", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (35, 59, "this post is offensive", "i do not think this kind of post belongs here", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (109, 74, "this post is off-topic", "this is really poor taste", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (159, 38, "test report", "not the first time this user has done it", "off-topic");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (86, 29, "this post is offensive", "i do not think this kind of post belongs here", "other");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (22, 51, "this post is off-topic", "this is really poor taste", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (93, 79, "i do not like this post one bit", "this is really poor taste", "other");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (163, 97, "this post is offensive", "i do not think this kind of post belongs here", "other");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (2, 92, "i do not like this post one bit", "this is really poor taste", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (265, 88, "test report", "this is really poor taste", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (63, 2, "test report", "not the first time this user has done it", "off-topic");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (248, 50, "test report", "not the first time this user has done it", "other");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (111, 3, "this post is offensive", "not the first time this user has done it", "offensive");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (301, 98, "test report", "i do not think this kind of post belongs here", "other");
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (2, 13, "test report", "this is really poor taste", "off-topic");
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (297, 58, 'this post is offensive', 'not the first time this user has done it', 'offensive');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (159, 66, 'test report', 'this is really poor taste', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (296, 92, 'test report', 'not the first time this user has done it', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (130, 36, 'this post is offensive', 'this is really poor taste', 'offensive');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (113, 59, 'this post is offensive', 'i do not think this kind of post belongs here', 'other');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (42, 31, 'i do not like this post one bit', 'not the first time this user has done it', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (204, 85, 'this post is off-topic', 'this is really poor taste', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (322, 75, 'this post is off-topic', 'this is really poor taste', 'offensive');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (113, 61, 'i do not like this post one bit', 'i do not think this kind of post belongs here', 'other');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (71, 44, 'this post is offensive', 'i do not think this kind of post belongs here', 'offensive');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (209, 17, 'this post is off-topic', 'not the first time this user has done it', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (105, 48, 'test report', 'i do not think this kind of post belongs here', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (282, 9, 'test report', 'not the first time this user has done it', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (120, 13, 'this post is offensive', 'not the first time this user has done it', 'offensive');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (67, 51, 'this post is off-topic', 'this is really poor taste', 'other');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (118, 97, 'this post is offensive', 'this is really poor taste', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (295, 81, 'this post is offensive', 'not the first time this user has done it', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (99, 12, 'this post is off-topic', 'i do not think this kind of post belongs here', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (235, 56, 'this post is offensive', 'not the first time this user has done it', 'offensive');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (18, 45, 'this post is off-topic', 'not the first time this user has done it', 'offensive');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (237, 72, 'this post is offensive', 'not the first time this user has done it', 'offensive');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (157, 63, 'test report', 'this is really poor taste', 'other');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (41, 46, 'i do not like this post one bit', 'i do not think this kind of post belongs here', 'other');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (74, 46, 'this post is off-topic', 'not the first time this user has done it', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (13, 20, 'test report', 'this is really poor taste', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (287, 60, 'this post is offensive', 'this is really poor taste', 'offensive');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (85, 97, 'this post is offensive', 'not the first time this user has done it', 'other');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (60, 76, 'this post is off-topic', 'not the first time this user has done it', 'other');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (288, 0, 'i do not like this post one bit', 'not the first time this user has done it', 'other');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (278, 85, 'this post is offensive', 'not the first time this user has done it', 'other');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (72, 55, 'this post is off-topic', 'this is really poor taste', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (9, 10, 'this post is offensive', 'this is really poor taste', 'offensive');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (326, 98, 'i do not like this post one bit', 'not the first time this user has done it', 'other');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (3, 41, 'i do not like this post one bit', 'i do not think this kind of post belongs here', 'offensive');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (121, 29, 'test report', 'not the first time this user has done it', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (298, 39, 'this post is off-topic', 'not the first time this user has done it', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (309, 84, 'this post is off-topic', 'i do not think this kind of post belongs here', 'offensive');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (205, 49, 'this post is off-topic', 'not the first time this user has done it', 'other');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (84, 50, 'this post is off-topic', 'this is really poor taste', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (320, 13, 'i do not like this post one bit', 'not the first time this user has done it', 'offensive');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (79, 79, 'this post is off-topic', 'this is really poor taste', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (117, 61, 'i do not like this post one bit', 'i do not think this kind of post belongs here', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (282, 81, 'this post is offensive', 'this is really poor taste', 'other');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (109, 75, 'this post is off-topic', 'i do not think this kind of post belongs here', 'other');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (256, 81, 'this post is offensive', 'this is really poor taste', 'offensive');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (289, 70, 'this post is offensive', 'not the first time this user has done it', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (257, 39, 'test report', 'this is really poor taste', 'offensive');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (323, 49, 'this post is off-topic', 'not the first time this user has done it', 'offensive');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (318, 45, 'test report', 'i do not think this kind of post belongs here', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (95, 72, 'this post is off-topic', 'not the first time this user has done it', 'off-topic');
+
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (1, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (2, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (3, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (4, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (5, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (6, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (7, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (8, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (9, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (10, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (11, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (12, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (13, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (14, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (15, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (16, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (17, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (18, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (19, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (20, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (21, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (22, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (23, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (24, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (25, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (26, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (27, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (28, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (29, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (30, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (31, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (32, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (33, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (34, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (35, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (36, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (37, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (38, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (39, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (40, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (41, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (42, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (43, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (44, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (45, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (46, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (47, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (48, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (49, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (50, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (51, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (52, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (53, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (54, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (55, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (56, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (57, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (58, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (59, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (60, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (61, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (62, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (63, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (64, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (65, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (66, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (67, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (68, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (69, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (70, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (71, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (72, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (73, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (74, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (75, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (76, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (77, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (78, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (79, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (80, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (81, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (82, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (83, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (84, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (85, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (86, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (87, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (88, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (89, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (90, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (91, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (92, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (93, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (94, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (95, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (96, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (97, 0);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (98, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (99, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (100, 2);
+
+INSERT INTO topicuseracc (mod_id, topic_id) VALUES (2, 1);
+INSERT INTO topicuseracc (mod_id, topic_id) VALUES (4, 2);
+INSERT INTO topicuseracc (mod_id, topic_id) VALUES (5, 3);
