@@ -4,10 +4,13 @@ import requests
 import random
 import html
 
-USERS_NUMBER = 5
-QUESTION_NUMBER = 1
-REPORT_NUMBER = 5
+USERS_NUMBER = 50
+QUESTION_NUMBER = 30
+REPORT_NUMBER = 10
 
+ADMIN_PERCENTAGE = 0.01
+MOD_PERCENTAGE = 0.05
+DELETED_PERCENTAGE = 0.02
     
 COUNTRIES = [
     "portugal",
@@ -25,9 +28,6 @@ BADGES = [
 ]
 
 USERS_URL = "https://randomuser.me/api/?results=" + str(USERS_NUMBER)
-
-ADMIN_PERCENTAGE = 0.01
-MOD_PERCENTAGE = 0.05
 
 USER_TYPES = [
     "Registered",
@@ -48,9 +48,9 @@ TOPIC_DESCRIPTIONS = [
 ]
 
 TOPIC_QUESTION_URLS = [
-    "https://api.stackexchange.com/2.2/questions?pagesize=" + str(QUESTION_NUMBER) + "&order=desc&sort=votes&site=stackoverflow&filter=withbody",
-    "https://api.stackexchange.com/2.2/questions?pagesize=" + str(QUESTION_NUMBER) + "&order=desc&sort=votes&site=math&filter=withbody",
-    "https://api.stackexchange.com/2.2/questions?pagesize=" + str(QUESTION_NUMBER) + "&order=desc&sort=votes&site=aviation&filter=withbody",
+    "https://api.stackexchange.com/2.2/questions?pagesize=" + str(QUESTION_NUMBER) + "&order=desc&sort=activity&site=stackoverflow&filter=withbody",
+    "https://api.stackexchange.com/2.2/questions?pagesize=" + str(QUESTION_NUMBER) + "&order=desc&sort=activity&site=math&filter=withbody",
+    "https://api.stackexchange.com/2.2/questions?pagesize=" + str(QUESTION_NUMBER) + "&order=desc&sort=activity&site=aviation&filter=withbody",
 ]
 
 TOPIC_ANSWER_URLS = [
@@ -82,8 +82,6 @@ TOPIC_COMMENT_URLS = [
         "/comments?order=desc&sort=creation&site=aviation&filter=withbody",
     ],
 ]
-
-DELETED_PERCENTAGE = 0.05
 
 POST_STATES = [
     "Editing",
@@ -199,7 +197,10 @@ def get_comment_list(topic_index, answer_ids):
 
     r = requests.get(url)
     comment_list = []
-    for comment in r.json()["items"]:
+    comments = r.json().get("items", None)
+    if comments is None:
+        return comment_list
+    for comment in comments:
         comment_list.append([
             comment["score"],
             random.randrange(max(comment["score"], 1)),
@@ -353,4 +354,3 @@ for i in range(0, len(TOPICS)):
     topic_id = str(i + 1)
 
     out.write("INSERT INTO topicuseracc (mod_id, topic_id) VALUES (" + mod_id + ", " + topic_id + ");\n");
-                
