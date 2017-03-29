@@ -4,9 +4,13 @@ import requests
 import random
 import html
 
-USERS_NUMBER = 50
-QUESTION_NUMBER = 30
-REPORT_NUMBER = 10
+if len(sys.argv) != 5:
+    print("Usage: python inserts.py <output_file> <users_num> <questions_num> <reports_num>")
+    sys.exit()
+
+USERS_NUMBER = int(sys.argv[2])
+QUESTION_NUMBER = int(sys.argv[3])
+REPORT_NUMBER = int(sys.argv[4])
 
 ADMIN_PERCENTAGE = 0.01
 MOD_PERCENTAGE = 0.05
@@ -272,7 +276,7 @@ for topic in range(0, len(TOPICS)):
         out.write("INSERT INTO question (post_id, topic_id, title) VALUES (" + str(db_post_id) + ", " + topic_id + ", \'" + title + "\');\n")
 
         out.write("INSERT INTO activity (post_id, user_id, action) VALUES (" + str(db_post_id) + ", " + user_id + ", \'" + ACTIONS[0] + "\');\n")
-        
+
         for tag in tags:
             current_tag_id = tag_ids_map.get(tag, None)
             if current_tag_id is None:
@@ -306,7 +310,7 @@ for topic in range(0, len(TOPICS)):
         out.write("INSERT INTO postinstance (post_id, user_id, description) VALUES (" + str(db_post_id) + ", " + user_id + ", \'" + description + "\');\n")
         out.write("INSERT INTO answer (post_id, question_id, accepted) VALUES (" + str(db_post_id) + ", " + db_question_id + ", \'" + accepted + "\');\n")
 
-        out.write("INSERT INTO activity (post_id, user_id, action) VALUES (" + str(db_post_id) + ", " + user_id + ", \'" + ACTIONS[0] + "\');\n")
+        out.write("INSERT INTO activity ( post_id, user_id, action) VALUES (" + str(db_post_id) + ", " + user_id + ", \'" + ACTIONS[0] + "\');\n")
 
         stack_exchange_answer_ids.append(stack_exchange_answer_id)
         db_answer_ids_map[stack_exchange_answer_id] = db_post_id
@@ -333,8 +337,8 @@ for topic in range(0, len(TOPICS)):
 
         
 for i in range(0, REPORT_NUMBER):
-    post_id = str(random.randrange(db_post_id))
-    user_id = str(random.randrange(USERS_NUMBER))
+    post_id = str(random.randrange(db_post_id) + 1)
+    user_id = str(random.randrange(USERS_NUMBER) + 1)
     title = REPORT_TITLES[random.randrange(len(REPORT_TITLES))]
     content = REPORT_CONTENTS[random.randrange(len(REPORT_CONTENTS))]
     reason = REPORT_REASONS[random.randrange(len(REPORT_REASONS))]
@@ -342,12 +346,14 @@ for i in range(0, REPORT_NUMBER):
     out.write("INSERT INTO report (post_id, user_id, title, content, reason) VALUES (" + post_id + ", " + user_id + ", \'" + title + "\', \'" + content + "\', \'" + reason + "\');\n");
 out.write("\n")
     
+
 for i in range(0, USERS_NUMBER):
     user_id = str(i + 1)
     badge_id = str(random.randrange(len(BADGES)) + 1)
 
     out.write("INSERT INTO useraccbadge (user_id, badge_id) VALUES (" + user_id + ", " + badge_id + ");\n");
 out.write("\n")
+
 
 for i in range(0, len(TOPICS)):
     mod_id = str(mods[random.randrange(len(mods))])
