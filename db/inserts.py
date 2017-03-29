@@ -4,6 +4,10 @@ import requests
 import random
 import html
 
+USERS_NUMBER = 5
+QUESTION_NUMBER = 1
+REPORT_NUMBER = 5
+
     
 COUNTRIES = [
     "portugal",
@@ -20,7 +24,6 @@ BADGES = [
     "expert",
 ]
 
-USERS_NUMBER = 100
 USERS_URL = "https://randomuser.me/api/?results=" + str(USERS_NUMBER)
 
 ADMIN_PERCENTAGE = 0.01
@@ -45,9 +48,9 @@ TOPIC_DESCRIPTIONS = [
 ]
 
 TOPIC_QUESTION_URLS = [
-    "https://api.stackexchange.com/2.2/questions?pagesize=50&order=desc&sort=votes&site=stackoverflow&filter=withbody",
-    "https://api.stackexchange.com/2.2/questions?pagesize=50&order=desc&sort=votes&site=math&filter=withbody",
-    "https://api.stackexchange.com/2.2/questions?pagesize=50&order=desc&sort=votes&site=aviation&filter=withbody",
+    "https://api.stackexchange.com/2.2/questions?pagesize=" + str(QUESTION_NUMBER) + "&order=desc&sort=votes&site=stackoverflow&filter=withbody",
+    "https://api.stackexchange.com/2.2/questions?pagesize=" + str(QUESTION_NUMBER) + "&order=desc&sort=votes&site=math&filter=withbody",
+    "https://api.stackexchange.com/2.2/questions?pagesize=" + str(QUESTION_NUMBER) + "&order=desc&sort=votes&site=aviation&filter=withbody",
 ]
 
 TOPIC_ANSWER_URLS = [
@@ -80,7 +83,6 @@ TOPIC_COMMENT_URLS = [
     ],
 ]
 
-NUM_QUESTIONS = 50
 DELETED_PERCENTAGE = 0.05
 
 POST_STATES = [
@@ -88,8 +90,6 @@ POST_STATES = [
     "Published",
     "Deleted",
 ]
-
-NUM_REPORTS = 50
 
 REPORT_TITLES = [
     "this post is offensive",
@@ -139,7 +139,7 @@ def get_user_list():
             user["name"]["first"],            
             user["name"]["last"],             
             user["dob"],                      
-            random.randrange(len(COUNTRIES)),
+            random.randrange(len(COUNTRIES)) + 1,
         ])
     return user_list
 
@@ -150,7 +150,7 @@ def get_question_list(topic_index):
         question_list.append([
             question["score"],                           
             random.randrange(max(question["score"], 1)),
-            random.randrange(USERS_NUMBER),      
+            random.randrange(USERS_NUMBER) + 1,      
             html.escape(question["body"]),       
             (topic_index + 1),                   
             question["title"],                   
@@ -180,7 +180,7 @@ def get_answer_list(topic_index, question_ids):
         answer_list.append([
             answer["score"],
             random.randrange(max(answer["score"], 1)),
-            random.randrange(USERS_NUMBER),
+            random.randrange(USERS_NUMBER) + 1,
             html.escape(answer["body"]),
             answer["is_accepted"],
             answer["question_id"],
@@ -203,7 +203,7 @@ def get_comment_list(topic_index, answer_ids):
         comment_list.append([
             comment["score"],
             random.randrange(max(comment["score"], 1)),
-            random.randrange(USERS_NUMBER),
+            random.randrange(USERS_NUMBER) + 1,
             html.escape(comment["body"]),
             comment["post_id"],
         ])
@@ -228,8 +228,10 @@ mods = []
 for i, user in enumerate(users):
     type = 0
     if i == 0:
+        mods.append(i + 1)
         type = 2
     if i != 0 and i < len(users) * ADMIN_PERCENTAGE:
+        mods.append(i + 1)
         type = 2
     elif i != 0 and i < len(users) * MOD_PERCENTAGE:
         mods.append(i + 1)
@@ -239,7 +241,7 @@ out.write("\n")
 
 
 for i, topic in enumerate(TOPICS):
-    out.write("INSERT INTO topic (admin_id, topicname, description) VALUES (0, \'" + TOPICS[i] + "\', \'" + TOPIC_DESCRIPTIONS[i] + "\');\n");
+    out.write("INSERT INTO topic (admin_id, topicname, description) VALUES (1, \'" + TOPICS[i] + "\', \'" + TOPIC_DESCRIPTIONS[i] + "\');\n");
 out.write("\n")
 
 
@@ -329,7 +331,7 @@ for topic in range(0, len(TOPICS)):
         out.write("\n")
 
         
-for i in range(0, NUM_REPORTS):
+for i in range(0, REPORT_NUMBER):
     post_id = str(random.randrange(db_post_id))
     user_id = str(random.randrange(USERS_NUMBER))
     title = REPORT_TITLES[random.randrange(len(REPORT_TITLES))]
@@ -341,7 +343,7 @@ out.write("\n")
     
 for i in range(0, USERS_NUMBER):
     user_id = str(i + 1)
-    badge_id = str(random.randrange(len(BADGES)))
+    badge_id = str(random.randrange(len(BADGES)) + 1)
 
     out.write("INSERT INTO useraccbadge (user_id, badge_id) VALUES (" + user_id + ", " + badge_id + ");\n");
 out.write("\n")
