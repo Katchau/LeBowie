@@ -5,3327 +5,3224 @@ INSERT INTO country (name) VALUES ('england');
 INSERT INTO country (name) VALUES ('italy');
 INSERT INTO country (name) VALUES ('united states of america');
 
-INSERT INTO badge (color, text) VALUES ('#8eaf4e', 'novice');
-INSERT INTO badge (color, text) VALUES ('#eb3ec4', 'enthusiast');
-INSERT INTO badge (color, text) VALUES ('#07e1f0', 'expert');
+INSERT INTO badge (color, text) VALUES ('#a137b4', 'novice');
+INSERT INTO badge (color, text) VALUES ('#f49ab0', 'enthusiast');
+INSERT INTO badge (color, text) VALUES ('#3db764', 'expert');
 
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('whiteleopard316', 'dikra.voesten@example.com', '151ce63131ff838d64b8b4e301665f43a3de11a264a4bd22ccbcc7c3e8171b30', 'MIfp5PUc', 'dikra', 'voesten', '1967-12-27 16:20:14', 4, 'Administrator');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('biggoose926', 'بهاره.حیدری@example.com', '3bb171be4a6f3c5db722ca7da13736adffbb5b5514504091edcc3efb20f0ae5b', 'yvB1uL8g', 'بهاره', 'حیدری', '1947-12-24 14:50:30', 6, 'Moderator');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('browncat545', 'emilie.taylor@example.com', '13deecf0afd86f227d42505fa30277cc54919aab4e8030e496004afcd439d9b6', 'XpWSca8s', 'emilie', 'taylor', '1962-05-26 19:55:42', 2, 'Moderator');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('heavycat978', 'soham.black@example.com', '88fdb4519897ddf3ad8dbcf2ffb5a6250c2fb0510972dc57ca2f57877b421702', 'dE299unj', 'soham', 'black', '1984-02-11 02:20:59', 5, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('organicsnake562', 'leevi.erkkila@example.com', '218cd021c1bf988148919e662a50c65114ede021f293424bdeb9ab4cef8f462a', 'OYgSMBz2', 'leevi', 'erkkila', '1973-07-28 01:48:50', 2, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('lazyostrich303', 'melih.rijpstra@example.com', '8f8ba7ca03d7ea571f89b1de4a82ecb2e83e82bae8157389e44ee38fc46f65cd', 'sL6iKllY', 'melih', 'rijpstra', '1955-11-26 11:10:52', 6, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('tinypanda776', 'نیایش.حسینی@example.com', '34a7b2eac7d7045a459780fee6c5285847210677fa4d2101c4718e2142ca92f5', 'I28ROWTC', 'نیایش', 'حسینی', '1988-04-06 12:09:53', 4, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('silverpeacock716', 'jimmie.rhodes@example.com', 'e77ac15d94cda2b2990a897746580ab35daa953740729fc2547567113cf31eeb', 'IODLUp8Z', 'jimmie', 'rhodes', '1947-11-19 11:13:18', 5, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('blueelephant566', 'landon.newman@example.com', 'fc67c0d5cb2fd77e2bb1d367dd19e6acbddca4f354397f7c9d84c81ec8b173c1', 'J63tUNVM', 'landon', 'newman', '1974-01-18 05:36:38', 6, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('blackkoala283', 'megan.singh@example.com', '605b0b70c58c19b71071821ce5541c446a720ddb17787dec51d47cc3784d8e7e', 'BeLMfTS7', 'megan', 'singh', '1984-09-25 07:14:27', 5, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bigcat151', 'elya.dubois@example.com', 'f6842c0cb26246b31a73738ad5d6f89a61337389c345714bcc4787a1aad2753e', 'oyB4xWhW', 'elya', 'dubois', '1955-11-04 23:08:12', 4, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bluemouse726', 'milagros.garrido@example.com', '869df1ecad854d6cb04a91f3b232626d220113c3d8dadb70c736670b4b63ed6d', 'E4fEH0b6', 'milagros', 'garrido', '1964-08-23 16:36:10', 4, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('whiteostrich638', 'miro.justi@example.com', '7bfb5a8a4540560197424403a0e1e74f9912fe063b006eaec2a9b116ddfa1b88', 'VBrN9Zgj', 'miro', 'justi', '1978-07-28 04:51:10', 4, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bigpeacock704', 'nathaniel.taylor@example.com', '3e36baae28376674f4d5472e66838a94fefc44eaddef2a293b72a99a4b36a5bb', '2WtpEgdz', 'nathaniel', 'taylor', '1983-08-17 21:45:48', 1, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('ticklishfrog959', 'vildan.aydan@example.com', '6ae904146bc41f183050b4829f3d7f7f08ba1510e3a04c6935f1b00778374e1e', '3UpBBChr', 'vildan', 'aydan', '1982-12-23 01:41:21', 3, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('blackbird341', 'raymond.hill@example.com', 'c2eae2abf606a395cad6dfec03f7c99089dc821b072bcc6f9b43e328890c4949', 'ljR6LRjw', 'raymond', 'hill', '1958-03-28 07:08:43', 2, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bluewolf733', 'sophie.williams@example.com', '2374c66d298552e2ffb5beb1dd550263272e63ac8f1475b84fdcaef836c82f21', '3kUqtz3u', 'sophie', 'williams', '1946-04-18 22:31:09', 4, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('blackpanda550', 'ivanoel.moura@example.com', 'b773890e576865b4dbac72b785194e7456e8b4201ac4a2cb2f778a0b2c38309f', 'bpvy1TQ6', 'ivanoel', 'moura', '1954-07-12 20:15:50', 1, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('ticklishrabbit328', 'lenny.roy@example.com', '896bb1cef5931b4da35a88f67a6d119ecbc724deafb6ee6913b56dd5eda0b281', '4OprPbKt', 'lenny', 'roy', '1983-03-23 10:37:36', 5, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('tinygorilla492', 'jakob.vogel@example.com', '44d29ad4a356339423a5a2351f4393f58c97cb7f8eb99d45b82cbefd5cd5f09b', 'Cck3md1G', 'jakob', 'vogel', '1981-11-18 20:42:11', 3, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('tinyfrog251', 'zoe.wilson@example.com', '2f83b33cd586216534c77ec696e2267cb5fca320f51f9dbe475adbc33acec8d3', 'JXTHzTT0', 'zoe', 'wilson', '1962-04-08 12:35:57', 2, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('silverleopard742', 'aino.salmi@example.com', '048debb3e89f519e51ad7f67b5d4b554d403b7f3b3dd91c16f6573f35d3ff00e', 'lp9juq3w', 'aino', 'salmi', '1973-12-08 15:24:32', 2, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('smalllion357', 'julio.reyes@example.com', '88ed03c8eaf60306c61c14ae9684b38133599814b67c67f0342f57c7ff13e677', 'xTWG5F1P', 'julio', 'reyes', '1953-01-20 05:13:03', 4, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('yellowostrich394', 'ezio.garnier@example.com', '881686fd651926026e05886dcb32a54a457f799ba1769728f0bd067ffd1de19b', 'Jsqv6als', 'ezio', 'garnier', '1956-06-08 23:49:33', 3, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('brownbird520', 'luca.wood@example.com', '140d994f9fbc4ec7176e6aa08df08b8caf6d42ab344dd1b07f79557b51ff705d', '9USSRMgP', 'luca', 'wood', '1991-03-13 15:39:27', 4, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('yellowswan925', 'kasper.oja@example.com', '725d448c9ba690d387854a1c12ba83576a827208ccfc7e8475dadbbf89fbc113', 'gLZMORKB', 'kasper', 'oja', '1974-03-06 22:46:11', 3, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('tinybear775', 'custódia.jesus@example.com', '5e99c0d8db884da7ea07827a22f1871609de7f50ff0d60dcbe2d2beb3a4c81ec', 'DcaEfn0g', 'custódia', 'jesus', '1970-02-20 11:45:57', 5, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('orangerabbit204', 'charlotte.lynch@example.com', '81ac7b47a183ef41bdaad3de48b815a2c4319b7e6d20918e64e63b773a8ad4bc', 'gaC4Jv8i', 'charlotte', 'lynch', '1961-03-18 02:36:41', 1, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('heavydog611', 'zoe.liu@example.com', 'eb771c83f792e2e582449116c7d6eecec5fdfb0a6a9ee67fd765ac9e72fe7e00', 'S7lUzeD5', 'zoe', 'liu', '1966-03-29 05:35:52', 1, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('yellowdog242', 'aubrey.miller@example.com', 'b4c812e7b4550f8162405dadd664a33dc4e52d4e03ff9334ff4d55d8580c17d5', 'gVK6g9Hc', 'aubrey', 'miller', '1965-04-08 17:37:13', 1, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('beautifulgorilla538', 'nadir.martins@example.com', '1211a671484eecf0b9044ec665d9b0732503d538319402176b297cf7a8c0e961', 'mP9Az600', 'nadir', 'martins', '1978-01-30 19:11:28', 4, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('crazycat976', 'katherine.adams@example.com', 'ce85689bb8144dd1795721a02cfe39e37f602ffe46589d6e19726ecfd6781e7f', 'JWQ0iclH', 'katherine', 'adams', '1986-01-22 12:11:46', 1, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('goldenkoala398', 'jerome.stewart@example.com', 'eab321497e927dc9f6e140ef6df38464ef31c175d42e6160eaeb09231cb1a794', 'lzglaq7d', 'jerome', 'stewart', '1963-07-16 07:50:02', 6, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('goldenwolf751', 'amalie.nielsen@example.com', 'e9cff379ead9c862733a5655be22cb64ed746d466848c176113f6c17a9a7a781', 'esR5M6Nl', 'amalie', 'nielsen', '1994-03-05 18:50:45', 6, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('greenpeacock931', 'jimi.ruona@example.com', 'f1f2a2acca3b4b5b74ed10f06da5ace092015700a568af1e7881d3421dfb6f5c', 'GU1QL4rq', 'jimi', 'ruona', '1976-06-01 16:01:39', 5, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('greenswan729', 'koert.gabriel@example.com', 'afd942fbc332c5ac65e52a8514c1b86e8f550120bb7fbd42dec616ae4637ea44', 'EN49IqkC', 'koert', 'gabriel', '1958-05-06 11:45:16', 2, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('lazydog329', 'leo.peterson@example.com', 'b2579a241ad332cb06ed12622e8634a0dffe5213f957b3a6f9c8a9373b62ef96', 'h1pyyjGC', 'leo', 'peterson', '1949-04-22 10:36:43', 3, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('purplegorilla952', 'maia.morris@example.com', '2e63772b7b201ee4326b8de3ea06c848d2bc1850e3b1d07d6a72d2c5705f277d', 'D9zwIuBd', 'maia', 'morris', '1985-01-25 20:36:05', 6, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('orangewolf314', 'matt.fisher@example.com', 'c3b101a4f54d3f57c3fcf7c8845a35855e47c825eae906d1d76a2333b57d2aae', 'nWs15f72', 'matt', 'fisher', '1950-09-13 14:15:11', 4, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('orangetiger108', 'macit.kılıççı@example.com', '4f7db46d08ac5ac9728b30e4c467e4a058734d959f46d64ed368430ce3588df2', 'Dh7EkifW', 'macit', 'kılıççı', '1945-04-17 08:41:38', 5, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('lazywolf480', 'الینا.نجاتی@example.com', 'bf49daf8ba6180775b173b7814641793b0afeabe58cd11a09fe2effcc2346c64', 'zGIkOTGj', 'الینا', 'نجاتی', '1958-03-04 03:05:05', 5, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bigelephant487', 'deolindo.ferreira@example.com', 'f4c92a7af4efafb37d1938a2a2753834741671ccca6646a6a600aba24c727859', 'nih9qSd4', 'deolindo', 'ferreira', '1962-02-19 02:54:25', 6, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('ticklishmouse777', 'nicole.woods@example.com', '5530a302d0faca568b75dea2fd1b0a3c7651e6b25ea06d375e7984217eb90492', 'RniqY1m6', 'nicole', 'woods', '1980-03-09 23:02:47', 6, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('blueostrich139', 'katerine.gonçalves@example.com', '3745f754940c61797ee422b2b51c8a8f55aab0cc6a97c67be57c5c9224d6b65c', 'y0qiBKEx', 'katerine', 'gonçalves', '1963-01-07 13:05:56', 6, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('blackrabbit179', 'بنیامین.سهيليراد@example.com', 'e2b362e794e9349c6a0b9bc4ecf46d8dfd953d8f9e51d46c8ea87e5ffe8426c6', 'SX2PH5CG', 'بنیامین', 'سهيلي راد', '1952-08-09 14:27:59', 2, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('beautifulfrog568', 'addison.richardson@example.com', 'dd83d3c83cc7851cfd97d3735f48b77cf2fa281a6e51fc65225ab6746f0f1003', 'e1pgMPm3', 'addison', 'richardson', '1968-03-11 09:18:27', 2, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('whiteduck565', 'laly.morin@example.com', '900c8f3a5f27b13197dfa94d0840a67211719c34061df255adc95e440a361910', 'cMfi5Wql', 'laly', 'morin', '1957-06-29 00:16:06', 3, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('tinylion932', 'محمد.کامروا@example.com', 'b0a16379541b7041fc7b40cacf4423933f26c759547e498b50adf74fbd2637d7', 'wABn5ACX', 'محمد', 'کامروا', '1976-12-06 00:50:36', 3, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('silverpeacock752', 'zélio.nunes@example.com', '2544238dc6f29db6c77b616c05f44c189d9893ab1cf2d1f21c5632184602b849', 'u6H69OX5', 'zélio', 'nunes', '1963-02-03 22:11:34', 2, 'Registered');
-INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('greenswan649', 'freja.sørensen@example.com', 'c7d3afe42471c70fa5fa0796596e4fdb56eea4e07bf64938f418b5da72a2b227', 'dMLYvxq9', 'freja', 'sørensen', '1995-06-22 06:54:41', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bluetiger404', 'sophie.hughes@example.com', 'a7f931c1dc8736e2e2e6a835ee9da5f97999813ab1d2d3dcb16a41d1589b93e9', '7SJU7M7x', 'sophie', 'hughes', '1961-11-10 11:27:25', 5, 'Administrator');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('orangetiger744', 'sélène.dasilva@example.com', '8c5c469a24ca309b46750448d1265da12ebb45dec85cc3b246b4e79e33c23b6d', 'zIftCD61', 'sélène', 'da silva', '1946-08-03 12:39:59', 5, 'Moderator');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('whitewolf740', 'cléo.deschamps@example.com', '5f83f8fb50212c40436e337a97d8c563e152361cfe1ec775726d892718f2c02e', 'kxgSgCOK', 'cléo', 'deschamps', '1991-10-20 20:23:44', 6, 'Moderator');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('biglion380', 'aurora.rodriguez@example.com', '7f5d26407cce0576a88f9e597571cd76e546898df17e6a12884c34809e9f3d06', 'ukCJD6AJ', 'aurora', 'rodriguez', '1967-05-14 08:39:18', 6, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('orangecat470', 'ian.west@example.com', '070f07b0fee7698c7e281cdc9e169fc9226b484d0107ad8dd8f53250df4acd96', 'Nf7WSAkh', 'ian', 'west', '1994-02-18 19:45:58', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('crazybear925', 'letitia.sims@example.com', 'e6af075d7ca337c4a36e5db0ff9e3b5906b0dbfe96d86542b8c457375c885958', '9PEY87WA', 'letitia', 'sims', '1967-04-14 15:51:43', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('goldengoose470', 'julia.rivera@example.com', '85d1537f34de1e389dcf791f9d8afeb77185a9f34dc02f328ae0681c98ccc893', 'ALT2ZsAY', 'julia', 'rivera', '1970-01-28 02:08:17', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('blackrabbit751', 'ernestine.hazenberg@example.com', 'af9993faa615003af9e3b79d0878931f1ee6852f1e67e79216d2fb30eb0b46f4', 'IHdKtf2z', 'ernestine', 'hazenberg', '1983-08-08 03:38:11', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bluerabbit734', 'erhan.kitzen@example.com', '396df8e967c0f7aa813ebe5c326bcbc1fa5e4b5de0aa908112bf43f34b9d7147', 'nPc7wEWg', 'erhan', 'kitzen', '1946-12-23 08:08:44', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('whitekoala798', 'maya.andersen@example.com', 'aad35c82a5869787583bf4308ae9d9f48b2cdf77eca26588953f6b90bb368646', 'cxJ2JqYI', 'maya', 'andersen', '1976-04-02 05:37:48', 6, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('redlion329', 'agathe.perez@example.com', '76a76d69a7f9db99834721951e99065d712eacfd7430b12c4d566def1d23a1ef', 'G6tzUU3P', 'agathe', 'perez', '1948-12-27 07:51:19', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('goldenkoala748', 'madieke.derksen@example.com', '96658425d0b1f8b0be21ae29867b6c740d22773b5633127c18aaedb6c0e2270b', 'STwaGZ78', 'madieke', 'derksen', '1980-09-02 09:46:44', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('orangebear992', 'isabella.wong@example.com', '7f0f717f72b793a4138aed7708dde59fbf791ffac55f5df5a12c5c94de0aea7e', '1tb0g5TW', 'isabella', 'wong', '1984-02-28 07:24:09', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('blueelephant325', 'enora.thomas@example.com', '707ae167ec9fb4c76f58eb26953fa77ade7adc6364b70d55749983f28789dccb', 'mrq8qcyl', 'enora', 'thomas', '1954-08-16 15:25:06', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('ticklishlion390', 'ismael.leon@example.com', '7846664d859c8826b7485bdd33ba5c99f64f967eaa3948433b392c7a6e2c8eef', 'zEj4JiJG', 'ismael', 'leon', '1963-10-08 12:35:08', 6, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('biggorilla604', 'priscila.desouza@example.com', '0c612358c14960597fe5201fa1e7f34245f1bb9b7f36b94699850ff0b9daff2d', 'ftHI0OPk', 'priscila', 'de souza', '1991-12-16 08:44:27', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('heavybird564', 'walter.lane@example.com', 'd4505a3a2063b668d142283f6e4cbb659e6453e0799dc86a447fb4051375f973', 'sEYKGAhC', 'walter', 'lane', '1971-09-18 09:18:13', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('orangekoala613', 'ernesto.perez@example.com', 'ebb38898e4448ea8dc5644bf16c8f487204509c99a06a2d494e8f91e7eda34be', 'Lo5DMAPI', 'ernesto', 'perez', '1994-08-01 08:32:09', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('blackwolf707', 'megan.roy@example.com', '87e74bc10b74ff6d905d295b869a66802f8a6a2785ab078827005a41f349dd76', 'HI6eiBkh', 'megan', 'roy', '1994-03-11 21:38:50', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('whitebear645', 'vivian.nowak@example.com', 'cb9133a6ea7c96a87edf366846e5692fb3b9263fae7248651b77a9d6a97c1dbf', 'VabBMWfh', 'vivian', 'nowak', '1992-02-22 12:50:33', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('orangetiger373', 'سارا.سلطانینژاد@example.com', '5532a8204d673905c2c45e0d5584084435bc6d21f53b2933ff04bed807d0b1d6', 'XhWQSWZI', 'سارا', 'سلطانی نژاد', '1947-04-05 18:52:56', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('goldenbird678', 'vicki.chapman@example.com', 'b82140e330042c130fdbeead6091815b966f30b377f6cd959ebaf202f02f05aa', '5RWGJa9p', 'vicki', 'chapman', '1962-07-16 15:46:28', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bigtiger408', 'malou.rasmussen@example.com', '1a4c3493cbd31acae0f8649309b9399877e9fc071effb6c732f0ed6ca4c80838', 'k4vrWsth', 'malou', 'rasmussen', '1947-11-02 13:38:46', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('yellowdog134', 'anna.hughes@example.com', 'e78617d69c187b479bf28e332dbc2333018aac2a89f30eb9fa960b96ee16d980', 'EEsfSyjs', 'anna', 'hughes', '1951-03-03 13:19:25', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('lazyrabbit898', 'philippe.ouellet@example.com', '83d1f6517df2626354a916cc960a223969b34b7e2bb92a5425e341b1b6bc13c5', 'R0GDLrGj', 'philippe', 'ouellet', '1970-12-29 09:20:29', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('tinygoose273', 'melike.akman@example.com', '7e040616751bd608cae17751db122fc51993a179a6dd6efedfbecfcbbb942bbd', 'raFnPqLb', 'melike', 'akman', '1995-02-02 18:05:02', 6, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('orangebutterfly908', 'caren.varkevisser@example.com', '9d48f127e711c418e895ab8e0164bd53f79151b3f7c65be41bb0078b6e376eb4', '7QnygogW', 'caren', 'varkevisser', '1973-08-01 05:46:24', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bigpanda203', 'juliette.lefebvre@example.com', 'ed12eac20176d5aba6c08c83403926819e439ddd6521e89d2c77dae20b7b4b40', 'VFjChCGu', 'juliette', 'lefebvre', '1975-12-27 11:29:05', 6, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('greenpeacock503', 'veronika.dietrich@example.com', '2c8bfb5c09c0c56e5b83e02e73b67bdf2037b0e8deb3720f5c9000e27086ab1c', 'PSWw80Fp', 'veronika', 'dietrich', '1980-09-30 11:39:37', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('silverbird747', 'roxane.guillaume@example.com', '42b819ef90eb79ee36efc3ed1e9ae251d243b7f95a4174ab86c6c1c6fb0740c0', 'H7NMuoXD', 'roxane', 'guillaume', '1983-06-24 15:56:58', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('yellowkoala512', 'friederike.heller@example.com', '70a9600e85fae8bfebde0a351215b73ebbb78ad728c3a4ac83c299b05cc9f113', 'W9jcCsP1', 'friederike', 'heller', '1947-08-04 12:54:25', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('greenleopard553', 'nathan.bouchard@example.com', '459d27848602cdb654c7e1111ecfa5e7ed3f106fd609da05518d4d72167b213a', 'uajsUKPX', 'nathan', 'bouchard', '1979-07-06 16:37:01', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('beautifulbear844', 'douglas.andrews@example.com', '266e5ecdd7307c259064dccced2fa7c99ab6451f37e3ae66079bed06ca7f952d', 'KE144F74', 'douglas', 'andrews', '1949-05-20 14:20:38', 6, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('silverlion713', 'نيما.حیدری@example.com', '459e588e41fc8d981dfd16188ad343a6c6f03e396d284bfe95eadd9a3e0f681f', 'J0auIydU', 'نيما', 'حیدری', '1979-04-17 23:00:07', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('goldentiger374', 'marius.thomsen@example.com', 'b41dbb9fcd75c4b3b4cf3e08d0cd49c50da6d5878173d86f9b97e62d518c9c31', 'Vhfa2MSX', 'marius', 'thomsen', '1947-01-28 12:06:21', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('purpleostrich414', 'pepijn.oudenijhuis@example.com', '9675bf3a277f7a8d7f161cd2d7c24d32878cd3ee95e0e7f1c42f77893213646f', 't7bN5r2T', 'pepijn', 'oude nijhuis', '1962-07-12 20:14:32', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('tinyostrich203', 'maurice.meyer@example.com', '9aeb7126373dd9ce4def14643030889895eeb574554e2b7bcb14390486e5b021', 'Wd6XXh5t', 'maurice', 'meyer', '1983-12-21 05:22:58', 4, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('lazybutterfly585', 'باران.علیزاده@example.com', '41d89356108ecd541b648f6dce995503e038f526ace6bb804cdf54f4213a4e15', '2Tau7bxD', 'باران', 'علیزاده', '1976-08-24 02:02:33', 1, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('silvertiger610', 'zoe.kowalski@example.com', 'c68ad88f767a1473131473a336d2ba58db741ab838c272c2794d6c5ba6143a5f', '8Lxhk5Z1', 'zoe', 'kowalski', '1960-09-13 01:47:13', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('silvermouse631', 'helene.baumann@example.com', 'de97e990b5cdefc5813736de10b45e39537c082849db594428a1ade563fc56ab', 'L150CVkk', 'helene', 'baumann', '1964-12-30 13:51:00', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('redbird192', 'millie.anderson@example.com', '2ac4e9cfbd64cf0505555d19229e9dfdb27fc755ba2333d81e55c698bfdb3c19', 'aWF5nGao', 'millie', 'anderson', '1956-06-20 14:29:57', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('whitemeercat348', 'devon.simpson@example.com', 'dfcc70d392bac59be8e8f82e830ab3a1f582adb3b9619f6d287b96939bd64496', 'gqdIOmZT', 'devon', 'simpson', '1994-03-26 12:51:35', 6, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('bluewolf966', 'lucas.lévesque@example.com', 'd9d2c4e6ba411fae27ae9a4f74b83ba25d78a1bc978b73dff8b912ff1c3d3b9e', 'p2KQx7WT', 'lucas', 'lévesque', '1969-07-26 16:30:12', 2, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('tinybutterfly843', 'oliver.saarinen@example.com', '5f0a67f554579602220be1c6aaf5f717d4772025ff16b41b1e1cea50c0216be8', '51i1zeVs', 'oliver', 'saarinen', '1973-09-15 15:49:15', 6, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('crazytiger874', 'orlando.sales@example.com', '7f6f497f70cab03eaccd9c1f1a01927be7b3a3945c812f28932ead7635909f0e', 'mjG16tpC', 'orlando', 'sales', '1976-12-05 20:35:01', 3, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('orangekoala184', 'abigail.margaret@example.com', 'a5467a480f6469ec0b6a1deeb37c8e1587f527d842e2eb5f8fa43745969772e9', '2bA3CnUe', 'abigail', 'margaret', '1957-08-12 08:14:09', 4, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('whitebear226', 'ron.gonzalez@example.com', '105db5fa8254ae407e6de42bce660df94a3a4286d9c22fbd83ef60377cb8ef6c', 'eKGre1dN', 'ron', 'gonzalez', '1952-03-12 17:35:23', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('purplecat369', 'نيما.یاسمی@example.com', '530a45c2163b80305d0b5c4bb8d3700924319305f508f52221c80ea121506589', 'gdXoaCaN', 'نيما', 'یاسمی', '1988-11-12 20:05:47', 4, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('crazykoala169', 'ellie.stanley@example.com', '95573d9879a52a1f78790dab506ca8d7ee960a1c0d246adb51fdc5468f760992', 'ORt5jGt6', 'ellie', 'stanley', '1954-09-13 04:40:24', 5, 'Registered');
+INSERT INTO useracc (username, email, password, salt, first_name, last_name, birth, country, user_type) VALUES ('yellowostrich540', 'patricia.lambert@example.com', '61390d1d40fbcb6ade0ac1c8c745a7c87e7bba82fedc5d8684d9fd68f6418759', 'SyBkbraT', 'patricia', 'lambert', '1962-04-03 19:59:44', 3, 'Registered');
 
 INSERT INTO topic (admin_id, topicname, description) VALUES (1, 'programming', 'for programmers, just like you.');
 INSERT INTO topic (admin_id, topicname, description) VALUES (1, 'mathematics', 'for people studying math at any level.');
 INSERT INTO topic (admin_id, topicname, description) VALUES (1, 'aviation', 'for aircraft pilots, mechanics and enthusiasts.');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (1, 9, '&lt;p&gt;I am dealing with a variant of the Maximum Bipartite Matching problem.
-The original problem is as the following:&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;There are M job applicants and N jobs. Each applicant has a subset of jobs that he/she is interested in. Each job opening can only accept one applicant and a job applicant can be appointed for only one job. Find an assignment of jobs to applicants in such that as many applicants as possible get jobs.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/MsqGH.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/MsqGH.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The additional constraint is that:&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Each applicant belongs to a certain group. Now, instead of maximize the number of applicants, we want to &lt;strong&gt;maximize of number of happy groups&lt;/strong&gt;. A happy group is a group in which &lt;strong&gt;all of its applicants can get a job&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Any ideas/discussions are welcome!&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (1, 1, 'Algorithm - A variant of Maximum Bipartite Matching');
-INSERT INTO activity (post_id, user_id, action) VALUES (1, 9, 'Create');
-INSERT INTO tag (text) VALUES ('algorithm');
-INSERT INTO questiontag (question_id, tag_id) VALUES (1, 1);
-INSERT INTO tag (text) VALUES ('matching');
-INSERT INTO questiontag (question_id, tag_id) VALUES (1, 2);
-INSERT INTO tag (text) VALUES ('bipartite');
-INSERT INTO questiontag (question_id, tag_id) VALUES (1, 3);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (2, 23, '&lt;p&gt;I have a list of data.frame that contains interval data. For some reason, I applied two consecutive threshold value on those data, whereas first threshold value to filter out unwanted data item first, then second threshold value to be applied those rest of data, aims to render the summary (just total number of data items after second threshold value applied), but to be returned without further split. I aware that &lt;code&gt;dplyr&lt;/code&gt; package provides &lt;code&gt;summary&lt;/code&gt; function to accomplish this sort of task. I tried related post in &lt;code&gt;SO&lt;/code&gt;, but the final result is not desired. My goal is, the second threshold value to be applied those data that filtered from the first threshold value, aims to render summary of data(number of data item), but must be returned without splitting. How can I make this happen? Can anyone point me how to achieve this goal? Any idea please? &lt;/p&gt;
-
-&lt;p&gt;Here is the minimal reproducible example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Qualified &amp;lt;- list(
-        hotan = data.frame( begin=seq(1, by=6, len=45), end=seq(4, by=6, len=45), pos.score=sample(125, 45)),
-        aksu = data.frame( begin=seq(3, by=9, len=36), end=seq(6, by=9, len=36), pos.score=sample(84, 36)),
-        korla = data.frame( begin=seq(6, by=8, len=52), end=seq(11, by=8, len=52), pos.score=sample(172, 52))
-    )
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Here is my original implementation:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;catgFunc &amp;lt;- function(grp, t.w=12, t.s=34, fname=&quot;droped&quot;){
-    res &amp;lt;- lapply(seq_along(grp), function(x) {
-        dt &amp;lt;- grp[[x]]
-        dnm &amp;lt;- names(grp)[x]
-        drop &amp;lt;- dt[dt$pos.score &amp;lt;=t.w]
-        write.csv(drop, sprintf(&quot;%s/%s.%s.csv&quot;, dnm, fname))
-        keep &amp;lt;- dt[dt$pos.score &amp;gt;= t.w]
-        ## How to use second parameter to see below t.s and above that threshold
-        ## I want to see number of item its pos.score below and above the threshold `t.s`
-        ## But I don&#x27;t want them split
-        return(keep)
-    })
-    rslt &amp;lt;- setNames(res, names(grp))
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I want to make little improvement on my function, whereas &lt;code&gt;catgFunc&lt;/code&gt; can use &lt;code&gt;t.w&lt;/code&gt;, &lt;code&gt;t.s&lt;/code&gt; numerical threshold; &lt;code&gt;t.w&lt;/code&gt; to be applied the list of data.frame to remove unwanted data item first; then rest of data can be evaluated with &lt;code&gt;t.s&lt;/code&gt; and render the summary of result (total number of data item), but those either can be addede as meta data to the result of data from &lt;code&gt;t.w&lt;/code&gt; output (this optional), but return those as &lt;code&gt;list&lt;/code&gt; is required.  &lt;/p&gt;
-
-&lt;p&gt;How can I make this happen easily? How can I achieve this goal? Thanks in advance :)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Edit&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;p&gt;Perhaps, personally think, it is much easier to render summarize list for the output of &lt;code&gt;catgFunc&lt;/code&gt;. Is that possible to achieve my previous goal? If no, How to make this happen for the speficaiton of this &lt;code&gt;Edit&lt;/code&gt; ? Any better idea?&lt;/p&gt;
-
-&lt;p&gt;Here is my updated attempt to solve my problem, but still no luck with that:&lt;/p&gt;
-
-&lt;p&gt;output &amp;lt;- catgFunc(Qualified, t.w = 12)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;smrDat &amp;lt;- bind_rows(output, .id = &quot;id&quot;) %&amp;gt;%
-    mutate(stringency = ifelse(pos.score &amp;gt;= 34,
-                               &quot;Stringent&quot;, &quot;Weak&quot;)) %&amp;gt;% summarise()
-&lt;/code&gt;&lt;/pre&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (2, 1, 'How to summarize list of data.frame after two consecutive threshold were applied?');
-INSERT INTO activity (post_id, user_id, action) VALUES (2, 23, 'Create');
-INSERT INTO tag (text) VALUES ('r');
-INSERT INTO questiontag (question_id, tag_id) VALUES (2, 4);
-INSERT INTO tag (text) VALUES ('dataframe');
-INSERT INTO questiontag (question_id, tag_id) VALUES (2, 5);
-INSERT INTO tag (text) VALUES ('dplyr');
-INSERT INTO questiontag (question_id, tag_id) VALUES (2, 6);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (3, 18, '&lt;p&gt;I am passing user defined table type to a stored procedure. But it throws error as &quot;No mapping exists from object type System.Collections.Generic.List`1 to a known managed provider native type.&quot;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;UserDefinedTableType:
-CREATE TYPE UserQueryAttachmentList AS TABLE 
-(
-[UserQueryId] NVARCHAR(50),
-[AttachmentPath] NVARCHAR(200),
-[AttachmentName]  NVARCHAR(200),
-[AttachmentFor] NVARCHAR(50),
-[CreatedBy] NVARCHAR(50) 
-);
-
-Stored Procedure:
-CREATE PROCEDURE PROC_UserQueryAttachment_Insert
-(
-@Table UserQueryAttachmentList READONLY
-)
-AS
-BEGIN
-
-INSERT INTO dbo.[UserQueryAttachments]
-(
-    UserQueryId,
-    AttachmentPath,
-    AttachmentName,
-    AttachmentFor,
-    CreatedBy,
-    CreatedDate
-)
-SELECT
-    UserQueryId,
-    AttachmentPath,
-    AttachmentName,
-    AttachmentFor,
-    CreatedBy,
-    GETDATE()
-FROM
-    @Table T
-
-END
-
-C#:
-public override bool SaveUserQueryAttachment(List&amp;lt;UserQueryAttachmentToCreate&amp;gt; fileList)
-    {
-
-        try
-        {
-            this.ExecuteStoredProcedureOrQuery&amp;lt;UserQueryAttachmentToCreate&amp;gt;(&quot;PROC_UserQueryAttachment_Insert&quot;, CommandType.StoredProcedure,
-                new SqlParameter(&quot;@Table&quot;, fileList)
-                );
-            return true;
-
-        }
-        catch (Exception ex)
-        {
-            return false;
-        }
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Please guide me why this error occuring?&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (3, 1, 'UDT Type in Stored Procedure: Error - No mapping exists from object type System.Collections.Generic.List`1 to a known managed provider native type');
-INSERT INTO activity (post_id, user_id, action) VALUES (3, 18, 'Create');
-INSERT INTO tag (text) VALUES ('c#');
-INSERT INTO questiontag (question_id, tag_id) VALUES (3, 7);
-INSERT INTO tag (text) VALUES ('sql-server');
-INSERT INTO questiontag (question_id, tag_id) VALUES (3, 8);
-INSERT INTO tag (text) VALUES ('asp.net-mvc');
-INSERT INTO questiontag (question_id, tag_id) VALUES (3, 9);
-INSERT INTO tag (text) VALUES ('stored-procedures');
-INSERT INTO questiontag (question_id, tag_id) VALUES (3, 10);
-INSERT INTO tag (text) VALUES ('user-defined-types');
-INSERT INTO questiontag (question_id, tag_id) VALUES (3, 11);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (4, 43, '&lt;p&gt;I have a &lt;strong&gt;entity A&lt;/strong&gt; which has a relation @OneToMany with a &lt;strong&gt;entity B&lt;/strong&gt; (fetch mode = EAGER). &lt;strong&gt;Entitity A&lt;/strong&gt; has other relations in LAZY with other entities too, but isn&#x27;t important for this problem.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Entity B&lt;/strong&gt; has a relation @ManyToOne with &lt;strong&gt;entity A&lt;/strong&gt; too (fech mode = EAGER). &lt;strong&gt;Entitity B&lt;/strong&gt; has other relations in LAZY with other entities too, but isn&#x27;t important for this problem.&lt;/p&gt;
-
-&lt;p&gt;Later, I have a interface that implements JpaRepository class where I define a @Query with some inner joins between others entities for get a coleccion of &lt;strong&gt;Entities A&lt;/strong&gt; of 10 items with a calculated score, using Page and Pageable elements.&lt;/p&gt;
-
-&lt;p&gt;Here this process fail. why?&lt;/p&gt;
-
-&lt;p&gt;My table for entity A in Database has +1000 registers that have the conditions of @query. But before Hibernate or JPA return me 10 entities A, internally, exect 1000+ selects for get Entities B data (EAGER realation) and explote.&lt;/p&gt;
-
-&lt;p&gt;why dont get 10 entities A and exec 10 &quot;selects&quot; for get 10 entities B only?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;The unique solution is change my relations from EAGER to LAZY?? dont work pageable with EAGER?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Why did this happend? any solution?&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (4, 1, 'EAGER and Pagination : Spring MVC + JPA Repository + Hibernate');
-INSERT INTO activity (post_id, user_id, action) VALUES (4, 43, 'Create');
-INSERT INTO tag (text) VALUES ('hibernate');
-INSERT INTO questiontag (question_id, tag_id) VALUES (4, 12);
-INSERT INTO tag (text) VALUES ('spring-mvc');
-INSERT INTO questiontag (question_id, tag_id) VALUES (4, 13);
-INSERT INTO tag (text) VALUES ('jpa');
-INSERT INTO questiontag (question_id, tag_id) VALUES (4, 14);
-INSERT INTO tag (text) VALUES ('entity-relationship');
-INSERT INTO questiontag (question_id, tag_id) VALUES (4, 15);
-INSERT INTO tag (text) VALUES ('eager');
-INSERT INTO questiontag (question_id, tag_id) VALUES (4, 16);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (5, 39, '&lt;p&gt;Im busy trying to write code that calls different macros based on the value of a cell across an entire range on VBA.&lt;/p&gt;
-
-&lt;p&gt;So for the example I have a range S20:S21.&lt;/p&gt;
-
-&lt;p&gt;When the value in cell S20 is equal to 1, I want to call macro1.
-When the value in cell S21 is equal to 2, I want to call macro2.&lt;/p&gt;
-
-&lt;p&gt;When there is no match I have a time that it will test it in the next 5 seconds again where it will start from the top checking if cell S20 is 1 or of S20 is 2.&lt;/p&gt;
-
-&lt;p&gt;This is currently the code I have.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    Dim TimeToRun
-
-Sub auto_open()
-    Call ScheduleCopyPriceOver
-End Sub
-
-
-Sub ScheduleCopyPriceOver()
-    TimeToRun = Now + TimeValue(&quot;00:00:05&quot;)
-    Application.OnTime TimeToRun, &quot;CopyPriceOver&quot;
-End Sub
-
-Sub CopyPriceOver()
-Application.ScreenUpdating = False
-
-    Number = Range(&quot;S20:S22&quot;).Value
-
-    If Number = 1 Then
-
-    Call Macro1
-    Call ScheduleCopyPriceOver
-
-    ElseIf Number = 2 Then
-
-    Call Macro2
-    Call ScheduleCopyPriceOver
-
-    Else
-
-    Call ScheduleCopyPriceOver
-    End If
-
-
-End Sub
-
-Sub auto_close()
-    On Error Resume Next
-    Application.OnTime TimeToRun, &quot;CopyPriceOver&quot;, , False
-End Sub
-&lt;/code&gt;&lt;/pre&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (5, 1, 'Running Different Macros Based on Values in Range');
-INSERT INTO activity (post_id, user_id, action) VALUES (5, 39, 'Create');
-INSERT INTO tag (text) VALUES ('excel');
-INSERT INTO questiontag (question_id, tag_id) VALUES (5, 17);
-INSERT INTO tag (text) VALUES ('vba');
-INSERT INTO questiontag (question_id, tag_id) VALUES (5, 18);
-INSERT INTO tag (text) VALUES ('excel-vba');
-INSERT INTO questiontag (question_id, tag_id) VALUES (5, 19);
-
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (6, 10, '&lt;p&gt;So I&#x27;m playing around JavaScript&#x27;s Date object, and I ran into something I think is a little strange.&lt;br&gt;
-I&#x27;m trying to figure out how many days there is between 2 given dates, and for that I use the formula below:&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (1, 29, '&lt;p&gt;I am struggling with Elm&#x27;s lack of monads. A library implementing the state monad for Elm (&lt;a href=&quot;http://package.elm-lang.org/packages/folkertdev/elm-state/latest/State&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://package.elm-lang.org/packages/folkertdev/elm-state/latest/State&lt;/a&gt;) has helped me quite a bit.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;var oneDay = 24*60*60*1000;
-var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
+&lt;p&gt;The problem is that I have now run into a situation where I have alternately nested Result and State types, when I only want to have one of each.&lt;/p&gt;
+
+&lt;p&gt;I tried to write a function with the following signature, but it seems impossible, because the inner Result is only known once the outer State is evaluated.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;join : Result a (State s (Result a (State s x))) -&amp;gt; Result a (State s x)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;If you take 2017-05-28 &amp;amp; 2017-05-30 it returns &lt;strong&gt;2 days&lt;/strong&gt; - as it should  &lt;/p&gt;
+&lt;p&gt;Maybe it would work if I put the Result inside the State in the return value, but that would generate a dummy State in case the outer Result is &lt;code&gt;Err&lt;/code&gt;.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;var oneDay = 24*60*60*1000;
-var firstDate = new Date(2017, 05, 28);
-var secondDate = new Date(2017, 05, 30);
-var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I think the right idea would be to make something that is both Result and State. Can someone who is familiar with Haskell monad transformers explain how they solve this kind of problem or suggest an alternative solution?&lt;/p&gt;
 
-&lt;p&gt;If you take 2017-05-30 &amp;amp; 2017-06-01 it returns &lt;strong&gt;1 days&lt;/strong&gt; - supposed to be 2 days&lt;/p&gt;
+&lt;p&gt;Here is a rough version of one place where the problem arises:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;var oneDay = 24*60*60*1000;
-var firstDate = new Date(2017, 05, 28);
-var secondDate = new Date(2017, 05, 30);
-var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you take 2017-05-30 &amp;amp; 2017-06-01 it returns &lt;strong&gt;3 days&lt;/strong&gt; - supposed to be 2 days&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var oneDay = 24*60*60*1000;
-var firstDate = new Date(2017, 11, 29);
-var secondDate = new Date(2017, 12, 01);
-var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
+&lt;pre&gt;&lt;code&gt;  generateConstraints environment value
+  |&amp;gt; Result.map (State.map (\(value, valueC) -&amp;gt;
+    Result.map
+      (State.map2 (\this (body, bodyC) -&amp;gt;
+        ( this
+        , valueC ++ bodyC ++ [(this, body)]
+        ))
+      freshTypevar)
+      (generateConstraints (extend environment name value) body))
+  )
 &lt;/code&gt;&lt;/pre&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (6, 1, 'Calculating how many days between dates, diffrent months');
-INSERT INTO activity (post_id, user_id, action) VALUES (6, 10, 'Create');
-INSERT INTO tag (text) VALUES ('javascript');
-INSERT INTO questiontag (question_id, tag_id) VALUES (6, 20);
-INSERT INTO tag (text) VALUES ('date');
-INSERT INTO questiontag (question_id, tag_id) VALUES (6, 21);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', -1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (7, 37, '&lt;p&gt;I have file .psd  with sizes 1920X1080. 
-I need to make responsive website that will look good for small and big screens.
-I have made from this psd html with pixel perfect technic.
-I just don&#x27;t understand how to make from it design for smaller screens.
-Please advise.&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (7, 1, 'psd to html 1920X1080');
-INSERT INTO activity (post_id, user_id, action) VALUES (7, 37, 'Create');
-INSERT INTO tag (text) VALUES ('html');
-INSERT INTO questiontag (question_id, tag_id) VALUES (7, 22);
-INSERT INTO tag (text) VALUES ('css');
-INSERT INTO questiontag (question_id, tag_id) VALUES (7, 23);
-INSERT INTO tag (text) VALUES ('markup');
-INSERT INTO questiontag (question_id, tag_id) VALUES (7, 24);
-INSERT INTO tag (text) VALUES ('psd');
-INSERT INTO questiontag (question_id, tag_id) VALUES (7, 25);
+INSERT INTO question (post_id, topic_id, title) VALUES (1, 1, 'How do I combine Result and State in Elm?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (1, 1, 29, 'Create');
+INSERT INTO tag (text) VALUES ('haskell');
+INSERT INTO questiontag (question_id, tag_id) VALUES (1, 1);
+INSERT INTO tag (text) VALUES ('monads');
+INSERT INTO questiontag (question_id, tag_id) VALUES (1, 2);
+INSERT INTO tag (text) VALUES ('elm');
+INSERT INTO questiontag (question_id, tag_id) VALUES (1, 3);
+INSERT INTO tag (text) VALUES ('monad-transformers');
+INSERT INTO questiontag (question_id, tag_id) VALUES (1, 4);
+INSERT INTO activity (post_id, user_id, activity) VALUES (1, 29, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (1, 29, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (1, 29, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (8, 30, '&lt;p&gt;I would like to open a featherlight lightbox with some html-content. The content contains some small pictures and I would like to use the featherlight for the images too to show bigger sizes. &lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (2, 41, '&lt;p&gt;I&#x27;m implement Firebase SDK in Unity. Sending a notification to device is working fine. But can I control which view application will open after the user clicked the notification?&lt;/p&gt;
 
-&lt;p&gt;For example: I added the link to the image in the ajax examples div from &lt;a href=&quot;http://noelboss.github.io/featherlight/&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://noelboss.github.io/featherlight/&lt;/a&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;ajaxcontent lightbox&quot;&amp;gt;
-    &amp;lt;h2&amp;gt;This Ligthbox was loaded using ajax&amp;lt;/h2&amp;gt;
-    &amp;lt;p&amp;gt;With &amp;lt;a href=&quot;https://github.com/noelboss/featherlight/#installation&quot;&amp;gt;little code&amp;lt;/a&amp;gt;, you can build lightboxes that use custom content loaded with ajax...&amp;lt;/p&amp;gt;&amp;lt;a class=&quot;btn btn-default&quot; href=&quot;assets/images/droplets.jpg&quot; data-featherlight=&quot;image&quot;&amp;gt;Image&amp;lt;/a&amp;gt;
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;when the lightbox opens Ihave to double-click on the image/button to let it open.&lt;/p&gt;
-
-&lt;p&gt;Is it possible to open it on the first click? &lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://mederano.bplaced.net/test/&quot; rel=&quot;nofollow noreferrer&quot;&gt;Example&lt;/a&gt;&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (8, 1, 'Open a Lightbox in a Featherlight.js Lightbox without double-click - Is it possible?');
-INSERT INTO activity (post_id, user_id, action) VALUES (8, 30, 'Create');
-INSERT INTO tag (text) VALUES ('featherlight.js');
-INSERT INTO questiontag (question_id, tag_id) VALUES (8, 26);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (9, 37, '&lt;p&gt;I have been trying for two days to decrypt a file whith the private key containing &#x27;lolilol&#x27; after having encrypted it with the public key rsa 4096. I then get padding errors, I tried everything to do, I get the error Javax.crypto.BadPaddingException: Decryption error&lt;/p&gt;
-
-&lt;p&gt;Could you help me please? And even after reading the doc on the padding I did not succeed
-Encryption works fine, but decryption skips a mistake&lt;/p&gt;
-
-&lt;p&gt;Below my code :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.security.Key;
-import java.security.KeyPair;
-import java.security.KeyPairGenerator;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.security.SecureRandom;
-import java.security.Security;
-
-import javax.crypto.Cipher;
-
-import sun.misc.BASE64Encoder;
-
-public class GenerateRSAKeys{
-
-
-    private Key pubKey;
-    private Key privKey;
-
-    public static void main(String[] args)
-    {
-        String input = &quot;C:\\Users\\toto\\Desktop\\nomFichier_entrant.ext&quot;;
-        String output = &quot;C:\\Users\\toto\\Desktop\\nomFichier_entrant.ext.enc&quot;;
-        String dec = &quot;C:\\Users\\toto\\Desktop\\nomFichier_entrant.ext.dec&quot;;
-        String publicKeyFilename = &quot;C:\\Users\\toto\\Desktop\\HR_pubkey_prd.pem&quot;;
-        String privateKeyFilename = &quot;C:\\Users\\toto\\Desktop\\PE_privkey_prd.pem&quot;;
-
-        GenerateRSAKeys generateRSAKeys = new GenerateRSAKeys();
-
-        /*         if (args.length &amp;lt; 2)
-        {
-            System.err.println(&quot;Usage: java &quot;+ generateRSAKeys.getClass().getName()+
-            &quot; Public_Key_Filename Private_Key_Filename&quot;);
-            System.exit(1);
-        }
-
-        publicKeyFilename = args[0].trim();
-        privateKeyFilename = args[1].trim(); */
-        generateRSAKeys.generate(publicKeyFilename, privateKeyFilename);
-
-        //generateRSAKeys.encrypt(input, output);
-        generateRSAKeys.encrypt(input, output);
-        generateRSAKeys.decrypt(output, dec);
-
-    }
-
-    private void generate (String publicKeyFilename, String privateFilename){
-
-        try {
-
-            Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
-
-            // Create the public and private keys
-            KeyPairGenerator generator = KeyPairGenerator.getInstance(&quot;RSA&quot;, &quot;BC&quot;);
-            BASE64Encoder b64 = new BASE64Encoder();
-
-            KeyPairGenerator keyGen = KeyPairGenerator.getInstance(&quot;RSA&quot;);
-            /* SecureRandom random = new SecureRandom();
-
-            keyGen.initialize(4096, random);
-
-            KeyPair pair = keyGen.generateKeyPair();
-            pubKey = pair.getPublic();
-            privKey = pair.getPrivate(); */
-
-            SecureRandom random = createFixedRandom();
-            generator.initialize(4096, random);
-
-            KeyPair pair = generator.generateKeyPair();
-            pubKey = pair.getPublic();
-            privKey = pair.getPrivate();
-
-            System.out.println(&quot;publicKey : &quot; + b64.encode(pubKey.getEncoded()));
-            System.out.println(&quot;privateKey : &quot; + b64.encode(privKey.getEncoded()));
-
-            BufferedWriter out = new BufferedWriter(new FileWriter(publicKeyFilename));
-            out.write(b64.encode(pubKey.getEncoded()));
-            out.close();
-
-            out = new BufferedWriter(new FileWriter(privateFilename));
-            out.write(b64.encode(privKey.getEncoded()));
-            out.close();
-
-
-        }
-        catch (Exception e) {
-            System.out.println(e);
-        }
-    }
-
-    public static SecureRandom createFixedRandom()
-    {
-        return new FixedRand();
-    }
-
-    private static class FixedRand extends SecureRandom {
-
-        MessageDigest sha;
-        byte[] state;
-
-        FixedRand() {
-            try
-            {
-                this.sha = MessageDigest.getInstance(&quot;SHA-1&quot;);
-                this.state = sha.digest();
-            }
-            catch (NoSuchAlgorithmException e)
-            {
-                throw new RuntimeException(&quot;can&#x27;t find SHA-1!&quot;);
-            }
-        }
-
-        public void nextBytes(byte[] bytes){
-
-            int    off = 0;
-
-            sha.update(state);
-
-            while (off &amp;lt; bytes.length)
-            {                
-                state = sha.digest();
-
-                if (bytes.length - off &amp;gt; state.length)
-                {
-                    System.arraycopy(state, 0, bytes, off, state.length);
-                }
-                else
-                {
-                    System.arraycopy(state, 0, bytes, off, bytes.length - off);
-                }
-
-                off += state.length;
-
-                sha.update(state);
-            }
-        }
-    }
-
-    public void encrypt(String input, String output) {
-        File outputFile;
-        FileInputStream inputStream;
-        FileOutputStream outputStream;
-        Cipher cipher;
-        byte[] inputBytes;
-        byte[] outputBytes;
-
-        try {
-            outputFile = new File(output);
-            inputStream = new FileInputStream(input);
-            outputStream = new FileOutputStream(outputFile);
-            cipher = Cipher.getInstance(&quot;RSA&quot;);
-            cipher.init(Cipher.ENCRYPT_MODE, pubKey);
-            inputBytes = new byte[(int) input.length()];
-            inputStream.read(inputBytes);
-            outputBytes = cipher.doFinal(inputBytes);
-            outputStream.write(outputBytes);
-
-            // System.out.println(new String(inputBytes, &quot;UTF-8&quot;));
-
-            System.out.println(&quot;encrypt&quot;);
-            System.out.println(new String(outputBytes, &quot;UTF-8&quot;));
-            System.out.println(&quot;fin encrypt&quot;);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void decrypt(String input, String output) {
-        File outputFile;
-        FileInputStream inputStream;
-        FileOutputStream outputStream;
-        Cipher cipher;
-        byte[] inputBytes;
-        byte[] outputBytes;
-
-        try {
-            outputFile = new File(output);
-            inputStream = new FileInputStream(input);
-            outputStream = new FileOutputStream(outputFile);
-            cipher = Cipher.getInstance(&quot;RSA&quot;);
-            cipher.init(Cipher.DECRYPT_MODE, privKey);
-            inputBytes = new byte[(int) input.length()];
-            inputStream.read(inputBytes);
-            outputBytes = cipher.doFinal(inputBytes);
-            outputStream.write(outputBytes);
-
-            // System.out.println(new String(inputBytes, &quot;UTF-8&quot;));
-
-            System.out.println(&quot;decrypt&quot;);
-            System.out.println(new String(outputBytes, &quot;UTF-8&quot;));
-            System.out.println(&quot;fin decrypt&quot;);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (9, 1, 'java bouncy castle RSA 4096 decryption padding error');
-INSERT INTO activity (post_id, user_id, action) VALUES (9, 37, 'Create');
-INSERT INTO tag (text) VALUES ('java');
-INSERT INTO questiontag (question_id, tag_id) VALUES (9, 27);
-INSERT INTO tag (text) VALUES ('encryption');
-INSERT INTO questiontag (question_id, tag_id) VALUES (9, 28);
-INSERT INTO tag (text) VALUES ('file-io');
-INSERT INTO questiontag (question_id, tag_id) VALUES (9, 29);
-INSERT INTO tag (text) VALUES ('rsa');
-INSERT INTO questiontag (question_id, tag_id) VALUES (9, 30);
-INSERT INTO tag (text) VALUES ('padding');
-INSERT INTO questiontag (question_id, tag_id) VALUES (9, 31);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (10, 46, '&lt;p&gt;I need to close all open Chrome drivers in Selenium. All my methods are closing only one of them. The reason why I need to close all drivers at the same time - in the start of my program I don&#x27;t know how many drivers I need to open, so I try to open a few drivers with same driver names in cycle.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;How I opened these drivers:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;driver.get(firstURL);
-driver.get(secondURL);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;How I tried to close both drivers:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;First try:&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;driver.close();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Second try:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;driver.quit();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Third try:&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;driver.close();
-driver.close();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fourth try:&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;driver.quit();
-driver.quit();
-&lt;/code&gt;&lt;/pre&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (10, 1, 'How to close all opened drivers in Selenium?');
-INSERT INTO activity (post_id, user_id, action) VALUES (10, 46, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (10, 27);
-INSERT INTO tag (text) VALUES ('selenium');
-INSERT INTO questiontag (question_id, tag_id) VALUES (10, 32);
-INSERT INTO tag (text) VALUES ('phantomjs');
-INSERT INTO questiontag (question_id, tag_id) VALUES (10, 33);
-INSERT INTO tag (text) VALUES ('selenium-chromedriver');
-INSERT INTO questiontag (question_id, tag_id) VALUES (10, 34);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (11, 28, '&lt;p&gt;If something happens in my app I want to kill the app there and then. In swift I can use fatalError(), is there a java equivalent?&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (11, 1, 'Is there an Android equivalent to iOS&#180;s (swifts) fatalError()?');
-INSERT INTO activity (post_id, user_id, action) VALUES (11, 28, 'Create');
-INSERT INTO tag (text) VALUES ('android');
-INSERT INTO questiontag (question_id, tag_id) VALUES (11, 35);
-INSERT INTO tag (text) VALUES ('swift');
-INSERT INTO questiontag (question_id, tag_id) VALUES (11, 36);
-INSERT INTO tag (text) VALUES ('fatal-error');
-INSERT INTO questiontag (question_id, tag_id) VALUES (11, 37);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (12, 24, '&lt;p&gt;I am using Google&#x27;s &lt;code&gt;Volley&lt;/code&gt; to make &lt;code&gt;GET&lt;/code&gt; and &lt;code&gt;POST&lt;/code&gt; requests using the following custom request class:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public class GsonRequest&amp;lt;T&amp;gt; extends Request&amp;lt;T&amp;gt; {
-
-    private static final int SOCKET_TIMEOUT_MS = 30000;
-    private static final int MAX_RETRIES = 3;
-
-    private final Gson gson = new Gson();
-    private final Type type;
-    private final Map&amp;lt;String, String&amp;gt; params;
-    private final Response.Listener&amp;lt;T&amp;gt; listener;
-
-    /**
-     * Make a GET request and return a parsed object from JSON.
-     *
-     * @param url    URL of the request to make
-     * @param type   Relevant type object, for Gson&#x27;s reflection
-     * @param params Map of request params
-     */
-    public GsonRequest(int method, String url, Type type, Map&amp;lt;String, String&amp;gt; params,
-                       Response.Listener&amp;lt;T&amp;gt; listener, Response.ErrorListener errorListener) {
-        super(method, url, errorListener);
-        this.type = type;
-        this.params = params;
-        this.listener = listener;
-    }
-
-    @Override
-    public Map&amp;lt;String, String&amp;gt; getHeaders() throws AuthFailureError {
-        return headers;
-    }
-
-    @Override
-    protected Map&amp;lt;String, String&amp;gt; getParams() throws AuthFailureError {
-        // Here is my question, can I add a param value as JSONArray? like this:
-        params.put(&quot;orderValue&quot;, &quot;35&quot;);
-        params.put(&quot;price&quot;, &quot;&quot;price&quot;: [&quot;13.00&quot;, &quot;22.00&quot;]&quot;);
-        return params != null ? params : super.getParams();
-    }
-
-    @Override
-    public Request&amp;lt;?&amp;gt; setRetryPolicy(RetryPolicy retryPolicy) {
-        final RetryPolicy policy = new DefaultRetryPolicy(SOCKET_TIMEOUT_MS, MAX_RETRIES,
-                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
-        return super.setRetryPolicy(policy);
-    }
-
-    @Override
-    public String getBodyContentType() {
-        return &quot;application/json&quot;;
-    }
-
-    @Override
-    public byte[] getBody() throws AuthFailureError {
-        try {
-            Log.i(&quot;&quot; + gson.toJson(params).getBytes(&quot;utf-8&quot;));
-            return gson.toJson(params).getBytes(&quot;utf-8&quot;);
-        } catch (UnsupportedEncodingException uee) {
-            VolleyLog.wtf(&quot;Unsupported Encoding while trying to get the bytes of %s using %s&quot;, gson.toJson(params), &quot;utf-8&quot;);
-            return super.getBody();
-        }
-    }
-
-    @Override
-    protected void deliverResponse(T response) {
-        listener.onResponse(response);
-    }
-
-    @Override
-    protected Response&amp;lt;T&amp;gt; parseNetworkResponse(NetworkResponse response) {
-        try {
-            final String json = new String(response.data, HttpHeaderParser.parseCharset(response.headers));
-            return (Response&amp;lt;T&amp;gt;) Response.success(gson.fromJson(json, type), HttpHeaderParser.parseCacheHeaders(response));
-        } catch (UnsupportedEncodingException e) {
-            return Response.error(new ParseError(e));
-        } catch (JsonSyntaxException e) {
-            return Response.error(new ParseError(e));
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The Json I&#x27;m trying to send:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{
-  &quot;orderValue&quot;: &quot;35&quot;,
-  &quot;price&quot;: [
-    &quot;13.00&quot;,
-    &quot;22.00&quot;
-  ]
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;What is really sent as I get from &lt;code&gt;getBody()&lt;/code&gt; method log is:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{
-  &quot;price&quot;: &quot;[\&quot;23.00\&quot;,\&quot;55.00\&quot;]&quot;,
-  &quot;orderValue&quot;: &quot;35&quot;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Any help with this issue?&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (12, 1, 'Android volley implementing custom request with getParams that accepts JSONArray param');
-INSERT INTO activity (post_id, user_id, action) VALUES (12, 24, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (12, 35);
-INSERT INTO tag (text) VALUES ('json');
-INSERT INTO questiontag (question_id, tag_id) VALUES (12, 38);
-INSERT INTO tag (text) VALUES ('android-volley');
-INSERT INTO questiontag (question_id, tag_id) VALUES (12, 39);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (13, 28, '&lt;p&gt;Can anyone explain why &lt;code&gt;&amp;lt;ThemeProvider&amp;gt;&lt;/code&gt; only passes the theme prop to a direct styled component?&lt;/p&gt;
-
-&lt;p&gt;Here&#x27;s my code: &lt;a href=&quot;https://gist.github.com/aaronmcadam/7bfd63a6bc4cfc36f9947a449c6f494a&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://gist.github.com/aaronmcadam/7bfd63a6bc4cfc36f9947a449c6f494a&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;One version uses &lt;code&gt;withTheme&lt;/code&gt; and one doesn&#x27;t. &lt;/p&gt;
-
-&lt;p&gt;Which is the preferred way of doing things like these?&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (13, 1, 'What is the preferred way to theme a composed component using styled-components?');
-INSERT INTO activity (post_id, user_id, action) VALUES (13, 28, 'Create');
-INSERT INTO tag (text) VALUES ('reactjs');
-INSERT INTO questiontag (question_id, tag_id) VALUES (13, 40);
-INSERT INTO tag (text) VALUES ('styled-components');
-INSERT INTO questiontag (question_id, tag_id) VALUES (13, 41);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (14, 19, '&lt;p&gt;My script migrates data from MySQL to mongodb. It runs perfectly well when there are no unicode columns included. But throws me below error when &lt;code&gt;OrgLanguages&lt;/code&gt; column is added.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    mongoImp = dbo.insert_many(odbcArray)
-  File &quot;/home/lrsa/.local/lib/python2.7/site-packages/pymongo/collection.py&quot;, line 711, in insert_many
-    blk.execute(self.write_concern.document)
-  File &quot;/home/lrsa/.local/lib/python2.7/site-packages/pymongo/bulk.py&quot;, line 493, in execute
-    return self.execute_command(sock_info, generator, write_concern)
-  File &quot;/home/lrsa/.local/lib/python2.7/site-packages/pymongo/bulk.py&quot;, line 319, in execute_command
-    run.ops, True, self.collection.codec_options, bwc)
-bson.errors.InvalidStringData: strings in documents must be valid UTF-8: &#x27;Portugu\xeas do Brasil, ?????, English, Deutsch, Espa\xf1ol latinoamericano, Polish&#x27;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;My code:&lt;br&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import MySQLdb, MySQLdb.cursors, sys, pymongo, collections
-
-odbcArray=[]
-mongoConStr = &#x27;192.168.10.107:36006&#x27;
-sqlConnect = MySQLdb.connect(host = &quot;54.175.170.187&quot;, user = &quot;testuser&quot;, passwd = &quot;testuser&quot;, db = &quot;testdb&quot;, cursorclass=MySQLdb.cursors.DictCursor)
-mongoConnect = pymongo.MongoClient(mongoConStr)
-
-sqlCur = sqlConnect.cursor()
-sqlCur.execute(&quot;SELECT ID,OrgID,OrgLanguages,APILoginID,TransactionKey,SMTPSpeed,TimeZoneName,IsVideoWatched FROM organizations&quot;)
-
-dbo = mongoConnect.eaedw.mysqlData
-tuples = sqlCur.fetchall()
-
-for tuple in tuples:
-    odbcArray.append(collections.OrderedDict(tuple))
-
-mongoImp = dbo.insert_many(odbcArray)
-
-sqlCur.close()
-mongoConnect.close()
-sqlConnect.close()
-sys.exit()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Above script migraates data perfectly when tried without &lt;code&gt;OrgLanguages&lt;/code&gt; column in the SELECT query.
-To overcome this, I have tried to use the &lt;code&gt;OrderedDict()&lt;/code&gt; in another way but gives me a different type of error&lt;br&gt;
-Changed Code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;for tuple in tuples:
-    doc = collections.OrderedDict()
-    doc[&#x27;oid&#x27;] = tuple.OrgID
-    doc[&#x27;APILoginID&#x27;] = tuple.APILoginID
-    doc[&#x27;lang&#x27;] = unicode(tuple.OrgLanguages)
-    odbcArray.append(doc)
-mongoImp = dbo.insert_many(odbcArray)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Error Received:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Traceback (most recent call last):
-  File &quot;pymsql.py&quot;, line 19, in &amp;lt;module&amp;gt;
-    doc[&#x27;oid&#x27;] = tuple.OrgID
-AttributeError: &#x27;dict&#x27; object has no attribute &#x27;OrgID&#x27;
-&lt;/code&gt;&lt;/pre&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (14, 1, 'python : error handling Ordered dict with unicode data');
-INSERT INTO activity (post_id, user_id, action) VALUES (14, 19, 'Create');
-INSERT INTO tag (text) VALUES ('python');
-INSERT INTO questiontag (question_id, tag_id) VALUES (14, 42);
-INSERT INTO tag (text) VALUES ('mysql');
-INSERT INTO questiontag (question_id, tag_id) VALUES (14, 43);
-INSERT INTO tag (text) VALUES ('mongodb');
-INSERT INTO questiontag (question_id, tag_id) VALUES (14, 44);
-INSERT INTO tag (text) VALUES ('unicode');
-INSERT INTO questiontag (question_id, tag_id) VALUES (14, 45);
-INSERT INTO tag (text) VALUES ('pymongo');
-INSERT INTO questiontag (question_id, tag_id) VALUES (14, 46);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (15, 35, '&lt;p&gt;I want a transition a css property smoothly then I want immediate change in css property value and then I want to attach the transition back again. To better understand see the following example:  &lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&quot;snippet&quot; data-lang=&quot;js&quot; data-hide=&quot;false&quot; data-console=&quot;true&quot; data-babel=&quot;false&quot;&gt;
-&lt;div class=&quot;snippet-code&quot;&gt;
-&lt;pre class=&quot;snippet-code-js lang-js prettyprint-override&quot;&gt;&lt;code&gt;if ($(&quot;.marquee&quot;).height() &amp;lt; $(&quot;.marquee-content&quot;).outerHeight(true)) {
-  $(&quot;.marquee-content&quot;).clone().appendTo($(&quot;.marquee-wrapper&quot;));
-}
-$(&#x27;.marquee-wrapper&#x27;).css(&quot;transition&quot;, &quot;transform 3s linear&quot;);
-$(&#x27;.marquee-wrapper&#x27;).css(&quot;transform&quot;, &quot;translateY(-&quot; + $(&quot;.marquee-content&quot;).outerHeight(true) + &quot;px)&quot;);
-setInterval(function() {
+&lt;blockquote&gt;
+  &lt;p&gt;for example:&lt;/p&gt;
   
-  $(&#x27;.marquee-wrapper&#x27;).css(&quot;transition&quot;, &quot;none&quot;);
-  $(&#x27;.marquee-wrapper&#x27;).css(&quot;transform&quot;, &quot;translateY(100px)&quot;); //This should Immedeately change translateY to 100px without smooth transition. But this doesn&#x27;t happen without adding a dealy before the below written line
+  &lt;p&gt;1) Send notification message through Firebase console or user HTTP API
+  (&lt;a href=&quot;https://fcm.googleapis.com/fcm/send&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://fcm.googleapis.com/fcm/send&lt;/a&gt;)&lt;/p&gt;
   
-  // Its weird why javscrip engine excutes the below line before excuting this line
-
-  $(&#x27;.marquee-wrapper&#x27;).css(&quot;transition&quot;, &quot;transform 3s linear&quot;);
-  $(&#x27;.marquee-wrapper&#x27;).css(&quot;transform&quot;, &quot;translateY(-&quot; + $(&quot;.marquee-content&quot;).outerHeight(true) + &quot;px)&quot;);
-
-
-}, 3000);&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&quot;snippet-code-css lang-css prettyprint-override&quot;&gt;&lt;code&gt;.marquee {
-  margin: auto;
-  width: 600px;
-  height: 200px;
-  overflow: auto;
-}
-
-.marquee-wrapper {
-  transform: translateY(0);
-}
-
-.marquee-content {
-  margin: 0;
-  padding: 30px 0;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&quot;snippet-code-html lang-html prettyprint-override&quot;&gt;&lt;code&gt;&amp;lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;section class=&quot;marquee&quot;&amp;gt;
-  &amp;lt;div class=&quot;marquee-wrapper&quot;&amp;gt;
-    &amp;lt;div class=&quot;marquee-content&quot;&amp;gt;
-      Updates: Update (8 Mar 2016): Now plugin have new option: startVisible The marquee will be visible in the start if set to true. Thanks to @nuke-ellington ðŸ‘ Update (24 Jan 2014): Note: people who been asking me how to use this plugin with content being
-      loaded with Ajax, please read notes about this update. New methods added, so now after you start the plugin using var $mq = $(&#x27;.marquee&#x27;).marquee();, you start the plugin using var $mq = $(&#x27;.marquee&#x27;).marquee();, you start the plugin using var $mq
-      = $(&#x27;.marquee&#x27;).marquee();, then you can pause, resume, togglepause, resume) and desestroy destroy toggle(pause, resume) and destroy toggle(pause, resume) and destroy methods e.g to remove the marquee plugin from your element simply use $mq.marquee(&#x27;destroy&#x27;);.
-      Similarly you can use pause the marquee any time using $mq.marquee(&#x27;pause&#x27;);.
-    &amp;lt;/div&amp;gt;
-  &amp;lt;/div&amp;gt;
-&amp;lt;/section&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-
-&lt;p&gt;As you can see in the setInterval I first set transition to none then translateY to 100px. Now in principle this should suddenly translate the div to 100px but this doesn&#x27;t happen before moving div to 100px javascript engine executes the next line and reassign transition. In the below example I have given a 100ms delay before reassigning the transition and it works:  &lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&quot;snippet&quot; data-lang=&quot;js&quot; data-hide=&quot;false&quot; data-console=&quot;true&quot; data-babel=&quot;false&quot;&gt;
-&lt;div class=&quot;snippet-code&quot;&gt;
-&lt;pre class=&quot;snippet-code-js lang-js prettyprint-override&quot;&gt;&lt;code&gt;if ($(&quot;.marquee&quot;).height() &amp;lt; $(&quot;.marquee-content&quot;).outerHeight(true)) {
-  $(&quot;.marquee-content&quot;).clone().appendTo($(&quot;.marquee-wrapper&quot;));
-}
-$(&#x27;.marquee-wrapper&#x27;).css(&quot;transition&quot;, &quot;transform 3s linear&quot;);
-$(&#x27;.marquee-wrapper&#x27;).css(&quot;transform&quot;, &quot;translateY(-&quot; + $(&quot;.marquee-content&quot;).outerHeight(true) + &quot;px)&quot;);
-setInterval(function() {
+  &lt;p&gt;2) Register device will received notification.&lt;/p&gt;
   
-  $(&#x27;.marquee-wrapper&#x27;).css(&quot;transition&quot;, &quot;none&quot;);
-  $(&#x27;.marquee-wrapper&#x27;).css(&quot;transform&quot;, &quot;translateY(100px)&quot;); //This  Immedeately change translateY to 100px without smooth transition now
+  &lt;p&gt;3) By default, application will launch after user click the
+  notification. But now what I needed is application launch and bring
+  the user to setting or other view after user click the notification.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-  setTimeout(function(){
-				$(&#x27;.marquee-wrapper&#x27;).css(&quot;transition&quot;, &quot;transform 3s linear&quot;);		
-				$(&#x27;.marquee-wrapper&#x27;).css(&quot;transform&quot;, &quot;translateY(-&quot; + $(&quot;.marquee-content&quot;).outerHeight(true) + &quot;px)&quot;);
-			},100);	
+&lt;p&gt;How can I make this app flow behavior?&lt;/p&gt;
 
-
-}, 3000);&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&quot;snippet-code-css lang-css prettyprint-override&quot;&gt;&lt;code&gt;.marquee {
-  margin: auto;
-  width: 600px;
-  height: 200px;
-  overflow: auto;
-}
-
-.marquee-wrapper {
-  transform: translateY(0);
-}
-
-.marquee-content {
-  margin: 0;
-  padding: 30px 0;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&quot;snippet-code-html lang-html prettyprint-override&quot;&gt;&lt;code&gt;&amp;lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;section class=&quot;marquee&quot;&amp;gt;
-  &amp;lt;div class=&quot;marquee-wrapper&quot;&amp;gt;
-    &amp;lt;div class=&quot;marquee-content&quot;&amp;gt;
-      Updates: Update (8 Mar 2016): Now plugin have new option: startVisible The marquee will be visible in the start if set to true. Thanks to @nuke-ellington ðŸ‘ Update (24 Jan 2014): Note: people who been asking me how to use this plugin with content being
-      loaded with Ajax, please read notes about this update. New methods added, so now after you start the plugin using var $mq = $(&#x27;.marquee&#x27;).marquee();, you start the plugin using var $mq = $(&#x27;.marquee&#x27;).marquee();, you start the plugin using var $mq
-      = $(&#x27;.marquee&#x27;).marquee();, then you can pause, resume, togglepause, resume) and desestroy destroy toggle(pause, resume) and destroy toggle(pause, resume) and destroy methods e.g to remove the marquee plugin from your element simply use $mq.marquee(&#x27;destroy&#x27;);.
-      Similarly you can use pause the marquee any time using $mq.marquee(&#x27;pause&#x27;);.
-    &amp;lt;/div&amp;gt;
-  &amp;lt;/div&amp;gt;
-&amp;lt;/section&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-
-&lt;p&gt;My questions are:  &lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;How do I stop javscript engine to reassign transition property before making changing translate property, without any delay?  &lt;/li&gt;
-&lt;li&gt;Why does javscript engine excutes a forthcoming line(&lt;code&gt;$(&#x27;.marquee-wrapper&#x27;).css(&quot;transition&quot;, &quot;transform 3s linear&quot;);&lt;/code&gt;) in script before the current line(&lt;code&gt;$(&#x27;.marquee-wrapper&#x27;).css(&quot;transform&quot;, &quot;translateY(100px)&quot;);&lt;/code&gt;)&lt;/li&gt;
-&lt;/ol&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (15, 1, 'How to remove css transitions without delay?');
-INSERT INTO activity (post_id, user_id, action) VALUES (15, 35, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (15, 20);
-INSERT INTO tag (text) VALUES ('jquery');
-INSERT INTO questiontag (question_id, tag_id) VALUES (15, 47);
-INSERT INTO questiontag (question_id, tag_id) VALUES (15, 23);
-INSERT INTO tag (text) VALUES ('css-transitions');
-INSERT INTO questiontag (question_id, tag_id) VALUES (15, 48);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (16, 19, '&lt;p&gt;I have this query:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;select * from tabel where last_purchase_categories = &#x27;flight&#x27; 
- and last_purchase_date between &#x27;2016-10-23 11:06:47&#x27; and &#x27;2016-10-23 11:06:49&#x27;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;it is didnt work in sphinx. i use fulltext search using mysql query browser.
-do anyone know how to using date format in sphinx ?&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (16, 1, 'how can i query where clause using between date in sphinx');
-INSERT INTO activity (post_id, user_id, action) VALUES (16, 19, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (16, 43);
-INSERT INTO tag (text) VALUES ('sql');
-INSERT INTO questiontag (question_id, tag_id) VALUES (16, 49);
-INSERT INTO tag (text) VALUES ('sphinx');
-INSERT INTO questiontag (question_id, tag_id) VALUES (16, 50);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (17, 22, '&lt;p&gt;I have a masonry grid to display products and in some cases the first item&#x27;s border move to the next column. It doesn&#x27;t happen always and I can&#x27;t find the reason for this to happen.
-Link to the page:
-&lt;a href=&quot;http://en.naaman.b24online.com/b2c-products/tsb-163746/&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://en.naaman.b24online.com/b2c-products/tsb-163746/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Thanks.&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (17, 1, 'css masonry grid transfer border to the next column');
-INSERT INTO activity (post_id, user_id, action) VALUES (17, 22, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (17, 23);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (18, 33, '&lt;p&gt;What I&#x27;m trying to do is, after retrying to download file for 5 times in case if download was not successful for some reason, to reset the whole process and turn back to first step: function &lt;code&gt;Try()&lt;/code&gt;. If success, then to proceed &lt;code&gt;ProcessSet(3);&lt;/code&gt; line &lt;/p&gt;
-
-&lt;p&gt;But in my situation, it starts download and without waiting, goes to &lt;code&gt;ProcessSet(3);&lt;/code&gt; line. &lt;/p&gt;
-
-&lt;p&gt;What am I doing wrong? why next steps after &lt;code&gt;try&lt;/code&gt; doesn&#x27;t wait for &lt;code&gt;await webClient.DownloadFileTaskAsync(new Uri(response.Url), zip_path);&lt;/code&gt; to finish?&lt;/p&gt;
-
-&lt;p&gt;Here is the code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;using (WebClient webClient = new WebClient())
-                        {
-                                webClient.Credentials = System.Net.CredentialCache.DefaultNetworkCredentials;
-
-                                    try
-                                    {
-                                        await webClient.DownloadFileTaskAsync(new Uri(response.Url), zip_path);
-                                    }
-                                    catch (Exception e)
-                                    {
-
-                                        Thread.Sleep(DelayOnRetry);
-                                        Try();
-                            }
-                        }
-                        SetProgressBar(40, ProgressBarStyle.Continuous);
-                        ProcessSet(3);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And here is the &lt;code&gt;Try()&lt;/code&gt; function&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;private void Try()
-{
-    ClearFolder(root_dir);
-    Directory.CreateDirectory(root_dir);
-    main_timer.Enabled = false;
-    ProcessSet(1);
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Here is the whole code:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://gist.github.com/turalus/8c781b5b0c56f66f7ec17e66a3e120fc&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://gist.github.com/turalus/8c781b5b0c56f66f7ec17e66a3e120fc&lt;/a&gt;&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (18, 1, 'Try-catch doesn&#39;t wait for async function inside');
-INSERT INTO activity (post_id, user_id, action) VALUES (18, 33, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (18, 7);
-INSERT INTO tag (text) VALUES ('asynchronous');
-INSERT INTO questiontag (question_id, tag_id) VALUES (18, 51);
-INSERT INTO tag (text) VALUES ('async-await');
-INSERT INTO questiontag (question_id, tag_id) VALUES (18, 52);
-INSERT INTO tag (text) VALUES ('try-catch');
-INSERT INTO questiontag (question_id, tag_id) VALUES (18, 53);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (19, 27, '&lt;p&gt;I want to get the last time (by date) that appears a (Empleado) where the value &quot;Entrar&quot; is 1
-&lt;a href=&quot;https://i.stack.imgur.com/lGy0a.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;enter image description here&lt;/a&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;SELECT &#x27;20498090R&#x27; FROM fichajes WHERE fecha IN (SELECT MAX(fecha) FROM 
-fichajes) AND entrada = &#x27;1&#x27;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;But this give me the las register where entrada= &#x27;1&#x27; and I just want to return information if the last entry is 1, not the las entry where entrada =&#x27;1&#x27;&lt;/p&gt;
-
-&lt;p&gt;In this case my last register entrada = &quot;0&quot; so i need no information
-What is wrong?&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (19, 1, 'SQL query get last value');
-INSERT INTO activity (post_id, user_id, action) VALUES (19, 27, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (19, 43);
-INSERT INTO questiontag (question_id, tag_id) VALUES (19, 49);
-INSERT INTO tag (text) VALUES ('mysqli');
-INSERT INTO questiontag (question_id, tag_id) VALUES (19, 54);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (20, 10, '&lt;p&gt;&lt;strong&gt;hello every one i spend two three days but did&#x27;t find any suitable solution. when i use the built in progress bar it worked perfectly but i want to show text view in progress Bar for that i use Customize progress bar when i clicked by download Button file is downloaded perfectly but Progress Bar  is not visible .i use &lt;a href=&quot;http://stackoverflow.com/questions/7951897/progress-bar-not-working-when-inflating-view&quot;&gt; this&lt;/a&gt;,&lt;a href=&quot;http://stackoverflow.com/questions/11322740/custom-progress-bar-android&quot;&gt;this&lt;/a&gt;and &lt;a href=&quot;http://stackoverflow.com/questions/18410984/android-displaying-text-in-center-of-progress-bar&quot;&gt;this&lt;/a&gt; tutorial but didn&#x27;t any help&lt;/strong&gt;
-&lt;strong&gt;Here is my customdialoge_.xml file&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&amp;gt;
-&amp;lt;LinearLayout
-xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-android:orientation=&quot;vertical&quot; android:layout_width=&quot;fill_parent&quot;
-android:layout_height=&quot;fill_parent&quot;&amp;gt;
-&amp;lt;RelativeLayout
-  android:layout_width=&quot;wrap_content&quot;
-  android:layout_height=&quot;wrap_content&quot;
-  android:padding=&quot;20dp&quot;&amp;gt;
-    &amp;lt;ProgressBar
-        android:padding=&quot;10dp&quot;
-        android:layout_width=&quot;fill_parent&quot;
-        android:layout_height=&quot;wrap_content&quot;
-        android:id=&quot;@+id/mProgressBar&quot;
-        style=&quot;@android:style/Widget.ProgressBar.Horizontal&quot;/&amp;gt;
-    &amp;lt;TextView
-        android:layout_width=&quot;wrap_content&quot;
-        android:layout_height=&quot;wrap_content&quot;
-        android:text=&quot;Downloead Size&quot;
-        android:id=&quot;@+id/mTextview&quot;
-        android:layout_centerInParent=&quot;true&quot;
-        android:textColorHighlight=&quot;#77D&quot;/&amp;gt;
-&amp;lt;/RelativeLayout&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Here is my ProgressDialoge.java class&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public class ProgressDialoge{
-//Use for to Unique the image to save...
-String captionId;
-Context context;
-View view;
-ProgressBar progressBar;
-TextView mPrgressBarTextVeiw;
-LayoutInflater inflater;
-
-public ProgressDialoge(Context context) {
-    this.context=context ;
-    inflater=(LayoutInflater)context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-    view=inflater.inflate(R.layout.customdialoge_,null);
-    progressBar=(ProgressBar)view.findViewById(R.id.mProgressBar);
-}
-public void DownloadImageUrl(String downloadUrl,String captionId){
-    this.captionId=captionId;
-    new DownloadTask().execute(downloadUrl);
-}
-public class DownloadTask extends AsyncTask&amp;lt;String,String,Void&amp;gt; {
-String fileSize;
-InputStream in;
-String currentDownloadedSize;
-OutputStream out;
-HttpURLConnection connection;
-    int fileLength;
-
-@Override
-protected void onPreExecute() {
-    super.onPreExecute();
-    mPrgressBarTextVeiw=(TextView)view.findViewById(R.id.mTextview);
-    progressBar.setMax(100);
-    progressBar.setIndeterminate(true);
-    progressBar.setVisibility(ProgressBar.VISIBLE);
-}
-
-@Override
-protected Void doInBackground(String... params) {
-
-    try {
-        URL url = new URL(params[0]);
-        connection = (HttpURLConnection) url.openConnection();
-        connection.connect();
-        // this will be useful to display download percentage
-        // might be -1: server did not report the length
-       fileLength = connection.getContentLength();
-        //getting the file size in kb,mb,g;
-        fileSize=bytes2String(fileLength);
-        Log.i(&quot;All&quot;,&quot;File Size=&quot;+fileSize);
-        // download the file
-        in = connection.getInputStream();
-        File file = imageSave(&quot;InstagramImage&quot;+captionId+&quot;.jpg&quot;);
-        out = new FileOutputStream(file);
-        byte data[] = new byte[4096];
-        long total = 0;
-        int count;
-        while ((count = in.read(data)) != -1) {
-
-            // allow canceling with back button
-            if (isCancelled()) {
-                in.close();
-                return null;
-            }
-            total += count;
-
-            currentDownloadedSize=bytes2String(total);
-            Log.i(&quot;All&quot;,&quot;currentDownloadedSize=&quot;+currentDownloadedSize);
-            // publishing the progress....
-            if (fileLength &amp;gt; 0) // only if total length is known
-                publishProgress(String.valueOf (total * 100 / fileLength));
-                out.write(data, 0, count);
-        }
-
-
-    } catch (MalformedURLException e) {
-        e.printStackTrace();
-    } catch (IOException e) {
-        e.printStackTrace();
-    } finally {
-        try {
-            if (out != null)
-                out.close();
-            if (in != null)
-                in.close();
-        } catch (IOException ignored) {
-        }
-
-        if (connection != null)
-            connection.disconnect();
-    }
-
-    return null;
-}
-    @Override
-    protected void onProgressUpdate(String... values) {
-        super.onProgressUpdate(values);
-        progressBar.setIndeterminate(true);
-        mPrgressBarTextVeiw.setText(currentDownloadedSize+&quot;/&quot;+downloadedsize);
-        progressBar.setProgress(Integer.parseInt(values[0]));
-    }
-
-    @Override
-protected void onPostExecute(Void aVoid) {
-    super.onPostExecute(aVoid);
-    progressBar.setVisibility(View.GONE);
-}
-
-
-private File imageSave(String Imagename) {
-    File direct = new File(Environment.getExternalStorageDirectory() + &quot;/DirName&quot;);
-
-    if (!direct.exists()) {
-        File wallpaperDirectory = new File(&quot;/sdcard/DirName/&quot;);
-        wallpaperDirectory.mkdirs();
-    }
-
-    File file = new File(new File(&quot;/sdcard/DirName/&quot;), Imagename);
-    if (file.exists()) {
-        file.delete();
-    }
-    return file;
-     } 
-   }
-      long  downloadedsize, filesize;
-public static final double SPACE_KB = 1024;
-public static final double SPACE_MB = 1024 * SPACE_KB;
-public static final double SPACE_GB = 1024 * SPACE_MB;
-public static final double SPACE_TB = 1024 * SPACE_GB;
-
-
-public static String bytes2String(double sizeInBytes) {
-
-    NumberFormat nf = new DecimalFormat();
-    nf.setMaximumFractionDigits(2);
-
-    try {
-        if (sizeInBytes &amp;lt; SPACE_KB) {
-            return nf.format(sizeInBytes) + &quot; Byte(s)&quot;;
-        } else if (sizeInBytes &amp;lt; SPACE_MB) {
-            return nf.format(sizeInBytes / SPACE_KB) + &quot; KB&quot;;
-        } else if (sizeInBytes &amp;lt; SPACE_GB) {
-            return nf.format(sizeInBytes / SPACE_MB) + &quot; MB&quot;;
-        } else if (sizeInBytes &amp;lt; SPACE_TB) {
-            return nf.format(sizeInBytes / SPACE_GB) + &quot; GB&quot;;
-        } else {
-            return nf.format(sizeInBytes / SPACE_TB) + &quot; TB&quot;;
-        }
-    } catch (Exception e) {
-        return sizeInBytes + &quot; Byte(s)&quot;;
-    }
-   }
-  }
-&lt;/code&gt;&lt;/pre&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (20, 1, 'Customize Progress Bar not Visible');
-INSERT INTO activity (post_id, user_id, action) VALUES (20, 10, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (20, 27);
-INSERT INTO questiontag (question_id, tag_id) VALUES (20, 35);
-INSERT INTO tag (text) VALUES ('android-layout');
-INSERT INTO questiontag (question_id, tag_id) VALUES (20, 55);
-INSERT INTO tag (text) VALUES ('progress-bar');
-INSERT INTO questiontag (question_id, tag_id) VALUES (20, 56);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (21, 36, '&lt;p&gt;I am new to jms, 
-I have made one rabbitmq jms producer project in which I am producing messages. In this project have using jmstemplate and rabbitmq queue (rabbitmq with jms plugin in it).&lt;/p&gt;
-
-&lt;p&gt;After the messages produce in queue I want to consume that message with simple rabbitmq consumer without jms.&lt;/p&gt;
-
-&lt;p&gt;but when I am getting that messages as a String in my consumer class.&lt;/p&gt;
-
-&lt;p&gt;That message in below format:&lt;/p&gt;
-
-&lt;p&gt;wx.com.rabbitmq.jms.client.message.RMQTextMessage$e529erb2a65-a5dc-4bd7-bfe0-4c09237696261frmq.jms.message.destinationsr%com.rabbitmq.jms.admin.RMQDestinationHٍ&amp;amp;)ZamqpZisQueueZisTemporaryLamqpExchangeNametLjava/lang/String;L
-amqpQueueNameq~LamqpRoutingKeyq~LdestinationNameq~xptjms.durable.queuesttestq~q~wrmq.jms.message.delivery.modermq.jms.message.timestamp[Yrmq.jms.message.priorityrmq.jms.message.expirationrmq.jms.message.id&#x27;ID:e529512742a65-a9dc-43467-fge4-4c092d42761fw{name=abhijeet1}&lt;/p&gt;
-
-&lt;p&gt;and at the end I am getting the actual message which is &quot;{name=abhijeet1}&quot;.&lt;/p&gt;
-
-&lt;p&gt;How Can I get only actual message?&lt;/p&gt;
-
-&lt;p&gt;Is it Possible to produce message using rabbit jms producer and Consumer that messages with simple rabbit mq Consumer?&lt;/p&gt;
-
-&lt;p&gt;if Possible How?&lt;/p&gt;
-
-&lt;p&gt;my Producer is:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;package com.rabbitmq.jms.producer;
-
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.jms.ConnectionFactory;
-import javax.jms.Session;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.jms.core.JmsTemplate;
-import org.springframework.jms.core.MessageCreator;
-import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.scheduling.annotation.Scheduled;
-
-import com.rabbitmq.jms.admin.RMQConnectionFactory;
-
-@SpringBootApplication
-@EnableScheduling
-public class RabbitmqJmsProducerApplication {
-    @Autowired
-    JmsTemplate jmsTemplate;
-    int i;
-
-    @Bean
-    ConnectionFactory connectionFactory() {
-
-        RMQConnectionFactory connectionFactory = new RMQConnectionFactory();
-        connectionFactory.setUsername(&quot;username&quot;);
-        connectionFactory.setPassword(&quot;password&quot;);
-        connectionFactory.setVirtualHost(&quot;**********&quot;);
-        connectionFactory.setHost(&quot;hostname&quot;);
-        return connectionFactory;
-
-    }
-
-    @Scheduled(fixedRate = 5000L) // every 5 seconds
-    public void publishQuote() {
-
-        i++;
-
-        MessageCreator messageCreator = (Session session) -&amp;gt; {
-            System.out.println(&quot;message sent &quot; + &quot;abhijeet &quot; + i);
-            Map&amp;lt;String, String&amp;gt; map = new HashMap&amp;lt;&amp;gt;();
-
-            map.put(&quot;name&quot;, &quot;abhijeet &quot; + i);
-            return session.createTextMessage(map.toString());
-        };
-
-        jmsTemplate.send(&quot;test&quot;, messageCreator);
-    }
-
-    public static void main(String[] args) {
-        SpringApplication.run(RabbitmqJmsProducerApplication.class, args);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;and consumer code is:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;package com.rabbitmq.consumer;
-
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.util.EntityUtils;
-import org.json.JSONObject;
-
-import com.rabbitmq.client.Channel;
-import com.rabbitmq.client.Connection;
-import com.rabbitmq.client.ConnectionFactory;
-import com.rabbitmq.client.QueueingConsumer;
-import com.rabbitmq.client.QueueingConsumer.Delivery;
-
-public class MailConsumer implements Runnable {
-    private static boolean processMessges(Delivery delivery) throws Exception {
-
-
-
-        String msg = new String(delivery.getBody(), &quot;UTF-8&quot;);
-        System.out.println(&quot;message is &quot;+msg);
-
-
-
-
-        return true;
-
-    }
-
-    @Override
-    public void run() {
-        try {
-            ConnectionFactory factory = new ConnectionFactory();
-
-
-
-            factory.setUsername(&quot;username&quot;);
-        factory.setPassword(&quot;password&quot;);
-        factory.setVirtualHost(&quot;**********&quot;);
-        factory.setHost(&quot;hostname&quot;);
-
-            Connection connection;
-            connection = factory.newConnection();
-
-            Channel channel = connection.createChannel();
-            boolean removeAllUpTo = true;
-            QueueingConsumer consumer = new QueueingConsumer(channel);
-            channel.basicConsume(&quot;test&quot;, consumer);
-            while (true) {
-
-                QueueingConsumer.Delivery delivery = consumer.nextDelivery();
-
-                if (delivery == null)
-                    break;
-                if (processMessges(delivery)) {
-                    try {
-                        long deliveryTag = delivery.getEnvelope().getDeliveryTag();
-                        channel.basicAck(deliveryTag, removeAllUpTo);
-                    } catch (Exception exception) {
-
-                            System.out.println(&quot;Connection was failed&quot;);
-                            continue;
-                        }
-                    }
-
-                }
-            }
-
-        }
-
-
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Sorry for my english. hope your all understand what I&#x27;m means.&lt;/p&gt;
 
 &lt;p&gt;Thanks in advance.&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (21, 1, 'Produce message using rabbitmq jms and consume that messages using simple rabbitmq consumer');
-INSERT INTO activity (post_id, user_id, action) VALUES (21, 36, 'Create');
-INSERT INTO tag (text) VALUES ('spring-boot');
-INSERT INTO questiontag (question_id, tag_id) VALUES (21, 57);
-INSERT INTO tag (text) VALUES ('rabbitmq');
-INSERT INTO questiontag (question_id, tag_id) VALUES (21, 58);
-INSERT INTO tag (text) VALUES ('jms');
-INSERT INTO questiontag (question_id, tag_id) VALUES (21, 59);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (22, 35, '&lt;p&gt;I am new in iOS and I am facing problem regarding to show multiple events on same date.I am using JTCalendar.&lt;/p&gt;
-
-&lt;p&gt;My code is like this&lt;/p&gt;
-
-&lt;p&gt;In ViewDidLoad&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;_calendarManager = [JTCalendarManager new];
-_calendarManager.delegate = self;
-[self createMinAndMaxDate];
-[_calendarManager setMenuView:_calendarMenuView];
-[_calendarManager setContentView:_calendarContentView];
-[_calendarManager setDate:_todayDate];
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In viewWillAppear I code to change colour according to web service&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[self serverconnectionScheduleAudit];
-[self serverconnectionScheduleKPI];
-[self serverconnectionScheduleMeeting];
-#pragma mark - CalendarManager delegate
-- (void)calendar:(JTCalendarManager *)calendar prepareDayView:(JTCalendarDayView *)dayView
-{
-    // Today
-    if([_calendarManager.dateHelper date:[NSDate date] isTheSameDayThan:dayView.date]){
-        dayView.circleView.hidden = NO;
-        dayView.circleView.backgroundColor = [UIColor blueColor];
-        dayView.dotView.backgroundColor = [UIColor whiteColor];
-        dayView.textLabel.textColor = [UIColor whiteColor];
-    }
-    // Selected date
-    else if(_dateSelected &amp;amp;&amp;amp; [_calendarManager.dateHelper date:_dateSelected isTheSameDayThan:dayView.date]){
-
-        if([CheckString isEqualToString:@&quot;0&quot;])
-        {
-           dayView.circleView.hidden = NO;
-           dayView.circleView.backgroundColor = [UIColor redColor];
-           dayView.dotView.backgroundColor = [UIColor whiteColor];
-           dayView.textLabel.textColor = [UIColor whiteColor];
-        }
-        else if ([CheckString isEqualToString:@&quot;1&quot;])
-        {
-            dayView.circleView.hidden = NO;
-            dayView.circleView.backgroundColor = [UIColor orangeColor];
-            dayView.dotView.backgroundColor = [UIColor whiteColor];
-            dayView.textLabel.textColor = [UIColor whiteColor];
-        }
-        else if ([CheckString isEqualToString:@&quot;2&quot;])
-        {
-            dayView.circleView.hidden = NO;
-            dayView.circleView.backgroundColor = [UIColor greenColor];
-            dayView.dotView.backgroundColor = [UIColor whiteColor];
-            dayView.textLabel.textColor = [UIColor whiteColor];
-        }
-    }
-    // Other month
-    else if(![_calendarManager.dateHelper date:_calendarContentView.date isTheSameMonthThan:dayView.date]){
-        if([CheckString isEqualToString:@&quot;0&quot;])
-        {
-            dayView.circleView.hidden = YES;
-            dayView.dotView.backgroundColor = [UIColor redColor];
-            dayView.textLabel.textColor = [UIColor lightGrayColor];
-        }
-        else if ([CheckString isEqualToString:@&quot;1&quot;])
-        {
-            dayView.circleView.hidden = YES;
-            dayView.dotView.backgroundColor = [UIColor orangeColor];
-            dayView.textLabel.textColor = [UIColor lightGrayColor];
-        }
-        else if ([CheckString isEqualToString:@&quot;2&quot;])
-        {
-            dayView.circleView.hidden = YES;
-            dayView.dotView.backgroundColor = [UIColor greenColor];
-            dayView.textLabel.textColor = [UIColor lightGrayColor];
-        }       
-    }
-    // Another day of the current month
-    else{
-        if([CheckString isEqualToString:@&quot;0&quot;])
-        {
-            dayView.circleView.hidden = YES;
-            dayView.dotView.backgroundColor = [UIColor redColor];
-            dayView.textLabel.textColor = [UIColor blackColor];
-        }
-        else if ([CheckString isEqualToString:@&quot;1&quot;])
-        {
-            dayView.circleView.hidden = YES;
-            dayView.dotView.backgroundColor = [UIColor orangeColor];
-            dayView.textLabel.textColor = [UIColor blackColor];
-        }
-        else if ([CheckString isEqualToString:@&quot;2&quot;])
-        {
-            dayView.circleView.hidden = YES;
-            dayView.dotView.backgroundColor = [UIColor greenColor];
-            dayView.textLabel.textColor = [UIColor blackColor];
-        }
-    }
-    if([self haveEventForDay:dayView.date]){
-        dayView.dotView.hidden = NO;
-    }
-    else{
-        dayView.dotView.hidden = YES;
-    }
-}
-
-- (void)calendar:(JTCalendarManager *)calendar didTouchDayView:(JTCalendarDayView *)dayView
-{
-    _dateSelected = dayView.date;
-    dayView.circleView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.1, 0.1);
-    [UIView transitionWithView:dayView
-                      duration:.3
-                       options:0
-                    animations:^{
-                        dayView.circleView.transform = CGAffineTransformIdentity;
-                        [_calendarManager reload];
-                    } completion:nil];
-    if(_calendarManager.settings.weekModeEnabled){
-        return;
-    }
-    if(![_calendarManager.dateHelper date:_calendarContentView.date isTheSameMonthThan:dayView.date]){
-        if([_calendarContentView.date compare:dayView.date] == NSOrderedAscending){
-            [_calendarContentView loadNextPageWithAnimation];
-        }
-        else{
-            [_calendarContentView loadPreviousPageWithAnimation];
-        }
-    }
-}
-
-#pragma mark - CalendarManager delegate - Page mangement
-// Used to limit the date for the calendar, optional
-- (BOOL)calendar:(JTCalendarManager *)calendar canDisplayPageWithDate:(NSDate *)date
-{
-    return [_calendarManager.dateHelper date:date isEqualOrAfter:_minDate andEqualOrBefore:_maxDate];
-}
-- (void)calendarDidLoadNextPage:(JTCalendarManager *)calendar
-{
-    //    NSLog(@&quot;Next page loaded&quot;);
-}
-- (void)calendarDidLoadPreviousPage:(JTCalendarManager *)calendar
-{
-    //    NSLog(@&quot;Previous page loaded&quot;);
-}
-
-#pragma mark - Fake data
-- (void)createMinAndMaxDate
-{
-    _todayDate = [NSDate date];
-    _minDate = [_calendarManager.dateHelper addToDate:_todayDate months:-12];
-    _maxDate = [_calendarManager.dateHelper addToDate:_todayDate months:12];
-}
-- (NSDateFormatter *)dateFormatter
-{
-    static NSDateFormatter *dateFormatter;
-    if(!dateFormatter){
-        dateFormatter = [NSDateFormatter new];
-        dateFormatter.dateFormat = @&quot;dd-MM-yyyy&quot;;
-    }
-    return dateFormatter;
-}
-- (BOOL)haveEventForDay:(NSDate *)date
-{
-    NSString *key = [[self dateFormatter] stringFromDate:date];
-
-    if(_eventsByDate[key] &amp;amp;&amp;amp; [_eventsByDate[key] count] &amp;gt; 0){
-        return YES;
-    }
-    return NO;
-}
-
--(void)funAddEvents:(NSArray *)arrDate
-{
-    _eventsByDate = [NSMutableDictionary new];
-
-    for(NSString *strDate in arrDate){
-
-        NSDateFormatter *dateformat = [[NSDateFormatter alloc] init];
-        [dateformat setDateFormat:@&quot;YYYY/MM/dd&quot;];
-        NSDate *myDate = [dateformat dateFromString:strDate];
-        NSString *key = [[self dateFormatter] stringFromDate:myDate];
-
-        if(!_eventsByDate[key]){
-            _eventsByDate[key] = [NSMutableArray new];
-        }
-
-        [_eventsByDate[key] addObject:myDate];
-
-    }
-} 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Connection Methods and Delegate&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#pragma  mark - Schedule Audit Actitvity
-//Connection Method and Delegate...
--(void)serverconnectionScheduleAudit{
-
-    [customActivityIndicator startAnimating];
-
-    int Auditid =[Empid intValue];
-
-    NSString *soapMessage = [NSString stringWithFormat:@&quot;&amp;lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;utf-8\&quot;?&amp;gt;&quot;
-                             &quot;&amp;lt;soap:Envelope xmlns:xsi=\&quot;http://www.w3.org/2001/XMLSchema-instance\&quot; xmlns:xsd=\&quot;http://www.w3.org/2001/XMLSchema\&quot; xmlns:soap=\&quot;http://schemas.xmlsoap.org/soap/envelope/\&quot;&amp;gt;&quot;
-                             &quot;&amp;lt;soap:Body&amp;gt;&quot;
-                             &quot;&amp;lt;AuditMethod xmlns=\&quot;http://tempuri.org/\&quot;&amp;gt;&quot;
-                             &quot;&amp;lt;UserId&amp;gt;%d&amp;lt;/UserId&amp;gt;&quot;
-                             &quot;&amp;lt;/AuditMethod&amp;gt;&quot;
-                             &quot;&amp;lt;/soap:Body&amp;gt;&quot;
-                             &quot;&amp;lt;/soap:Envelope&amp;gt;&quot;,Auditid];
-
-    NSURL *myNSUObj=[NSURL URLWithString:ServerString];
-    NSMutableURLRequest *theRequest = [NSMutableURLRequest requestWithURL:myNSUObj];
-    NSString *msgLength = [NSString stringWithFormat:@&quot;%lu&quot;, (unsigned long)[soapMessage length]];
-
-    [theRequest addValue: @&quot;text/xml; charset=utf-8&quot; forHTTPHeaderField:@&quot;Content-Type&quot;];
-    [theRequest addValue: @&quot;http://tempuri.org/AuditMethod&quot; forHTTPHeaderField:@&quot;SOAPAction&quot;];
-    [theRequest addValue: msgLength forHTTPHeaderField:@&quot;Content-Length&quot;];
-    [theRequest setHTTPMethod:@&quot;POST&quot;];
-    [theRequest setHTTPBody: [soapMessage dataUsingEncoding:NSUTF8StringEncoding]];
-
-    myNSUConnectionObjScheduleAudit=[[NSURLConnection alloc]initWithRequest:theRequest delegate:self];
-    NSLog(@&quot;Data =%@&quot;,myNSUConnectionObjScheduleAudit);
-    if(myNSUConnectionObjScheduleAudit)
-    {
-        NSLog(@&quot;successful connection&quot;);
-        myNSMDataFromServerScheduleAudit=[[NSMutableData alloc]init];
-    }
-}
-#pragma  mark - Schedule Actitvity
-//Connection Method and Delegate...
--(void)serverconnectionScheduleKPI{
-
-    int KPI =[Empid intValue];
-
-    NSString *soapMessage = [NSString stringWithFormat:@&quot;&amp;lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;utf-8\&quot;?&amp;gt;&quot;
-                             &quot;&amp;lt;soap:Envelope xmlns:xsi=\&quot;http://www.w3.org/2001/XMLSchema-instance\&quot; xmlns:xsd=\&quot;http://www.w3.org/2001/XMLSchema\&quot; xmlns:soap=\&quot;http://schemas.xmlsoap.org/soap/envelope/\&quot;&amp;gt;&quot;
-                             &quot;&amp;lt;soap:Body&amp;gt;&quot;
-                             &quot;&amp;lt;KPIMethod xmlns=\&quot;http://tempuri.org/\&quot;&amp;gt;&quot;
-                             &quot;&amp;lt;UserId&amp;gt;%d&amp;lt;/UserId&amp;gt;&quot;
-                             &quot;&amp;lt;/KPIMethod&amp;gt;&quot;
-                             &quot;&amp;lt;/soap:Body&amp;gt;&quot;
-                             &quot;&amp;lt;/soap:Envelope&amp;gt;&quot;,KPI];
-
-    NSURL *myNSUObj=[NSURL URLWithString:ServerString];
-    NSMutableURLRequest *theRequest = [NSMutableURLRequest requestWithURL:myNSUObj];
-    NSString *msgLength = [NSString stringWithFormat:@&quot;%lu&quot;, (unsigned long)[soapMessage length]];
-
-    [theRequest addValue: @&quot;text/xml; charset=utf-8&quot; forHTTPHeaderField:@&quot;Content-Type&quot;];
-    [theRequest addValue: @&quot;http://tempuri.org/KPIMethod&quot; forHTTPHeaderField:@&quot;SOAPAction&quot;];
-    [theRequest addValue: msgLength forHTTPHeaderField:@&quot;Content-Length&quot;];
-    [theRequest setHTTPMethod:@&quot;POST&quot;];
-    [theRequest setHTTPBody: [soapMessage dataUsingEncoding:NSUTF8StringEncoding]];
-
-    myNSUConnectionObjScheduleKPI=[[NSURLConnection alloc]initWithRequest:theRequest delegate:self];
-    NSLog(@&quot;Data =%@&quot;,myNSUConnectionObjScheduleKPI);
-    if(myNSUConnectionObjScheduleKPI)
-    {
-
-        NSLog(@&quot;successful connection&quot;);
-        myNSMDataFromServerScheduleKPI=[[NSMutableData alloc]init];
-    }
-}
-
-#pragma  mark - Schedule Actitvity
-//Connection Method and Delegate...
--(void)serverconnectionScheduleMeeting{
-
-    int KPI =[Empid intValue];
-
-    NSString *soapMessage = [NSString stringWithFormat:@&quot;&amp;lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;utf-8\&quot;?&amp;gt;&quot;
-                             &quot;&amp;lt;soap:Envelope xmlns:xsi=\&quot;http://www.w3.org/2001/XMLSchema-instance\&quot; xmlns:xsd=\&quot;http://www.w3.org/2001/XMLSchema\&quot; xmlns:soap=\&quot;http://schemas.xmlsoap.org/soap/envelope/\&quot;&amp;gt;&quot;
-                             &quot;&amp;lt;soap:Body&amp;gt;&quot;
-                             &quot;&amp;lt;MeetingMethod xmlns=\&quot;http://tempuri.org/\&quot;&amp;gt;&quot;
-                             &quot;&amp;lt;UserId&amp;gt;%d&amp;lt;/UserId&amp;gt;&quot;
-                             &quot;&amp;lt;/MeetingMethod&amp;gt;&quot;
-                             &quot;&amp;lt;/soap:Body&amp;gt;&quot;
-                             &quot;&amp;lt;/soap:Envelope&amp;gt;&quot;,KPI];
-
-    NSURL *myNSUObj=[NSURL URLWithString:ServerString];
-    // NSURLRequest *myNSURequestObj=[NSURLRequest requestWithURL:myNSUObj];
-
-    NSMutableURLRequest *theRequest = [NSMutableURLRequest requestWithURL:myNSUObj];
-    NSString *msgLength = [NSString stringWithFormat:@&quot;%lu&quot;, (unsigned long)[soapMessage length]];
-
-    [theRequest addValue: @&quot;text/xml; charset=utf-8&quot; forHTTPHeaderField:@&quot;Content-Type&quot;];
-    [theRequest addValue: @&quot;http://tempuri.org/MeetingMethod&quot; forHTTPHeaderField:@&quot;SOAPAction&quot;];
-    [theRequest addValue: msgLength forHTTPHeaderField:@&quot;Content-Length&quot;];
-    [theRequest setHTTPMethod:@&quot;POST&quot;];
-    [theRequest setHTTPBody: [soapMessage dataUsingEncoding:NSUTF8StringEncoding]];
-
-    myNSUConnectionObjScheduleMeeting=[[NSURLConnection alloc]initWithRequest:theRequest delegate:self];
-    NSLog(@&quot;Data =%@&quot;,myNSUConnectionObjScheduleMeeting);
-    if(myNSUConnectionObjScheduleMeeting)
-    {
-
-        NSLog(@&quot;successful connection&quot;);
-        myNSMDataFromServerScheduleMeeting=[[NSMutableData alloc]init];
-    }
-}
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection{
-
-    if(connection == myNSUConnectionObjScheduleAudit)
-    {
-        loginStatusScheduleAudit = [[NSString alloc] initWithBytes: [myNSMDataFromServerScheduleAudit mutableBytes] length:[myNSMDataFromServerScheduleAudit length] encoding:NSUTF8StringEncoding];
-        NSLog(@&quot;loginStatus =%@&quot;,loginStatusScheduleAudit);
-        NSError *parseError = nil;
-        NSDictionary *xmlDictionary = [XMLReader dictionaryForXMLString:loginStatusScheduleAudit error:&amp;amp;parseError];
-        NSLog(@&quot;JSON DICTIONARY = %@&quot;,xmlDictionary);
-        recordResultScheduleAudit = [xmlDictionary[@&quot;success&quot;] integerValue];
-        NSLog(@&quot;Success: %ld&quot;,(long)recordResultScheduleAudit);
-        NSDictionary* Address=[xmlDictionary objectForKey:@&quot;soap:Envelope&quot;];
-        NSLog(@&quot;Address Dict = %@&quot;,Address);
-        NSDictionary *new =[Address objectForKey:@&quot;soap:Body&quot;];
-        NSLog(@&quot;NEW DICT =%@&quot;,new);
-        NSDictionary *LoginResponse=[new objectForKey:@&quot;Get_Audits_Schedules_UserResponse&quot;];
-        NSLog(@&quot;Login Response DICT =%@&quot;,LoginResponse);
-        NSDictionary *LoginResult=[LoginResponse objectForKey:@&quot;Get_Audits_Schedules_UserResult&quot;];
-        NSLog(@&quot;Login Result =%@&quot;,LoginResult);
-        if(LoginResult.count&amp;gt;0)
-        {
-            NSLog(@&quot;Login Result = %@&quot;,LoginResult);
-            NSLog(@&quot;Login Result Dict =%@&quot;,LoginResult);
-            NSString *teststr =[[NSString alloc] init];
-            teststr =[LoginResult objectForKey:@&quot;text&quot;];
-            NSLog(@&quot;Test String Value =%@&quot;,teststr);
-            NSString *string = [LoginResult valueForKey:@&quot;text&quot;];
-
-            NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-            responsedictScheduleAudit = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-
-            ScheduleDatearrayScheduleAudit=[[NSMutableArray alloc] init];
-            ScheduleDatearrayScheduleAudit =[responsedictScheduleAudit valueForKey:@&quot;StartDate&quot;];
-            CheckString=@&quot;0&quot;;
-
-             [self funAddEvents:EndDatearrayScheduleAudit];
-        }
-    }
-    if(connection == myNSUConnectionObjScheduleKPI)
-    {
-        loginStatusScheduleKPI = [[NSString alloc] initWithBytes: [myNSMDataFromServerScheduleKPI mutableBytes] length:[myNSMDataFromServerScheduleKPI length] encoding:NSUTF8StringEncoding];
-        NSLog(@&quot;loginStatus =%@&quot;,loginStatusScheduleKPI);
-        NSError *parseError = nil;
-        NSDictionary *xmlDictionary = [XMLReader dictionaryForXMLString:loginStatusScheduleKPI error:&amp;amp;parseError];
-        NSLog(@&quot;JSON DICTIONARY = %@&quot;,xmlDictionary);
-        recordResultScheduleKPI = [xmlDictionary[@&quot;success&quot;] integerValue];
-        NSLog(@&quot;Success: %ld&quot;,(long)recordResultScheduleKPI);
-        NSDictionary* Address=[xmlDictionary objectForKey:@&quot;soap:Envelope&quot;];
-        NSLog(@&quot;Address Dict = %@&quot;,Address);
-        NSDictionary *new =[Address objectForKey:@&quot;soap:Body&quot;];
-        NSLog(@&quot;NEW DICT =%@&quot;,new);
-        NSDictionary *LoginResponse=[new objectForKey:@&quot;Get_Kpi_Schedules_UserResponse&quot;];
-        NSLog(@&quot;Login Response DICT =%@&quot;,LoginResponse);
-        NSDictionary *LoginResult=[LoginResponse objectForKey:@&quot;Get_Kpi_Schedules_UserResult&quot;];
-        NSLog(@&quot;Login Result =%@&quot;,LoginResult);
-        if(LoginResult.count&amp;gt;0)
-        {
-            NSLog(@&quot;Login Result = %@&quot;,LoginResult);
-            NSLog(@&quot;Login Result Dict =%@&quot;,LoginResult);
-            NSString *teststr =[[NSString alloc] init];
-            teststr =[LoginResult objectForKey:@&quot;text&quot;];
-            NSLog(@&quot;Test String Value =%@&quot;,teststr);
-            NSString *string = [LoginResult valueForKey:@&quot;text&quot;];
-
-            NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-            responsedictScheduleKPI = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-
-            StartDatearrayScheduleKPI =[[NSMutableArray alloc] init];
-            StartDatearrayScheduleKPI =[responsedictScheduleKPI valueForKey:@&quot;StartDate&quot;];
-           CheckString=@&quot;1&quot;;
-
-        [self funAddEvents:EndDatearrayScheduleKPI];
-        }
-    }
-    if(connection == myNSUConnectionObjScheduleMeeting)
-    {
-        loginStatusScheduleMeeting = [[NSString alloc] initWithBytes: [myNSMDataFromServerScheduleMeeting mutableBytes] length:[myNSMDataFromServerScheduleMeeting length] encoding:NSUTF8StringEncoding];
-        NSLog(@&quot;loginStatus =%@&quot;,loginStatusScheduleMeeting);
-        NSError *parseError = nil;
-        NSDictionary *xmlDictionary = [XMLReader dictionaryForXMLString:loginStatusScheduleMeeting error:&amp;amp;parseError];
-        NSLog(@&quot;JSON DICTIONARY = %@&quot;,xmlDictionary);
-        recordResultScheduleMeeting = [xmlDictionary[@&quot;success&quot;] integerValue];
-        NSLog(@&quot;Success: %ld&quot;,(long)recordResultScheduleMeeting);
-        NSDictionary* AddressDict=[xmlDictionary objectForKey:@&quot;soap:Envelope&quot;];
-        NSLog(@&quot;Address Dict = %@&quot;,AddressDict);
-        NSDictionary *new =[AddressDict objectForKey:@&quot;soap:Body&quot;];
-        NSLog(@&quot;NEW DICT =%@&quot;,new);
-        NSDictionary *LoginResponse=[new objectForKey:@&quot;Get_Meeting_Schedules_UserResponse&quot;];
-        NSLog(@&quot;Login Response DICT =%@&quot;,LoginResponse);
-        NSDictionary *LoginResult=[LoginResponse objectForKey:@&quot;Get_Meeting_Schedules_UserResult&quot;];
-        NSLog(@&quot;Login Result =%@&quot;,LoginResult);
-        if(LoginResult.count&amp;gt;0)
-        {
-            NSLog(@&quot;Login Result = %@&quot;,LoginResult);
-            NSLog(@&quot;Login Result Dict =%@&quot;,LoginResult);
-            NSString *teststr =[[NSString alloc] init];
-            teststr =[LoginResult objectForKey:@&quot;text&quot;];
-            NSLog(@&quot;Test String Value =%@&quot;,teststr);
-            NSString *string = [LoginResult valueForKey:@&quot;text&quot;];
-
-            NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-            responsedictScheduleMeeting = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-            StartDatearrayScheduleMeeting =[[NSMutableArray alloc] init];
-            StartDatearrayScheduleMeeting =[responsedictScheduleMeeting valueForKey:@&quot;StartDate&quot;];
-
-            CheckString=@&quot;2&quot;;
-
-             [self funAddEvents:EndDatearrayScheduleMeeting];
-        }
-    }
-    NSMutableArray *arrDates=[[NSMutableArray alloc] init];
-    [arrDates addObjectsFromArray:StartDatearrayScheduleKPI];
-    [arrDates addObjectsFromArray:ScheduleDatearrayScheduleAudit];
-    [arrDates addObjectsFromArray:StartDatearrayScheduleMeeting];
-    [self funAddEvents:arrDates];
-
-    [customActivityIndicator stopAnimating];
-}
-
-#pragma mark - NSXMLParsing Delegate
-
--(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
-{
-    if([elementName isEqualToString:@&quot;FillBlocksNew&quot;])
-    {
-        myDataClassObjScheduleAudit=[[mydata alloc]init];
-    }
-}
-
--(void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string
-{
-    myMutableStringObjScheduleAudit=[[NSMutableString alloc]initWithString:string];
-    NSLog(@&quot;Array String: %@&quot;,myMutableStringObjScheduleAudit);
-    NSData *dataAudit = [myMutableStringObjScheduleAudit dataUsingEncoding:NSUTF8StringEncoding];
-    responsedictScheduleAudit = [NSJSONSerialization JSONObjectWithData:dataAudit options:0 error:nil];
-    NSLog(@&quot;JSON DATA = %@&quot;,responsedictScheduleAudit);
-
-    myMutableStringObjScheduleKPI=[[NSMutableString alloc]initWithString:string];
-    NSLog(@&quot;Array String: %@&quot;,myMutableStringObjScheduleKPI);
-    NSData *dataKPI = [myMutableStringObjScheduleKPI dataUsingEncoding:NSUTF8StringEncoding];
-    responsedictScheduleKPI = [NSJSONSerialization JSONObjectWithData:dataKPI options:0 error:nil];
-    NSLog(@&quot;JSON DATA = %@&quot;,responsedictScheduleKPI);
-
-    myMutableStringObjScheduleMeeting=[[NSMutableString alloc]initWithString:string];
-    NSLog(@&quot;Array String: %@&quot;,myMutableStringObjScheduleMeeting);
-    NSData *dataMeeting = [myMutableStringObjScheduleMeeting dataUsingEncoding:NSUTF8StringEncoding];
-    responsedictScheduleMeeting = [NSJSONSerialization JSONObjectWithData:dataMeeting options:0 error:nil];
-    NSLog(@&quot;JSON DATA = %@&quot;,responsedictScheduleMeeting);
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is how I am showing &lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/JcuvM.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/JcuvM.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I need to show multiple events like this in the image 
-&lt;a href=&quot;https://i.stack.imgur.com/0vYnG.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/0vYnG.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I need to show 2,3 events on the same date on the JTCalendar form the web service and in the different colour.How to do this can anyone try like this.Thanks in Advance! &lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (22, 1, 'How to show 3 events on same date on calendar from web service in Objective C');
-INSERT INTO activity (post_id, user_id, action) VALUES (22, 35, 'Create');
-INSERT INTO tag (text) VALUES ('ios');
-INSERT INTO questiontag (question_id, tag_id) VALUES (22, 60);
-INSERT INTO tag (text) VALUES ('objective-c');
-INSERT INTO questiontag (question_id, tag_id) VALUES (22, 61);
-INSERT INTO tag (text) VALUES ('nsarray');
-INSERT INTO questiontag (question_id, tag_id) VALUES (22, 62);
-INSERT INTO tag (text) VALUES ('jtcalendar');
-INSERT INTO questiontag (question_id, tag_id) VALUES (22, 63);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (23, 11, '&lt;p&gt;I&#x27;m trying to send data over network from a Java program to a C program.
-But I don&#x27;t know which type of data to use. I tried with a char.&lt;/p&gt;
-
-&lt;p&gt;Here is my Java code : &lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;DataOutputStream dos = new DataOutputStream(sock.getOutputStream());
-char c = &#x27;c&#x27;;
-dos.writeChar(c);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And my C code : &lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;char buffer[256];
-bzero(buffer, 256);
-read(newsockfd, buffer, 255);
-printf(&quot;Here is the message: %c\n&quot;, buffer[0]);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&quot;Here is the message&quot; print nothing. I don&#x27;t know if buffer[0] is empty or if the type is not compatible.&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (23, 1, 'Send data over sockets from Java program to C program');
-INSERT INTO activity (post_id, user_id, action) VALUES (23, 11, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (23, 27);
-INSERT INTO tag (text) VALUES ('c');
-INSERT INTO questiontag (question_id, tag_id) VALUES (23, 64);
-INSERT INTO tag (text) VALUES ('sockets');
-INSERT INTO questiontag (question_id, tag_id) VALUES (23, 65);
-INSERT INTO tag (text) VALUES ('networking');
-INSERT INTO questiontag (question_id, tag_id) VALUES (23, 66);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (24, 38, '&lt;p&gt;I have taken the code from the following source on Github and am trying to run it from Qt on RHEL Red Hat 4.4.7-17:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/neveraway/oclJPEGDecoder&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://github.com/neveraway/oclJPEGDecoder&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I extracted the project folder and ran &lt;code&gt;qmake -project&lt;/code&gt;in it. I opened the files in Qt creator and further modified my .pro file to link OpenCL sources and add the CXX and CFLAGS.&lt;/p&gt;
-
-&lt;p&gt;My .pro file looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;######################################################################
-# Automatically generated by qmake (1.07a) Tue Mar 28 14:51:49 2017
-######################################################################
-
-TEMPLATE = app
-DEPENDPATH += src \
-              /usr/local/cuda-7.0/lib64/
-
-INCLUDEPATH += . src \
-                /usr/local/cuda-7.0/lib64/\
-               /usr/local/cuda-7.0/include/
-# Input
-HEADERS += src/bitstream.h \
-           src/bmp.h \
-           src/decoder.h \
-           src/huffman.h \
-           src/idct.h \
-           src/jpeg.h \
-           src/macro.h \
-           src/stdafx.h \
-           src/targetver.h \
-           src/zigzag.h
-
-SOURCES += src/bitstream.cpp \
-           src/cpuIDCT8x8.cpp \
-           src/decoder.cpp \
-           src/huffman.cpp \
-           src/main.cpp \
-           src/oclDCT8x8.cpp \
-           src/parser.cpp \
-           src/stdafx.cpp \
-    src/main.cpp
-
-LIBS += -L/usr/local/cuda-7.0/lib64/ -lOpenCL
-
-QMAKE_CXXFLAGS += -std=c++11
-
-QMAKE_CFLAGS += -std=c99
-
-DISTFILES += \
-    src/idct8x8.cl \
-    oclJPEGDecoder.sln \
-    oclJPEGDecoder.vcxproj \
-    oclJPEGDecoder.vcxproj.filters \
-    README.md \
-    test/JPEG_example_JPG_RIP_050.jpg
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;When I clicked on &lt;code&gt;Run qmake&lt;/code&gt; and then &lt;code&gt;Build All&lt;/code&gt;, this is what I saw under &quot;Compile Output&quot;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;18:08:23: Configuration unchanged, skipping qmake step.
-18:08:23: Starting: &quot;/usr/bin/make&quot; 
-Makefile:634: warning: overriding commands for target `main.o&#x27;
-Makefile:603: warning: ignoring old commands for target `main.o&#x27;
-g++ -c -pipe -std=c++11 -g -std=gnu++0x -Wall -W -D_REENTRANT -fPIC -DQT_QML_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I../oclJPEGDecoder-master -I. -I../oclJPEGDecoder-master -I../oclJPEGDecoder-master/src -I/usr/local/cuda-7.0/lib64 -I/usr/local/cuda-7.0/include -I/opt/Qt5.6.2/5.6/gcc_64/include -I/opt/Qt5.6.2/5.6/gcc_64/include/QtGui -I/opt/Qt5.6.2/5.6/gcc_64/include/QtCore -I. -I/opt/Qt5.6.2/5.6/gcc_64/mkspecs/linux-g++ -o bitstream.o ../oclJPEGDecoder-master/src/bitstream.cpp
-cc1plus: error: unrecognized command line option &quot;-std=c++11&quot;
-make: *** [bitstream.o] Error 1
-18:08:23: The process &quot;/usr/bin/make&quot; exited with code 2.
-Error while building/deploying project oclJPEGDecoder-master (kit: Desktop Qt 5.6.2 GCC 64bit)
-When executing step &quot;Make&quot;
-18:08:23: Elapsed time: 00:00.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;My &lt;code&gt;Makefile&lt;/code&gt; has the following contents:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#############################################################################
-# Makefile for building: oclJPEGDecoder-master
-# Generated by qmake (3.0) (Qt 5.6.2)
-# Project:  ../oclJPEGDecoder-master/oclJPEGDecoder-master.pro
-# Template: app
-# Command: /opt/Qt5.6.2/5.6/gcc_64/bin/qmake -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug -o Makefile ../oclJPEGDecoder-master/oclJPEGDecoder-master.pro
-#############################################################################
-
-MAKEFILE      = Makefile
-
-####### Compiler, tools and options
-
-CC            = gcc
-CXX           = g++
-DEFINES       = -DQT_QML_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB
-CFLAGS        = -pipe -g -Wall -W -D_REENTRANT -fPIC $(DEFINES)
-CXXFLAGS      = -pipe -std=c++11 -g -std=gnu++0x -Wall -W -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I../oclJPEGDecoder-master -I. -I../oclJPEGDecoder-master -I../oclJPEGDecoder-master/src -I/usr/local/cuda-7.0/lib64 -I/usr/local/cuda-7.0/include -I/opt/Qt5.6.2/5.6/gcc_64/include -I/opt/Qt5.6.2/5.6/gcc_64/include/QtGui -I/opt/Qt5.6.2/5.6/gcc_64/include/QtCore -I. -I/opt/Qt5.6.2/5.6/gcc_64/mkspecs/linux-g++
-QMAKE         = /opt/Qt5.6.2/5.6/gcc_64/bin/qmake
-DEL_FILE      = rm -f
-CHK_DIR_EXISTS= test -d
-MKDIR         = mkdir -p
-COPY          = cp -f
-COPY_FILE     = cp -f
-COPY_DIR      = cp -f -R
-INSTALL_FILE  = install -m 644 -p
-INSTALL_PROGRAM = install -m 755 -p
-INSTALL_DIR   = cp -f -R
-DEL_FILE      = rm -f
-SYMLINK       = ln -f -s
-DEL_DIR       = rmdir
-MOVE          = mv -f
-TAR           = tar -cf
-COMPRESS      = gzip -9f
-DISTNAME      = oclJPEGDecoder-master1.0.0
-DISTDIR = /root/Downloads/build-oclJPEGDecoder-master-Desktop_Qt_5_6_2_GCC_64bit-Debug/.tmp/oclJPEGDecoder-master1.0.0
-LINK          = g++
-LFLAGS        = -Wl,-rpath,/opt/Qt5.6.2/5.6/gcc_64/lib
-LIBS          = $(SUBLIBS) -L/usr/local/cuda-7.0/lib64/ -lOpenCL -L/opt/Qt5.6.2/5.6/gcc_64/lib -lQt5Gui -L/usr/lib64 -lQt5Core -lGL -lpthread 
-AR            = ar cqs
-RANLIB        = 
-SED           = sed
-STRIP         = strip
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;My &lt;code&gt;.o&lt;/code&gt; files look like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;####### Compile
-
-bitstream.o: ../oclJPEGDecoder-master/src/bitstream.cpp ../oclJPEGDecoder-master/src/stdafx.h \
-        ../oclJPEGDecoder-master/src/targetver.h \
-        ../oclJPEGDecoder-master/src/macro.h \
-        ../oclJPEGDecoder-master/src/bitstream.h
-    $(CXX) -c $(CXXFLAGS) $(INCPATH) -o bitstream.o ../oclJPEGDecoder-master/src/bitstream.cpp
-
-cpuIDCT8x8.o: ../oclJPEGDecoder-master/src/cpuIDCT8x8.cpp ../oclJPEGDecoder-master/src/stdafx.h \
-        ../oclJPEGDecoder-master/src/targetver.h \
-        ../oclJPEGDecoder-master/src/macro.h \
-        ../oclJPEGDecoder-master/src/idct.h
-    $(CXX) -c $(CXXFLAGS) $(INCPATH) -o cpuIDCT8x8.o ../oclJPEGDecoder-master/src/cpuIDCT8x8.cpp
-
-decoder.o: ../oclJPEGDecoder-master/src/decoder.cpp ../oclJPEGDecoder-master/src/stdafx.h \
-        ../oclJPEGDecoder-master/src/targetver.h \
-        ../oclJPEGDecoder-master/src/macro.h \
-        ../oclJPEGDecoder-master/src/jpeg.h \
-        ../oclJPEGDecoder-master/src/bmp.h \
-        ../oclJPEGDecoder-master/src/bitstream.h \
-        ../oclJPEGDecoder-master/src/huffman.h \
-        ../oclJPEGDecoder-master/src/zigzag.h \
-        ../oclJPEGDecoder-master/src/idct.h
-    $(CXX) -c $(CXXFLAGS) $(INCPATH) -o decoder.o ../oclJPEGDecoder-master/src/decoder.cpp
-
-huffman.o: ../oclJPEGDecoder-master/src/huffman.cpp ../oclJPEGDecoder-master/src/stdafx.h \
-        ../oclJPEGDecoder-master/src/targetver.h \
-        ../oclJPEGDecoder-master/src/macro.h \
-        ../oclJPEGDecoder-master/src/huffman.h \
-        ../oclJPEGDecoder-master/src/bitstream.h
-    $(CXX) -c $(CXXFLAGS) $(INCPATH) -o huffman.o ../oclJPEGDecoder-master/src/huffman.cpp
-
-main.o: ../oclJPEGDecoder-master/src/main.cpp ../oclJPEGDecoder-master/src/stdafx.h \
-        ../oclJPEGDecoder-master/src/targetver.h \
-        ../oclJPEGDecoder-master/src/macro.h \
-        ../oclJPEGDecoder-master/src/bitstream.h \
-        ../oclJPEGDecoder-master/src/huffman.h \
-        ../oclJPEGDecoder-master/src/idct.h
-    $(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../oclJPEGDecoder-master/src/main.cpp
-
-oclDCT8x8.o: ../oclJPEGDecoder-master/src/oclDCT8x8.cpp ../oclJPEGDecoder-master/src/stdafx.h \
-        ../oclJPEGDecoder-master/src/targetver.h \
-        /usr/local/cuda-7.0/include/CL/opencl.h \
-        /usr/local/cuda-7.0/include/CL/cl.h \
-        /usr/local/cuda-7.0/include/CL/cl_platform.h \
-        /usr/local/cuda-7.0/include/CL/cl_gl.h \
-        /usr/local/cuda-7.0/include/CL/cl_gl_ext.h \
-        /usr/local/cuda-7.0/include/CL/cl_ext.h \
-        ../oclJPEGDecoder-master/src/macro.h \
-        ../oclJPEGDecoder-master/src/idct.h
-    $(CXX) -c $(CXXFLAGS) $(INCPATH) -o oclDCT8x8.o ../oclJPEGDecoder-master/src/oclDCT8x8.cpp
-
-parser.o: ../oclJPEGDecoder-master/src/parser.cpp ../oclJPEGDecoder-master/src/stdafx.h \
-        ../oclJPEGDecoder-master/src/targetver.h \
-        ../oclJPEGDecoder-master/src/macro.h \
-        ../oclJPEGDecoder-master/src/jpeg.h \
-        ../oclJPEGDecoder-master/src/decoder.h
-    $(CXX) -c $(CXXFLAGS) $(INCPATH) -o parser.o ../oclJPEGDecoder-master/src/parser.cpp
-
-stdafx.o: ../oclJPEGDecoder-master/src/stdafx.cpp ../oclJPEGDecoder-master/src/stdafx.h \
-        ../oclJPEGDecoder-master/src/targetver.h
-    $(CXX) -c $(CXXFLAGS) $(INCPATH) -o stdafx.o ../oclJPEGDecoder-master/src/stdafx.cpp
-
-main.o: ../oclJPEGDecoder-master/src/main.cpp ../oclJPEGDecoder-master/src/stdafx.h \
-        ../oclJPEGDecoder-master/src/targetver.h \
-        ../oclJPEGDecoder-master/src/macro.h \
-        ../oclJPEGDecoder-master/src/bitstream.h \
-        ../oclJPEGDecoder-master/src/huffman.h \
-        ../oclJPEGDecoder-master/src/idct.h
-    $(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../oclJPEGDecoder-master/src/main.cpp
-
-####### Install
-
-install:  FORCE
-
-uninstall:  FORCE
-
-FORCE:
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;2nd ATTEMPT WITH &lt;code&gt;-std=c++0x&lt;/code&gt;:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I changed the CXX_FLAGS command to &lt;code&gt;QMAKE_CXXFLAGS += -std=c++0x&lt;/code&gt; and kept everything else unchanged in my &lt;code&gt;.pro&lt;/code&gt; file. 
-When I clicked on &lt;code&gt;Build All&lt;/code&gt; after making the change, this is the output I got under &quot;Compile Output&quot;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;18:38:06: Running steps for project oclJPEGDecoder-master...
-18:38:06: Configuration unchanged, skipping qmake step.
-18:38:06: Starting: &quot;/usr/bin/make&quot; 
-Makefile:634: warning: overriding commands for target `main.o&#x27;
-Makefile:603: warning: ignoring old commands for target `main.o&#x27;
-g++ -c -pipe -std=c++0x -g -std=gnu++0x -Wall -W -D_REENTRANT -fPIC -DQT_QML_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I../oclJPEGDecoder-master -I. -I../oclJPEGDecoder-master -I../oclJPEGDecoder-master/src -I/usr/local/cuda-7.0/lib64 -I/usr/local/cuda-7.0/include -I/opt/Qt5.6.2/5.6/gcc_64/include -I/opt/Qt5.6.2/5.6/gcc_64/include/QtGui -I/opt/Qt5.6.2/5.6/gcc_64/include/QtCore -I. -I/opt/Qt5.6.2/5.6/gcc_64/mkspecs/linux-g++ -o bitstream.o ../oclJPEGDecoder-master/src/bitstream.cpp
-In file included from ../oclJPEGDecoder-master/src/bitstream.cpp:4:
-../oclJPEGDecoder-master/src/bitstream.h:368: error: &#x27;nullptr&#x27; was not declared in this scope
-../oclJPEGDecoder-master/src/bitstream.h:368: error: ISO C++ forbids initialization of member &#x27;mBitReservoir&#x27;
-../oclJPEGDecoder-master/src/bitstream.h:368: error: making &#x27;mBitReservoir&#x27; static
-../oclJPEGDecoder-master/src/bitstream.h:368: error: invalid in-class initialization of static data member of non-integral type &#x27;uint8_t*&#x27;
-../oclJPEGDecoder-master/src/bitstream.h:369: error: ISO C++ forbids initialization of member &#x27;mCapacity&#x27;
-../oclJPEGDecoder-master/src/bitstream.h:369: error: making &#x27;mCapacity&#x27; static
-../oclJPEGDecoder-master/src/bitstream.h:369: error: ISO C++ forbids in-class initialization of non-const static member &#x27;mCapacity&#x27;
-../oclJPEGDecoder-master/src/bitstream.h: In member function &#x27;void BitStream::free()&#x27;:
-../oclJPEGDecoder-master/src/bitstream.h:96: error: &#x27;mBitReservoir&#x27; was not declared in this scope
-../oclJPEGDecoder-master/src/bitstream.h:96: error: &#x27;nullptr&#x27; was not declared in this scope
-../oclJPEGDecoder-master/src/bitstream.h:98: error: type &#x27;&amp;lt;type error&amp;gt;&#x27; argument given to &#x27;delete&#x27;, expected pointer
-../oclJPEGDecoder-master/src/bitstream.h: In member function &#x27;void BitStream::trim()&#x27;:
-../oclJPEGDecoder-master/src/bitstream.h:110: error: &#x27;mBitReservoir&#x27; was not declared in this scope
-../oclJPEGDecoder-master/src/bitstream.h: In member function &#x27;bool BitStream::reserve(size_t)&#x27;:
-../oclJPEGDecoder-master/src/bitstream.h:137: error: &#x27;mBitReservoir&#x27; was not declared in this scope
-../oclJPEGDecoder-master/src/bitstream.h: In member function &#x27;bool BitStream::frontBit() const&#x27;:
-../oclJPEGDecoder-master/src/bitstream.h:209: error: &#x27;mBitReservoir&#x27; was not declared in this scope
-../oclJPEGDecoder-master/src/bitstream.h: In member function &#x27;uint8_t BitStream::frontFullByte() const&#x27;:
-../oclJPEGDecoder-master/src/bitstream.h:214: error: &#x27;mBitReservoir&#x27; was not declared in this scope
-../oclJPEGDecoder-master/src/bitstream.h: In member function &#x27;uint32_t BitStream::front9b(uint8_t) const&#x27;:
-../oclJPEGDecoder-master/src/bitstream.h:219: error: &#x27;mBitReservoir&#x27; was not declared in this scope
-../oclJPEGDecoder-master/src/bitstream.h: In member function &#x27;uint32_t BitStream::front17b(uint8_t) const&#x27;:
-../oclJPEGDecoder-master/src/bitstream.h:227: error: &#x27;mBitReservoir&#x27; was not declared in this scope
-../oclJPEGDecoder-master/src/bitstream.h: In member function &#x27;uint32_t BitStream::front25b(uint8_t) const&#x27;:
-../oclJPEGDecoder-master/src/bitstream.h:235: error: &#x27;mBitReservoir&#x27; was not declared in this scope
-../oclJPEGDecoder-master/src/bitstream.h: In member function &#x27;void BitStream::writeBit(bool)&#x27;:
-../oclJPEGDecoder-master/src/bitstream.h:246: error: &#x27;mBitReservoir&#x27; was not declared in this scope
-../oclJPEGDecoder-master/src/bitstream.h:248: error: &#x27;mBitReservoir&#x27; was not declared in this scope
-../oclJPEGDecoder-master/src/bitstream.h: In member function &#x27;const uint8_t* BitStream::frontData() const&#x27;:
-../oclJPEGDecoder-master/src/bitstream.h:307: error: &#x27;mBitReservoir&#x27; was not declared in this scope
-../oclJPEGDecoder-master/src/bitstream.h: In member function &#x27;uint32_t BitStream::cachedFrontBits(int)&#x27;:
-../oclJPEGDecoder-master/src/bitstream.h:340: error: &#x27;mBitReservoir&#x27; was not declared in this scope
-../oclJPEGDecoder-master/src/bitstream.h: In member function &#x27;void BitStream::moveDataTo(uint8_t*)&#x27;:
-../oclJPEGDecoder-master/src/bitstream.h:398: error: &#x27;mBitReservoir&#x27; was not declared in this scope
-../oclJPEGDecoder-master/src/bitstream.cpp: In member function &#x27;size_t BitStream::append(const uint8_t*, size_t)&#x27;:
-../oclJPEGDecoder-master/src/bitstream.cpp:22: error: &#x27;mBitReservoir&#x27; was not declared in this scope
-make: *** [bitstream.o] Error 1
-18:38:06: The process &quot;/usr/bin/make&quot; exited with code 2.
-Error while building/deploying project oclJPEGDecoder-master (kit: Desktop Qt 5.6.2 GCC 64bit)
-When executing step &quot;Make&quot;
-18:38:06: Elapsed time: 00:00.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I got errors in &lt;code&gt;bitstream.c&lt;/code&gt; due to incompatibility with the compiler.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;How can I get around this issue? Do I absolutely need to install a new version of g++ to get this code to work? Do I need to include anything in my &lt;code&gt;Makefile&lt;/code&gt;?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Please guide me in this matter.&lt;/p&gt;
-
-&lt;p&gt;EDIT:&lt;/p&gt;
-
-&lt;p&gt;My output for &lt;code&gt;g++ --version&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;g++ (GCC) 4.4.7 20120313 (Red Hat 4.4.7-17)
-Copyright (C) 2010 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-&lt;/code&gt;&lt;/pre&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (24, 1, 'Getting the error &quot;cc1plus: error: unrecognized command line option &quot;-std=c++11&quot;&quot; when I run code on Qt creator');
-INSERT INTO activity (post_id, user_id, action) VALUES (24, 38, 'Create');
-INSERT INTO tag (text) VALUES ('c++11');
-INSERT INTO questiontag (question_id, tag_id) VALUES (24, 67);
-INSERT INTO tag (text) VALUES ('makefile');
-INSERT INTO questiontag (question_id, tag_id) VALUES (24, 68);
-INSERT INTO tag (text) VALUES ('qt-creator');
-INSERT INTO questiontag (question_id, tag_id) VALUES (24, 69);
-INSERT INTO tag (text) VALUES ('qmake');
-INSERT INTO questiontag (question_id, tag_id) VALUES (24, 70);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (25, 16, '&lt;p&gt;After a token refresh from my web app (es: onTokenRefresh callback), should my server app subscribe the app instance to all the old topics by calling the Instance ID service or the iid token is associated in automatic to old topics? &lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (25, 1, 'old topic subsriptions after token refresh');
-INSERT INTO activity (post_id, user_id, action) VALUES (25, 16, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (2, 1, 'Firebase Cloud Message Action after clicked the notification in Unity');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (2, 2, 41, 'Create');
+INSERT INTO tag (text) VALUES ('unity3d');
+INSERT INTO questiontag (question_id, tag_id) VALUES (2, 5);
 INSERT INTO tag (text) VALUES ('firebase');
-INSERT INTO questiontag (question_id, tag_id) VALUES (25, 71);
-INSERT INTO tag (text) VALUES ('push-notification');
-INSERT INTO questiontag (question_id, tag_id) VALUES (25, 72);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 113, 76);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (26, 11, '&lt;p&gt;Is there a way to convert NaN values to 0 without an if statement:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;if (isNaN(a)) a = 0;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It is very annoying to check my variables every time.&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (26, 1, 'Convert NaN to 0 in javascript');
-INSERT INTO activity (post_id, user_id, action) VALUES (26, 11, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (26, 20);
+INSERT INTO questiontag (question_id, tag_id) VALUES (2, 6);
+INSERT INTO tag (text) VALUES ('firebase-cloud-messaging');
+INSERT INTO questiontag (question_id, tag_id) VALUES (2, 7);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (27, 14, '&lt;p&gt;Right after updating Xcode to 8.3, I started receiving this error at launch: Terminating app due to uncaught exception &#x27;CALayerInvalidGeometry&#x27;, reason: &#x27;CALayer position contains NaN: [nan nan]&#x27;&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (3, 46, '&lt;p&gt;The Service Fabric Team announced in their &lt;a href=&quot;https://azure.microsoft.com/en-us/blog/announcing-azure-service-fabric-5-5-and-sdk-2-5/&quot; rel=&quot;nofollow noreferrer&quot;&gt;blog post&lt;/a&gt; that Service Fabric now supports &lt;em&gt;Refresh Mode&lt;/em&gt; in Preview when debugging on a 1 Node cluster in Visual Studio 2015.&lt;/p&gt;
 
-&lt;p&gt;The main view for my app has a couple of container views, one of which holds a mapView. It appears the error has to do with the map, but I can&#x27;t quite make out from the message what that might be. Any thoughts would be greatly appreciated!&lt;/p&gt;
+&lt;p&gt;I&#x27;ve just installed the new Service Fabric SDK from the Web Platform Installer and have a .Net Core Web Application Service I&#x27;d like to try this out with. &lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;*** Terminating app due to uncaught exception &#x27;CALayerInvalidGeometry&#x27;, reason: &#x27;CALayer position contains NaN: [nan nan]&#x27;
-*** First throw call stack:
-(
-0   CoreFoundation                      0x00000001029b1b0b __exceptionPreprocess + 171
-1   libobjc.A.dylib                     0x0000000102416141 objc_exception_throw + 48
-2   CoreFoundation                      0x0000000102a1a625 +[NSException raise:format:] + 197
-3   QuartzCore                          0x00000001039d90be _ZN2CA5Layer12set_positionERKNS_4Vec2IdEEb + 152
-4   QuartzCore                          0x00000001039d9231 -[CALayer setPosition:] + 43
-5   MapKit                              0x000000010354a97b -[MKMapView _updateScrollContainerView:] + 1214
-6   MapKit                              0x000000010354bbeb -[MKMapView _sizeDidChangeWithCenterCoordinate:] + 55
-7   MapKit                              0x000000010354606e -[MKMapView setBounds:] + 271
-8   UIKit                               0x0000000103c14b23 -[UIView(Geometry) _applyISEngineLayoutValuesToBoundsOnly:] + 598
-9   UIKit                               0x0000000103c14e0e -[UIView(Geometry) _resizeWithOldSuperviewSize:] + 125
-10  CoreFoundation                      0x0000000102942652 __53-[__NSArrayM enumerateObjectsWithOptions:usingBlock:]_block_invoke + 114
-11  CoreFoundation                      0x000000010294256f -[__NSArrayM enumerateObjectsWithOptions:usingBlock:] + 335
-12  UIKit                               0x0000000103c1387c -[UIView(Geometry) resizeSubviewsWithOldSize:] + 183
-13  UIKit                               0x000000010452f1f9 -[UIView(AdditionalLayoutSupport) _is_layout] + 168
-14  UIKit                               0x0000000103c1fd56 -[UIView(Hierarchy) _updateConstraintsAsNecessaryAndApplyLayoutFromEngine] + 994
-15  UIKit                               0x0000000103c3120b -[UIView(CALayerDelegate) layoutSublayersOfLayer:] + 1268
-16  QuartzCore                          0x00000001039e2904 -[CALayer layoutSublayers] + 146
-17  QuartzCore                          0x00000001039d6526 _ZN2CA5Layer16layout_if_neededEPNS_11TransactionE + 370
-18  QuartzCore                          0x00000001039d63a0 _ZN2CA5Layer28layout_and_display_if_neededEPNS_11TransactionE + 24
-19  QuartzCore                          0x0000000103965e92 _ZN2CA7Context18commit_transactionEPNS_11TransactionE + 294
-20  QuartzCore                          0x0000000103992130 _ZN2CA11Transaction6commitEv + 468
-21  QuartzCore                          0x0000000103992b37 _ZN2CA11Transaction17observer_callbackEP19__CFRunLoopObservermPv + 115
-22  CoreFoundation                      0x0000000102957717 __CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__ + 23
-23  CoreFoundation                      0x0000000102957687 __CFRunLoopDoObservers + 391
-24  CoreFoundation                      0x000000010293c038 CFRunLoopRunSpecific + 440
-25  UIKit                               0x0000000103b6802f -[UIApplication _run] + 468
-26  UIKit                               0x0000000103b6e0d4 UIApplicationMain + 159
-27  Pulley                              0x0000000101bd95b7 main + 55
-28  libdyld.dylib                       0x0000000109eaa65d start + 1
-29  ???                                 0x0000000000000001 0x0 + 1
-)
-libc++abi.dylib: terminating with uncaught exception of type NSException
-(lldb) 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Is there anything else I need to do to configure the Service/Application for Refresh Mode? I haven&#x27;t noticed any new controls as such in Visual Studio. I can only hit &lt;em&gt;Debug&lt;/em&gt; as normal.&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (27, 1, 'Debugging &#39;CALayer position contains NaN: [nan nan]&#39;');
-INSERT INTO activity (post_id, user_id, action) VALUES (27, 14, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (27, 60);
-INSERT INTO questiontag (question_id, tag_id) VALUES (27, 36);
-INSERT INTO tag (text) VALUES ('xcode');
-INSERT INTO questiontag (question_id, tag_id) VALUES (27, 73);
-INSERT INTO tag (text) VALUES ('debugging');
-INSERT INTO questiontag (question_id, tag_id) VALUES (27, 74);
-INSERT INTO tag (text) VALUES ('mapkit');
-INSERT INTO questiontag (question_id, tag_id) VALUES (27, 75);
+INSERT INTO question (post_id, topic_id, title) VALUES (3, 1, 'Service Fabric: Use Refresh Mode for Faster Debugging');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (3, 3, 46, 'Create');
+INSERT INTO tag (text) VALUES ('.net');
+INSERT INTO questiontag (question_id, tag_id) VALUES (3, 8);
+INSERT INTO tag (text) VALUES ('azure');
+INSERT INTO questiontag (question_id, tag_id) VALUES (3, 9);
+INSERT INTO tag (text) VALUES ('visual-studio-2015');
+INSERT INTO questiontag (question_id, tag_id) VALUES (3, 10);
+INSERT INTO tag (text) VALUES ('.net-core');
+INSERT INTO questiontag (question_id, tag_id) VALUES (3, 11);
+INSERT INTO tag (text) VALUES ('azure-service-fabric');
+INSERT INTO questiontag (question_id, tag_id) VALUES (3, 12);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (28, 46, '&lt;p&gt;I would like to know what the error messages &lt;strong&gt;MSG_TYPE1_GENERATED&lt;/strong&gt; and &lt;strong&gt;MSG_TYPE3_GENERATED&lt;/strong&gt; (from &lt;strong&gt;httpClient/NTLMScheme.State&lt;/strong&gt; enum) signify to help debug an issue we are having. Can someone please provide the documentation for these errors?&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (4, 19, '&lt;p&gt;I know that this question have been asked previously. Some are:&lt;/p&gt;
 
-&lt;p&gt;I have a server application which uses &lt;strong&gt;ews-java-api 2.0&lt;/strong&gt; for connecting to an &lt;strong&gt;Exchange Server 2016&lt;/strong&gt;, configured with &lt;strong&gt;NTLM Authentication.&lt;/strong&gt;
- 
-I have configured &lt;strong&gt;HttpClient&lt;/strong&gt; version &lt;strong&gt;4.5.2&lt;/strong&gt;.
- 
-The server application uses an Exchange Service Account for retrieving rooms and meetings from the Exchange Server.
- 
-The rooms and meetings are successfully retrieved, but, after a while of &lt;strong&gt;successfully&lt;/strong&gt; running, I see the following error in logs:
- &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1292575/android-textview-justify-text&quot;&gt;Android TextView Justify Text&lt;/a&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;ERROR org.apache.http.impl.auth.HttpAuthenticator - NTLM authentication error: Unexpected state: MSG_TYPE3_GENERATED
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/5976627/can-i-set-property-of-textview-like-justify&quot;&gt;Can I set property of Textview like justify?&lt;/a&gt; &lt;/p&gt;
 
-&lt;p&gt; 
-This error is followed by some 401 Unauthorized errors received from Exchange Server and the application never recovers from this 401 error until restart (this usually happens a few times a day).&lt;/p&gt;
+&lt;p&gt;But after passing some years(!) there is no good solution for this. Using third-party libraries is not a good solution hence they are not working accurate and even worse, using them makes your app works slow. &lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;Caused by: microsoft.exchange.webservices.data.core.exception.http.HttpErrorException: The remote server returned an error: (401)Unauthorized
-                at microsoft.exchange.webservices.data.core.request.ServiceRequestBase.getEwsHttpWebResponse(ServiceRequestBase.java:726)
-                at microsoft.exchange.webservices.data.core.request.ServiceRequestBase.validateAndEmitRequest(ServiceRequestBase.java:640)
-                ... 34 more
- 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Even with a two up votes, this question have never got an answer:&lt;/p&gt;
 
-&lt;p&gt;I am not sure if it is related to this issue, but sometimes after the &lt;strong&gt;MSG_TYPE3_GENERATED&lt;/strong&gt; error log, I see a lot of timeouts:
-     &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/35737713/android-text-justification-in-textview-not-webview-without-third-party-library&quot;&gt;Android Text Justification in TextView (NOT WebView) Without Third Party Library&lt;/a&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt; Caused by: java.net.SocketTimeoutException: Read timed out
-                    at java.net.SocketInputStream.socketRead0(Native Method)
-                    at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
-                    at java.net.SocketInputStream.read(SocketInputStream.java:170)
-                    at java.net.SocketInputStream.read(SocketInputStream.java:141)
-                    at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
-                    at sun.security.ssl.InputRecord.read(InputRecord.java:503)
-                    at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
-                    at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
-                    at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
-                    at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
-                    at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
-                    at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
-                    at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
-                    at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
-                    at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
-                    at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
-                    at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
-                    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
-                    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
-                    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-                    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-                    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-                    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-                    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-                    at microsoft.exchange.webservices.data.core.request.HttpClientWebRequest.executeRequest(HttpClientWebRequest.java:286)
-                    at microsoft.exchange.webservices.data.core.request.ServiceRequestBase.getEwsHttpWebResponse(ServiceRequestBase.java:721)
-                    ... 39 more
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Sometimes I see &lt;strong&gt;MSG_TYPE1_GENERATED&lt;/strong&gt; in error log instead of &lt;strong&gt;MSG_TYPE3_GENERATED&lt;/strong&gt;.
- 
-I looked into the HttpClient library &lt;strong&gt;NTLMScheme.java&lt;/strong&gt; source code and found the 
-    &lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;enum State {
-        UNINITIATED,
-        CHALLENGE_RECEIVED,
-        MSG_TYPE1_GENERATED,
-        MSG_TYPE2_RECEVIED,
-        MSG_TYPE3_GENERATED,
-        FAILED,
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;but there does not seem to be any documentation regarding each value.
- 
-I tried to increase the version of HttpClient to &lt;strong&gt;4.5.3&lt;/strong&gt; because I saw an issue in release notes which is related to &lt;strong&gt;NTLM&lt;/strong&gt;
-(&lt;a href=&quot;https://issues.apache.org/jira/browse/HTTPCLIENT-1779&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://issues.apache.org/jira/browse/HTTPCLIENT-1779&lt;/a&gt;). After that my application seems to be more stable. I saw the MSG_TYPE3_GENERATED only once and the application has been running for several days.&lt;/p&gt;
-
-&lt;p&gt;Do you think upgrading the &lt;strong&gt;HttpClient&lt;/strong&gt; from &lt;strong&gt;4.5.2&lt;/strong&gt; to &lt;strong&gt;4.5.3&lt;/strong&gt; did the trick?
- 
-Do you have any other suggestions?&lt;/p&gt;
-
-&lt;p&gt;Thanks,
-Alin&lt;/p&gt;
+&lt;p&gt;So, my question is, how come something this much common, useful, necessary and simple thing is not solved by google??? Isn&#x27;t there a good solution after passing this much time? Thank you all.&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (28, 1, '401 Unahthorized after NTLM authentication error: Unexpected state: MSG_TYPE1_GENERATED');
-INSERT INTO activity (post_id, user_id, action) VALUES (28, 46, 'Create');
-INSERT INTO tag (text) VALUES ('authentication');
-INSERT INTO questiontag (question_id, tag_id) VALUES (28, 76);
-INSERT INTO tag (text) VALUES ('apache-httpclient-4.x');
-INSERT INTO questiontag (question_id, tag_id) VALUES (28, 77);
-INSERT INTO tag (text) VALUES ('ntlm');
-INSERT INTO questiontag (question_id, tag_id) VALUES (28, 78);
-INSERT INTO tag (text) VALUES ('ewsjavaapi');
-INSERT INTO questiontag (question_id, tag_id) VALUES (28, 79);
+INSERT INTO question (post_id, topic_id, title) VALUES (4, 1, 'Text justification in android');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (4, 4, 19, 'Create');
+INSERT INTO tag (text) VALUES ('android');
+INSERT INTO questiontag (question_id, tag_id) VALUES (4, 13);
+INSERT INTO tag (text) VALUES ('textview');
+INSERT INTO questiontag (question_id, tag_id) VALUES (4, 14);
+INSERT INTO tag (text) VALUES ('justify');
+INSERT INTO questiontag (question_id, tag_id) VALUES (4, 15);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (29, 36, '&lt;p&gt;I&#x27;m using &lt;a href=&quot;https://github.com/consolibyte/quickbooks-php&quot; rel=&quot;nofollow noreferrer&quot;&gt;QuickBooks PHP DevKit&lt;/a&gt; for QuickBooks Online integration with PHP. @Keith Palmer Jr., thanks for nice library.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (5, 30, '&lt;p&gt;Let&#x27;s say we have a function 1 :&lt;/p&gt;
 
-&lt;p&gt;I&#x27;m able to successfully add &lt;code&gt;Customer&lt;/code&gt; to QBO using that PHP &lt;a href=&quot;https://github.com/consolibyte/quickbooks-php/tree/master/docs/partner_platform/example_app_ipp_v3&quot; rel=&quot;nofollow noreferrer&quot;&gt;v3 library&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Issue 1: How do I get multiple &lt;code&gt;ShipAddr&lt;/code&gt; of &lt;code&gt;Customer&lt;/code&gt;?&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$CustomerService = new QuickBooks_IPP_Service_Customer();
-$customers = $CustomerService-&amp;gt;query($Context, $realm, &quot;SELECT * FROM Customer MAXRESULTS 25&quot;);
-foreach ($customers as $Customer)
+&lt;pre&gt;&lt;code&gt;vector&amp;lt;T&amp;gt;::iterator GetSomething()
 {
-    print(&#x27;Customer Id=&#x27; . $Customer-&amp;gt;getId());
-    print($Customer-&amp;gt;get(&#x27;ShipAddr&#x27;)); // this returns only first item from array
-} 
-&lt;/code&gt;&lt;/pre&gt;
+ vector&amp;lt;T&amp;gt; vec;
 
-&lt;p&gt;Possible problem is from &lt;code&gt;QuickBooks/IPP/Object.php:public function __call($name, $args)&lt;/code&gt; &lt;a href=&quot;https://github.com/consolibyte/quickbooks-php/blob/master/QuickBooks/IPP/Object.php#L181&quot; rel=&quot;nofollow noreferrer&quot;&gt;Line # 181&lt;/a&gt;&lt;/p&gt;
+ // Update vec with something...
 
-&lt;p&gt;Issue 2: I&#x27;m unable to add &lt;code&gt;TaxRate&lt;/code&gt; to QBO using this library as there&#x27;s no &lt;code&gt;add&lt;/code&gt; method available with &lt;code&gt;QuickBooks_IPP_Service_TaxRate&lt;/code&gt; object. Whereas &lt;a href=&quot;https://developer.intuit.com/docs/api/accounting/taxrate&quot; rel=&quot;nofollow noreferrer&quot;&gt;QuickBooks Online References&lt;/a&gt; states that it&#x27;s possible to add TaxRate using v3 API.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    $TaxRateService = new QuickBooks_IPP_Service_TaxRate();
-
-    $TaxRate = new QuickBooks_IPP_Object_TaxRate();
-
-    $TaxRate-&amp;gt;setName(&#x27;GST&#x27;);
-    $TaxRate-&amp;gt;setRateValue(5);
-
-    if ($resp = $TaxRateService-&amp;gt;add($Context, $realm, $TaxRate))
-    {
-        $resp = QuickBooks_IPP_IDS::usableIDType($resp);
-
-        return true;
-    }
-    else {
-        $message = $TaxRateService-&amp;gt;lastError($context);
-
-        return false;
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I have downloaded this library on Feb 1st, 2017 from GitHub.&lt;/p&gt;
-
-&lt;p&gt;Thanks.&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (29, 1, 'Unable to add TaxRate, get multiple ShipAddr from/to QuickBooks Online using QuickBooks PHP DevKit');
-INSERT INTO activity (post_id, user_id, action) VALUES (29, 36, 'Create');
-INSERT INTO tag (text) VALUES ('php');
-INSERT INTO questiontag (question_id, tag_id) VALUES (29, 80);
-INSERT INTO tag (text) VALUES ('quickbooks');
-INSERT INTO questiontag (question_id, tag_id) VALUES (29, 81);
-INSERT INTO tag (text) VALUES ('quickbooks-online');
-INSERT INTO questiontag (question_id, tag_id) VALUES (29, 82);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', -3, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (30, 32, '&lt;p&gt;I am creating a dynamic query using  procedure. The input parameter is of timestamp data type.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;create or replace PROCEDURE TEST
-(p_party_eff_dt_in mina_owner.party_to_party.effective_two_dt%TYPE)
-
-select to_timestamp(p_party_eff_dt_in,&#x27;mm/dd/yyyy HH24:MI:SS.FF3&#x27;) from &amp;lt;table&amp;gt; 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;gives the following error&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;ORA-01843: not a valid month&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Please help&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (30, 1, 'ORA-01843: not a valid month');
-INSERT INTO activity (post_id, user_id, action) VALUES (30, 32, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (30, 49);
-INSERT INTO tag (text) VALUES ('oracle');
-INSERT INTO questiontag (question_id, tag_id) VALUES (30, 83);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (31, 20, '&lt;p&gt;If you could solve this, you could have won a million pounds on the &lt;a href=&quot;https://en.wikipedia.org/wiki/Eternity_puzzle&quot; rel=&quot;nofollow noreferrer&quot;&gt;Eternity puzzle&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;In this puzzle you have to fit 209 polygons onto a board.&lt;/p&gt;
-
-&lt;p&gt;The reduction is to have one group for each combination of piece and location.&lt;/p&gt;
-
-&lt;p&gt;Each group has a leader who is only interested in the job that corresponds to playing his piece.&lt;/p&gt;
-
-&lt;p&gt;Each group also has a person for each square in the tile: that person is only interested in the job of filling the corresponding square on the game board.&lt;/p&gt;
-
-&lt;p&gt;If you can find a solution with 209 happy groups then you have found a solution to the puzzle!&lt;/p&gt;
-
-&lt;p&gt;In summary, this is NP-hard because it can be used to solve &lt;a href=&quot;https://en.wikipedia.org/wiki/Independent_set_(graph_theory)&quot; rel=&quot;nofollow noreferrer&quot;&gt;maximum independent set&lt;/a&gt;.&lt;/p&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (31, 1, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (31, 20, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (32, 38, '&lt;p&gt;If you want to count number or items/rows with a &lt;code&gt;pos.score&lt;/code&gt; greater than or equal to or less than &lt;code&gt;t.s&lt;/code&gt; on the output of &lt;code&gt;catgFunc&lt;/code&gt; you could do:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Qualified &amp;lt;- list(
-        hotan = data.frame( begin=seq(1, by=6, len=45), end=seq(4, by=6, len=45), pos.score=sample(125, 45)),
-        aksu = data.frame( begin=seq(3, by=9, len=36), end=seq(6, by=9, len=36), pos.score=sample(84, 36)),
-        korla = data.frame( begin=seq(6, by=8, len=52), end=seq(11, by=8, len=52), pos.score=sample(172, 52))
-    )
-
-catgFunc &amp;lt;- function(grp, t.w=12, t.s=34, fname=&quot;droped&quot;){
-    res &amp;lt;- lapply(seq_along(grp), function(x) {
-        dt &amp;lt;- grp[[x]]
-        dnm &amp;lt;- names(grp)[x]
-        # write.csv(dt[dt$pos.score &amp;lt;= t.w, ], sprintf(&quot;%s.%s.csv&quot;, dnm, fname))
-        keep &amp;lt;- dt[dt$pos.score &amp;gt;= t.w, ]
-        keep$t_s &amp;lt;- t.s
-        return(keep)
-    })
-    rslt &amp;lt;- setNames(res, names(grp))
+ return vec.begin();
 }
-
-d &amp;lt;- catgFunc(Qualified)
-
-# Count number of items/rows with pos.score greater than t.s
-lapply(d, function (x) { nrow(x[x$pos.score &amp;gt; x$t_s, ])})
-
-$hotan
-[1] 35
-
-$aksu
-[1] 20
-
-$korla
-[1] 43
-
-# Count number of items/rows with pos.score equal to or less than t.s
-lapply(d, function (x) { nrow(x[x$pos.score &amp;lt;= x$t_s, ])})
-
-$hotan
-[1] 6
-
-$aksu
-[1] 10
-
-$korla
-[1] 7
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;As I understand you want the &lt;code&gt;t.s&lt;/code&gt; input argument to &lt;code&gt;catgFunc&lt;/code&gt; to &lt;em&gt;follow&lt;/em&gt; your output data from &lt;code&gt;catgFunc&lt;/code&gt; and a simple way to do that is to include it as a column (as in this example). You could also store the &lt;code&gt;t.s&lt;/code&gt; threshold as an attribute of the list.&lt;/p&gt;
+&lt;p&gt;And another function 2:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vector&amp;lt;T&amp;gt; GetSomething()
+{
+ vector&amp;lt;T&amp;gt; vec;
+
+ // Update vec with something...
+
+ return vec;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In what situations would we prefer function 1 ? 
+Also, what would be the lifetime of that vector object ? 
+How would we know if the iterator is pointing to empty vector ? Probably need to pass pair of iterators to determine begin / end.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (32, 2, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (32, 38, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (5, 1, 'When to return vector iterator instead of vector?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (5, 5, 30, 'Create');
+INSERT INTO tag (text) VALUES ('c++');
+INSERT INTO questiontag (question_id, tag_id) VALUES (5, 16);
+INSERT INTO tag (text) VALUES ('vector');
+INSERT INTO questiontag (question_id, tag_id) VALUES (5, 17);
+INSERT INTO tag (text) VALUES ('iterator');
+INSERT INTO questiontag (question_id, tag_id) VALUES (5, 18);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (6, 1, '&lt;p&gt;When the selectbox, with countries are changed, I want to put the name of the capital of the country in the Where field. How can I setup this to get a call back to the controller when the country is changed?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;well&quot;&amp;gt;
+    &amp;lt;form method=&quot;post&quot; asp-action=&quot;Jobs&quot; asp-antiforgery=&quot;true&quot;&amp;gt;
+        &amp;lt;div class=&quot;form-inline&quot;&amp;gt;
+            &amp;lt;div class=&quot;input-group&quot;&amp;gt;
+                &amp;lt;span class=&quot;input-group-addon&quot;&amp;gt;@Localizer[&quot;Country&quot;]&amp;lt;/span&amp;gt;
+                &amp;lt;select class=&quot;form-control&quot; asp-for=&quot;CountryCode&quot; asp-items=&quot;ViewBag.Countries&quot; value=&quot;@Model.CountryCode&quot;&amp;gt;
+                    &amp;lt;option disabled selected value=&quot;&quot;&amp;gt;@Localizer[&quot;ChooseCountry&quot;]&amp;lt;/option&amp;gt;
+                &amp;lt;/select&amp;gt;
+           &amp;lt;/div&amp;gt;
+            &amp;lt;div class=&quot;input-group&quot;&amp;gt;
+                &amp;lt;span class=&quot;input-group-addon&quot;&amp;gt;@Localizer[&quot;Where&quot;]&amp;lt;/span&amp;gt;
+                &amp;lt;input asp-for=&quot;Where&quot; class=&quot;form-control&quot; placeholder=@Localizer[&quot;EnterCityToSearch&quot;] value=&quot;@Model.Where&quot;/&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;div class=&quot;input-group&quot;&amp;gt;
+                &amp;lt;span class=&quot;input-group-addon&quot;&amp;gt;@Localizer[&quot;What&quot;]&amp;lt;/span&amp;gt;
+                &amp;lt;input asp-for=&quot;What&quot; class=&quot;form-control&quot; placeholder=&quot;@Localizer[&quot;EnterTypeOfJob&quot;]&quot; value=@Model.What&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&amp;gt;
+                @Localizer[&quot;Search&quot;]
+                &amp;lt;span class=&quot;glyphicon glyphicon-search&quot;&amp;gt;&amp;lt;/span&amp;gt;
+            &amp;lt;/button&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/form&amp;gt;
+    @*&amp;lt;a  class=&quot;text&quot; role=&quot;button&quot; asp-action=&quot;ChangeSearchMetode&quot; asp-antiforgery=&quot;true&quot;&amp;gt;Link Button&amp;lt;/a&amp;gt;*@
+ &amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Thanks for helping!&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (6, 1, 'How to get a call to the controller when the selectbox is changed?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (6, 6, 1, 'Create');
+INSERT INTO tag (text) VALUES ('asp.net-mvc');
+INSERT INTO questiontag (question_id, tag_id) VALUES (6, 19);
+INSERT INTO tag (text) VALUES ('model-view-controller');
+INSERT INTO questiontag (question_id, tag_id) VALUES (6, 20);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (33, 49, '&lt;p&gt;Lists of objects can&#x27;t be passed to SQL Server directly. Try passing a DataTable like this (code unchecked):&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (7, 36, '&lt;p&gt;I have simple question, where can i learn 64bit assembly language (windows) for person who didnt touched it before? I know c++ c# and some web technology but i wanted to start low-level programming. I&#x27;m not interested about microcontrollers etc.&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (7, 1, '[Q]Where can i learn 64bit assembly');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (7, 7, 36, 'Create');
+INSERT INTO tag (text) VALUES ('assembly');
+INSERT INTO questiontag (question_id, tag_id) VALUES (7, 21);
+INSERT INTO tag (text) VALUES ('64bit');
+INSERT INTO questiontag (question_id, tag_id) VALUES (7, 22);
+INSERT INTO tag (text) VALUES ('intel');
+INSERT INTO questiontag (question_id, tag_id) VALUES (7, 23);
 
-&lt;pre&gt;&lt;code&gt;public override bool SaveUserQueryAttachment(List&amp;lt;UserQueryAttachmentToCreate&amp;gt; fileList)
-{
-    // TODO: open a SQL connection here 
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (8, 21, '&lt;p&gt;I have a div that will have a background image of the size 1170px x 929px. As I resize the width i.e. shrink it, I would like the height to also shrink so that the aspect ratio is kept. Can someone explain how this can be done using CSS? All I have so far is the following&lt;/p&gt;
 
-    using (SqlCommand cmd = new SqlCommand(&quot;exec PROC_UserQueryAttachment_Insert @table&quot;, connection))
-    {
-        using (var table = new DataTable()) 
-        {
-            table.Columns.Add(&quot;UserQueryId&quot;, typeof(string));
-            table.Columns.Add(&quot;AttachmentPath&quot;, typeof(string));
-            table.Columns.Add(&quot;AttachmentName&quot;, typeof(string));
-            table.Columns.Add(&quot;AttachmentFor&quot;, typeof(string));
-            table.Columns.Add(&quot;CreatedBy&quot;, typeof(string));
+&lt;pre&gt;&lt;code&gt;&amp;lt;section class=&quot;box&quot;&amp;gt;
+            &amp;lt;article class=&quot;container &quot;&amp;gt;
+                &amp;lt;div class=&quot;content margin_tp_80 margin_bm_40 map_london&quot;&amp;gt;
+                &amp;lt;/div&amp;gt;
+            &amp;lt;/article&amp;gt;
+        &amp;lt;/section&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-            table.Rows.Add(fileList.ToArray());
+&lt;p&gt;Any help would be great thanks.&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (8, 1, 'How To Resize A Div &amp; Keep The Aspect Ratio');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (8, 8, 21, 'Create');
+INSERT INTO tag (text) VALUES ('html');
+INSERT INTO questiontag (question_id, tag_id) VALUES (8, 24);
+INSERT INTO tag (text) VALUES ('css');
+INSERT INTO questiontag (question_id, tag_id) VALUES (8, 25);
 
-            var list = new SqlParameter(&quot;@table&quot;, SqlDbType.Structured);
-            list.TypeName = &quot;dbo.UserQueryAttachmentList&quot;;
-            list.Value = table;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (9, 50, '&lt;p&gt;I&#x27;m developing a Text editor and I need to check whether if I have saved any typed document (even a space) in my Text Area. If I have typed even a space, the dialog should pop and ask me to save the text before closing the application. I need to define all the keys in a single way without checking all the keyboards keys are pressed or not... This is my code so far :) &lt;/p&gt;
 
-            cmd.Parameters.Add(list);
-            cmd.ExecuteReader();
+&lt;pre&gt;&lt;code&gt; private void isAnyKeyWasPressed() {
+    jTextPane1.addKeyListener(new KeyListener() {
+
+        @Override
+        public void keyTyped(KeyEvent e) {
+            if (e.getKeyChar()==e.VK_0 || e.getKeyChar()==e.VK_1) {//need to define all the keyboard keys without defining one by one like this
+                //my dialog box goes here
+            }
+        }
+
+        @Override
+        public void keyPressed(KeyEvent e) {
+            throw new UnsupportedOperationException(&quot;Not supported yet.&quot;); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public void keyReleased(KeyEvent e) {
+            throw new UnsupportedOperationException(&quot;Not supported yet.&quot;); //To change body of generated methods, choose Tools | Templates.
+        }
+    });
+}
+&lt;/code&gt;&lt;/pre&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (9, 1, 'How to ask if I have saved my text document before closing the jframe');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (9, 9, 50, 'Create');
+INSERT INTO tag (text) VALUES ('java');
+INSERT INTO questiontag (question_id, tag_id) VALUES (9, 26);
+INSERT INTO tag (text) VALUES ('swing');
+INSERT INTO questiontag (question_id, tag_id) VALUES (9, 27);
+INSERT INTO tag (text) VALUES ('jtextarea');
+INSERT INTO questiontag (question_id, tag_id) VALUES (9, 28);
+INSERT INTO tag (text) VALUES ('key-events');
+INSERT INTO questiontag (question_id, tag_id) VALUES (9, 29);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', -1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (10, 19, '&lt;p&gt;The following code(subset) cause this error(&#x27;cannot index a multi-index axis with these keys&#x27;), hope anyone can give some comment&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import pandas as pd
+import numpy as np
+def draw_table(request):
+dt = pd.read_excel(excel path)
+    def color_green (color):
+    A1= df.iloc[4,0]
+    A2= df.iloc[4,1]
+    if A1&amp;lt;A2:
+       return (&#x27;color: red&#x27;)
+    else:
+       return (&#x27;color: green&#x27;)
+table2=table1.style.applymap(color_green, subset=[df.iloc[4,1]]).set_table_attributes(&#x27;border=&quot;&quot; class = &quot;dataframe table table-hover table-bordered&quot;&#x27;).set_precision(10).render()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I want return ony A2 have color in html pages. Any one have any idea
+below picture is what I wish to have, but now I get the error,
+&lt;a href=&quot;https://i.stack.imgur.com/g2aox.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;click here&lt;/a&gt;&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (10, 1, 'set style(color) for selected cell by didnt compare the overall dataframe python pandas');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (10, 10, 19, 'Create');
+INSERT INTO tag (text) VALUES ('python');
+INSERT INTO questiontag (question_id, tag_id) VALUES (10, 30);
+INSERT INTO tag (text) VALUES ('pandas');
+INSERT INTO questiontag (question_id, tag_id) VALUES (10, 31);
+INSERT INTO tag (text) VALUES ('numpy');
+INSERT INTO questiontag (question_id, tag_id) VALUES (10, 32);
+INSERT INTO tag (text) VALUES ('dataframe');
+INSERT INTO questiontag (question_id, tag_id) VALUES (10, 33);
+INSERT INTO tag (text) VALUES ('styles');
+INSERT INTO questiontag (question_id, tag_id) VALUES (10, 34);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (11, 38, '&lt;p&gt;I have created file uploading function using ajax and codeigniter the problem is that when I am trying to upload an image it is working fine but when I try to upload document or excel file it is giving me null can anybody help me out to fix this issue &lt;/p&gt;
+
+&lt;p&gt;here is what error I am getting Array ( [error] =&gt; The filetype you are attempting to upload is not allowed.)&lt;/p&gt;
+
+&lt;p&gt;Here is my controller&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public function post_forum() {
+    $config[&#x27;upload_path&#x27;] = &#x27;./assets/uploads/&#x27;;
+    $config[&#x27;allowed_types&#x27;] = &#x27;gif|jpg|png|doc|docx|xls|xlsx|pdf&#x27;;
+    $this-&amp;gt;load-&amp;gt;library(&#x27;upload&#x27;, $config);
+
+    if(!empty($_FILES[&#x27;post_image&#x27;][&#x27;name&#x27;])) {
+         if (!$this-&amp;gt;upload-&amp;gt;do_upload(&#x27;post_image&#x27;)) {
+             $error = array(&#x27;error&#x27; =&amp;gt; $this-&amp;gt;upload-&amp;gt;display_errors());
+         } else {
+             $dt = $this-&amp;gt;upload-&amp;gt;data();
+             $file = $dt[&#x27;file_name&#x27;];
          }
+    } else {
+        $file = &#x27;&#x27;;
     }
 
-    // TODO: close the SQL connection
-}
-&lt;/code&gt;&lt;/pre&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (33, 3, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (33, 49, 'Create');
+    $word_dta    = $this-&amp;gt;input-&amp;gt;post(&#x27;post_dt&#x27;);
+    $time_posted = time();
+    $user_id     = $this-&amp;gt;basic_model-&amp;gt;is_login($this);
+    empty($this-&amp;gt;input-&amp;gt;post(&#x27;group_id&#x27;)) ? $group_id   = &#x27;&#x27; : $group_id   = $this-&amp;gt;input-&amp;gt;post(&#x27;group_id&#x27;);
+    empty($this-&amp;gt;input-&amp;gt;post(&#x27;c_id&#x27;))     ? $company_id = &#x27;&#x27; : $company_id = $this-&amp;gt;input-&amp;gt;post(&#x27;c_id&#x27;);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (34, 49, '&lt;p&gt;Using CCS3 media queries! Example for Desktop first:&lt;/p&gt;
+    $data_upload = array(
+        &#x27;upload_document&#x27; =&amp;gt; $file,
+        &#x27;discussion&#x27;      =&amp;gt; $word_dta,
+        &#x27;user_id&#x27;         =&amp;gt; $user_id,
+        &#x27;group_id&#x27;        =&amp;gt; $group_id,
+        &#x27;company_id&#x27;      =&amp;gt; $company_id,
+        &#x27;time_posted&#x27;     =&amp;gt; $time_posted,
+        &#x27;status&#x27;          =&amp;gt; &#x27;Posted&#x27;
+    );
 
-&lt;pre&gt;&lt;code&gt;// Your code for Desktop devices
+     $post_id = $this-&amp;gt;basic_model-&amp;gt;insertRecord($data_upload, &#x27;forums&#x27;);
 
-@media only screen and (max-width: 768px) {
-  // Here your code for mobile
-}
-&lt;/code&gt;&lt;/pre&gt;
+$data = array(
+         &#x27;file_name&#x27;   =&amp;gt; $file,
+         &#x27;data&#x27;        =&amp;gt; $word_dta,
+         &#x27;time_posted&#x27; =&amp;gt; $time_posted,
+         &#x27;post_id&#x27;     =&amp;gt; $post_id,
+         &#x27;name&#x27;        =&amp;gt; $this-&amp;gt;basic_model-&amp;gt;getUserData(),
+         &#x27;command&#x27;     =&amp;gt; &#x27;Submit Post&#x27;
+     );
 
-&lt;p&gt;or for Mobile First&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;// Your code for Mobile devices
-
-@media only screen and (min-width: 768px) {
-  // Here your code for tablet
-}
-
-@media only screen and (min-width: 992px) {
-  // Here your code for Small Desktop
-}
-&lt;/code&gt;&lt;/pre&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (34, 7, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (34, 49, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (35, 11, '&lt;p&gt;You have multiple issues in your code:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;You&#x27;re never closing the file streams. If you don&#x27;t do that, it might happen that no data is actually written. If the ciphertext is not (fully) written then the decryption will obviously fail.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;A &lt;code&gt;FileInputStream&lt;/code&gt; doesn&#x27;t give an accurate measure of how much data the underlying file contains. You have to use the &lt;code&gt;File&lt;/code&gt; class for that:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;File inputFile = new File(input);
-FileInputStream inputStream = new FileInputStream(inputFile);
-FileOutputStream outputStream = new FileOutputStream(output);
-byte[] inputBytes = new byte[(int) inputFile.length()];
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;When you&#x27;re reading file contents, you must always check how much you read and use exactly that amount:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;int readBytes = inputStream.read(inputBytes);
-byte[] outputBytes = cipher.doFinal(inputBytes, 0, readBytes);
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Always use a fully qualified Cipher string. &lt;code&gt;Cipher.getInstance(&quot;RSA&quot;);&lt;/code&gt; may result in different ciphers depending on the default security provider. In OpenJDK it defaults to &lt;code&gt;Cipher.getInstance(&quot;RSA/ECB/PKCS1Padding&quot;);&lt;/code&gt;. Nowadays, you should use OAEP instead of the default PKCS#1 v1.5 padding. So you should probably use &lt;code&gt;Cipher.getInstance(&quot;RSA/ECB/OAEPWithSHA-256AndMGF1Padding&quot;);&lt;/code&gt;. &lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Here is the full code of those two methods:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public void encrypt(String input, String output) {
-    File inputFile;
-    FileInputStream inputStream;
-    FileOutputStream outputStream;
-    Cipher cipher;
-    byte[] inputBytes;
-    byte[] outputBytes;
-
-    try {
-        System.out.println(&quot;encrypt&quot;);
-
-        cipher = Cipher.getInstance(&quot;RSA&quot;);
-        cipher.init(Cipher.ENCRYPT_MODE, pubKey);
-
-        inputFile = new File(input);
-        inputStream = new FileInputStream(inputFile);
-        outputStream = new FileOutputStream(output);
-        inputBytes = new byte[(int) input.length()];
-        int readBytes = inputStream.read(inputBytes);
-        outputBytes = cipher.doFinal(inputBytes, 0, readBytes);
-        outputStream.write(outputBytes);
-
-        System.out.println(&quot;fin encrypt&quot;);
-
-        inputStream.close();
-        outputStream.close();
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
-}
-
-public void decrypt(String input, String output) {
-    File inputFile;
-    FileInputStream inputStream;
-    FileOutputStream outputStream;
-    Cipher cipher;
-    byte[] inputBytes;
-    byte[] outputBytes;
-
-    try {
-        System.out.println(&quot;decrypt&quot;);
-
-        cipher = Cipher.getInstance(&quot;RSA&quot;);
-        cipher.init(Cipher.DECRYPT_MODE, privKey);
-
-        inputFile = new File(input);
-        inputStream = new FileInputStream(inputFile);
-        outputStream = new FileOutputStream(output);
-        inputBytes = new byte[(int) inputFile.length()];
-        int readBytes = inputStream.read(inputBytes);
-        outputBytes = cipher.doFinal(inputBytes, 0, readBytes);
-        outputStream.write(outputBytes);
-
-        System.out.println(&quot;Decryption result: &quot; + new String(outputBytes, &quot;UTF-8&quot;));
-        System.out.println(&quot;fin decrypt&quot;);
-
-        inputStream.close();
-        outputStream.close();
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (35, 9, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (35, 11, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (36, 5, '&lt;p&gt;How did you initialize your driver. Did you initialize more than one driver? If so, then use quilt() method for all drivers separately. Otherwise, only driver.quit() should work.&lt;/p&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (36, 10, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (36, 5, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (37, 30, '&lt;p&gt;I don&#x27;t there&#x27;s any method equivalent to &lt;code&gt;fatalError&lt;/code&gt; in Android.&lt;/p&gt;
-
-&lt;p&gt;If you want to kill the entire process then you can use &lt;code&gt;android.os.Process.killProcess(android.os.Process.myPid());&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;To mimic the same behaviour of &lt;code&gt;fatalError&lt;/code&gt; you&#x27;ll probably have to implement it yourself. &lt;/p&gt;
-
-&lt;p&gt;The behaviour you&#x27;ll need to add besides killing the process is&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;to log a message, you can to this by using &lt;code&gt;Log&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;print the file and line number, for this you can follow &lt;a href=&quot;http://stackoverflow.com/questions/17473148/dynamically-get-the-current-line-number&quot;&gt;this&lt;/a&gt; thread on SO&lt;/li&gt;
-&lt;/ul&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (37, 11, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (37, 30, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (38, 24, '&lt;p&gt;from the official docs: &lt;a href=&quot;https://github.com/styled-components/styled-components/blob/master/docs/theming.md&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://github.com/styled-components/styled-components/blob/master/docs/theming.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;We export a  component that takes a theme prop. The
-  theme you provide there is injected into your styled components via
-  props.theme&lt;/p&gt;
-  
-  &lt;p&gt;If you ever need to get the current theme outside styled components
-  (e.g. inside big components), you can use the withTheme Higher Order
-  Component&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;import { withTheme } from &#x27;styled-components&#x27;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;class MyComponent extends React.Component {
-  render() {
-    const { theme } = this.props
-
-    console.log(&#x27;Current theme: &#x27;, theme);
-    // ...
+     $this-&amp;gt;load-&amp;gt;view(&#x27;forum/includes/get_data&#x27;, $data);
   }
-}
-
-export default withTheme(MyComponent)
-&lt;/code&gt;&lt;/pre&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (38, 13, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (38, 24, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (39, 18, '&lt;p&gt;I shall explain you why this happens.&lt;br&gt;
-I&#x27;ve been dealing with javascript animations, and there are many js libraries (focused on maths) having into account operational delays (I/O availability policies) and timeouts.  &lt;/p&gt;
-
-&lt;p&gt;In your first code snippet, you have these operations:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$(&#x27;.marquee-wrapper&#x27;).css(&quot;transform&quot;, &quot;translateY(100px)&quot;);
-$(&#x27;.marquee-wrapper&#x27;).css(&quot;transition&quot;, &quot;transform 3s linear&quot;);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2&gt;Transform&lt;/h2&gt;
+&lt;p&gt;This is my html form which I have created in views folder&lt;/p&gt;
 
-&lt;p&gt;Css Transform method uses matrix based operations which have a high computational cost. There are css animations frameworks that do use the graphics processor unit (having matrix operators) which works several times faster to achieve smooth, real-time graphic operations.&lt;/p&gt;
-
-&lt;h2&gt;Transition&lt;/h2&gt;
-
-&lt;p&gt;Css Transition is another graphical operation, but does not modify the css entity with a pure matrix&lt;em&gt;matrix transformation, it uses a right 1-dimension operator, that means your css matrix is modified with an matrix&lt;/em&gt;array.&lt;/p&gt;
-
-&lt;p&gt;Then the &lt;strong&gt;linear&lt;/strong&gt; mode you choose, applies linear interpolation (probably just a few integration operators) on the position of your element. It has low computational cost, which makes the whole transition operation still faster to compute. &lt;/p&gt;
-
-&lt;p&gt;This is a schema of the execution taking place in a sort of timeline:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;transform         calculation-process
-exec -----------------------------------------&amp;gt; applied
- |         |                            |        |
- |         |                            |        |
- |         |                            |        |
-transition |     calculation-process    |        |
---------- exec ---------------------&amp;gt; applied --------- 
+&lt;pre&gt;&lt;code&gt;&amp;lt;form method=&quot;POST&quot; action=&quot;&quot; id=&quot;postform&quot; enctype=&quot;multipart/form-data&quot; onsubmit=&quot;return false;&quot;&amp;gt;
+                &amp;lt;input type=&quot;file&quot; id=&quot;imageFieldId&quot; name=&quot;post_image&quot; /&amp;gt;
+                &amp;lt;div id=&quot;contentbox&quot; contenteditable=&quot;true&quot; name=&quot;post_dt&quot;&amp;gt;
+                &amp;lt;/div&amp;gt;
+                &amp;lt;input type=&quot;submit&quot; id=&quot;sb_art&quot; class=&quot;btn_v2&quot; value=&quot;Start Discussion&quot; /&amp;gt;
+            &amp;lt;/form&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;As jQuery on the top of javascript has non blocking code execution (for i/o depending functions, and unless you code it synch) which is a base of the asynchronous policy of javascript, allows the next operation to execute even before the precedent finishes.&lt;/p&gt;
+&lt;p&gt;This is my ajax call &lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Your fix&lt;/strong&gt; with the timeout function, ensures that the transform operation is completed before running following code, but as limitation, it will work &lt;strong&gt;only&lt;/strong&gt; for clients with similar computational speed of than current client&#x27;s processor. (If you develop it in a pc, then it might fail in a smartphone)&lt;/p&gt;
-
-&lt;p&gt;Another solution I use in my code is to use the jquery callbacks. Have a look at the jquery animate() &lt;a href=&quot;http://api.jquery.com/animate/&quot; rel=&quot;nofollow noreferrer&quot;&gt;doc&lt;/a&gt; in which is shown:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;.animate( properties [, duration ] [, easing ] [, complete ] )&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;In your example it would be something like:  &lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$(&#x27;.marquee-wrapper&#x27;).animate({&quot;transform&quot;: &quot;translateY(100px)&quot;}, function(){
-    // this code runs after transform ends...
-    $(&#x27;.marquee-wrapper&#x27;).css(&quot;transition&quot;, &quot;transform 3s linear&quot;);
-    $(&#x27;.marquee-wrapper&#x27;).css(&quot;transform&quot;, &quot;translateY(-&quot; + $(&quot;.marquee-content&quot;).outerHeight(true) + &quot;px)&quot;);
+&lt;pre&gt;&lt;code&gt;$(document).ready(function(e) {
+$(&quot;#postform&quot;).on(&#x27;submit&#x27;, (function(e) {
+    $(&quot;#load&quot;).show();
+    var form = this;
+    var formData = new FormData(this);
+    formData.append(&#x27;post_dt&#x27;, $(&quot;#contentbox&quot;).html());
+    $.ajax({
+        url         : &quot;http://tfsquare.com/demo/forums/post_forum&quot;,
+        type        : &quot;POST&quot;,
+        data        : formData,
+        contentType : false,
+        cache       : false,
+        processData : false,
+        success     : function(data) {
+            $(&quot;#data_update&quot;).prepend($(data).fadeIn(&#x27;slow&#x27;));
+            $(&quot;#contentbox&quot;).empty();
+            $(&#x27;.no_st&#x27;).css(&#x27;display&#x27;, &#x27;none&#x27;);
+            form.reset();
+        },
+        complete: function() {
+            $(&quot;#load&quot;).hide();
+        }
+    });
+}));
 });
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I found many useful libs around to &quot;seriously&quot; play with animations. These are some of the libs I use:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://d3js.org/&quot; rel=&quot;nofollow noreferrer&quot;&gt;d3.js&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;http://bouncejs.com/&quot; rel=&quot;nofollow noreferrer&quot;&gt;bounce.js&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;http://www.sequencejs.com/&quot; rel=&quot;nofollow noreferrer&quot;&gt;secuence.js&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;http://paperjs.org/&quot; rel=&quot;nofollow noreferrer&quot;&gt;paper.js&lt;/a&gt;  &lt;/p&gt;
-
-&lt;p&gt;I hope it helps.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (39, 15, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (39, 18, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (11, 1, 'getting file name as null by using var_dump');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (11, 11, 38, 'Create');
+INSERT INTO tag (text) VALUES ('php');
+INSERT INTO questiontag (question_id, tag_id) VALUES (11, 35);
+INSERT INTO tag (text) VALUES ('ajax');
+INSERT INTO questiontag (question_id, tag_id) VALUES (11, 36);
+INSERT INTO tag (text) VALUES ('codeigniter');
+INSERT INTO questiontag (question_id, tag_id) VALUES (11, 37);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (12, 24, '&lt;p&gt;I look around for some help for single link list around the web but couldn&#x27;t find the information I needed. What im trying to do is Design and Implement a single linked list with the following operations&lt;/p&gt;
+
+&lt;p&gt;a- Create &quot;n&quot; nodes&lt;/p&gt;
+
+&lt;p&gt;b- Delete from the middle (where im not deleting the middle, but anything else but the start and end node)&lt;/p&gt;
+
+&lt;p&gt;c- Insert in the middle&lt;/p&gt;
+
+&lt;p&gt;I did my &quot;insert&quot; part with a ADD function
+but when I get to the delete function, im stuck in how to use a single link list &amp;amp; not a double, because Im trying to break that habit. Anyway here my code, it my delete function that im trying to fix. thanks &lt;/p&gt;
+
+&lt;p&gt;PS: tell me if my add function is also correct, :)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;vector&amp;gt;
+using namespace std;
+
+class node
+{
+public:
+    node(int user_input);
+    int info;
+    node * next_node;
+
+};
+
+
+node::node(int user_input)
+{
+    info = user_input;
+    next_node = NULL;
+
+}
+
+
+class link_list
+{
+public:
+    node * start;
+    node * end;
+    int size;//seperated the attritibute from the method
+
+    link_list(); //default constuctor
+    link_list(int value); //value constuctor
+    link_list(int value, int num_of_Nodes); //n-ary
+
+    void Add(int store_node);
+    void Print(); //non midify
+    void insert_at_begining(int value); //while these guys are modify
+    void insert_at_end(int value); //
+    void insert_at_middle(int delete_node);
+
+    void delete_at_begining();
+    void delete_at_end(); //
+    void delete_at_middle(int Nodes_store);
+
+private:
+    int Number_of_nodeV2;
+
+};
+
+link_list::link_list(int value, int num_of_Nodes) //this 
+{
+    //if val = 0 &amp;amp; num = 5 we get 5 new nodes
+
+    Number_of_nodeV2 = 0;
+
+    if (num_of_Nodes &amp;lt; 1)
+    {
+        cout &amp;lt;&amp;lt; &quot;error, please enter correct numbers&quot; &amp;lt;&amp;lt; endl;
+    }
+    else
+    {
+        start = new node(value); //this is pointing to node that has value in it.
+        //start == NULL;
+
+        node* tracker = start;
+
+        for (int i = 0; i &amp;lt; num_of_Nodes - 1; i++)
+        {
+            tracker-&amp;gt;next_node = new node(value); //this track each node //-&amp;gt; de-renecen 
+            tracker = tracker-&amp;gt;next_node;
+        }
+    }
+
+
+}
+
+void link_list::Add(int store_node)
+{
+
+    node* tracker = start;
+    node* newVal = new node(store_node);
+
+
+
+    while (tracker-&amp;gt;next_node != NULL)
+    {
+        tracker = tracker-&amp;gt;next_node;
+    }
+    tracker-&amp;gt;next_node = newVal;
+}
+
+void link_list::Print()
+{
+    node* tracker = start;
+
+    while (tracker != NULL)
+    {
+        cout &amp;lt;&amp;lt; tracker-&amp;gt;info &amp;lt;&amp;lt; endl;
+        tracker = tracker-&amp;gt;next_node;
+        cout &amp;lt;&amp;lt; size;
+    }      
+}
+
+void link_list::delete_at_middle(int delete_node)
+{
+        //int center = 0;
+        node* tracker = start;
+        node* tracker2 = end;
+        node* temp;
+        node* temp1;
+
+        temp1 = temp = start;
+
+        if (start == NULL)
+        {
+            cout &amp;lt;&amp;lt; &quot;the list is empy&quot; &amp;lt;&amp;lt; endl;
+        }
+        else //this is where I cant seem to answer, thanks
+        {
+            while (temp != end)
+            {
+                temp = temp1-&amp;gt;next_node;
+                if (temp-&amp;gt;info = delete_node)
+                {
+                    delete temp;
+                    temp1-&amp;gt;next_node = NULL; //ffffffffffff
+                }
+
+            }
+                tracker = tracker-&amp;gt;next_node;
+
+            for (size_t i = 0; i &amp;lt; length; i++)
+            {
+                pre = start;
+                pre
+
+            }
+        //iltertae with tracker until the tracker has hit the center
+
+
+        }
+
+
+
+}
+
+
+int main() {
+    int Nodes_store = 0;
+    int delete_node = 0;
+
+    cout &amp;lt;&amp;lt; &quot;please enter the number of nodes&quot; &amp;lt;&amp;lt; endl;
+    cin &amp;gt;&amp;gt; Nodes_store;
+
+    cout &amp;lt;&amp;lt; &quot;please enter the number of to delete nodes&quot; &amp;lt;&amp;lt; endl;
+    cin &amp;gt;&amp;gt; delete_node;
+
+
+    link_list list = link_list(0, Nodes_store);
+    list.Print();
+
+    //list.delete_at_middle();
+    //list.Print();
+    //
+    //list.insert_at_middle(7);
+    //list.Print();
+}AS&#x27;
+;&#x27;
+&lt;/code&gt;&lt;/pre&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (12, 1, 'Single Link List delete function in the middle issue');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (12, 12, 24, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (12, 16);
+INSERT INTO tag (text) VALUES ('linked-list');
+INSERT INTO questiontag (question_id, tag_id) VALUES (12, 38);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (40, 28, '&lt;p&gt;Well sphinx can&#x27;t do string comparisons like that, at least with between (assuming you have the date in a string attribute). And there isnt a &#x27;datetime&#x27; &lt;strong&gt;attribute&lt;/strong&gt; type either. &lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (13, 20, '&lt;p&gt;I haven&#x27;t asked many questions on here so sorry if I have laid this question out wrongly.&lt;/p&gt;
 
-&lt;p&gt;Can put the date in simple numeric attribute, and do comparisons on that. &lt;/p&gt;
+&lt;p&gt;I am trying to call the variable AmountOfTickets in the main class. So I can update it with each loop of the while loop. I don&#x27;t know how to properly call the variable without eclipse showing an error.&lt;/p&gt;
 
-&lt;p&gt;a Unix Timestamp might be convenient, can do it in the sphinx config file (using the mysql &lt;code&gt;unix_timestamp()&lt;/code&gt; function)&lt;/p&gt;
+&lt;p&gt;This is the class where I have created the variable AmountOfTickets which 
+I am trying to update&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;sql_query = SELECT ..., UNIX_TIMESTAMP(last_purchase_date) AS last_purchase_date FROM ... 
-sql_attr_uint = last_purchase_date 
+&lt;pre&gt;&lt;code&gt;public class TicketHandler {
+    public int TicketCost;
+    public static int AmountOfTickets;
+
+    public TicketHandler(int TicketCost, int AmountOfTickets){
+        this.TicketCost = TicketCost;
+        this.AmountOfTickets = AmountOfTickets;
+    }
+
+    public TicketHandler() {
+        TicketCost = 200;
+        AmountOfTickets = 50;
+    }
+
+    public int getTicketCost() {
+        return TicketCost;
+    }
+
+    public void setTicketCost(int ticketCost) {
+        TicketCost = ticketCost;
+    }
+
+    public static int getAmountOfTickets() {
+        return AmountOfTickets;
+    }
+
+    public void setAmountOfTickets(int amountOfTickets) {
+        AmountOfTickets = amountOfTickets;
+    }
+
+    public void ReduceNoOfTickets(int TicketsSold) {
+        this.AmountOfTickets = this.AmountOfTickets - TicketsSold;
+    }
+}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Then query would be something like&lt;/p&gt;
+&lt;p&gt;This is the main program code where I am trying to call the variable and used it&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;select * from tabel where last_purchase_categories = &#x27;flight&#x27; 
- and last_purchase_date between 1477217207 and 1477217209;
+&lt;pre&gt;&lt;code&gt;import java.util.Scanner;
+public class ApplicationProgram {
+
+    static Scanner inKey = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        TicketHandler Red = new TicketHandler (200,50);
+        TicketHandler Green = new TicketHandler (200,50);
+        TicketHandler Blue = new TicketHandler (200,50);
+        TicketHandler Yellow = new TicketHandler (200,50);
+
+        boolean running = true;
+
+        //Main menu
+        while (running) {
+            printMenu();
+            int KeyIn = inKey.nextInt();
+
+            //menu
+            switch (KeyIn) {
+                case 1:{
+                    RedRoute();
+                    break;
+                }
+                case 2:{
+                    GreenRoute();
+                    break;
+                }
+
+                case 3:{
+                    BlueRoute();
+                    break;
+                } 
+                case 4:{
+                    YellowRoute();
+                    break;
+                }
+
+                case 5:{
+                    ShowAvailableTicketsAndPrice();
+                    break;
+                }
+
+                case 6:{
+                    System.out.println(&quot;Do you wish to quit: type Y to confirm&quot;);
+                    String quitYN = inKey.next ();
+                    //System.out.println(quitYN);
+                    if ((quitYN.matches(&quot;Y&quot;)) || (quitYN.matches(&quot;y&quot;))) {
+                        System.out.println(&quot;Goodbye\n\n&quot;);
+                        running = false;
+                        System.exit(0);
+
+                    }
+                    break;
+                }
+                default:{
+                    System.out.println(&quot;Not a valid option, try again.&quot;);
+                    break;
+                }
+            }
+        }
+    }
+
+    public static void printMenu(){
+        System.out.println(&quot;Bus Tickets&quot;);
+        System.out.println(&quot;---- ----&quot;);
+        System.out.println(&quot;1. \tRedRoute&quot;);
+        System.out.println(&quot;2. \tGreenRoute&quot;);
+        System.out.println(&quot;3. \tBlueRoute&quot;);
+        System.out.println(&quot;4. \tYellowRoute&quot;);
+        System.out.println(&quot;5. \tShowAvailableTicketsAndPrice&quot;);
+        System.out.println(&quot;6. \tQuit&quot;);
+    }
+
+    public static void RedRoute(){
+        Scanner Red = new Scanner(System.in);
+        System.out.println();
+        int count = 200;
+        while (count &amp;lt;= 200) {
+            System.out.println(&quot;Insert £&quot; + count);
+            int KeyIn = Red.nextInt();
+            count = count - KeyIn;
+
+            if (count == 0){
+                System.out.println(&quot;Enjoy&quot;);
+                break;
+            }
+        }
+    }
+
+    public static void GreenRoute(){
+
+        Scanner Red = new Scanner(System.in);
+        System.out.println();
+        int count = 200;
+        while (count &amp;lt;= 200){
+            System.out.println(&quot;Insert £&quot; + count);
+            int KeyIn = Red.nextInt();
+            count = count - KeyIn;
+
+            if (count == 0){
+                System.out.println(&quot;Enjoy&quot;);
+                break;
+            }
+        }
+    }   
+
+    public static void BlueRoute(){
+
+        Scanner Red = new Scanner(System.in);
+        System.out.println();
+        int moneyin = 200;
+        while (moneyin &amp;lt;= 200){
+            System.out.println(&quot;Insert £&quot; + moneyin);
+            int KeyIn = Red.nextInt();
+            moneyin = moneyin - KeyIn;
+
+            if (moneyin == 0){
+                System.out.println(&quot;Enjoy&quot;);
+                AmountOfTickets = get.AmountOfTickets - 1
+                break;
+            }
+        }
+    }
+
+    public static void YellowRoute(){
+
+        Scanner Red = new Scanner(System.in);
+        System.out.println();
+        int count = 200;
+        while (count &amp;lt;= 200) {
+            System.out.println(&quot;Insert £&quot; + count);
+            int KeyIn = Red.nextInt();
+            count = count - KeyIn;
+
+            if (count == 0){
+                System.out.println(&quot;Enjoy&quot;);
+                break;
+            }
+        }
+    }
+
+    public static void ShowAvailableTicketsAndPrice(){
+        System.out.println(&quot;Routes available:&quot;);
+        System.out.println(&quot;\tRed route, Tickets left: &quot;+  &quot;Price: &quot;);
+        System.out.println(&quot;\tBlue route, Tickets left: &quot; + &quot;Price: &quot;);
+        System.out.println(&quot;\tGreen route, Tickets left: &quot; + &quot;Price: &quot;);
+        System.out.println(&quot;\tYellow route, Tickets left: &quot; + &quot;Price: &quot;);
+    }
+}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Most programming language have convenient functions for converting dates to a timestamp. &lt;/p&gt;
+&lt;p&gt;Thank you.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (40, 16, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (40, 28, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (13, 1, 'I am trying to call a variable from a different class so I can update the variable');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (13, 13, 20, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (13, 26);
+INSERT INTO tag (text) VALUES ('oop');
+INSERT INTO questiontag (question_id, tag_id) VALUES (13, 39);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (41, 50, '&lt;p&gt;OK. I found that the height of row of the pins (defined as #columns) is too short. I added the height for the different screen sizes and it seem to work.
-Not sure why the row is not taking it&#x27;s full height.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (14, 29, '&lt;p&gt;I am relatively new to android programming, I want to create a pdf reader that calls the inbuilt file manager to select pdf file and then display the pdf file in a second class. Here is my code so far still having issues, i think second activity is unable to get the selected pdf file and I am unable to fix this error&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;     MainActivity
+
+     package com.example.user.projectapp;
+
+     import android.app.Activity;
+     import android.app.ListActivity;
+     import android.content.Context;
+     import android.content.Intent;
+     import android.database.Cursor;
+     import android.net.Uri;
+     import android.provider.OpenableColumns;
+     import android.support.v7.app.AppCompatActivity;
+     import android.os.Bundle;
+     import android.util.Log;
+     import android.view.View;
+     import android.widget.ArrayAdapter;
+     import android.widget.ListView;
+
+     import java.io.File;
+     import java.io.IOException;
+     import java.io.InputStream;
+     import java.net.URI;
+     import java.net.URISyntaxException;
+     import java.util.ArrayList;
+     import java.util.Collections;
+     import java.util.List;
+
+     public class MainActivity extends AppCompatActivity {
+
+     public static String path;
+     private static final int PICKFILE_REQUEST_CODE = 0;
+     File tempFile;
+
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+     super.onCreate(savedInstanceState);
+     setContentView(R.layout.activity_main);
+     getFile();
+     }
+
+      public void getFile() {
+
+      Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+      intent.setType(&quot;application/pdf&quot;);
+      path = intent.getStringExtra(&quot;path&quot;);
+      intent.putExtra(&quot;path&quot;,path);
+      startActivityForResult(intent, PICKFILE_REQUEST_CODE);
+      }
+
+      Second Activity
+
+
+      package com.example.user.projectapp;
+
+      import android.annotation.TargetApi; 
+      import android.content.Intent;
+      import android.graphics.Bitmap;
+      import android.graphics.pdf.PdfRenderer;
+      import android.os.Build;
+      import android.os.Environment;
+      import android.os.ParcelFileDescriptor;
+      import android.support.v7.app.AppCompatActivity;
+      import android.os.Bundle;
+      import android.view.View;
+      import android.widget.Button;
+      import android.widget.ImageView;
+
+      import java.io.File;
+
+
+      public class Main2Activity extends AppCompatActivity {
+
+      int pagecount = -1;
+      Button buttonnext, buttonprevious;
+      ImageView imageView;
+
+      @Override
+      protected void onCreate(Bundle savedInstanceState) {
+      super.onCreate(savedInstanceState);
+      setContentView(R.layout.activity_main2);
+
+      buttonnext = (Button) findViewById(R.id.button1);
+      buttonprevious = (Button) findViewById(R.id.button2);
+      imageView = (ImageView) findViewById(R.id.imageview);
+
+
+      buttonnext.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            pagecount++;
+
+            render();
+
+        }
+       });
+     buttonprevious.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            pagecount--;
+
+            render();
+        }
+       });
+
+       }
+
+       @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+       public void render() {
+
+       try {
+        int width = imageView.getWidth();
+        int height = imageView.getHeight();
+        Bitmap bitmap = Bitmap.createBitmap(width, height,                Bitmap.Config.ARGB_4444);
+
+        Intent intent = getIntent();
+        String data = intent.getStringExtra(&quot;path&quot;);
+        File file = new File(data);
+
+        PdfRenderer renderer = new              PdfRenderer(ParcelFileDescriptor.open(file, ParcelFileDescriptor.MODE_READ_ONLY));
+
+        if (pagecount &amp;lt; 0) {
+            pagecount = 0;
+        } else if (pagecount &amp;gt; renderer.getPageCount()) {
+            pagecount = renderer.getPageCount() - 1;
+        }
+        renderer.openPage(pagecount).render(bitmap, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY);
+        imageView.setImageBitmap(bitmap);
+        imageView.invalidate();
+
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    }
+
+    @Override
+    public void onBackPressed() {
+    super.onBackPressed();
+    Intent intent = new Intent(this, MainActivity.class);
+    startActivity(intent);
+
+    }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And the Logcat gives&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    03-28 17:19:33.387 2492-2492/com.example.user.projectapp W/System.err: java.lang.NullPointerException: Attempt to invoke virtual method &#x27;char[] java.lang.String.toCharArray()&#x27; on a null object reference
+    03-28 17:19:33.400 2492-2492/com.example.user.projectapp W/System.err:     at java.io.File.fixSlashes(File.java:185)
+    03-28 17:19:33.400 2492-2492/com.example.user.projectapp W/System.err:     at java.io.File.&amp;lt;init&amp;gt;(File.java:134)
+    03-28 17:19:33.401 2492-2492/com.example.user.projectapp W/System.err:     at com.example.user.projectapp.Main2Activity.render(Main2Activity.java:69)
+    03-28 17:19:33.401 2492-2492/com.example.user.projectapp W/System.err:     at com.example.user.projectapp.Main2Activity$1.onClick(Main2Activity.java:42)
+    03-28 17:19:33.401 2492-2492/com.example.user.projectapp W/System.err:     at android.view.View.performClick(View.java:4764)
+    03-28 17:19:33.401 2492-2492/com.example.user.projectapp W/System.err:     at android.view.View$PerformClick.run(View.java:19844)
+    03-28 17:19:33.401 2492-2492/com.example.user.projectapp W/System.err:     at android.os.Handler.handleCallback(Handler.java:739)
+    03-28 17:19:33.401 2492-2492/com.example.user.projectapp W/System.err:     at android.os.Handler.dispatchMessage(Handler.java:95)
+    03-28 17:19:33.401 2492-2492/com.example.user.projectapp W/System.err:     at android.os.Looper.loop(Looper.java:135)
+    03-28 17:19:33.401 2492-2492/com.example.user.projectapp W/System.err:     at android.app.ActivityThread.main(ActivityThread.java:5351)
+    03-28 17:19:33.401 2492-2492/com.example.user.projectapp W/System.err:     at java.lang.reflect.Method.invoke(Native Method)
+    03-28 17:19:33.401 2492-2492/com.example.user.projectapp W/System.err:     at java.lang.reflect.Method.invoke(Method.java:372)
+    03-28 17:19:33.401 2492-2492/com.example.user.projectapp W/System.err:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:908)
+    03-28 17:19:33.401 2492-2492/com.example.user.projectapp W/System.err:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:703)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Code Modified to be based on one activity only......
+yet onActivityResult does not return a result, I &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;File myFile;
+public static String result;
+public String path;
+private static final int PICKFILE_REQUEST_CODE = 12;
+int pagecount = -1;
+Button buttonnext, buttonprevious;
+ImageView imageView;
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    getFile();
+
+    buttonnext = (Button) findViewById(R.id.button1);
+    buttonprevious = (Button) findViewById(R.id.button2);
+    imageView = (ImageView) findViewById(R.id.imageview);
+
+
+    buttonnext.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            pagecount++;
+
+            render();
+
+        }
+    });
+    buttonprevious.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            pagecount--;
+
+            render();
+        }
+    });
+
+}
+public void getFile() {
+
+    Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+    intent.setType(&quot;application/pdf&quot;);
+    //intent.setType(&quot;image/&quot;);
+    // path = intent.getStringExtra(&quot;path&quot;);
+     //intent.putExtra(&quot;path&quot;,path);
+    //intent.addCategory(Intent.CATEGORY_OPENABLE);
+    startActivityForResult(intent, 12);
+}
+@Override
+protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
+    if (requestCode==12){
+        if (data != null){
+            Toast.makeText(this,&quot;file selected&quot;,Toast.LENGTH_LONG).show();
+          // result=data.getStringExtra(&quot;data&quot;);
+            Uri uri=data.getData();
+          //  String uriString = uri.toString();
+             myFile = new File(uri.toString());
+            path = myFile.getAbsolutePath();
+           // result=data.toString();
+           // URI uri=data.getParcelableExtra(path);
+           // path=fileUri.toString();
+            this.render();
+        }
+
+    }
+
+}
+@TargetApi(Build.VERSION_CODES.LOLLIPOP)
+public void render() {
+
+    try {
+        int width = imageView.getWidth();
+        int height = imageView.getHeight();
+        Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_4444);
+
+        //Intent intent = getIntent();
+        //String path = intent.getStringExtra(&quot;path&quot;);
+
+        // Uri uri = Uri.parse(uri_Str);
+         File file = new File(path);
+        //File storage = Environment.getExternalStorageDirectory();
+        // intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+
+
+        PdfRenderer renderer = new PdfRenderer(ParcelFileDescriptor.open(file, ParcelFileDescriptor.MODE_READ_ONLY));
+
+        if (pagecount &amp;lt; 0) {
+            pagecount = 0;
+        } else if (pagecount &amp;gt; renderer.getPageCount()) {
+            pagecount = renderer.getPageCount() - 1;
+        }
+
+        // Matrix m = imageView.getImageMatrix();
+        // Rect rect=new Rect(0,0,width,height);
+        renderer.openPage(pagecount).render(bitmap, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY);
+        //imageView.setImageMatrix(m);
+        imageView.setImageBitmap(bitmap);
+        imageView.invalidate();
+
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And the logcat error...&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    03-29 11:32:47.276 21674-21674/com.example.user.newtry W/System.err: java.io.FileNotFoundException: No such file or directory
+    03-29 11:32:47.283 21674-21674/com.example.user.newtry W/System.err:     at android.os.Parcel.openFileDescriptor(Native Method)
+    03-29 11:32:47.283 21674-21674/com.example.user.newtry W/System.err:     at android.os.ParcelFileDescriptor.openInternal(ParcelFileDescriptor.java:253)
+    03-29 11:32:47.283 21674-21674/com.example.user.newtry W/System.err:     at      android.os.ParcelFileDescriptor.open(ParcelFileDescriptor.java:199)
+&lt;/code&gt;&lt;/pre&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (41, 17, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (41, 50, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (14, 1, 'How to select a PDF file using startActivityForResult intent and return result in a second class');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (14, 14, 29, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (14, 26);
+INSERT INTO questiontag (question_id, tag_id) VALUES (14, 13);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (15, 27, '&lt;p&gt;Here is my code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Dim strContents, objRegx, mkey, objShell, objUser, objFile
+Set objShell = CreateObject(&quot;WScript.Shell&quot;)
+Set objRegx = New RegExp
+Set objFSO = CreateObject(&quot;Scripting.FileSystemObject&quot;)
+Set objString = CreateObject(&quot;Scripting.Dictionary&quot;)
+Set objUser = CreateObject(&quot;Wscript.Network&quot;)
+Set objPath = objFSO.BuildPath(CurrentDirectory, &quot;&quot;&quot;new 1.cmd&quot;&quot;&quot;)
+
+objRegx.Pattern = &quot;\[(.*?)\]&quot;
+objRegx.IgnoreCase = True
+objRegx.Global = True
+
+WScript.Echo &quot;Acquiring data ...&quot;
+objShell.Run objPath, 1, True
+
+Set objFile = objFSO.OpenTextFile(&quot;c:\windows\temp\plik1.txt&quot;)
+
+strContents = objFile.ReadAll
+
+mkey = objRegx.Replace(strContents, &quot;&quot;)
+
+WScript.Echo mkey
+
+objFile.Close
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I am not sure why I am getting this error when running the script.&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (15, 1, 'Microsoft VBscript runtime error: Object required: &#39;[string: &quot;&quot;&quot;new 1.cmd&quot;&quot;&quot;]&#39; . Not sure that exactly is causing this to happen');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (15, 15, 27, 'Create');
+INSERT INTO tag (text) VALUES ('vbscript');
+INSERT INTO questiontag (question_id, tag_id) VALUES (15, 40);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (16, 48, '&lt;p&gt;This is my &lt;a href=&quot;https://www.towncitycards.com/webservice_action.php?action=all_products&quot; rel=&quot;nofollow noreferrer&quot;&gt;web service&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;where I want to get map_icon, longitude, latitude dynamically from given web service. I am stuck at this point. How can I do this please help me out. 
+&lt;strong&gt;In old code what is done is get longitude, latitude, post_title from web service on the basis of id and then assign image statically.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;strong&gt;Frnt_mapActivity.java&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Frnt_mapActivity extends Activity {
+
+public String Shop_title;
+public String Shop_address;
+public String Shop_icons;
+ProgressDialog mDialog;
+JSONObject jsonobject3;
+JSONArray jsonarray3;
+// Google Map
+private static GoogleMap googlemap;
+public static ArrayList&amp;lt;SearchBeams&amp;gt; searchdata_list;
+public static ArrayList&amp;lt;NormalSearchBeams&amp;gt; normlSearchList;
+ArrayList&amp;lt;All_products_lat_long&amp;gt; venueList;
+
+private int i;
+private Intent intent;
+HashMap&amp;lt;Marker, Integer&amp;gt; hashMap=new HashMap&amp;lt;Marker, Integer&amp;gt;();
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.frnt_map_activity);
+
+    googlemap=((MapFragment)getFragmentManager().findFragmentById(R.id.places_map)).getMap();
+    googlemap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+    googlemap.setMyLocationEnabled(true);
+    googlemap.getUiSettings().setZoomControlsEnabled(true);
+    googlemap.getUiSettings().setMyLocationButtonEnabled(true);
+    googlemap.getUiSettings().setCompassEnabled(true);
+    googlemap.getUiSettings().setRotateGesturesEnabled(true);
+    googlemap.getUiSettings().setZoomGesturesEnabled(true);
+    googlemap.setMyLocationEnabled(true);
+    intent=new Intent(Frnt_mapActivity.this,MainActivity.class);
+    googlemap.setOnInfoWindowClickListener(new OnInfoWindowClickListener() {
+
+        @Override
+        public void onInfoWindowClick(Marker arg0) {
+            i=hashMap.get(arg0);
+            intent.putExtra(&quot;PRODUCT_ID&quot;, venueList.get(i).getId());
+            startActivity(intent);
+            //overridePendingTransition( R.anim.slide_right, R.anim.slide_left );
+        }
+    });
+
+
+    new Frnt_mIcons_Activity().execute();
+
+
+}
+
+class AddMarkerAsyncTask extends AsyncTask&amp;lt;String,String,String&amp;gt;{
+
+    private All_products_lat_long venue;
+    private int k;
+    BitmapDescriptor bd=null;
+
+    AddMarkerAsyncTask(All_products_lat_long venue,int k){
+        this.venue=venue;
+        this.k=k;
+    }
+
+
+
+
+    @Override
+    protected String doInBackground(String... strings) {
+        try{
+            bd=BitmapDescriptorFactory.fromBitmap(Glide.
+                    with(Frnt_mapActivity.this).
+                    load(venue.getMap_icon()).
+                    asBitmap().
+                    into(100, 100). // Width and height
+                    get());
+        }catch (Exception e){
+            bd=null;
+            e.printStackTrace();
+
+        }
+
+        return null;
+    }
+
+    @Override
+    protected void onPostExecute(String s) {
+        super.onPostExecute(s);
+
+        try{
+            if(bd!=null){
+                Marker marker=googlemap.addMarker(new MarkerOptions()
+                        .position(new LatLng(Double.parseDouble(venue.getLatitude()), Double.parseDouble(venue.getLongitude())))
+                        .title(venue.getPost_title())
+                        .icon(bd));
+                hashMap.put(marker, k);
+            }
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
+    }
+}
+
+
+private void addMarkers() {
+
+
+
+
+    for(int k=0; k&amp;lt;venueList.size(); k += 1){
+
+        //nirmal
+        try{
+            Log.e(&quot;nirmal&quot;,venueList.get(k).getMap_icon());
+
+            //new AddMarkerAsyncTask(venueList.get(k),k).execute();
+
+            double ln = Double.parseDouble(venueList.get(k).getLongitude());
+            double la = Double.parseDouble(venueList.get(k).getLatitude());
+                /*String title=venueList.get(k).getPost_title()==null?&quot;&quot;:venueList.get(k).getPost_title();
+                URL url = new URL(venueList.get(k).getMap_icon());
+                Bitmap image = BitmapFactory.decodeStream(url.openConnection().getInputStream());
+                BitmapDescriptor bd=BitmapDescriptorFactory.fromBitmap(image);*/
+
+
+                /*Marker marker=googlemap.addMarker(new MarkerOptions()
+                        .position(new LatLng(la, ln))
+                        .title(title)
+                        .icon(bd));
+                hashMap.put(marker, k);*/
+
+            switch (Integer.parseInt(venueList.get(k).getId()))
+            {
+                case 5689 :
+                    Marker marker=googlemap.addMarker(new MarkerOptions()
+                            .position(new LatLng(la, ln))
+                            .title(venueList.get(k).getPost_title())
+                            .icon(BitmapDescriptorFactory.fromResource(R.drawable.fruitandveg)));
+                    hashMap.put(marker, k);
+                    break;
+                case 5779 :
+                    Marker marker1=googlemap.addMarker(new MarkerOptions()
+                            .position(new LatLng(la, ln))
+                            .title(venueList.get(k).getPost_title())
+                            .icon(BitmapDescriptorFactory.fromResource(R.drawable.coffee)));
+                    hashMap.put(marker1, k);
+                    break;
+                case 5798 :
+                    Marker marker3 = googlemap.addMarker(new MarkerOptions()
+                            .position(new LatLng(la, ln))
+                            .title(venueList.get(k).getPost_title())
+                            .icon(BitmapDescriptorFactory.fromResource(R.drawable.takeaway)));
+                    hashMap.put(marker3, k);
+                    break;
+                case 5810 :
+                    Marker marker4 = googlemap.addMarker(new MarkerOptions()
+                            .position(new LatLng(la, ln))
+                            .title(venueList.get(k).getPost_title())
+                            .icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_steakhouse)));
+                    hashMap.put(marker4, k);
+                    break;
+                case 6005 :
+                    Marker marker5 = googlemap.addMarker(new MarkerOptions()
+                            .position(new LatLng(la, ln))
+                            .title(venueList.get(k).getPost_title())
+                            .icon(BitmapDescriptorFactory.fromResource(R.drawable.clambers_playcentre)));
+                    hashMap.put(marker5, k);
+                    break;
+                case 6011 :
+                    Marker marker6 = googlemap.addMarker(new MarkerOptions()
+                            .position(new LatLng(la, ln))
+                            .title(venueList.get(k).getPost_title())
+                            .icon(BitmapDescriptorFactory.fromResource(R.drawable.thetruecrimemuseum)));
+                    hashMap.put(marker6, k);
+
+                    break;
+                .........
+                ...........
+                ............
+                default :
+                    break;
+            }
+
+        }catch (Exception e){
+            Log.e(&quot;addMarkers&quot;,k+&quot;&quot;);
+            e.printStackTrace();
+        }
+
+
+    }
+}
+
+/******************FOR MAP******************/
+class Frnt_mIcons_Activity extends AsyncTask&amp;lt;String, String, String&amp;gt; {
+
+    public ArrayList&amp;lt;All_products_lat_long&amp;gt; maplist;
+
+
+    @Override
+    protected void onPreExecute() {
+        mDialog = new ProgressDialog(Frnt_mapActivity.this);
+        mDialog.setMessage(&quot;Loading...&quot;);
+        mDialog.setCancelable(false);
+        mDialog.show();
+        super.onPreExecute();
+    }
+
+
+
+
+    // Slow Implementation
+    private String inputStreamToString(InputStream is) {
+        String s = &quot;&quot;;
+        String line = &quot;&quot;;
+        // Wrap a BufferedReader around the InputStream
+        BufferedReader rd = new BufferedReader(new InputStreamReader(is));
+        // Read response until the end
+        try {
+            while ((line = rd.readLine()) != null) {
+                s += line;
+            }
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        // Return full string
+        return s;
+    }
+
+
+    @Override
+    protected String doInBackground(String... params) {
+        // TODO Auto-generated method stub  
+        maplist = new ArrayList&amp;lt;All_products_lat_long&amp;gt;();
+
+        HostnameVerifier hostnameVerifier = org.apache.http.conn.ssl.SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER;
+
+        DefaultHttpClient client = new DefaultHttpClient();
+
+        SchemeRegistry registry = new SchemeRegistry();
+        SSLSocketFactory socketFactory = SSLSocketFactory.getSocketFactory();
+        socketFactory.setHostnameVerifier((X509HostnameVerifier) hostnameVerifier);
+        registry.register(new Scheme(&quot;http&quot;, socketFactory, 443));
+        SingleClientConnManager mgr = new SingleClientConnManager(client.getParams(), registry);
+        DefaultHttpClient httpClient = new DefaultHttpClient(mgr, client.getParams());
+
+
+
+  // Set verifier
+                HttpsURLConnection.setDefaultHostnameVerifier(hostnameVerifier);
+        HttpPost httpPost = new HttpPost(&quot;http://towncitycards.com/webservice_action.php?action=all_products&quot;);
+
+        try{
+
+            HttpResponse response = httpClient.execute(httpPost);
+            String data = inputStreamToString(response.getEntity().getContent());
+            jsonobject3 = new JSONObject(data);
+            jsonarray3 = new JSONArray(jsonobject3.getString(&quot;all_products&quot;));
+            venueList =new ArrayList&amp;lt;All_products_lat_long&amp;gt;();
+            for(int j=0; j&amp;lt;jsonarray3.length();j++){
+                JSONObject itemobj = jsonarray3.getJSONObject(j);
+                //SHOW SEARCH RESULT
+                All_products_lat_long searchItems = new All_products_lat_long();
+
+                searchItems.setId(itemobj.getString(&quot;ID&quot;));
+                searchItems.setPost_title(itemobj.getString(&quot;post_title&quot;));
+                searchItems.setMap_icon(itemobj.getString(&quot;map_icon&quot;));
+                searchItems.setLongitude(itemobj.getString(&quot;longitude&quot;));
+                searchItems.setLatitude(itemobj.getString(&quot;latitude&quot;));
+                //          System.out.println(&quot;######Ashish is object &amp;gt;&amp;gt;&quot;+itemobj);
+                venueList.add(searchItems);
+                //      System.out.println(&quot;SEARCHLISTSS@@@@@@@&quot;+venueList.get(j).getLongitude());
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+
+    @Override
+    public void onPostExecute(String result) {
+        super.onPostExecute(result);
+
+        //System.out.println(&quot;SEARCHLISTSS@@@@@@@&quot;+venueList);
+        //System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;+venueList);
+        try{
+            if(venueList.size()&amp;gt;0)
+            {
+                addMarkers();
+//              Toast.makeText(Frnt_mapActivity.this,&quot;Search for the venue11.&quot;,Toast.LENGTH_SHORT).show();
+
+            }
+            else
+                Toast.makeText(Frnt_mapActivity.this,&quot;Search for the venue.&quot;,Toast.LENGTH_SHORT).show();
+            //LatLng coordinate = new LatLng(22.75852160, 75.8911550);
+            LatLng coordinate = new LatLng(50.85514, 0.58382);
+            CameraUpdate yourLocation = CameraUpdateFactory.newLatLngZoom(coordinate, 18);
+            googlemap.animateCamera(yourLocation);
+            for (int i = 0; i &amp;lt; jsonarray3.length(); i++) {
+
+                jsonobject3 = jsonarray3.getJSONObject(i);
+
+                Shop_title = jsonobject3.optString(&quot;post_title&quot;);
+                Shop_address = jsonobject3.optString(&quot;map_icon&quot;);
+                Shop_icons = jsonobject3.optString(&quot;map_icon&quot;);
+                //}
+            }
+
+
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+
+        if(mDialog!=null &amp;amp;&amp;amp; mDialog.isShowing()){
+            mDialog.dismiss();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;}&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (16, 1, 'How to get Google map (map_icon, title, latitude, longitude) dynamically from webservice');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (16, 16, 48, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (16, 13);
+INSERT INTO tag (text) VALUES ('web-services');
+INSERT INTO questiontag (question_id, tag_id) VALUES (16, 41);
+INSERT INTO tag (text) VALUES ('google-maps');
+INSERT INTO questiontag (question_id, tag_id) VALUES (16, 42);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (17, 41, '&lt;p&gt;I would like to avoid to use .subscribe() in this component.
+I tried &lt;code&gt;*ngIf=&quot;user$ | async as user&quot;&lt;/code&gt; but it did not work.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How can I make a local variable with &lt;code&gt;user$ | async&lt;/code&gt; un order to use it at different places in this view?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre class=&quot;lang-html prettyprint-override&quot;&gt;&lt;code&gt;&amp;lt;app-xpbar *ngIf=&quot;user$ | async&quot;&amp;gt;&amp;lt;/app-xpbar&amp;gt;
+
+&amp;lt;header class=&quot;header&quot;&amp;gt;
+
+  &amp;lt;app-header-common
+    (onSearch)=&quot;searching($event)&quot;&amp;gt;
+  &amp;lt;/app-header-common&amp;gt;
+
+  &amp;lt;app-header-user
+    [user]=&quot;user$ | async&quot;
+    (onLogin)=&quot;login($event)&quot;
+    (onTrial)=&quot;trial($event)&quot;&amp;gt;
+  &amp;lt;/app-header-user&amp;gt;
+
+&amp;lt;/header&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (17, 1, 'How to avoid having 2 times | async in this situation (4.0.0)?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (17, 17, 41, 'Create');
+INSERT INTO tag (text) VALUES ('angular2');
+INSERT INTO questiontag (question_id, tag_id) VALUES (17, 43);
+INSERT INTO tag (text) VALUES ('subscription');
+INSERT INTO questiontag (question_id, tag_id) VALUES (17, 44);
+INSERT INTO activity (post_id, user_id, activity) VALUES (17, 41, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (17, 41, 'Upvote');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (18, 19, '&lt;p&gt;i&#x27;m trying to insert data from a form into two tables in db. &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public ActionResult Cr([Bind(Include = &quot;id,name,time&quot;)] appointment appointment, [Bind(Include = &quot;pid,phone&quot;)] customer customer , string submit)
+        {
+        string str1 = &quot;Insert Into appointment.id, appointment.name, appointment.time Values id,name,time&quot;
+        string str2= &quot;Insert Into customer.pid, customer.phone Values pid,phone&quot;
+        var Query = dbb.Database.SqlQuery&amp;lt;ViewModel.custapp&amp;gt;(str1).ToList();
+        var Query = dbb.Database.SqlQuery&amp;lt;ViewModel.custapp&amp;gt;(str2).ToList();
+        return View(&quot;Index&quot;);
+        }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I am not sure if my code is wrong but the data are not inserted in the tables.&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (18, 1, 'Raw SQL &#39;Insert Into&#39; in ASP MVC');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (18, 18, 19, 'Create');
+INSERT INTO tag (text) VALUES ('c#');
+INSERT INTO questiontag (question_id, tag_id) VALUES (18, 45);
+INSERT INTO tag (text) VALUES ('mysql');
+INSERT INTO questiontag (question_id, tag_id) VALUES (18, 46);
+INSERT INTO tag (text) VALUES ('sql');
+INSERT INTO questiontag (question_id, tag_id) VALUES (18, 47);
+INSERT INTO questiontag (question_id, tag_id) VALUES (18, 19);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (19, 6, '&lt;p&gt;Please, explain the difference between card network like Visa, MasterCard, AmericanExpress, Discovery and interbank networks like Pulse, Star, Nyce, Accel, how they are connected with each other and can the same card card be both e.g. MasterCard and Nyce simultaneously?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (19, 1, 'What is the difference between (VIsa, MasterCard, Discovery, AmericanExpress) and (PULSE, STAR, NYCE)');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (19, 19, 6, 'Create');
+INSERT INTO tag (text) VALUES ('credit-card');
+INSERT INTO questiontag (question_id, tag_id) VALUES (19, 48);
+INSERT INTO tag (text) VALUES ('visa');
+INSERT INTO questiontag (question_id, tag_id) VALUES (19, 49);
+INSERT INTO tag (text) VALUES ('mastercard');
+INSERT INTO questiontag (question_id, tag_id) VALUES (19, 50);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (20, 21, '&lt;p&gt;using CoordinatorLayout and appbarlayout,there are four views in appbarlayout,A、B 、C and D. and then a scrollview . when scrolling, i want A out of screen (easy),B stay on the top（easy）, C out the screen ,D stay below B .&lt;/p&gt;
+
+&lt;p&gt;before scroll &lt;a href=&quot;https://i.stack.imgur.com/O388G.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;enter image description here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;after scroll  &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/OAG7W.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;enter image description here&lt;/a&gt;&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (20, 1, 'AppbarLayout part scroll');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (20, 20, 21, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (20, 13);
+INSERT INTO tag (text) VALUES ('android-appbarlayout');
+INSERT INTO questiontag (question_id, tag_id) VALUES (20, 51);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', -1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (21, 17, '&lt;p&gt;being new to VBA I have made a (probably long winded) piece of code.&lt;/p&gt;
+
+&lt;p&gt;I tried to change it so that on the output file it is only 1 page wide, but have somehow mucked it all up.&lt;/p&gt;
+
+&lt;p&gt;Can someone help please.&lt;/p&gt;
+
+&lt;p&gt;In a nutshell, it filters the data for each store code, creates a pdf attachment and emails the store with the data&lt;/p&gt;
+
+&lt;p&gt;also posted in mrexcel&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Sub StoreAttendanceSplit()
+    Dim OutApp As Outlook.Application
+    Dim OutMail As Outlook.MailItem
+    Dim rng As Range
+    Dim Ash As Worksheet
+    Dim Cws As Worksheet
+    Dim Rcount As Long
+    Dim Rnum As Long
+    Dim FilterRange As Range
+    Dim FieldNum As Integer
+    Dim mailAddress As String
+    Dim NewWB As Workbook
+    Dim TempFilePath As String
+    Dim TempFileName As String
+    Dim FileExtStr As String
+    Dim FileFormatNum As Long
+
+    On Error GoTo cleanup
+
+    Set OutApp = CreateObject(&quot;Outlook.Application&quot;)
+
+    With Application
+        .EnableEvents = False
+        .ScreenUpdating = False
+    End With
+
+    &#x27;Set filter sheet, you can also use Sheets(&quot;MySheet&quot;)
+    Set Ash = ActiveSheet
+
+    &#x27;Set filter range and filter column (column with names)
+    Set FilterRange = Ash.Range(&quot;A1:M&quot; &amp;amp; Ash.Rows.Count)
+    FieldNum = 1 &#x27;Filter column = A because the filter range start in column A
+
+    &#x27;Add a worksheet for the unique list and copy the unique list in A1
+    Set Cws = Worksheets.Add
+    FilterRange.Columns(FieldNum).AdvancedFilter _
+        Action:=xlFilterCopy, _
+        CopyToRange:=Cws.Range(&quot;A1&quot;), _
+        CriteriaRange:=&quot;&quot;, Unique:=True
+
+    &#x27;Count of the unique values + the header cell
+    Rcount = Application.WorksheetFunction.CountA(Cws.Columns(1))
+
+    &#x27;If there are unique values start the loop
+    If Rcount &amp;gt;= 2 Then
+
+        For Rnum = 2 To Rcount
+
+            &#x27;Look for the mail address in the MailInfo worksheet
+            mailAddress = &quot;&quot;
+            On Error Resume Next
+            mailAddress = Application.WorksheetFunction. _
+                VLookup(Cws.Cells(Rnum, 1).Value, _
+                Worksheets(&quot;Mailinfo&quot;).Range(&quot;A1:B&quot; &amp;amp; _
+                Worksheets(&quot;Mailinfo&quot;).Rows.Count), 2, False)
+            On Error GoTo 0
+
+           If mailAddress &amp;lt;&amp;gt; &quot;&quot; Then
+               &#x27;Filter the FilterRange on the FieldNum column
+               FilterRange.AutoFilter Field:=FieldNum, _
+                   Criteria1:=Cws.Cells(Rnum, 1).Value
+
+               &#x27;Copy the visible data in a new workbook
+               With Ash.AutoFilter.Range
+                   On Error Resume Next
+                   Set rng = .SpecialCells(xlCellTypeVisible)
+                   On Error GoTo 0
+               End With
+               Set NewWB = Workbooks.Add(xlWBATWorksheet)
+
+               rng.Copy
+
+               With NewWB.Sheets(1)
+                   .Cells(1).PasteSpecial Paste:=8
+                   .Cells(1).PasteSpecial Paste:=xlPasteValues
+                   .Cells(1).PasteSpecial Paste:=xlPasteFormats
+                   .Cells(1).Select
+
+                   Application.CutCopyMode = False
+                   ActiveSheet.PageSetup.Orientation = xlLandscape
+                   .LeftMargin = Application.InchesToPoints(0)
+                   .RightMargin = Application.InchesToPoints(0)
+                   .TopMargin = Application.InchesToPoints(0)
+                   .BottomMargin = Application.InchesToPoints(0)
+
+
+               &#x27;Create a file name
+               TempFilePath = &quot;J:\Human Resources\Systems &amp;amp; Planning\Reporting\Rick&quot;
+               TempFileName = &quot;Employee Attendance Report Year To Date&quot; &amp;amp; Range(&quot;a2&quot;) &amp;amp; &quot;.pdf&quot;
+               FileFullPath = TempFilePath &amp;amp; TempFileName
+
+               With NewWB
+                   .ExportAsFixedFormat Type:=xlTypePDF, Filename:=FileFullPath, Quality:=xlQualityStandard
+
+                   &#x27;Save, Mail, Close and Delete the file
+                   Set OutMail = OutApp.CreateItem(0)
+                   With OutMail
+                       .To = mailAddress
+                       .Subject = &quot;Store Employee Attendance Record Year To Date&quot;
+                       .Attachments.Add (FileFullPath)
+                       .Body = &quot;Please find attached the year to date employee attendance record for your store&quot;
+                       .Display &#x27;Or use Send
+                   End With
+
+                On Error GoTo 0
+                .Close savechanges:=False
+            End With
+
+            Set OutMail = Nothing
+
+            &#x27;Close AutoFilter
+            Ash.AutoFilterMode = False
+
+        Next Rnum
+    End If
+
+cleanup:
+    Set OutApp = Nothing
+    Application.DisplayAlerts = False
+    Cws.Delete
+    Application.DisplayAlerts = True
+    With Application
+        .EnableEvents = True
+        .ScreenUpdating = True
+    End With
+
+End Sub 
+&lt;/code&gt;&lt;/pre&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (21, 1, 'I have changed some code and now it does not work properly');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (21, 21, 17, 'Create');
+INSERT INTO tag (text) VALUES ('vba');
+INSERT INTO questiontag (question_id, tag_id) VALUES (21, 52);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (22, 5, '&lt;p&gt;I have a simple panda dataframe like this one:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;d = {&#x27;col1&#x27;: [&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;,&#x27;d&#x27;,&#x27;e&#x27;], &#x27;col2&#x27;: [1,2,3,4,5]}
+df = pd.DataFrame(d)
+df
+  col1  col2
+0    a     1
+1    b     2
+2    c     3
+3    d     4
+4    e     5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And I would need to iterate over it and to get a simple arithmetic results (like a product or so) for all combination of row values. I was thinking to make a matrix and put the values in, like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;size = df.shape[0]
+mtx = np.zeros(shape=(size, size))
+mtx
+array([[ 0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.]])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But I somehow &#x27;sense&#x27; there is more efficient way to do this than nested looping, like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;for index1, c11, c12, in df.itertuples():
+    for index2, c21, c22 in df.itertuples():
+        mtx[index1][index2] = float(c12) * float(c22)
+
+mtx
+array([[  1.,   2.,   3.,   4.,   5.],
+       [  2.,   4.,   6.,   8.,  10.],
+       [  3.,   6.,   9.,  12.,  15.],
+       [  4.,   8.,  12.,  16.,  20.],
+       [  5.,  10.,  15.,  20.,  25.]])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Any idea will be much appreciated! Thanks!&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (22, 1, 'Efficient nested looping with pandas dataframe');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (22, 22, 5, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (22, 30);
+INSERT INTO questiontag (question_id, tag_id) VALUES (22, 31);
+INSERT INTO tag (text) VALUES ('iteration');
+INSERT INTO questiontag (question_id, tag_id) VALUES (22, 53);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (23, 44, '&lt;p&gt;How can i get data inside parenthesis using recursive function.
+without using regex and without other build-in functions.&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (23, 1, 'How can i get data inside parenthesis using recursive function');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (23, 23, 44, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (23, 30);
+INSERT INTO tag (text) VALUES ('recursion');
+INSERT INTO questiontag (question_id, tag_id) VALUES (23, 54);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', -1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (24, 49, '&lt;p&gt;To fork off X processes and have the parent wait for all, I have the following code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int maxProcesses = 10;
+
+for (int currentChild = 0; currentChild &amp;lt; maxProcesses; currentChild++) {
+    pid_t pid = fork();
+
+    if (pid &amp;lt; 0) {
+        // Error
+    } else if (pid == 0) {
+        // Child
+    } else {
+        // Parent
+        // Should I call waitpid on pid and wait here instead?
+    }
+}
+
+// Wait for all children
+for (int currentChild = 0; currentChild &amp;lt; maxProcesses; currentChild++) {
+    wait(NULL);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now I would like to modify the code so that of X total processes, Y are forked off first, and then as they finish, more forks are made till desired total number is reached. I have made some changes to the above code, with some questions.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int totalProcessesToBeForked = 10;
+int maxAllowedAtOnce = 5;
+
+for (int currentChild = 0; currentChild &amp;lt; maxAllowedAtOnce; currentChild++) {
+    forkChild(currentChild);
+}
+
+// Wait for all children
+// # How do I modify this to wait for new children forked as well
+// # if I move it inside parent, it will make things easier, right?
+for (int currentChild = 0; currentChild &amp;lt; maxAllowedAtOnce; currentChild++) {
+    wait(NULL);
+}
+
+void forkChild(currentChild) {
+    pid_t pid = fork();
+
+    if (pid &amp;lt; 0) {
+        // Error
+    } else if (pid == 0) {
+        // Child
+    } else {
+        // Parent
+        // # I think waiting here using waitpid will be better b/c
+        // # as new forks are made, parent begins to wait for them
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I will probably need to keep a count of how many children have been forked and compare it to totalProcessesToBeForked, and fork new ones accordingly.&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (24, 1, 'Fork off more processes as previous finish, until max is reached');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (24, 24, 49, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (24, 16);
+INSERT INTO tag (text) VALUES ('c');
+INSERT INTO questiontag (question_id, tag_id) VALUES (24, 55);
+INSERT INTO tag (text) VALUES ('process');
+INSERT INTO questiontag (question_id, tag_id) VALUES (24, 56);
+INSERT INTO tag (text) VALUES ('fork');
+INSERT INTO questiontag (question_id, tag_id) VALUES (24, 57);
+INSERT INTO tag (text) VALUES ('waitpid');
+INSERT INTO questiontag (question_id, tag_id) VALUES (24, 58);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (25, 30, '&lt;p&gt;We work with DB2 effective version 8 (more or less, so no CUR_COMMIT) on z/OS.&lt;/p&gt;
+
+&lt;p&gt;In our (Java based, though this should not be relevant) application a method exists which runs in a transaction and deletes multiple records from a table called, say, MY_TABLE, based on the value of a certain column which we will call SPECIAL_COLUMN, executing the statement &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DELETE FROM MY_TABLE WHERE SPECIAL_COLUMN=?
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Apart from executing this statement, some other SQL statements get executed which I omit because for the moment I think they are perhaps not relevant for the problem I describe.&lt;/p&gt;
+
+&lt;p&gt;Running the method concurrently we sometimes see the exception &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;nested exception is com.ibm.db2.jcc.am.SqlException: 
+UNSUCCESSFUL EXECUTION CAUSED BY DEADLOCK OR TIMEOUT. REASON CODE 00C90088, TYPE OF RESOURCE 00000302, AND RESOURCE NAME ... SQLCODE=-913, SQLSTATE=57033, DRIVER=3.63.131 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;thrown during the execution of the DELETE FROM MY_TABLE WHERE SPECIAL_COLUMN=? statement. According to &lt;a href=&quot;http://www.idug.org/p/fo/et/thread=20542&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://www.idug.org/p/fo/et/thread=20542&lt;/a&gt; this seems to be related to locks placed on &quot;pages&quot;.&lt;/p&gt;
+
+&lt;p&gt;My questions are the following:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Can in fact two DELETE statements executed concurrently for the &lt;strong&gt;same value&lt;/strong&gt; of SPECIAL_COLUMN, to which multiple rows correspond, cause such deadlock (a scenario which I have in mind is something like the following: the first statement &quot;puts a lock&quot; on &quot;1st page&quot;, second statement &quot;puts a lock&quot; on &quot;2nd page&quot;, and then first statement waits for the lock on &quot;2nd page&quot;, while the second statement waits for the lock on &quot;1st page&quot;. 
+Or is the placing of such locks is &quot;atomic&quot;, meaning that if first statement has started to put locks, the 2nd will wait?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Same question for &lt;strong&gt;different values&lt;/strong&gt; of SPECIAL_COLUMN (seems more likely)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In the case such scenarios are possible and might be the reason for the deadlock observed (otherwise we&#x27;ll have to examine the &quot;unsuspicios&quot; so far SQL), which might be a reasonable solution? (I have thought on synchronizing the Java code, but I think it is not such a good idea; I have thought also on issuing SELECT FOR UPDATE on the rows to be deleted before doing delete, but since additional locks will be involved, I am quite in doubt also about that).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT:&lt;/strong&gt; &lt;/p&gt;
+
+&lt;p&gt;link to a report on a similar problem &lt;a href=&quot;http://www.dbforums.com/showthread.php?575408-db2-OS390-TABLE-LOCK-DURING-DELETE&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://www.dbforums.com/showthread.php?575408-db2-OS390-TABLE-LOCK-DURING-DELETE&lt;/a&gt;&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (25, 1, 'Can one delete statement which deletes multiple rows cause deadlock?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (25, 25, 30, 'Create');
+INSERT INTO tag (text) VALUES ('concurrency');
+INSERT INTO questiontag (question_id, tag_id) VALUES (25, 59);
+INSERT INTO tag (text) VALUES ('db2');
+INSERT INTO questiontag (question_id, tag_id) VALUES (25, 60);
+INSERT INTO tag (text) VALUES ('database-deadlocks');
+INSERT INTO questiontag (question_id, tag_id) VALUES (25, 61);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (26, 4, '&lt;p&gt;independent_bits_engine is the template class&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;template&amp;lt;
+    class Engine, 
+    std::size_t W, 
+    class UIntType
+&amp;gt; class independent_bits_engine;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The second parametr define, how much bits need to be generated. I don&#x27;t know its. I would to ask this question to user in runtime. How do it?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (26, 1, 'How to define number of bits to generate using independent_bits_engine?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (26, 26, 4, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (26, 16);
+INSERT INTO tag (text) VALUES ('boost');
+INSERT INTO questiontag (question_id, tag_id) VALUES (26, 62);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (27, 19, '&lt;p&gt;I have a simple Person entity in Core Data, I noticed that when adding data, each row is auto generated a unique &lt;strong&gt;PK&lt;/strong&gt; called &lt;strong&gt;objectID&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I wish to retrieve the records using the objectID but I am getting the following error:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Terminating app due to uncaught exception
+  &#x27;NSInvalidArgumentException&#x27;, reason: &#x27;keypath objectID not found in
+  entity &amp;lt; NSSQLEntity Person id=2 &gt;&#x27;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;func fetchPerson(withID personID: Int,
+                 context: NSManagedObjectContext,
+                 completion: @escaping ([Person]?) -&amp;gt; Void) {
+
+    let fetchRequest: NSFetchRequest&amp;lt;Person&amp;gt; = Person.fetchRequest()
+
+    let predicate = NSPredicate(format: &quot;\(#keyPath(Person.objectID)) == \(personID)&quot;)
+    fetchRequest.predicate = predicate
+
+    //perform aynchronous operation:
+    context.perform {
+        do {
+            let persons = try fetchRequest.execute()
+            //success - return array of persons
+            completion(persons)
+        } catch {
+            //error - return nil
+            completion(nil)
+        }
+
+    }
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Calling the above :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//fetch person with specific id:
+let personID: Int = 2
+fetchPerson(withID: personID, context: persistentContainer.viewContext) { (persons: [Person]?) in
+    if persons != nil {
+
+        print(&quot;Fetching person with personID: \(personID)&quot;)
+        for person in persons! {
+            print(&quot;Person: \(person.objectID) - \(person.firstName!) \(person.lastName!)&quot;)
+        }
+
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (27, 1, 'Core Data using auto generated Primary Key PK');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (27, 27, 19, 'Create');
+INSERT INTO tag (text) VALUES ('swift');
+INSERT INTO questiontag (question_id, tag_id) VALUES (27, 63);
+INSERT INTO tag (text) VALUES ('core-data');
+INSERT INTO questiontag (question_id, tag_id) VALUES (27, 64);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (28, 3, '&lt;p&gt;I currently have a method which finds all cards using a SQL statement to find all results. It looks as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php $cards = find_all_cards();
+foreach {$cards as $card} echo &quot;card-&amp;gt;username&quot;;
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I can use it to list all cards one after another, but I can&#x27;t do that if I have 2 columns, because I need to create a new row. Ideally, I&#x27;d populate 1st column with half of results, and 2nd with other half.&lt;/p&gt;
+
+&lt;p&gt;Also I&#x27;d like to be able to sort my results using a filter, is it done via php? So for example sort by ascending username (I have many more fields that I could sort by)&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (28, 1, 'PHP how can I display cards in 2 columns?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (28, 28, 3, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (28, 35);
+INSERT INTO questiontag (question_id, tag_id) VALUES (28, 46);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (29, 24, '&lt;p&gt;In order to compute the FFT with Accelerate framework, I see a lot of people using (the old way I guess) &lt;code&gt;fft_zrip&lt;/code&gt; instead of the recommended one by Apple in the vDSP documentation &lt;code&gt;​DSP_DFT_Execute&lt;/code&gt;. &lt;/p&gt;
+
+&lt;p&gt;Is there any reason why &lt;code&gt;​DSP_DFT_Execute&lt;/code&gt; is so under used?&lt;/p&gt;
+
+&lt;p&gt;One of the main thing that I guess is that for the real-complex fft the real data have to be formatted in a split format with the help of &lt;code&gt;vDSP_ctoz&lt;/code&gt;, i.e the real array has to be split into 2 arrays of length N/2 ( even-indexed elements are in the real array input, odd-indexed are in the imaginary array input).&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (29, 1, 'vDSP fft computation good practice');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (29, 29, 24, 'Create');
+INSERT INTO tag (text) VALUES ('osx');
+INSERT INTO questiontag (question_id, tag_id) VALUES (29, 65);
+INSERT INTO tag (text) VALUES ('fft');
+INSERT INTO questiontag (question_id, tag_id) VALUES (29, 66);
+INSERT INTO tag (text) VALUES ('accelerate-framework');
+INSERT INTO questiontag (question_id, tag_id) VALUES (29, 67);
+INSERT INTO tag (text) VALUES ('vdsp');
+INSERT INTO questiontag (question_id, tag_id) VALUES (29, 68);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (30, 7, '&lt;p&gt;Following article explains how to use inbuilt VS animated icon in the status bar. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://msdn.microsoft.com/en-us/library/bb166795.aspx&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://msdn.microsoft.com/en-us/library/bb166795.aspx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I would like to know, is there a way to include custom gif animation inside the status bar.&lt;/p&gt;
+
+&lt;p&gt;Bitmap image can be included like following. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://social.msdn.microsoft.com/Forums/vstudio/en-US/fef208e7-b79d-4a0c-94fe-e6861196e1f5/how-to-show-my-icon-in-exp-visutal-stufo-statusbarsvsstatusbar?forum=vsx#ba47b61c-77a8-46c8-aa10-a04211312e6c&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://social.msdn.microsoft.com/Forums/vstudio/en-US/fef208e7-b79d-4a0c-94fe-e6861196e1f5/how-to-show-my-icon-in-exp-visutal-stufo-statusbarsvsstatusbar?forum=vsx#ba47b61c-77a8-46c8-aa10-a04211312e6c&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;When I point a gif image according to above example, animation is not happening. Please help.&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (30, 1, 'Animated image in Visual Studio Status bar');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (30, 30, 7, 'Create');
+INSERT INTO tag (text) VALUES ('visual-studio');
+INSERT INTO questiontag (question_id, tag_id) VALUES (30, 69);
+INSERT INTO tag (text) VALUES ('visual-studio-extensions');
+INSERT INTO questiontag (question_id, tag_id) VALUES (30, 70);
+INSERT INTO tag (text) VALUES ('vsix');
+INSERT INTO questiontag (question_id, tag_id) VALUES (30, 71);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (31, 42, '&lt;blockquote&gt;
+  &lt;p&gt;Can someone who is familiar with Haskell monad transformers explain how they solve this kind of problem or suggest an alternative solution?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Well, I can at least try. This is how your type looks directly translated to Haskell:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;type EffM a s x = Either a (State s x)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A rather obvious observation is that it&#x27;s not a monad transformer.&lt;sup&gt;2&lt;/sup&gt; That&#x27;s how a transformer would look like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;type TransM a s x = EitherT a (State s) x
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As you can see, the only change is the &lt;code&gt;T&lt;/code&gt; and the fact that &lt;code&gt;x&lt;/code&gt; is outside the parens. The latter part is essential in understanding the transformer approach. &lt;/p&gt;
+
+&lt;p&gt;The core idea is that the &lt;code&gt;State&lt;/code&gt; is a part of the result production regardless of whether the &lt;code&gt;Either&lt;/code&gt; results in &quot;success&quot; or &quot;fail&quot;, whereas in your case producing &quot;fail&quot; means the state operation is never touched. I&#x27;d need to think harder what that means in practice, but intuitively the transformer approach is what you&#x27;re gonna have in mind when working with typical, imperative code.&lt;/p&gt;
+
+&lt;p&gt;Now, when you use such a transformer, &lt;code&gt;join&lt;/code&gt; is actually provided for free, as a consequence of fitting into the Monad interface.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import Control.Monad.State
+import Control.Monad.Trans.Either
+import Control.Monad
+
+type Eff e s a = EitherT e (State s) a
+
+-- type the following in REPL
+
+λ :t join
+join :: Monad m =&amp;gt; m (m a) -&amp;gt; m a
+
+λ :t join :: Eff e s (Eff e s a) -&amp;gt; Eff e s a
+join :: Eff e s (Eff e s a) -&amp;gt; Eff e s a
+     :: Eff e s (Eff e s a) -&amp;gt; Eff e s a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So this is how Haskell&lt;sup&gt;1&lt;/sup&gt; solves it. Now, it&#x27;s obviously possible to write a specialized &lt;code&gt;EitherState&lt;/code&gt; type this way (altough I&#x27;d personally flip those two in all of the examples to &lt;code&gt;StateEither&lt;/code&gt; - feels more natural), mirroring what the implementation of &lt;code&gt;join&lt;/code&gt; for respective transformers would do. I don&#x27;t know if writing &lt;code&gt;EitherT&lt;/code&gt; specifically is possible in Elm.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; One possible approach. There are other, recursion schemes/Free probably being the one to watch in the upcoming years. The inherent ordering of effects stacking turns out to be more problematic than it initially seems.&lt;/p&gt;
+
+&lt;p&gt;&lt;sup&gt;2&lt;/sup&gt; It&#x27;s also not a &lt;code&gt;Monad&lt;/code&gt;, at least in the sense that the &lt;code&gt;x&lt;/code&gt; can&#x27;t be the direct type in the Monad instance (because &lt;code&gt;Either&lt;/code&gt; can obviously act as one in the specialized case).&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (31, 1, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (31, 42, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (32, 33, '&lt;p&gt;It&#x27;s a new option in the Application Debug Mode values, in the properties of your SF Application project. &lt;/p&gt;
+
+&lt;p&gt;(from the detailed release notes document)&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (32, 3, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (32, 33, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (33, 34, '&lt;p&gt;You can extend standart TextView and overwrite onTextChanged method.
+Than you need implement justify. What i&#x27;m currently do.&lt;/p&gt;
+
+&lt;p&gt;If you are lucky, you will able to implement your own component :)&lt;/p&gt;
+
+&lt;p&gt;For use it you can just specify full package name of your class in your xml layout.&lt;/p&gt;
+
+&lt;p&gt;Please keep this thread updateable.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (33, 4, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (33, 34, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (34, 38, '&lt;p&gt;I assume that you are using Jquery as well. You can achieve this as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(&#x27;select[asp-for=&quot;CountryCode&quot;]&#x27;).on(&#x27;change&#x27;, function(){
+
+      $.ajax({
+            url: &#x27;controller action url here&#x27;
+            type: &quot;POST&quot;,
+            contentType: &quot;application/json; charset=utf-8&quot;,
+            data: JSON.stringify({ Id: $(&#x27;select[asp-for=&quot;CountryCode&quot;]&#x27;).val()}),
+            cache: false,
+            async: true,
+            success: function(data) {
+                //here you can process
+            },
+            error: function() {
+            }
+       });
+});
+&lt;/code&gt;&lt;/pre&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (34, 6, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (34, 38, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (35, 33, '&lt;p&gt;Bootstrap has class which will do it for you.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;img class=&quot;d-block img-fluid&quot; src=&quot;https://healthintelasia.com/wp-content/uploads/2013/09/asia-1500-X-600-banner.jpg&quot; alt=&quot;First slide&quot;&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (35, 8, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (35, 33, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', -1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (36, 9, '&lt;p&gt;If you want to delete a node at the middle of a linked list the best approach would be to maintain 2 pointers always making sure they point to consecutive nodes, now start iterating through the linked list as soon as your 2nd pointer points to a node which you want to delete do the following:
+I&#x27;ll be calling the 2 pointers p1, p2 for the sake of understanding&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;p1-&amp;gt;next_node = p2 -&amp;gt; next_node&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;p2-&amp;gt;next_node = null&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So your &lt;code&gt;delete_at_middle&lt;/code&gt; function would be something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    void link_list::delete_at_middle(int delete_node)
+    {
+
+    node* p1 = start;
+    node* p2 = p1-&amp;gt;next_node;
+
+
+    if (start == null)
+    {
+        cout &amp;lt;&amp;lt; &quot;the list is empty&quot; &amp;lt;&amp;lt; endl;
+    }
+    elseif (start-&amp;gt;info == delete_node){
+        node *tmp = start;
+        start = tmp-&amp;gt;next_node;
+        tmp-&amp;gt;next_node = null;
+   }
+    else
+    {
+        while (p2 != null)
+        {
+
+            if (p2-&amp;gt;info == delete_node)
+            {
+                p1-&amp;gt;next_node = p2-&amp;gt;next_node;
+                p2-&amp;gt;next_node = null; 
+            }
+            p1 = p1-&amp;gt;next_node;
+            p2 = p2-&amp;gt;next_node;
+       }
+
+    }
+
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;P.S. - Your add function is correct. :)&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (36, 12, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (36, 9, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (37, 4, '
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As @yurzui pointed out, this only works if the references to the introduced variable &lt;code&gt;user&lt;/code&gt; are within the &lt;code&gt;&amp;lt;pp-xpbar&amp;gt;&lt;/code&gt; element where it&#x27;s introduced.
+Otherwise the variable won&#x27;t be in scope (like in the code example below)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Original&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In Angular4 you can use&lt;/p&gt;
+
+&lt;pre class=&quot;lang-ts prettyprint-override&quot;&gt;&lt;code&gt;&amp;lt;app-xpbar *ngIf=&quot;user$ | async; let user&quot;&amp;gt;&amp;lt;/app-xpbar&amp;gt;
+
+&amp;lt;header class=&quot;header&quot;&amp;gt;
+
+  &amp;lt;app-header-common
+    (onSearch)=&quot;searching($event)&quot;&amp;gt;
+  &amp;lt;/app-header-common&amp;gt;
+
+  &amp;lt;app-header-user
+    [user]=&quot;user&quot;
+    (onLogin)=&quot;login($event)&quot;
+    (onTrial)=&quot;trial($event)&quot;&amp;gt;
+  &amp;lt;/app-header-user&amp;gt;
+
+&amp;lt;/header&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;See also &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/angular/angular/blob/master/CHANGELOG.md#400-beta0-2016-12-15&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://github.com/angular/angular/blob/master/CHANGELOG.md#400-beta0-2016-12-15&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/angular/angular/commit/b4db73d&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://github.com/angular/angular/commit/b4db73d&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/angular/angular/issues/13061&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://github.com/angular/angular/issues/13061&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/angular/angular/pull/13297&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://github.com/angular/angular/pull/13297&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For the &lt;code&gt;as&lt;/code&gt; syntax mentioned in the comments see&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/angular/angular/blob/master/CHANGELOG.md#400-rc4-2017-03-17&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://github.com/angular/angular/blob/master/CHANGELOG.md#400-rc4-2017-03-17&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (37, 17, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (37, 4, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (37, 4, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (37, 4, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (37, 4, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (37, 4, 'Downvote');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (38, 47, '&lt;p&gt;since you are inserting the data your code should be like this&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var sql = @&quot;Insert Into appointment (name, time) Values (@name, @time)&quot;;
+dbb.Database.ExecuteSqlCommand(sql,
+    new SqlParameter(&quot;@name&quot;, appointment.name),
+    new SqlParameter(&quot;@time&quot;, appointment.time));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and &lt;code&gt;SqlQuery&amp;lt;entity&amp;gt;&lt;/code&gt; this command is used when you are returning some data which will be of type entity but in your case you are inserting data. for further information check this 
+&lt;a href=&quot;http://www.entityframeworktutorial.net/EntityFramework4.3/raw-sql-query-in-entity-framework.aspx&quot; rel=&quot;nofollow noreferrer&quot;&gt;RAW SQL QUERY&lt;/a&gt;&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (38, 18, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (38, 47, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (39, 5, '&lt;p&gt;You can do it using &lt;code&gt;numpy.dot&lt;/code&gt; in the following way:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import numpy as np
+a=np.array([[1,2,3,4,5]])
+np.dot(a.T,a)
+&lt;/code&gt;&lt;/pre&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (39, 22, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (39, 5, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (40, 38, '&lt;p&gt;Instead of using &lt;code&gt;wait&lt;/code&gt; as you have done, you want to look into signal handling to handle the child processes dying.&lt;/p&gt;
+
+&lt;p&gt;You add before you start &lt;code&gt;fork&lt;/code&gt;ing, this line&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;signal(SIGCHLD,catchchild);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and this function to your code&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;void catchchild(int sig)
+  {
+  pid_t p;
+  int state;
+  p=wait(&amp;amp;state);
+  printf(&quot;Got child %d\n&quot;,p);
+  }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and then whenever a child process dies, your main process will call &lt;code&gt;catchchild&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;As you&#x27;ve already worked out, if you have a count of how many children that have been forked, you could have &lt;code&gt;catchchild&lt;/code&gt; update that so that your main code will know to &lt;code&gt;fork&lt;/code&gt; a new child.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (40, 24, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (40, 38, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (41, 3, '&lt;p&gt;You cannot. Template arguments have to be defined at compile-time.&lt;/p&gt;
+
+&lt;p&gt;To work around this, you can look at this post and answer: &lt;a href=&quot;http://stackoverflow.com/questions/2873802/specify-template-parameters-at-runtime&quot;&gt;Specify template parameters at runtime&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The idea is to use &lt;code&gt;if&lt;/code&gt; statements to check the runtime value:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;template&amp;lt;class Engine, class UIntType&amp;gt;
+independent_bits_engine CreateEngine(std::size_t w) {
+    if (w == 0) {
+        return independent_bits_engine&amp;lt;Engine, 0, UIntType&amp;gt;();
+    } else if (w == 1) {
+        return independent_bits_engine&amp;lt;Engine, 1, UIntType&amp;gt;();
+    }
+    Etc;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If &lt;code&gt;W&lt;/code&gt; can be a big value, you may want to use &lt;code&gt;boost::preprocessor&lt;/code&gt; to generate the ifs (example given in the link).&lt;/p&gt;
+
+&lt;p&gt;Note that, the more the maximum value of &lt;code&gt;W&lt;/code&gt; is big, the more &lt;code&gt;independent_bits_engine&lt;/code&gt; classes will be instantiated, and the more the compilation will be slow, so you may want to switch to a full runtime solution instead.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (41, 26, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (41, 3, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (42, 22, '&lt;p&gt;Your language is not completely clear, but if you want the latest record where &lt;code&gt;entrada&lt;/code&gt; is &lt;code&gt;&#x27;1&#x27;&lt;/code&gt;, then you can just do a plain select, ordered descending by date, and use &lt;code&gt;LIMIT 1&lt;/code&gt; to restrict to the latest single record.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;SELECT *
-FROM fichejes
-WHERE entrada = &#x27;1&#x27; AND
-      empleado = &#x27;20498090R&#x27;
-ORDER BY Fecha DESC
-LIMIT 1
-&lt;/code&gt;&lt;/pre&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (42, 42, '&lt;p&gt;You can fetch with objectID by using the predicate &lt;code&gt;&quot;self == %@&quot;, objectID&lt;/code&gt;. An objectID is property of a managedObject and its type is &lt;code&gt;NSManaged​Object​ID&lt;/code&gt; not an &lt;code&gt;Int&lt;/code&gt;.  In general it is better to create and manage your own objectId. I generally use UUID strings. &lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (42, 19, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (42, 22, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (42, 27, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (42, 42, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (42, 42, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (43, 8, '&lt;p&gt;I suggest you to change retry logic:&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (43, 8, '&lt;p&gt;Try using DataTables&lt;br&gt;
+You can easily filter and sort your data.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;var isFileDownloaded = false;
-var tryCount = 0;
-while (tryCount &amp;lt; MAX_TRY_COUNT &amp;amp;&amp;amp; !isFileDownloaded) {
-     using (WebClient webClient = new WebClient())
-     try{
-         //do stuff here
-         isFileDownloaded = true
-     }catch //log exception and Thread.Sleep
-
-}
-
-if (isFileDownloaded){
-//        update progress
-} else{
-//too many retries, exit app
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&quot;https://datatables.net/&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://datatables.net/&lt;/a&gt;&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (43, 18, 'False');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (43, 28, 'False');
 INSERT INTO activity ( post_id, user_id, action) VALUES (43, 8, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (44, 26, '&lt;p&gt;in java a char is two bytes, you may use the java type &quot;byte&quot; to just send one byte.&lt;/p&gt;
-
-&lt;p&gt;Yet I did not have the time to check the rest of your code, but this might be a start.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (44, 28, '&lt;p&gt;Can this be of any help ? [PHP doc modulo]: &lt;a href=&quot;http://php.net/manual/fr/language.operators.arithmetic.php&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://php.net/manual/fr/language.operators.arithmetic.php&lt;/a&gt;&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (44, 23, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (44, 26, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (45, 5, '&lt;p&gt;Your 4.4.7 version of gcc is too old to fully enable C++ features. 
-You need to upgrade the compiler to a version superior to 4.6 ( at least ) or if it&#x27;s possible for you, upgrade your distro (let&#x27;s say RHEL 7) which includes a more recent compiler.  &lt;/p&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (45, 24, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (45, 5, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (46, 37, '&lt;pre&gt;&lt;code&gt;var i = [NaN, 1,2,3]
-
-var j = i.map(i =&amp;gt;{ return isNaN(i) ? 0 : i})
-
-console.log(j)
-
-    [0,1,2,3]
-&lt;/code&gt;&lt;/pre&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (46, 26, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (46, 37, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (47, 20, '&lt;p&gt;I figured it out. The problem stemmed from a 3rd party extension I was using for MapKit. After removing my mapView from storyboard and creating a new one programmatically, a new error pointed me to methods in the extension. &lt;/p&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (47, 27, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (47, 20, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (48, 33, '&lt;p&gt;One solution would be to create a wrapper around each box, so the box with border is inside and cant be breaked&lt;/p&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (48, 17, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (48, 33, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', -1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (49, 18, '&lt;p&gt;I added RSA/None/NoPadding to Cipher by creating the instance getInstance (cipher = Cipher.getInstance(&quot;RSA/None/NoPadding&quot;);). 
-It deciphers the key to me finally it seems to work. This is a session key and what was decrypted is not in Base64. Moreover, I&#x27;m not sure that it is not corrupted. How to decode that ? It looks like that : &quot;Â3(Zƒ»žï‡ÊŽW™l^ãs›­e etc.&quot;&lt;/p&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (49, 9, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (49, 18, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (44, 28, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (44, 28, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (50, 9, '&lt;pre&gt;&lt;code&gt;var dateOne = new Date(firstDate);
-var dateTwo = new Date(secondDate);
-var dateDifference = Math.floor((dateTwo - dateOne) / 86400000);
-console.log(dateDifference);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (45, 23, '&lt;blockquote&gt;
+&lt;pre&gt;&lt;code&gt;Set objPath = objFSO.BuildPath(CurrentDirectory, &quot;&quot;&quot;new 1.cmd&quot;&quot;&quot;)
 &lt;/code&gt;&lt;/pre&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (50, 6, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (50, 9, 'Create');
+&lt;/blockquote&gt;
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (51, 6, '&lt;p&gt;Please remember that Date constructor allows also values from outside the logical range.&lt;/p&gt;
-
-&lt;p&gt;Example: new Date(2017, -2, 30)&lt;/p&gt;
-
-&lt;p&gt;Source:
-&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Where Date is called as a constructor with more than one argument, if values are greater than their logical range (e.g. 13 is provided as the month value or 70 for the minute value), the adjacent value will be adjusted. E.g. new Date(2013, 13, 1) is equivalent to new Date(2014, 1, 1), both create a date for 2014-02-01 (note that the month is 0-based). Similarly for other values: new Date(2013, 2, 1, 0, 70) is equivalent to new Date(2013, 2, 1, 1, 10) which both create a date for 2013-03-01T01:10:00.&lt;/p&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (51, 6, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (51, 6, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (52, 13, '&lt;p&gt;I had used 1½ hour trying to figuring out what the problem was - and 10 sec after posting i figure it out.  &lt;/p&gt;
-
-&lt;p&gt;Problem is, the date object takes:  &lt;/p&gt;
+&lt;p&gt;You have 3 mistakes in that statement:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Jan, as 0&lt;/li&gt;
-&lt;li&gt;Feb, as 1&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
-&lt;li&gt;Nov, as 10&lt;/li&gt;
-&lt;li&gt;Dec, as 11&lt;/li&gt;
+&lt;li&gt;The nested double quotes in &lt;code&gt;&quot;&quot;&quot;new 1.cmd&quot;&quot;&quot;&lt;/code&gt; make them part of the actual filename, which is &lt;a href=&quot;https://msdn.microsoft.com/en-us/library/windows/desktop/aa365247.aspx#naming_conventions&quot; rel=&quot;nofollow noreferrer&quot;&gt;not allowed&lt;/a&gt;. &lt;code&gt;FileSystemObject&lt;/code&gt; methods can handle paths with spaces by themselves, without additional double quotes. You do need to add double quotes when passing the path to the &lt;a href=&quot;https://msdn.microsoft.com/en-us/library/d5fk67ky.aspx&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;code&gt;Run&lt;/code&gt;&lt;/a&gt; method, though.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://msdn.microsoft.com/en-us/library/3cc5edzd.aspx&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;code&gt;CurrentDirectory&lt;/code&gt;&lt;/a&gt; is a property of &lt;code&gt;WshShell&lt;/code&gt; objects, not a builtin variable.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;https://msdn.microsoft.com/en-us/library/z0z2z1zt.aspx&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;code&gt;BuildPath&lt;/code&gt;&lt;/a&gt; method returns a string, not an object, so you need to remove the &lt;a href=&quot;https://msdn.microsoft.com/en-us/library/4afksd44.aspx&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;code&gt;Set&lt;/code&gt;&lt;/a&gt; keyword.&lt;/li&gt;
 &lt;/ul&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (52, 6, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (52, 13, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (53, 2, '&lt;p&gt;It seems that you are doing &lt;code&gt;setPosition:&lt;/code&gt; using &lt;code&gt;CALayer&lt;/code&gt; object and that CALayer object is nil. Thats why your app is crashed.&lt;/p&gt;
+&lt;p&gt;This will do what you want:&lt;/p&gt;
 
-&lt;p&gt;please check that &lt;code&gt;CALayer&lt;/code&gt; is &lt;code&gt;nil&lt;/code&gt; or not by &lt;code&gt;if&lt;/code&gt; statement.&lt;/p&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (53, 27, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (53, 2, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (54, 40, '&lt;p&gt;i think it is because data type of last_purchase_date is string. thats why i cant use between query&lt;/p&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (54, 16, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (54, 40, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (55, 8, '&lt;p&gt;let&#x27;s try this&lt;/p&gt;
-
-&lt;p&gt;it will work.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;SELECT count(*) FROM `tabel` 
-where last_purchase_categories = &#x27;flight&#x27; and 
-    last_purchase_date between &#x27;2017-03-27 02:13:11&#x27; and &#x27;2017-03-27 02:13:20&#x27;
+&lt;pre&gt;&lt;code&gt;objPath = objFSO.BuildPath(objShell.CurrentDirectory, &quot;new 1.cmd&quot;)
+...
+objShell.Run &quot;&quot;&quot;&quot; &amp;amp; objPath &amp;amp; &quot;&quot;&quot;&quot;, 1, True
 &lt;/code&gt;&lt;/pre&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (55, 16, 'True');
-INSERT INTO activity ( post_id, user_id, action) VALUES (55, 8, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (45, 15, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (45, 23, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (45, 23, 'Upvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (56, 26, '&lt;p&gt;Grouping the &lt;code&gt;transition&lt;/code&gt; and &lt;code&gt;transform&lt;/code&gt; CSS properties in a single statement gives the correct result, without having to use the 100 ms delay:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (46, 35, '&lt;p&gt;You shouldn&#x27;t return iterator to locally allocated vector. It is an undefined behavior.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$(&#x27;.marquee-wrapper&#x27;).css({ transition: &quot;transform 3s linear&quot;, transform: &quot;translateY(-&quot; + $(&quot;.marquee-content&quot;).outerHeight(true) + &quot;px)&quot; });
-setInterval(function () {
-    $(&#x27;.marquee-wrapper&#x27;).css({ transition: &quot;none&quot;, transform: &quot;translateY(100px)&quot; });
-    $(&#x27;.marquee-wrapper&#x27;).css({ transition: &quot;transform 3s linear&quot;, transform: &quot;translateY(-&quot; + $(&quot;.marquee-content&quot;).outerHeight(true) + &quot;px)&quot; });
-}, 3000);
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The explanation is pretty simple: &lt;code&gt;vector&amp;lt;T&amp;gt; vec;&lt;/code&gt; is destroyed once you leave the function.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&quot;snippet&quot; data-lang=&quot;js&quot; data-hide=&quot;true&quot; data-console=&quot;true&quot; data-babel=&quot;false&quot;&gt;
-&lt;div class=&quot;snippet-code snippet-currently-hidden&quot;&gt;
-&lt;pre class=&quot;snippet-code-js lang-js prettyprint-override&quot;&gt;&lt;code&gt;if ($(&quot;.marquee&quot;).height() &amp;lt; $(&quot;.marquee-content&quot;).outerHeight(true)) {
-    $(&quot;.marquee-content&quot;).clone().appendTo($(&quot;.marquee-wrapper&quot;));
-}
-
-$(&#x27;.marquee-wrapper&#x27;).css({ transition: &quot;transform 3s linear&quot;, transform: &quot;translateY(-&quot; + $(&quot;.marquee-content&quot;).outerHeight(true) + &quot;px)&quot; });
-
-setInterval(function () {
-    $(&#x27;.marquee-wrapper&#x27;).css({ transition: &quot;none&quot;, transform: &quot;translateY(100px)&quot; });
-    $(&#x27;.marquee-wrapper&#x27;).css({ transition: &quot;transform 3s linear&quot;, transform: &quot;translateY(-&quot; + $(&quot;.marquee-content&quot;).outerHeight(true) + &quot;px)&quot; });
-}, 3000);&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&quot;snippet-code-css lang-css prettyprint-override&quot;&gt;&lt;code&gt;.marquee {
-  margin: auto;
-  width: 600px;
-  height: 200px;
-  overflow: auto;
-}
-
-.marquee-wrapper {
-  transform: translateY(0);
-}
-
-.marquee-content {
-  margin: 0;
-  padding: 30px 0;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&quot;snippet-code-html lang-html prettyprint-override&quot;&gt;&lt;code&gt;&amp;lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;section class=&quot;marquee&quot;&amp;gt;
-  &amp;lt;div class=&quot;marquee-wrapper&quot;&amp;gt;
-    &amp;lt;div class=&quot;marquee-content&quot;&amp;gt;
-      Updates: Update (8 Mar 2016): Now plugin have new option: startVisible The marquee will be visible in the start if set to true. Thanks to @nuke-ellington ðŸ‘ Update (24 Jan 2014): Note: people who been asking me how to use this plugin with content being
-      loaded with Ajax, please read notes about this update. New methods added, so now after you start the plugin using var $mq = $(&#x27;.marquee&#x27;).marquee();, you start the plugin using var $mq = $(&#x27;.marquee&#x27;).marquee();, you start the plugin using var $mq
-      = $(&#x27;.marquee&#x27;).marquee();, then you can pause, resume, togglepause, resume) and desestroy destroy toggle(pause, resume) and destroy toggle(pause, resume) and destroy methods e.g to remove the marquee plugin from your element simply use $mq.marquee(&#x27;destroy&#x27;);.
-      Similarly you can use pause the marquee any time using $mq.marquee(&#x27;pause&#x27;);.
-    &amp;lt;/div&amp;gt;
-  &amp;lt;/div&amp;gt;
-&amp;lt;/section&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-
-&lt;hr/&gt;
-
-&lt;p&gt;The reason for that behavior could be that setting both CSS properties at once triggers an immediate repaint of the page whereas setting them separately doesn&#x27;t.&lt;/p&gt;
-
-&lt;p&gt;Some Javascript commands are known to cause a repaint. Getting the &lt;code&gt;offsetHeight&lt;/code&gt; of an element is the one mentioned most often (see &lt;a href=&quot;http://stackoverflow.com/a/3485654/1009922&quot;&gt;this post&lt;/a&gt;). As a matter of fact, it was used in &lt;a href=&quot;https://developer52.wordpress.com/2013/04/28/use-offsetheight-to-force-redraw-between-css-transition-changes/&quot; rel=&quot;nofollow noreferrer&quot;&gt;this article&lt;/a&gt; to solve a problem with CSS transitions quite similar to the one presented here. And if we test that method by getting the element height between the transitions, we see that the resulting behavior is indeed correct:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$(&#x27;.marquee-wrapper&#x27;).css(&quot;transition&quot;, &quot;none&quot;);
-$(&#x27;.marquee-wrapper&#x27;).css(&quot;transform&quot;, &quot;translateY(100px)&quot;);
-$(&#x27;.marquee-wrapper&#x27;).height(); // Force a repaint
-$(&#x27;.marquee-wrapper&#x27;).css(&quot;transition&quot;, &quot;transform 3s linear&quot;);
-$(&#x27;.marquee-wrapper&#x27;).css(&quot;transform&quot;, &quot;translateY(-&quot; + $(&quot;.marquee-content&quot;).outerHeight(true) + &quot;px)&quot;);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;div class=&quot;snippet&quot; data-lang=&quot;js&quot; data-hide=&quot;true&quot; data-console=&quot;true&quot; data-babel=&quot;false&quot;&gt;
-&lt;div class=&quot;snippet-code snippet-currently-hidden&quot;&gt;
-&lt;pre class=&quot;snippet-code-js lang-js prettyprint-override&quot;&gt;&lt;code&gt;if ($(&quot;.marquee&quot;).height() &amp;lt; $(&quot;.marquee-content&quot;).outerHeight(true)) {
-    $(&quot;.marquee-content&quot;).clone().appendTo($(&quot;.marquee-wrapper&quot;));
-}
-$(&#x27;.marquee-wrapper&#x27;).css(&quot;transition&quot;, &quot;transform 3s linear&quot;);
-$(&#x27;.marquee-wrapper&#x27;).css(&quot;transform&quot;, &quot;translateY(-&quot; + $(&quot;.marquee-content&quot;).outerHeight(true) + &quot;px)&quot;);
-
-setInterval(function () {
-    $(&#x27;.marquee-wrapper&#x27;).css(&quot;transition&quot;, &quot;none&quot;);
-    $(&#x27;.marquee-wrapper&#x27;).css(&quot;transform&quot;, &quot;translateY(100px)&quot;);
-    $(&#x27;.marquee-wrapper&#x27;).height(); // Force a repaint
-    $(&#x27;.marquee-wrapper&#x27;).css(&quot;transition&quot;, &quot;transform 3s linear&quot;);
-    $(&#x27;.marquee-wrapper&#x27;).css(&quot;transform&quot;, &quot;translateY(-&quot; + $(&quot;.marquee-content&quot;).outerHeight(true) + &quot;px)&quot;);
-}, 3000);&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&quot;snippet-code-css lang-css prettyprint-override&quot;&gt;&lt;code&gt;.marquee {
-  margin: auto;
-  width: 600px;
-  height: 200px;
-  overflow: auto;
-}
-
-.marquee-wrapper {
-  transform: translateY(0);
-}
-
-.marquee-content {
-  margin: 0;
-  padding: 30px 0;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&quot;snippet-code-html lang-html prettyprint-override&quot;&gt;&lt;code&gt;&amp;lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;section class=&quot;marquee&quot;&amp;gt;
-  &amp;lt;div class=&quot;marquee-wrapper&quot;&amp;gt;
-    &amp;lt;div class=&quot;marquee-content&quot;&amp;gt;
-      Updates: Update (8 Mar 2016): Now plugin have new option: startVisible The marquee will be visible in the start if set to true. Thanks to @nuke-ellington ðŸ‘ Update (24 Jan 2014): Note: people who been asking me how to use this plugin with content being
-      loaded with Ajax, please read notes about this update. New methods added, so now after you start the plugin using var $mq = $(&#x27;.marquee&#x27;).marquee();, you start the plugin using var $mq = $(&#x27;.marquee&#x27;).marquee();, you start the plugin using var $mq
-      = $(&#x27;.marquee&#x27;).marquee();, then you can pause, resume, togglepause, resume) and desestroy destroy toggle(pause, resume) and destroy toggle(pause, resume) and destroy methods e.g to remove the marquee plugin from your element simply use $mq.marquee(&#x27;destroy&#x27;);.
-      Similarly you can use pause the marquee any time using $mq.marquee(&#x27;pause&#x27;);.
-    &amp;lt;/div&amp;gt;
-  &amp;lt;/div&amp;gt;
-&amp;lt;/section&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
+&lt;p&gt;The second option is better and most probably will have &lt;em&gt;Return Value Optimization&lt;/em&gt; that will construct vector exactly where it should be returned.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (56, 15, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (56, 26, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (46, 5, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (46, 35, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (46, 35, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (46, 35, 'Upvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 15, 5);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (57, 37, '&lt;p&gt;Write your own method, and use it everywhere you want a number value:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (47, 50, '&lt;p&gt;There is no circumstance in which your first function would be preferred.  The vector &lt;code&gt;vec&lt;/code&gt; ceases to exist when the function returns.  Any iterators supplied by that vector will be invalid for the caller.   And most usages of those iterators (particularly dereferencing) will cause the caller to exhibit undefined behaviour.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;function getNum(val) {
-   if (isNaN(val)) {
-     return 0;
+&lt;p&gt;The only time an iterator should be returned by a function will be if the vector which provides those iterators is guaranteed to exist after the function returns.   Practically, there are only three circumstances in which one MIGHT do that.  The first is if the vector is passed as an argument to the function, such as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; std::vector&amp;lt;int&amp;gt;::iterator func(std::vector&amp;lt;int&amp;gt; &amp;amp;vec)
+ {
+     return vec.begin();
+ }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Since the caller passes the vector, the vector will exist when the function returns.&lt;/p&gt;
+
+&lt;p&gt;The second case is if the vector is a static, or otherwise continues to exist when the function returns.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; std::vector&amp;lt;int&amp;gt;::iterator func(std::vector&amp;lt;int&amp;gt; &amp;amp;vec)
+ {
+     static std::vector&amp;lt;int&amp;gt; vec;
+     return vec.begin();
+ }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Of course, using a function like this has all the complications associated with statics (e.g. problems with reentrancy, need to synchronise usage across threads, etc etc).&lt;/p&gt;
+
+&lt;p&gt;The third case in which an iterator may be returned is if an iterator is passed to the function.  Such as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; std::vector&amp;lt;int&amp;gt;::iterator func(std::vector&amp;lt;int&amp;gt;::iterator it)
+ {
+     return it + 1;
+ }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this case, it is up to the caller to pass a valid iterator (e.g. obtained from a container it controls) that can be incremented (or advanced by 1).&lt;/p&gt;
+
+&lt;p&gt;Also, if a function returns an iterator, the caller might need to check if the iterator is valid before using it.   If so, that should be docuumented.  For example, if the function might return an end iterator, the caller should check BEFORE trying to dereference it, not after.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (47, 5, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (47, 50, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (48, 2, '&lt;p&gt;The c++ templates are expanded at compile time, just like MICRO:
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Template_(C%2B%2B)#Advantages_and_disadvantages_of_templates_over_macros&quot; rel=&quot;nofollow noreferrer&quot;&gt;c++ template explanation wikipedia&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;When you run the c++ program the templates params are already determined.&lt;/p&gt;
+
+&lt;p&gt;So if you insist on the using the template to implement the independent_bits_engine, you have to remove the template param std::size_t W.
+And instand you can pass the size param to the independent_bits_engine object at runtime.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (48, 26, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (48, 2, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (49, 14, '&lt;p&gt;Apart from the general remark about returning a pointer-like to something disapparead on the stack, option 1 asks for a pair of &lt;em&gt;methods&lt;/em&gt; (functions disqualify option 1) : begin &amp;amp; end. Iterators in C++ do not work as in java, python and many others.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (49, 5, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (49, 14, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (50, 48, '&lt;p&gt;After thinking of pros and cons of differents propositions, I&#x27;ll go with a &lt;code&gt;ParentComponent&lt;/code&gt; event if it&#x27;s here only for getting user stream.
+Thanks everyone.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (50, 17, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (50, 48, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (51, 9, '&lt;p&gt;A vector iterator is only valid for the vector it comes from so returning an iterator to a local vector is no use.&lt;/p&gt;
+
+&lt;p&gt;Only return a vector iterator when you passed the vector it belongs to in as a parameter reference:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;std::vector&amp;lt;int&amp;gt;::iterator find(std::vector&amp;lt;int&amp;gt;&amp;amp; v, int i)
+{
+    // do findie stuff
+    return std::find(std::begin(v), std::end(v), i);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You would &lt;em&gt;never&lt;/em&gt; want to do this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vector&amp;lt;T&amp;gt;::iterator GetSomething()
+{
+    vector&amp;lt;T&amp;gt; vec;
+
+    // Update vec with something...
+
+    return vec.begin(); // this iterator will be bad when it arrives
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once the vector is destroyed at the end of the function its iterators are invalidated.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (51, 5, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (51, 9, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (51, 9, 'Upvote');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (52, 25, '&lt;p&gt;The lifetime of vector, just like all other automatic variables ends with the scope of the block it was declared in.&lt;/p&gt;
+
+&lt;p&gt;As such, if you return the iterator, it will point to freed memory and do all kinds of funny things like crash your program.&lt;/p&gt;
+
+&lt;p&gt;If you return the vector itself, it is copied with all of its content, but the original vector still &#x27;dies&#x27; at the end of the block.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (52, 5, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (52, 25, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (53, 26, '&lt;p&gt;You can try to create structural directive like:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ng-async.directive.ts&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@Directive({ selector: &#x27;[ngAsync]&#x27; })
+export class NgAsync {
+   constructor(private vcRef: ViewContainerRef, private templateRef: TemplateRef&amp;lt;any&amp;gt;) {}
+
+   @Input()
+   set ngAsync(variable: any) {
+      this.vcRef.clear();
+      this.vcRef.createEmbeddedView(this.templateRef, { $implicit: variable });
    }
-   return val;
 }
 &lt;/code&gt;&lt;/pre&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (57, 26, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (57, 37, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (58, 47, '&lt;p&gt;using user 113716 solution, which by the way is great to avoid all those if-else
-I have implemented it this way to calculate my subtotal textbox from textbox unit and textbox quantity.&lt;/p&gt;
+&lt;p&gt;Then you can use it the following way&lt;/p&gt;
 
-&lt;p&gt;In the process writing of non numbers in unit and quantity textboxes, their values are bing replace by zero so final posting of user data has no non-numbers .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;view.html&lt;/strong&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;     &amp;lt;script src=&quot;/common/tools/jquery-1.10.2.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-     &amp;lt;script src=&quot;/common/tools/jquery-ui.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;ng-container *ngAsync=&quot;user$ | async; let user&quot;&amp;gt;
+  &amp;lt;app-xpbar *ngIf=&quot;user&quot;&amp;gt;&amp;lt;/app-xpbar&amp;gt;
 
-     &amp;lt;!----------------- link above 2 lines to your jquery files ------&amp;gt;
+  &amp;lt;header class=&quot;header&quot;&amp;gt;
 
+    &amp;lt;app-header-common
+      (onSearch)=&quot;searching($event)&quot;&amp;gt;
+    &amp;lt;/app-header-common&amp;gt;
 
+    &amp;lt;app-header-user
+      [user]=&quot;user&quot;
+      (onLogin)=&quot;login($event)&quot;
+      (onTrial)=&quot;trial($event)&quot;&amp;gt;
+    &amp;lt;/app-header-user&amp;gt;
 
-
-
-    &amp;lt;script type=&quot;text/javascript&quot; &amp;gt;
-    function calculate_subtotal(){
-
-    $(&#x27;#quantity&#x27;).val((+$(&#x27;#quantity&#x27;).val() || 0));
-    $(&#x27;#unit&#x27;).val((+$(&#x27;#unit&#x27;).val() || 0));
-
-    var  calculated = $(&#x27;#quantity&#x27;).val() * $(&#x27;#unit&#x27;).val() ;
-    $(&#x27;#subtotal&#x27;).val(calculated);
-
-
-    }
-    &amp;lt;/script&amp;gt;
-
-
-      &amp;lt;input type = &quot;text&quot; onChange =&quot;calculate_subtotal();&quot; id = &quot;quantity&quot;/&amp;gt;
-      &amp;lt;input type = &quot;text&quot; onChange =&quot;calculate_subtotal();&quot; id = &quot;unit&quot;/&amp;gt;
-      &amp;lt;input type = &quot;text&quot; id = &quot;subtotal&quot;/&amp;gt;
+  &amp;lt;/header&amp;gt;
+&amp;lt;/ng-container&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (58, 26, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (58, 47, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (53, 17, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (53, 26, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (53, 26, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (53, 26, 'Upvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 3, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (59, 3, '&lt;p&gt;Rather than kludging it so you can continue, why not back up and wonder why you&#x27;re running into a NaN in the first place?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (54, 41, '&lt;p&gt;You do &lt;strong&gt;not&lt;/strong&gt; want to listen for key events.&lt;/p&gt;
 
-&lt;p&gt;If any of the numeric inputs to an operation is NaN, the output will also be NaN. That&#x27;s the way the current IEEE Floating Point standard works (it&#x27;s not just Javascript). That behavior  is for a &lt;em&gt;good reason&lt;/em&gt;: the underlying intention is to keep you from using a bogus result without realizing it&#x27;s bogus. &lt;/p&gt;
+&lt;p&gt;Instead, you want to track a &quot;unsaved property&quot; within the class that wraps around your different components. Any time the user makes &lt;strong&gt;any&lt;/strong&gt; change to the editor (more specifically to the underlying &lt;strong&gt;&lt;a href=&quot;https://docs.oracle.com/javase/7/docs/api/javax/swing/text/Document.html&quot; rel=&quot;nofollow noreferrer&quot;&gt;model&lt;/a&gt;&lt;/strong&gt; object); you set that property to &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;The way NaN works is if something goes wrong way down in some sub-sub-sub-operation (producing a NaN at that lower level), the final result will &lt;em&gt;also&lt;/em&gt; be NaN, which you&#x27;ll immediately recognize as an error even if your error handling logic (throw/catch maybe?) isn&#x27;t yet complete. &lt;/p&gt;
+&lt;p&gt;Every time the user saves, you turn the property to &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;NaN as the result of an arithmetic calculation &lt;em&gt;always&lt;/em&gt; indicates something has gone awry in the details of the arithmetic. It&#x27;s a way for the computer to say &quot;debugging needed here&quot;. Rather than finding some way to continue anyway with some number that&#x27;s hardly ever right (is 0 really what you want?), why not find the problem and fix it. &lt;/p&gt;
+&lt;p&gt;And whenever the user tells the application to shutdown, you check that property, and if it is &lt;code&gt;true&lt;/code&gt; - you ask the user if he wants to save.&lt;/p&gt;
 
-&lt;p&gt;A common problem in Javascript is that both &lt;code&gt;parseInt(...)&lt;/code&gt; and &lt;code&gt;parseFloat(...)&lt;/code&gt; will return NaN if given a nonsensical argument (&lt;code&gt;null&lt;/code&gt;, &lt;code&gt;&#x27;&#x27;&lt;/code&gt;, etc). Fix the issue at the lowest level possible rather than at a higher level. Then the result of the overall calculation has a good chance of making sense, and you&#x27;re not substituting some magic number (0 or 1 or whatever) for the result of the entire calculation. (The trick of (parseInt(foo.value) || 0) works only for sums, not products - for products you want the default value to be 1 rather than 0, but not if the specified value really is 0.)&lt;/p&gt;
+&lt;p&gt;Do &lt;strong&gt;not&lt;/strong&gt; get into a mode where &quot;one action&quot; directly triggers another one.&lt;/p&gt;
 
-&lt;p&gt;Perhaps for ease of coding you want a function to retrieve a value from the user, clean it up, and provide a default value if necessary, like this: &lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function getFoobarFromUser(elementid) {
-        var foobar = parseFloat(document.getElementById(elementid).innerHTML)
-        if (isNaN(foobar)) foobar = 3.21;       // default value
-        return(foobar.toFixed(2));
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Edit: just to make that clear - with property I mean that you add a &lt;strong&gt;field&lt;/strong&gt; to your class, very much like the &lt;code&gt;isModified&lt;/code&gt; that the other answer already suggests.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (59, 26, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (59, 3, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (54, 9, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (54, 41, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (54, 41, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', -1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (60, 32, '&lt;p&gt;Most popular answer worked for me, and also you can mix it with mutiple arithmetic operations, such as:&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (55, 5, '&lt;p&gt;You could use the safe navigation property: &quot;user?&quot;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;(((400-200)*100)/750 || 0).toFixed(1);
+&lt;p&gt;&lt;a href=&quot;https://angular.io/docs/ts/latest/guide/cheatsheet.html&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://angular.io/docs/ts/latest/guide/cheatsheet.html&lt;/a&gt;&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (55, 17, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (55, 5, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (56, 23, '&lt;p&gt;If I understand you correctly, you are asking how to detect whether a document in a &lt;code&gt;JTextPane&lt;/code&gt; was edited or not. Listening to keys is not optimal. I would rather recommend one of two ways: &lt;/p&gt;
+
+&lt;p&gt;A) Listen to changes to the underlying document:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    jTextPanel.getDocument().addDocumentListener(new DocumentListener(){
+        @Override
+        public void changedUpdate(DocumentEvent e) {
+            isModified=true;                
+        }
+
+        @Override
+        public void insertUpdate(DocumentEvent e) {
+            isModified=true;                
+        }
+        @Override
+        public void removeUpdate(DocumentEvent e) {
+            isModified=true;                
+        }            
+    });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The field &lt;code&gt;isModified&lt;/code&gt; has to be initialized to &lt;code&gt;false&lt;/code&gt;, and will be set to &lt;code&gt;true&lt;/code&gt;whenever the document is changed in any way. You have to reset it to false after saving.&lt;/p&gt;
+
+&lt;p&gt;B) Keep a copy of the original document and compare both when the frame is about to be closed. How you do this depends a bit on the kind of document that you have. If it is an HTMLDocument, then comparing the actual HTML source code is the most accurate method:&lt;/p&gt;
+
+&lt;p&gt;Before editing starts:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;HTMLDocument doc=(HTMLDocument)jTextPanel.getDocument();
+String originalHtml=getHTML(doc);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After editing / upon closing the frame:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;HTMLDocument doc=(HTMLDocument)jTextPanel.getDocument();
+String editedHtml=getHTML(doc);
+if(!editedHtml.equals(originalHtml))
+   // ... text has been edited
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;getHTML()&lt;/code&gt; method:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public String getHTML(HTMLDocument doc){
+    StringWriter writer = new StringWriter();
+    kit.write(writer, doc, 0, doc.getLength());
+    return writer.toString();
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The advantage of approach B) is that you don&#x27;t have to check each edit operation (the overhead of which is negligible in most cases, though) and that you can accurately detect when changes have been reverted (e.g. user added text, then deleted that text, or an undo has been performed).&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (56, 9, 'True');
+INSERT INTO activity ( post_id, user_id, action) VALUES (56, 23, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (56, 23, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (56, 23, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (56, 23, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (56, 23, 'Downvote');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (57, 28, '&lt;p&gt;Actually you wrote the query string wrong, the correct syntax for insertion of data into table is:    &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;INSERT INTO table_name (column 1, column 2, ...) VALUES (values)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The query string should be:   &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;string str1 = &quot;Insert Into appointment (id, name, time) Values (id, name, time)&quot;;
+string str2 = &quot;Insert Into customer (pid, phone) Values (pid, phone)&quot;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hope that helps you.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (57, 18, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (57, 28, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (57, 28, 'Upvote');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (58, 8, '&lt;p&gt;Use below code, it will not give you error:&lt;/p&gt;
+
+&lt;p&gt;MainActivity&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;        import android.app.Activity;
+        import android.app.ListActivity;
+        import android.content.Context;
+        import android.content.Intent;
+        import android.database.Cursor;
+        import android.net.Uri;
+        import android.provider.OpenableColumns;
+        import android.support.v7.app.AppCompatActivity;
+        import android.os.Bundle;
+        import android.util.Log;
+        import android.view.View;
+        import android.widget.ArrayAdapter;
+        import android.widget.ListView;
+
+        import java.io.File;
+        import java.io.IOException;
+        import java.io.InputStream;
+        import java.net.URI;
+        import java.net.URISyntaxException;
+        import java.util.ArrayList;
+        import java.util.Collections;
+        import java.util.List;
+
+public class MainActivity extends AppCompatActivity {
+
+    public static String path;
+    private static final int PICKFILE_REQUEST_CODE = 0;
+    File tempFile;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        getFile();
+    }
+
+    public void getFile() {
+
+        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+        //intent.setType(&quot;application/pdf&quot;);
+
+       // path = intent.getStringExtra(&quot;path&quot;);
+      //  intent = new Intent(this, Main2Activity.class);
+      //  intent.putExtra(&quot;path&quot;, path);
+        startActivityForResult(intent, PICKFILE_REQUEST_CODE);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(requestCode==PICKFILE_REQUEST_CODE &amp;amp;&amp;amp; resultCode==RESULT_OK) {
+            Intent intent = new Intent(this, Main2Activity.class);
+            Uri uri = data.getData();
+            String uriString = uri.toString();
+            File myFile = new File(uriString);
+            path = myFile.getAbsolutePath();
+            Log.d(&quot;uri&quot;,uriString + &quot; &quot; + path);
+            Bundle extras = new Bundle();
+            extras.putParcelable(&quot;path&quot;, uri);
+           // intent.putExtra();
+            startActivityForResult(intent, PICKFILE_REQUEST_CODE);
+        }
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Main2Activity&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import android.annotation.TargetApi;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.pdf.PdfRenderer;
+import android.net.Uri;
+import android.os.Build;
+import android.os.Environment;
+import android.os.ParcelFileDescriptor;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+
+import java.io.File;
+
+
+public class Main2Activity extends AppCompatActivity {
+
+    int pagecount = -1;
+    Button buttonnext, buttonprevious;
+    ImageView imageView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main2);
+
+        buttonnext = (Button) findViewById(R.id.button1);
+        buttonprevious = (Button) findViewById(R.id.button2);
+        imageView = (ImageView) findViewById(R.id.imageview);
+
+
+        buttonnext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                pagecount++;
+
+                render();
+
+            }
+        });
+        buttonprevious.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                pagecount--;
+
+                render();
+            }
+        });
+
+    }
+
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    public void render() {
+
+        try {
+            int width = imageView.getWidth();
+            int height = imageView.getHeight();
+            Bitmap bitmap = Bitmap.createBitmap(width, height,                Bitmap.Config.ARGB_4444);
+
+            Intent intent = getIntent();
+            Bundle extras = intent.getExtras();
+            Uri data = extras.getParcelable(&quot;path&quot;);
+            Log.d(&quot;Soanam&quot;,&quot;path&quot; + data);
+            File file = new File(data.toString());
+
+            PdfRenderer renderer = new              PdfRenderer(ParcelFileDescriptor.open(file, ParcelFileDescriptor.MODE_READ_ONLY));
+
+            if (pagecount &amp;lt; 0) {
+                pagecount = 0;
+            } else if (pagecount &amp;gt; renderer.getPageCount()) {
+                pagecount = renderer.getPageCount() - 1;
+            }
+            renderer.openPage(pagecount).render(bitmap, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY);
+            imageView.setImageBitmap(bitmap);
+            imageView.invalidate();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+
+    }
+}
 &lt;/code&gt;&lt;/pre&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (60, 26, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (60, 32, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (58, 14, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (58, 8, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (59, 32, '&lt;p&gt;You need table name  (column name)  and values  (  )&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;string str1 = &quot;Insert Into  appointment (id, name, time)  Values (id,name,time)&quot;;
+string str2= &quot;Insert Into  customer (pid, phone)  Values (pid,phone)&quot;;
+&lt;/code&gt;&lt;/pre&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (59, 18, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (59, 32, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (59, 32, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (61, 37, '@Pablo Add a condition to the &lt;code&gt;WHERE&lt;/code&gt; clause for this employee.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (61, 42);
-INSERT INTO activity (post_id, user_id, action) VALUES (61, 37, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (60, 33, '&lt;p&gt;Yes.. because your path is null.. this is the reason you are getting null pointer exception&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (60, 14, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (60, 33, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (62, 50, 'That&amp;#39;s because you haven&amp;#39;t solved the issue and instead closing your eyes and hoping that the issue goes away by itself. But it doesn&amp;#39;t. You could have added the fact to your question that you&amp;#39;re using the OpenSSL utility to encrypt it. But you didn&amp;#39;t. Now, your actual question and this mess of a Q&amp;amp;A are two different things. They have nothing to do with each other. Please ask a new question and describe your &lt;b&gt;&lt;i&gt;actual&lt;/i&gt;&lt;/b&gt; issue in detail.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (62, 49);
-INSERT INTO activity (post_id, user_id, action) VALUES (62, 50, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (61, 4, 'When you post a link as a solution or as a work-around, you should also explain it in a few words, it will be much more useful.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (61, 41);
+INSERT INTO activity (post_id, user_id, action) VALUES (61, 4, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (63, 37, 'This would be if it were for the general table I want for the specific case in which the (Employee is 20498090R)');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (62, 19, 'What if the vector is a member variable ?');
+INSERT INTO answercomment (post_id, answer_id) VALUES (62, 47);
+INSERT INTO activity (post_id, user_id, action) VALUES (62, 19, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (63, 50, 'However, that requires a NSManaged​Object​ID, and will not work with &lt;code&gt;let personID: Int = 2&lt;/code&gt; as in the question.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (63, 42);
-INSERT INTO activity (post_id, user_id, action) VALUES (63, 37, 'Create');
+INSERT INTO activity (post_id, user_id, action) VALUES (63, 50, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (63, 50, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (64, 45, 'That&amp;#39;s because you haven&amp;#39;t solved the issue and instead closing your eyes and hoping that the issue goes away by itself. But it doesn&amp;#39;t.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (64, 49);
-INSERT INTO activity (post_id, user_id, action) VALUES (64, 45, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (64, 5, 'name and time also gives an error');
+INSERT INTO answercomment (post_id, answer_id) VALUES (64, 59);
+INSERT INTO activity (post_id, user_id, action) VALUES (64, 5, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (65, 32, 'Yes, it doesn&amp;#39;t work well. The decription looks like : Decryption result: ??3?(Z?????W?l^?s??e	hn&amp;amp;???&amp;#39;?Jd?0}???*?U\0?cG5??X??\l?C?;??w&amp;zwnj;&amp;#8203;?gJ/Q????s??7O3?UK#?&amp;zwnj;&amp;#8203;??H&amp;lt;vdrF etc. The file is encrypted with the command :  openssl rsautl -encrypt -in $file.key  -out $file.key.enc  inkey pubkey.pem –pubin');
-INSERT INTO answercomment (post_id, answer_id) VALUES (65, 49);
-INSERT INTO activity (post_id, user_id, action) VALUES (65, 32, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (65, 45, '@J.H.Bonarius My preference is to keep the example simple as some readers may not be using templates in their own code. Although the original question uses &lt;code&gt;T&lt;/code&gt; its not actually presented as a template function.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (65, 51);
+INSERT INTO activity (post_id, user_id, action) VALUES (65, 45, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (66, 17, 'I tried it on your site, you just need to give the wrapper of each element     &lt;code&gt;-webkit-column-break-inside: avoid;     -moz-column-break-inside: avoid;     column-break-inside: avoid;&lt;/code&gt; and it worked');
-INSERT INTO answercomment (post_id, answer_id) VALUES (66, 48);
-INSERT INTO activity (post_id, user_id, action) VALUES (66, 17, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (66, 28, 'Yes you are right. I&amp;#39;ll stick with a parent component then. But I&amp;#39;ll keep this directive. It can be usefull.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (66, 53);
+INSERT INTO activity (post_id, user_id, action) VALUES (66, 28, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (67, 10, 'I tried to create a div around it. Not helping. Probably there is something in the current css that cause it.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (67, 48);
-INSERT INTO activity (post_id, user_id, action) VALUES (67, 10, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (67, 34, 'It seems like the selected file is not received at onActivityResult');
+INSERT INTO answercomment (post_id, answer_id) VALUES (67, 58);
+INSERT INTO activity (post_id, user_id, action) VALUES (67, 34, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (68, 40, 'If you encrypt with &lt;code&gt;PKCS1Padding&lt;/code&gt; and decrypt with &lt;code&gt;NoPadding&lt;/code&gt; you would need to remove the padding yourself. Don&amp;#39;t do that. Let Java remove the padding for you. You&amp;#39;re still having an issue with your encryption and decryption.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (68, 49);
-INSERT INTO activity (post_id, user_id, action) VALUES (68, 40, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (68, 5, 'Running it exactly as pasted above i still got this:   03-29 10:18:22.602 10094-10094/com.example.user.mpdfreader W/System.err: java.lang.NullPointerException: Attempt to invoke virtual method &amp;#39;android.os.Parcelable android.os.Bundle.getParcelable(java.lang.String)&amp;#39; on a null object reference 03-29 10:18:22.603 10094-10094/com.example.user.mpdfreader W/System.err:     at com.example.user.mpdfreader.Main2Activity.render(Main2Activi&amp;zwnj;&amp;#8203;ty.java:65)');
+INSERT INTO answercomment (post_id, answer_id) VALUES (68, 58);
+INSERT INTO activity (post_id, user_id, action) VALUES (68, 5, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (69, 8, 'If the client uses the same code, then it should work. I&amp;#39;ve also tried to encrypt with one instance and decrypt with another. It works for me. So, there must be something else going on here (which you can describe in your &lt;a href=&quot;http://stackoverflow.com/questions/ask&quot;&gt;next question&lt;/a&gt;). You would need to describe how you&amp;#39;re transmitting the file (perhaps it&amp;#39;s corrupted).');
-INSERT INTO answercomment (post_id, answer_id) VALUES (69, 35);
-INSERT INTO activity (post_id, user_id, action) VALUES (69, 8, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (69, 44, 'The main disadvantage is destroying all elements after updating &lt;code&gt;user&lt;/code&gt;');
+INSERT INTO answercomment (post_id, answer_id) VALUES (69, 53);
+INSERT INTO activity (post_id, user_id, action) VALUES (69, 44, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (70, 29, 'I see. So, then you have to decode the corresponding private key. That&amp;#39;s not part of your current question and it would make a mess if you edit your question to include that. Please ask a new question about that issue. I&amp;#39;ve answered your current question with working code.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (70, 35);
-INSERT INTO activity (post_id, user_id, action) VALUES (70, 29, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (70, 4, '@hud if you exclude id then does it gives error?');
+INSERT INTO answercomment (post_id, answer_id) VALUES (70, 59);
+INSERT INTO activity (post_id, user_id, action) VALUES (70, 4, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (71, 43, 'Stack Overflow is not a forum. It is a question and answer site. This means that answers should actually answer the question. They should not be comments to other answers. They should not contain further questions. This is the third of these &amp;quot;answers&amp;quot; that you posted. Please delete this &amp;quot;answer&amp;quot;.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (71, 49);
-INSERT INTO activity (post_id, user_id, action) VALUES (71, 43, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (71, 14, 'Good answer, but maybe template the first/correct example, just so it matched the question.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (71, 51);
+INSERT INTO activity (post_id, user_id, action) VALUES (71, 14, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (72, 40, 'javax.crypto.BadPaddingException: Decryption error 	at sun.security.rsa.RSAPadding.unpadV15(RSAPadding.java:380) 	at sun.security.rsa.RSAPadding.unpad(RSAPadding.java:291) 	at com.sun.crypto.provider.RSACipher.doFinal(RSACipher.java:365&amp;zwnj;&amp;#8203;) 	at com.sun.crypto.provider.RSACipher.engineDoFinal(RSACipher.ja&amp;zwnj;&amp;#8203;va:391) 	at javax.crypto.Cipher.doFinal(Cipher.java:2189) 	at deciphertodeploy.Test24RsaFileIO.decrypt(Test24RsaFileIO.jav&amp;zwnj;&amp;#8203;a:168) 	at deciphertodeploy.Test24RsaFileIO.main(Test24RsaFileIO.java:3&amp;zwnj;&amp;#8203;9)');
-INSERT INTO answercomment (post_id, answer_id) VALUES (72, 35);
-INSERT INTO activity (post_id, user_id, action) VALUES (72, 40, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (72, 18, 'Looks pretty nice. I&amp;#39;m going to try that. Thank you @yurzui.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (72, 53);
+INSERT INTO activity (post_id, user_id, action) VALUES (72, 18, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (73, 1, 'Hi Artjom B, In fact I have a client that encrypts a file with the public key. In my application, I have to decipher only, not encrypt. I decrypt with private key and that&amp;#39;s when I get the padding error. Maybe the problem comes from the random.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (73, 35);
-INSERT INTO activity (post_id, user_id, action) VALUES (73, 1, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (73, 42, 'And beyond that: SO is not about asking more questions in comments. If you do that, and hope for the other site to be helpful beyond the original answer ... then well, ask yourself: what might the other site motivate to help me beyond that point? For sure not an explanation why you upvoted elsewhere.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (73, 54);
+INSERT INTO activity (post_id, user_id, action) VALUES (73, 42, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (74, 24, 'Thanks for the response! I think you&amp;#39;re right, but I don&amp;#39;t know why that&amp;#39;s being called or how to trace it. I&amp;#39;m not calling setPosition or using CALayer directly anywhere in my code.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (74, 53);
-INSERT INTO activity (post_id, user_id, action) VALUES (74, 24, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (74, 47, 'Sorry, but it seems that you are absolutely &lt;b&gt;overburdening&lt;/b&gt; yourself. He is using that HTMLModel as &lt;b&gt;example&lt;/b&gt; (the answer reads &amp;quot;if it is an HTMLDocument&amp;quot;!) ... and we are talking really basic stuff here which you don&amp;#39;t get. At the same point you want to create a complex Swing UI. That wont work. You have to &lt;b&gt;understand&lt;/b&gt; the things you are doing.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (74, 54);
+INSERT INTO activity (post_id, user_id, action) VALUES (74, 47, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (75, 25, 'I have upvoted it because the code is working fine, but my ambition is for any kind of files (&lt;i&gt;not only HTML files&lt;/i&gt;)...');
+INSERT INTO answercomment (post_id, answer_id) VALUES (75, 54);
+INSERT INTO activity (post_id, user_id, action) VALUES (75, 25, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (76, 37, 'Ok so I guess my only other possibility is to query the user in the &lt;code&gt;ParentComponent&lt;/code&gt; and give it to this one.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (76, 37);
+INSERT INTO activity (post_id, user_id, action) VALUES (76, 37, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (76, 37, 'Upvote');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (77, 2, 'How can I check for unsaved property?');
+INSERT INTO answercomment (post_id, answer_id) VALUES (77, 54);
+INSERT INTO activity (post_id, user_id, action) VALUES (77, 2, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (78, 24, 'Thank you very much Sir. :)');
+INSERT INTO answercomment (post_id, answer_id) VALUES (78, 56);
+INSERT INTO activity (post_id, user_id, action) VALUES (78, 24, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (79, 1, '@Tom that&amp;#39;s expected. I just missed that &lt;code&gt;&amp;lt;app-xpbar&amp;gt;&lt;/code&gt; closes at the same line. Perhaps you can move &lt;code&gt;*ngIf&lt;/code&gt; to a common parent element?');
+INSERT INTO answercomment (post_id, answer_id) VALUES (79, 37);
+INSERT INTO activity (post_id, user_id, action) VALUES (79, 1, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (80, 9, 'Yes it does not seem to work. Putting &lt;code&gt;{{user | json}}&lt;/code&gt; next to &lt;code&gt;&amp;lt;app-xpbar&amp;gt;&lt;/code&gt; does not show the result.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (80, 37);
+INSERT INTO activity (post_id, user_id, action) VALUES (80, 9, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (81, 15, 'Thanks again for pointing out my mistakes @yurzui I thought I checked that the &lt;code&gt;&amp;lt;pp-xpbar&amp;gt;&lt;/code&gt; closes after the &lt;code&gt;&amp;lt;app-header-user&amp;gt;&lt;/code&gt;. Seems like I need better glasses.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (81, 37);
+INSERT INTO activity (post_id, user_id, action) VALUES (81, 15, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (82, 38, 'I think &lt;code&gt;let user&lt;/code&gt; has scope within &lt;code&gt;*ngIf&lt;/code&gt;');
+INSERT INTO answercomment (post_id, answer_id) VALUES (82, 37);
+INSERT INTO activity (post_id, user_id, action) VALUES (82, 38, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (83, 22, '4.0.0. But I tried &lt;code&gt;user$ | async as user&lt;/code&gt; not &lt;code&gt;user$ | async; let user&lt;/code&gt;.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (83, 37);
+INSERT INTO activity (post_id, user_id, action) VALUES (83, 22, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (84, 49, 'What Angular version?');
+INSERT INTO answercomment (post_id, answer_id) VALUES (84, 37);
+INSERT INTO activity (post_id, user_id, action) VALUES (84, 49, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (85, 27, 'Actually I also tried that but It did not work. I&amp;#39;ll try again then.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (85, 37);
+INSERT INTO activity (post_id, user_id, action) VALUES (85, 27, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (86, 20, 'i changed my code exactly like yours but it seems like the columns cannot be found. The error is Invalid column name &amp;#39;id&amp;#39;');
+INSERT INTO answercomment (post_id, answer_id) VALUES (86, 57);
+INSERT INTO activity (post_id, user_id, action) VALUES (86, 20, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (87, 14, 'yes the column name is &amp;#39;id&amp;#39;. But it still error');
+INSERT INTO answercomment (post_id, answer_id) VALUES (87, 59);
+INSERT INTO activity (post_id, user_id, action) VALUES (87, 14, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (88, 18, '@hud id should be of same name as column name of id in table');
+INSERT INTO answercomment (post_id, answer_id) VALUES (88, 59);
+INSERT INTO activity (post_id, user_id, action) VALUES (88, 18, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (89, 21, 'i changed my code exactly like yours but it seems like the columns cannot be found. The error is &lt;code&gt;Invalid column name &amp;#39;id&amp;#39;&lt;/code&gt;');
+INSERT INTO answercomment (post_id, answer_id) VALUES (89, 59);
+INSERT INTO activity (post_id, user_id, action) VALUES (89, 21, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (90, 12, 'Modify it according to your requirement');
+INSERT INTO answercomment (post_id, answer_id) VALUES (90, 58);
+INSERT INTO activity (post_id, user_id, action) VALUES (90, 12, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (91, 3, '&lt;p&gt;Apologies if my question is primitive. What is the physical interpretation of moment generating function for varying &#x27;t&#x27;? In almost all places I read about it, the $r^{th}$ moment about the origin is defined by taking the derivative and substituting $t=0$. The moment about any other location $m$ is defined as, &lt;/p&gt;
+
+&lt;p&gt;$$E[e^{t(X-m)}]=e^{-tm}E[e^{tX}]$$&lt;/p&gt;
+
+&lt;p&gt;but it is still evaluated at the origin. I can see the physical interpretation at a location $m$ being the mean, variance etc. around $m$, but what does it mean as $t$ varies, in terms of physical/statistical interpretation? Thanks a lot.&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (91, 2, 'Interpretation of moment generating function as $t$ varies?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (91, 91, 3, 'Create');
+INSERT INTO tag (text) VALUES ('statistics');
+INSERT INTO questiontag (question_id, tag_id) VALUES (91, 72);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 56, 6);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (92, 32, '&lt;p&gt;This is more machine learning questions, but perhaps someone will be able to help. I would like to know what is the difference between regression and classification when we try to generate output for a training data set &lt;em&gt;x&lt;/em&gt;?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (92, 2, 'Regression vs Classification');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (92, 92, 32, 'Create');
+INSERT INTO tag (text) VALUES ('regression');
+INSERT INTO questiontag (question_id, tag_id) VALUES (92, 73);
+INSERT INTO tag (text) VALUES ('machine-learning');
+INSERT INTO questiontag (question_id, tag_id) VALUES (92, 74);
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (92, 32, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (75, 16, 'I can&amp;#39;t find any difference between your query and his except the select part !!!');
-INSERT INTO answercomment (post_id, answer_id) VALUES (75, 55);
-INSERT INTO activity (post_id, user_id, action) VALUES (75, 16, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (93, 36, '&lt;p&gt;How do you find a particular solution for this ODE?&lt;/p&gt;
+
+&lt;p&gt;$\frac{d^2x(t)}{dt^2}= -\omega^2x(t)-\nu \frac{dx(t)}{dt}+f_0cos(\Omega t)$&lt;/p&gt;
+
+&lt;p&gt;I know it&#x27;s of the form $x(t)=Acos(\Omega t)+Bsin(\Omega t)$ but I can&#x27;t find expression for A or B.&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (93, 2, 'particular solution for 2nd order ODE');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (93, 93, 36, 'Create');
+INSERT INTO tag (text) VALUES ('differential-equations');
+INSERT INTO questiontag (question_id, tag_id) VALUES (93, 75);
+INSERT INTO activity (post_id, user_id, activity) VALUES (93, 36, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (76, 27, 'no it didnt work to');
-INSERT INTO answercomment (post_id, answer_id) VALUES (76, 55);
-INSERT INTO activity (post_id, user_id, action) VALUES (76, 27, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (94, 11, '&lt;blockquote&gt;
+  &lt;p&gt;A vector field $V$ has the divergence $div(V)=4$. &lt;/p&gt;
+  
+  &lt;p&gt;What is the total flux in through the surface $\partial C$ of a massive rotating cylinder $C$ that has the height $h=2$ and the radius $r=5$?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;My parameterization is:&lt;/p&gt;
+
+&lt;p&gt;$$r(u,v)=(5\cos v,5\sin v,u)$$&lt;/p&gt;
+
+&lt;p&gt;The normal vector to the cylinder I&#x27;ve calculated is:&lt;/p&gt;
+
+&lt;p&gt;$$\vec{n}=(-5\cos v,-5\sin v,0)$$&lt;/p&gt;
+
+&lt;p&gt;I don&#x27;t know where to go from here. I&#x27;d appreciate your help.&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (94, 2, 'Flux through rotating cylinder using divergence theorem');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (94, 94, 11, 'Create');
+INSERT INTO tag (text) VALUES ('surface-integrals');
+INSERT INTO questiontag (question_id, tag_id) VALUES (94, 76);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (77, 17, 'It seems you&amp;#39;re still having problems. I&amp;#39;ve run it and it works as expected. See &lt;a href=&quot;https://gist.github.com/artjomb/6ad21d2f012ecee8ec33d04d8cbd8653&quot; rel=&quot;nofollow noreferrer&quot;&gt;the full class&lt;/a&gt;. I&amp;#39;ve commented some unnecessary lines and removed the &amp;quot;BC&amp;quot; flag.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (77, 35);
-INSERT INTO activity (post_id, user_id, action) VALUES (77, 17, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (95, 44, '&lt;p&gt;How would one differentiate a function in this form?&lt;/p&gt;
+
+&lt;p&gt;$$f(x) = f(a)+{\frac {f&#x27;(a)}{1!}}(x-a)+{\frac {f&#x27;&#x27;(a)}{2!}}(x-a)^{2}+{\frac {f&#x27;&#x27;&#x27;(a)}{3!}}(x-a)^{3}$$&lt;/p&gt;
+
+&lt;p&gt;I&#x27;m sorry if this is something obvious, I&#x27;m not great with maths. I tried searching for the answer with no luck.&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (95, 2, 'Find derivative of Taylor series');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (95, 95, 44, 'Create');
+INSERT INTO tag (text) VALUES ('derivatives');
+INSERT INTO questiontag (question_id, tag_id) VALUES (95, 77);
+INSERT INTO tag (text) VALUES ('taylor-expansion');
+INSERT INTO questiontag (question_id, tag_id) VALUES (95, 78);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (78, 3, 'B : Thanks a lot. It works with my file test. I&amp;#39;m going to check with the oters.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (78, 35);
-INSERT INTO activity (post_id, user_id, action) VALUES (78, 3, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (96, 47, '&lt;p&gt;let $f(x) =(\sqrt x + \sqrt{x+1})x$&lt;/p&gt;
+
+&lt;p&gt;This function exist at right hand limit at point 0 .&lt;/p&gt;
+
+&lt;p&gt;So can we say it continous or discontinous at point 0.&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (96, 2, 'Continous or discontinous function');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (96, 96, 47, 'Create');
+INSERT INTO tag (text) VALUES ('functions');
+INSERT INTO questiontag (question_id, tag_id) VALUES (96, 79);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', -1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (97, 49, '&lt;p&gt;On a 10-key (0 to 9) keyboard, a 4-digit password has 10^4 possibilities or 10,000.  If you have to press four numbers and then enter, you might enter up to 10,000 times.&lt;/p&gt;
+
+&lt;p&gt;However, what if you could enter numbers without pressing enter?  Then the following sequence:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;111122223333
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Gets 1 repeat 4, 2 repeat 4, etc.  but it also gets 1112, 1122, 1222, etc. etc.&lt;/p&gt;
+
+&lt;p&gt;This is my first post on Math Stack and it may be wrong to say this but I&#x27;m not necessarily looking for the answer :) Moreso I am asking for suggestions on how to approach this and prove it.  Thanks&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (97, 2, 'how to calculate the optimal string to match a pass sequence');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (97, 97, 49, 'Create');
+INSERT INTO tag (text) VALUES ('probability');
+INSERT INTO questiontag (question_id, tag_id) VALUES (97, 80);
+INSERT INTO tag (text) VALUES ('sequences-and-series');
+INSERT INTO questiontag (question_id, tag_id) VALUES (97, 81);
+INSERT INTO tag (text) VALUES ('optimization');
+INSERT INTO questiontag (question_id, tag_id) VALUES (97, 82);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (79, 16, '@user31782 - I added more details to my answer.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (79, 56);
-INSERT INTO activity (post_id, user_id, action) VALUES (79, 16, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (98, 49, '&lt;p&gt;Let $f : X \to Y$ is finite morphism between integral porjective schemes under field $k$ of same dimension, and $\mathcal{F} \in \mathbf{Coh}(X)$. Is it true that $H^n(\mathcal{F})=H^n(f_*\mathcal{F})$.&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (98, 2, 'Is it true for finite morphism $f$ between integral projective schemes that $H^n(\mathcal{F})=H^n(f_* \mathcal{F})$?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (98, 98, 49, 'Create');
+INSERT INTO tag (text) VALUES ('algebraic-geometry');
+INSERT INTO questiontag (question_id, tag_id) VALUES (98, 83);
+INSERT INTO tag (text) VALUES ('sheaf-theory');
+INSERT INTO questiontag (question_id, tag_id) VALUES (98, 84);
+INSERT INTO tag (text) VALUES ('sheaf-cohomology');
+INSERT INTO questiontag (question_id, tag_id) VALUES (98, 85);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (80, 42, 'This is interesting... But what is the reason behind this? What is the difference between adding css properties simultaneously and one by one?');
-INSERT INTO answercomment (post_id, answer_id) VALUES (80, 56);
-INSERT INTO activity (post_id, user_id, action) VALUES (80, 42, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (99, 33, '&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/cttO6.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/cttO6.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In the solution given how they got the circled term .&lt;/p&gt;
+
+&lt;p&gt;I could nt understand that .&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (99, 2, 'Infiite sum of trignometry series .');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (99, 99, 33, 'Create');
+INSERT INTO tag (text) VALUES ('trigonometry');
+INSERT INTO questiontag (question_id, tag_id) VALUES (99, 86);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (100, 42, '&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/CvvTr.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/CvvTr.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I could not understand how they got $T_{100}$ as 300 .&lt;/p&gt;
+
+&lt;p&gt;Can anybody please explain me .&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (100, 2, 'Characterstic of log');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (100, 100, 42, 'Create');
+INSERT INTO tag (text) VALUES ('logarithms');
+INSERT INTO questiontag (question_id, tag_id) VALUES (100, 87);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (81, 42, 'Further to my comment above, I ended up using &lt;code&gt;Number(val)&lt;/code&gt; instead as it returns &lt;code&gt;0&lt;/code&gt; when it can&amp;#39;t figure it out anyhow.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (81, 57);
-INSERT INTO activity (post_id, user_id, action) VALUES (81, 42, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (82, 11, 'If I pass in &lt;code&gt;null&lt;/code&gt; then it does not give me the expected result of &lt;code&gt;0&lt;/code&gt;. More on my point here: &lt;a href=&quot;http://stackoverflow.com/questions/115548/why-is-isnannull-false-in-js&quot; title=&quot;why is isnannull false in js&quot;&gt;stackoverflow.com/questions/115548/why-is-isnannull-false-in&amp;zwnj;&amp;#8203;-js&lt;/a&gt;');
-INSERT INTO answercomment (post_id, answer_id) VALUES (82, 57);
-INSERT INTO activity (post_id, user_id, action) VALUES (82, 11, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (83, 4, 'Thanks for the function. It is what I was looking for');
-INSERT INTO answercomment (post_id, answer_id) VALUES (83, 59);
-INSERT INTO activity (post_id, user_id, action) VALUES (83, 4, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4, 2);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (84, 39, 'You don&amp;#39;t need &lt;code&gt;else&lt;/code&gt; here.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (84, 57);
-INSERT INTO activity (post_id, user_id, action) VALUES (84, 39, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (101, 40, '&lt;p&gt;I got a problem stated as H(z) is the z trasform of h[n], which is a real, stable, even, two sided sequence. H(z)=G(z)*G(z^-1), where g[n] is a causal, minimum phase signal. Shouldn&#x27;t the product of G(z) and its inverse equal to 1, the identity system? Did I miss out something?&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (101, 2, 'Product of a minimum phase signal times its inverse');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (101, 101, 40, 'Create');
+INSERT INTO tag (text) VALUES ('convolution');
+INSERT INTO questiontag (question_id, tag_id) VALUES (101, 88);
+INSERT INTO tag (text) VALUES ('signal-processing');
+INSERT INTO questiontag (question_id, tag_id) VALUES (101, 89);
+INSERT INTO tag (text) VALUES ('z-transform');
+INSERT INTO questiontag (question_id, tag_id) VALUES (101, 90);
+INSERT INTO activity (post_id, user_id, activity) VALUES (101, 40, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (85, 41, '&lt;blockquote&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (102, 39, '&lt;p&gt;I am self studying Abbott&#x27;s understanding analysis I have a question about two exercises&lt;/p&gt;
+
+&lt;p&gt;Exercise: 
+Give an example of each of the following, or state that the request is impossible&lt;/p&gt;
+
+&lt;p&gt;1) A set B with inf B ≥ Sup B    (I said that this is impossible)
+2) A finite set that contains its infimum but not its supremum
+For 2) I understand that I must make an example of a set containing the greatest lower bound, but does not contain a least upper bound, but i don&#x27;t know how to proceed.&lt;/p&gt;
+
+&lt;p&gt;Thanks&lt;/p&gt;
+');
+INSERT INTO question (post_id, topic_id, title) VALUES (102, 2, 'Analysis / upper lower bound');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (102, 102, 39, 'Create');
+INSERT INTO tag (text) VALUES ('analysis');
+INSERT INTO questiontag (question_id, tag_id) VALUES (102, 91);
+INSERT INTO tag (text) VALUES ('elementary-set-theory');
+INSERT INTO questiontag (question_id, tag_id) VALUES (102, 92);
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (103, 50, '&lt;blockquote&gt;
   &lt;p&gt;If $A\cup B=A\cup C$ and $A\cap B=A\cap C$, prove that $B=C$.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -3338,15 +3235,14 @@ $$B=C$$.&lt;/p&gt;
 
 &lt;p&gt;Is this correct?Or, do we have any other alternatives?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (85, 2, 'If $A\cup B=A\cup C$ and $A\cap B= A\cap C$, prove that: $B=C$');
-INSERT INTO activity (post_id, user_id, action) VALUES (85, 41, 'Create');
-INSERT INTO tag (text) VALUES ('elementary-set-theory');
-INSERT INTO questiontag (question_id, tag_id) VALUES (85, 84);
+INSERT INTO question (post_id, topic_id, title) VALUES (103, 2, 'If $A\cup B=A\cup C$ and $A\cap B= A\cap C$, prove that: $B=C$');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (103, 103, 50, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (103, 92);
 INSERT INTO tag (text) VALUES ('proof-verification');
-INSERT INTO questiontag (question_id, tag_id) VALUES (85, 85);
+INSERT INTO questiontag (question_id, tag_id) VALUES (103, 93);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (86, 15, '&lt;p&gt;If $\alpha \in (0,1)$ is an irrational number, the question is to show that &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (104, 23, '&lt;p&gt;If $\alpha \in (0,1)$ is an irrational number, the question is to show that &lt;/p&gt;
 
 &lt;p&gt;\begin{equation}
 \alpha = \sum_{n=0}^{\infty} \frac{(-1)^n}{q_nq_{n-1}}
@@ -3371,15 +3267,15 @@ p_nq_{n-1} - q_np_{n-1} = (-1)^{n+1}\\
 \frac{p_n}{q_n} = \frac{(-1)^{n+1}}{q_nq_{n-1}} + \frac{(-1)^n}{q_{n-1}q_{n-2}} + \frac{p_{n-2}}{q_{n-3}}\\
 \end{equation}&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (86, 2, 'If $\alpha \in (0,1)$ is an irrational number, show that $\alpha = \sum_{n=0}^{\infty} \frac{(-1)^n}{q_nq_{n-1}}$');
-INSERT INTO activity (post_id, user_id, action) VALUES (86, 15, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (104, 2, 'If $\alpha \in (0,1)$ is an irrational number, show that $\alpha = \sum_{n=0}^{\infty} \frac{(-1)^n}{q_{n+1}q_{n}}$');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (104, 104, 23, 'Create');
 INSERT INTO tag (text) VALUES ('convergence');
-INSERT INTO questiontag (question_id, tag_id) VALUES (86, 86);
+INSERT INTO questiontag (question_id, tag_id) VALUES (104, 94);
 INSERT INTO tag (text) VALUES ('summation');
-INSERT INTO questiontag (question_id, tag_id) VALUES (86, 87);
+INSERT INTO questiontag (question_id, tag_id) VALUES (104, 95);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (87, 50, '&lt;p&gt;It seems that there is no way of computing&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (105, 13, '&lt;p&gt;It seems that there is no way of computing&lt;/p&gt;
 
 &lt;p&gt;$$ \lVert e^{tA}\lVert $$&lt;/p&gt;
 
@@ -3398,19 +3294,19 @@ meaning $\left(e^A\right)^\mathrm{T} = e^A$ and $\det(e^A) = 1$.&lt;/p&gt;
 
 &lt;p&gt;Thanks for any suggestions.&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (87, 2, 'Exact norm of matrix exponential');
-INSERT INTO activity (post_id, user_id, action) VALUES (87, 50, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (105, 2, 'Exact norm of matrix exponential');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (105, 105, 13, 'Create');
 INSERT INTO tag (text) VALUES ('linear-algebra');
-INSERT INTO questiontag (question_id, tag_id) VALUES (87, 88);
+INSERT INTO questiontag (question_id, tag_id) VALUES (105, 96);
 INSERT INTO tag (text) VALUES ('matrices');
-INSERT INTO questiontag (question_id, tag_id) VALUES (87, 89);
+INSERT INTO questiontag (question_id, tag_id) VALUES (105, 97);
 INSERT INTO tag (text) VALUES ('norm');
-INSERT INTO questiontag (question_id, tag_id) VALUES (87, 90);
+INSERT INTO questiontag (question_id, tag_id) VALUES (105, 98);
 INSERT INTO tag (text) VALUES ('matrix-calculus');
-INSERT INTO questiontag (question_id, tag_id) VALUES (87, 91);
+INSERT INTO questiontag (question_id, tag_id) VALUES (105, 99);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (88, 30, '&lt;p&gt;I am trying to solve this problem:&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (106, 33, '&lt;p&gt;I am trying to solve this problem:&lt;/p&gt;
 
 &lt;h2&gt;&lt;a href=&quot;https://i.stack.imgur.com/QlSkj.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/QlSkj.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
 
@@ -3436,27 +3332,32 @@ $$[\Psi(X),\Psi(Y)](P)=\left(\Psi(X)\Psi(Y)-\Psi(Y)\Psi(X)\right)(P)\\=\Psi(X)\l
 
 &lt;p&gt;&lt;strong&gt;EDIT:&lt;/strong&gt; I believe I can solve this using the hint if $[\tilde{X},\tilde{Y}](P)=[\tilde{X}(P),\tilde{Y}(P)]$. However, I do not know why/if this is true, and question 1) still holds.&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (88, 2, 'A little problem on Lie Brackets relating it with the commutator of matrices');
-INSERT INTO activity (post_id, user_id, action) VALUES (88, 30, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (106, 2, 'A little problem on Lie Brackets relating it with the commutator of matrices');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (106, 106, 33, 'Create');
 INSERT INTO tag (text) VALUES ('differential-geometry');
-INSERT INTO questiontag (question_id, tag_id) VALUES (88, 92);
+INSERT INTO questiontag (question_id, tag_id) VALUES (106, 100);
 INSERT INTO tag (text) VALUES ('manifolds');
-INSERT INTO questiontag (question_id, tag_id) VALUES (88, 93);
+INSERT INTO questiontag (question_id, tag_id) VALUES (106, 101);
+INSERT INTO activity (post_id, user_id, activity) VALUES (106, 33, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (106, 33, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (106, 33, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (106, 33, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (106, 33, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (89, 27, '&lt;p&gt;How can i show that &quot;a partial order on a finite set is uniquely determined by its covering relation&quot;?&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (107, 16, '&lt;p&gt;How can i show that &quot;a partial order on a finite set is uniquely determined by its covering relation&quot;?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (89, 2, 'covering relation question.');
-INSERT INTO activity (post_id, user_id, action) VALUES (89, 27, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (107, 2, 'covering relation question.');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (107, 107, 16, 'Create');
 INSERT INTO tag (text) VALUES ('combinatorics');
-INSERT INTO questiontag (question_id, tag_id) VALUES (89, 94);
+INSERT INTO questiontag (question_id, tag_id) VALUES (107, 102);
 INSERT INTO tag (text) VALUES ('relations');
-INSERT INTO questiontag (question_id, tag_id) VALUES (89, 95);
+INSERT INTO questiontag (question_id, tag_id) VALUES (107, 103);
 INSERT INTO tag (text) VALUES ('relation-algebra');
-INSERT INTO questiontag (question_id, tag_id) VALUES (89, 96);
+INSERT INTO questiontag (question_id, tag_id) VALUES (107, 104);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (90, 33, '&lt;p&gt;I have a differential equation here:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (108, 21, '&lt;p&gt;I have a differential equation here:&lt;/p&gt;
 
 &lt;p&gt;$$\frac{dy}{dx} = \frac{4y-3x}{2x-y}$$&lt;/p&gt;
 
@@ -3473,40 +3374,31 @@ $$\mathscr{L}(2ty&#x27;) - \mathscr{L}(yy&#x27;) = \mathscr{L}(4y) - \mathscr{L}
 
 &lt;p&gt;Additionally, I&#x27;d like to know how to best select a method to solve a differential equation. In the case of this one, clearly, the easiest way would be doing a substitution. But how do I know that would be the most efficient way?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (90, 2, 'Method Selection for Solving Differential Equations');
-INSERT INTO activity (post_id, user_id, action) VALUES (90, 33, 'Create');
-INSERT INTO tag (text) VALUES ('differential-equations');
-INSERT INTO questiontag (question_id, tag_id) VALUES (90, 97);
+INSERT INTO question (post_id, topic_id, title) VALUES (108, 2, 'Method Selection for Solving Differential Equations');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (108, 108, 21, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (108, 75);
 INSERT INTO tag (text) VALUES ('laplace-transform');
-INSERT INTO questiontag (question_id, tag_id) VALUES (90, 98);
+INSERT INTO questiontag (question_id, tag_id) VALUES (108, 105);
+INSERT INTO activity (post_id, user_id, activity) VALUES (108, 21, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (108, 21, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (108, 21, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (91, 15, '&lt;p&gt;How to calculate real fourier transform of real data instead of complex data in mathlab? Is there any software to test real fft?&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (109, 16, '&lt;p&gt;How to calculate real fourier transform of real data instead of complex data in mathlab? Is there any software to test real fft?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (91, 2, 'Real Fourier Transform In Matlab');
-INSERT INTO activity (post_id, user_id, action) VALUES (91, 15, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (109, 2, 'Real Fourier Transform In Matlab');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (109, 109, 16, 'Create');
 INSERT INTO tag (text) VALUES ('fourier-analysis');
-INSERT INTO questiontag (question_id, tag_id) VALUES (91, 99);
+INSERT INTO questiontag (question_id, tag_id) VALUES (109, 106);
 INSERT INTO tag (text) VALUES ('fourier-series');
-INSERT INTO questiontag (question_id, tag_id) VALUES (91, 100);
+INSERT INTO questiontag (question_id, tag_id) VALUES (109, 107);
 INSERT INTO tag (text) VALUES ('fourier-transform');
-INSERT INTO questiontag (question_id, tag_id) VALUES (91, 101);
+INSERT INTO questiontag (question_id, tag_id) VALUES (109, 108);
 INSERT INTO tag (text) VALUES ('fast-fourier-transform');
-INSERT INTO questiontag (question_id, tag_id) VALUES (91, 102);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (92, 43, '&lt;p&gt;How do you find a particular solution for this ODE?&lt;/p&gt;
-
-&lt;p&gt;$\frac{d^2x(t)}{dt^2}= -\omega^2x(t)-\nu \frac{dx(t)}{dt}+f_0cos(\Omega t)$&lt;/p&gt;
-
-&lt;p&gt;I know it&#x27;s of the form $x(t)=Acos(\Omega t)+Bsin(\Omega t)$ but I can&#x27;t find expression for A or B.&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (92, 2, 'particular solution for 2nd order ODE');
-INSERT INTO activity (post_id, user_id, action) VALUES (92, 43, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (92, 97);
+INSERT INTO questiontag (question_id, tag_id) VALUES (109, 109);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (93, 19, '&lt;blockquote&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (110, 3, '&lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;My problem&lt;/strong&gt;: I should calculate this sum: $\sum_{n=0}^{\infty} nx^{2n+1}$.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -3528,17 +3420,17 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (93, 19, '&lt;bl
 
 &lt;p&gt;Finally $y^{1/2}\sum_{n=0}^{\infty} ny^{n-1} = y^{1/2}/ (1-y)^2 = x/(1-x^2)^2$&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (93, 2, 'Evaluating a sum: $\sum_{n=0}^{\infty} nx^{2n+1}$');
-INSERT INTO activity (post_id, user_id, action) VALUES (93, 19, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (110, 2, 'Evaluating a sum: $\sum_{n=0}^{\infty} nx^{2n+1}$');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (110, 110, 3, 'Create');
 INSERT INTO tag (text) VALUES ('calculus');
-INSERT INTO questiontag (question_id, tag_id) VALUES (93, 103);
-INSERT INTO tag (text) VALUES ('sequences-and-series');
-INSERT INTO questiontag (question_id, tag_id) VALUES (93, 104);
+INSERT INTO questiontag (question_id, tag_id) VALUES (110, 110);
+INSERT INTO questiontag (question_id, tag_id) VALUES (110, 81);
 INSERT INTO tag (text) VALUES ('power-series');
-INSERT INTO questiontag (question_id, tag_id) VALUES (93, 105);
+INSERT INTO questiontag (question_id, tag_id) VALUES (110, 111);
+INSERT INTO activity (post_id, user_id, activity) VALUES (110, 3, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (94, 24, '&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/rtGuh.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/rtGuh.png&quot; alt=&quot;The problem&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (111, 30, '&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/rtGuh.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/rtGuh.png&quot; alt=&quot;The problem&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Update my lagrangian is &lt;/p&gt;
 
@@ -3568,17 +3460,18 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (94, 24, '&lt;p&
 
 &lt;p&gt;and $$\frac{ml^2}{3}\ddot\theta_2+\frac{ml^2}{2}\dot\theta_1\dot\theta_2\cos(\theta_1)\sin(\theta_2)-\frac{ml^2}{2}\dot\theta_1\dot\theta_2\sin(\theta_1)\cos(\theta_2)+\frac{mgl}{2}\sin(\theta_2)=0$$&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (94, 2, 'Pendulum problem inertia');
-INSERT INTO activity (post_id, user_id, action) VALUES (94, 24, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (111, 2, 'Pendulum problem inertia');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (111, 111, 30, 'Create');
 INSERT INTO tag (text) VALUES ('dynamical-systems');
-INSERT INTO questiontag (question_id, tag_id) VALUES (94, 106);
+INSERT INTO questiontag (question_id, tag_id) VALUES (111, 112);
 INSERT INTO tag (text) VALUES ('classical-mechanics');
-INSERT INTO questiontag (question_id, tag_id) VALUES (94, 107);
+INSERT INTO questiontag (question_id, tag_id) VALUES (111, 113);
 INSERT INTO tag (text) VALUES ('euler-lagrange-equation');
-INSERT INTO questiontag (question_id, tag_id) VALUES (94, 108);
+INSERT INTO questiontag (question_id, tag_id) VALUES (111, 114);
+INSERT INTO activity (post_id, user_id, activity) VALUES (111, 30, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (95, 1, '&lt;p&gt;I&#x27;m looking to find inner and outer solutions to this ODE and to do some matching $$\epsilon \ddot y + (1+t) \dot y = 0 \;\;\;\;\; y(0) = 0 \;\; \dot y (0) = \frac1\epsilon$$&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (112, 50, '&lt;p&gt;I&#x27;m looking to find inner and outer solutions to this ODE and to do some matching $$\epsilon \ddot y + (1+t) \dot y = 0 \;\;\;\;\; y(0) = 0 \;\; \dot y (0) = \frac1\epsilon$$&lt;/p&gt;
 
 &lt;p&gt;So I understand I need to convert to a new time variable $\tau = \frac t\epsilon$ ($\dot y$ and $y&#x27;$ are $\frac{dy}{dt}$ and $\frac{dy}{d\tau}$ respectively), which I plug in to get&lt;/p&gt;
 
@@ -3592,15 +3485,16 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (95, 1, '&lt;p&g
 
 &lt;p&gt;Something seems wrong. Is zero really the best approximation available here? Where did I go wrong?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (95, 2, 'Matching inner and outer solutions gives me zero');
-INSERT INTO activity (post_id, user_id, action) VALUES (95, 1, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (95, 97);
-INSERT INTO questiontag (question_id, tag_id) VALUES (95, 85);
+INSERT INTO question (post_id, topic_id, title) VALUES (112, 2, 'Matching inner and outer solutions gives me zero');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (112, 112, 50, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (112, 75);
+INSERT INTO questiontag (question_id, tag_id) VALUES (112, 93);
 INSERT INTO tag (text) VALUES ('perturbation-theory');
-INSERT INTO questiontag (question_id, tag_id) VALUES (95, 109);
+INSERT INTO questiontag (question_id, tag_id) VALUES (112, 115);
+INSERT INTO activity (post_id, user_id, activity) VALUES (112, 50, 'Upvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (96, 25, '&lt;p&gt;Consider the system
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (113, 25, '&lt;p&gt;Consider the system
 $$
 x&#x27;=x², y&#x27;=y
 $$
@@ -3616,72 +3510,29 @@ hence the eigenvalues are $\lambda_1=0$ and $\lambda_2=1$.&lt;/p&gt;
 
 &lt;p&gt;But what is the unstable manifold? Its tangent to the y-axis in $(0,0)$?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (96, 2, 'Local unstable manifold');
-INSERT INTO activity (post_id, user_id, action) VALUES (96, 25, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (96, 97);
-INSERT INTO questiontag (question_id, tag_id) VALUES (96, 93);
-INSERT INTO questiontag (question_id, tag_id) VALUES (96, 106);
+INSERT INTO question (post_id, topic_id, title) VALUES (113, 2, 'Local unstable manifold');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (113, 113, 25, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (113, 75);
+INSERT INTO questiontag (question_id, tag_id) VALUES (113, 101);
+INSERT INTO questiontag (question_id, tag_id) VALUES (113, 112);
+INSERT INTO activity (post_id, user_id, activity) VALUES (113, 25, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', -1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (97, 22, '&lt;p&gt;I have come across a question when researching integral substitution and I have no idea how to do it. Any help would be greatly appreciated as I don&#x27;t understand what to do. &lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (114, 46, '&lt;p&gt;I have come across a question when researching integral substitution and I have no idea how to do it. Any help would be greatly appreciated as I don&#x27;t understand what to do. &lt;/p&gt;
 
 &lt;p&gt;$$\int \text{csc}^2 2\theta \cot2\theta \,d\theta $$&lt;/p&gt;
 
 &lt;p&gt;I need to do the integral in two ways by using two different substitutions: $u = \cot 2\theta$ and $u = \text{csc } 2\theta$&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (97, 2, 'Integral Substitution $\text{csc }\theta \cot\theta$');
-INSERT INTO activity (post_id, user_id, action) VALUES (97, 22, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (114, 2, 'Integral Substitution $\text{csc }\theta \cot\theta$');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (114, 114, 46, 'Create');
 INSERT INTO tag (text) VALUES ('integration');
-INSERT INTO questiontag (question_id, tag_id) VALUES (97, 110);
+INSERT INTO questiontag (question_id, tag_id) VALUES (114, 116);
 INSERT INTO tag (text) VALUES ('substitution');
-INSERT INTO questiontag (question_id, tag_id) VALUES (97, 111);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', -1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (98, 24, '&lt;p&gt;On a 10-key (0 to 9) keyboard, a 4-digit password has 10^4 possibilities or 10,000.  If you have to press four numbers and then enter, you might enter up to 10,000 times.&lt;/p&gt;
-
-&lt;p&gt;However, what if you could enter numbers without pressing enter?  Then the following sequence:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;111122223333
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Gets 1 repeat 4, 2 repeat 4, etc.  but it also gets 1112, 1122, 1222, etc. etc.&lt;/p&gt;
-
-&lt;p&gt;This is my first post on Math Stack and it may be wrong to say this but I&#x27;m not necessarily looking for the answer :) Moreso I am asking for suggestions on how to approach this and prove it.  Thanks&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (98, 2, 'how to calculate the optimal string to match a pass sequence');
-INSERT INTO activity (post_id, user_id, action) VALUES (98, 24, 'Create');
-INSERT INTO tag (text) VALUES ('probability');
-INSERT INTO questiontag (question_id, tag_id) VALUES (98, 112);
-INSERT INTO questiontag (question_id, tag_id) VALUES (98, 104);
-INSERT INTO tag (text) VALUES ('optimization');
-INSERT INTO questiontag (question_id, tag_id) VALUES (98, 113);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (99, 34, '&lt;blockquote&gt;
-  &lt;p&gt;A vector field $V$ has the divergence $div(V)=4$. &lt;/p&gt;
-  
-  &lt;p&gt;What is the total flux in through the surface $\partial C$ of a massive rotating cylinder $C$ that has the height $h=2$ and the radius $r=5$?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;My parameterization is:&lt;/p&gt;
-
-&lt;p&gt;$$r(u,v)=(5\cos v,5\sin v,u)$$&lt;/p&gt;
-
-&lt;p&gt;The normal vector to the cylinder I&#x27;ve calculated is:&lt;/p&gt;
-
-&lt;p&gt;$$\vec{n}=(-5\cos v,-5\sin v,0)$$&lt;/p&gt;
-
-&lt;p&gt;I don&#x27;t know where to go from here. I&#x27;d appreciate your help.&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (99, 2, 'Flux through rotating cylinder using divergence theorem');
-INSERT INTO activity (post_id, user_id, action) VALUES (99, 34, 'Create');
-INSERT INTO tag (text) VALUES ('surface-integrals');
-INSERT INTO questiontag (question_id, tag_id) VALUES (99, 114);
+INSERT INTO questiontag (question_id, tag_id) VALUES (114, 117);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (100, 30, '&lt;p&gt;In type theory and constructive mathematics, Hedberg&#x27;s theorem says:&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (115, 8, '&lt;p&gt;In type theory and constructive mathematics, Hedberg&#x27;s theorem says:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;A type with decideable equality is automatically a set.&lt;/p&gt;
@@ -3691,21 +3542,22 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (100, 30, '&lt;p
 
 &lt;p&gt;What am I not understanding here?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (100, 2, 'What am I not understanding about Hedberg&#39;s theorem?');
-INSERT INTO activity (post_id, user_id, action) VALUES (100, 30, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (115, 2, 'What am I not understanding about Hedberg&#39;s theorem?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (115, 115, 8, 'Create');
 INSERT INTO tag (text) VALUES ('soft-question');
-INSERT INTO questiontag (question_id, tag_id) VALUES (100, 115);
+INSERT INTO questiontag (question_id, tag_id) VALUES (115, 118);
 INSERT INTO tag (text) VALUES ('homotopy-theory');
-INSERT INTO questiontag (question_id, tag_id) VALUES (100, 116);
+INSERT INTO questiontag (question_id, tag_id) VALUES (115, 119);
 INSERT INTO tag (text) VALUES ('foundations');
-INSERT INTO questiontag (question_id, tag_id) VALUES (100, 117);
+INSERT INTO questiontag (question_id, tag_id) VALUES (115, 120);
 INSERT INTO tag (text) VALUES ('constructive-mathematics');
-INSERT INTO questiontag (question_id, tag_id) VALUES (100, 118);
+INSERT INTO questiontag (question_id, tag_id) VALUES (115, 121);
 INSERT INTO tag (text) VALUES ('type-theory');
-INSERT INTO questiontag (question_id, tag_id) VALUES (100, 119);
+INSERT INTO questiontag (question_id, tag_id) VALUES (115, 122);
+INSERT INTO activity (post_id, user_id, activity) VALUES (115, 8, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (101, 35, '&lt;p&gt;I was trying to understand Bernoulli numbers. When I googled, I found &lt;a href=&quot;http://wstein.org/edu/fall05/168/projects/kevin_mcgown/bernproj.pdf&quot; rel=&quot;nofollow noreferrer&quot;&gt;this link&lt;/a&gt;. &lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (116, 17, '&lt;p&gt;I was trying to understand Bernoulli numbers. When I googled, I found &lt;a href=&quot;http://wstein.org/edu/fall05/168/projects/kevin_mcgown/bernproj.pdf&quot; rel=&quot;nofollow noreferrer&quot;&gt;this link&lt;/a&gt;. &lt;/p&gt;
 
 &lt;p&gt;It starts by saying that, The Bernoulli numbers are defined via the coefficients of the power series expansion of 
 $\frac{t}{e^{t}-1}$,&lt;/p&gt;
@@ -3736,45 +3588,47 @@ $\frac{t}{e^{t}-1}$,&lt;/p&gt;
 
 &lt;p&gt;I am new to number theory, please excuse me if the doubt is very basic. Any kind of help will be appreciated. :)&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (101, 2, 'How do we get the final formula of the Bernoulli number?');
-INSERT INTO activity (post_id, user_id, action) VALUES (101, 35, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (116, 2, 'How do we get the final formula of the Bernoulli number?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (116, 116, 17, 'Create');
 INSERT INTO tag (text) VALUES ('number-theory');
-INSERT INTO questiontag (question_id, tag_id) VALUES (101, 120);
+INSERT INTO questiontag (question_id, tag_id) VALUES (116, 123);
 INSERT INTO tag (text) VALUES ('intuition');
-INSERT INTO questiontag (question_id, tag_id) VALUES (101, 121);
+INSERT INTO questiontag (question_id, tag_id) VALUES (116, 124);
 INSERT INTO tag (text) VALUES ('proof-explanation');
-INSERT INTO questiontag (question_id, tag_id) VALUES (101, 122);
+INSERT INTO questiontag (question_id, tag_id) VALUES (116, 125);
 INSERT INTO tag (text) VALUES ('bernoulli-numbers');
-INSERT INTO questiontag (question_id, tag_id) VALUES (101, 123);
+INSERT INTO questiontag (question_id, tag_id) VALUES (116, 126);
+INSERT INTO activity (post_id, user_id, activity) VALUES (116, 17, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (116, 17, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', -2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (102, 47, '&lt;p&gt;If there are two set $A$ and $B$ such that $A \rightarrowtail B$ (bijection), does $|A| = |B|$?&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (117, 46, '&lt;p&gt;If there are two set $A$ and $B$ such that $A \rightarrowtail B$ (bijection), does $|A| = |B|$?&lt;/p&gt;
 
 &lt;p&gt;And if  $A \sim B$ (equinumerous), does $|A| = |B|$?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (102, 2, 'Do two bijective sets have the same cardinality?');
-INSERT INTO activity (post_id, user_id, action) VALUES (102, 47, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (117, 2, 'Do two bijective sets have the same cardinality?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (117, 117, 46, 'Create');
 INSERT INTO tag (text) VALUES ('discrete-mathematics');
-INSERT INTO questiontag (question_id, tag_id) VALUES (102, 124);
+INSERT INTO questiontag (question_id, tag_id) VALUES (117, 127);
 INSERT INTO tag (text) VALUES ('set-theory');
-INSERT INTO questiontag (question_id, tag_id) VALUES (102, 125);
+INSERT INTO questiontag (question_id, tag_id) VALUES (117, 128);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (103, 44, '&lt;p&gt;I am trying to show the following:&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (118, 14, '&lt;p&gt;I am trying to show the following:&lt;/p&gt;
 
 &lt;p&gt;Let $\xi, \eta$ by random variables with finite expectation such that $E(\xi \mid \eta) \ge \eta$ and $E(\eta \mid \xi) \ge \xi$.  Prove that $\eta = \xi$ almost surely.  &lt;/p&gt;
 
 &lt;p&gt;From definition I know that $E(\xi \mid \eta) = \int \xi \frac{f(\xi,\eta)}{g(\xi)}\,d\xi$, where $g$ is marginal distribution for $\xi$ and $E(\xi \mid \eta) = \int \eta \frac{f(\xi,\eta)}{g(\eta)} \, d\eta$, where $g$ is marginal distribution for $\eta.$  I am just not sure how to combine these expressions with the inequalities to show almost sure equality between the random variables.&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (103, 2, 'Conditional Expectation to show two random variables are equal almost surely');
-INSERT INTO activity (post_id, user_id, action) VALUES (103, 44, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (118, 2, 'Conditional Expectation to show two random variables are equal almost surely');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (118, 118, 14, 'Create');
 INSERT INTO tag (text) VALUES ('probability-theory');
-INSERT INTO questiontag (question_id, tag_id) VALUES (103, 126);
+INSERT INTO questiontag (question_id, tag_id) VALUES (118, 129);
 INSERT INTO tag (text) VALUES ('conditional-expectation');
-INSERT INTO questiontag (question_id, tag_id) VALUES (103, 127);
+INSERT INTO questiontag (question_id, tag_id) VALUES (118, 130);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (104, 39, '&lt;p&gt;A morphism $f: X\to Y$ in mod A is called irreducible if &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (119, 1, '&lt;p&gt;A morphism $f: X\to Y$ in mod A is called irreducible if &lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;f is not a section,&lt;/p&gt;&lt;/li&gt;
@@ -3791,15 +3645,19 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (104, 39, '&lt;p
 &lt;li&gt;In the proof of Proposition 7.4 (2), $f$ is injective, then $f$ is not surjective, (Proposition 7.4 (1)) and thus $h$ cannot be a retraction. I don&#x27;t know why $h$ is not a retraction.&lt;/li&gt;
 &lt;/ul&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (104, 2, 'About irreducible morphisms');
-INSERT INTO activity (post_id, user_id, action) VALUES (104, 39, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (119, 2, 'About irreducible morphisms');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (119, 119, 1, 'Create');
 INSERT INTO tag (text) VALUES ('representation-theory');
-INSERT INTO questiontag (question_id, tag_id) VALUES (104, 128);
+INSERT INTO questiontag (question_id, tag_id) VALUES (119, 131);
 INSERT INTO tag (text) VALUES ('quiver');
-INSERT INTO questiontag (question_id, tag_id) VALUES (104, 129);
+INSERT INTO questiontag (question_id, tag_id) VALUES (119, 132);
+INSERT INTO activity (post_id, user_id, activity) VALUES (119, 1, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (119, 1, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (119, 1, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (119, 1, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (105, 17, '&lt;p&gt;Consider a multiplicative abelian group $T$ and an additive abelian group $S$, along with the following axioms.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (120, 35, '&lt;p&gt;Consider a multiplicative abelian group $T$ and an additive abelian group $S$, along with the following axioms.&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;$t_1(t_2s) = (t_1t_2)s$ for $t_1,t_2 \in T$ and $s \in S$&lt;/li&gt;
@@ -3811,168 +3669,99 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (105, 17, '&lt;p
 
 &lt;p&gt;Does this structure have a name? Are there any results known about this structure?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (105, 2, 'Does the following algebraic structure have a name?');
-INSERT INTO activity (post_id, user_id, action) VALUES (105, 17, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (120, 2, 'Does the following algebraic structure have a name?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (120, 120, 35, 'Create');
 INSERT INTO tag (text) VALUES ('abstract-algebra');
-INSERT INTO questiontag (question_id, tag_id) VALUES (105, 130);
+INSERT INTO questiontag (question_id, tag_id) VALUES (120, 133);
+INSERT INTO activity (post_id, user_id, activity) VALUES (120, 35, 'Upvote');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (121, 39, '&lt;p&gt;I have al little question about classification problem. If I want to convert my regression problem into a classification problem I have to categorize also the input variables or just the y? 
+sorry for my bad english (correct me xD)&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (121, 92, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (121, 39, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (106, 44, '&lt;p&gt;having trouble moving from the concept of increasing/decreasing sequence of real numbers to increasing/decreasing sequence of events.  I have no problem with this concept regarding real numbers but events is a bit abstract.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (122, 35, '&lt;p&gt;$\frac{d^2x(t)}{dt^2} +\omega^2x(t)+\nu \frac{dx(t)}{dt}=f_0cos(\Omega t)$&lt;/p&gt;
 
-&lt;p&gt;My question is could someone provide any real-life examples of increasing/decreasing sequences of events and not in terms of a mathematical definition which I already know.&lt;/p&gt;
+&lt;p&gt;Let $x(t) = A\cos(\Omega t) + B\sin(\Omega t)$&lt;/p&gt;
 
-&lt;p&gt;For example, suppose we have a sequence of coin tosses and we denote event An as the event of getting heads of the nth coin toss.  Is the reason why this sequence is an increasing sequence of events is because the indicator function of the event is increasing?  What causes a sequence to be classified as increasing/decreasing? Again, not looking for a mathematical definition of why or why not an event sequence is increasing/decreasing but examples and intuition that I can&#x27;t seem to find in any probability book.&lt;/p&gt;
+&lt;p&gt;$\implies x&#x27;(t) = -A\Omega\sin(\Omega t)+ B\Omega\cos(\Omega t)$&lt;/p&gt;
 
-&lt;p&gt;Thanks so much!&lt;/p&gt;
+&lt;p&gt;$x&#x27;&#x27;(t) = -A\Omega^2\cos(\Omega t) -B\Omega^2\sin(\Omega t)$&lt;/p&gt;
+
+&lt;p&gt;Subbing this in:&lt;/p&gt;
+
+&lt;p&gt;$$-A\Omega^2\cos(\Omega t) -B\Omega^2\sin(\Omega t)+A\omega^2\cos(\Omega t)+B\omega^2\sin(\Omega t) + \nu B\Omega \cos(\Omega t) -\nu A\Omega\sin(\Omega t) = f_{0}\cos(\Omega t)$$&lt;/p&gt;
+
+&lt;p&gt;Comparing $\cos(\Omega t)$:&lt;/p&gt;
+
+&lt;p&gt;$-A\Omega^2+A\omega^2+\nu B\Omega = f_{0}$&lt;/p&gt;
+
+&lt;p&gt;Comparing $\sin(\Omega t):$&lt;/p&gt;
+
+&lt;p&gt;$-B\Omega^2+B\omega^2-\nu A\Omega = 0$&lt;/p&gt;
+
+&lt;p&gt;Now simultaneously solve for $A$ and $B$&lt;/p&gt;
+
+&lt;p&gt;$A = \frac{B(\omega^2-\Omega^2)}{\Omega\nu}$&lt;/p&gt;
+
+&lt;p&gt;$ \frac{B(\omega^2-\Omega^2)}{\Omega\nu}(\omega^2-\Omega^2)+B\nu\Omega = f_{0}$&lt;/p&gt;
+
+&lt;p&gt;$B[(\omega^2-\Omega^2)^2+\nu^2\Omega^2]=f_{0}\nu\Omega$&lt;/p&gt;
+
+&lt;p&gt;$B=\frac{f_{0}\nu\Omega}{(\omega^2-\Omega^2)^2+\nu^2\Omega^2}$&lt;/p&gt;
+
+&lt;p&gt;and $A= \frac{f_{0}\nu\Omega}{(\omega^2-\Omega^2)^2+\nu^2\Omega^2}\cdot \frac{\omega^2-\Omega^2}{\Omega \nu}$=$\frac{f_{0}(\omega^2-\Omega^2)}{(\omega^2-\Omega^2)^2+\nu^2\Omega^2}$&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (106, 2, 'Increasing/Decreasing Sequence of Events Intuition');
-INSERT INTO activity (post_id, user_id, action) VALUES (106, 44, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (106, 126);
+INSERT INTO answer (post_id, question_id, accepted) VALUES (122, 93, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (122, 35, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (122, 35, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (107, 5, '&lt;p&gt;All fields are rings, i.e. Fields $\subsetneq$ Rings, however, when dealing with a ring &lt;strong&gt;R&lt;/strong&gt; and a field &lt;strong&gt;K&lt;/strong&gt; with the same generators we have that &lt;strong&gt;R&lt;/strong&gt; $\subseteq$ &lt;strong&gt;K&lt;/strong&gt;? Am I right in thinking this?&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (123, 42, '&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Divergence_theorem&quot; rel=&quot;nofollow noreferrer&quot;&gt;According to the Divergence Theorem, the surface integral of a vector field over a &quot;simple&quot; and closed &lt;/a&gt; surface equals the volume integral of the divergence of the same  over thesolid defined by the surface.&lt;/p&gt;
 
-&lt;p&gt;My reasoning is that all fields follow the &quot;rules&quot; of being a ring, ergo all fields are rings, but a ring with the same generators as the field need not contain all of the elements of the field, therefore the ring is a subset of the field.&lt;/p&gt;
+&lt;p&gt;Since the divergence given is constant, the integral of its divergence equals the divergence times the volume of the solid. $V=5^2\cdot2\cdot \pi=50\pi$. So, the surface integral has to equal $4\cdot 50\pi=200\pi.$&lt;/p&gt;
 
-&lt;p&gt;I&#x27;m getting myself confused so it&#x27;d be nice if someone could set me straight!&lt;/p&gt;
+&lt;p&gt;I don&#x27;t think that the rotating nature of the cylinder counts. (If ibeing massive or is rotating about its vertical axis of symmetry. If it behaves another way then the problem is not defined.) The cylinder determines the same body even if rotating or if hollow.&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (107, 2, 'Fields are a subset of rings, but a ring is a subset of a field?');
-INSERT INTO activity (post_id, user_id, action) VALUES (107, 5, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (107, 130);
+INSERT INTO answer (post_id, question_id, accepted) VALUES (123, 94, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (123, 42, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (108, 44, '&lt;p&gt;Can the &quot;proves consistent&quot; relation be proven antisymmetric?  By antisymmetric I mean there is not some chain of theories in which some theory proves other theories consistent which in turn prove it consistent.&lt;/p&gt;
-
-&lt;p&gt;If $\succ$ is the &quot;proves consistent&quot; relation:&lt;/p&gt;
-
-&lt;p&gt;$A\succ B\iff (A\implies Con(B))\quad\forall A\forall B $&lt;/p&gt;
-
-&lt;p&gt;then I think antisymmetry is usually written as follows: &lt;/p&gt;
-
-&lt;p&gt;$A\succ B\land B\succ A\implies A=B\quad\forall A\forall B$&lt;/p&gt;
-
-&lt;p&gt;Can this be proven?&lt;/p&gt;
-
-&lt;p&gt;This is an inquiry motivated in part by learning that &lt;a href=&quot;https://en.wikipedia.org/wiki/Gentzen%27s_consistency_proof&quot; rel=&quot;nofollow noreferrer&quot; title=&quot;Gentzen&amp;#39;s Consistency Proof&quot;&gt;Gentzen&#x27;s Consistency Proof&lt;/a&gt; is neither weaker nor stronger than PA, which suggests an ordering may not necessarily be implied by proving consistency.&lt;/p&gt;
-
-&lt;p&gt;It would seem to me that by Godel&#x27;s imcompleteness theorem we&#x27;re denied reflexivity:&lt;/p&gt;
-
-&lt;p&gt;$A\succ B\implies A\neq B$&lt;/p&gt;
-
-&lt;p&gt;which denies us the usual antisymmetry rule.  But it seems this doesn&#x27;t necessarily rule out antisymmetry provided we have transitivity.  Because if $\succ$ were both transitive and symmetric, we might have the following contradiction:&lt;/p&gt;
-
-&lt;p&gt;$A\succ C\succ A \implies A\succ A\implies A\neq A$&lt;/p&gt;
-
-&lt;p&gt;$\therefore\nexists C\mid A\succ C\succ A$&lt;/p&gt;
-
-&lt;p&gt;Which fulfils the purpose of antisymmetry when we&#x27;re denied reflexivity.&lt;/p&gt;
-
-&lt;p&gt;So the limit of what I can prove is that &quot;proves consistent&quot; is antisymmetric provided it is also transitive - which I have, as yet, no reason to believe it is.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (124, 31, '&lt;p&gt;Differentiate with respect to $x$ ? On the left you have simply $f&#x27;(x)$ and on the right you have polynomial in $x$ ($a$ is a constant with respect to the derivative in $x$), so you get
+$$0+f&#x27;(a)+f&#x27;&#x27;(a)(x-a)+\frac{f&#x27;&#x27;&#x27;(x)}{2}(x-a)^2$$.&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (108, 2, 'Can the &quot;proves consistent&quot; relation be proven antisymmetric?');
-INSERT INTO activity (post_id, user_id, action) VALUES (108, 44, 'Create');
-INSERT INTO tag (text) VALUES ('logic');
-INSERT INTO questiontag (question_id, tag_id) VALUES (108, 131);
-INSERT INTO questiontag (question_id, tag_id) VALUES (108, 95);
-INSERT INTO tag (text) VALUES ('peano-axioms');
-INSERT INTO questiontag (question_id, tag_id) VALUES (108, 132);
+INSERT INTO answer (post_id, question_id, accepted) VALUES (124, 95, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (124, 31, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (109, 27, '&lt;p&gt;Consider &lt;a href=&quot;https://i.stack.imgur.com/ugQxR.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;this picture.&lt;/a&gt;
-I need to integrate a function of spatial position and direction for the entire volume of the cube. So for example at point &lt;em&gt;(x1,y1,z1)&lt;/em&gt; I need to integrate for the distance s and all the surface area of the cube. &lt;br/&gt;Normally I would just integrate with a volume element &lt;em&gt;dA&lt;/em&gt;ds* were dA can be &lt;em&gt;dx&lt;/em&gt;dy* or &lt;em&gt;dx&lt;/em&gt;dz* or &lt;em&gt;dy&lt;/em&gt;dz*, depending on the surface of the cube. &lt;br/&gt;However the solid angle about &lt;em&gt;s&lt;/em&gt; is projected on the wall. &lt;br/&gt;So should I multiply the volume element with the cosine of the angle between the normal of each surface with &lt;em&gt;s&lt;/em&gt;?&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (109, 2, 'Solid angle in a cube');
-INSERT INTO activity (post_id, user_id, action) VALUES (109, 27, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (109, 110);
-INSERT INTO tag (text) VALUES ('volume');
-INSERT INTO questiontag (question_id, tag_id) VALUES (109, 133);
-INSERT INTO tag (text) VALUES ('solid-angle');
-INSERT INTO questiontag (question_id, tag_id) VALUES (109, 134);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (125, 29, '&lt;p&gt;This is best answered using graph theory, in my opinion.&lt;/p&gt;
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', -7, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (110, 12, '&lt;p&gt;Why do we write $\sqrt{18}$ as $3\sqrt{2}$? I know that it&#x27;s decimal expansion is $4.24$, but why $3\sqrt{2}$?&lt;/p&gt;
+&lt;p&gt;Let $G$ be a directed graph where the nodes are all possible three-digit codes. For two vertices $u, v$ there is an edge from $u$ to $v$ if the two last digits of $u$ are the two first digits of $v$. That way there are edges from $123$ to each of $231, 232, 233, 234, 235, 236, 237, 238, 239, 230$ and no others.&lt;/p&gt;
+
+&lt;p&gt;The nodes each represent the last three button presses. As you press digits on the keypad, you move along the graph. Once you&#x27;ve pressed three buttons for the first time, you have chosen the node corresponding to the three numbers you pressed. For each successive button you press, you move along an edge to the node representing the current three last key presses. That way, each edge represents a specific four-digit code, and each four digit code is represented (for instance, $1234$ is the edge that goes from $123$ to $234$, and $1111$ is the edge that goes form the vertex $111$ and in a loop back to $111$).&lt;/p&gt;
+
+&lt;p&gt;This is the so-called &lt;a href=&quot;https://en.wikipedia.org/wiki/De_Bruijn_graph&quot; rel=&quot;nofollow noreferrer&quot;&gt;De Bruijn graph&lt;/a&gt;, and it is well known to be an Eulerian directed graph. That means that there is a route that goes along each edge exactly once. This corresponds to each code being attempted exactly once, which is clearly as effective as it gets.&lt;/p&gt;
+
+&lt;p&gt;This means that the number of required button presses is $3 + 10000$, where the first $3$ are for picking a starting node, and the remaining $10000$ are for testing actual codes, one by one.&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (110, 2, 'Why do we write $\sqrt{18}$ as $3\sqrt{2}$?');
-INSERT INTO activity (post_id, user_id, action) VALUES (110, 12, 'Create');
-INSERT INTO tag (text) VALUES ('roots');
-INSERT INTO questiontag (question_id, tag_id) VALUES (110, 135);
+INSERT INTO answer (post_id, question_id, accepted) VALUES (125, 97, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (125, 29, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (111, 31, '&lt;p&gt;I need someone to confirm If I solved this problem correctly and tell me how to properly write the solution or notations (most of the time when I&#x27;m doing a probability problem I feel like it&#x27;s more like a notation exercise than a math exercise)&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (126, 30, '&lt;p&gt;What you missed is the fact that generally $$G(z^{-1})\neq G^{-1}(z)$$
+So the inverse of the system $G(z)$ is $G^{-1}(z)$ since clearly $G(z) \cdot G^{-1}(z)=G(z)\cdot \frac{1}{G(z)}=1$ which is the identity system.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;What&#x27;s the probability to get at least 2 tails after flipping a rigged coin six times if getting a head is twice as likely as getting a tail?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;My attempt : &lt;/p&gt;
-
-&lt;p&gt;P(at least 2 tails) = P(no tail) + P(1 tail) + P(2 tails)&lt;/p&gt;
-
-&lt;p&gt;P(no tail) = P(6 heads) = $(\frac23)^6$&lt;/p&gt;
-
-&lt;p&gt;P(1 tail) = $6\cdot$P(1 tail $\textbf{and}$ 5 heads) = $6\cdot$P(1 tail)$\cdot$P(5 heads) = $6\cdot\frac13\cdot(\frac23)^5$&lt;/p&gt;
-
-&lt;p&gt;P(2 tail) = $\frac{6!}{2!\cdot4!}\cdot$P(2 tail $\textbf{and}$ 4 heads) = $\frac{6!}{2!\cdot4!}\cdot$P(2 tail)$\cdot$P(4 heads) = $\frac{6!}{2!\cdot4!}\cdot(\frac13)^2\cdot(\frac23)^4$&lt;/p&gt;
-
-&lt;p&gt;then I add them up so : P(at least 2 tails) = $\frac{496}{729}$ it&#x27;s greater than a half so I have some doubts that it&#x27;s wrong&lt;/p&gt;
-
-&lt;p&gt;any elucidation would be appreciated. Thanks! &lt;/p&gt;
+&lt;p&gt;However, $G(z^{-1})$ means all the poles and zeros in $G(z)$ are inverted. So for example if $G(z)=\frac{z-z_0}{z-p_0}$ (with a pole $p_0$ and a zero $z_0$), then $G(z^{-1})=\frac{z^{-1}-z_0}{z^{-1}-p_0}$, whose poles and zeros are $\frac{1}{p_0}$ and $\frac{1}{z_0}$.&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (111, 2, 'Doubts about computation of the probability to get at least 2 tails in 6 throws of a rigged coin');
-INSERT INTO activity (post_id, user_id, action) VALUES (111, 31, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (111, 112);
+INSERT INTO answer (post_id, question_id, accepted) VALUES (126, 101, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (126, 30, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (126, 30, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (112, 13, '&lt;p&gt;Given, $n(A)=3$, $n(B)=6$. Find the maximum and minimum value of $n(A\cup B)$.&lt;/p&gt;
-
-&lt;p&gt;My attempt
-$n(A\cup B)$ will be maximum if $n(A\cap B)$ is minimum (i.e $n(A\cap B)=0$)&lt;/p&gt;
-
-&lt;p&gt;So, $n(A\cup B)= 3+6=9$.&lt;/p&gt;
-
-&lt;p&gt;Am i right? Please help further &lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (112, 2, 'If $A$ and $B$ are two sets containing 3 and 6 elements respectively');
-INSERT INTO activity (post_id, user_id, action) VALUES (112, 13, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (112, 84);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (113, 8, '&lt;p&gt;Let $1+2^n+4^n$ be a prime number.Why is there $k\in \mathbb{Z}$ such that $n=3^k$?&lt;/p&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (113, 2, 'Suppose $1+2^n+4^n$ be a prime number.Why is there $k\in \mathbb{Z}$ such that $n=3^k$?');
-INSERT INTO activity (post_id, user_id, action) VALUES (113, 8, 'Create');
-INSERT INTO tag (text) VALUES ('prime-numbers');
-INSERT INTO questiontag (question_id, tag_id) VALUES (113, 136);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (114, 23, '&lt;p&gt;Let $K$ be a field. Consider $P \subset K$ satisfying the following properties:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;ol&gt;
-  &lt;li&gt;&lt;p&gt;$x \in P$ and $y \in P$ imply $x+y \in P$ and $xy \in P$&lt;/p&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;p&gt;$x \in K$ imply $x^2 \in P$&lt;/p&gt;&lt;/li&gt;
-  &lt;li&gt;${-1} \notin P$&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;We call such $P$ a prepositive cone. We further call $P$ a positive cone if $K = P \cup {-P}$.&lt;/p&gt;
-
-&lt;p&gt;I have a few questions regarding the notion of a positive cone (I have not found references for this concept elsewhere other than Wikipedia). &lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Why the name positive &quot;cone&quot;? I understand why positive is there, but not the &quot;cone&quot; part.&lt;/li&gt;
-&lt;li&gt;If we keep Property $1$, delete Property $2$ and Property $3$, and add Property $2&#x27;$, which says that $x \in P$, or $x = 0$, or $x \notin P$ (only one case holds for any $x \in K$), and define a positive cone this way, what do we lose? Why not define positive cones this way instead?&lt;/li&gt;
-&lt;/ol&gt;
-');
-INSERT INTO question (post_id, topic_id, title) VALUES (114, 2, 'Why is a positive cone defined the way it is?');
-INSERT INTO activity (post_id, user_id, action) VALUES (114, 23, 'Create');
-INSERT INTO tag (text) VALUES ('field-theory');
-INSERT INTO questiontag (question_id, tag_id) VALUES (114, 137);
-INSERT INTO tag (text) VALUES ('ordered-fields');
-INSERT INTO questiontag (question_id, tag_id) VALUES (114, 138);
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (115, 26, '&lt;p&gt;The first line : (&#x27;canonical identification&#x27;) means we say that an element of $T_I(GL(n,\mathbb{R}))$ can be thought of as an element of $M_n(\mathbb{R})$ and vice versa by means of vectorization.&lt;br&gt;&lt;br&gt; &lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (127, 34, '&lt;p&gt;The first line : (&#x27;canonical identification&#x27;) means we say that an element of $T_I(GL(n,\mathbb{R}))$ can be thought of as an element of $M_n(\mathbb{R})$ and vice versa by means of vectorization.&lt;br&gt;&lt;br&gt; &lt;/p&gt;
 
 &lt;p&gt;Here an example for $n=2$ :&lt;/p&gt;
 
@@ -4079,11 +3868,11 @@ X_2Y_1  + X_4Y_2 -Y_2X_1  - Y_4X_2 &amp;amp; X_2Y_3  + X_4Y_4 -Y_2X_3  - Y_4X_4 
 
 &lt;p&gt;We see the first components (and also the other components) are equal, and the generalization to $n &amp;gt; 2$ is trivial.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (115, 88, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (115, 26, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (127, 106, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (127, 34, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (116, 10, '&lt;p&gt;You can get a linear system out of this differential equation by introducing an artificial time parameter and separating the equation into
+INSERT INTO postinstance (post_id, user_id, description) VALUES (128, 15, '&lt;p&gt;You can get a linear system out of this differential equation by introducing an artificial time parameter and separating the equation into
 \begin{align}
 \frac{dy(t)}{dt} &amp;amp;= 4y(t)−3x(t)\\
 \frac{dx(t)}{dt} &amp;amp;= 2x(t)−y(t)
@@ -4098,11 +3887,11 @@ $$
 $$
 where you now can proceed by computing eigenvalues and eigenvectors. In the end you have to invert the function $x(t)$ to get the solution of the original problem as $y(t(x))$.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (116, 90, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (116, 10, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (128, 108, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (128, 15, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (117, 13, '&lt;ol&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (129, 32, '&lt;ol&gt;
 &lt;li&gt;For an arbitrary point on the rod, let $p$ be its distance from the point of connection to the wire. Since the mass is uniformly distributed, then
 $$dm=\frac ml dp$$
 and the distance of that point from the reference of rotation can be obtained from the law of cosines:
@@ -4140,11 +3929,12 @@ $$\begin{align}\pmatrix{\dot\theta_1\\\dot\theta_2}&amp;amp;=\pmatrix{\omega_1\\
 and you can linearize the system by calculating the Jacobian, $\frac{\partial f}{\partial x}|_{x=0}$ which is a straightforward but tedious process.&lt;/li&gt;
 &lt;/ol&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (117, 94, 'True');
-INSERT INTO activity ( post_id, user_id, action) VALUES (117, 13, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (129, 111, 'True');
+INSERT INTO activity ( post_id, user_id, action) VALUES (129, 32, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (129, 32, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (118, 27, '&lt;p&gt;Your inner solution is in $τ$, it should read
+INSERT INTO postinstance (post_id, user_id, description) VALUES (130, 3, '&lt;p&gt;Your inner solution is in $τ$, it should read
 $$
 y^i(τ) = 1-e^{-τ}+ϵ\Bigl(1-e^{-τ}\bigl(1-τ-\frac{τ^2}2\bigr)\Bigr).
 $$
@@ -4152,27 +3942,29 @@ Then the matching rules tell you to equate $y^i(\infty)$ with $y^o(0)$ which giv
 
 &lt;p&gt;As $e^{-τ}τ^2\le 4e^{-τ/2}$ the difference to the constant will be lower than second order in $ϵ$ for $τ&amp;gt;-2\lnϵ$ or $t&amp;gt;2ϵ|\lnϵ|$.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (118, 95, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (118, 27, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (130, 112, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (130, 3, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (119, 48, '&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt;:&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (131, 22, '&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;p&gt;$$S-x^2S=(x^3+2x^5+3x^7+\cdots)-(x^5+2x^7+3x^9+\cdots)=x^3+x^5+x^7+\cdots$$&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (119, 93, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (119, 48, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (131, 110, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (131, 22, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (120, 46, '&lt;p&gt;&lt;em&gt;The point is continuity&lt;/em&gt;: In the homotopy-type-theoretic context, decidable equality for a type $X$ means that the type $\Pi_{x,y : X} (x=_Xy)\vee \neg(x=_Xy)$ is inhabited, so you&#x27;re requested to provide, in a continuous manner, either a path between $x$ and $y$ or a proof that such cannot exist. If you&#x27;re working with a connected type, i.e. $\Pi_{x,y:X} \|x=_Xy\|$ is inhabited, then this is equivalent to giving an inhabitant of $\Pi_{x,y : X} (x=_Xy)$, which however is the definition of $X$ being a $-1$-type / proposition.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (132, 27, '&lt;p&gt;&lt;em&gt;The point is continuity&lt;/em&gt;: In the homotopy-type-theoretic context, decidable equality for a type $X$ means that the type $\Pi_{x,y : X} (x=_Xy)\vee \neg(x=_Xy)$ is inhabited, so you&#x27;re requested to provide, in a continuous manner, either a path between $x$ and $y$ or a proof that such cannot exist. If you&#x27;re working with a connected type, i.e. $\Pi_{x,y:X} \|x=_Xy\|$ is inhabited, then this is equivalent to giving an inhabitant of $\Pi_{x,y : X} (x=_Xy)$, which however is the definition of $X$ being a $-1$-type / proposition.&lt;/p&gt;
 
 &lt;p&gt;If you follow the naive argument, you&#x27;ll also see the flaw: So in $X=B({\mathbb Z}/2{\mathbb Z})$, there&#x27;s only one object, say $\ast$, and for that object we&#x27;d like to pick say the constant path $c_\ast$ as a proof of $\ast=_X\ast$. But now, we move from $\ast$ to $\ast$ in the left argument of $=_X$ via the unique nontrivial loop, say $\gamma$, and continuity would then force us to assign $\gamma\cdot c_\ast=\gamma$ to $\ast$ instead - contradiction.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (120, 100, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (120, 46, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (132, 115, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (132, 27, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (132, 27, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (132, 27, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (121, 46, '&lt;p&gt;With recurrences of this type I like the representation in a matrix format. Note, that the binomial-coefficients in your recursive formula occur in the manner of the Pascal-matrix ( = &lt;strong&gt;&lt;em&gt;&quot;P&quot;&lt;/em&gt;&lt;/strong&gt;).         &lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (133, 30, '&lt;p&gt;With recurrences of this type I like the representation in a matrix format. Note, that the binomial-coefficients in your recursive formula occur in the manner of the Pascal-matrix ( = &lt;strong&gt;&lt;em&gt;&quot;P&quot;&lt;/em&gt;&lt;/strong&gt;).         &lt;/p&gt;
 
 &lt;p&gt;The following is the multiplication-scheme for the Bernoulli-numbers:&lt;/p&gt;
 
@@ -4204,11 +3996,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (121, 46, '&lt;p
 
 &lt;p&gt;&lt;em&gt;(P.s.: you might also be interested in &lt;a href=&quot;http://go.helms-net.de/math/pascal/bernoulli_en.pdf&quot; rel=&quot;nofollow noreferrer&quot;&gt;this small treatize&lt;/a&gt; on exactly that subject / method)&lt;/em&gt;&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (121, 101, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (121, 46, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (133, 116, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (133, 30, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (133, 30, 'Upvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (122, 23, '&lt;p&gt;By definition $\sum_{n=0}^\infty nx^{2n+1}=\lim_{N\to\infty} S_N$, where $S_N=\sum_{n=0}^N nx^{2n+1}$. &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3, 2);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (134, 39, '&lt;p&gt;By definition $\sum_{n=0}^\infty nx^{2n+1}=\lim_{N\to\infty} S_N$, where $S_N=\sum_{n=0}^N nx^{2n+1}$. &lt;/p&gt;
 
 &lt;p&gt;If $|x|&amp;gt;1$ the terms do not tend to zero and the sum does not converge.&lt;/p&gt;
 
@@ -4218,11 +4011,16 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (122, 23, '&lt;p
 &lt;p&gt;So we have $$S_N=x\frac{1-x^{2N+2}}{(1-x^2)^2}-\frac{Nx^{2N+3}}{1-x^2}.$$
 The limit of this as $N\to\infty$ is $\frac x{(1-x^2)^2}$.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (122, 93, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (122, 23, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (134, 110, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (134, 39, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (134, 39, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (134, 39, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (134, 39, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (134, 39, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (134, 39, 'Downvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (123, 17, '&lt;p&gt;A hand-made exploration here would look as follows:
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (135, 21, '&lt;p&gt;A hand-made exploration here would look as follows:
 We can always write (I will use $X$ and $Y$)&lt;/p&gt;
 
 &lt;p&gt;$$X = E(X\mid Y) + e_{X|Y} \implies E(X\mid Y) = X-e_{X|Y}$$ 
@@ -4253,52 +4051,28 @@ For a non-positive random variable to have expected value zero, all probability 
 
 &lt;p&gt;Then &lt;a href=&quot;http://math.stackexchange.com/q/666843/87400&quot;&gt;&lt;strong&gt;this post&lt;/strong&gt;&lt;/a&gt; contains the proof for the case of equality.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (123, 103, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (123, 17, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (135, 118, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (135, 21, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (124, 36, '&lt;p&gt;It has a very well known name actually: $T$ acts via automorphisms on $S$.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (136, 32, '&lt;p&gt;It has a very well known name actually: $T$ acts via automorphisms on $S$.&lt;/p&gt;
 
 &lt;p&gt;As you can see by requiring your third condition (first two conditions for it to be action) every element of $T$ define an isomorphism from $S$ to $S$ which means you have an homomorphism from $T$ to $Aut(S)$.This is nothing but the essential thing to define semidirect product of $T$ and $S$. (of course, it is used in many places, many related results exist) &lt;/p&gt;
 
 &lt;p&gt;There is no need to require $S$ is abelian, we can define it in a general way.($S$ &#x27;s being abelian has no actual advantage to define the structure) To reach more information please read the chapter 3 of &quot;Finite Group Theory by I.Martin Isaacs&quot; or make research about &quot;Split Extensions&quot;.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (124, 105, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (124, 36, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (136, 120, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (136, 32, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (136, 32, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (125, 28, '&lt;p&gt;It follows from definition of bijection. Every element of $A$ has a unique image in $B$ as it is injective well defined function and every element of $B$ is image of some element of $A$ as function is surjective. This forces $|A|=|B|$.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (137, 40, '&lt;p&gt;It follows from definition of bijection. Every element of $A$ has a unique image in $B$ as it is injective well defined function and every element of $B$ is image of some element of $A$ as function is surjective. This forces $|A|=|B|$.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (125, 102, 'True');
-INSERT INTO activity ( post_id, user_id, action) VALUES (125, 28, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (137, 117, 'True');
+INSERT INTO activity ( post_id, user_id, action) VALUES (137, 40, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (126, 34, '&lt;p&gt;Consider a box $$B=[a_1,b_1]\times[a_2,b_2]\times[a_3,b_3]\ ,$$
-and assume that the &quot;origin&quot; $p=(p_1,p_2,p_3)$ is in the interior of $B$. In order to compute the volume integral $\int_B f(x)\&amp;gt;{\rm d}(x)$ you can go ahead as planned and compute six integrals over pyramids $P_k$ having a face of $B$ as base.&lt;/p&gt;
-
-&lt;p&gt;Consider as an example the integral corresponding to the face $x_1=b_1$ of $B$. This face is parametrized by $$(u,v)\in[a_2,b_2]\times[a_3,b_3]=:F\ .$$
-A parametric representation of the corresponding pyramid $P$ is then given by
-$$x=(1-t)p+t\bigl(b_1, u,v\bigr)\qquad\bigl(0\leq t\leq 1,\ (u,v)\in F\bigr)\ .\tag{1}$$
-The Jacobian determinant of $(1)$ computes to $J=t^2(b_1-p_1)$. We therefore obtain
-$$\int_P f(x)\&amp;gt;{\rm d}(x)=(b_1-p_1)\int_F\&amp;gt;\int_0^1 t^2\&amp;gt;f\bigl((1-t)p+t(b_1,u,v)\bigr)\&amp;gt;dt\&amp;gt;{\rm d}(u,v)\ .$$&lt;/p&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (126, 109, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (126, 34, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (127, 29, '&lt;p&gt;It is conventional to do so because it is reduced to its simplest form, yet it is still exact. However $\sqrt18$ and $3\sqrt{2}$ are both correct representations of the same number, nobody can say one is correct and one is not correct.&lt;/p&gt;
-
-&lt;p&gt;But, consider the similarity with fractions. The following is exact and valid but it can be simplified further:&lt;/p&gt;
-
-&lt;p&gt;$$\frac{2}{10}$$&lt;/p&gt;
-
-&lt;p&gt;Most people, I think, would simplify this.&lt;/p&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (127, 110, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (127, 29, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (128, 1, '&lt;p&gt;With the substitutions you insisted, here are the following solutions:&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (138, 11, '&lt;p&gt;With the substitutions you insisted, here are the following solutions:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Solution 1:&lt;/strong&gt; Let $u=\cot 2\theta$. Then $du=-2\csc^2 2\theta d\theta$.
 Thus,$$\begin{align}
@@ -4315,68 +4089,11 @@ $$\begin{align}
 &amp;amp;=-\frac{1}{2}\frac{\csc^22\theta}{2}+C\\
 \end{align}$$&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (128, 97, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (128, 1, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (138, 114, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (138, 11, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (129, 5, '&lt;p&gt;You&#x27;re right.
-$$
-n(A \cup B) = n(A) + n(B) - n(A \cap B)
-$$
-Since $n(A)$ and $n(B)$ are fixed, $n(A \cup B)$ is maximum when $n(A \cap B)$ is minimum.&lt;br/&gt;
-$n(A \cap B)$ is always positive and is equal to zero when $A$ et $B$ are disjoints.&lt;/p&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (129, 112, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (129, 5, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (130, 30, '&lt;p&gt;&lt;strong&gt;1) Why is it valid?&lt;/strong&gt;
-$$\sqrt{18}=\sqrt{9\cdot2}=\sqrt9\cdot\sqrt2=3\sqrt2$$&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2) Why would we choose to do it?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;For exampe,
-$$\sqrt{18}-\sqrt{32}+\sqrt{72}=3\sqrt{2}-4\sqrt{2}+6\sqrt{2}=5\sqrt{2}$$&lt;/p&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (130, 110, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (130, 30, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (131, 17, '&lt;p&gt;When dealing with irrational numbers like $\sqrt2$ it is often good not to write their non-terminating and non-repeating approximated value.&lt;/p&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (131, 110, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (131, 17, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4, 2);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (132, 37, '&lt;p&gt;The calculation as far as I see it is correct, but you calculated&lt;/p&gt;
-
-&lt;p&gt;P(not more than 2 tails) = P(no tail) + P(1 tail) + P(2 tails)&lt;/p&gt;
-
-&lt;p&gt;but you wanted&lt;/p&gt;
-
-&lt;p&gt;P(at least 2 tails) = 1 - (P(no tail) + P(1 tail))&lt;/p&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (132, 111, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (132, 37, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (133, 37, '&lt;p&gt;It is because it is convenient to do so for calculations. For instance when dealing with expressions such as $\sqrt{18}-\sqrt{2}$, writing $\sqrt{18}$ as $3\sqrt{2}$ allows us to simplify the expression into $2\sqrt{2}$&lt;/p&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (133, 110, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (133, 37, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (134, 9, '&lt;p&gt;We have $n(A \cup B)=n(A)+n(B)-n(A \cap B)=9-n(A \cap B)$.&lt;/p&gt;
-
-&lt;p&gt;Furthermore, since $A \cap B \subseteq A$, the follwing values for $n(A \cap B)$ are possible:&lt;/p&gt;
-
-&lt;p&gt;$0,1,2$ and $3$.&lt;/p&gt;
-');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (134, 112, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (134, 9, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (135, 9, '&lt;p&gt;Your proof is rather unclear. What do you mean by $n(A)$ for example.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (139, 30, '&lt;p&gt;Your proof is rather unclear. What do you mean by $n(A)$ for example.&lt;/p&gt;
 
 &lt;p&gt;The proof is rather straight forward however by showing equivalence between $x\in B$ and $x\in C$. You do this by separating the cases where $x\in A$ and $x\notin A$.&lt;/p&gt;
 
@@ -4406,11 +4123,14 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (135, 9, '&lt;p&
 = ((U\setminus A) \cap B) \cup (A \cap B)
 = ((U\setminus A) \cap C) \cup (A \cap C) = C$$ &lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (135, 85, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (135, 9, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (139, 103, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (139, 30, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (139, 30, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (139, 30, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (139, 30, 'Downvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (136, 41, '&lt;p&gt;By assumptions, $\color\orange{A\cup B=A\cup C}$ and $\color\red{A\cap B=A\cap C}$. Since $B\subset (A\cup B)$ and $C\subset(A\cup C)$, we get
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (140, 10, '&lt;p&gt;By assumptions, $\color\orange{A\cup B=A\cup C}$ and $\color\red{A\cap B=A\cap C}$. Since $B\subset (A\cup B)$ and $C\subset(A\cup C)$, we get
 $B=B\cap(A\cup B)$ and $C=C\cap(A\cup C)$, respectively. Hence,
 $$\begin{align}
 B&amp;amp;=B\cap (\color\orange{A\cup B})\\
@@ -4422,17 +4142,21 @@ B&amp;amp;=B\cap (\color\orange{A\cup B})\\
 &amp;amp;=C.
 \end{align}$$&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (136, 85, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (136, 41, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (140, 103, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (140, 10, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (140, 10, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (140, 10, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (140, 10, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (137, 14, '&lt;p&gt;Hint: Suppose that $B\neq C$, and give a $x$ in both equalities. You will find a contradiction, analize the cases.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (141, 49, '&lt;p&gt;Hint: Suppose that $B\neq C$, and give a $x$ in both equalities. You will find a contradiction, analize the cases.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (137, 85, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (137, 14, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (141, 103, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (141, 49, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (141, 49, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (138, 25, '&lt;p&gt;First we show $B \subseteq C$.
+INSERT INTO postinstance (post_id, user_id, description) VALUES (142, 18, '&lt;p&gt;First we show $B \subseteq C$.
 &lt;p&gt;
 It suffices to show $x \in B \implies x \in C$.
 &lt;p&gt;
@@ -4456,153 +4180,246 @@ By analogous reasoning (or by symmetry), we get $C \subseteq B$.
 &lt;p&gt;
 Therefore $B=C$.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (138, 85, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (138, 25, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (142, 103, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (142, 18, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (142, 18, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (139, 47, '&lt;p&gt;Your proof is not correct, as you only proved that both $B$ and $C$ have the same &lt;em&gt;number of&lt;/em&gt; elements, not that they have the same elements. To prove that $B=C$ you have to prove that $x\in B$ if and only if $x\in C$.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (143, 14, '&lt;p&gt;Your proof is not correct, as you only proved that both $B$ and $C$ have the same &lt;em&gt;number of&lt;/em&gt; elements, not that they have the same elements. To prove that $B=C$ you have to prove that $x\in B$ if and only if $x\in C$.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (139, 85, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (139, 47, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (143, 103, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (143, 14, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (143, 14, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (143, 14, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (140, 20, '&lt;p&gt;Write: $B=((A \cup B) \setminus A) \cup (A \cap B)$ and similarly for $C$.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (144, 3, '&lt;p&gt;Write: $B=((A \cup B) \setminus A) \cup (A \cap B)$ and similarly for $C$.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (140, 85, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (140, 20, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (144, 103, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (144, 3, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (141, 9, '&lt;p&gt;So far, I can see the time scale change to the new variable $\tau$ should yield the following differential equation instead:&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (145, 36, '&lt;p&gt;So far, I can see the time scale change to the new variable $\tau$ should yield the following differential equation instead:&lt;/p&gt;
 
 &lt;p&gt;$\epsilon^2y&#x27;&#x27; + (1 + \epsilon \tau)y&#x27; = 0\quad y(0)=0\quad y&#x27;(0) = 1\quad$&lt;/p&gt;
 
 &lt;p&gt;I have not check if there are additional errors though.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (141, 95, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (141, 9, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (145, 112, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (145, 36, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (142, 30, '&lt;p&gt;The sequence that you&#x27;ve stated is NOT, by the definitions I know, considered an increasing sequence of events.&lt;/p&gt;
-
-&lt;p&gt;A sequence of events $(A_n)_{n\in\mathbb{N}}$is &lt;em&gt;increasing&lt;/em&gt; if, roughly, the event $A_n$ implies EVERY event $A_N$ for $N\geq n$.&lt;/p&gt;
-
-&lt;p&gt;So, if $A_n$ represents the event that you get AT LEAST one heads in the first $n$ coin flips, then $(A_n)$ is an increasing sequence: if you got at least one heads in the first $n$, then you certainly got at least one heads in the first $n+1$, $n+2$, and so on.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (146, 13, '&lt;p&gt;Regression is defined as E[Y | X] (the expectation of Y given X).  A subset of these types of models where Y is binary or categorical (including logistic regression and multinomial regression along with many machine learning algorithms that essential have the same target [such as classification trees]) are useful for classification.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (142, 106, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (142, 30, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (146, 92, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (146, 13, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (146, 13, 'Upvote');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (147, 4, '&lt;p&gt;Regression:  given a set of data,find the best relationship that represent the set of data.
+Classification:  given a known relationship, identify the class that the data belongs to.&lt;/p&gt;
+
+&lt;p&gt;We can see that regression and classification starts from opposing ends:  to find a pattern, or to find the pattern that it belong to.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (147, 92, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (147, 4, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (147, 4, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (147, 4, 'Upvote');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (148, 26, '&lt;p&gt;Regression and classification are both related to prediction, where regression predicts a value from a continuous set, whereas classification predicts the &#x27;belonging&#x27; to the class.&lt;/p&gt;
+
+&lt;p&gt;eg : price of a house depending on the &#x27;size&#x27; (sq. feet or whatever unit) and say &#x27;location&#x27; of the house, can be some &#x27;numerical value&#x27; (which can be continuous) : this relates to regression.&lt;/p&gt;
+
+&lt;p&gt;Similarly the prediction of price can be in words, viz., &#x27;very costly&#x27;, &#x27;costly&#x27;, &#x27;affordable&#x27;, &#x27;cheap&#x27;, and &#x27;very cheap&#x27; : this relates to classification.&lt;/p&gt;
+
+&lt;p&gt;Each class may correspond to some range of values.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (148, 92, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (148, 26, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (148, 26, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (148, 26, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (148, 26, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (148, 26, 'Downvote');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5, 3);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (149, 11, '&lt;p&gt;Regression and classification can work on some common problems where the response variable is either continuous or ordinal(?).&lt;/p&gt;
+
+&lt;p&gt;But the result is what would make us to choose between the two. For example simple, hard classifiers simply tries to put the example in specific class(eg SVM).(for eg, whether the project is profitable or not , and doesn&#x27;t account for how much). Where as regression can give exact figure of profit value as some continuous value.&lt;/p&gt;
+
+&lt;p&gt;however in case of classification we can consider probabilistic models (eg logistic regression) where each class or label has some probability which can be weighted by the cost associated with each label or class and thus give us with final value on basis of which we can decide to put it some label or not.(for eg label A has probability of 0.3 but the payoff is huge (1000) however label B has probability 0.7 but the payoff is very low 10.So for maximizing the profit we might label the example as label A instead of B.&lt;/p&gt;
+
+&lt;p&gt;Note: I am still not an expert, perhaps someone would rectify if I am wrong in some part.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (149, 92, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (149, 11, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (149, 11, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (149, 11, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (149, 11, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (149, 11, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (149, 11, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (149, 11, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (149, 11, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (149, 11, 'Downvote');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 8, 5);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (150, 24, '&lt;p&gt;f: x-&gt; y&lt;/p&gt;
+
+&lt;p&gt;here,&lt;/p&gt;
+
+&lt;p&gt;if y is discrete/categorical variable, then classification problem&lt;/p&gt;
+
+&lt;p&gt;if y is real number/continuous, then regression problem.&lt;/p&gt;
+');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (150, 92, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (150, 24, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (150, 24, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (150, 24, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (150, 24, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (150, 24, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (150, 24, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (150, 24, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (150, 24, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (150, 24, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (150, 24, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (150, 24, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (150, 24, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (150, 24, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (150, 24, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (143, 17, 'The complete and rigorous development is  made by @especiallylime.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (143, 119);
-INSERT INTO activity (post_id, user_id, action) VALUES (143, 17, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (151, 42, 'As to software: yes I use Pari/GP with a set of user-defined matrix-procedures, and a selfmade/homebrewn GUI which supports easy creation of outputs like that. (works in windows, but so far only with Pari/GP 2.2.11) If you like you can download from my homepage/software');
+INSERT INTO answercomment (post_id, answer_id) VALUES (151, 133);
+INSERT INTO activity (post_id, user_id, action) VALUES (151, 42, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (144, 47, 'Also, I would like to know how did you manage to write this answer in this particular format? Did you use some software?');
-INSERT INTO answercomment (post_id, answer_id) VALUES (144, 121);
-INSERT INTO activity (post_id, user_id, action) VALUES (144, 47, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (152, 17, '@PragyadityaDas : the sum-part in your formula (2) has the dot-product of the row of the Pascalmatrix (the sequence of $ \binom m0, \binom m1 ,...$) with the Bernoulli-numbers $b_k$ and because in (2) this is meant for any $m$ one can stack all that sum-terms below each other as the m&amp;#39;th row of a matrix-multiplication. But &amp;lt;upps&amp;gt; I see I have to correct my formula to relate it correctly to your (2). I missed the $ {1 \over m+1}$ - term.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (152, 133);
+INSERT INTO activity (post_id, user_id, action) VALUES (152, 17, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (145, 8, 'Can you start from the point where I left at &lt;code&gt;(2)&lt;/code&gt;? Your answer explains Bernoulli Number, but not how the particular writer got the result, as stated in my question.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (145, 121);
-INSERT INTO activity (post_id, user_id, action) VALUES (145, 8, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (146, 44, '@Shauna Goodman Fitzpatrick Just goggle about trigonometric integrals and you will a lot of examples.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (146, 128);
-INSERT INTO activity (post_id, user_id, action) VALUES (146, 44, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (147, 6, 'Do you know of any good sources I could learn this about? I don&amp;#39;t understand where most of these lines are coming from');
-INSERT INTO answercomment (post_id, answer_id) VALUES (147, 128);
-INSERT INTO activity (post_id, user_id, action) VALUES (147, 6, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (148, 19, 'On second thoughts I discarded my answer, as the question explicitly asks for these changes of variable.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (148, 128);
-INSERT INTO activity (post_id, user_id, action) VALUES (148, 19, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (149, 29, '&lt;a href=&quot;http://english.stackexchange.com/questions/38260/maximum-vs-maximal&quot;&gt;Mh&lt;/a&gt;, alright I should use &lt;i&gt;maximum&lt;/i&gt; instead of &lt;i&gt;maximal&lt;/i&gt;, thanks!');
-INSERT INTO answercomment (post_id, answer_id) VALUES (149, 129);
-INSERT INTO activity (post_id, user_id, action) VALUES (149, 29, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (150, 28, 'Can you please explain where you got x = 2θ?');
-INSERT INTO answercomment (post_id, answer_id) VALUES (150, 128);
-INSERT INTO activity (post_id, user_id, action) VALUES (150, 28, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (151, 37, 'I need to use the two substitutions given though');
-INSERT INTO answercomment (post_id, answer_id) VALUES (151, 128);
-INSERT INTO activity (post_id, user_id, action) VALUES (151, 37, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (152, 46, 'What&amp;#39;s different between &lt;b&gt;maximal&lt;/b&gt; and &lt;b&gt;maximum&lt;/b&gt; ?');
-INSERT INTO answercomment (post_id, answer_id) VALUES (152, 129);
-INSERT INTO activity (post_id, user_id, action) VALUES (152, 46, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (153, 37, 'You&amp;#39;re right! Sorry, my bad.  I can&amp;#39;t believe that I got roles of t and tau mixed up.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (153, 141);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (153, 37, 'The complete and rigorous development is  made by @especiallylime.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (153, 131);
 INSERT INTO activity (post_id, user_id, action) VALUES (153, 37, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (154, 16, '@Leonhard Euler Notice that $(A \cup B) \setminus A$ gives the elements of $B$ excluding the common elements between $B$ and $A$ i.e., equivalently this is $B \setminus A$. $B$ is written such a way to use the given hypotheses efficiently.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (154, 140);
-INSERT INTO activity (post_id, user_id, action) VALUES (154, 16, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (154, 41, 'Also, I would like to know how did you manage to write this answer in this particular format? Did you use some software?');
+INSERT INTO answercomment (post_id, answer_id) VALUES (154, 133);
+INSERT INTO activity (post_id, user_id, action) VALUES (154, 41, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (155, 8, '@Leonhard Euler Draw in a  Venn Diagram and you will see it easily. Anyway, the comment of @ stud_iisc is a good start to work with.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (155, 136);
-INSERT INTO activity (post_id, user_id, action) VALUES (155, 8, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (156, 2, '@Leonhard Euler Notice that $B \subseteq (A \cup B)$ and thus intersecting this with $B$ gives back $B$.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (156, 136);
-INSERT INTO activity (post_id, user_id, action) VALUES (156, 2, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (157, 37, '&lt;a href=&quot;http://math.stackexchange.com/users/44376/%ce%98%ce%a3%ce%a6gensan&quot;&gt;math.stackexchange.com/users/44376/%ce%98%ce%a3%ce%a6gensan&lt;/a&gt;, from which relation did you get, $$B=B\cap (A\cup B)$$?');
-INSERT INTO answercomment (post_id, answer_id) VALUES (157, 136);
-INSERT INTO activity (post_id, user_id, action) VALUES (157, 37, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (158, 32, 'How did you write that $B=..$?');
-INSERT INTO answercomment (post_id, answer_id) VALUES (158, 140);
-INSERT INTO activity (post_id, user_id, action) VALUES (158, 32, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (155, 28, 'Can you start from the point where I left at &lt;code&gt;(2)&lt;/code&gt;? Your answer explains Bernoulli Number, but not how the particular writer got the result, as stated in my question.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (155, 133);
+INSERT INTO activity (post_id, user_id, action) VALUES (155, 28, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (159, 17, 'Is it not the case that $\frac{d^2y}{dt^2}=\frac1{\epsilon^2}\frac{d^2y}{d\tau^2}$ and $\frac{dy}{dt}=\frac1{\epsilon}\frac{dy}{d\tau}$, just like in this answer &lt;a href=&quot;http://math.stackexchange.com/a/1238312/285185&quot;&gt;math.stackexchange.com/a/1238312/285185&lt;/a&gt; only using $t=\epsilon\tau$ instead of $x=\kappa t$? Over there it says $\frac{d^2y}{dx^2} = \frac{1}{\kappa^2} \frac{d^2y}{dt^2}$ Is that answer wrong?');
-INSERT INTO answercomment (post_id, answer_id) VALUES (159, 141);
-INSERT INTO activity (post_id, user_id, action) VALUES (159, 17, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (156, 6, '$G(z) \mapsto G(z^{-1})$ really means $g(n) \mapsto g(-n)$ and in general, of course the time-reversal doesn&amp;#39;t give the inverse system');
+INSERT INTO answercomment (post_id, answer_id) VALUES (156, 126);
+INSERT INTO activity (post_id, user_id, action) VALUES (156, 6, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (156, 6, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (160, 44, 'Additional epsilon(s) should be found upstairs not downstairs as you divide by epsilon, you should multiply by an epsilon for each derivative wrt new variable tau! :)');
-INSERT INTO answercomment (post_id, answer_id) VALUES (160, 141);
-INSERT INTO activity (post_id, user_id, action) VALUES (160, 44, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (157, 39, '@Shauna Goodman Fitzpatrick Just goggle about trigonometric integrals and you will a lot of examples.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (157, 138);
+INSERT INTO activity (post_id, user_id, action) VALUES (157, 39, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (158, 9, 'Do you know of any good sources I could learn this about? I don&amp;#39;t understand where most of these lines are coming from');
+INSERT INTO answercomment (post_id, answer_id) VALUES (158, 138);
+INSERT INTO activity (post_id, user_id, action) VALUES (158, 9, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (159, 46, 'On second thoughts I discarded my answer, as the question explicitly asks for these changes of variable.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (159, 138);
+INSERT INTO activity (post_id, user_id, action) VALUES (159, 46, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (160, 49, 'Can you please explain where you got x = 2θ?');
+INSERT INTO answercomment (post_id, answer_id) VALUES (160, 138);
+INSERT INTO activity (post_id, user_id, action) VALUES (160, 49, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (161, 20, 'I need to use the two substitutions given though');
+INSERT INTO answercomment (post_id, answer_id) VALUES (161, 138);
+INSERT INTO activity (post_id, user_id, action) VALUES (161, 20, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (162, 16, 'You&amp;#39;re right! Sorry, my bad.  I can&amp;#39;t believe that I got roles of t and tau mixed up.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (162, 145);
+INSERT INTO activity (post_id, user_id, action) VALUES (162, 16, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (163, 46, '@Leonhard Euler Notice that $(A \cup B) \setminus A$ gives the elements of $B$ excluding the common elements between $B$ and $A$ i.e., equivalently this is $B \setminus A$. $B$ is written such a way to use the given hypotheses efficiently.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (163, 144);
+INSERT INTO activity (post_id, user_id, action) VALUES (163, 46, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (164, 20, '@Leonhard Euler Draw in a  Venn Diagram and you will see it easily. Anyway, the comment of @ stud_iisc is a good start to work with.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (164, 140);
+INSERT INTO activity (post_id, user_id, action) VALUES (164, 20, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (165, 27, '@Leonhard Euler Notice that $B \subseteq (A \cup B)$ and thus intersecting this with $B$ gives back $B$.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (165, 140);
+INSERT INTO activity (post_id, user_id, action) VALUES (165, 27, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (166, 35, '&lt;a href=&quot;http://math.stackexchange.com/users/44376/%ce%98%ce%a3%ce%a6gensan&quot;&gt;math.stackexchange.com/users/44376/%ce%98%ce%a3%ce%a6gensan&lt;/a&gt;, from which relation did you get, $$B=B\cap (A\cup B)$$?');
+INSERT INTO answercomment (post_id, answer_id) VALUES (166, 140);
+INSERT INTO activity (post_id, user_id, action) VALUES (166, 35, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (167, 8, 'How did you write that $B=..$?');
+INSERT INTO answercomment (post_id, answer_id) VALUES (167, 144);
+INSERT INTO activity (post_id, user_id, action) VALUES (167, 8, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (161, 21, 'I thought the y terms would get an extra $\frac1\epsilon$ per derivative. So it&amp;#39;d be $\epsilon \frac{y&amp;#39;&amp;#39;}{\epsilon^2} + (1 + \epsilon \tau)\frac{y&amp;#39;}{\epsilon} = 0$ and then just multiply through by $\epsilon$ to clear the denominators. Why do you think there is an extra epsilon in the first term but not the second? Can you &lt;a href=&quot;http://math.stackexchange.com/posts/2207595/edit&quot;&gt;edit&lt;/a&gt; to show how you know this is the correct new equation?');
-INSERT INTO answercomment (post_id, answer_id) VALUES (161, 141);
-INSERT INTO activity (post_id, user_id, action) VALUES (161, 21, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (168, 10, 'Is it not the case that $\frac{d^2y}{dt^2}=\frac1{\epsilon^2}\frac{d^2y}{d\tau^2}$ and $\frac{dy}{dt}=\frac1{\epsilon}\frac{dy}{d\tau}$, just like in this answer &lt;a href=&quot;http://math.stackexchange.com/a/1238312/285185&quot;&gt;math.stackexchange.com/a/1238312/285185&lt;/a&gt; only using $t=\epsilon\tau$ instead of $x=\kappa t$? Over there it says $\frac{d^2y}{dx^2} = \frac{1}{\kappa^2} \frac{d^2y}{dt^2}$ Is that answer wrong?');
+INSERT INTO answercomment (post_id, answer_id) VALUES (168, 145);
+INSERT INTO activity (post_id, user_id, action) VALUES (168, 10, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (168, 10, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (162, 47, 'edited and thanks!');
-INSERT INTO answercomment (post_id, answer_id) VALUES (162, 117);
-INSERT INTO activity (post_id, user_id, action) VALUES (162, 47, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (169, 36, 'Additional epsilon(s) should be found upstairs not downstairs as you divide by epsilon, you should multiply by an epsilon for each derivative wrt new variable tau! :)');
+INSERT INTO answercomment (post_id, answer_id) VALUES (169, 145);
+INSERT INTO activity (post_id, user_id, action) VALUES (169, 36, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (163, 11, '@Gibberish I am busy right now. Will do that in a few hours. In the meantime, please update your question');
-INSERT INTO answercomment (post_id, answer_id) VALUES (163, 117);
-INSERT INTO activity (post_id, user_id, action) VALUES (163, 11, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (170, 5, 'I thought the y terms would get an extra $\frac1\epsilon$ per derivative. So it&amp;#39;d be $\epsilon \frac{y&amp;#39;&amp;#39;}{\epsilon^2} + (1 + \epsilon \tau)\frac{y&amp;#39;}{\epsilon} = 0$ and then just multiply through by $\epsilon$ to clear the denominators. Why do you think there is an extra epsilon in the first term but not the second? Can you &lt;a href=&quot;http://math.stackexchange.com/posts/2207595/edit&quot;&gt;edit&lt;/a&gt; to show how you know this is the correct new equation?');
+INSERT INTO answercomment (post_id, answer_id) VALUES (170, 145);
+INSERT INTO activity (post_id, user_id, action) VALUES (170, 5, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (170, 5, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (164, 34, 'for the lineariesed equations of motion i calculated $$2\theta_1 \dot \dot+\theta_2 \dot \dot=\frac{-2g}{l}\theta_1$$ and $$\theta_1 \dot \dot +\frac{2}{3}\theta_2\dot\dot=\frac{-2g}{l}\theta_2$$ These seem to give numerically unpleasant normal mode frequencies though, so I&amp;#39;m not entirely sure that they&amp;#39;re right. can you confirm or update your solution to this part?');
-INSERT INTO answercomment (post_id, answer_id) VALUES (164, 117);
-INSERT INTO activity (post_id, user_id, action) VALUES (164, 34, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (171, 15, 'edited and thanks!');
+INSERT INTO answercomment (post_id, answer_id) VALUES (171, 129);
+INSERT INTO activity (post_id, user_id, action) VALUES (171, 15, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (172, 39, '@Gibberish I am busy right now. Will do that in a few hours. In the meantime, please update your question');
+INSERT INTO answercomment (post_id, answer_id) VALUES (172, 129);
+INSERT INTO activity (post_id, user_id, action) VALUES (172, 39, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (172, 39, 'Upvote');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (173, 34, 'for the lineariesed equations of motion i calculated $$2\theta_1 \dot \dot+\theta_2 \dot \dot=\frac{-2g}{l}\theta_1$$ and $$\theta_1 \dot \dot +\frac{2}{3}\theta_2\dot\dot=\frac{-2g}{l}\theta_2$$ These seem to give numerically unpleasant normal mode frequencies though, so I&amp;#39;m not entirely sure that they&amp;#39;re right. can you confirm or update your solution to this part?');
+INSERT INTO answercomment (post_id, answer_id) VALUES (173, 129);
+INSERT INTO activity (post_id, user_id, action) VALUES (173, 34, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (174, 27, 'i think best answer is this one');
+INSERT INTO answercomment (post_id, answer_id) VALUES (174, 150);
+INSERT INTO activity (post_id, user_id, action) VALUES (174, 27, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (165, 30, '&lt;p&gt;How exactly do you explain dynamic pressure? If someone asked me what the ASI reads, I would say it reads the dynamic pressure, which is the&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (175, 43, 'This seems to simply reiterate answers from long ago. If you have something new to add, please clarify your answer.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (175, 150);
+INSERT INTO activity (post_id, user_id, action) VALUES (175, 43, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (175, 43, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (175, 43, 'Upvote');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (176, 8, '&lt;p&gt;How exactly do you explain dynamic pressure? If someone asked me what the ASI reads, I would say it reads the dynamic pressure, which is the&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;ram air pressure&lt;/strong&gt; (total pressure) - &lt;strong&gt;static pressure&lt;/strong&gt; = &lt;strong&gt;dynamic pressure&lt;/strong&gt;&lt;/p&gt;
 
@@ -4610,34 +4427,36 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (165, 30, '&lt;p
 
 &lt;p&gt;As for static pressure, how would you explain that? Would you say static pressure is the pressure the aircraft feels whether it is in motion or not?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (165, 3, 'How can dynamic and static pressure be explained?');
-INSERT INTO activity (post_id, user_id, action) VALUES (165, 30, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (176, 3, 'How can dynamic and static pressure be explained?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (176, 176, 8, 'Create');
 INSERT INTO tag (text) VALUES ('aerodynamics');
-INSERT INTO questiontag (question_id, tag_id) VALUES (165, 139);
+INSERT INTO questiontag (question_id, tag_id) VALUES (176, 134);
+INSERT INTO activity (post_id, user_id, activity) VALUES (176, 8, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (176, 8, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (166, 42, '&lt;p&gt;ADS-B have two position squitters, airborne and surface. As far as i know, airborne position is broadcasted on air and surface position broadcasted on ground.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (177, 36, '&lt;p&gt;ADS-B have two position squitters, airborne and surface. As far as i know, airborne position is broadcasted on air and surface position broadcasted on ground.&lt;/p&gt;
 
 &lt;p&gt;There is a &quot;Squitter Capability Subfield&quot; in BDS Register 10, which needs to be set if both airborne and surface position registers are updated within last 10 seconds. This kinda implies both registers shall be updated all the times.&lt;/p&gt;
 
 &lt;p&gt;Is providing data for both squitters necessary regardless of aircraft&#x27;s vertical status? Can we select one of these squitters and provide data only for it?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (166, 3, 'Providing data for Airborne Squitter on the ground(and vice versa)?');
-INSERT INTO activity (post_id, user_id, action) VALUES (166, 42, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (177, 3, 'Providing data for Airborne Squitter on the ground(and vice versa)?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (177, 177, 36, 'Create');
 INSERT INTO tag (text) VALUES ('ads-b');
-INSERT INTO questiontag (question_id, tag_id) VALUES (166, 140);
+INSERT INTO questiontag (question_id, tag_id) VALUES (177, 135);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (167, 31, '&lt;p&gt;What are the aerodynamic advantages of an m shaped wing? Why aren&#x27;t they used in aircrafts?&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (178, 21, '&lt;p&gt;What are the aerodynamic advantages of an m shaped wing? Why aren&#x27;t they used in aircrafts?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (167, 3, 'What are the aerodynamic advantages of an m-shaped wing?');
-INSERT INTO activity (post_id, user_id, action) VALUES (167, 31, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (178, 3, 'What are the aerodynamic advantages of an m-shaped wing?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (178, 178, 21, 'Create');
 INSERT INTO tag (text) VALUES ('aircraft-design');
-INSERT INTO questiontag (question_id, tag_id) VALUES (167, 141);
-INSERT INTO questiontag (question_id, tag_id) VALUES (167, 139);
+INSERT INTO questiontag (question_id, tag_id) VALUES (178, 136);
+INSERT INTO questiontag (question_id, tag_id) VALUES (178, 134);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (168, 49, '&lt;p&gt;Transponders have registers for Mode S data and configuration. These registers are updated periodically to provide Mode S services such as ADS-B Airborne Position squitter.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (179, 26, '&lt;p&gt;Transponders have registers for Mode S data and configuration. These registers are updated periodically to provide Mode S services such as ADS-B Airborne Position squitter.&lt;/p&gt;
 
 &lt;p&gt;DO-260B and similar documents have Register Allocation Tables that states maximum update intervals for each register(if applicable).&lt;/p&gt;
 
@@ -4645,32 +4464,37 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (168, 49, '&lt;p
 
 &lt;p&gt;So, what happens if certain register is updated at every (1.5 * maxUpdateInterval) ? Are these maximum update times mere suggestions or is there another rule that forces us to update registers at most maximum update interval?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (168, 3, 'What does &quot;maximum update interval&quot; mean for Mode S GICB registers?');
-INSERT INTO activity (post_id, user_id, action) VALUES (168, 49, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (168, 140);
+INSERT INTO question (post_id, topic_id, title) VALUES (179, 3, 'What does &quot;maximum update interval&quot; mean for Mode S GICB registers?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (179, 179, 26, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (179, 135);
+INSERT INTO activity (post_id, user_id, activity) VALUES (179, 26, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (179, 26, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (169, 42, '&lt;p&gt;When I was a kid, I used to read this comics about aircraft pilots in the 50&#x27;s, and in the operations center of their aircraft carrier, they had operators using markers on a glass wall to keep track of operations. Any idea how that was called and where I can find pictures of it? Is it still in use today, or is it now all computerized?&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (180, 26, '&lt;p&gt;When I was a kid, I used to read this comics about aircraft pilots in the 50&#x27;s, and in the operations center of their aircraft carrier, they had operators using markers on a glass wall to keep track of operations. Any idea how that was called and where I can find pictures of it? Is it still in use today, or is it now all computerized?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (169, 3, 'Where can I find more information about that glass board in old aircraft carrier operations centers?');
-INSERT INTO activity (post_id, user_id, action) VALUES (169, 42, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (180, 3, 'Where can I find more information about that glass board in old aircraft carrier operations centers?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (180, 180, 26, 'Create');
 INSERT INTO tag (text) VALUES ('aircraft-carrier');
-INSERT INTO questiontag (question_id, tag_id) VALUES (169, 142);
+INSERT INTO questiontag (question_id, tag_id) VALUES (180, 137);
+INSERT INTO activity (post_id, user_id, activity) VALUES (180, 26, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (180, 26, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (170, 47, '&lt;p&gt;I watched an episode of Air Crash Investigation, which depicts a plane catching fire due to it shipping many expired oxygen generators for planes. The narrator says that a fire in the cargo hold is very unlikely, as the cargo hold is vacuumed, to prevent fire; but however in this situation, the oxygen generators were actually generating oxygen so the vacuum was futile. I also know they carry pets in the cargo hold. So are the cargo holds pressurized, non-pressurized, or vacuumed? Or does it depend on the carrier, or aircraft?&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (181, 10, '&lt;p&gt;I watched an episode of Air Crash Investigation, which depicts a plane catching fire due to it shipping many expired oxygen generators for planes. The narrator says that a fire in the cargo hold is very unlikely, as the cargo hold is vacuumed, to prevent fire; but however in this situation, the oxygen generators were actually generating oxygen so the vacuum was futile. I also know they carry pets in the cargo hold. So are the cargo holds pressurized, non-pressurized, or vacuumed? Or does it depend on the carrier, or aircraft?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (170, 3, 'Are Cargo Holds Pressurized, Non-pressurized, or vacuumed?');
-INSERT INTO activity (post_id, user_id, action) VALUES (170, 47, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (181, 3, 'Are Cargo Holds Pressurized, Non-pressurized, or vacuumed?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (181, 181, 10, 'Create');
 INSERT INTO tag (text) VALUES ('cargo');
-INSERT INTO questiontag (question_id, tag_id) VALUES (170, 143);
+INSERT INTO questiontag (question_id, tag_id) VALUES (181, 138);
 INSERT INTO tag (text) VALUES ('fire');
-INSERT INTO questiontag (question_id, tag_id) VALUES (170, 144);
+INSERT INTO questiontag (question_id, tag_id) VALUES (181, 139);
 INSERT INTO tag (text) VALUES ('oxygen');
-INSERT INTO questiontag (question_id, tag_id) VALUES (170, 145);
+INSERT INTO questiontag (question_id, tag_id) VALUES (181, 140);
+INSERT INTO activity (post_id, user_id, activity) VALUES (181, 10, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (171, 27, '&lt;p&gt;I&#x27;m filling out &lt;a href=&quot;https://foreflight.com/campaigns/9/&quot; rel=&quot;nofollow noreferrer&quot;&gt;ForeFlight&#x27;s new glide slope feature&lt;/a&gt;, and I&#x27;m trying to find the glide ratio for a Piper Archer II (PA-28-181). I know the best glide speed is 76, but can&#x27;t find the glide ratio. Any help on where to find this? &lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (182, 26, '&lt;p&gt;I&#x27;m filling out &lt;a href=&quot;https://foreflight.com/campaigns/9/&quot; rel=&quot;nofollow noreferrer&quot;&gt;ForeFlight&#x27;s new glide slope feature&lt;/a&gt;, and I&#x27;m trying to find the glide ratio for a Piper Archer II (PA-28-181). I know the best glide speed is 76, but can&#x27;t find the glide ratio. Any help on where to find this? &lt;/p&gt;
 
 &lt;p&gt;Edit: &lt;/p&gt;
 
@@ -4680,30 +4504,31 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (171, 27, '&lt;p
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/s2498.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/s2498.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (171, 3, 'Where can I find (or how can I calculate) the glide ratio for a PA-28-181?');
-INSERT INTO activity (post_id, user_id, action) VALUES (171, 27, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (182, 3, 'Where can I find (or how can I calculate) the glide ratio for a PA-28-181?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (182, 182, 26, 'Create');
 INSERT INTO tag (text) VALUES ('glide-ratio');
-INSERT INTO questiontag (question_id, tag_id) VALUES (171, 146);
+INSERT INTO questiontag (question_id, tag_id) VALUES (182, 141);
 INSERT INTO tag (text) VALUES ('piper-pa-28');
-INSERT INTO questiontag (question_id, tag_id) VALUES (171, 147);
+INSERT INTO questiontag (question_id, tag_id) VALUES (182, 142);
 INSERT INTO tag (text) VALUES ('foreflight');
-INSERT INTO questiontag (question_id, tag_id) VALUES (171, 148);
+INSERT INTO questiontag (question_id, tag_id) VALUES (182, 143);
+INSERT INTO activity (post_id, user_id, activity) VALUES (182, 26, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (172, 35, '&lt;p&gt;I would like to know if VTOL UAVs necessarily need $n$ identical propellers and motors. Have any design solutions considered the possibility of using non identical props? For instance 2 motors of type A, 2 motors of type B, and 2 motors of type C. If so, where can I find some studies or some designs that have attempted this kind of solution?&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (183, 34, '&lt;p&gt;I would like to know if VTOL UAVs necessarily need $n$ identical propellers and motors. Have any design solutions considered the possibility of using non identical props? For instance 2 motors of type A, 2 motors of type B, and 2 motors of type C. If so, where can I find some studies or some designs that have attempted this kind of solution?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (172, 3, 'Do all the engines/propellers of a VTOL UAV need to be identical?');
-INSERT INTO activity (post_id, user_id, action) VALUES (172, 35, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (172, 141);
+INSERT INTO question (post_id, topic_id, title) VALUES (183, 3, 'Do all the engines/propellers of a VTOL UAV need to be identical?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (183, 183, 34, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (183, 136);
 INSERT INTO tag (text) VALUES ('propeller');
-INSERT INTO questiontag (question_id, tag_id) VALUES (172, 149);
+INSERT INTO questiontag (question_id, tag_id) VALUES (183, 144);
 INSERT INTO tag (text) VALUES ('unmanned-aerial-vehicle');
-INSERT INTO questiontag (question_id, tag_id) VALUES (172, 150);
+INSERT INTO questiontag (question_id, tag_id) VALUES (183, 145);
 INSERT INTO tag (text) VALUES ('vtol');
-INSERT INTO questiontag (question_id, tag_id) VALUES (172, 151);
+INSERT INTO questiontag (question_id, tag_id) VALUES (183, 146);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (173, 43, '&lt;p&gt;I would like a clarification on bank angle and how its different from roll angle with respect to to fixed wing aircraft. It is my understanding that the bank angle is a result of rotating the aircraft body to the stability frame, implying that if the angle of attack $\alpha$ and the side slip angle $\beta$ are zero then, and only then the bank and angle and roll angle are the same. Based on Stevens and Lewis Aircraft Control and Simulation (which doesn&#x27;t define bank angle) the rotation from body to stability(wind) frame is given by
+INSERT INTO postinstance (post_id, user_id, description) VALUES (184, 43, '&lt;p&gt;I would like a clarification on bank angle and how its different from roll angle with respect to to fixed wing aircraft. It is my understanding that the bank angle is a result of rotating the aircraft body to the stability frame, implying that if the angle of attack $\alpha$ and the side slip angle $\beta$ are zero then, and only then the bank and angle and roll angle are the same. Based on Stevens and Lewis Aircraft Control and Simulation (which doesn&#x27;t define bank angle) the rotation from body to stability(wind) frame is given by
 $$
 C_{w-b} = \begin{bmatrix} &amp;amp;\cos\alpha \cos\beta &amp;amp; \sin\beta &amp;amp; \sin\alpha cos\beta \\ &amp;amp;-\cos\alpha\sin\beta &amp;amp; \cos\beta &amp;amp; -\sin\alpha\sin\beta\\ &amp;amp;-\sin\alpha &amp;amp; 0 &amp;amp; \cos\alpha  \end{bmatrix}
 $$&lt;/p&gt;
@@ -4718,35 +4543,36 @@ My specific questions are:&lt;/p&gt;
 
 &lt;p&gt;2) by multiplying the second and third row of $C_{w-b}$ with Euler angles we obtain a set of other two angles relative to stability frame. Do these angles have any names or specific role in aerospace dynamics/control?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (173, 3, 'How does bank angle differ from roll angle with respect to stability in fixed-wing aircraft?');
-INSERT INTO activity (post_id, user_id, action) VALUES (173, 43, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (173, 139);
+INSERT INTO question (post_id, topic_id, title) VALUES (184, 3, 'How does bank angle differ from roll angle with respect to stability in fixed-wing aircraft?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (184, 184, 43, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (184, 134);
 INSERT INTO tag (text) VALUES ('terminology');
-INSERT INTO questiontag (question_id, tag_id) VALUES (173, 152);
+INSERT INTO questiontag (question_id, tag_id) VALUES (184, 147);
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (174, 45, '&lt;p&gt;What is the production status of the Pipistrel Panthera? They had plans to start production in 2016/2017 but nothing new has been published in the last two years.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (185, 47, '&lt;p&gt;What is the production status of the Pipistrel Panthera? They had plans to start production in 2016/2017 but nothing new has been published in the last two years.&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (174, 3, 'What is the production status of the Pipistrel Panthera as of March 2017?');
-INSERT INTO activity (post_id, user_id, action) VALUES (174, 45, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (185, 3, 'What is the production status of the Pipistrel Panthera as of March 2017?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (185, 185, 47, 'Create');
 INSERT INTO tag (text) VALUES ('new-airplane');
-INSERT INTO questiontag (question_id, tag_id) VALUES (174, 153);
+INSERT INTO questiontag (question_id, tag_id) VALUES (185, 148);
+INSERT INTO activity (post_id, user_id, activity) VALUES (185, 47, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (175, 6, '&lt;p&gt;Bird strikes are pretty well tested for planes, but what about helicopters?
+INSERT INTO postinstance (post_id, user_id, description) VALUES (186, 2, '&lt;p&gt;Bird strikes are pretty well tested for planes, but what about helicopters?
 Do they happen as frequent as planes and if so, what would be the possible outcomes?&lt;/p&gt;
 
 &lt;p&gt;Do helicopter emergency procedures include a &quot;bird strike&quot; event?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (175, 3, 'How are bird stikes tested in helicopters?');
-INSERT INTO activity (post_id, user_id, action) VALUES (175, 6, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (186, 3, 'How are bird stikes tested in helicopters?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (186, 186, 2, 'Create');
 INSERT INTO tag (text) VALUES ('helicopter');
-INSERT INTO questiontag (question_id, tag_id) VALUES (175, 154);
+INSERT INTO questiontag (question_id, tag_id) VALUES (186, 149);
 INSERT INTO tag (text) VALUES ('birds');
-INSERT INTO questiontag (question_id, tag_id) VALUES (175, 155);
+INSERT INTO questiontag (question_id, tag_id) VALUES (186, 150);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (176, 28, '&lt;p&gt;I am working on a small personal project that uses fuel burn data about specific aircraft to calculate the total fuel required for a trip. The data looks like this:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (187, 49, '&lt;p&gt;I am working on a small personal project that uses fuel burn data about specific aircraft to calculate the total fuel required for a trip. The data looks like this:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;          | 120000 kg  | 150000 kg | 180000kg
 ----------+------------+-----------+-----------
@@ -4759,17 +4585,20 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (176, 28, '&lt;p
 
 &lt;p&gt;The problem I am having is that in order to calculate total weight, you first need to know total fuel, which you don&#x27;t have until you know the proper burn rate. What would be the proper way to calculate fuel based on this information?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (176, 3, 'How do you calculate trip fuel based on hourly fuel burn rates?');
-INSERT INTO activity (post_id, user_id, action) VALUES (176, 28, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (187, 3, 'How do you calculate trip fuel based on hourly fuel burn rates?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (187, 187, 49, 'Create');
 INSERT INTO tag (text) VALUES ('flight-planning');
-INSERT INTO questiontag (question_id, tag_id) VALUES (176, 156);
+INSERT INTO questiontag (question_id, tag_id) VALUES (187, 151);
 INSERT INTO tag (text) VALUES ('fuel');
-INSERT INTO questiontag (question_id, tag_id) VALUES (176, 157);
+INSERT INTO questiontag (question_id, tag_id) VALUES (187, 152);
 INSERT INTO tag (text) VALUES ('performance-calculation');
-INSERT INTO questiontag (question_id, tag_id) VALUES (176, 158);
+INSERT INTO questiontag (question_id, tag_id) VALUES (187, 153);
+INSERT INTO activity (post_id, user_id, activity) VALUES (187, 49, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (187, 49, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (187, 49, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (177, 10, '&lt;p&gt;I would like to learn about the flight distance calculation and positional accuracy requirement in aviation.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (188, 17, '&lt;p&gt;I would like to learn about the flight distance calculation and positional accuracy requirement in aviation.&lt;/p&gt;
 
 &lt;p&gt;In practice, great circle distance is calculated between two airports but earth is more accurately represented with an ellipsoid and in this context, global positioning is based on WGS84 ellipsoid.&lt;/p&gt;
 
@@ -4781,21 +4610,57 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (177, 10, '&lt;p
 
 &lt;p&gt;My another question is how accurate the 3D position of an aircraft is determined? What is the future perspective in this context together with satellite-based navigation and augmentation systems? &lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (177, 3, 'What is the accuracy of distance and position calculation?');
-INSERT INTO activity (post_id, user_id, action) VALUES (177, 10, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (188, 3, 'What is the accuracy of distance and position calculation?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (188, 188, 17, 'Create');
 INSERT INTO tag (text) VALUES ('navigation');
-INSERT INTO questiontag (question_id, tag_id) VALUES (177, 159);
-INSERT INTO questiontag (question_id, tag_id) VALUES (177, 156);
+INSERT INTO questiontag (question_id, tag_id) VALUES (188, 154);
+INSERT INTO questiontag (question_id, tag_id) VALUES (188, 151);
+INSERT INTO activity (post_id, user_id, activity) VALUES (188, 17, 'Upvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 24, 5);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (178, 7, '&lt;p&gt;70% of birds fly below 1,500ft, 25% of birds fly between 1,500ft and 15,000ft, and only 5% above 15,000ft. What is the greatest height at which a bird has hit an aircraft? What species was the bird?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 24, 11);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (189, 45, '&lt;p&gt;70% of birds fly below 1,500ft, 25% of birds fly between 1,500ft and 15,000ft, and only 5% above 15,000ft. What is the greatest height at which a bird has hit an aircraft? What species was the bird?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (178, 3, 'What&#39;s the greatest height at which a bird has collided with an aircraft?');
-INSERT INTO activity (post_id, user_id, action) VALUES (178, 7, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (178, 155);
+INSERT INTO question (post_id, topic_id, title) VALUES (189, 3, 'What&#39;s the greatest height at which a bird has collided with an aircraft?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (189, 189, 45, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (189, 150);
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (189, 45, 'Downvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4, 3);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (179, 22, '&lt;p&gt;What are the aerodynamic advantages and disadvantages of the Weltensegler Wing?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (190, 42, '&lt;p&gt;What are the aerodynamic advantages and disadvantages of the Weltensegler Wing?&lt;/p&gt;
 
 &lt;p&gt;Would this kind of wing configuration come to help for a glider? 
 Is there any difference between them and gull wings? 
@@ -4803,126 +4668,188 @@ What are the aerodynamic advantages of gull wings?&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/zM2nE.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/zM2nE.jpg&quot; alt=&quot;Weltensegler Aircraft&quot;&gt;&lt;/a&gt; &lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (179, 3, 'What are the aerodynamic advantages and disadvantages of the Weltensegler wing?');
-INSERT INTO activity (post_id, user_id, action) VALUES (179, 22, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (179, 141);
-INSERT INTO questiontag (question_id, tag_id) VALUES (179, 139);
+INSERT INTO question (post_id, topic_id, title) VALUES (190, 3, 'What are the aerodynamic advantages and disadvantages of the Weltensegler wing?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (190, 190, 42, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (190, 136);
+INSERT INTO questiontag (question_id, tag_id) VALUES (190, 134);
 INSERT INTO tag (text) VALUES ('fixed-wing');
-INSERT INTO questiontag (question_id, tag_id) VALUES (179, 160);
+INSERT INTO questiontag (question_id, tag_id) VALUES (190, 155);
+INSERT INTO activity (post_id, user_id, activity) VALUES (190, 42, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (190, 42, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (190, 42, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (190, 42, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (190, 42, 'Downvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4, 3);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (180, 5, '&lt;p&gt;In 2009 Airbus went public with a new feature in the Airbus A350, an &lt;a href=&quot;https://www.flightglobal.com/news/articles/airbus-a350-could-be-equipped-with-automatic-emergency-descent-system-330988/&quot; rel=&quot;nofollow noreferrer&quot;&gt;Automatic Emergency Descent (AED) System&lt;/a&gt;.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (191, 50, '&lt;p&gt;In 2009 Airbus went public with a new feature in the Airbus A350, an &lt;a href=&quot;https://www.flightglobal.com/news/articles/airbus-a350-could-be-equipped-with-automatic-emergency-descent-system-330988/&quot; rel=&quot;nofollow noreferrer&quot;&gt;Automatic Emergency Descent (AED) System&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The system would detect a rapid depressurization and, after a defined waiting time, would initiate an automated descent if the pilots failed to respond to the respective alert (i.e. in case of pilot incapacitation).&lt;/p&gt;
 
 &lt;p&gt;I found &lt;a href=&quot;http://www.ae-expo.eu/wp-content/uploads/2015/04/Florent-Lanterna-AEE-Aviation-Electronics-Europe-2015-AED.pdf&quot; rel=&quot;nofollow noreferrer&quot;&gt;some presentation slides from 2015&lt;/a&gt; on the topic but haven&#x27;t heard anything on that system since. Does anyone have additional information: is it a standard feature now on the A350, is it optional, or was it not pursued any further? If not, for what reasons?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (180, 3, 'Does the Airbus A350 have an Automatic Emergency Descent System?');
-INSERT INTO activity (post_id, user_id, action) VALUES (180, 5, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (191, 3, 'Does the Airbus A350 have an Automatic Emergency Descent System?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (191, 191, 50, 'Create');
 INSERT INTO tag (text) VALUES ('safety');
-INSERT INTO questiontag (question_id, tag_id) VALUES (180, 161);
+INSERT INTO questiontag (question_id, tag_id) VALUES (191, 156);
 INSERT INTO tag (text) VALUES ('aircraft-systems');
-INSERT INTO questiontag (question_id, tag_id) VALUES (180, 162);
+INSERT INTO questiontag (question_id, tag_id) VALUES (191, 157);
 INSERT INTO tag (text) VALUES ('cabin-pressure');
-INSERT INTO questiontag (question_id, tag_id) VALUES (180, 163);
+INSERT INTO questiontag (question_id, tag_id) VALUES (191, 158);
 INSERT INTO tag (text) VALUES ('emergency-procedures');
-INSERT INTO questiontag (question_id, tag_id) VALUES (180, 164);
+INSERT INTO questiontag (question_id, tag_id) VALUES (191, 159);
 INSERT INTO tag (text) VALUES ('airbus-a350');
-INSERT INTO questiontag (question_id, tag_id) VALUES (180, 165);
+INSERT INTO questiontag (question_id, tag_id) VALUES (191, 160);
+INSERT INTO activity (post_id, user_id, activity) VALUES (191, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (191, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (191, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (191, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (191, 50, 'Downvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5, 3);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (181, 34, '&lt;p&gt;Are there different ETOPS requirements for aircraft depending on usage?  For example, does a FedEx cargo flight need the same ETOPS ratings for over ocean flights as a passenger flight?  Also, how about ferry or repositioning flights which are not revenue flights?&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5, 2);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (192, 17, '&lt;p&gt;Are there different ETOPS requirements for aircraft depending on usage?  For example, does a FedEx cargo flight need the same ETOPS ratings for over ocean flights as a passenger flight?  Also, how about ferry or repositioning flights which are not revenue flights?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (181, 3, 'Does ETOPS requirement vary on passenger, cargo and non-revenue flights?');
-INSERT INTO activity (post_id, user_id, action) VALUES (181, 34, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (181, 143);
+INSERT INTO question (post_id, topic_id, title) VALUES (192, 3, 'Does ETOPS requirement vary on passenger, cargo and non-revenue flights?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (192, 192, 17, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (192, 138);
 INSERT INTO tag (text) VALUES ('etops');
-INSERT INTO questiontag (question_id, tag_id) VALUES (181, 166);
+INSERT INTO questiontag (question_id, tag_id) VALUES (192, 161);
+INSERT INTO activity (post_id, user_id, activity) VALUES (192, 17, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (192, 17, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (192, 17, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (192, 17, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (192, 17, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (192, 17, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (192, 17, 'Downvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 17, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (182, 41, '&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Helios_Airways_Flight_522&quot; rel=&quot;noreferrer&quot;&gt;Helios Flight 522&lt;/a&gt; crashed when the crew unknowingly suffered hypoxia. Although the masks in the passenger cabin deployed, the crew were unaware of this and didn&#x27;t realise the extent of the problem.   &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 17, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (193, 44, '&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Helios_Airways_Flight_522&quot; rel=&quot;noreferrer&quot;&gt;Helios Flight 522&lt;/a&gt; crashed when the crew unknowingly suffered hypoxia. Although the masks in the passenger cabin deployed, the crew were unaware of this and didn&#x27;t realise the extent of the problem.   &lt;/p&gt;
 
 &lt;p&gt;If I was a passenger on a plane at cruise altitude and the oxygen masks deployed, I know that there is only about 10 minutes oxygen available. I would expect the plane to immediately descend to a lower altitude.&lt;/p&gt;
 
 &lt;p&gt;If I don&#x27;t notice any change in attitude and there is no passenger announcement after a few minutes, would it help to alert a flight attendant to check that the pilots are aware of the issue? Or would it be best to assume that &#x27;they know what they are doing&#x27; and just keep quiet?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (182, 3, 'Could a knowledgeable passenger have saved Helios Flight 522?');
-INSERT INTO activity (post_id, user_id, action) VALUES (182, 41, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (193, 3, 'Could a knowledgeable passenger have saved Helios Flight 522?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (193, 193, 44, 'Create');
 INSERT INTO tag (text) VALUES ('emergency');
-INSERT INTO questiontag (question_id, tag_id) VALUES (182, 167);
+INSERT INTO questiontag (question_id, tag_id) VALUES (193, 162);
 INSERT INTO tag (text) VALUES ('passenger');
-INSERT INTO questiontag (question_id, tag_id) VALUES (182, 168);
+INSERT INTO questiontag (question_id, tag_id) VALUES (193, 163);
+INSERT INTO activity (post_id, user_id, activity) VALUES (193, 44, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (193, 44, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (193, 44, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (193, 44, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (193, 44, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (193, 44, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (193, 44, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (193, 44, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (193, 44, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (193, 44, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (193, 44, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (193, 44, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (193, 44, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (193, 44, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (193, 44, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (193, 44, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (193, 44, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (183, 47, '&lt;p&gt;I would like to know which hub has more seats capacity to Africa as a whole, whichever destination.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (194, 14, '&lt;p&gt;I would like to know which hub has more seats capacity to Africa as a whole, whichever destination.&lt;/p&gt;
 
 &lt;p&gt;Thank you,
 Avi&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (183, 3, 'Which European (incl. Turkey) hub has the biggest seats capacity to destinations in Africa?');
-INSERT INTO activity (post_id, user_id, action) VALUES (183, 47, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (194, 3, 'Which European (incl. Turkey) hub has the biggest seats capacity to destinations in Africa?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (194, 194, 14, 'Create');
 INSERT INTO tag (text) VALUES ('capacity');
-INSERT INTO questiontag (question_id, tag_id) VALUES (183, 169);
+INSERT INTO questiontag (question_id, tag_id) VALUES (194, 164);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 7, 5);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (184, 26, '&lt;p&gt;Per &lt;a href=&quot;http://www.ecfr.gov/cgi-bin/retrieveECFR?gp&amp;amp;r=PART&amp;amp;n=14y2.0.1.1.2#se14.2.61_1129&quot;&gt;14 CFR 61.129&lt;/a&gt;, a person who applies for a commercial pilot certificate for airplanes (both single and multiengine) must log at least ten hours of instrument training.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 7, 2);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (195, 12, '&lt;p&gt;Per &lt;a href=&quot;http://www.ecfr.gov/cgi-bin/retrieveECFR?gp&amp;amp;r=PART&amp;amp;n=14y2.0.1.1.2#se14.2.61_1129&quot;&gt;14 CFR 61.129&lt;/a&gt;, a person who applies for a commercial pilot certificate for airplanes (both single and multiengine) must log at least ten hours of instrument training.&lt;/p&gt;
 
 &lt;p&gt;Assuming a pilot obtains their instrument rating prior to training for their commercial pilot certificate, can the instrument time logged during training for an instrument rating be used to satisfy this requirement (assuming class of aircraft requirements are met)?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (184, 3, 'Can training for an Instrument Rating be applied towards a commercial pilot certificate?');
-INSERT INTO activity (post_id, user_id, action) VALUES (184, 26, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (195, 3, 'Can training for an Instrument Rating be applied towards a commercial pilot certificate?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (195, 195, 12, 'Create');
 INSERT INTO tag (text) VALUES ('faa-regulations');
-INSERT INTO questiontag (question_id, tag_id) VALUES (184, 170);
+INSERT INTO questiontag (question_id, tag_id) VALUES (195, 165);
 INSERT INTO tag (text) VALUES ('far-61');
-INSERT INTO questiontag (question_id, tag_id) VALUES (184, 171);
+INSERT INTO questiontag (question_id, tag_id) VALUES (195, 166);
+INSERT INTO activity (post_id, user_id, activity) VALUES (195, 12, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (195, 12, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (195, 12, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (195, 12, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (195, 12, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (195, 12, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (195, 12, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (195, 12, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (195, 12, 'Downvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (185, 24, '&lt;p&gt;For a typical turbofan jet engine (two examples given in the title), what is the exhaust velocity and mass flow rate of air at sea level and cruising altitude (~ FL350)? &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (196, 32, '&lt;p&gt;For a typical turbofan jet engine (two examples given in the title), what is the exhaust velocity and mass flow rate of air at sea level and cruising altitude (~ FL350)? &lt;/p&gt;
 
 &lt;p&gt;Also, does the specific impulse vary at different altitudes, since the density of air decreases with increases in altitude?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (185, 3, 'What is the mass flow rate and exhaust velocity of air from a GE CF6 or GE90 turbofan?');
-INSERT INTO activity (post_id, user_id, action) VALUES (185, 24, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (196, 3, 'What is the mass flow rate and exhaust velocity of air from a GE CF6 or GE90 turbofan?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (196, 196, 32, 'Create');
 INSERT INTO tag (text) VALUES ('jet-engine');
-INSERT INTO questiontag (question_id, tag_id) VALUES (185, 172);
+INSERT INTO questiontag (question_id, tag_id) VALUES (196, 167);
 INSERT INTO tag (text) VALUES ('propulsion');
-INSERT INTO questiontag (question_id, tag_id) VALUES (185, 173);
+INSERT INTO questiontag (question_id, tag_id) VALUES (196, 168);
 INSERT INTO tag (text) VALUES ('fluid-mechanics');
-INSERT INTO questiontag (question_id, tag_id) VALUES (185, 174);
+INSERT INTO questiontag (question_id, tag_id) VALUES (196, 169);
+INSERT INTO activity (post_id, user_id, activity) VALUES (196, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (196, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (196, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (196, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (196, 32, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (186, 24, '&lt;p&gt;How can pilots balance a commercial airplane during flight without using elevators?&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (197, 48, '&lt;p&gt;How can pilots balance a commercial airplane during flight without using elevators?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (186, 3, 'How can a commercial aircraft be balanced in flight without the elevators?');
-INSERT INTO activity (post_id, user_id, action) VALUES (186, 24, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (197, 3, 'How can a commercial aircraft be balanced in flight without the elevators?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (197, 197, 48, 'Create');
 INSERT INTO tag (text) VALUES ('aircraft-performance');
-INSERT INTO questiontag (question_id, tag_id) VALUES (186, 175);
+INSERT INTO questiontag (question_id, tag_id) VALUES (197, 170);
 INSERT INTO tag (text) VALUES ('flight-controls');
-INSERT INTO questiontag (question_id, tag_id) VALUES (186, 176);
+INSERT INTO questiontag (question_id, tag_id) VALUES (197, 171);
+INSERT INTO activity (post_id, user_id, activity) VALUES (197, 48, 'Upvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 8, 4);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (187, 50, '&lt;p&gt;I was listening to Norcal yesterday and heard a controller request an airplane increase speed to 210 knots &quot;if able&quot;. The plane was previously at ~180 knots. The pilot responded he had flaps 2 and politely declined.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 8, 3);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (198, 1, '&lt;p&gt;I was listening to Norcal yesterday and heard a controller request an airplane increase speed to 210 knots &quot;if able&quot;. The plane was previously at ~180 knots. The pilot responded he had flaps 2 and politely declined.&lt;/p&gt;
 
 &lt;p&gt;Can TRACON demand a plane increase speed if the controller already assigned a slower speed?
 And if yes, what would be the phraseology? &quot;Maintain 210 knots or greater until DUMBA&quot;? (I don&#x27;t think I&#x27;ve ever heard that when a plane was &lt;em&gt;slower&lt;/em&gt;.)&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (187, 3, 'Can TRACON increase plane speed on approach?');
-INSERT INTO activity (post_id, user_id, action) VALUES (187, 50, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (198, 3, 'Can TRACON increase plane speed on approach?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (198, 198, 1, 'Create');
 INSERT INTO tag (text) VALUES ('air-traffic-control');
-INSERT INTO questiontag (question_id, tag_id) VALUES (187, 177);
+INSERT INTO questiontag (question_id, tag_id) VALUES (198, 172);
+INSERT INTO activity (post_id, user_id, activity) VALUES (198, 1, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (198, 1, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (198, 1, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (198, 1, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (198, 1, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (198, 1, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (198, 1, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (198, 1, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (198, 1, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (198, 1, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (198, 1, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (188, 37, '&lt;p&gt;I have a list of airports in Europe and I need to find up-to-date information about ILS categories (I, II, IIIa, IIIb or IIIc) at these airports. Does anyone know where I could find such data efficiently?&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (199, 37, '&lt;p&gt;I have a list of airports in Europe and I need to find up-to-date information about ILS categories (I, II, IIIa, IIIb or IIIc) at these airports. Does anyone know where I could find such data efficiently?&lt;/p&gt;
 
 &lt;p&gt;Thanks!&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (188, 3, 'Where to find information on ILS categories at European airports?');
-INSERT INTO activity (post_id, user_id, action) VALUES (188, 37, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (199, 3, 'Where to find information on ILS categories at European airports?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (199, 199, 37, 'Create');
 INSERT INTO tag (text) VALUES ('ils');
-INSERT INTO questiontag (question_id, tag_id) VALUES (188, 178);
+INSERT INTO questiontag (question_id, tag_id) VALUES (199, 173);
+INSERT INTO activity (post_id, user_id, activity) VALUES (199, 37, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (199, 37, 'Upvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 16, 6);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (189, 40, '&lt;p&gt;I just read &lt;a href=&quot;http://www.dailymail.co.uk/travel/travel_news/article-4342230/A-day-life-long-haul-airline-pilot-revealed.html&quot; rel=&quot;noreferrer&quot;&gt;an article about a day in the life of a pilot&lt;/a&gt; and it states &quot;The Captain always controls the thrust in the unlikely event that the take-off needs to be aborted for safety reasons.&quot; Is this correct?  &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 16, 2);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (200, 50, '&lt;p&gt;I just read &lt;a href=&quot;http://www.dailymail.co.uk/travel/travel_news/article-4342230/A-day-life-long-haul-airline-pilot-revealed.html&quot; rel=&quot;noreferrer&quot;&gt;an article about a day in the life of a pilot&lt;/a&gt; and it states &quot;The Captain always controls the thrust in the unlikely event that the take-off needs to be aborted for safety reasons.&quot; Is this correct?  &lt;/p&gt;
 
 &lt;p&gt;It was always my understanding that the roles of PF and PNF can be alternated between the captain and first officer, and controlling the thrust would fall into one role or the other. I also recall seeing videos of the flight engineer pushing the throttles. &lt;/p&gt;
 
@@ -4930,27 +4857,46 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (189, 40, '&lt;p
 
 &lt;p&gt;Finally, will pulling back the throttles be enough to abort takeoff safely without braking? Surely it would just cause more problems?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (189, 3, 'Does the captain always control thrust on takeoff?');
-INSERT INTO activity (post_id, user_id, action) VALUES (189, 40, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (200, 3, 'Does the captain always control thrust on takeoff?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (200, 200, 50, 'Create');
 INSERT INTO tag (text) VALUES ('pilots');
-INSERT INTO questiontag (question_id, tag_id) VALUES (189, 179);
+INSERT INTO questiontag (question_id, tag_id) VALUES (200, 174);
 INSERT INTO tag (text) VALUES ('cockpit');
-INSERT INTO questiontag (question_id, tag_id) VALUES (189, 180);
+INSERT INTO questiontag (question_id, tag_id) VALUES (200, 175);
+INSERT INTO activity (post_id, user_id, activity) VALUES (200, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (200, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (200, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (200, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (200, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (200, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (200, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (200, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (200, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (200, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (200, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (200, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (200, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (200, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (200, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (200, 50, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (200, 50, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (200, 50, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (190, 31, '&lt;p&gt;PPL student, wondering on how this practice is viewed. The aircraft I&#x27;m learning to fly in has a small Dynon EFIS which displays horizon, airspeed, heading &amp;amp; altitude. It also has a regular altimeter.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (201, 6, '&lt;p&gt;PPL student, wondering on how this practice is viewed. The aircraft I&#x27;m learning to fly in has a small Dynon EFIS which displays horizon, airspeed, heading &amp;amp; altitude. It also has a regular altimeter.&lt;/p&gt;
 
 &lt;p&gt;Assuming I&#x27;m going for a local flight, returning to land where I departed, is it OK practice to leave the Dynon on QFE and the Altimeter on QNH? This way I don&#x27;t have to change any settings. &lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (190, 3, 'Is it OK practice to use one altimeter on QFE and one on QNH (local flight, dual altimeters)');
-INSERT INTO activity (post_id, user_id, action) VALUES (190, 31, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (201, 3, 'Is it OK practice to use one altimeter on QFE and one on QNH (local flight, dual altimeters)');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (201, 201, 6, 'Create');
 INSERT INTO tag (text) VALUES ('general-aviation');
-INSERT INTO questiontag (question_id, tag_id) VALUES (190, 181);
+INSERT INTO questiontag (question_id, tag_id) VALUES (201, 176);
 INSERT INTO tag (text) VALUES ('altimeter');
-INSERT INTO questiontag (question_id, tag_id) VALUES (190, 182);
+INSERT INTO questiontag (question_id, tag_id) VALUES (201, 177);
+INSERT INTO activity (post_id, user_id, activity) VALUES (201, 6, 'Upvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5, 4);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (191, 50, '&lt;p&gt;I am intensively researching on &lt;a href=&quot;https://en.wikipedia.org/wiki/XL_Airways_Germany_Flight_888T&quot; rel=&quot;nofollow noreferrer&quot;&gt;XL Airways Germany Flight 888T&lt;/a&gt; at the moment. &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 5, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (202, 32, '&lt;p&gt;I am intensively researching on &lt;a href=&quot;https://en.wikipedia.org/wiki/XL_Airways_Germany_Flight_888T&quot; rel=&quot;nofollow noreferrer&quot;&gt;XL Airways Germany Flight 888T&lt;/a&gt; at the moment. &lt;/p&gt;
 
 &lt;p&gt;I wrote and researched hours and hours. Now I would like to know something about the ECAM and the Airbus Stall warning:&lt;/p&gt;
 
@@ -4960,17 +4906,23 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (191, 50, '&lt;p
 
 &lt;p&gt;I also heard, the stall warning suppresses all other sounds, because a stall has priority over all other things. But I don&#x27;t know if this also applies for the ECAM Sounds. Does anybody know if a stall warning really suppresses every sound?&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (191, 3, 'Could the crew of XL Airways Germany Flight 888T not hear important chimes, due to the stall warning?');
-INSERT INTO activity (post_id, user_id, action) VALUES (191, 50, 'Create');
+INSERT INTO question (post_id, topic_id, title) VALUES (202, 3, 'Could the crew of XL Airways Germany Flight 888T not hear important chimes, due to the stall warning?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (202, 202, 32, 'Create');
 INSERT INTO tag (text) VALUES ('airbus-a320');
-INSERT INTO questiontag (question_id, tag_id) VALUES (191, 183);
+INSERT INTO questiontag (question_id, tag_id) VALUES (202, 178);
 INSERT INTO tag (text) VALUES ('airbus');
-INSERT INTO questiontag (question_id, tag_id) VALUES (191, 184);
+INSERT INTO questiontag (question_id, tag_id) VALUES (202, 179);
 INSERT INTO tag (text) VALUES ('ecam');
-INSERT INTO questiontag (question_id, tag_id) VALUES (191, 185);
+INSERT INTO questiontag (question_id, tag_id) VALUES (202, 180);
+INSERT INTO activity (post_id, user_id, activity) VALUES (202, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (202, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (202, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (202, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (202, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (202, 32, 'Downvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 6, 2);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (192, 39, '&lt;p&gt;I am particularly interested in the Boeing 787 Fuselage because it is one of the first aircraft to carry such a high percentage of Carbon Fibre Reinforced Polymer (CFRP). &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 6, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (203, 13, '&lt;p&gt;I am particularly interested in the Boeing 787 Fuselage because it is one of the first aircraft to carry such a high percentage of Carbon Fibre Reinforced Polymer (CFRP). &lt;/p&gt;
 
 &lt;p&gt;Can someone explain how the fuselage is made? I know the basics of making 
 CFRP which include fibre being wrapped onto in mandrel in different orientations then heating in an autoclave to cure.&lt;/p&gt;
@@ -4985,13 +4937,20 @@ CFRP which include fibre being wrapped onto in mandrel in different orientations
 &lt;li&gt;Last but not least, are there problems due to the joints before and if so, what has been done to rectify these problems?&lt;/li&gt;
 &lt;/ul&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (192, 3, 'How is the fuselage of the Boeing 787 produced?');
-INSERT INTO activity (post_id, user_id, action) VALUES (192, 39, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (192, 141);
-INSERT INTO questiontag (question_id, tag_id) VALUES (192, 139);
+INSERT INTO question (post_id, topic_id, title) VALUES (203, 3, 'How is the fuselage of the Boeing 787 produced?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (203, 203, 13, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (203, 136);
+INSERT INTO questiontag (question_id, tag_id) VALUES (203, 134);
+INSERT INTO activity (post_id, user_id, activity) VALUES (203, 13, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (203, 13, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (203, 13, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (203, 13, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (203, 13, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (203, 13, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (203, 13, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (193, 35, '&lt;p&gt;Recently, I saw that video:&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (204, 18, '&lt;p&gt;Recently, I saw that video:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;EDIT:&lt;/strong&gt; I removed the Facebook video link which would require sign up for anyone without an account. I&#x27;ve re-uploaded the video here:
 &lt;a href=&quot;https://vid.me/8WYI&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://vid.me/8WYI&lt;/a&gt;&lt;/p&gt;
@@ -5010,48 +4969,56 @@ lever is not a safe solution, my logic says that it could never fall
 from that position. Am I right?&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (193, 3, 'Is the cargo door on this airplane really malfunctioning?');
-INSERT INTO activity (post_id, user_id, action) VALUES (193, 35, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (193, 161);
+INSERT INTO question (post_id, topic_id, title) VALUES (204, 3, 'Is the cargo door on this airplane really malfunctioning?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (204, 204, 18, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (204, 156);
 INSERT INTO tag (text) VALUES ('ground-operations');
-INSERT INTO questiontag (question_id, tag_id) VALUES (193, 186);
+INSERT INTO questiontag (question_id, tag_id) VALUES (204, 181);
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 7, 2);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (194, 1, '&lt;p&gt;Or a new aircraft would have to be designed for such a thing? I have little knowledge of aviation, so please feel free to fill me in the required bits.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 7, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (205, 23, '&lt;p&gt;Or a new aircraft would have to be designed for such a thing? I have little knowledge of aviation, so please feel free to fill me in the required bits.&lt;/p&gt;
 ');
-INSERT INTO question (post_id, topic_id, title) VALUES (194, 3, 'Is it possible to integrate an AI CoPilot on existing planes?');
-INSERT INTO activity (post_id, user_id, action) VALUES (194, 1, 'Create');
-INSERT INTO questiontag (question_id, tag_id) VALUES (194, 141);
+INSERT INTO question (post_id, topic_id, title) VALUES (205, 3, 'Is it possible to integrate an AI CoPilot on existing planes?');
+INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (205, 205, 23, 'Create');
+INSERT INTO questiontag (question_id, tag_id) VALUES (205, 136);
 INSERT INTO tag (text) VALUES ('artificial-intelligence');
-INSERT INTO questiontag (question_id, tag_id) VALUES (194, 187);
+INSERT INTO questiontag (question_id, tag_id) VALUES (205, 182);
+INSERT INTO activity (post_id, user_id, activity) VALUES (205, 23, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (205, 23, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (205, 23, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (205, 23, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (205, 23, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (205, 23, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (205, 23, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (195, 17, '&lt;p&gt;If you remember that the air is really a swarm of molecules moving in all directions at very high speed, and that pressure -static or dynamic- is caused by the impact of those molecules, then everything is very clear...&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (206, 29, '&lt;p&gt;If you remember that the air is really a swarm of molecules moving in all directions at very high speed, and that pressure -static or dynamic- is caused by the impact of those molecules, then everything is very clear...&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (195, 165, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (195, 17, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (206, 176, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (206, 29, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (196, 21, '&lt;p&gt;If you update the register, the values will be set to the values provided.
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (207, 31, '&lt;p&gt;If you update the register, the values will be set to the values provided.
 From that moment, a timer starts running. When the timer reaches maxUpdateInterval, the register will be set to all zero. &lt;/p&gt;
 
 &lt;p&gt;If a radar extracts the register before the maxUpdateInterval is reached, it will get the values provided at the update. If it will extract the register after maxUpdateInterval is reached, it will get all zeros in the reply. &lt;/p&gt;
 
 &lt;p&gt;For ADS-B, transmission of the register is inhibited (IIRC) when the register is set to all zeros. &lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (196, 168, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (196, 21, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (207, 179, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (207, 31, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (207, 31, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (197, 42, '&lt;p&gt;You are very close. Your explanation of static pressure is correct, but not your dynamic pressure. Ram air pressure is what the pitot tube measures, in other words the total pressure experienced. It is your airspeed gauge which measures dynamic pressure by mechanically (in the case of a traditional pitot-static system) subtracting ram air pressure from static pressure. &lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (208, 42, '&lt;p&gt;You are very close. Your explanation of static pressure is correct, but not your dynamic pressure. Ram air pressure is what the pitot tube measures, in other words the total pressure experienced. It is your airspeed gauge which measures dynamic pressure by mechanically (in the case of a traditional pitot-static system) subtracting ram air pressure from static pressure. &lt;/p&gt;
 
 &lt;p&gt;If I was explaining this to a layman I would say that ram air pressure is equivalent to sticking your hand out the window of a moving car, while static pressure is the pressure inside the car. That&#x27;s a bit of an over-simplification as the pressure inside the car will be lower than outside due to the movement through the air, but it gets the point across. &lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (197, 165, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (197, 42, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (208, 176, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (208, 42, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (198, 16, '&lt;p&gt;Use an energy analogy:&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (209, 46, '&lt;p&gt;Use an energy analogy:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Dynamic pressure equals kinetic energy,&lt;/li&gt;
@@ -5062,29 +5029,35 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (198, 16, '&lt;p
 
 &lt;p&gt;For the more math inclined: In the gravity field of earth, potential energy is mass times gravity acceleration times height: $E_{pot} = m\cdot g\cdot h$. Kinetic energy is mass times speed squared, divided by 2: $E_{kin} = m\cdot\frac{v^2}{2}$. Dynamic pressure $q$ is similarly density times speed squared, divided by 2: $q = \rho\cdot\frac{v^2}{2}$, which makes it a volume-specific kinetic energy.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (198, 165, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (198, 16, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (209, 176, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (209, 46, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (199, 33, '&lt;p&gt;The cargo hold is indeed vacuumed, using a vacuum cleaner, regularly.
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (210, 33, '&lt;p&gt;The cargo hold is indeed vacuumed, using a vacuum cleaner, regularly.
 It is however NOT drawn vacuum (so having all air removed).
 Some cargo holds may be pressurised, some are not. Depends on the aircraft and the requirements of the cargo (life animals want a pressurised cabin of course, just to give one example).&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (199, 170, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (199, 33, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (210, 181, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (210, 33, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (210, 33, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (210, 33, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (210, 33, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (200, 33, '&lt;p&gt;If you were to take off from an airport at 2,000&#x27; ASL on a standard day, and climb to 7,280&#x27; ASL you would be exactly 5,280&#x27; above the ground which means exactly 1 statute mile above the ground. &lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (211, 12, '&lt;p&gt;If you were to take off from an airport at 2,000&#x27; ASL on a standard day, and climb to 7,280&#x27; ASL you would be exactly 5,280&#x27; above the ground which means exactly 1 statute mile above the ground. &lt;/p&gt;
 
 &lt;p&gt;If you were to cut the engine, and then use the information available in the chart, you should be able to glide about 10 statute miles which yields about a 10 to 1 glide ratio.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/p3jt5.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/p3jt5.jpg&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (200, 171, 'True');
-INSERT INTO activity ( post_id, user_id, action) VALUES (200, 33, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (211, 182, 'True');
+INSERT INTO activity ( post_id, user_id, action) VALUES (211, 12, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (211, 12, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (211, 12, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (211, 12, 'Upvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4, 3);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (201, 25, '&lt;blockquote&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4, 2);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (212, 12, '&lt;blockquote&gt;
   &lt;p&gt;Do they happen as frequent as planes?&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -5115,11 +5088,17 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (201, 25, '&lt;b
 
 &lt;p&gt;(Disclaimer: Data used above is rounded and averaged. This is a ROUGH estimate!)&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (201, 175, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (201, 25, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (212, 186, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (212, 12, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (212, 12, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (212, 12, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (212, 12, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (212, 12, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (212, 12, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (212, 12, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (202, 35, '&lt;p&gt;The requirement on Performance Based Navigation (PBN) equipment is that: 
+INSERT INTO postinstance (post_id, user_id, description) VALUES (213, 10, '&lt;p&gt;The requirement on Performance Based Navigation (PBN) equipment is that: 
 (1) The Total System Error (TSE) must be equal to or less than the
    Required Navigation Performance (RNP) value for the procedure for 95%
    of the flight time; and
@@ -5133,11 +5112,11 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (202, 35, '&lt;p
 
 &lt;p&gt;The problem with using Cartesian (ECEF) coordinates is you almost have to then calculate a straight-line distance for a path that pierces the earth, rather that a distance along the earth&#x27;s surface (which is what you want).&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (202, 177, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (202, 35, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (213, 188, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (213, 10, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 14, 11);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (203, 50, '&lt;p&gt;Highest I&#x27;ve ever heard of is 40,000 ft. &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 14, 4);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (214, 48, '&lt;p&gt;Highest I&#x27;ve ever heard of is 40,000 ft. &lt;/p&gt;
 
 &lt;p&gt;On May 19, 2014 Atlas Air flight GTI8665, a 767-300 freighter, reported a bird strike at FL400 over Indiana. They were unable to tell what type of bird it was but the pilots reported that there were guts on the windshield. The windshield was broken and the aircraft was diverted.&lt;/p&gt;
 
@@ -5148,11 +5127,29 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (203, 50, '&lt;p
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/mcNde.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/mcNde.jpg&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (203, 178, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (203, 50, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (214, 189, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (214, 48, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (214, 48, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (214, 48, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (214, 48, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (214, 48, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (214, 48, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (214, 48, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (214, 48, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (214, 48, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (214, 48, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (214, 48, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (214, 48, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (214, 48, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (214, 48, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (214, 48, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (214, 48, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (214, 48, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (214, 48, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (214, 48, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (204, 47, '&lt;p&gt;I may have more news on that next week from Sun &#x27;n Fun 2017.  Pipistrel will be an exhibitor at the show and may have a Panthera prototype on display.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (215, 39, '&lt;p&gt;I may have more news on that next week from Sun &#x27;n Fun 2017.  Pipistrel will be an exhibitor at the show and may have a Panthera prototype on display.&lt;/p&gt;
 
 &lt;p&gt;Currently the Panthera is planned to be released as an experimental kit and may be type certified at some point in the future.&lt;/p&gt;
 
@@ -5160,11 +5157,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (204, 47, '&lt;p
 
 &lt;p&gt;The Panthera does look intriguing - 200 KIAS on 10 GPH with good, stable flight characteristics and modern avionics, BRS parachute, etc.  I want to take it for a demo flight when production examples become available.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (204, 174, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (204, 47, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (215, 185, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (215, 39, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (215, 39, 'Upvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 6, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (205, 20, '&lt;p&gt;The inspiration for the Weltensegler wing were birds. The reason for their wing shape is structural, however, not aerodynamic. Your photo shows the 1922 version, called &quot;Baden-Baden Stolz&quot;, which was a follow-on to the original and more ambitious version of 1921. The 3-side-view below shows the planform (picture &lt;a href=&quot;http://www.histaviation.com/images/wwb_img2620.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;source&lt;/a&gt;). However, this airplane never flew, which probably saved the life of its pilot. While pitch and limited roll control was possible with the elevons on the outer wings, no consideration was given to directional control.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 6, 4);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (216, 39, '&lt;p&gt;The inspiration for the Weltensegler wing were birds. The reason for their wing shape is structural, however, not aerodynamic. Your photo shows the 1922 version, called &quot;Baden-Baden Stolz&quot;, which was a follow-on to the original and more ambitious version of 1921. The 3-side-view below shows the planform (picture &lt;a href=&quot;http://www.histaviation.com/images/wwb_img2620.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;source&lt;/a&gt;). However, this airplane never flew, which probably saved the life of its pilot. While pitch and limited roll control was possible with the elevons on the outer wings, no consideration was given to directional control.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/fy317.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/fy317.jpg&quot; alt=&quot;Weltensegler 3-side view&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -5176,25 +5174,38 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (205, 20, '&lt;p
 
 &lt;p&gt;The configuration cannot be recommended for a glider. It is much better to have a straight inner wing and dihedraled outer wings, as explained in &lt;a href=&quot;http://aviation.stackexchange.com/questions/32801/what-kind-of-dihedral-would-be-most-stable/32815#32815&quot;&gt;this answer&lt;/a&gt;. The anhedral of the outer wings of the Weltensegler wings will produce a downforce on the windward wing, rolling it into the wind which is the opposite of what is needed for coordinated flight. &lt;a href=&quot;http://aviation.stackexchange.com/questions/21063/what-advantages-come-with-the-wing-on-the-boeing-bird-of-prey/21068#21068&quot;&gt;Other configurations&lt;/a&gt; using an &quot;M&quot;-shaped wing did so for different reasons and use rudders and much more anhedral on the outer wing panels.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (205, 179, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (205, 20, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (216, 190, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (216, 39, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (216, 39, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (216, 39, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (216, 39, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (216, 39, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (216, 39, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (216, 39, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (216, 39, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (216, 39, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (216, 39, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (216, 39, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (206, 42, '&lt;p&gt;You will have to obtain this from the Pilot&#x27;s Operating Handbook for the particular aircraft you are flying.  Piper usually has a glide performance figure in the Perfeomance section of the POH.  Trying to calculate your glide distance or glide ration by other means and you are probably entering dangerous waters.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (217, 46, '&lt;p&gt;You will have to obtain this from the Pilot&#x27;s Operating Handbook for the particular aircraft you are flying.  Piper usually has a glide performance figure in the Perfeomance section of the POH.  Trying to calculate your glide distance or glide ration by other means and you are probably entering dangerous waters.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (206, 171, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (206, 42, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (217, 182, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (217, 46, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (217, 46, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (217, 46, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (217, 46, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (207, 22, '&lt;p&gt;On a crew bus the other day at American. Mgmt type said it like this. If the Cabin Alt goes above 14000, the aircraft starts a 15 sec timer. If no intervention from the crew, it initiates an Emergency descent. Power back and spoilers. Vmo/Mmo-10kts. It even changes the squawk to 7700. The aircraft will level off at 10,000 or Grid MORA whichever is higher. &lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (218, 34, '&lt;p&gt;On a crew bus the other day at American. Mgmt type said it like this. If the Cabin Alt goes above 14000, the aircraft starts a 15 sec timer. If no intervention from the crew, it initiates an Emergency descent. Power back and spoilers. Vmo/Mmo-10kts. It even changes the squawk to 7700. The aircraft will level off at 10,000 or Grid MORA whichever is higher. &lt;/p&gt;
 
 &lt;p&gt;Was also told that it will auto respond to a TCAS RA if the autopilot is on.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (207, 180, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (207, 22, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (218, 191, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (218, 34, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (208, 7, '&lt;p&gt;The ETOPS requirement is pretty much the same for all aircraft irrespective of usage as long as its under parts 121 or 135, as noted in the FAA InFO 07004, &lt;a href=&quot;https://www.faa.gov/other_visit/aviation_industry/airline_operators/airline_safety/info/all_infos/media/2007/info07004.pdf&quot; rel=&quot;nofollow noreferrer&quot;&gt;New ETOPS Regulations&lt;/a&gt;:&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (219, 41, '&lt;p&gt;The ETOPS requirement is pretty much the same for all aircraft irrespective of usage as long as its under parts 121 or 135, as noted in the FAA InFO 07004, &lt;a href=&quot;https://www.faa.gov/other_visit/aviation_industry/airline_operators/airline_safety/info/all_infos/media/2007/info07004.pdf&quot; rel=&quot;nofollow noreferrer&quot;&gt;New ETOPS Regulations&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;The new ETOPS rules are now applicable to: &lt;/p&gt;
@@ -5231,11 +5242,12 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (208, 7, '&lt;p&
 
 &lt;p&gt;As far as non-revenue flights are considered, they are usually operated under Part 91, so the ETOPS rules don&#x27;t apply. However, it is better to plan an ETOPS route for safety considerations (and to keep insurers happy).&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (208, 181, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (208, 7, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (219, 192, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (219, 41, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (219, 41, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 6, 3);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (209, 28, '&lt;p&gt;First and foremost you should read the accident report which you &lt;a href=&quot;http://www.aaiu.ie/sites/default/files/Hellenic%20Republic%20Accident%20Helios%20Airways%20B737-31S%20HCY522%20Grammatiko%20Hellas%202005-085-14.pdf&quot; rel=&quot;nofollow noreferrer&quot;&gt;can find in full here&lt;/a&gt;. I will pull some excerpts from that below. &lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (220, 41, '&lt;p&gt;First and foremost you should read the accident report which you &lt;a href=&quot;http://www.aaiu.ie/sites/default/files/Hellenic%20Republic%20Accident%20Helios%20Airways%20B737-31S%20HCY522%20Grammatiko%20Hellas%202005-085-14.pdf&quot; rel=&quot;nofollow noreferrer&quot;&gt;can find in full here&lt;/a&gt;. I will pull some excerpts from that below. &lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;em&gt;Helios Flight 522 crashed when the crew unknowingly suffered hypoxia.
@@ -5315,11 +5327,20 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (209, 28, '&lt;p
 
 &lt;p&gt;Unlikely as these days its hard to get in the cockpit, or even get a message to the pilots. But you should, in any event at least try. This saved some lives on &lt;a href=&quot;https://en.wikipedia.org/wiki/Air_Florida_Flight_90&quot; rel=&quot;nofollow noreferrer&quot;&gt;Air Florida 90 when a passenger realized icing on the wings and assumed the crash position and informed the other around him&lt;/a&gt;.  &lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (209, 182, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (209, 28, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (220, 193, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (220, 41, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (220, 41, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (220, 41, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (220, 41, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (220, 41, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (220, 41, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (220, 41, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (220, 41, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (220, 41, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (220, 41, 'Downvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (210, 48, '&lt;p&gt;It seems from the Wikipedia page that there was indeed an knowledgeable passenger. Not fully qualified, but ...&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (221, 32, '&lt;p&gt;It seems from the Wikipedia page that there was indeed an knowledgeable passenger. Not fully qualified, but ...&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;At 11:49, flight attendant Andreas Prodromou entered the cockpit and sat down in the captain&#x27;s seat, having remained conscious by using a portable oxygen supply. Prodromou held a UK Commercial Pilot License, but was not qualified to fly the Boeing 737. Crash investigators concluded that Prodromou&#x27;s experience was insufficient for him to gain control of the aircraft under the circumstances. Prodromou waved at the F16s very briefly, but almost as soon as he entered the cockpit, the left engine flamed out due to fuel exhaustion and the plane left the holding pattern and started to descend. Ten minutes after the loss of power from the left engine, the right engine also flamed out, and just before 12:04 the aircraft crashed into hills near Grammatiko.&lt;/p&gt;
@@ -5329,11 +5350,14 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (210, 48, '&lt;p
 
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Helios_Airways_Flight_522&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://en.wikipedia.org/wiki/Helios_Airways_Flight_522&lt;/a&gt;&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (210, 182, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (210, 48, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (221, 193, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (221, 32, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (221, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (221, 32, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (221, 32, 'Upvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3, 2);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (211, 30, '&lt;p&gt;The aviation industry is in the process of moving to Performance Based Navigation (PBN) within Required Navigation Performance (RNP) airspace.  Using this structure the primary performance is measured by the Total System Error (TSE) which must be less than 2 times the RNP value 95% of the time. Example: In RNP 1 airspace the aircraft must maintain positional accuracy within 2.0 NM of its desired path 95% of the time. The standard for navigational equipment (FMS) is defined in RTCA document &lt;a href=&quot;http://www.rtca.org/store_product.asp?prodid=1229&quot; rel=&quot;nofollow noreferrer&quot;&gt;DO-283B&lt;/a&gt;, Minimum Operational Performance Standards for Required Navigation Performance for Area Navigation.  &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 3, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (222, 47, '&lt;p&gt;The aviation industry is in the process of moving to Performance Based Navigation (PBN) within Required Navigation Performance (RNP) airspace.  Using this structure the primary performance is measured by the Total System Error (TSE) which must be less than 2 times the RNP value 95% of the time. Example: In RNP 1 airspace the aircraft must maintain positional accuracy within 2.0 NM of its desired path 95% of the time. The standard for navigational equipment (FMS) is defined in RTCA document &lt;a href=&quot;http://www.rtca.org/store_product.asp?prodid=1229&quot; rel=&quot;nofollow noreferrer&quot;&gt;DO-283B&lt;/a&gt;, Minimum Operational Performance Standards for Required Navigation Performance for Area Navigation.  &lt;/p&gt;
 
 &lt;p&gt;The TSE for an aircraft is broken down into three components; path definition error (PDE), position estimation error (PEE), and path steering error (PSE).  Your question directly relates to PDE.  The accuracy of PDE depends on several components, the primary one being the accuracy of the positional (fix) information published by the regulatory agency (FAA in the US) contained within the navigational database. For enroute and terminal airspace, the accuracy of fix information is less than 0.01 minutes of latitude and longitude or about 17 meters.  &lt;/p&gt;
 
@@ -5363,11 +5387,15 @@ Present Position latitude/longitude: 0.1 min&lt;/p&gt;
 
 &lt;p&gt;Positional accuracy (EPU) is calculated based on the selected nav sensor(s) using a number of statistical methods including Kalmann filters.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (211, 177, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (211, 30, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (222, 188, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (222, 47, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (222, 47, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (222, 47, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (222, 47, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (222, 47, 'Downvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (212, 49, '&lt;p&gt;SOCAL will do this pretty routinely sequencing arrivals into LAX.  The most common practice is to assign 250 knots at some point, then slow you to 210, then assign 170 or 180 &quot;to the marker&quot; (about 5-6 mile final), at which point you&#x27;ll be slowing to your target approach speed.  So mostly commonly, they are only assigning speed reductions.  However, there are times when they want you to close up space on the aircraft ahead, so they might speed you back up again until the extra distance is closed up -- at which point they slow you back again.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (223, 36, '&lt;p&gt;SOCAL will do this pretty routinely sequencing arrivals into LAX.  The most common practice is to assign 250 knots at some point, then slow you to 210, then assign 170 or 180 &quot;to the marker&quot; (about 5-6 mile final), at which point you&#x27;ll be slowing to your target approach speed.  So mostly commonly, they are only assigning speed reductions.  However, there are times when they want you to close up space on the aircraft ahead, so they might speed you back up again until the extra distance is closed up -- at which point they slow you back again.&lt;/p&gt;
 
 &lt;p&gt;These instructions are &lt;em&gt;always&lt;/em&gt; given with the implicit understanding that, if you can&#x27;t do it, you&#x27;ll say so... &quot;XYZ123 is unable 250, I can give you 225&quot; or something similar.  If you&#x27;ve already extended flaps so that the higher speed would be near or over an aircraft limitation, that could be a reasonable reply.  (Of course, if you extended flaps 20 miles out from the runway, maybe retracting them again &amp;amp; not annoying SOCAL might be a wiser course of action.)&lt;/p&gt;
 
@@ -5377,17 +5405,20 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (212, 49, '&lt;p
 
 &lt;p&gt;Some controllers match the proficiency of the ones at SOCAL; others don&#x27;t compare.  Of course, you don&#x27;t really expect the controller at Podunk to have the same practice in setting up a string of aircraft coming in one after another as those in SOCAL, NORCAL, ATL, ORD, and so forth.  The good ones will use all the tools at their disposal, and sometimes this will include having one aircraft increase their speed for a while.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (212, 187, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (212, 49, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (223, 198, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (223, 36, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (223, 36, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (223, 36, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (223, 36, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (213, 38, '&lt;p&gt;You did say you need up to date data so wikipedia may don&#x27;t be the best idea but I think it&#x27;s at least worth a try. Much wikipedia articles of airports contain information about runways and approaches.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (224, 10, '&lt;p&gt;You did say you need up to date data so wikipedia may don&#x27;t be the best idea but I think it&#x27;s at least worth a try. Much wikipedia articles of airports contain information about runways and approaches.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (213, 188, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (213, 38, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (224, 199, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (224, 10, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 19, 8);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (214, 3, '&lt;p&gt;It&#x27;s never bad to inform a crew member about anything you think may be abnormal.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 19, 17);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (225, 9, '&lt;p&gt;It&#x27;s never bad to inform a crew member about anything you think may be abnormal.&lt;/p&gt;
 
 &lt;p&gt;In this special situation, as you know that the oxygen masks deploy automatically if the cabin altitude raises to high, you expect the aircraft to descend in order to allow the pax to breathe normally again. If this doesn&#x27;t happen it would be possible that the crew deployed the masks manually for no reason or the automatism faulty detected a low cabin pressure. In both cases I would expect an announcement that the oxygen masks are not needed and can be put down safely.&lt;/p&gt;
 
@@ -5396,11 +5427,47 @@ In my opinion the cabin crew should be trained to know what&#x27;s normal proced
 
 &lt;p&gt;You always have to remember: In high altitudes you become unconscious after less than 30 secs without the mask, and as the masks can only produce a limited amount of oxygen it&#x27;s a &lt;strong&gt;really&lt;/strong&gt; time critical issue to reach the flight-deck and initiate a descend if the pilots are already out of service!&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (214, 182, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (214, 3, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (225, 193, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (225, 9, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (225, 9, 'Downvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (215, 33, '&lt;p&gt;The information you are after is, unfortunately, rather distributed.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 1);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (226, 26, '&lt;p&gt;The information you are after is, unfortunately, rather distributed.&lt;/p&gt;
 
 &lt;p&gt;Eurocontrol maintains a useful list of websites ordered by state, found here:&lt;/p&gt;
 
@@ -5410,29 +5477,35 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (215, 33, '&lt;p
 
 &lt;p&gt;&lt;a href=&quot;https://www.ead.eurocontrol.int/eadcms/eadsite/index.php.html&quot; rel=&quot;nofollow noreferrer&quot;&gt;European AIS Database&lt;/a&gt;&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (215, 188, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (215, 33, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (226, 199, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (226, 26, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (226, 26, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (226, 26, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (226, 26, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (216, 23, '&lt;p&gt;Regardless of who is Pilot Flying, the commander will take control of the thrust levers once the thrust is set. A First Officer acting as Pilot Flying will resume control of the thrust once the commander has removed their hand from the thrust levers at V1 AND the aircraft is airborne.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (227, 20, '&lt;p&gt;Regardless of who is Pilot Flying, the commander will take control of the thrust levers once the thrust is set. A First Officer acting as Pilot Flying will resume control of the thrust once the commander has removed their hand from the thrust levers at V1 AND the aircraft is airborne.&lt;/p&gt;
 
 &lt;p&gt;The decision to reject lies solely with the commander. As such, once the thrust is set, the First Officer as PF will have no further need to touch the thrust levers until the thrust reduction altitude. Hence the commander will cover the thrust levers in anticipation of rejecting the takeoff.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (216, 189, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (216, 23, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (227, 200, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (227, 20, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (227, 20, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 2, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (217, 15, '&lt;p&gt;I would turn it the other way around. Assuming the Dynon EFIS is your main flight instrument I would dial in QNH or QNE (depending on your altitude). Common practise is to always have the second altimeter set to QNE (1013.25hPa; 29.92inHg) but if you do not need an altitude reading in Flight Levels it&#x27;s fine if you set up one altimeter to QFE.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (228, 4, '&lt;p&gt;I would turn it the other way around. Assuming the Dynon EFIS is your main flight instrument I would dial in QNH or QNE (depending on your altitude). Common practise is to always have the second altimeter set to QNE (1013.25hPa; 29.92inHg) but if you do not need an altitude reading in Flight Levels it&#x27;s fine if you set up one altimeter to QFE.&lt;/p&gt;
 
 &lt;p&gt;But remember: Even using this practise you HAVE to change the settings. QFE and QNH are both depending on the local pressure and therefore change pretty often. If you are on a cross country flight you then have to change both altimeters to different settings in order to have a correct altitude and a correct height readout.&lt;/p&gt;
 
 &lt;p&gt;Also make sure that you always use the same altimeter for altitude and the other one for height so you won&#x27;t use faulty values from the wrong altimeter!&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (217, 190, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (217, 15, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (228, 201, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (228, 4, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (228, 4, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (228, 4, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (218, 29, '&lt;p&gt;The WGS84 standard defines the Earth as an ellipsoid with a semi-axis a = 6378137 m at the equator and a semi-axis b =  6356752.3 m at the pole.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (229, 49, '&lt;p&gt;The WGS84 standard defines the Earth as an ellipsoid with a semi-axis a = 6378137 m at the equator and a semi-axis b =  6356752.3 m at the pole.&lt;/p&gt;
 
 &lt;p&gt;The circumference of that ellipse can be approximated by:&lt;/p&gt;
 
@@ -5446,11 +5519,11 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (218, 29, '&lt;p
 
 &lt;p&gt;The difference is 28.21 meters for the full circumference. Hence, for the usual distances in aviation, the difference will be of the order of a few meters, and that in the worst case…&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (218, 177, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (218, 29, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (229, 188, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (229, 49, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 13, 2);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (219, 14, '&lt;p&gt;Yes, we can ask pilots to speed up on approach, but it is discouraged and not commonly done. This is because, as an aircraft approaches an airport, the crew will configure it for landing. This includes lowering the flaps, which lowers a number of reference speeds - essentially, making them unable to fly very fast. In order to speed up, they would have to raise the flaps again, which would result in extra workload and bad fuel economy.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (230, 6, '&lt;p&gt;Yes, we can ask pilots to speed up on approach, but it is discouraged and not commonly done. This is because, as an aircraft approaches an airport, the crew will configure it for landing. This includes lowering the flaps, which lowers a number of reference speeds - essentially, making them unable to fly very fast. In order to speed up, they would have to raise the flaps again, which would result in extra workload and bad fuel economy.&lt;/p&gt;
 
 &lt;p&gt;The controller you heard knows this. They used the phrase &quot;if able&quot; to emphasize to the pilots, that they only had to comply if it was convenient for them.&lt;/p&gt;
 
@@ -5468,11 +5541,26 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (219, 14, '&lt;p
   &lt;p&gt;4.6.3.7    Speed control should not be applied to aircraft after passing a point 7 km (4 NM) from the threshold on final approach.&lt;/p&gt;
 &lt;/blockquote&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (219, 187, 'True');
-INSERT INTO activity ( post_id, user_id, action) VALUES (219, 14, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (230, 198, 'True');
+INSERT INTO activity ( post_id, user_id, action) VALUES (230, 6, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (230, 6, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (230, 6, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (230, 6, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (230, 6, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (230, 6, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (230, 6, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (230, 6, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (230, 6, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (230, 6, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (230, 6, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (230, 6, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (230, 6, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (230, 6, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (230, 6, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (230, 6, 'Downvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4, 2);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (220, 21, '&lt;p&gt;There is a YouTube video showing the method for creating the structure:&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 4, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (231, 18, '&lt;p&gt;There is a YouTube video showing the method for creating the structure:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=_GDqxnahwbk&quot; rel=&quot;nofollow noreferrer&quot;&gt;YouTube: 787 Composite Construction&lt;/a&gt;&lt;/p&gt;
 
@@ -5503,17 +5591,30 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (220, 21, '&lt;p
 
 &lt;p&gt;Boeing has said that the 787 is as easy to repair as traditional aluminum skin aircraft. One case in point is the &lt;a href=&quot;http://www.compositesworld.com/blog/post/following-latest-787-fire-time-to-repair-carbon-fiber-fuselage&quot; rel=&quot;nofollow noreferrer&quot;&gt;Ethiopian Airlines aircraft ET-AOP damaged by fire&lt;/a&gt;. The procedure to fix it is to cut out the carbon fiber material and put a &quot;cure in place&quot; patch over the hole. In this case other structure had to be replaced or repaired like stringers and bulkheads. This was the first major airframe repair that Boeing had to undertake. &lt;a href=&quot;http://old.seattletimes.com/html/businesstechnology/2022097759_787repairxml.html&quot; rel=&quot;nofollow noreferrer&quot;&gt;ET-AOP took 18 months to repair&lt;/a&gt; before being returned to service.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (220, 192, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (220, 21, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (231, 203, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (231, 18, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (231, 18, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (231, 18, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (231, 18, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (231, 18, 'Upvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 7, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (221, 36, '&lt;p&gt;It appears as though the locking handle for the door has some sort of switch in it to allow for full extension of the door only if the locking handle is pulled full forward and, for whatever reason, the door handle won&#x27;t move into this fully extended detent on its own.  While the workaround is jury rigged at best, it doesn&#x27;t seem to pose a flight safety issue unless the door can&#x27;t be locked when fully closed.  It&#x27;s just another video from an ignoramus in the terminal with a cellphone camera.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 7, 2);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (232, 14, '&lt;p&gt;It appears as though the locking handle for the door has some sort of switch in it to allow for full extension of the door only if the locking handle is pulled full forward and, for whatever reason, the door handle won&#x27;t move into this fully extended detent on its own.  While the workaround is jury rigged at best, it doesn&#x27;t seem to pose a flight safety issue unless the door can&#x27;t be locked when fully closed.  It&#x27;s just another video from an ignoramus in the terminal with a cellphone camera.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (221, 193, 'True');
-INSERT INTO activity ( post_id, user_id, action) VALUES (221, 36, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (232, 204, 'True');
+INSERT INTO activity ( post_id, user_id, action) VALUES (232, 14, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (232, 14, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (232, 14, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (232, 14, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (232, 14, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (232, 14, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (232, 14, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (232, 14, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (232, 14, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (232, 14, 'Downvote');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 11, 6);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (222, 16, '&lt;p&gt;&lt;em&gt;If&lt;/em&gt; an &quot;AI Co-pilot&quot; existed, it could likely be integrated on existing airplanes with an auto-pilot system.&lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 11, 4);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (233, 43, '&lt;p&gt;&lt;em&gt;If&lt;/em&gt; an &quot;AI Co-pilot&quot; existed, it could likely be integrated on existing airplanes with an auto-pilot system.&lt;/p&gt;
 
 &lt;p&gt;Since your question is a little vague, I&#x27;m going to take a stab at some your hidden assumptions and go from there. I&#x27;m also making the assumption that you&#x27;re talking about the &lt;em&gt;enroute&lt;/em&gt; phase of flight, and leaving the taxiing, take-off and landing in the hands of the human pilot.&lt;/p&gt;
 
@@ -5563,17 +5664,32 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (222, 16, '&lt;p
 
 &lt;p&gt;When you start to think of something like this, you can start to imagine analyzing real-time weather data and having the system make (or help make) a decision to divert or land based on your performance and experience. However, this is all something that would happen in the auto-pilot controller, so retrofitting it to an airplane with an existing autopilot would be more of a software upgrade than a hardware redesign.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (222, 194, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (222, 16, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (233, 205, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (233, 43, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (233, 43, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (233, 43, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (233, 43, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (233, 43, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (233, 43, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (233, 43, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (233, 43, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (233, 43, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (233, 43, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (233, 43, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (233, 43, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (233, 43, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (233, 43, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (233, 43, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (233, 43, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (223, 37, '&lt;p&gt;While it is unusual to fly the big passenger jet as a drone, this has been done few times in the past. Hence should not be a problem to pass the controls to &lt;a href=&quot;https://en.wikipedia.org/wiki/Titan_(supercomputer)&quot; rel=&quot;nofollow noreferrer&quot;&gt;Titan&lt;/a&gt; if this is the idea. Seems that there was no problem to raise and lower gear remotely.&lt;/p&gt;
+INSERT INTO postinstance (post_id, user_id, description) VALUES (234, 11, '&lt;p&gt;While it is unusual to fly the big passenger jet as a drone, this has been done few times in the past. Hence should not be a problem to pass the controls to &lt;a href=&quot;https://en.wikipedia.org/wiki/Titan_(supercomputer)&quot; rel=&quot;nofollow noreferrer&quot;&gt;Titan&lt;/a&gt; if this is the idea. Seems that there was no problem to raise and lower gear remotely.&lt;/p&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (223, 194, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (223, 37, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (234, 205, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (234, 11, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 11, 1);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (224, 11, '&lt;p&gt;As an addition to Ron&#x27;s otherwise good answer, since I feel one aspect was left out.  &lt;/p&gt;
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 11, 9);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (235, 15, '&lt;p&gt;As an addition to Ron&#x27;s otherwise good answer, since I feel one aspect was left out.  &lt;/p&gt;
 
 &lt;p&gt;Some airlines (ie. the one I work for) require the commander be in control of the thrust levers until V1 (take-off decision speed). That is because the decision to stop the take-off roll is not a light one, and the captain is the one to make the decision. And as Ron pointed out, there is no time to move hands when needed.  &lt;/p&gt;
 
@@ -5588,216 +5704,238 @@ INSERT INTO postinstance (post_id, user_id, description) VALUES (224, 11, '&lt;p
 &lt;li&gt;&lt;p&gt;If the take-off needs to be rejected, the CDR takes control of the aircraft and brings it to a stop using (auto)brakes and reverse thrust while maintaining the aircraft on runway centerline. F/O monitors and informs ATC&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 ');
-INSERT INTO answer (post_id, question_id, accepted) VALUES (224, 189, 'False');
-INSERT INTO activity ( post_id, user_id, action) VALUES (224, 11, 'Create');
+INSERT INTO answer (post_id, question_id, accepted) VALUES (235, 200, 'False');
+INSERT INTO activity ( post_id, user_id, action) VALUES (235, 15, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Upvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Downvote');
+INSERT INTO activity (post_id, user_id, activity) VALUES (235, 15, 'Downvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (225, 32, 'Would you know where to look to find out if any of these strikes ended in a catastrophic failure of the aircraft?');
-INSERT INTO answercomment (post_id, answer_id) VALUES (225, 201);
-INSERT INTO activity (post_id, user_id, action) VALUES (225, 32, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (236, 15, 'Would you know where to look to find out if any of these strikes ended in a catastrophic failure of the aircraft?');
+INSERT INTO answercomment (post_id, answer_id) VALUES (236, 212);
+INSERT INTO activity (post_id, user_id, action) VALUES (236, 15, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (226, 23, '&amp;quot;&lt;i&gt;The cargo hold is indeed vacuumed, using a vacuum cleaner&lt;/i&gt;&amp;quot;. That&amp;#39;s right, when this is done in flight, the technicians and the vacuum cleaner enter the hold in a &lt;a href=&quot;https://i.stack.imgur.com/QNFnH.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;special pressurized container which opens only in cruise phase&lt;/a&gt;.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (226, 199);
-INSERT INTO activity (post_id, user_id, action) VALUES (226, 23, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (237, 2, '&amp;quot;&lt;i&gt;The cargo hold is indeed vacuumed, using a vacuum cleaner&lt;/i&gt;&amp;quot;. That&amp;#39;s right, when this is done in flight, the technicians and the vacuum cleaner enter the hold in a &lt;a href=&quot;https://i.stack.imgur.com/QNFnH.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;special pressurized container which opens only in cruise phase&lt;/a&gt;.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (237, 210);
+INSERT INTO activity (post_id, user_id, action) VALUES (237, 2, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (227, 44, '@Chris Stratton The CO2 would not increase. That&amp;#39;s what makes hypoxia so insidious. Your brain does not register a lack of oxygen in the blood, rather it registers an excess of CO2. That&amp;#39;s what gives you the uncomfortable suffocating/drowning feeling when you can&amp;#39;t breathe. But if you can still eliminate CO2 you won&amp;#39;t know anything is wrong until you start getting confused, etc. I&amp;#39;ve read that sometimes people find it pleasurable, like being drunk or high.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (227, 214);
-INSERT INTO activity (post_id, user_id, action) VALUES (227, 44, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (238, 8, '@Chris Stratton The CO2 would not increase. That&amp;#39;s what makes hypoxia so insidious. Your brain does not register a lack of oxygen in the blood, rather it registers an excess of CO2. That&amp;#39;s what gives you the uncomfortable suffocating/drowning feeling when you can&amp;#39;t breathe. But if you can still eliminate CO2 you won&amp;#39;t know anything is wrong until you start getting confused, etc. I&amp;#39;ve read that sometimes people find it pleasurable, like being drunk or high.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (238, 225);
+INSERT INTO activity (post_id, user_id, action) VALUES (238, 8, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (228, 2, '@David Glickman The CVR only recorded the last 30 min of the flight and the F16 intercept did not arrive until 2 hours after the last contact with the pilots. So we don&amp;#39;t know what the cabin crew may have done during that period of time. The FDR does not register the operation of the intercom or the cockpit door. It&amp;#39;s quite possible the FA&amp;#39;s may have tried to call the pilots or entered the cockpit earlier. They may have tried calling ATC for help. The report says that when the FA tried to call mayday it did not go out over VHF, so he was probably not familiar with how to operate the radio.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (228, 210);
-INSERT INTO activity (post_id, user_id, action) VALUES (228, 2, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (239, 45, '@David Glickman The CVR only recorded the last 30 min of the flight and the F16 intercept did not arrive until 2 hours after the last contact with the pilots. So we don&amp;#39;t know what the cabin crew may have done during that period of time. The FDR does not register the operation of the intercom or the cockpit door. It&amp;#39;s quite possible the FA&amp;#39;s may have tried to call the pilots or entered the cockpit earlier. They may have tried calling ATC for help. The report says that when the FA tried to call mayday it did not go out over VHF, so he was probably not familiar with how to operate the radio.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (239, 221);
+INSERT INTO activity (post_id, user_id, action) VALUES (239, 45, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (239, 45, 'Upvote');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (229, 29, 'Totally agree. I just put in a 7:1 glide ratio, and will use the feature as one more tool in the event of an emergency.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (229, 206);
-INSERT INTO activity (post_id, user_id, action) VALUES (229, 29, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (230, 27, 'If I&amp;#39;m reading the chart correctly, the glide ratio varies with the ambient air temperature.  Therefore a standard glide ratio is not going to apply here.  I would be hesitant to trust your life to this ForeFlight feature and instead rely on a thorough examination and learn the the numbers from this chart instead of trying to create a uniform glide ratio for the airplane.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (230, 206);
-INSERT INTO activity (post_id, user_id, action) VALUES (230, 27, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (231, 16, 'Really thank you for the detailed information. Could you please explain the distance precision for whole path? e.g. aaaa nm or aaaa.aa nm?');
-INSERT INTO answercomment (post_id, answer_id) VALUES (231, 211);
-INSERT INTO activity (post_id, user_id, action) VALUES (231, 16, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (232, 10, 'Fantastic answer. Thanks.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (232, 200);
-INSERT INTO activity (post_id, user_id, action) VALUES (232, 10, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (233, 30, 'Thanks all, especially for the ICAO reference!');
-INSERT INTO answercomment (post_id, answer_id) VALUES (233, 219);
-INSERT INTO activity (post_id, user_id, action) VALUES (233, 30, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (234, 26, 'I couldn&amp;#39;t understand the problem with using ECEF. You have to use ellipsoidal height (Hmsl+Hgeoid) along with other parameters to calculate the 3D position of an aircraft. You&amp;#39;re right that straight-line distances will be calculated but in the air not on ground or on a reference surface (sphere or ellipsoid). The distances are calculated on a reference surface not on the ground in fact. Let&amp;#39;s assume the difference between ellipsoidal and spherical calculation method is about several nautical miles. Will you ignore this difference?');
-INSERT INTO answercomment (post_id, answer_id) VALUES (234, 202);
-INSERT INTO activity (post_id, user_id, action) VALUES (234, 26, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (235, 43, 'The mask trigger pressure is a pressure I can breathe at for hours; however 40000 feet not so much. It really does depend on how high the plane is.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (235, 214);
-INSERT INTO activity (post_id, user_id, action) VALUES (235, 43, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (236, 25, '@DRF Cockpit doors have codes to request entry from outside, and the flight attendants know the code. The flight crew can deny entry (which is why the captain couldn&amp;#39;t reenter the cockpit on that Germanwings flight), but if they don&amp;#39;t respond to the request, the door unlocks.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (236, 214);
-INSERT INTO activity (post_id, user_id, action) VALUES (236, 25, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (237, 23, 'If you are breathing off of a cabin mask, you are breathing at altitude, and you can hold your breath at that pressure absent climbs or descents, but the amount of available oxygen would be reduced and the partial pressure of CO2 would presumably build abnormally quickly, so you could only do so for a reduced amount of time compared to at sea level.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (237, 214);
-INSERT INTO activity (post_id, user_id, action) VALUES (237, 23, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (238, 1, 'welcome to aviation.SE. if possible, we prefer autoritative sources, not &amp;quot;a guy told me&amp;quot;. If you could find some sources to back up your answer it would improve substantially.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (238, 207);
-INSERT INTO activity (post_id, user_id, action) VALUES (238, 1, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (239, 27, 'Thanks, I updated my question with the graph I think you&amp;#39;re mentioning, and the ForeFlight box to give some context of why I&amp;#39;m trying to find the glide slope.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (239, 206);
-INSERT INTO activity (post_id, user_id, action) VALUES (239, 27, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (240, 38, 'I&amp;#39;d emphasise that last point. No quicker way to fail your test than using the wrong one.');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (240, 14, 'Totally agree. I just put in a 7:1 glide ratio, and will use the feature as one more tool in the event of an emergency.');
 INSERT INTO answercomment (post_id, answer_id) VALUES (240, 217);
-INSERT INTO activity (post_id, user_id, action) VALUES (240, 38, 'Create');
+INSERT INTO activity (post_id, user_id, action) VALUES (240, 14, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (241, 14, 'interesting, ill remove that section.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (241, 209);
-INSERT INTO activity (post_id, user_id, action) VALUES (241, 14, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (241, 15, 'If I&amp;#39;m reading the chart correctly, the glide ratio varies with the ambient air temperature.  Therefore a standard glide ratio is not going to apply here.  I would be hesitant to trust your life to this ForeFlight feature and instead rely on a thorough examination and learn the the numbers from this chart instead of trying to create a uniform glide ratio for the airplane.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (241, 217);
+INSERT INTO activity (post_id, user_id, action) VALUES (241, 15, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (242, 13, 'The pilot did not regain conciousness, it was a flight attendant named Andreas Prodromou with a commercial pilots license (not rated for that aircraft) that was sitting in the pilots seat.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (242, 209);
-INSERT INTO activity (post_id, user_id, action) VALUES (242, 13, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (242, 24, 'Really thank you for the detailed information. Could you please explain the distance precision for whole path? e.g. aaaa nm or aaaa.aa nm?');
+INSERT INTO answercomment (post_id, answer_id) VALUES (242, 222);
+INSERT INTO activity (post_id, user_id, action) VALUES (242, 24, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (243, 38, '@FreeMan: Sure, but of course if it&amp;#39;s not a large/busy airport (by my standards, anyway), it&amp;#39;s not going to have a control tower.  Maybe not even Unicom :-)  But I got pretty good at keeping to cruise speed (which in a Cherokee isn&amp;#39;t all that fast :-)) until on short final, then doing a slip and touching down at the right distance to hit the first taxiway.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (243, 219);
-INSERT INTO activity (post_id, user_id, action) VALUES (243, 38, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (243, 36, 'Fantastic answer. Thanks.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (243, 211);
+INSERT INTO activity (post_id, user_id, action) VALUES (243, 36, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (244, 19, 'I agree that he was a pilot, but why did he wait until the fuel was exhausted before entering the cockpit? Maybe he didn&amp;#39;t know that he should act quickly?');
-INSERT INTO answercomment (post_id, answer_id) VALUES (244, 210);
-INSERT INTO activity (post_id, user_id, action) VALUES (244, 19, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (244, 13, 'Thanks all, especially for the ICAO reference!');
+INSERT INTO answercomment (post_id, answer_id) VALUES (244, 230);
+INSERT INTO activity (post_id, user_id, action) VALUES (244, 13, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (245, 46, '@njzk2 You need to, otherwise there will be a reverse process in the lungs and the blood will loose oxygen very quickly. But you will not die that fast at 40000ft. You will die if the pilot is incapacitated and you crash, but not from the lack of oxygen in 30 seconds. Not at that height.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (245, 214);
-INSERT INTO activity (post_id, user_id, action) VALUES (245, 46, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (245, 40, 'I couldn&amp;#39;t understand the problem with using ECEF. You have to use ellipsoidal height (Hmsl+Hgeoid) along with other parameters to calculate the 3D position of an aircraft. You&amp;#39;re right that straight-line distances will be calculated but in the air not on ground or on a reference surface (sphere or ellipsoid). The distances are calculated on a reference surface not on the ground in fact. Let&amp;#39;s assume the difference between ellipsoidal and spherical calculation method is about several nautical miles. Will you ignore this difference?');
+INSERT INTO answercomment (post_id, answer_id) VALUES (245, 213);
+INSERT INTO activity (post_id, user_id, action) VALUES (245, 40, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (246, 45, '@PeterMasiar you don&amp;#39;t really need to have air in your lungs to hold your breath.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (246, 214);
-INSERT INTO activity (post_id, user_id, action) VALUES (246, 45, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (246, 42, 'The mask trigger pressure is a pressure I can breathe at for hours; however 40000 feet not so much. It really does depend on how high the plane is.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (246, 225);
+INSERT INTO activity (post_id, user_id, action) VALUES (246, 42, 'Create');
 
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (247, 24, '@njzk2 - you cannot hold your breath. You need to exhale. Pressure outside of your body is so low that your lungs might be damaged [citation needed].');
-INSERT INTO answercomment (post_id, answer_id) VALUES (247, 214);
-INSERT INTO activity (post_id, user_id, action) VALUES (247, 24, 'Create');
-
-INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (248, 5, 'Lol. I didn&amp;#39;t watch past the first minute or so. Wanted to see if they really used bolts on the fuselage. That&amp;#39;s a helluva riveting machine!  +1 btw');
-INSERT INTO answercomment (post_id, answer_id) VALUES (248, 220);
-INSERT INTO activity (post_id, user_id, action) VALUES (248, 5, 'Create');
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Deleted', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (247, 26, '@DRF Cockpit doors have codes to request entry from outside, and the flight attendants know the code. The flight crew can deny entry (which is why the captain couldn&amp;#39;t reenter the cockpit on that Germanwings flight), but if they don&amp;#39;t respond to the request, the door unlocks.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (247, 225);
+INSERT INTO activity (post_id, user_id, action) VALUES (247, 26, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (249, 22, '@njzk2 because in this case people aren&amp;#39;t holding their breath. It&amp;#39;s like asking why do people drown if they breathe in water even though they can hold their breath for a minute or two.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (249, 214);
-INSERT INTO activity (post_id, user_id, action) VALUES (249, 22, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (248, 33, 'If you are breathing off of a cabin mask, you are breathing at altitude, and you can hold your breath at that pressure absent climbs or descents, but the amount of available oxygen would be reduced and the partial pressure of CO2 would presumably build abnormally quickly, so you could only do so for a reduced amount of time compared to at sea level.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (248, 225);
+INSERT INTO activity (post_id, user_id, action) VALUES (248, 33, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (250, 13, 'but most people can hold their breathe for more than 30 seconds. how come you loose consciousness so fast?');
-INSERT INTO answercomment (post_id, answer_id) VALUES (250, 214);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (249, 44, 'welcome to aviation.SE. if possible, we prefer autoritative sources, not &amp;quot;a guy told me&amp;quot;. If you could find some sources to back up your answer it would improve substantially.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (249, 218);
+INSERT INTO activity (post_id, user_id, action) VALUES (249, 44, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (250, 13, 'Thanks, I updated my question with the graph I think you&amp;#39;re mentioning, and the ForeFlight box to give some context of why I&amp;#39;m trying to find the glide slope.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (250, 217);
 INSERT INTO activity (post_id, user_id, action) VALUES (250, 13, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (251, 2, '@VladimirF If cabin altitude reaches about 38000 feet you are incapacitated after ~15 secs, and you will die 100% without help of somebody else. But I see your point and edited the sentence');
-INSERT INTO answercomment (post_id, answer_id) VALUES (251, 214);
-INSERT INTO activity (post_id, user_id, action) VALUES (251, 2, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (251, 1, 'I&amp;#39;d emphasise that last point. No quicker way to fail your test than using the wrong one.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (251, 228);
+INSERT INTO activity (post_id, user_id, action) VALUES (251, 1, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (252, 35, '@DRF I&amp;#39;m really unsure at all, but I think the purser has the code to open the door.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (252, 214);
-INSERT INTO activity (post_id, user_id, action) VALUES (252, 35, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (252, 50, 'interesting, ill remove that section.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (252, 220);
+INSERT INTO activity (post_id, user_id, action) VALUES (252, 50, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (253, 33, 'Thanks a lot for the tip! Didn&amp;#39;t notice it wasn&amp;#39;t clear enough.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (253, 214);
-INSERT INTO activity (post_id, user_id, action) VALUES (253, 33, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (253, 31, 'The pilot did not regain conciousness, it was a flight attendant named Andreas Prodromou with a commercial pilots license (not rated for that aircraft) that was sitting in the pilots seat.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (253, 220);
+INSERT INTO activity (post_id, user_id, action) VALUES (253, 31, 'Create');
 
 INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
-INSERT INTO postinstance (post_id, user_id, description) VALUES (254, 36, 'Edits look good, i have removed my down vote and comments.');
-INSERT INTO answercomment (post_id, answer_id) VALUES (254, 214);
-INSERT INTO activity (post_id, user_id, action) VALUES (254, 36, 'Create');
+INSERT INTO postinstance (post_id, user_id, description) VALUES (254, 4, '@FreeMan: Sure, but of course if it&amp;#39;s not a large/busy airport (by my standards, anyway), it&amp;#39;s not going to have a control tower.  Maybe not even Unicom :-)  But I got pretty good at keeping to cruise speed (which in a Cherokee isn&amp;#39;t all that fast :-)) until on short final, then doing a slip and touching down at the right distance to hit the first taxiway.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (254, 230);
+INSERT INTO activity (post_id, user_id, action) VALUES (254, 4, 'Create');
 
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (14, 40, 'this post is offensive', 'not the first time this user has done it', 'off-topic');
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (225, 21, 'i do not like this post one bit', 'this is really poor taste', 'off-topic');
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (114, 14, 'i do not like this post one bit', 'not the first time this user has done it', 'offensive');
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (196, 46, 'this post is offensive', 'not the first time this user has done it', 'off-topic');
-INSERT INTO report (post_id, user_id, title, content, reason) VALUES (82, 35, 'this post is off-topic', 'not the first time this user has done it', 'off-topic');
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (255, 10, 'I agree that he was a pilot, but why did he wait until the fuel was exhausted before entering the cockpit? Maybe he didn&amp;#39;t know that he should act quickly?');
+INSERT INTO answercomment (post_id, answer_id) VALUES (255, 221);
+INSERT INTO activity (post_id, user_id, action) VALUES (255, 10, 'Create');
 
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (1, 2);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (2, 2);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (3, 2);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (4, 1);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (5, 1);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (6, 1);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (7, 3);
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (256, 27, '@njzk2 You need to, otherwise there will be a reverse process in the lungs and the blood will loose oxygen very quickly. But you will not die that fast at 40000ft. You will die if the pilot is incapacitated and you crash, but not from the lack of oxygen in 30 seconds. Not at that height.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (256, 225);
+INSERT INTO activity (post_id, user_id, action) VALUES (256, 27, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (257, 13, '@PeterMasiar you don&amp;#39;t really need to have air in your lungs to hold your breath.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (257, 225);
+INSERT INTO activity (post_id, user_id, action) VALUES (257, 13, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 1, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (258, 35, '@njzk2 - you cannot hold your breath. You need to exhale. Pressure outside of your body is so low that your lungs might be damaged [citation needed].');
+INSERT INTO answercomment (post_id, answer_id) VALUES (258, 225);
+INSERT INTO activity (post_id, user_id, action) VALUES (258, 35, 'Create');
+INSERT INTO activity (post_id, user_id, activity) VALUES (258, 35, 'Upvote');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (259, 44, 'Lol. I didn&amp;#39;t watch past the first minute or so. Wanted to see if they really used bolts on the fuselage. That&amp;#39;s a helluva riveting machine!  +1 btw');
+INSERT INTO answercomment (post_id, answer_id) VALUES (259, 231);
+INSERT INTO activity (post_id, user_id, action) VALUES (259, 44, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (260, 27, '@njzk2 because in this case people aren&amp;#39;t holding their breath. It&amp;#39;s like asking why do people drown if they breathe in water even though they can hold their breath for a minute or two.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (260, 225);
+INSERT INTO activity (post_id, user_id, action) VALUES (260, 27, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (261, 41, 'but most people can hold their breathe for more than 30 seconds. how come you loose consciousness so fast?');
+INSERT INTO answercomment (post_id, answer_id) VALUES (261, 225);
+INSERT INTO activity (post_id, user_id, action) VALUES (261, 41, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (262, 37, '@VladimirF If cabin altitude reaches about 38000 feet you are incapacitated after ~15 secs, and you will die 100% without help of somebody else. But I see your point and edited the sentence');
+INSERT INTO answercomment (post_id, answer_id) VALUES (262, 225);
+INSERT INTO activity (post_id, user_id, action) VALUES (262, 37, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (263, 16, '@DRF I&amp;#39;m really unsure at all, but I think the purser has the code to open the door.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (263, 225);
+INSERT INTO activity (post_id, user_id, action) VALUES (263, 16, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (264, 32, 'Thanks a lot for the tip! Didn&amp;#39;t notice it wasn&amp;#39;t clear enough.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (264, 225);
+INSERT INTO activity (post_id, user_id, action) VALUES (264, 32, 'Create');
+
+INSERT INTO post (current_state, up_score, down_score) VALUES ('Published', 0, 0);
+INSERT INTO postinstance (post_id, user_id, description) VALUES (265, 36, 'Edits look good, i have removed my down vote and comments.');
+INSERT INTO answercomment (post_id, answer_id) VALUES (265, 225);
+INSERT INTO activity (post_id, user_id, action) VALUES (265, 36, 'Create');
+
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (3, 5, 'this post is offensive', 'i do not think this kind of post belongs here', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (250, 37, 'i do not like this post one bit', 'this is really poor taste', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (140, 17, 'test report', 'not the first time this user has done it', 'other');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (27, 33, 'i do not like this post one bit', 'this is really poor taste', 'off-topic');
+INSERT INTO report (post_id, user_id, title, content, reason) VALUES (185, 28, 'test report', 'this is really poor taste', 'off-topic');
+
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (1, 3);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (2, 3);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (3, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (4, 3);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (5, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (6, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (7, 1);
 INSERT INTO useraccbadge (user_id, badge_id) VALUES (8, 3);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (9, 3);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (10, 2);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (11, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (9, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (10, 3);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (11, 3);
 INSERT INTO useraccbadge (user_id, badge_id) VALUES (12, 3);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (13, 1);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (14, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (13, 3);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (14, 3);
 INSERT INTO useraccbadge (user_id, badge_id) VALUES (15, 2);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (16, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (16, 1);
 INSERT INTO useraccbadge (user_id, badge_id) VALUES (17, 2);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (18, 1);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (19, 1);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (20, 1);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (21, 2);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (22, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (18, 3);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (19, 3);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (20, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (21, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (22, 1);
 INSERT INTO useraccbadge (user_id, badge_id) VALUES (23, 2);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (24, 3);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (25, 3);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (24, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (25, 1);
 INSERT INTO useraccbadge (user_id, badge_id) VALUES (26, 2);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (27, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (27, 2);
 INSERT INTO useraccbadge (user_id, badge_id) VALUES (28, 3);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (29, 3);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (30, 3);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (29, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (30, 2);
 INSERT INTO useraccbadge (user_id, badge_id) VALUES (31, 2);
 INSERT INTO useraccbadge (user_id, badge_id) VALUES (32, 3);
 INSERT INTO useraccbadge (user_id, badge_id) VALUES (33, 2);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (34, 2);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (35, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (34, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (35, 1);
 INSERT INTO useraccbadge (user_id, badge_id) VALUES (36, 1);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (37, 2);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (38, 2);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (39, 1);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (40, 3);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (41, 2);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (42, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (37, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (38, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (39, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (40, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (41, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (42, 2);
 INSERT INTO useraccbadge (user_id, badge_id) VALUES (43, 3);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (44, 1);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (45, 3);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (44, 3);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (45, 2);
 INSERT INTO useraccbadge (user_id, badge_id) VALUES (46, 1);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (47, 3);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (48, 3);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (47, 2);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (48, 2);
 INSERT INTO useraccbadge (user_id, badge_id) VALUES (49, 1);
-INSERT INTO useraccbadge (user_id, badge_id) VALUES (50, 1);
+INSERT INTO useraccbadge (user_id, badge_id) VALUES (50, 3);
 
-INSERT INTO topicuseracc (mod_id, topic_id) VALUES (3, 1);
-INSERT INTO topicuseracc (mod_id, topic_id) VALUES (2, 2);
-INSERT INTO topicuseracc (mod_id, topic_id) VALUES (3, 3);
+INSERT INTO topicuseracc (mod_id, topic_id) VALUES (2, 1);
+INSERT INTO topicuseracc (mod_id, topic_id) VALUES (1, 2);
+INSERT INTO topicuseracc (mod_id, topic_id) VALUES (2, 3);

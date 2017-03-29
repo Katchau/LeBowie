@@ -275,7 +275,7 @@ for topic in range(0, len(TOPICS)):
         out.write("INSERT INTO postinstance (post_id, user_id, description) VALUES (" + str(db_post_id) + ", " + user_id + ", \'" + description + "\');\n")
         out.write("INSERT INTO question (post_id, topic_id, title) VALUES (" + str(db_post_id) + ", " + topic_id + ", \'" + title + "\');\n")
 
-        out.write("INSERT INTO activity (post_id, user_id, action) VALUES (" + str(db_post_id) + ", " + user_id + ", \'" + ACTIONS[0] + "\');\n")
+        out.write("INSERT INTO activity (post_content_id, post_id, user_id, action) VALUES (" + str(db_post_id) + ", " + str(db_post_id) + ", " + user_id + ", \'" + ACTIONS[0] + "\');\n")
 
         for tag in tags:
             current_tag_id = tag_ids_map.get(tag, None)
@@ -287,6 +287,11 @@ for topic in range(0, len(TOPICS)):
             
             out.write("INSERT INTO questiontag (question_id, tag_id) VALUES (" + str(db_post_id) + ", " + str(current_tag_id) + ");\n")
 
+        for up_vote in range(0, int(up_score)):
+            out.write("INSERT INTO activity (post_id, user_id, activity) VALUES (" + str(db_post_id) + ", " + user_id + ", \'" + ACTIONS[3] + "\');\n")
+        for down_vote in range(0, int(down_score)):
+            out.write("INSERT INTO activity (post_id, user_id, activity) VALUES (" + str(db_post_id) + ", " + user_id + ", \'" + ACTIONS[4] + "\');\n")
+            
         stack_exchange_question_ids.append(stack_exchange_question_id)
         db_question_ids_map[stack_exchange_question_id] = db_post_id
         out.write("\n")
@@ -312,6 +317,11 @@ for topic in range(0, len(TOPICS)):
 
         out.write("INSERT INTO activity ( post_id, user_id, action) VALUES (" + str(db_post_id) + ", " + user_id + ", \'" + ACTIONS[0] + "\');\n")
 
+        for up_vote in range(0, int(up_score)):
+            out.write("INSERT INTO activity (post_id, user_id, activity) VALUES (" + str(db_post_id) + ", " + user_id + ", \'" + ACTIONS[3] + "\');\n")
+        for down_vote in range(0, int(down_score)):
+            out.write("INSERT INTO activity (post_id, user_id, activity) VALUES (" + str(db_post_id) + ", " + user_id + ", \'" + ACTIONS[4] + "\');\n")
+            
         stack_exchange_answer_ids.append(stack_exchange_answer_id)
         db_answer_ids_map[stack_exchange_answer_id] = db_post_id
         out.write("\n")
@@ -332,6 +342,11 @@ for topic in range(0, len(TOPICS)):
         out.write("INSERT INTO answercomment (post_id, answer_id) VALUES (" + str(db_post_id) + ", " + db_answer_id + ");\n")
 
         out.write("INSERT INTO activity (post_id, user_id, action) VALUES (" + str(db_post_id) + ", " + user_id + ", \'" + ACTIONS[0] + "\');\n")
+
+        for up_vote in range(0, int(up_score)):
+            out.write("INSERT INTO activity (post_id, user_id, activity) VALUES (" + str(db_post_id) + ", " + user_id + ", \'" + ACTIONS[3] + "\');\n")
+        for down_vote in range(0, int(down_score)):
+            out.write("INSERT INTO activity (post_id, user_id, activity) VALUES (" + str(db_post_id) + ", " + user_id + ", \'" + ACTIONS[4] + "\');\n")
 
         out.write("\n")
 
