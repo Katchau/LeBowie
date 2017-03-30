@@ -196,3 +196,155 @@ CREATE TABLE QuestionTag
 		REFERENCES Tag(id)
 );
 
+CREATE INDEX post_score_index
+ON Post
+USING btree (up_score DESC)
+WHERE current_state = 'Published';
+
+CREATE INDEX questions_creation_time_index
+ON Question
+USING btree (post_id DESC);
+CLUSTER Question USING questions_creation_time_index;
+
+CREATE INDEX question_post_instance_id
+ON Question
+USING hash (post_id);
+
+CREATE INDEX post_instance_creation_time_id
+ON PostInstance
+USING btree (post_id DESC);
+CLUSTER PostInstance USING post_instance_creation_time_id;
+
+CREATE INDEX answer_question_id_index
+ON Answer
+USING hash (question_id);
+
+CREATE INDEX comment_answer_id_index
+ON AnswerComment
+USING hash (answer_id);
+
+CREATE INDEX tag_name_index
+ON Tag
+USING hash (text);
+
+CREATE INDEX reports_creation_time_index
+ON Report
+USING btree (id DESC);
+
+CREATE INDEX user_username_index
+ON UserAcc
+USING hash (username);
+
+CREATE FUNCTION update_PostScores() RETURNS TRIGGER
+	LANGUAGE plpgsql
+AS $update_Scores$
+BEGIN
+	IF (New.action = 'Upvote')
+	THEN 	UPDATE Post SET up_score = up_score + 1 WHERE NEW.post_id = Post.id;
+	ELSIF (NEW.action = 'Downvote')
+	THEN UPDATE Post SET down_score = down_score + 1 WHERE NEW.post_id = Post.id;
+	END IF;
+	RETURN NEW;
+END;
+$update_Scores$;
+
+CREATE TRIGGER UpdatePostScores
+	AFTER INSERT
+	ON Activity
+	FOR EACH ROW
+	EXECUTE PROCEDURE update_PostScores();
+
+CREATE FUNCTION update_UserScores() RETURNS TRIGGER
+	LANGUAGE plpgsql
+AS $update_Scores$
+BEGIN
+	IF (New.action = 'Upvote')
+	THEN UPDATE UserAcc SET score = score + 1 WHERE NEW.user_id = (SELECT DISTINCT UserAcc.id
+											FROM (Question INNER JOIN PostInstance ON Question.post_id = PostInstance.post_id)
+											INNER JOIN UserAcc ON PostInstance.user_id = UserAcc.id
+											WHERE Question.post_id = NEW.post_id);
+	ELSIF (NEW.action = 'Downvote')
+	THEN UPDATE UserAcc SET score = score - 1 WHERE NEW.user_id = (SELECT DISTINCT UserAcc.id
+											FROM (Question INNER JOIN PostInstance ON Question.post_id = PostInstance.post_id)
+											INNER JOIN UserAcc ON PostInstance.user_id = UserAcc.id
+											WHERE Question.post_id = NEW.post_id);
+	END IF;
+	RETURN NEW;
+END;
+$update_Scores$;
+
+CREATE TRIGGER UpdateUserScores
+	AFTER INSERT
+	ON Activity
+	FOR EACH ROW
+	EXECUTE PROCEDURE update_UserScores();
+
+--
+
+CREATE FUNCTION user_cant_answer_own() RETURNS TRIGGER
+	LANGUAGE plpgsql
+AS $$
+BEGIN
+
+  IF EXISTS ( SELECT DISTINCT UserAcc.id, Question.post_id
+              FROM (Question INNER JOIN PostInstance ON Question.post_id = PostInstance.post_id)
+              INNER JOIN UserAcc ON PostInstance.user_id = UserAcc.id
+              WHERE Question.post_id = NEW.question_id AND UserAcc.id =
+                                                                         (SELECT DISTINCT UserAcc.id
+                                                                         FROM (Answer INNER JOIN PostInstance ON Answer.post_id = PostInstance.post_id)
+                                                                         INNER JOIN UserAcc ON PostInstance.user_id = UserAcc.id
+                                                                         WHERE Answer.post_id = NEW.post_id ))
+  THEN
+  RAISE EXCEPTION ' Cannot answer own question ';
+  END IF;
+
+END;
+$$
+;
+
+CREATE TRIGGER Usercantanswerown
+	BEFORE INSERT
+	ON Answer
+	FOR EACH ROW
+	EXECUTE PROCEDURE user_cant_answer_own()
+;
+
+--
+
+CREATE FUNCTION question_unique_tags() RETURNS TRIGGER
+	LANGUAGE plpgsql
+AS $$
+BEGIN
+	IF EXISTS(SELECT question_id, tag_id FROM QuestionTag WHERE question_id = NEW.question_id AND tag_id = NEW.tag_id)
+	THEN
+	RAISE EXCEPTION ' Cannot have two of the same tag for a given question ';
+	END IF;
+
+END;
+$$
+;
+
+CREATE TRIGGER QuestionWithUniqueTags
+	BEFORE INSERT
+	ON QuestionTag
+	FOR EACH ROW
+	EXECUTE PROCEDURE question_unique_tags()
+;
+
+DROP FUNCTION IF EXISTS delete_tag();
+CREATE FUNCTION
+	delete_tag()
+RETURNS TRIGGER AS $tagged$
+	BEGIN
+                IF EXISTS (SELECT * FROM Tag, QuestionTag 
+                WHERE id <> tag_id) THEN
+		DROP TABLE Tag;
+                END IF;
+		RETURN OLD;
+	END;
+$tagged$ LANGUAGE plpgsql;
+
+CREATE TRIGGER "DeleteTag" 
+BEFORE DELETE ON question 
+FOR EACH ROW 
+EXECUTE PROCEDURE delete_tag();
