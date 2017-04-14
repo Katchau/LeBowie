@@ -382,10 +382,117 @@ SELECT username,topicname
 FROM (Topic INNER JOIN TopicUserAcc ON Topic.id = TopicUserAcc.topic_id)   
 INNER JOIN mods ON TopicUserAcc.mod_id = mods.id;  
 
-CREATE VIEW user_question_titles
+CREATE VIEW user_question_titles AS
 SELECT DISTINCT UserAcc.id, Question.post_id, title
 FROM (Question INNER JOIN PostInstance ON Question.post_id = PostInstance.post_id)
 INNER JOIN UserAcc ON PostInstance.user_id = UserAcc.id
 ORDER BY UserAcc.id;
 
+CREATE VIEW most_recent_post AS
+SELECT Post.id, MAX(PostInstance.id) AS maximu, description
+FROM (Post INNER JOIN PostInstance ON PostInstance.post_id = Post.id)
+GROUP BY Post.id
+ORDER BY (Post.id);
+
+CREATE VIEW first_post_instance AS
+SELECT Post.id, MIN(PostInstance.id) AS minim, creation, description
+FROM (Post INNER JOIN PostInstance ON PostInstance.post_id = Post.id)
+GROUP BY Post.id,creation
+ORDER BY (Post.id);
+
+-- ñ testei este
+CREATE VIEW get_questions_topic AS
+SELECT Topic.id, topicname, Question.post_id, Question.title, most_recent_post.description
+FROM (Question INNER JOIN most_recent_post ON Question.post_id = most_recent_post.id)
+INNER JOIN Topic ON Question.topic_id = Topic.id
+ORDER BY Topic.id;
+
+CREATE VIEW question_answers AS
+SELECT Question.post_id AS question, Answer.post_id AS answer
+FROM Question INNER JOIN Answer ON Question.post_id = question_id
+ORDER BY Question.post_id;
+
+CREATE VIEW question_answers_best AS
+SELECT question, answer, up_score-down_score AS score
+FROM question_answers INNER JOIN Post ON Post.id = answer
+ORDER BY score DESC NULLS FIRST;
+
+CREATE VIEW answer_commments AS
+SELECT Answer.post_id AS answer, AnswerComment.post_id AS coment
+FROM Answer INNER JOIN AnswerComment ON Answer.post_id = answer_id
+ORDER BY Answer.post_id;
+
+CREATE VIEW all_reports AS
+SELECT Report.id, PostInstance.post_id, title, content, reason, description 
+FROM (Report INNER JOIN PostInstance ON Report.post_id = PostInstance.post_id)
+ORDER BY PostInstance.post_id;
+
+CREATE VIEW report_questions AS
+SELECT Report.id, Topic.id, Question.post_id, Report.title,  reason, description, Question.title, topicname
+FROM ((Question INNER JOIN Post ON Question.post_id = Post.id)
+INNER JOIN Topic ON Question.topic_id = Topic.id)
+INNER JOIN Report ON Report.post_id = Question.post_id
+ORDER BY Topic.id;
+
+CREATE VIEW top_10_questions AS
+SELECT Question.post_id,up_score,down_score, title, Question.topic_id, topicname
+FROM Question INNER JOIN Post ON Post.id = Question.post_id
+ORDER BY up_score-down_score DESC NULLS FIRST
+LIMIT 10;
+
+CREATE VIEW recent_questions AS
+SELECT Question.post_id, title, Question.topic_id, topicname
+FROM Question INNER JOIN Topic ON Question.topic_id = Topic.id
+ORDER BY Question.post_id DESC NULLS FIRST
+LIMIT 10;
+
+CREATE VIEW hot_questions AS
+SELECT Question.post_id, title, Question.topic_id, topicname, up_score - down_score AS score
+FROM (Question INNER JOIN Post ON Post.id = Question.post_id)
+INNER JOIN first_post_instance ON Question.post_id = first_post_instance.id
+WHERE CURRENT_DATE - creation < 7
+ORDER BY score DESC NULLS FIRST
+LIMIT 10;
+
+CREATE VIEW user_questions_best AS
+SELECT UserAcc.id, username, Question.post_id, title, up_score,down_score
+FROM ((Question INNER JOIN PostInstance ON Question.post_id = PostInstance.post_id)
+INNER JOIN Post ON Post.id = Question.post_id)
+INNER JOIN UserAcc ON PostInstance.user_id = UserAcc.id
+ORDER BY UserAcc.id, up_score-down_score DESC NULLS FIRST;
+
+CREATE VIEW user_answers_best AS
+SELECT DISTINCT UserAcc.id, username, Answer.post_id,up_score
+FROM ((Answer INNER JOIN PostInstance ON Answer.post_id = PostInstance.post_id)
+INNER JOIN Post ON Post.id = Answer.post_id)
+INNER JOIN UserAcc ON PostInstance.user_id = UserAcc.id
+ORDER BY UserAcc.id, up_score DESC NULLS FIRST;
+
+CREATE VIEW user_answers_recent AS
+SELECT id, username, post_id, content, up_score
+FROM user_answers
+ORDER BY id, post_id DESC NULLS FIRST;
+
+CREATE VIEW user_selected_answers AS
+SELECT DISTINCT id, user_answers.post_id, accepted
+FROM user_answers INNER JOIN Answer ON Answer.post_id = user_answers.post_id
+WHERE accepted = TRUE
+ORDER BY id;
+
+CREATE VIEW user_answer_count AS
+SELECT UserAcc.id, COUNT(answer.id)
+FROM ((Answer INNER JOIN PostInstance ON Answer.post_id = PostInstance.post_id)
+INNER JOIN Post ON Post.id = Answer.post_id)
+INNER JOIN UserAcc ON PostInstance.user_id = UserAcc.id
+GROUP BY UserAcc.id
+ORDER BY UserAcc.id;
+
+CREATE VIEW tags_use AS
+SELECT Tag.id, COUNT(tag_id) AS banana FROM QuestionTag
+INNER JOIN Tag ON tag_id = Tag.id
+GROUP BY Tag.id;
+
+CREATE VIEW user_nationality AS
+SELECT UserAcc.id, Country.name
+FROM (UserAcc INNER JOIN Country ON UserAcc.country = Country.id);
 -- adicionar outras à medida que precisem
