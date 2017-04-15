@@ -492,7 +492,9 @@ SELECT Tag.id, COUNT(tag_id) AS banana FROM QuestionTag
 INNER JOIN Tag ON tag_id = Tag.id
 GROUP BY Tag.id;
 
-CREATE VIEW user_nationality AS
-SELECT UserAcc.id, Country.name
+CREATE VIEW user_info AS
+SELECT UserAcc.id, email, first_name, last_name,
+	   birth, description, image,
+	   score, user_type, Country.name
 FROM (UserAcc INNER JOIN Country ON UserAcc.country = Country.id);
 -- adicionar outras à medida que precisem
