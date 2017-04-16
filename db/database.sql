@@ -382,12 +382,6 @@ SELECT username,topicname
 FROM (Topic INNER JOIN TopicUserAcc ON Topic.id = TopicUserAcc.topic_id)   
 INNER JOIN mods ON TopicUserAcc.mod_id = mods.id;  
 
-CREATE VIEW user_question_titles AS
-SELECT DISTINCT UserAcc.id, Question.post_id, title
-FROM (Question INNER JOIN PostInstance ON Question.post_id = PostInstance.post_id)
-INNER JOIN UserAcc ON PostInstance.user_id = UserAcc.id
-ORDER BY UserAcc.id;
-
 CREATE VIEW most_recent_post AS
 SELECT Post.id, MAX(PostInstance.id) AS maximu, description
 FROM (Post INNER JOIN PostInstance ON PostInstance.post_id = Post.id)
@@ -402,14 +396,24 @@ ORDER BY (Post.id);
 
 -- ñ testei este
 CREATE VIEW get_questions_topic AS
-SELECT Topic.id, topicname, Question.post_id, Question.title, most_recent_post.description
+SELECT Topic.id, topicname, Question.post_id, Question.title, most_recent_post.description, up_score-down_score AS score
 FROM (Question INNER JOIN most_recent_post ON Question.post_id = most_recent_post.id)
 INNER JOIN Topic ON Question.topic_id = Topic.id
 ORDER BY Topic.id;
 
+--alterado testar dp
+--testar também todas só pq sim
+CREATE VIEW user_question_titles AS
+SELECT UserAcc.id AS user_id, Question.post_id AS question_id, up_score-down_score AS score, title, description
+FROM ((Question INNER JOIN Post ON Post.id = Question.post_id )
+INNER JOIN most_recent_post ON Post.id = most_recent_post.id)
+INNER JOIN UserAcc ON UserAcc.id = most_recent_post.id
+ORDER BY score DESC NULLS FIRST;
+
 CREATE VIEW question_answers AS
-SELECT Question.post_id AS question, Answer.post_id AS answer
-FROM Question INNER JOIN Answer ON Question.post_id = question_id
+SELECT Question.post_id AS question, Answer.post_id AS answer, description, up_score-down_score AS score
+FROM (Question INNER JOIN Answer ON Question.post_id = question_id)
+INNER JOIN most_recent_post ON Question.post_id = most_recent_post.id
 ORDER BY Question.post_id;
 
 CREATE VIEW question_answers_best AS
@@ -418,8 +422,9 @@ FROM question_answers INNER JOIN Post ON Post.id = answer
 ORDER BY score DESC NULLS FIRST;
 
 CREATE VIEW answer_commments AS
-SELECT Answer.post_id AS answer, AnswerComment.post_id AS coment
-FROM Answer INNER JOIN AnswerComment ON Answer.post_id = answer_id
+SELECT Answer.post_id AS answer, AnswerComment.post_id AS coment, description
+FROM (Answer INNER JOIN AnswerComment ON Answer.post_id = answer_id)
+INNER JOIN most_recent_post ON Answer.post_id = most_recent_post.id
 ORDER BY Answer.post_id;
 
 CREATE VIEW all_reports AS
@@ -461,35 +466,45 @@ INNER JOIN Post ON Post.id = Question.post_id)
 INNER JOIN UserAcc ON PostInstance.user_id = UserAcc.id
 ORDER BY UserAcc.id, up_score-down_score DESC NULLS FIRST;
 
+--possivelmente vou ter de alterar isto
 CREATE VIEW user_answers_best AS
-SELECT DISTINCT UserAcc.id, username, Answer.post_id,up_score
+SELECT DISTINCT UserAcc.id, username, Answer.post_id, up_score, down_score
 FROM ((Answer INNER JOIN PostInstance ON Answer.post_id = PostInstance.post_id)
 INNER JOIN Post ON Post.id = Answer.post_id)
 INNER JOIN UserAcc ON PostInstance.user_id = UserAcc.id
-ORDER BY UserAcc.id, up_score DESC NULLS FIRST;
+ORDER BY UserAcc.id, up_score-down_score DESC NULLS FIRST;
 
 CREATE VIEW user_answers_recent AS
 SELECT id, username, post_id, content, up_score
-FROM user_answers
+FROM user_answers_best
 ORDER BY id, post_id DESC NULLS FIRST;
 
 CREATE VIEW user_selected_answers AS
-SELECT DISTINCT id, user_answers.post_id, accepted
-FROM user_answers INNER JOIN Answer ON Answer.post_id = user_answers.post_id
+SELECT DISTINCT id, user_answers_best.post_id, accepted
+FROM user_answers_best INNER JOIN Answer ON Answer.post_id = user_answers_best.post_id
 WHERE accepted = TRUE
 ORDER BY id;
 
 CREATE VIEW user_answer_count AS
-SELECT UserAcc.id, COUNT(answer.id)
+SELECT UserAcc.id, COUNT(answer.id) AS total
 FROM ((Answer INNER JOIN PostInstance ON Answer.post_id = PostInstance.post_id)
 INNER JOIN Post ON Post.id = Answer.post_id)
 INNER JOIN UserAcc ON PostInstance.user_id = UserAcc.id
 GROUP BY UserAcc.id
 ORDER BY UserAcc.id;
 
+CREATE VIEW user_selected_count AS
+SELECT UserAcc.id, COUNT(answer.id) AS total
+FROM ((Answer INNER JOIN user_selected_answers ON Answer.post_id = user_selected_answers.post_id)
+INNER JOIN Post ON Post.id = Answer.post_id)
+INNER JOIN UserAcc ON PostInstance.user_id = UserAcc.id
+GROUP BY UserAcc.id
+ORDER BY UserAcc.id;
+
+--ter text como unique??!?!
 CREATE VIEW tags_use AS
-SELECT Tag.id, COUNT(tag_id) AS banana FROM QuestionTag
-INNER JOIN Tag ON tag_id = Tag.id
+SELECT Tag.id, COUNT(tag_id) AS tag_count, text
+FROM QuestionTag INNER JOIN Tag ON tag_id = Tag.id
 GROUP BY Tag.id;
 
 CREATE VIEW user_info AS
