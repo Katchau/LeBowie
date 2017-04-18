@@ -203,11 +203,10 @@
 	}
 	
 	function getUserAnswers($user_id){
-		//l8
+		
 	}
 	
 	function getUserBestAnswers($user_id){
-		//l7
+		
 	}
-	//não me apetece fazer mais nada xD
 ?>
