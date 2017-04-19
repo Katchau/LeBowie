@@ -1,5 +1,5 @@
 <?php
-	include_once('{$BASE_URL}config/init.php');
+	include_once('../config/init.php');
 	include_once($BASE_DIR .'db/users.php');
 
 	if(!$_POST['username'] || !$_POST['password']){
