@@ -7,7 +7,7 @@
 	function getUser($username){
 		global $conn;
 		$stmt = $conn->prepare("SELECT * 
-                            FROM user_info WHERE username = ?");
+                            FROM UserAcc WHERE username = ?");
 		$stmt->execute(array($username));
 		return $stmt->fetch();
 	}
