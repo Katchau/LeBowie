@@ -88,12 +88,12 @@
                   <h4 class="modal-title"><center>Sign in to Newton's Apple</center></h4>
                 </div>
                 <div class="modal-body">
-				  <form>
+				  <form method="post" action="{$BASE_URL}actions/login.php">
                   <div class="form-group">
-            			    <input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Username/Email" tabindex="3">
+            			    <input type="text" name="username" id="display_name" class="form-control input-lg" placeholder="Username/Email" tabindex="3">
             			</div>
                   <div class="form-group">
-          				    <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Password" tabindex="6">
+          				    <input type="password" name="password" id="password_confirmation" class="form-control input-lg" placeholder="Password" tabindex="6">
           				</div>
                   <div><button type="button" class="btn btn-default" data-dismiss="modal">Sign in</button></div>
 				 </form>
