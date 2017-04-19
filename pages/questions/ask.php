@@ -6,4 +6,5 @@ $topics = getTopics();
 	
 $smarty->assign('topics', $topics);
 $smarty->display('questions/ask.tpl');
+$smarty->display('frontpage/footer.tpl');
 ?>
