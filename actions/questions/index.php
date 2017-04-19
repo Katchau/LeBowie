@@ -5,7 +5,7 @@ include_once($BASE_DIR . "database/questions.php");
 $id = strip_tags($_POST["question-user-id"]);
 $title = strip_tags($_POST["question-title"]);
 $description = strip_tags($_POST["question-description"]);
-$topic = strip_tags($POST["question-topic"]);
+$topic = strip_tags($_POST["question-topic"]);
 
 $commaSeparatedTags = strip_tags($POST["question-tags"]);
 $untrimmedTags = explode(",", $commaSeparatedTags);
