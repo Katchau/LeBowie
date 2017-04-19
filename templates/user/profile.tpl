@@ -30,7 +30,7 @@
                   <span class="label label-primary">200 questions</span>
                   <br>
                   <span class="label label-success">400 answers</span>
-                  <span class="label label-info">10k user score </span>
+                  <span class="label label-info">{$user.score} user score </span>
                 </div>
               </div>
               <hr>
@@ -38,10 +38,16 @@
                 <div class="profile-topics">
                   <label class="info-start">Most frequented topics</label> <br>
                   <ul class="">
-                    <li><a href="#">Programming</a></li>
-                    <li><a href="#">Cooking</a></li>
-                    <li><a href="#">Science</a></li>
-                    <li><a href="#">Mathematics</a></li>
+					{assign "value" 0}
+					{foreach $topics as $topic}
+					{assign "value" $value+1}
+                    <li><a href="{$BASE_URL}pages/topic/list.php?id={$topic.topic_id}">
+					{$topic.topicname}
+					</a></li>
+					{if $value == 4}
+					{break}
+					{/if}
+                    {/foreach}
                   </ul>
                 </div>
 
@@ -53,11 +59,11 @@
                 {$user.username}
               </div>
               <div class="profile-user-score">
-                <span class="user_score"> 12.000 </span> user score
+                <span class="user_score"> {$user.score} </span> user score
               </div>
               <hr>
               <div class="profile-desc">
-                Responsible for Business Development within the Special District as well as Industry Recruitment on the Informatics area and helping existing business grow and expand.I report to a board of 7 Directors and sets the planning for the 8 thousand acre District when it concerns Incentives to large and small industry, tax planning for abatements and tax credits given as incentives.
+			  {$user.description}
               </div>
             </div>
           </div>
@@ -121,10 +127,16 @@
               <div class="col-xs-6 profile-topics">
                 <label class="info-start">Most frequented topics</label> <br>
                 <ul class="">
-                  <li><a href="#">Programming</a></li>
-                  <li><a href="#">Cooking</a></li>
-                  <li><a href="#">Science</a></li>
-                  <li><a href="#">Mathematics</a></li>
+                  {assign "value" 0}
+					{foreach $topics as $topic}
+					{assign "value" $value+1}
+                    <li><a href="{$BASE_URL}pages/topic/list.php?id={$topic.topic_id}">
+					{$topic.topicname}
+					</a></li>
+					{if $value == 4}
+					{break}
+					{/if}
+                    {/foreach}
                 </ul>
               </div>
             </div>
@@ -138,22 +150,32 @@
           <div class="extras_suggested">
             <label class="related_label"> Submitted Questions </label>
             <ul class="list-group" >
-              <li><a class="list-group-item suggestion" href="#">How to start up Bootstrap?<span class="badge">12</span></a></li>
-              <li><a class="list-group-item suggestion" href="#">How to line divs in CSS?<span class="badge">30</span></a></li>
-              <li><a class="list-group-item suggestion" href="#">HTML help?<span class="badge">1k</span></a></li>
-              <li><a class="list-group-item suggestion" href="#">Can't center divs<span class="badge">59</span></a></li>
-			  <li><a class="viewmore" href="#">View All questions</a></li>
+              {assign "value" 0}
+			  {foreach $questions as $question}
+			  {assign "value" $value+1}
+			  <li><a href="{$BASE_URL}pages/questions/index.php?id={$question.post_id}">
+			  {$question.title}
+			  </a></li>
+			  {if $value == 4}
+			  {break}
+			  {/if}
+			  {/foreach}
             </ul>
           </div>
           <hr>
           <div class="extras_suggested">
             <label class="related_label"> Submitted Answers </label>
             <ul class="list-group" >
-              <li><a class="list-group-item suggestion" href="#">Yes, you can charge your phone in the microwave. <span class="badge"></span></a></li>
-              <li><a class="list-group-item suggestion" href="#">No that's illegal.<span class="badge"></span></a></li>
-              <li><a class="list-group-item suggestion" href="#">How would i know.<span class="badge"></span></a></li>
-              <li><a class="list-group-item suggestion" href="#">Yes cups are used for that too.<span class="badge"></span></a></li>
-			  <li><a class="viewmore" href="#">View All Answers</a></li>
+              {assign "value" 0}
+			  {foreach $answers as $answer}
+			  {assign "value" $value+1}
+			  <li><a href="#">
+			  {$answer.description}
+			  </a></li>
+			  {if $value == 3}
+			  {break}
+			  {/if}
+			  {/foreach}
             </ul>
           </div>
           <hr>
