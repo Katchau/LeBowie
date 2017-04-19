@@ -68,6 +68,13 @@ function changeLogo(){
  function resetLogo(){
  	$(".navbar-left img").attr('src', 'doc/images/prototype2.png');
  }
+ 
+ 
+function initMessageClosers() {
+  $('.close').click(function() {
+    $(this).parent().fadeOut();
+  });
+}
 
 $(document).ready(function() {
   $('#side-nav-button').on('click touchstart', function() {
@@ -97,5 +104,8 @@ $(document).ready(function() {
       closeExtrasNav();
     }
   });
+  
+  initMessageClosers();
 
 });
+
