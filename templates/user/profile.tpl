@@ -63,7 +63,11 @@
               </div>
               <hr>
               <div class="profile-desc">
-			  {$user.description}
+			  {if isset($user.description)}
+			  This user hasn't added a description!
+			  {else}
+			  $user.description
+			  {/if}
               </div>
             </div>
           </div>
