@@ -529,7 +529,7 @@ FROM QuestionTag INNER JOIN Tag ON tag_id = Tag.id
 GROUP BY Tag.id;
 
 CREATE VIEW user_info AS
-SELECT UserAcc.id, email, first_name, last_name,
+SELECT UserAcc.id, username, email, first_name, last_name,
 	   birth, description, image,
 	   score, user_type, Country.name
 FROM (UserAcc INNER JOIN Country ON UserAcc.country = Country.id);
