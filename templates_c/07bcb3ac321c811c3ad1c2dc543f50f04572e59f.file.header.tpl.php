@@ -1,4 +1,30 @@
-<!doctype html>
+<?php /* Smarty version Smarty-3.1.15, created on 2017-04-19 11:34:05
+         compiled from "/opt/lbaw/lbaw1651/public_html/proto/templates/common/header.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:55573126158f6401454e895-82440280%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '07bcb3ac321c811c3ad1c2dc543f50f04572e59f' => 
+    array (
+      0 => '/opt/lbaw/lbaw1651/public_html/proto/templates/common/header.tpl',
+      1 => 1492598041,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '55573126158f6401454e895-82440280',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.15',
+  'unifunc' => 'content_58f640145747d1_66345877',
+  'variables' => 
+  array (
+    'BASE_URL' => 0,
+    'USERNAME' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_58f640145747d1_66345877')) {function content_58f640145747d1_66345877($_smarty_tpl) {?><!doctype html>
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
@@ -13,15 +39,24 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="{$BASE_URL}css/normalize.css">
-    <link rel="stylesheet" href="{$BASE_URL}css/main.css">
-    <link rel="stylesheet" href="{$BASE_URL}css/navbar.css">
-    <link rel="stylesheet" href="{$BASE_URL}css/question.css">
-    <link rel="stylesheet" href="{$BASE_URL}css/search.css">
-    <link rel="stylesheet" href="{$BASE_URL}css/topic.css">
-    <link rel="stylesheet" href="{$BASE_URL}css/register.css">
-    <link rel="stylesheet" href="{$BASE_URL}css/footer.css">
-    <link rel="stylesheet" href="{$BASE_URL}css/tabs.css">
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+css/normalize.css">
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+css/main.css">
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+css/navbar.css">
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+css/question.css">
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+css/search.css">
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+css/topic.css">
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+css/register.css">
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+css/footer.css">
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+css/tabs.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 	<script src="js/navbar.js"></script>
   </head>
@@ -67,15 +102,16 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          {if $USERNAME}
+          <?php if ($_smarty_tpl->tpl_vars['USERNAME']->value) {?>
 	  <li class="navbar-highlight"><a href="../../pages/questions/ask.php">ask</a></li>
-          <li><a href="#">{$USERNAME}</a></li>
+          <li><a href="#"><?php echo $_smarty_tpl->tpl_vars['USERNAME']->value;?>
+</a></li>
           <li><a href="#">sign out</a></li>
-          {else}
+          <?php } else { ?>
 	  <li class="navbar-highlight"><a href="#" data-toggle="modal" data-target="#myModal">ask</a></li>
           <li><a href="#">sign up</a></li>
           <li><a href="#" data-toggle="modal" data-target="#myModal">sign in</a></li>
-          {/if}
+          <?php }?>
 
           <!-- Modal -->
           <div id="myModal" class="modal fade container col-xs-12" role="dialog">
@@ -151,4 +187,4 @@
       </div>
     </div>
   </nav>
-</header>
+</header><?php }} ?>
