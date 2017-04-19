@@ -58,7 +58,9 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{$DEF_TOPIC}<span class="caret"></span></a>
             <ul class="dropdown-menu">
 			  {foreach $headerTopics as $headerTopic}
-				<li><a href="#">{$headerTopic['topicname']}</a></li>
+				<li><a href="{$BASE_URL}pages/topic/list.php?id={$headerTopic.id}">
+				{$headerTopic.topicname}
+				</a></li>
 				<li role="separator" class="divider"></li>
 			  {/foreach}
             </ul>
