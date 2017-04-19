@@ -176,8 +176,9 @@
 			  {assign "value" $value+1}
 			  <li><a class="list-group-item suggestion" href="#">
 			  {substr($answer.description,0,200)}
+			  <span class="badge">{$answer.up_score}</span>
 			  </a>
-			  <span class="badge">{$answer.up_score}</span></li>
+			  </li>
 			  {if $value == 3}
 			  {break}
 			  {/if}
