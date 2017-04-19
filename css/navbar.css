@@ -300,6 +300,10 @@
 
 /* MESSAGES */
 
+#error_messages {
+	margin-top: -20px;
+}
+
 .error {
   background-color: #FFAAAA;
   padding: 10px;
@@ -312,7 +316,6 @@
   padding: 10px;
   color: #333;
   font-weight: bold;
-  margin-bottom: -20px;
 }
 
 .close {
@@ -324,6 +327,5 @@
 .field_error {
   color: red;
   font-size: 70%;
-  margin-bottom: -20px;
 }
 
