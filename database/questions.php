@@ -58,6 +58,6 @@ function getQuestionInfo($questionId){
 	$stmt = $conn->prepare("SELECT id, topicname, post_id, title, description, up_score, down_score, creation, username FROM question_display WHERE id = ?");
 
 	$stmt->execute(array($question_id));
-	return $stmt->fetchAll();
+	return $stmt->fetch();
 }
 ?>
