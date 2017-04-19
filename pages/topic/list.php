@@ -1,6 +1,5 @@
 <?php
 include_once('../../config/init.php');
-include($BASE_DIR . 'database/topic.php');
 
 $topicId = $_GET['id'];
 if(!isset($topicId)){
