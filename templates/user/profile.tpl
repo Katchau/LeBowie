@@ -66,7 +66,7 @@
 			  {if $user.description == NULL }
 			  This user hasn't added a description!
 			  {else}
-			  $user.description
+			  {$user.description}
 			  {/if}
               </div>
             </div>
