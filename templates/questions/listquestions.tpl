@@ -1,5 +1,4 @@
-{include file='common/header.tpl'}
-{include file='common/scriptlist.tpl'}
+
 <div>
   {foreach $questions as $question}
 		
