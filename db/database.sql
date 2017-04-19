@@ -383,48 +383,89 @@ FROM (Topic INNER JOIN TopicUserAcc ON Topic.id = TopicUserAcc.topic_id)
 INNER JOIN mods ON TopicUserAcc.mod_id = mods.id;  
 
 CREATE VIEW most_recent_post AS
-SELECT Post.id, MAX(PostInstance.id) AS maximu, description
+SELECT Post.id, MAX(PostInstance.id) AS maximu, user_id, description, creation
 FROM (Post INNER JOIN PostInstance ON PostInstance.post_id = Post.id)
-GROUP BY Post.id
+GROUP BY Post.id, description, user_id, creation
 ORDER BY (Post.id);
 
 CREATE VIEW first_post_instance AS
 SELECT Post.id, MIN(PostInstance.id) AS minim, creation, description
 FROM (Post INNER JOIN PostInstance ON PostInstance.post_id = Post.id)
-GROUP BY Post.id,creation
+GROUP BY Post.id,creation, description
 ORDER BY (Post.id);
 
--- ñ testei este
 CREATE VIEW get_questions_topic AS
-SELECT Topic.id, topicname, Question.post_id, Question.title, most_recent_post.description, up_score-down_score AS score
-FROM (Question INNER JOIN most_recent_post ON Question.post_id = most_recent_post.id)
+SELECT Topic.id, topicname, Question.post_id, Question.title, most_recent_post.description,
+up_score, down_score, up_score-down_score AS score, creation, user_id
+FROM ((Question INNER JOIN most_recent_post ON Question.post_id = most_recent_post.id)
+INNER JOIN Post ON Question.post_id = Post.id)
 INNER JOIN Topic ON Question.topic_id = Topic.id
 ORDER BY Topic.id;
 
---alterado testar dp
---testar também todas só pq sim
-CREATE VIEW user_question_titles AS
-SELECT UserAcc.id AS user_id, Question.post_id AS question_id, up_score-down_score AS score, title, description
-FROM ((Question INNER JOIN Post ON Post.id = Question.post_id )
-INNER JOIN most_recent_post ON Post.id = most_recent_post.id)
-INNER JOIN UserAcc ON UserAcc.id = most_recent_post.id
-ORDER BY score DESC NULLS FIRST;
+CREATE VIEW qd AS
+SELECT get_questions_topic.id, topicname, post_id, title, 
+get_questions_topic.description,
+up_score, down_score, creation, user_id, username
+FROM get_questions_topic INNER JOIN UserAcc ON user_id = UserAcc.id
+ORDER BY get_questions_topic.id;
 
 CREATE VIEW question_answers AS
-SELECT Question.post_id AS question, Answer.post_id AS answer, description, up_score-down_score AS score
-FROM (Question INNER JOIN Answer ON Question.post_id = question_id)
-INNER JOIN most_recent_post ON Question.post_id = most_recent_post.id
+SELECT Question.post_id AS question, Answer.post_id AS answer, description,
+up_score-down_score AS score, creation, user_id, up_score, down_score, accepted
+FROM ((Question INNER JOIN Answer ON Question.post_id = question_id)
+INNER JOIN most_recent_post ON Answer.post_id = most_recent_post.id)
+INNER JOIN Post ON Answer.post_id = Post.id
 ORDER BY Question.post_id;
 
-CREATE VIEW question_answers_best AS
-SELECT question, answer, up_score-down_score AS score
-FROM question_answers INNER JOIN Post ON Post.id = answer
-ORDER BY score DESC NULLS FIRST;
+CREATE VIEW answer_display AS
+SELECT question, answer, question_answers.description, up_score, down_score,
+up_score-down_score AS score, creation, user_id, username, accepted
+FROM question_answers INNER JOIN UserAcc ON user_id = id
+ORDER BY question, answer;
+
+CREATE VIEW best_answers AS
+SELECT *
+FROM answer_display
+ORDER BY question, score DESC NULLS FIRST;
+
+CREATE VIEW selected_answer AS
+SELECT *
+FROM best_answers
+WHERE accepted = TRUE
+ORDER BY question, score DESC NULLS FIRST;
+
+CREATE VIEW question_display AS
+SELECT qd.id, qd.topicname, qd.post_id, qd.title, qd.description,
+qd.up_score, qd.down_score, qd.creation, qd.user_id, qd.username,
+answer, selected_answer.description AS answer_desc, selected_answer.user_id AS answer_user_id,
+selected_answer.creation AS answer_creation, selected_answer.username AS answer_user_name
+FROM qd LEFT OUTER JOIN selected_answer ON post_id = question
+ORDER BY qd.id, qd.post_id;
+
+CREATE VIEW top_10_questions AS
+SELECT *
+FROM question_display
+ORDER BY up_score-down_score DESC NULLS FIRST;
+-- loli LIMIT 10;
+
+CREATE VIEW recent_questions AS
+SELECT *
+FROM question_display
+ORDER BY post_id DESC NULLS FIRST;
+-- loli LIMIT 10;
+
+CREATE VIEW hot_questions AS
+SELECT *
+FROM question_display INNER JOIN first_post_instance 
+ON question_display.post_id = first_post_instance.id
+WHERE CURRENT_DATE - first_post_instance.creation < 7
+ORDER BY up_score-down_score DESC NULLS FIRST;
+-- loli LIMIT 10;
 
 CREATE VIEW answer_commments AS
 SELECT Answer.post_id AS answer, AnswerComment.post_id AS coment, description
 FROM (Answer INNER JOIN AnswerComment ON Answer.post_id = answer_id)
-INNER JOIN most_recent_post ON Answer.post_id = most_recent_post.id
+INNER JOIN most_recent_post ON AnswerComment.post_id = most_recent_post.id
 ORDER BY Answer.post_id;
 
 CREATE VIEW all_reports AS
@@ -439,26 +480,6 @@ INNER JOIN Topic ON Question.topic_id = Topic.id)
 INNER JOIN Report ON Report.post_id = Question.post_id
 ORDER BY Topic.id;
 
-CREATE VIEW top_10_questions AS
-SELECT Question.post_id,up_score,down_score, title, Question.topic_id, topicname
-FROM Question INNER JOIN Post ON Post.id = Question.post_id
-ORDER BY up_score-down_score DESC NULLS FIRST
-LIMIT 10;
-
-CREATE VIEW recent_questions AS
-SELECT Question.post_id, title, Question.topic_id, topicname
-FROM Question INNER JOIN Topic ON Question.topic_id = Topic.id
-ORDER BY Question.post_id DESC NULLS FIRST
-LIMIT 10;
-
-CREATE VIEW hot_questions AS
-SELECT Question.post_id, title, Question.topic_id, topicname, up_score - down_score AS score
-FROM (Question INNER JOIN Post ON Post.id = Question.post_id)
-INNER JOIN first_post_instance ON Question.post_id = first_post_instance.id
-WHERE CURRENT_DATE - creation < 7
-ORDER BY score DESC NULLS FIRST
-LIMIT 10;
-
 CREATE VIEW user_questions_best AS
 SELECT UserAcc.id, username, Question.post_id, title, up_score,down_score
 FROM ((Question INNER JOIN PostInstance ON Question.post_id = PostInstance.post_id)
@@ -468,7 +489,7 @@ ORDER BY UserAcc.id, up_score-down_score DESC NULLS FIRST;
 
 --possivelmente vou ter de alterar isto
 CREATE VIEW user_answers_best AS
-SELECT DISTINCT UserAcc.id, username, Answer.post_id, up_score, down_score
+SELECT UserAcc.id, username, Answer.post_id, up_score, down_score
 FROM ((Answer INNER JOIN PostInstance ON Answer.post_id = PostInstance.post_id)
 INNER JOIN Post ON Post.id = Answer.post_id)
 INNER JOIN UserAcc ON PostInstance.user_id = UserAcc.id
