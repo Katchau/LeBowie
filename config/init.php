@@ -20,6 +20,16 @@
   $smarty->compile_dir = $BASE_DIR . 'templates_c/';
   $smarty->assign('BASE_URL', $BASE_URL);
   
+  if (is_null($DEF_TOPIC)){
+	
+	include_once($BASE_DIR . 'database/topic.php');
+	$headerTopics = getTopics();
+	
+	$DEF_TOPIC = $headerTopics[0]['topicname'];	
+	$smarty->assign('DEF_TOPIC', $DEF_TOPIC);
+	
+  }
+  
   $smarty->assign('ERROR_MESSAGES', $_SESSION['error_messages']);  
   $smarty->assign('FIELD_ERRORS', $_SESSION['field_errors']);
   $smarty->assign('SUCCESS_MESSAGES', $_SESSION['success_messages']);
