@@ -51,7 +51,7 @@
 			<h1 class="hidden-lg hidden-md hidden-sm">Ask a Question</h1>
 
 			<form action="{$BASE_URL}actions/questions/" method="post" id="form-ask">
-				<input name="question-user-id" type="hidden" value="{$USER_ID}" >
+				<input name="question-user-id" type="hidden" value="{$USERID}" >
         	  	<div class="form-group well">
           	      	<label for="question_header_title" class="col-2 col-form-label">Your Question</label>
           	      	<textarea name="question-title" class="form-control" rows="1" id="question_header_title" placeholder="enter your question here"></textarea>
