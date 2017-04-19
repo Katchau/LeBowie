@@ -2,8 +2,12 @@
 include "posts.php";
 
 function createQuestion($userId, $title, $description, $topic, $tags) {
+	echo "Am here";
+
 	global $conn;
 	$lastId = createPost($userId, $description);
+
+	echo "Am here now";
 
 	$stmt = $conn->prepare("INSERT INTO question (post_id, topic_id, title) VALUES (?, ?, ?)");
 	$stmt->execute(array($lastId, $topicId, $title));
