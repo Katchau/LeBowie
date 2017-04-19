@@ -8,7 +8,11 @@
         <div class="hidden-xs col-lg-8 media">
           <div class="profile-upper">
             <div class="profile-image-and-info">
-              <img class="user_profile_pic2 img-thumbnail" src="img/profile.png" alt="user_image">
+              {if isset($user.image)}
+			  <img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}img/profile.png" alt="user_image">
+			  {else}
+			  <img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}img/{$user.id}/{$user.image} alt="user_image">
+			  {/if}
               <hr>
               <div class="profile-info">
                 <span class="info-start">Email: </span>{$user.email}
@@ -17,7 +21,7 @@
                 <br>
                 <span class="info-start">Surname: </span>{$user.last_name}
                 <br>
-                <span class="info-start">Country: </span>Rwanda
+                <span class="info-start">Country: </span>{$user.name}
                 <hr>
                 <div class="profile-badges">
                   <span class="info-start">User Badges </span>
@@ -46,7 +50,7 @@
 
             <div class="profile-user-and-desc">
               <div class="media-body profile-username">
-                Joaquim João Mendes
+                {$user.username}
               </div>
               <div class="profile-user-score">
                 <span class="user_score"> 12.000 </span> user score
@@ -65,14 +69,18 @@
             <div class="row">
               <div class="col-xs-8">
                 <div class="media-body profile-username">
-                  Joaquim João Mendes
+                  {$user.username}
                 </div>
                 <div class="profile-user-score">
-                  <span class="user_score"> 12.000 </span> user score
+                  <span class="user_score"> {$user.score} </span> user score
                 </div>
               </div>
               <div class="col-xs-4 text-right">
-                <img class="user_profile_pic2 img-thumbnail" src="img/profile.png" alt="user_image">
+              {if isset($user.image)}
+			  <img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}img/profile.png" alt="user_image">
+			  {else}
+			  <img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}img/{$user.id}/{$user.image} alt="user_image">
+			  {/if}
               </div>
             </div>
 
@@ -80,13 +88,13 @@
 
             <div class="row">
               <div class="col-xs-12 profile-info">
-                <span class="info-start">Email: </span>jjmendes@coldmail.com
+                <span class="info-start">Email: </span>{$user.email}
                 <br>
-                <span class="info-start">Name: </span>Joaquim João
+                <span class="info-start">Name: </span>{$user.first_name}
                 <br>
-                <span class="info-start">Surname: </span>Mendes
+                <span class="info-start">Surname: </span>{$user.last_name}
                 <br>
-                <span class="info-start">Country: </span>Rwanda
+                <span class="info-start">Country: </span>{$user.name}
               </div>
             </div>
 
@@ -108,7 +116,7 @@
                 <span class="label label-primary">200 questions</span>
                 <br>
                 <span class="label label-success">400 answers</span>
-                <span class="label label-info">10k user score </span>
+                <span class="label label-info">{$user.score} </span>
               </div>
               <div class="col-xs-6 profile-topics">
                 <label class="info-start">Most frequented topics</label> <br>
