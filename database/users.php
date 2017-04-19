@@ -55,11 +55,11 @@
     return $randomString;
 }
 	
-	function insertNewUser($firstname,$lastname,$username,$email,$password){
+	function insertNewUser($firstname,$lastname,$username,$email,$password,$birth,$country){
 		global $conn;
 		$salt = generateRandomString(8);
-		$stmt = $conn->prepare('INSERT INTO UserAcc(first_name,last_name,salt,username,email,password) VALUES (?,?,?,?,?,?)');
-		return $stmt->execute(array($firstname,$lastname,$salt,$username,$email,getHash($password,$salt)));
+		$stmt = $conn->prepare('INSERT INTO UserAcc(first_name,last_name,salt,username,email,password,birth,country) VALUES (?,?,?,?,?,?,?,?)');
+		return $stmt->execute(array($firstname,$lastname,$salt,$username,$email,getHash($password,$salt),$birth,$country));
 	}
 
 ?>
