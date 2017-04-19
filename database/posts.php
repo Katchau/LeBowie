@@ -13,6 +13,7 @@ function createPost($userId, $description) {
     $stmt->execute(array($lastId, $userId, $description));
 
 	echo "Created post instance";
+	echo "lastId is " . $lastId;
 
     $stmt->$conn->prepare("INSERT INTO activity (post_id, user_id, action) VALUES (?, ?, ?)");
     $stmt->execute(array($lastId, $userId, "Create"));
