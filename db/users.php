@@ -12,7 +12,7 @@
 		$stmt = $conn->prepare("SELECT * 
 					FROM UserAcc WHERE username = ? AND password = ?");
 		$stmt->execute(array($username,$password));
-		return $stmt->fetch() == true;
+		return $stmt->fetch();
 	}
 
 ?>
