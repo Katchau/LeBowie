@@ -1,6 +1,6 @@
 <?php
 	include_once('../config/init.php');
-	include_once($BASE_DIR .'db/users.php');
+	include_once($BASE_DIR .'database/users.php');
 
 	if(!$_POST['username'] || !$_POST['password']){
 		$_SESSION['error_messages'][] = 'Invalid login';
@@ -13,7 +13,7 @@
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	
-	$user = isLoginCorrect($username,$password);
+	$user = getUserInfo($username,$password);
 
 	if($user != false){
 		$_SESSION['username'] = $username;

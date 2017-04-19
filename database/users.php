@@ -7,7 +7,7 @@
 		return $stmt->fetchAll();
 	}
 
-	function isLoginCorrect($username,$password){
+	function getUserInfo($username,$password){
 		global $conn;
 		$stmt = $conn->prepare("SELECT * 
 					FROM UserAcc WHERE username = ? AND password = ?");
