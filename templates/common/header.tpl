@@ -76,6 +76,7 @@
           <li><a href="#">sign up</a></li>
           <li><a href="#" data-toggle="modal" data-target="#myModal">sign in</a></li>
           {/if}
+		  
 
           <!-- Modal -->
           <div id="myModal" class="modal fade container col-xs-12" role="dialog">
@@ -95,7 +96,7 @@
                   <div class="form-group">
           				    <input type="password" name="password" id="password_confirmation" class="form-control input-lg" placeholder="Password" tabindex="6">
           				</div>
-                  <div><button type="button" class="btn btn-default" data-dismiss="modal">Sign in</button></div>
+                  <div><button type="submit" class="btn btn-default">Sign in</button></div>
 				 </form>
                 </div>
 
@@ -151,4 +152,16 @@
       </div>
     </div>
   </nav>
+  <div id="error_messages">
+	errors
+    {foreach $ERROR_MESSAGES as $error}
+      <div class="error">{$error}<a class="close" href="#">X</a></div>
+    {/foreach}
+    </div>
+    <div id="success_messages">
+	successes
+    {foreach $SUCCESS_MESSAGES as $success}
+      <div class="success">{$success}<a class="close" href="#">X</a></div>
+    {/foreach}
+    </div>
 </header>
