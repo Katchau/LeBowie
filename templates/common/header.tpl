@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{$BASE_URL}css/topic.css">
     <link rel="stylesheet" href="{$BASE_URL}css/register.css">
     <link rel="stylesheet" href="{$BASE_URL}css/footer.css">
+	<link rel="stylesheet" href="{$BASE_URL}css/profile.css">
     <link rel="stylesheet" href="{$BASE_URL}css/tabs.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 	<script src="js/navbar.js"></script>
@@ -70,7 +71,7 @@
         <ul class="nav navbar-nav navbar-right">
           {if $USERNAME}
 			<li class="navbar-highlight"><a href="{$BASE_URL}pages/questions/ask.php">ask</a></li>
-          <li><a href="#">{$USERNAME}</a></li>
+          <li><a href="{$BASE_URL}pages/users/index.php?username={$USERNAME}">{$USERNAME}</a></li>
           <li><a href="{$BASE_URL}actions/logout.php">sign out</a></li>
           {else}
 			<li class="navbar-highlight"><a href="#" data-toggle="modal" data-target="#myModal">ask</a></li>

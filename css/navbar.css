@@ -300,6 +300,10 @@
 
 /* MESSAGES */
 
+#error_messages {
+	margin-top: -20px;
+}
+
 .error {
   background-color: #FFAAAA;
   padding: 10px;
