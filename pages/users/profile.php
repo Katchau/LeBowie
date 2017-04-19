@@ -8,7 +8,13 @@ if(!isset($username)){
 	exit;
 }	
 $user = getUser($username);
-	
+$userAnswers = getUserAnswers($username);
+$userQuestions = getUserQuestions($username);
+$userTopics = getUserFrequentTopics($user['id']);
+
 $smarty->assign('user',$user);
+$smarty->assign('answers',$userAnswers);
+$smarty->assign('questions',$userQuestions);
+$smarty->assign('topics',$userTopics);
 $smarty->display('user/profile.tpl');
 ?>

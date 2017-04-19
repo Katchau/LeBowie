@@ -481,18 +481,30 @@ INNER JOIN Report ON Report.post_id = Question.post_id
 ORDER BY Topic.id;
 
 CREATE VIEW user_questions_best AS
-SELECT UserAcc.id, username, Question.post_id, title, up_score,down_score
+SELECT UserAcc.id, username, Question.post_id, title, up_score,down_score, topic_id
 FROM ((Question INNER JOIN PostInstance ON Question.post_id = PostInstance.post_id)
 INNER JOIN Post ON Post.id = Question.post_id)
 INNER JOIN UserAcc ON PostInstance.user_id = UserAcc.id
 ORDER BY UserAcc.id, up_score-down_score DESC NULLS FIRST;
 
+CREATE VIEW user_topic_count AS
+SELECT id, topic_id,COUNT(topic_id)
+FROM user_questions_best
+GROUP BY id, topic_id
+ORDER BY id;
+
+CREATE VIEW frequent_topics AS
+SELECT user_topic_count.id, topic_id, topicname, user_topic_count.count
+FROM user_topic_count INNER JOIN Topic ON Topic.id = topic_id
+ORDER BY user_topic_count.id, user_topic_count.count DESC NULLS FIRST;
+
 --possivelmente vou ter de alterar isto
 CREATE VIEW user_answers_best AS
-SELECT UserAcc.id, username, Answer.post_id, up_score, down_score
-FROM ((Answer INNER JOIN PostInstance ON Answer.post_id = PostInstance.post_id)
+SELECT UserAcc.id, username, Answer.post_id, up_score, down_score, 
+most_recent_post.description
+FROM ((Answer INNER JOIN most_recent_post ON Answer.post_id = most_recent_post.id)
 INNER JOIN Post ON Post.id = Answer.post_id)
-INNER JOIN UserAcc ON PostInstance.user_id = UserAcc.id
+INNER JOIN UserAcc ON most_recent_post.user_id = UserAcc.id
 ORDER BY UserAcc.id, up_score-down_score DESC NULLS FIRST;
 
 CREATE VIEW user_answers_recent AS
