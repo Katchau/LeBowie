@@ -7,7 +7,7 @@
 	function getUser($username){
 		global $conn;
 		$stmt = $conn->prepare("SELECT * 
-                            FROM user_info WHERE username = ?");
+                            FROM UserAcc WHERE username = ?");
 		$stmt->execute(array($username));
 		return $stmt->fetch();
 	}
@@ -15,7 +15,7 @@
 	function getUserInfo($userOrEmail){
 		global $conn;
 		$stmt = $conn->prepare("SELECT * 
-                            FROM user_info WHERE username = ? OR email = ?");
+                            FROM UserAcc WHERE username = ? OR email = ?");
 		$stmt->execute(array($userOrEmail,$userOrEmail));
 		return $stmt->fetch();
 	}
