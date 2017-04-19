@@ -1,9 +1,14 @@
 <?php
 include_once('../../config/init.php');
 include_once($BASE_DIR . 'database/topics.php');
-	
-$questions = getAllQuestionsTopic();
-$topic = getTopicInfo();
+
+$topicId = $_GET['id'];
+if(!isset($topicId)){
+	echo 'Invalid Topic!'. '<br>';
+	exit;
+}
+$questions = getAllQuestionsTopic($topicId);
+$topic = getTopicInfo($topicId);
 	
 $smarty->assign('questions',$questions);
 $smarty->assign('topic',$topic);
