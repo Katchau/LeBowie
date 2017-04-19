@@ -63,7 +63,11 @@
               </div>
               <hr>
               <div class="profile-desc">
-			  {$user.description}
+			  {if isset($user.description)}
+			  This user hasn't added a description!
+			  {else}
+			  $user.description
+			  {/if}
               </div>
             </div>
           </div>
@@ -154,7 +158,7 @@
 			  {foreach $questions as $question}
 			  {assign "value" $value+1}
 			  <li><a href="{$BASE_URL}pages/questions/index.php?id={$question.post_id}">
-			  {$question.title}
+			  {substr($question.title,0,200)}
 			  </a></li>
 			  {if $value == 4}
 			  {break}
@@ -170,7 +174,7 @@
 			  {foreach $answers as $answer}
 			  {assign "value" $value+1}
 			  <li><a href="#">
-			  {$answer.description}
+			  {substr($answer.description,0,200)}
 			  </a></li>
 			  {if $value == 3}
 			  {break}
