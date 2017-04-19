@@ -67,12 +67,12 @@
 
         <ul class="nav navbar-nav navbar-right">
           {if $USERNAME}
-			<li class="navbar-highlight"><a href="../../pages/questions/ask.php">ask</a></li>
+			<li class="navbar-highlight"><a href="{$BASE_URL}pages/questions/ask.php">ask</a></li>
           <li><a href="#">{$USERNAME}</a></li>
           <li><a href="{$BASE_URL}actions/logout.php">sign out</a></li>
           {else}
 			<li class="navbar-highlight"><a href="#" data-toggle="modal" data-target="#myModal">ask</a></li>
-          <li><a href="#">sign up</a></li>
+          <li><a href="{$BASE_URL}pages/signup.php">sign up</a></li>
           <li><a href="#" data-toggle="modal" data-target="#myModal">sign in</a></li>
           {/if}
 		  
