@@ -8,7 +8,7 @@
         <div class="hidden-xs col-lg-8 media">
           <div class="profile-upper">
             <div class="profile-image-and-info">
-              {if isset($user.image)}
+              {if $user.image == NULL}
 			  <img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}img/profile.png" alt="user_image">
 			  {else}
 			  <img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}img/{$user.id}/{$user.image} alt="user_image">
@@ -63,7 +63,7 @@
               </div>
               <hr>
               <div class="profile-desc">
-			  {if isset($user.description)}
+			  {if $user.description == NULL }
 			  This user hasn't added a description!
 			  {else}
 			  $user.description
@@ -86,7 +86,7 @@
                 </div>
               </div>
               <div class="col-xs-4 text-right">
-              {if isset($user.image)}
+              {if $user.image == NULL}
 			  <img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}img/profile.png" alt="user_image">
 			  {else}
 			  <img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}img/{$user.id}/{$user.image} alt="user_image">
