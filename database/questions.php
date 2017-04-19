@@ -8,10 +8,10 @@ function createQuestion($userId, $title, $description, $topic, $tags) {
 	$stmt = $conn->prepare("INSERT INTO question (post_id, topic_id, title) VALUES (?, ?, ?)");
 	$stmt->execute(array($lastId, $topicId, $title));
 
-	foreach($tags as $tag) {
-		addTag($lastId, $tag);
-	}
-	return $conn->lastInsertId();
+	//foreach($tags as $tag) {
+	//	addTag($lastId, $tag);
+	//}
+	//return $conn->lastInsertId();
 }
 
 function getHotQuestions(){
