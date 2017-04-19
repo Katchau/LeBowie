@@ -42,7 +42,7 @@ function addTag($postId, $tag) {
 	$tagId = NULL;
 	if ($stmt->rowCount() == 0) {
 		$stmt = $conn->prepare("INSERT INTO tag (text) VALUES (?)");
-		$stmt->execute(array(tag));
+		$stmt->execute(array($tag));
 		$tagId = $conn->lastInsertId();
 	} else {
 		$result = $stmt->fetch();
