@@ -12,6 +12,14 @@
 		return $stmt->fetch();
 	}
 	
+	function getUserInfo($userOrEmail){
+		global $conn;
+		$stmt = $conn->prepare("SELECT * 
+                            FROM user_info WHERE username = ? OR email = ?");
+		$stmt->execute(array($userOrEmail,$userOrEmail));
+		return $stmt->fetch();
+	}
+	
 	function getUserAnswers($username){
 		global $conn;
 		$stmt = $conn->prepare("SELECT * 
