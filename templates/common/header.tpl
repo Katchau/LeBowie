@@ -70,7 +70,7 @@
           {if $USERNAME}
 	  <li class="navbar-highlight"><a href="../../pages/questions/ask.php">ask</a></li>
           <li><a href="#">{$USERNAME}</a></li>
-          <li><a href="#">sign out</a></li>
+          <li><a href="{$BASE_URL}actions/login.php">sign out</a></li>
           {else}
 	  <li class="navbar-highlight"><a href="#" data-toggle="modal" data-target="#myModal">ask</a></li>
           <li><a href="#">sign up</a></li>
