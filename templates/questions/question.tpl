@@ -49,7 +49,7 @@
 							{$question.title}
 						</h3>
 						<div class="question_details"> asked by
-							<a class="question_author" href="#">KaitlynHanrahan</a> on <span class="question_date">24/02/2017</span> in <a class="question_topic" href="#">programming</a>
+							<a class="question_author" href="#">{$question.username}</a> on <span class="question_date">{$question.creation}</span> in <a class="question_topic" href="#">{$question.topicname}</a>
 						</div>
 						<hr>
 						<div class="question_body">
@@ -57,10 +57,9 @@
 						</div>
 						<div class="question_coda">
 							<div class="question_tags">
-								<a class="label label-default" href="#">android</a>
-								<a class="label label-default" href="#">layout</a>
-								<a class="label label-default" href="#">android-layout</a>
-								<a class="label label-default" href="#">android-styles</a>
+								{foreach $tags as $tag}
+								<a class="label label-default" href="#">{$tag}</a>
+								{/foreach}
 							</div>
 							<div class="question_votes">
 								<label> Was this question relevant? Please leave a vote! </label>
@@ -68,10 +67,10 @@
 									<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
 								</button>
 								<button type="button" class="btn btn-default">
-									<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> 7</span>
+									<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">{$questions.up_score}</span>
 								</button>
 								<button type="button" class="btn btn-default">
-									<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> 0</span>
+									<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">{$questions.down_score}</span>
 								</button>
 							</div>
 						</div>
@@ -140,6 +139,5 @@
 			</div>
 		</div>
 		<hr>
-	</div>
 	</div>
 </div>

@@ -53,11 +53,28 @@ function addTag($postId, $tag) {
 	$stmt->execute(array($postId, $tagId));
 }
 
-function getQuestionInfo($questionId){
+function getQuestionInfo($questionId) {
 	global $conn;
 	$stmt = $conn->prepare("SELECT id, topicname, post_id, title, description, up_score, down_score, creation, username FROM question_display WHERE id = ?");
 
 	$stmt->execute(array($questionId));
 	return $stmt->fetch();
+}
+
+function getQuestionTags($questionId) {
+	global $conn;
+	$stmt = $conn->prepare("SELECT tag_id FROM tag WHERE question_id = ?");
+	$stmt->execute(array($questionId));
+	$results = $stmt->fetchAll();
+
+	$tags = [];
+	foreach ($results as $result) {
+		$tagId = $result["tag_id"];
+		$stmt = $conn->prepare("SELECT text FROM tag WHERE id = ?");
+		$stmt->execute(array($tagId));
+		$tag = $stmt->fetch()["text"];
+		$tags[] = $tag;
+	}
+	return $tags;
 }
 ?>
