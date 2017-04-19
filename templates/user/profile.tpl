@@ -157,7 +157,7 @@
               {assign "value" 0}
 			  {foreach $questions as $question}
 			  {assign "value" $value+1}
-			  <li><a href="{$BASE_URL}pages/questions/index.php?id={$question.post_id}">
+			  <li><a class="list-group-item suggestion" href="{$BASE_URL}pages/questions/index.php?id={$question.post_id}">
 			  {substr($question.title,0,200)}
 			  </a></li>
 			  {if $value == 4}
@@ -173,7 +173,7 @@
               {assign "value" 0}
 			  {foreach $answers as $answer}
 			  {assign "value" $value+1}
-			  <li><a href="#">
+			  <li><a class="list-group-item suggestion" href="#">
 			  {substr($answer.description,0,200)}
 			  </a></li>
 			  {if $value == 3}
