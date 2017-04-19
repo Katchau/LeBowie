@@ -7,7 +7,7 @@ $title = strip_tags($_POST["question-title"]);
 $description = strip_tags($_POST["question-description"]);
 $topic = strip_tags($_POST["question-topic"]);
 
-$commaSeparatedTags = strip_tags($POST["question-tags"]);
+$commaSeparatedTags = strip_tags($_POST["question-tags"]);
 $untrimmedTags = explode(",", $commaSeparatedTags);
 $tags = array_map('trim', $untrimmedTags);
 
