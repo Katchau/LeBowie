@@ -20,7 +20,9 @@
 	<div class="ask_area col-sm-8 col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
         <h1 class="hidden-lg hidden-md hidden-sm topicTitle">{$topic.topicname}</h1>
 	<p class="hidden-lg hidden-md hidden-sm">{$topic.description}</p>
+	<div>
 	{include file='questions/listquestions.tpl' questions=$questions type=1}
+	</div>
 	</div>
 	</div>
 </div>
