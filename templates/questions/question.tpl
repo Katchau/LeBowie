@@ -49,7 +49,7 @@
 							{$question.title}
 						</h3>
 						<div class="question_details"> asked by
-							<a class="question_author" href="#">{$question.username}</a> on <span class="question_date">{$question.creation}</span> in <a class="question_topic" href="#">{$question.topicname}</a>
+							<a class="question_author" href="{$BASE_URL}pages/users/index.php?username={$question.username}">{$question.username}</a> on <span class="question_date">{$question.creation}</span> in <a class="question_topic" href="{$BASE_URL}pages/topic/list.php?id={$question.id}">{$question.topicname}</a>
 						</div>
 						<hr>
 						<div class="question_body">
