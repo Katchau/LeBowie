@@ -10,4 +10,5 @@ $smarty->assign('hquestions',$hot_questions);
 $smarty->assign('rquestions',$recent_questions);
 $smarty->assign('bquestions',$best_questions);
 $smarty->display('frontpage/landing.tpl');
+$smarty->display('frontpage/footer.tpl');
 ?>

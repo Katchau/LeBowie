@@ -17,4 +17,5 @@ $smarty->assign('answers',$userAnswers);
 $smarty->assign('questions',$userQuestions);
 $smarty->assign('topics',$userTopics);
 $smarty->display('user/profile.tpl');
+$smarty->display('frontpage/footer.tpl');
 ?>
