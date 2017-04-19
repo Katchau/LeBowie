@@ -11,11 +11,11 @@
               <img class="user_profile_pic2 img-thumbnail" src="img/profile.png" alt="user_image">
               <hr>
               <div class="profile-info">
-                <span class="info-start">Email: </span>jjmendes@coldmail.com
+                <span class="info-start">Email: </span>{$user.email}
                 <br>
-                <span class="info-start">Name: </span>Joaquim João
+                <span class="info-start">Name: </span>{$user.first_name}
                 <br>
-                <span class="info-start">Surname: </span>Mendes
+                <span class="info-start">Surname: </span>{$user.last_name}
                 <br>
                 <span class="info-start">Country: </span>Rwanda
                 <hr>

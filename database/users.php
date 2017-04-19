@@ -1,10 +1,10 @@
 <?php
-	function getUser($user_name,$password){
+	function getUser($username){
 		global $conn;
 		$stmt = $conn->prepare("SELECT * 
                             FROM UserAcc WHERE username = ?");
-		$stmt->execute();
-		return $stmt->fetchAll();
+		$stmt->execute(array($username));
+		return $stmt->fetch();
 	}
 
 	function getUserInfo($username,$password){
