@@ -72,7 +72,7 @@
           <li><a href="{$BASE_URL}actions/logout.php">sign out</a></li>
           {else}
 			<li class="navbar-highlight"><a href="#" data-toggle="modal" data-target="#myModal">ask</a></li>
-          <li><a href="{$BASE_URL}pages/signup.php">sign up</a></li>
+          <li><a href="{$BASE_URL}pages/users/signup.php">sign up</a></li>
           <li><a href="#" data-toggle="modal" data-target="#myModal">sign in</a></li>
           {/if}
 		  
