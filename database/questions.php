@@ -63,7 +63,7 @@ function getQuestionInfo($questionId) {
 
 function getQuestionTags($questionId) {
 	global $conn;
-	$stmt = $conn->prepare("SELECT tag_id FROM tag WHERE question_id = ?");
+	$stmt = $conn->prepare("SELECT tag_id FROM questiontag WHERE question_id = ?");
 	$stmt->execute(array($questionId));
 	$results = $stmt->fetchAll();
 
