@@ -455,7 +455,7 @@ ORDER BY post_id DESC NULLS FIRST;
 -- loli LIMIT 10;
 
 CREATE VIEW hot_questions AS
-SELECT *
+SELECT question_display.*
 FROM question_display INNER JOIN first_post_instance 
 ON question_display.post_id = first_post_instance.id
 WHERE CURRENT_DATE - first_post_instance.creation < 7
