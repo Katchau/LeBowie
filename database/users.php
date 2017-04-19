@@ -11,14 +11,31 @@
 		$stmt->execute(array($username));
 		return $stmt->fetch();
 	}
-
-	function getUserInfo($usernameormail){
+	
+	function getUserAnswers($username){
 		global $conn;
 		$stmt = $conn->prepare("SELECT * 
-					FROM UserAcc WHERE username = ? OR email = ?");
-		$stmt->execute(array($usernameoremail,$usernameoremail));
-		return $stmt->fetch();
+                            FROM user_answers_best WHERE username = ?");
+		$stmt->execute(array($username));
+		return $stmt->fetchAll();
 	}
+	
+	function getUserQuestions($username){
+		global $conn;
+		$stmt = $conn->prepare("SELECT * 
+                            FROM user_questions_best WHERE username = ?");
+		$stmt->execute(array($username));
+		return $stmt->fetchAll();
+	}
+	
+	function getUserFrequentTopics($userId){
+		global $conn;
+		$stmt = $conn->prepare("SELECT * 
+                            FROM frequent_topics WHERE id = ?");
+		$stmt->execute(array($userId));
+		return $stmt->fetchAll();
+	}
+	
 	
 	function generateRandomString($length) {
 		$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';

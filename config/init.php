@@ -27,6 +27,7 @@
 	
 	$DEF_TOPIC = $headerTopics[0]['topicname'];	
 	$smarty->assign('DEF_TOPIC', $DEF_TOPIC);
+	$smarty->assign('headerTopics', $headerTopics);
 	
   }
   
