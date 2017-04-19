@@ -67,10 +67,10 @@
 									<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
 								</button>
 								<button type="button" class="btn btn-default">
-									<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">{$questions.up_score}</span>
+									<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">{$question.up_score}</span>
 								</button>
 								<button type="button" class="btn btn-default">
-									<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">{$questions.down_score}</span>
+									<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">{$question.down_score}</span>
 								</button>
 							</div>
 						</div>
