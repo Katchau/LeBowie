@@ -22,7 +22,7 @@
   
   if (is_null($DEF_TOPIC)){
 	
-	include_once($BASE_DIR . 'database/topic.php');
+	include($BASE_DIR . 'database/topic.php');
 	$headerTopics = getTopics();
 	
 	$DEF_TOPIC = $headerTopics[0]['topicname'];	

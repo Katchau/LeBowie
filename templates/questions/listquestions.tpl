@@ -2,9 +2,9 @@
   {foreach $questions as $question}
 		
 	<div class="question well">
-		<h2 class ="questionTitle"><a href="#">{$question.title}</a> </h2>
+		<h2 class ="questionTitle"><a href="{$BASE_URL}pages/questions/index.php?id={$question.post_id}">{$question.title}</a> </h2>
 		<p class="questionInfo">
-			asked by <a href="#" class="writer"> {$question.username} </a> on {$question.creation} 
+			asked by <a href="{$BASE_URL}pages/users/profile.php?id={$question.username}" class="writer"> {$question.username} </a> on {$question.creation} 
 			{if $type != 1}
 			in <a class="topic" href="{$BASE_URL}pages/topic/list.php?id={$question.id}"> {$question.topicname} </a>
 			{/if}
