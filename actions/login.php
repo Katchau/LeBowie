@@ -13,7 +13,7 @@
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	
-	$user = getUserInfo($username,$password);
+	$user = getUserInfo($username);
 
 	if($user != false && $user['password'] === getHash($_POST['password'],$user['salt'])){
 		$_SESSION['username'] = $username;
