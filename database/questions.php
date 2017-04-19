@@ -11,7 +11,6 @@ function createQuestion($userId, $title, $description, $topic, $tags) {
 	foreach($tags as $tag) {
 		addTag($lastId, $tag);
 	}
-	//return $conn->lastInsertId();
 }
 
 function getHotQuestions(){

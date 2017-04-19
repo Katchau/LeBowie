@@ -1,15 +1,13 @@
 <?php
-
-	include_once('../../config/init.php');
-	include_once($BASE_DIR . 'actions/questions/question.php');
+include_once('../../config/init.php');
+include_once($BASE_DIR . 'database/questions.php');
 	
-	$hot_questions = hotQuestions();
-	$recent_questions = recentQuestions();
-	$best_questions = bestQuestions();
+$hot_questions = getHotQuestions();
+$recent_questions = getRecentQuestions();
+$best_questions = getBestQuestions();
 	
-	$smarty->assign('hquestions',$hot_questions);
-	$smarty->assign('rquestions',$recent_questions);
-	$smarty->assign('bquestions',$best_questions);
-	$smarty->display('frontpage/landing.tpl');
-
+$smarty->assign('hquestions',$hot_questions);
+$smarty->assign('rquestions',$recent_questions);
+$smarty->assign('bquestions',$best_questions);
+$smarty->display('frontpage/landing.tpl');
 ?>
