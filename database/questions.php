@@ -10,7 +10,7 @@ function createQuestion($userId, $title, $description, $topic, $tags) {
 	echo "Am here now";
 
 	$stmt = $conn->prepare("INSERT INTO question (post_id, topic_id, title) VALUES (?, ?, ?)");
-	$stmt->execute(array($lastId, $topicId, $title));
+	$stmt->execute(array($lastId, $topic, $title));
 
 	//foreach($tags as $tag) {
 	//	addTag($lastId, $tag);
