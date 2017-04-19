@@ -75,8 +75,8 @@
 	//falta fazer um para ter tags.
 	function getAllQuestionsTopic($topic_id){
 		global $conn;
-		$stmt = $conn->prepare("SELECT *
-								FROM question_display
+		$stmt = $conn->prepare("SELECT title, description, score
+								FROM get_questions_topic
 								WHERE id = ?");
 		$stmt->execute(array($topic_id));
 		return $stmt->fetchAll();
@@ -84,8 +84,8 @@
 	
 	function getAnswersQuestion($question_id){
 		global $conn;
-		$stmt = $conn->prepare("SELECT *
-								FROM answer_display
+		$stmt = $conn->prepare("SELECT description, score
+								FROM question_answers
 								WHERE question = ?");
 		$stmt->execute(array($question_id));
 		return $stmt->fetchAll();
@@ -93,8 +93,8 @@
 	
 	function getAnswersQuestionBest($question_id){
 		global $conn;
-		$stmt = $conn->prepare("SELECT *
-								FROM best_answers
+		$stmt = $conn->prepare("SELECT description, score
+								FROM question_answers_best
 								WHERE question = ?");
 		$stmt->execute(array($question_id));
 		return $stmt->fetchAll();
@@ -203,11 +203,10 @@
 	}
 	
 	function getUserAnswers($user_id){
-		//l8
+		
 	}
 	
 	function getUserBestAnswers($user_id){
-		//l7
+		
 	}
-	//não me apetece fazer mais nada xD
 ?>

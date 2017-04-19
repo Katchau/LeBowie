@@ -16,4 +16,5 @@ function loadDocument(){
 	})(jQuery)
 }
 
+
 $(document).ready(loadDocument);
