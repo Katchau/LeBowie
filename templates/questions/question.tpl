@@ -18,7 +18,7 @@
 				</div>
 				<hr>
 				<div class="question_body">
-					{$question.description}
+					{$question.description|unescape:'html'}
 				</div>
 				<div class="question_coda">
 					<div class="question_tags">
