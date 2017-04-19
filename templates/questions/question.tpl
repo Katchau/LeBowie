@@ -1,6 +1,20 @@
 {include file='common/header.tpl'}
 {include file='common/scriptlist.tpl'}
 
+<div id="extras-side-nav" class="side-nav">
+      <div class="side-nav-options">
+        <a href="#">answer question</a>
+      </div>
+      <hr>
+      <div class="side-nav-options">
+        <a href="#">ask</a>
+      </div>
+      <hr>
+      <div class="side-nav-suggested">
+        <label>suggested questions</label>
+      </div>
+</div>
+
 <div class="col-sm-8 question_area col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
 	<div class="question">
 		<div class="media">
