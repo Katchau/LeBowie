@@ -19,6 +19,7 @@ function createPost($userId, $description) {
 
 	echo "Created post instance";
 
+	echo "Returning postId " . $lastId;
     return $lastId;
 }
 ?>
