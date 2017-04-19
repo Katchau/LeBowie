@@ -55,8 +55,7 @@ function addTag($postId, $tag) {
 
 function getQuestionInfo($questionId) {
 	global $conn;
-	$stmt = $conn->prepare("SELECT id, topicname, post_id, title, description, up_score, down_score, creation, username FROM question_display WHERE id = ?");
-
+	$stmt = $conn->prepare("SELECT id, topicname, post_id, title, description, up_score, down_score, creation, username FROM question_display WHERE post_id = ?");
 	$stmt->execute(array($questionId));
 	return $stmt->fetch();
 }
