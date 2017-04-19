@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{$BASE_URL}css/topic.css">
     <link rel="stylesheet" href="{$BASE_URL}css/register.css">
     <link rel="stylesheet" href="{$BASE_URL}css/footer.css">
+	<link rel="stylesheet" href="{$BASE_URL}css/profile.css">
     <link rel="stylesheet" href="{$BASE_URL}css/tabs.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 	<script src="js/navbar.js"></script>
