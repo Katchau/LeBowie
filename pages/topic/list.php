@@ -1,11 +1,11 @@
 <?php
-	include_once('../../config/init.php');
-	include_once($BASE_DIR . 'actions/topic/get_topic.php');
+include_once('../../config/init.php');
+include_once($BASE_DIR . 'database/topics.php');
 	
-	$questions = getTopicQuestions();
-	$topic = getTopicInformation();
+$questions = getAllQuestionsTopic();
+$topic = getTopicInfo();
 	
-	$smarty->assign('questions',$questions);
-	$smarty->assign('topic',$topic);
-	$smarty->display('topic/list.tpl');
+$smarty->assign('questions',$questions);
+$smarty->assign('topic',$topic);
+$smarty->display('topic/list.tpl');
 ?>
