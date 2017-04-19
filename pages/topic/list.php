@@ -13,5 +13,4 @@ $topic = getTopicInfo($topicId);
 $smarty->assign('questions',$questions);
 $smarty->assign('topic',$topic);
 $smarty->display('topic/list.tpl');
-$smarty->display('frontpage/footer.tpl');
 ?>

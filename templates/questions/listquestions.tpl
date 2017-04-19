@@ -43,3 +43,4 @@
 
   {/foreach}
 
+  {include file='common/footer.tpl'}
