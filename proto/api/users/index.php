@@ -33,6 +33,10 @@ function get($params) {
 function delete($params) {
     // TODO: Verificar as permissoes do utilizador que faz o pedido
     $id = $params["id"];
-    deleteUser($id);
+    try {
+	deleteUser($id);
+    } catch (PDOException e) {
+	http_response_code(500);
+    }
 }
 ?>
