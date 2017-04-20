@@ -1,3 +1,3 @@
 <?php
-header(Location: pages/questions/landing.php);
+header("Location: pages/questions/landing.php");
 ?>
