@@ -21,6 +21,9 @@ if ($method === "GET") {
     // TODO: Verificar as permissoes do utilizador que faz o pedido
     parse_str(file_get_contents("php://input"), $vars);
     echo "Am here" . count($vars);
+    foreach ($vars as $var) {
+	echo $var;
+    }
     echo $vars["id"];
 }
 ?>
