@@ -7,7 +7,7 @@
 			</div>
 			<div class="media-body answer_area">
 				<div class="answer_body">
-					{$answer.description}
+					{$answer.description|unescape:'html'}
 				</div>
 				<div class="answer_details"> answered by
 					<a class="answer_author" href="#">{$answer.username}</a>
