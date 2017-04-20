@@ -45,10 +45,11 @@
 						<input type="date" class="form-control" name="birth"> 
 					</div>
 				</div>
+
 				<div class="col-xs-12 col-sm-6 col-md-6">
 				
-				<div class="form-group input-lg">
-  						<select class="form-control" name="country" required>
+				<div class="form-group">
+  						<select class="form-control input-lg" name="country" required>
   							<option selected="selected" value="">choose your Country...</option>
   							{foreach $countries as $country}
   							<option value="{$country.id}">{$country.name}</option>
