@@ -4,16 +4,19 @@ include_once($BASE_DIR . "database/users.php");
 
 $id = $_GET["id"];
 
-try {
-    $user = getUserById($id);
-    $badges = getUserBadges($id);
-} catch (PDOException $e) {
-    http_response_code(500);
-}
+if ($_SERVER["REQUEST_METHOD"] === "GET") {
+    try {
+	$user = getUserById($id);
+	$badges = getUserBadges($id);
+    } catch (PDOException $e) {
+	http_response_code(500);
+    }
 
-if (!isset($user["id"])) {
-    http_response_code(404);
-} else {
+    if (!isset($user["id"])) {
+	http_response_code(404);
+	exit;
+    }
+
     $badgesObject = [];
     foreach ($badges as $badge) {
 	$badgesObject[] = [
@@ -21,7 +24,8 @@ if (!isset($user["id"])) {
 	    "color" => $badge["color"],
 	    "text" => $badge["text"]
 	];
-    }    
+    }
+
     $userObject = [
 	"user_id" => $user["id"],
 	"username" => $user["username"],
@@ -34,6 +38,9 @@ if (!isset($user["id"])) {
 	"score" => $user["score"],
 	"badges" => $badgesObject
     ];
+
     echo json_encode($userObject);
+} else {
+    echo "That was not a GET";
 }
 ?>
