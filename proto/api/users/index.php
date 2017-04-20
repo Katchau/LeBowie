@@ -35,7 +35,7 @@ function delete() {
     $contents = file_get_contents("php://input");
     $_delete = json_decode($contents, true);
 
-    $id = $_delete($id);
+    $id = $_delete["id"];
     deleteUser($id);
 }
 ?>
