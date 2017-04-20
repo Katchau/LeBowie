@@ -13,14 +13,13 @@ try {
     http_response_code(500);
 }
 
-echo ($user == true);
 
 $badgesObject = [];
 foreach ($badges as $badge) {
     $badgesObject[] = [
-	"id" => $badge["id"],
-	"color" => $badge["color"],
-	"text" => $badge["text"]
+	"id" => $badge->id,
+	"color" => $badge->color,
+	"text" => $badge->text
     ];
 }
     
