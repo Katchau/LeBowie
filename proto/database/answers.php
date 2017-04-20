@@ -1,5 +1,4 @@
 <?php
-include "posts.php";
 
 function getRecentAnswers($questionId){
 	global $conn;
