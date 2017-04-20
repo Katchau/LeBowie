@@ -22,6 +22,7 @@ if ($method === "GET") {
     parse_str(file_get_contents("php://input"), $para);
     
     echo "Am here" . count($para);
+    print_r(array_values($para));
     echo $para["id"];
 }
 ?>
