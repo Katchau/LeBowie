@@ -49,7 +49,21 @@ function getUserFrequentTopics($userId) {
     $stmt->execute(array($userId));
     return $stmt->fetchAll();
 }
-	
+
+function getUserBadges($userId) {
+    global $conn;
+    $stmt = $conn->prepare("SELECT badge_id FROM useraccbadge WHERE user_id = ?");
+    $stmt->execute(array($userId));
+    $badgeIds = $stmt->fetchAll();
+
+    $badges = [];
+    foreach ($badgeIds as $badgeId) {
+        $stmt = $conn->prepare("SELECT * FROM badge WHERE id = ?");
+        $stmt->execute(array($badgeId["badge_id"]));
+        $badges[] = $stmt->fetch();
+    }
+    return $badges;
+}
 	
 function generateRandomString($length) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
