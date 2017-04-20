@@ -3,7 +3,7 @@ include_once("../../config/init.php");
 include_once($BASE_DIR . "database/users.php");
 
 $method = $_SERVER["REQUEST_METHOD"];
-switch (method) {
+switch ($method) {
     case "GET":
 	get();
 	break;
