@@ -12,14 +12,16 @@ try {
 } catch (PDOException $e) {
     http_response_code(500);
 }
-
+if (!isset($user["id"])) {
+    http_response_code(404);
+}
 
 $badgesObject = [];
 foreach ($badges as $badge) {
     $badgesObject[] = [
-	"id" => $badge->id,
-	"color" => $badge->color,
-	"text" => $badge->text
+	"id" => $badge["id"],
+	"color" => $badge["color"],
+	"text" => $badge["text"]
     ];
 }
     
