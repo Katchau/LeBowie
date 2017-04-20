@@ -1,0 +1,106 @@
+.jumbotrona {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 0px;
+  padding-left: 5px;
+
+}
+
+.questionSearch .jumbotrona .dropdown a{
+	color: orange;
+}
+
+.questionSearch .jumbotrona .dropdown li a{
+	color: gray;
+}
+
+#searchBody{
+	text-align: justify;
+}
+
+.questionSearch{
+	margin-top:50px;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 740px;
+  }
+}
+.question .questionTitle{
+	margin-top: 0px;
+}
+
+.question .questionTitle a{
+	text-decoration: none;
+	text-align: left;
+	font-weight: bold;
+	color: black;
+}
+
+.question .questionTitle a:hover{
+	text-decoration: underline;
+}
+
+.question .questionInfo{
+	text-align: left;
+	color: gray;
+	font-size: 75%;
+}
+
+.question .questionInfo button{
+	font-size: 110%;
+}
+
+
+.question .writerInfo{
+	text-align: left;
+	color: gray;
+	font-size: 50%;
+}
+
+.question .writer{
+	color: orange;
+}
+
+.question .questionInfo .topic{
+	color: orange;
+	font-style: italic;
+}
+
+.question .viewmore{
+	color: orange;
+}
+
+.topic .topicTitle a{
+	text-decoration: none;
+	text-align: left;
+	font-weight: bold;
+	color: orange;
+}
+
+.topic .topicTitle a:hover{
+	font-size: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+  /* Remove the bottom border on the jumbotron for visual effect */
+	.jumbotrona {
+		text-align: center;
+	}
+	#searchBody h2{
+		text-align: center;
+	}
+	.question .questionInfo{
+		text-align: center;
+		display: block;
+	}
+	.question .questionInfo a{
+		display: block;
+	}
+	.question .questionInfo button{
+		width: 200px;
+		margin-bottom: 10px;
+	}
+}

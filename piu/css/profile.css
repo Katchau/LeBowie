@@ -1,0 +1,95 @@
+.profile {
+}
+.profile-q-and-a{
+	font-size:2em;
+}
+
+.user_profile_pic2{
+	max-height: 200px;
+	border-radius:0;
+}
+
+.profile-username{
+	font-size:2em;
+}
+.profile-desc{
+
+}
+.profile-image-and-info{
+	float:left;
+	margin-right:1.5em;
+	margin-bottom:1.5em;
+	padding:1em;
+	border-right: 1px solid orange;
+}
+.profile-user-score{
+	font-size:1.5em;
+}
+.profile-user-score span {
+	color: orange;
+	font-weight: bold;
+}
+.info-start{
+	color:orange;
+	font-weight: bold;
+}
+
+.profile-badges{
+	margin-top: 0.5em;
+	text-align:center;
+}
+.profile-down{
+	margin-top:2em;
+}
+
+.profile-topics li a:hover {
+  font-size: 30px;
+  background: #f6f6f6;
+}
+.profile-topics .info-start{
+	width: 100%;
+	text-align: center;
+}
+
+.profile-topics ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+	text-align: center;
+}
+
+.profile-topics li {
+  font: Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+
+.profile-topics li:last-child {
+  border: none;
+}
+
+.profile-topics li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+
+  -webkit-transition: font-size 0.2s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.2s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.2s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.2s ease, background-color 0.3s ease;
+  transition: font-size 0.2s ease, background-color 0.3s ease;
+}
+.mobile_profile img{
+	max-height: 8em;
+}
+.profile-topics li a:hover {
+  font-size: 1.2em;
+	color:orange;
+  background: #f6f6f6;
+}
+.profile-q-and-a .viewmore{
+	color: orange;
+	font-size: 0.5em;
+	padding-left: 15px;
+}
+
+

@@ -1,0 +1,51 @@
+.welcome .jumbotron{
+	padding-top:0;
+	padding-bottom: 0;
+}
+.orange{
+	color: orange;
+	font-weight: bold;
+}
+.welcome .btn{
+	background-color: orange;
+}
+#tabs li > a{
+	color: orange;
+	text-decoration: none;
+	background-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px 10px 0px 0px;
+}
+#tabs li.active > a {
+	color: white;
+	background-color: orange;
+}
+.tab-content .well{
+	border-radius :0;
+}
+.tab-content a {
+	color: orange;
+}
+.tab-content a:hover{
+	color: darkorange;
+	text-decoration: none;
+}
+.tab-content .questionInfo{
+	text-align: left;
+}
+.tab-content .viewmore{
+	color: darkgray;
+}
+.tab-content .questionTitle a{
+	color: #505050;
+}
+.tab-content .postBody .btn {
+	background-color: orange;
+	border-color:orange;
+	color: white;
+}
+.top-answer{
+	color: orange;
+	font-weight:bold;
+}

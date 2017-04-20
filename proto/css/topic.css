@@ -1,0 +1,70 @@
+
+
+.questionSearch{
+	margin-top:100px;
+}
+
+.question .questionTitle{
+	margin-top: 0px;
+}
+
+.question .questionTitle a{
+	text-decoration: none;
+	text-align: left;
+	font-weight: bold;
+	color: #3f3f3f;
+	font-size: 0.75em;
+}
+
+.question .questionTitle a:hover{
+	text-decoration: none;
+}
+
+.question .questionInfo{
+	text-align: left;
+	color: gray;
+	font-size: 75%;
+}
+
+.question .questionInfo button{
+	font-size: 110%;
+}
+
+
+.question .writerInfo{
+	text-align: left;
+	color: gray;
+	font-size: 50%;
+}
+
+.question .postBody{
+	padding: 10px;
+}
+
+.topicTitle, .topicTitle#wtf{
+	font-size: 1.4em !important;
+}
+
+.guidelines_side .askButton{
+	font-size: 1.1em;
+	width: 100%;
+}
+
+.askButton{
+	font-size: 1.1em;
+	width: 100%;
+	text-align: center;
+}
+
+.question .writer{
+	color: orange;
+}
+
+.question .questionInfo .topic{
+	color: orange;
+	font-style: italic;
+}
+
+.question .viewmore{
+	color: orange;
+}
