@@ -82,6 +82,12 @@ function insertNewUser($firstname,$lastname,$username,$email,$password,$birth,$c
     return $stmt->execute(array($firstname,$lastname,$salt,$username,$email,getHash($password,$salt),$birth,$country));
 }
 
+function deleteUser($userId) {
+    global $conn;
+    $stmt = $conn->prepare("DELETE FROM useracc WHERE id = ?");
+    $stmt->execute(array($userId));
+}
+
 function serializeUser($user, $badges) {
     $badgesObject = [];
     foreach ($badges as $badge) {
