@@ -46,9 +46,16 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6">
-				<div class="form-group">
-				    <input type="text" name="country" id="countryform" class="form-control input-lg" placeholder="Enter Country" tabindex="6">
+				
+				<div class="form-group input-lg">
+  						<select class="form-control" name="country" required>
+  							<option selected="selected" value="">choose your Country...</option>
+  							{foreach $countries as $country}
+  							<option value="{$country.id}">{$country.name}</option>
+  							{/foreach}
+  						</select>
 				</div>
+				
 			    </div>
 				
 			</div>
