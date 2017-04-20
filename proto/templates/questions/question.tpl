@@ -91,5 +91,6 @@
 			{/foreach}
 		</div>
 	</div>
+</div>
 
   {include file='common/footer.tpl'}
