@@ -17,13 +17,12 @@ if ($method === "GET") {
 	http_response_code(500);
     }
     echo serializeUser($user, $badges);
-} elseif ($method === "DELETE") {
+} elseif ($method === "ELSE") {
     // TODO: Verificar as permissoes do utilizador que faz o pedido
-    $putdata = fopen("php://input", "r");
-    $para = parse_str($putdata);
+    parse_str(file_get_contents("php://input"), $para);
     
     echo "Am here" . count($para);
-    foreach ($para as $var) {
+    foreach ($para as $var) {s
 	echo $var;
     }
     echo $para["id"];
