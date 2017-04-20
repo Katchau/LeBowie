@@ -22,9 +22,6 @@ if ($method === "GET") {
     parse_str(file_get_contents("php://input"), $para);
     
     echo "Am here" . count($para);
-    foreach ($para as $var) {s
-	echo $var;
-    }
     echo $para["id"];
 }
 ?>
