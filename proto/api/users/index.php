@@ -16,7 +16,7 @@ if ($method === "GET") {
     } catch (PDOException $e) {
 	http_response_code(500);
     }
-    return serializeUsers($user, $badges);
+    return serializeUser($user, $badges);
 } elseif ($method === "DELETE") {
     // TODO: Verificar as permissoes do utilizador que faz o pedido
     parse_str(file_get_contents("php://input"), $vars);
