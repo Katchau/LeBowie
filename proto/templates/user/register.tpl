@@ -49,7 +49,7 @@
 				<div class="col-xs-12 col-sm-6 col-md-6">
 				
 				<div class="form-group">
-  						<select class="form-control input-lg" name="country" required style="height:100%;padding-top:0px;padding-bottom:0px;">
+  						<select class="form-control input-lg" name="country" required id="country_select">
   							<option selected="selected" value="">Country</option>
   							{foreach $countries as $country}
   							<option value="{$country.id}">{$country.name}</option>
