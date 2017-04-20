@@ -81,4 +81,30 @@ function insertNewUser($firstname,$lastname,$username,$email,$password,$birth,$c
     $stmt = $conn->prepare('INSERT INTO UserAcc(first_name,last_name,salt,username,email,password,birth,country) VALUES (?,?,?,?,?,?,?,?)');
     return $stmt->execute(array($firstname,$lastname,$salt,$username,$email,getHash($password,$salt),$birth,$country));
 }
+
+function serializeUser($user, $badges) {
+    $badgesObject = [];
+    foreach ($badges as $badge) {
+	$badgesObject[] = [
+	    "id" => $badge["id"],
+	    "color" => $badge["color"],
+	    "text" => $badge["text"]
+	];
+    }
+    
+    $userObject = [
+        "user_id" => $user["id"],
+        "username" => $user["username"],
+        "email" => $user["email"],
+        "first_name" => $user["first_name"],
+        "last_name" => $user["last_name"],
+        "country" => $user["country"],
+        "description" => $user["description"],
+        "image" => $user["image"],
+        "score" => $user["score"],
+        "badges" => $badgesObject
+    ];
+    
+    return json_encode($userObject);
+}
 ?>
