@@ -79,6 +79,17 @@
 			</div>
 			<hr>
 		</div>
+		
+		<div class="col-lg-8 answers">
+
+			<div class="answers_header">
+				Answers <span class="answer_no">{sizeof($answers)}</span>
+			</div>
+			
+			{foreach $answers as $answer}
+				{include file='answers/list.tpl' answer=$answer}
+			{/foreach}
+		</div>
 	</div>
 
 	<div class="col-lg-8 answers">
