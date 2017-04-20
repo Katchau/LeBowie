@@ -59,7 +59,7 @@ function getUserBadges($userId) {
     $badges = [];
     foreach ($badgeIds as $badgeId) {
         $stmt = $conn->prepare("SELECT * FROM badge WHERE id = ?");
-        $stmt->execute(array($badgeId));
+        $stmt->execute(array($badgeId["badge_id"]));
         $badges[] = $stmt->fetch();
     }
     return $badges;

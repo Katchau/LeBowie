@@ -3,6 +3,9 @@ include_once("../../config/init.php");
 include_once($BASE_DIR . "database/users.php");
 
 $id = $_GET["id"];
+
+// TODO: Fazer um try catch aqui e dar 500 internal server error em caso de
+//       erro
 $user = getUserById($id);
 $badges = getUserBadges($id);
 
