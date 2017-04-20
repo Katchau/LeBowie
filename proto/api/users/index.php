@@ -19,8 +19,8 @@ if ($method === "GET") {
     echo serializeUser($user, $badges);
 } else {
     // TODO: Verificar as permissoes do utilizador que faz o pedido
-    echo file_get_contents("php://input");
-    parse_str(file_get_contents("php://input"), $para);
+    $contents = file_get_contents("php://input");
+    $para = json_decode($contents);
     
     echo "Am here" . count($para);
     print_r(array_values($para));
