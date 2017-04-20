@@ -20,12 +20,12 @@ if ($method === "GET") {
 } elseif ($method === "DELETE") {
     // TODO: Verificar as permissoes do utilizador que faz o pedido
     $putdata = fopen("php://input", "r");
-    $para = parse_str($vars);
-
-    echo "Am here" . count($vars);
-    foreach ($vars as $var) {
+    $para = parse_str($putdata);
+    
+    echo "Am here" . count($para);
+    foreach ($para as $var) {
 	echo $var;
     }
-    echo $vars["id"];
+    echo $para["id"];
 }
 ?>
