@@ -17,7 +17,7 @@ if ($method === "GET") {
 	http_response_code(500);
     }
     echo serializeUser($user, $badges);
-} elseif ($method === "ELSE") {
+} else {
     // TODO: Verificar as permissoes do utilizador que faz o pedido
     parse_str(file_get_contents("php://input"), $para);
     
