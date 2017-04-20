@@ -20,6 +20,7 @@ if ($method === "GET") {
 } elseif ($method === "DELETE") {
     // TODO: Verificar as permissoes do utilizador que faz o pedido
     parse_str(file_get_contents("php://input"), $vars);
+    echo "Am here" . count($vars);
     echo $vars["id"];
 }
 ?>
