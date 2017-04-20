@@ -15,7 +15,9 @@
 					<span class="answer_date">{$answer.creation}</span>
 				</div>
 				<div class="answer_votes">
+					{if $answer.accepted == true}
 					<a class="badge" href="#"><span class="glyphicon glyphicon-ok"></span></a>
+					{/if}
 					<button type="button" class="btn btn-default comment_btn">
 						<span aria-hidden="true">comment</span>
 					</button>

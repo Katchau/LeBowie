@@ -92,15 +92,4 @@
 		</div>
 	</div>
 
-	<div class="col-lg-8 answers">
-		<div class="answers_header"> 
-			Answers <span class="answer_no">(0)</span>
-		</div>
-
-		<div class="answer">
-		</div>
-	</div>
-</div>
-
-
   {include file='common/footer.tpl'}
