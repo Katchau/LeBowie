@@ -35,7 +35,7 @@ function delete($params) {
     $id = $params["id"];
     try {
 	deleteUser($id);
-    } catch (PDOException e) {
+    } catch (PDOException $e) {
 	http_response_code(500);
     }
 }
