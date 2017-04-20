@@ -19,7 +19,9 @@ if ($method === "GET") {
     echo serializeUser($user, $badges);
 } elseif ($method === "DELETE") {
     // TODO: Verificar as permissoes do utilizador que faz o pedido
-    parse_str(file_get_contents("php://input"), $vars);
+    $putdata = fopen("php://input", "r");
+    $para = parse_str($vars);
+
     echo "Am here" . count($vars);
     foreach ($vars as $var) {
 	echo $var;
