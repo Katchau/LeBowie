@@ -6,8 +6,14 @@ $id = $_GET["id"];
 
 // TODO: Fazer um try catch aqui e dar 500 internal server error em caso de
 //       erro
-$user = getUserById($id);
-$badges = getUserBadges($id);
+try {
+    $user = getUserById($id);
+    $badges = getUserBadges($id);
+} catch (PDOException $e) {
+    http_response_code(500);
+}
+
+echo ($user == true);
 
 $badgesObject = [];
 foreach ($badges as $badge) {
