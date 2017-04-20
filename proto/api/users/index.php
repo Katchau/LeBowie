@@ -3,19 +3,20 @@ include_once("../../config/init.php");
 include_once($BASE_DIR . "database/users.php");
 
 $method = $_SERVER["REQUEST_METHOD"];
+$params = json_decode(file_get_contents("php://input"), true);
 switch ($method) {
     case "GET":
-	get();
+	get($params);
 	break;
     case "DELETE":
-	delete();
+	delete($params);
 	break;
     default:
 	http_response_code(405);
 }
 
-function get() {
-    $id = $_GET["id"];
+function get($params) {
+    $id = $params["id"];
     try {
 	$user = getUserById($id);
 	$badges = getUserBadges($id);
@@ -29,13 +30,9 @@ function get() {
     echo serializeUser($user, $badges);
 }
 
-function delete() {
+function delete($params) {
     // TODO: Verificar as permissoes do utilizador que faz o pedido
-    
-    $contents = file_get_contents("php://input");
-    $_delete = json_decode($contents, true);
-
-    $id = $_delete["id"];
+    $id = $params["id"];
     deleteUser($id);
 }
 ?>
