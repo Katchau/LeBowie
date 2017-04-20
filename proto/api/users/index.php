@@ -20,7 +20,7 @@ if ($method === "GET") {
 } else {
     // TODO: Verificar as permissoes do utilizador que faz o pedido
     $contents = file_get_contents("php://input");
-    $para = json_decode($contents);
+    $para = json_decode($contents, true);
     
     echo "Am here" . count($para);
     print_r(array_values($para));
