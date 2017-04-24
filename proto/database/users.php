@@ -145,7 +145,7 @@ function updateUser($userId, $email, $password, $firstName, $lastName, $descript
         updateUserLastName($userId, $lastName);
     }
     if ($description != NULL) {
-        updateUserDescriptin($serId, $description);
+        updateUserDescriptin($userId, $description);
     }
 }
 
