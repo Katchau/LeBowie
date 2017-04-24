@@ -24,7 +24,6 @@
                 <div class="guidelines_side">
   		  <h1>on posting an answer</h1>
   		  <p>In this section you can post your answer to the question on the left. We value relevant answers above all, so any answer is subject of the vote system and filtered therein.</p>
-  		  <p>We highly encourage doing your reasearch before posting. Someone else may have posted it before!</p>
   		  <p>If you still feel your answer is valuable and needed, please follow these guidelines on posting an answer:</p>
   		  <ul class="well">
   		      <li>Don't spam the question thread with answers.</li>
@@ -82,7 +81,7 @@
 			<hr>
 		</div>
 
-		<div class="col-lg-8 answers">
+		<div class="col-lg-12 answers">
 
 			<div class="answers_header">
 				Answer this question
