@@ -2,8 +2,7 @@
 require_once '../../config/init.php';
 require_once $BASE_DIR . 'database/users.php';
 
-$id = $_SESSION['id'];
-echo $id;
+$id = $_SESSION['userid'];
 $email = $_POST['email'];
 $password = $_POST['password'];
 $firstName = $_POST['first_name'];
