@@ -14,7 +14,7 @@ switch ($method) {
 
 function post($params)
 {
-    if (!isset($_SESSION['id'])) {
+    if (!isset($_SESSION['userid'])) {
         http_response_code(401);
         return;
     }

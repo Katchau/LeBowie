@@ -35,7 +35,7 @@ function get($params)
 
 function delete($params) 
 {
-    if (!isset($_SESSION["id"])) {
+    if (!isset($_SESSION["userid"])) {
         http_response_code(401);
         return;
     } else {
@@ -56,7 +56,7 @@ function delete($params)
 
 function put($params) 
 {
-    if (!isset($_SESSION["id"])) {
+    if (!isset($_SESSION["userid"])) {
         http_response_code(401);
         return;
     } else {
