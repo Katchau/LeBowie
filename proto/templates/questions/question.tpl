@@ -1,7 +1,7 @@
 {include file='common/header.tpl'}
 {include file='common/scriptlist.tpl'}
 
-<scrip src="{$BASE_URL}javascript/questions.js">
+<script src="{$BASE_URL}javascript/questions.js">
 
 <div id="extras-side-nav" class="side-nav">
       <div class="side-nav-options">
