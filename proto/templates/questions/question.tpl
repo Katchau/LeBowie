@@ -21,11 +21,11 @@
           <label class="tools_label"> tools <span class="glyphicon glyphicon-wrench"></span></label>
           <hr>
           <div class="extras_tools">
-            <button type="button" class="btn btn-default" href="{$BASE_URL}pages/questions/answer.php?id={$question.post_id}">
-              <span aria-hidden="true"> answer</span>
+            <button type="button" class="btn btn-default">
+              <span aria-hidden="true" href="{$BASE_URL}pages/questions/answer.php?id={$question.post_id}"> answer</span>
             </button>
-            <button type="button" class="btn btn-default" href="{$BASE_URL}pages/questions/ask.php">
-              <span aria-hidden="true"> ask a question</span>
+            <button type="button" class="btn btn-default">
+              <span aria-hidden="true" href="{$BASE_URL}pages/questions/ask.php"> ask a question</span>
             </button>
           </div>
           <hr>

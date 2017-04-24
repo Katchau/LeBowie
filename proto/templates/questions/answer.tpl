@@ -18,24 +18,25 @@
 
 <div class="container">
 	<div class="row">
-		<div class="extras hidden-xs col-sm-4 col-lg-push-8 col-md-push-8 col-sm-push-8">
-          <label class="tools_label"> tools <span class="glyphicon glyphicon-wrench"></span></label>
-          <hr>
-          <div class="extras_tools">
-            <button type="button" class="btn btn-default">
-              <span aria-hidden="true"> answer</span>
-            </button>
-            <button type="button" class="btn btn-default">
-              <span aria-hidden="true"> ask a question</span>
-            </button>
-          </div>
-          <hr>
-          <div class="extras_suggested">
-            <label class="related_label"> related questions </label>
-            <ul class="list-group" ></ul>
-          </div>
-          <hr>
-        </div>
+        <div class="extras hidden-xs col-sm-4 col-lg-push-8 col-md-push-8 col-sm-push-8">
+                <label class="tools_label"> guidelines <span class="glyphicon glyphicon-question-sign"></span></label>
+                <hr>
+                <div class="guidelines_side">
+  		  <h1>on posting an answer</h1>
+  		  <p>In this section you can post your answer to the question on the left. We value relevant answers above all, so any answer is subject of the vote system and filtered therein.</p>
+  		  <p>We highly encourage doing your reasearch before posting. Someone else may have posted it before!</p>
+  		  <p>If you still feel your answer is valuable and needed, please follow these guidelines on posting an answer:</p>
+  		  <ul class="well">
+  		      <li>Don't spam the question thread with answers.</li>
+  		      <li>Don't ask for votes.</li>
+  		      <li>Don't post inappropriate content, links, or images.</li>
+  		      <li>Be concise, but thorough.</li>
+  		      <li>Be relevant and helpful.</li>
+  		      <li><strong>Be open to any comments, be them negative or positive.</strong></li>
+  		  </ul>
+                </div>
+                <hr>
+  	  </div>
 
 		<div class="col-sm-8 question_area col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
 			<div class="question">
