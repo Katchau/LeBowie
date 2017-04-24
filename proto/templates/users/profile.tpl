@@ -22,6 +22,9 @@
                 <span class="info-start">Surname: </span>{$user.last_name}
                 <br>
                 <span class="info-start">Country: </span>{$user.name}
+                <form action="{$BASE_URL}pages/edit.php?username={$user.username}">
+                  <input type="submit" value="Edit Profile">
+                </form>
                 <hr>
                 <div class="profile-badges">
                   <span class="info-start">User Badges </span>
