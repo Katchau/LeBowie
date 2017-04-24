@@ -62,10 +62,10 @@
 								<button type="button" class="btn btn-default">
 									<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
 								</button>
-								<button type="button" class="btn btn-default">
+								<button type="button" class="btn btn-default" onclick="upvoteQuestion({$question.post_id})">
 									<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">{$question.up_score}</span>
 								</button>
-								<button type="button" class="btn btn-default">
+								<button type="button" class="btn btn-default" onclick="downvoteQuestion({$question.post_id})">
 									<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">{$question.down_score}</span>
 								</button>
 							</div>
@@ -89,4 +89,6 @@
 	</div>
 </div>
 
-  {include file='common/footer.tpl'}
+{include file='common/footer.tpl'}
+
+<scrip src="{$BASE_URL}javascript/questions.js">
