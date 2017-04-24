@@ -1,6 +1,14 @@
 <?php
 require "posts.php";
 
+function getQuestionById($questionId) 
+{
+    global $conn;
+    $stmt = $conn->prepare("SELECT * FROM question WHERE post_id = ?");
+    $stmt->execute(array($questionId));
+    return $stmt->fetch();
+}
+
 function createQuestion($userId, $title, $description, $topic, $tags) 
 {
     global $conn;
@@ -82,5 +90,19 @@ function getQuestionTags($questionId)
         $tags[] = $tag;
     }
     return $tags;
+}
+
+function upvoteQuestion($questionId)
+{
+    global $conn;
+    $stmt = $conn->prepare("UPDATE post SET up_score = up_score + 1 WHERE id = ?");
+    $stmt->execute(array($questionId));
+}
+
+function downvoteQuestion($questionId)
+{
+    global $conn;
+    $stmt = $conn->prepare("UPDATE post SET down_score = down_score + 1 WHERE id = ?");
+    $stmt->execute(array($questionId));
 }
 ?>

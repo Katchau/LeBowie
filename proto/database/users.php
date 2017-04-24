@@ -4,11 +4,11 @@ function getHash($password,$salt)
     return hash("sha1", $password . $salt);
 }
 
-function getUserById($id) 
+function getUserById($userId) 
 {
     global $conn;
     $stmt = $conn->prepare("SELECT * FROM useracc WHERE id = ?");
-    $stmt->execute(array($id));
+    $stmt->execute(array($userId));
     return $stmt->fetch();
 }
     

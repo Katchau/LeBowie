@@ -5,17 +5,17 @@ require_once $BASE_DIR . "database/users.php";
 $method = $_SERVER["REQUEST_METHOD"];
 $params = json_decode(file_get_contents("php://input"), true);
 switch ($method) {
-case "GET":
-    get($params);
-    break;
-case "DELETE":
-    delete($params);
-    break;
-case "PUT":
-    put($params);
-    break;
-default:
-    http_response_code(405);
+    case "GET":
+        get($params);
+        break;
+    case "DELETE":
+        delete($params);
+        break;
+    case "PUT":
+        put($params);
+        break;
+    default:
+        http_response_code(405);
 }
 
 function get($params) 
