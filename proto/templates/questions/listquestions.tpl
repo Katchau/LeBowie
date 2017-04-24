@@ -9,10 +9,10 @@
 			in <a class="topic" href="{$BASE_URL}pages/topic/list.php?id={$question.id}"> {$question.topicname} </a>
 			{/if}
 			{if $type != 0}
-			<button type="button" class="btn btn-default">
+			<button type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 				<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> {$question.up_score} </span>
 			</button>
-			<button type="button" class="btn btn-default">
+			<button type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 				<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> {$question.down_score} </span>
 			</button>
 			{/if}
