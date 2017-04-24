@@ -87,10 +87,12 @@
 				Answer this question
 			</div>
             <div class="answer_area">
-                  <form action="" method="post" id="form-answer">
+                  <form action="{$BASE_URL}actions/answers/" method="post" id="form-answer">
                       <div class="form-group">
                           <textarea name="answer-body" rows="4" cols="100" class="form-control input-lg" placeholder="Enter your answer here."></textarea>
                       </div>
+                      <input name="answer-user-id" type="hidden" value="{$USERID}" >
+                      <input name="answer-question-id" type="hidden" value="{$question.post_id}" >
                       <input type="submit" value="Submit Answer" form="form-answer" class="btn btn-default" tabindex="7">
                   </form>
                   <hr>
