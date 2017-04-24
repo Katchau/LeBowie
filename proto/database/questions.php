@@ -1,7 +1,7 @@
 <?php
 require "posts.php";
 
-function getQuestionById($questionId) 
+function getQuestionById($questionId)
 {
     global $conn;
     $stmt = $conn->prepare("SELECT * FROM question WHERE post_id = ?");
@@ -9,7 +9,7 @@ function getQuestionById($questionId)
     return $stmt->fetch();
 }
 
-function createQuestion($userId, $title, $description, $topic, $tags) 
+function createQuestion($userId, $title, $description, $topic, $tags)
 {
     global $conn;
     $lastId = createPost($userId, $description);
@@ -46,7 +46,7 @@ function getBestQuestions()
     return $stmt->fetchAll();
 }
 
-function addTag($postId, $tag) 
+function addTag($postId, $tag)
 {
     global $conn;
     $stmt = $conn->prepare("SELECT id FROM tag WHERE text = ?");
@@ -61,12 +61,12 @@ function addTag($postId, $tag)
         $result = $stmt->fetch();
         $tagId = $result["id"];
     }
-    
+
     $stmt = $conn->prepare("INSERT INTO questiontag (question_id, tag_id) VALUES (?, ?)");
     $stmt->execute(array($postId, $tagId));
 }
 
-function getQuestionInfo($questionId) 
+function getQuestionInfo($questionId)
 {
     global $conn;
     $stmt = $conn->prepare("SELECT id, topicname, post_id, title, description, up_score, down_score, creation, username FROM question_display WHERE post_id = ?");
@@ -74,7 +74,7 @@ function getQuestionInfo($questionId)
     return $stmt->fetch();
 }
 
-function getQuestionTags($questionId) 
+function getQuestionTags($questionId)
 {
     global $conn;
     $stmt = $conn->prepare("SELECT tag_id FROM questiontag WHERE question_id = ?");
