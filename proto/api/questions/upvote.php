@@ -22,7 +22,7 @@ function post($params)
     try {
         if (getQuestionById($id) == NULL) {
             http_response_code(404);
-            return;
+            //return;
         }
         upvoteQuestion($id);
     } catch (PDOException $e) {
