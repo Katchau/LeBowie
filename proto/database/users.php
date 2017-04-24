@@ -142,7 +142,7 @@ function updateUser($userId, $email, $password, $firstName, $lastName, $descript
         updateUserFirstName($userId, $firstName);
     }
     if ($lastName != NULL) {
-        updateUserFirstName($userId, $lastName);
+        updateUserLastName($userId, $lastName);
     }
     if ($description != NULL) {
         updateUserDescriptin($serId, $description);
