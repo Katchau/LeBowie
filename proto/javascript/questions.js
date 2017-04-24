@@ -1,6 +1,6 @@
 $(function() {
-    $('#upvote-btn').on('click', upvoteQuestion);
-    $('#downvote-btn').on('click', downvoteQuestion);
+    $('#upvote-btn').click(upvoteQuestion);
+    $('#downvote-btn').click(downvoteQuestion);
 });
 
 function upvoteQuestion(questionId) {
