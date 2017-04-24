@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-            <form role="form" class="register well text-center">
+            <form action="{$BASE_URL}actions/users/edit.php" method="post" role="form" class="register well text-center">
                 <h2>Update your Newton's Apple account</h2>
                 <hr class="colorgraph">
                 <div class="row">
