@@ -2,6 +2,7 @@
 
 require_once "../../config/init.php";
 require_once $BASE_DIR . "database/questions.php";
+require_once $BASE_DIR . "database/answers.php";
 
 $id = strip_tags($_POST["answer-user-id"]);
 $question_id = strip_tags($_POST["answer-question-id"]);
