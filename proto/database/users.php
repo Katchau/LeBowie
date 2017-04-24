@@ -15,7 +15,7 @@ function getUserById($userId)
 function getUser($username) 
 {
     global $conn;
-    $stmt = $conn->prepare("SELECT * FROM UserAcc WHERE username = ?");
+    $stmt = $conn->prepare("SELECT * FROM user_info WHERE username = ?");
     $stmt->execute(array($username));
     return $stmt->fetch();
 }
