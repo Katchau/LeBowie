@@ -14,7 +14,7 @@ header('Location: ' . $BASE_URL . 'pages/users/?username=' . $_SESSION['username
 
 function postValueOrNull($name)
 {
-    $value = $_POST[$name];
+    $value = strip_tags($_POST[$name]);
     if (!isset($value) || trim($value) == NULL) {
         return NULL;
     }
