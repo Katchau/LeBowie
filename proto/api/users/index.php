@@ -63,9 +63,11 @@ function put($params)
     $lastName = $params["lastName"];
     $description = $params["description"];
     try {
-        echo "EMAIL = " . $email;
-        echo "UserId = " . $id;
+        if (getUserById($id) == null) {
+            http_response_code(404);
+        }
         updateUser($id, $email, $password, $firstName, $lastName, $description);
+        $user = getUserById($id);
         echo serializeUser($user);
     } catch (PDOException $e) {
         http_response_code(500);
