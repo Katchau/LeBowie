@@ -31,11 +31,8 @@
 						<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">{$answer.down_score}</span>
 					</button>
 				</div>
-	
+
 				<hr>
-	
-				fazer comments
-				
 				<hr>
 			</div>
 		</div>
