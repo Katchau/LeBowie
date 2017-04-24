@@ -17,6 +17,7 @@ updateUser($id, $email, $password, $firstName, $lastName, $description);
 function postValueOrNull($name)
 {
     $value = strip_tags($_POST[$name]);
+    echo "The value for $name is $value";
     if (!isset($value) || trim($value) == NULL) {
         return NULL;
     }
