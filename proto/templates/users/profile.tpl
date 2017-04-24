@@ -7,6 +7,9 @@
 
         <div class="hidden-xs col-lg-8 media">
 			<div class="profile-upper">
+				{if !isset($user) || $user == NULL}
+				Invalid Username! Maybe the account was deleted?
+				{/if}
 				<div class="profile-image-and-info">
 				{if $user.image == NULL}
 				<img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}images/profile.png" alt="user_image">

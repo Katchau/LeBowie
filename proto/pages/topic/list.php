@@ -3,8 +3,9 @@ require_once '../../config/init.php';
 
 $topicId = $_GET['id'];
 if(!isset($topicId)) {
-    echo 'Invalid Topic!'. '<br>';
-    exit;
+    $smarty->assign('topic', $topic);
+	$smarty->display('topic/list.tpl');
+	exit;
 }
 $questions = getAllQuestionsTopic($topicId);
 $topic = getTopicInfo($topicId);
