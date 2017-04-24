@@ -165,3 +165,11 @@
   color: white;
   font-weight: bolder;
 }
+.answer_area textarea{
+    font-size: 1em;
+}
+.answer_area .btn {
+    color: white;
+    background-color: orange;
+    font-weight: bold;
+}
