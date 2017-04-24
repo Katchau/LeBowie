@@ -23,7 +23,6 @@ function get($params)
     $id = $params["id"];
     try {
         $user = getUserById($id);
-        $badges = getUserBadges($id);
         if (!isset($user["id"])) {
             http_response_code(404);
             exit;
@@ -31,7 +30,7 @@ function get($params)
     } catch (PDOException $e) {
         http_response_code(500);
     }
-    echo serializeUser($user, $badges);
+    echo serializeUser($user);
 }
 
 function delete($params) 
@@ -62,6 +61,7 @@ function put($params)
     $description = $params["description"];
     try {
         updateUser($userId, $email, $password, $firstName, $lastName, $description);
+        echo serializeUser($user);
     } catch (PDOException $e) {
         http_response_code(500);
     }

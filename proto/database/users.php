@@ -149,9 +149,10 @@ function updateUser($userId, $email, $password, $firstName, $lastName, $descript
     }
 }
 
-function serializeUser($user, $badges) 
+function serializeUser($user) 
 {
     $badgesObject = [];
+    $badges = getUserBadges($id);
     foreach ($badges as $badge) {
         $badgesObject[] = [
             "id" => $badge["id"],
