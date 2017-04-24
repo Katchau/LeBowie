@@ -32,7 +32,7 @@
 					There hasn't been an accepted answer to this question!
 				</p>
 				{/if}
-                <a aria-hidden="true" href="{$BASE_URL}pages/questions/ask.php" class="btn btn-default"> Add an Answer </a>
+                <a aria-hidden="true" href="{$BASE_URL}pages/questions/answer.php?id={$question.post_id}" class="btn btn-default"> Add an Answer </a>
 			</div>
 		</div>
 	</div>
