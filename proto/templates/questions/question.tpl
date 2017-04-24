@@ -1,6 +1,8 @@
 {include file='common/header.tpl'}
 {include file='common/scriptlist.tpl'}
 
+<scrip src="{$BASE_URL}javascript/questions.js">
+
 <div id="extras-side-nav" class="side-nav">
       <div class="side-nav-options">
         <a href="#">answer question</a>
@@ -90,5 +92,3 @@
 </div>
 
 {include file='common/footer.tpl'}
-
-<scrip src="{$BASE_URL}javascript/questions.js">

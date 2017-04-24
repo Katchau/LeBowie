@@ -1,7 +1,6 @@
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="{$BASE_URL}javascript/tabs.js"></script>
 <script src="{$BASE_URL}javascript/responsive-tabs.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="{$BASE_URL}javascript/plugins.js"></script>
 <script src="{$BASE_URL}javascript/main.js"></script>
 <!-- Bootstrap javascript -->
