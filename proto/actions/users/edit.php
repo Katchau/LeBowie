@@ -9,7 +9,7 @@ $firstName = $_POST['first_name'];
 $lastName = $_POST['last_name'];
 $description = $_POST['description'];
 
-if (!$email) {
+if ($email == NULL) {
     echo "e-mail is null";
 }
 
