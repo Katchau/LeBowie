@@ -6,7 +6,6 @@ $method = $_SERVER['REQUEST_METHOD'];
 $params = json_decode(file_get_contents('php://input'), true);
 switch ($method) {
     case 'POST':
-        echo 'Got here';
         post($params);
         break;
     default:
@@ -22,8 +21,8 @@ function post($params)
     $id = $params['id'];
     try {
         if (getQuestionById($id) == NULL) {
-            http_response_code(404);
-            return;
+            //http_response_code(404);
+            //return;
         }
         upvoteQuestion($id);
     } catch (PDOException $e) {
