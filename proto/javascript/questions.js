@@ -1,5 +1,7 @@
 $(function() {
-    $('#upvote-btn').click(upvoteQuestion);
+    $('#upvote-btn').click(function() {
+        $.post('api/questions/upvote.php', { id: questionId });    
+    });
     $('#downvote-btn').click(downvoteQuestion);
 });
 
