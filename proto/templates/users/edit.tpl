@@ -2,7 +2,7 @@
 {include file='common/scriptlist.tpl'}
 
 <div class="container">
-    <div class="row">
+    <div class="row edit_prof">
         <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
             <form action="{$BASE_URL}actions/users/edit.php" method="post" role="form" class="register well text-center">
                 <h2>Update your Newton's Apple account</h2>

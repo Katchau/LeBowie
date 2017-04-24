@@ -32,11 +32,7 @@
 					There hasn't been an accepted answer to this question!
 				</p>
 				{/if}
-                <form action="{$BASE_URL}pages/questions/answer.php?id={$question.post_id}">
-    				<input type="submit" class="btn btn-default">
-    					<span aria-hidden="true"> Add an Answer </span>
-    				</input>
-                </form>
+                <a aria-hidden="true" href="{$BASE_URL}pages/questions/ask.php" class="btn btn-default"> Add an Answer </a>
 			</div>
 		</div>
 	</div>
