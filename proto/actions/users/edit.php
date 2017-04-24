@@ -10,7 +10,7 @@ $lastName = postValueOrNull('last_name');
 $description = postValueOrNull('description');
 
 updateUser($id, $email, $password, $firstName, $lastName, $description);
-header('Location: ' . $BASE_URL . 'pages/users/?id=' . $id);
+header('Location: ' . $BASE_URL . 'pages/users/?username=' . $_SESSION['username']);
 
 function postValueOrNull($name)
 {
