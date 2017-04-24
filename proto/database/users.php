@@ -109,7 +109,7 @@ function updateUserPassword($userId, $password)
     $stmt->execute(array(getHash($password, $salt), $salt, $userId));
 }
 
-function updateUserFirstName($userId, $firstname) 
+function updateUserFirstName($userId, $firstName) 
 {
     global $conn;
     $stmt = $conn->prepare('UPDATE useracc SET first_name = ? WHERE id = ?');
