@@ -25,7 +25,7 @@ function get($params)
         $user = getUserById($id);
         if ($user == null) {
             http_response_code(404);
-            exit;
+            return;
         }
     } catch (PDOException $e) {
         http_response_code(500);
@@ -44,6 +44,7 @@ function delete($params)
     try {
         if (getUserById($id) == null) {
             http_response_code(404);
+            return;
         }
         deleteUser($id);
     } catch (PDOException $e) {
@@ -55,6 +56,7 @@ function put($params)
 {
     if (!isset($_SESSION["id"])) {
         // TODO: Verificar autorização
+        echo "SESSION IS NOT SET";
     }
     $id = $params["id"];
     $email = $params["email"];
@@ -65,6 +67,7 @@ function put($params)
     try {
         if (getUserById($id) == null) {
             http_response_code(404);
+            return;
         }
         updateUser($id, $email, $password, $firstName, $lastName, $description);
         $user = getUserById($id);
