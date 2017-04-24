@@ -36,9 +36,11 @@ function get($params)
 function delete($params) 
 {
     if (!isset($_SESSION["id"])) {
-        // TODO:
-        // Se o utilizador nao estiver autenticado OU nao for moderador/admin
-        // entao devolver o codigo http correcto
+        http_response_code(401);
+        return;
+    } else {
+        // TODO: Se estiver autenticado verificar se tem autorizacao
+        // e se nao tiver devolver 403 - forbidden
     }
     $id = $params["id"];
     try {
@@ -55,8 +57,11 @@ function delete($params)
 function put($params) 
 {
     if (!isset($_SESSION["id"])) {
-        // TODO: Verificar autorização
-        echo "SESSION IS NOT SET";
+        http_response_code(401);
+        return;
+    } else {
+        // TODO: Se estiver autenticado verificar se tem autorizacao
+        // e se nao tiver devolver 403 - forbidden
     }
     $id = $params["id"];
     $email = $params["email"];
