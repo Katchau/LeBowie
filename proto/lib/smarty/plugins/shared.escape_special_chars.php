@@ -2,7 +2,7 @@
 /**
  * Smarty shared plugin
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage PluginsShared
  */
 
@@ -14,7 +14,7 @@ if (version_compare(PHP_VERSION, '5.2.3', '>=')) {
      * Purpose:  used by other smarty functions to escape
      *           special chars except for already escaped ones
      *
-     * @author   Monte Ohrt <monte at ohrt dot com>
+     * @author Monte Ohrt <monte at ohrt dot com>
      * @param  string $string text that should by escaped
      * @return string
      */
@@ -34,7 +34,7 @@ if (version_compare(PHP_VERSION, '5.2.3', '>=')) {
      * Purpose:  used by other smarty functions to escape
      *           special chars except for already escaped ones
      *
-     * @author   Monte Ohrt <monte at ohrt dot com>
+     * @author Monte Ohrt <monte at ohrt dot com>
      * @param  string $string text that should by escaped
      * @return string
      */

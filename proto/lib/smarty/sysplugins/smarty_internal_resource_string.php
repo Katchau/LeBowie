@@ -2,10 +2,10 @@
 /**
  * Smarty Internal Plugin Resource String
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage TemplateResources
- * @author Uwe Tews
- * @author Rodney Rehm
+ * @author     Uwe Tews
+ * @author     Rodney Rehm
  */
 
 /**
@@ -15,7 +15,7 @@
  *
  * {@internal unlike eval-resources the compiled state of string-resources is saved for subsequent access}}
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage TemplateResources
  */
 class Smarty_Internal_Resource_String extends Smarty_Resource
@@ -37,7 +37,7 @@ class Smarty_Internal_Resource_String extends Smarty_Resource
     /**
      * Load template's source from $resource_name into current template object
      *
-     * @uses decode() to decode base64 and urlencoded template_resources
+     * @uses   decode() to decode base64 and urlencoded template_resources
      * @param  Smarty_Template_Source $source source object
      * @return string                 template source
      */
@@ -69,9 +69,9 @@ class Smarty_Internal_Resource_String extends Smarty_Resource
     /**
      * modify resource_name according to resource handlers specifications
      *
-     * @param  Smarty $smarty        Smarty instance
-     * @param  string $resource_name resource_name to make unique
-     * @param  boolean $is_config    flag for config resource
+     * @param  Smarty  $smarty        Smarty instance
+     * @param  string  $resource_name resource_name to make unique
+     * @param  boolean $is_config     flag for config resource
      * @return string unique resource name
      */
     protected function buildUniqueResourceName(Smarty $smarty, $resource_name, $is_config = false)

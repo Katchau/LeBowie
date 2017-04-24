@@ -1,5 +1,6 @@
 <?php
-function createPost($userId, $description) {
+function createPost($userId, $description) 
+{
     global $conn;
     $stmt = $conn->prepare("INSERT INTO post (current_state) VALUES (?)");
     $stmt->execute(array("Published"));

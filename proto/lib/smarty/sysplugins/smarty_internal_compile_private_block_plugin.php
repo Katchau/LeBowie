@@ -4,15 +4,15 @@
  *
  * Compiles code for the execution of block plugin
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
- * @author Uwe Tews
+ * @author     Uwe Tews
  */
 
 /**
  * Smarty Internal Plugin Compile Block Plugin Class
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  */
 class Smarty_Internal_Compile_Private_Block_Plugin extends Smarty_Internal_CompileBase
@@ -75,7 +75,7 @@ class Smarty_Internal_Compile_Private_Block_Plugin extends Smarty_Internal_Compi
                 $mod_pre = $mod_post ='';
             } else {
                 $mod_pre = ' ob_start(); ';
-                $mod_post = 'echo '.$compiler->compileTag('private_modifier',array(),array('modifierlist'=>$parameter['modifier_list'],'value'=>'ob_get_clean()')).';';
+                $mod_post = 'echo '.$compiler->compileTag('private_modifier', array(), array('modifierlist'=>$parameter['modifier_list'],'value'=>'ob_get_clean()')).';';
             }
             $output = "<?php \$_block_content = ob_get_clean(); \$_block_repeat=false;".$mod_pre." echo {$function}({$_params}, \$_block_content, \$_smarty_tpl, \$_block_repeat); ".$mod_post." } array_pop(\$_smarty_tpl->smarty->_tag_stack);?>";
         }

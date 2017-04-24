@@ -13,23 +13,23 @@
 
   $conn->exec('SET SCHEMA \'public\''); //FIXME?
 
-  include_once($BASE_DIR . 'lib/smarty/Smarty.class.php');
+  require_once $BASE_DIR . 'lib/smarty/Smarty.class.php';
   
   $smarty = new Smarty;
   $smarty->template_dir = $BASE_DIR . 'templates/';
   $smarty->compile_dir = $BASE_DIR . 'templates_c/';
   $smarty->assign('BASE_URL', $BASE_URL);
   
-  if (is_null($DEF_TOPIC)){
-	
-	include($BASE_DIR . 'database/topic.php');
-	$headerTopics = getTopics();
-	
-	$DEF_TOPIC = $headerTopics[0]['topicname'];	
-	$smarty->assign('DEF_TOPIC', $DEF_TOPIC);
-	$smarty->assign('headerTopics', $headerTopics);
-	
-  }
+if (is_null($DEF_TOPIC)) {
+    
+    include $BASE_DIR . 'database/topic.php';
+    $headerTopics = getTopics();
+    
+    $DEF_TOPIC = $headerTopics[0]['topicname'];    
+    $smarty->assign('DEF_TOPIC', $DEF_TOPIC);
+    $smarty->assign('headerTopics', $headerTopics);
+    
+}
   
   $smarty->assign('ERROR_MESSAGES', $_SESSION['error_messages']);  
   $smarty->assign('FIELD_ERRORS', $_SESSION['field_errors']);

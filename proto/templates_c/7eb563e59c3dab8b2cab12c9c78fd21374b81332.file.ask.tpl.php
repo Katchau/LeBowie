@@ -1,34 +1,39 @@
 <?php /* Smarty version Smarty-3.1.15, created on 2017-04-19 21:43:59
          compiled from "/opt/lbaw/lbaw1651/public_html/proto/templates/questions/ask.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:176902744258f68c02b39528-57278999%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-$_valid = $_smarty_tpl->decodeProperties(array (
-  'file_dependency' => 
-  array (
+<?php /*%%SmartyHeaderCode:176902744258f68c02b39528-57278999%%*/if(!defined('SMARTY_DIR')) { exit('no direct access allowed'); 
+}
+$_valid = $_smarty_tpl->decodeProperties(
+    array (
+    'file_dependency' => 
+    array (
     '7eb563e59c3dab8b2cab12c9c78fd21374b81332' => 
     array (
       0 => '/opt/lbaw/lbaw1651/public_html/proto/templates/questions/ask.tpl',
       1 => 1492622395,
       2 => 'file',
     ),
-  ),
-  'nocache_hash' => '176902744258f68c02b39528-57278999',
-  'function' => 
-  array (
-  ),
-  'version' => 'Smarty-3.1.15',
-  'unifunc' => 'content_58f68c02cc0036_27542825',
-  'variables' => 
-  array (
+    ),
+    'nocache_hash' => '176902744258f68c02b39528-57278999',
+    'function' => 
+    array (
+    ),
+    'version' => 'Smarty-3.1.15',
+    'unifunc' => 'content_58f68c02cc0036_27542825',
+    'variables' => 
+    array (
     'BASE_URL' => 0,
     'USERID' => 0,
     'topics' => 0,
     'topic' => 0,
-  ),
-  'has_nocache_code' => false,
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58f68c02cc0036_27542825')) {function content_58f68c02cc0036_27542825($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('common/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+    ),
+    'has_nocache_code' => false,
+    ), false
+); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_58f68c02cc0036_27542825')) {function content_58f68c02cc0036_27542825($_smarty_tpl) 
+    {
+?><?php echo $_smarty_tpl->getSubTemplate('common/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
-<?php echo $_smarty_tpl->getSubTemplate ('common/scriptlist.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+<?php echo $_smarty_tpl->getSubTemplate('common/scriptlist.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 
 <div id="extras-side-nav" class="side-nav">
@@ -95,15 +100,16 @@ actions/questions/" method="post" id="form-ask">
           	      	<div class="form-group">
             		  	<label >Topic:</label>
 						<select name="question-topic" class="form-control">
-							<?php  $_smarty_tpl->tpl_vars['topic'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['topic']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['topics']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['topic']->key => $_smarty_tpl->tpl_vars['topic']->value) {
-$_smarty_tpl->tpl_vars['topic']->_loop = true;
-?>
+        <?php  $_smarty_tpl->tpl_vars['topic'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['topic']->_loop = false;
+        $_from = $_smarty_tpl->tpl_vars['topics']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');
+        }
+        foreach ($_from as $_smarty_tpl->tpl_vars['topic']->key => $_smarty_tpl->tpl_vars['topic']->value) {
+            $_smarty_tpl->tpl_vars['topic']->_loop = true;
+        ?>
               		      	<option value="<?php echo $_smarty_tpl->tpl_vars['topic']->value['id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['topic']->value['topicname'];?>
 </option>
-              		      	<?php } ?>
+        <?php } ?>
             		  	</select>
           	      	</div>
         	  	</div>
@@ -121,5 +127,6 @@ $_smarty_tpl->tpl_vars['topic']->_loop = true;
 
   </div>
 
-   <?php echo $_smarty_tpl->getSubTemplate ('common/footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
-<?php }} ?>
+    <?php echo $_smarty_tpl->getSubTemplate('common/footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+<?php }
+} ?>

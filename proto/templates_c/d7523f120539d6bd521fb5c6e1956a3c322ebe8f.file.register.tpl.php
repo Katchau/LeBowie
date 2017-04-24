@@ -1,31 +1,36 @@
 <?php /* Smarty version Smarty-3.1.15, created on 2017-04-19 18:20:09
          compiled from "/opt/lbaw/lbaw1651/public_html/proto/templates/user/register.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:173583114158f786940ecc69-11779746%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-$_valid = $_smarty_tpl->decodeProperties(array (
-  'file_dependency' => 
-  array (
+<?php /*%%SmartyHeaderCode:173583114158f786940ecc69-11779746%%*/if(!defined('SMARTY_DIR')) { exit('no direct access allowed'); 
+}
+$_valid = $_smarty_tpl->decodeProperties(
+    array (
+    'file_dependency' => 
+    array (
     'd7523f120539d6bd521fb5c6e1956a3c322ebe8f' => 
     array (
       0 => '/opt/lbaw/lbaw1651/public_html/proto/templates/user/register.tpl',
       1 => 1492622395,
       2 => 'file',
     ),
-  ),
-  'nocache_hash' => '173583114158f786940ecc69-11779746',
-  'function' => 
-  array (
-  ),
-  'version' => 'Smarty-3.1.15',
-  'unifunc' => 'content_58f7869425a9b4_09949545',
-  'variables' => 
-  array (
+    ),
+    'nocache_hash' => '173583114158f786940ecc69-11779746',
+    'function' => 
+    array (
+    ),
+    'version' => 'Smarty-3.1.15',
+    'unifunc' => 'content_58f7869425a9b4_09949545',
+    'variables' => 
+    array (
     'BASE_URL' => 0,
-  ),
-  'has_nocache_code' => false,
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58f7869425a9b4_09949545')) {function content_58f7869425a9b4_09949545($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('common/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+    ),
+    'has_nocache_code' => false,
+    ), false
+); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_58f7869425a9b4_09949545')) {function content_58f7869425a9b4_09949545($_smarty_tpl) 
+    {
+?><?php echo $_smarty_tpl->getSubTemplate('common/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
-<?php echo $_smarty_tpl->getSubTemplate ('common/scriptlist.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+<?php echo $_smarty_tpl->getSubTemplate('common/scriptlist.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 
 <div class="container">
@@ -104,5 +109,6 @@ actions/register.php">
 		</div>
 	    </div>
 	</div>
-  <?php echo $_smarty_tpl->getSubTemplate ('common/footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
-<?php }} ?>
+    <?php echo $_smarty_tpl->getSubTemplate('common/footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+<?php }
+} ?>

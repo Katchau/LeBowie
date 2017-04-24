@@ -1,34 +1,39 @@
 <?php /* Smarty version Smarty-3.1.15, created on 2017-04-19 18:33:03
          compiled from "/opt/lbaw/lbaw1651/public_html/proto/templates/questions/question.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:153200080358f78521aa9169-98607106%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-$_valid = $_smarty_tpl->decodeProperties(array (
-  'file_dependency' => 
-  array (
+<?php /*%%SmartyHeaderCode:153200080358f78521aa9169-98607106%%*/if(!defined('SMARTY_DIR')) { exit('no direct access allowed'); 
+}
+$_valid = $_smarty_tpl->decodeProperties(
+    array (
+    'file_dependency' => 
+    array (
     '5dddc2ecbed250cceb52832e434930a2b32b526e' => 
     array (
       0 => '/opt/lbaw/lbaw1651/public_html/proto/templates/questions/question.tpl',
       1 => 1492623179,
       2 => 'file',
     ),
-  ),
-  'nocache_hash' => '153200080358f78521aa9169-98607106',
-  'function' => 
-  array (
-  ),
-  'version' => 'Smarty-3.1.15',
-  'unifunc' => 'content_58f78521c31611_95302509',
-  'variables' => 
-  array (
+    ),
+    'nocache_hash' => '153200080358f78521aa9169-98607106',
+    'function' => 
+    array (
+    ),
+    'version' => 'Smarty-3.1.15',
+    'unifunc' => 'content_58f78521c31611_95302509',
+    'variables' => 
+    array (
     'question' => 0,
     'BASE_URL' => 0,
     'tags' => 0,
     'tag' => 0,
-  ),
-  'has_nocache_code' => false,
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58f78521c31611_95302509')) {function content_58f78521c31611_95302509($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('common/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+    ),
+    'has_nocache_code' => false,
+    ), false
+); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_58f78521c31611_95302509')) {function content_58f78521c31611_95302509($_smarty_tpl) 
+    {
+?><?php echo $_smarty_tpl->getSubTemplate('common/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
-<?php echo $_smarty_tpl->getSubTemplate ('common/scriptlist.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+<?php echo $_smarty_tpl->getSubTemplate('common/scriptlist.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 
 <div id="extras-side-nav" class="side-nav">
@@ -76,7 +81,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					</div>
 					<div class="media-body question_area">
 						<h3 class="media-heading">
-							<?php echo $_smarty_tpl->tpl_vars['question']->value['title'];?>
+        <?php echo $_smarty_tpl->tpl_vars['question']->value['title'];?>
 
 						</h3>
 						<div class="question_details"> asked by
@@ -91,19 +96,20 @@ pages/topic/list.php?id=<?php echo $_smarty_tpl->tpl_vars['question']->value['id
 						</div>
 						<hr>
 						<div class="question_body">
-							<?php echo htmlspecialchars_decode($_smarty_tpl->tpl_vars['question']->value['description'], ENT_QUOTES);?>
+        <?php echo htmlspecialchars_decode($_smarty_tpl->tpl_vars['question']->value['description'], ENT_QUOTES);?>
 
 						</div>
 						<div class="question_coda">
 							<div class="question_tags">
 								<?php  $_smarty_tpl->tpl_vars['tag'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['tag']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['tags']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['tag']->key => $_smarty_tpl->tpl_vars['tag']->value) {
-$_smarty_tpl->tpl_vars['tag']->_loop = true;
-?>
+        $_from = $_smarty_tpl->tpl_vars['tags']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');
+        }
+        foreach ($_from as $_smarty_tpl->tpl_vars['tag']->key => $_smarty_tpl->tpl_vars['tag']->value) {
+            $_smarty_tpl->tpl_vars['tag']->_loop = true;
+        ?>
 								<a class="label label-default" href="#"><?php echo $_smarty_tpl->tpl_vars['tag']->value;?>
 </a>
-								<?php } ?>
+        <?php } ?>
 							</div>
 							<div class="question_votes">
 								<label> Was this question relevant? Please leave a vote! </label>
@@ -138,6 +144,7 @@ $_smarty_tpl->tpl_vars['tag']->_loop = true;
 </div>
 
 
-  <?php echo $_smarty_tpl->getSubTemplate ('common/footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+    <?php echo $_smarty_tpl->getSubTemplate('common/footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
-<?php }} ?>
+<?php }
+} ?>

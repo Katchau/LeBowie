@@ -2,7 +2,7 @@
 /**
  * Smarty plugin
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage PluginsFunction
  */
 
@@ -24,19 +24,19 @@
  * - path_prefix - prefix for path output (optional, default empty)
  * </pre>
  *
- * @link http://www.smarty.net/manual/en/language.function.html.image.php {html_image}
+ * @link    http://www.smarty.net/manual/en/language.function.html.image.php {html_image}
  *      (Smarty online manual)
- * @author Monte Ohrt <monte at ohrt dot com>
- * @author credits to Duda <duda@big.hu>
+ * @author  Monte Ohrt <monte at ohrt dot com>
+ * @author  credits to Duda <duda@big.hu>
  * @version 1.0
- * @param array                    $params   parameters
- * @param Smarty_Internal_Template $template template object
- * @return string
- * @uses smarty_function_escape_special_chars()
+ * @param   array                    $params   parameters
+ * @param   Smarty_Internal_Template $template template object
+ * @return  string
+ * @uses    smarty_function_escape_special_chars()
  */
 function smarty_function_html_image($params, $template)
 {
-    require_once(SMARTY_PLUGINS_DIR . 'shared.escape_special_chars.php');
+    include_once SMARTY_PLUGINS_DIR . 'shared.escape_special_chars.php';
 
     $alt = '';
     $file = '';
@@ -49,36 +49,36 @@ function smarty_function_html_image($params, $template)
     $basedir = isset($_SERVER['DOCUMENT_ROOT']) ? $_SERVER['DOCUMENT_ROOT'] : '';
     foreach ($params as $_key => $_val) {
         switch ($_key) {
-            case 'file':
-            case 'height':
-            case 'width':
-            case 'dpi':
-            case 'path_prefix':
-            case 'basedir':
-                $$_key = $_val;
-                break;
+        case 'file':
+        case 'height':
+        case 'width':
+        case 'dpi':
+        case 'path_prefix':
+        case 'basedir':
+            $$_key = $_val;
+            break;
 
-            case 'alt':
-                if (!is_array($_val)) {
-                    $$_key = smarty_function_escape_special_chars($_val);
-                } else {
-                    throw new SmartyException ("html_image: extra attribute '$_key' cannot be an array", E_USER_NOTICE);
-                }
-                break;
+        case 'alt':
+            if (!is_array($_val)) {
+                $$_key = smarty_function_escape_special_chars($_val);
+            } else {
+                throw new SmartyException("html_image: extra attribute '$_key' cannot be an array", E_USER_NOTICE);
+            }
+            break;
 
-            case 'link':
-            case 'href':
-                $prefix = '<a href="' . $_val . '">';
-                $suffix = '</a>';
-                break;
+        case 'link':
+        case 'href':
+            $prefix = '<a href="' . $_val . '">';
+            $suffix = '</a>';
+            break;
 
-            default:
-                if (!is_array($_val)) {
-                    $extra .= ' ' . $_key . '="' . smarty_function_escape_special_chars($_val) . '"';
-                } else {
-                    throw new SmartyException ("html_image: extra attribute '$_key' cannot be an array", E_USER_NOTICE);
-                }
-                break;
+        default:
+            if (!is_array($_val)) {
+                $extra .= ' ' . $_key . '="' . smarty_function_escape_special_chars($_val) . '"';
+            } else {
+                throw new SmartyException("html_image: extra attribute '$_key' cannot be an array", E_USER_NOTICE);
+            }
+            break;
         }
     }
 

@@ -2,7 +2,7 @@
 /**
  * Smarty plugin
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage PluginsFunction
  */
 
@@ -39,14 +39,14 @@
  * {mailto address="me@domain.com" extra='class="mailto"'}
  * </pre>
  *
- * @link http://www.smarty.net/manual/en/language.function.mailto.php {mailto}
+ * @link    http://www.smarty.net/manual/en/language.function.mailto.php {mailto}
  *          (Smarty online manual)
  * @version 1.2
- * @author Monte Ohrt <monte at ohrt dot com>
- * @author credits to Jason Sweat (added cc, bcc and subject functionality)
- * @param array                    $params   parameters
- * @param Smarty_Internal_Template $template template object
- * @return string
+ * @author  Monte Ohrt <monte at ohrt dot com>
+ * @author  credits to Jason Sweat (added cc, bcc and subject functionality)
+ * @param   array                    $params   parameters
+ * @param   Smarty_Internal_Template $template template object
+ * @return  string
  */
 function smarty_function_mailto($params, $template)
 {
@@ -54,7 +54,7 @@ function smarty_function_mailto($params, $template)
     $extra = '';
 
     if (empty($params['address'])) {
-        trigger_error("mailto: missing 'address' parameter",E_USER_WARNING);
+        trigger_error("mailto: missing 'address' parameter", E_USER_WARNING);
 
         return;
     } else {
@@ -69,23 +69,24 @@ function smarty_function_mailto($params, $template)
     $mail_parms = array();
     foreach ($params as $var => $value) {
         switch ($var) {
-            case 'cc':
-            case 'bcc':
-            case 'followupto':
-                if (!empty($value))
-                    $mail_parms[] = $var . '=' . str_replace($search, $replace, rawurlencode($value));
-                break;
+        case 'cc':
+        case 'bcc':
+        case 'followupto':
+            if (!empty($value)) {
+                $mail_parms[] = $var . '=' . str_replace($search, $replace, rawurlencode($value)); 
+            }
+            break;
 
-            case 'subject':
-            case 'newsgroups':
-                $mail_parms[] = $var . '=' . rawurlencode($value);
-                break;
+        case 'subject':
+        case 'newsgroups':
+            $mail_parms[] = $var . '=' . rawurlencode($value);
+            break;
 
-            case 'extra':
-            case 'text':
-                $$var = $value;
+        case 'extra':
+        case 'text':
+            $$var = $value;
 
-            default:
+        default:
         }
     }
 
@@ -127,7 +128,7 @@ function smarty_function_mailto($params, $template)
     } elseif ($encode == 'hex') {
         preg_match('!^(.*)(\?.*)$!', $address, $match);
         if (!empty($match[2])) {
-            trigger_error("mailto: hex encoding does not work with extra attributes. Try javascript.",E_USER_WARNING);
+            trigger_error("mailto: hex encoding does not work with extra attributes. Try javascript.", E_USER_WARNING);
 
             return;
         }

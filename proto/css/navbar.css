@@ -78,14 +78,14 @@
 }
 
 @media screen and (max-width: 330px){
-	.navbar-default .navbar-left img{
- 		margin-top: 13px;
- 		width: 20px;
- 		height: 20px;
- 	}
-	.navbar-default .navbar-brand{
- 		font-size: 0.9em;
- 	}
+    .navbar-default .navbar-left img{
+         margin-top: 13px;
+         width: 20px;
+         height: 20px;
+     }
+    .navbar-default .navbar-brand{
+         font-size: 0.9em;
+     }
 }
 
 .navbar-default .navbar-brand:hover {
@@ -301,7 +301,7 @@
 /* MESSAGES */
 
 #error_messages {
-	margin-top: -20px;
+    margin-top: -20px;
 }
 
 .error {

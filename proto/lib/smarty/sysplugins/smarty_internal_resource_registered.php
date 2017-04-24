@@ -2,10 +2,10 @@
 /**
  * Smarty Internal Plugin Resource Registered
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage TemplateResources
- * @author Uwe Tews
- * @author Rodney Rehm
+ * @author     Uwe Tews
+ * @author     Rodney Rehm
  */
 
 /**
@@ -13,7 +13,7 @@
  *
  * Implements the registered resource for Smarty template
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage TemplateResources
  * @deprecated
  */

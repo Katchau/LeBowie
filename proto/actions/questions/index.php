@@ -1,6 +1,6 @@
 <?php
-include_once("../../config/init.php");
-include_once($BASE_DIR . "database/questions.php");
+require_once "../../config/init.php";
+require_once $BASE_DIR . "database/questions.php";
 
 $id = strip_tags($_POST["question-user-id"]);
 $title = strip_tags($_POST["question-title"]);
