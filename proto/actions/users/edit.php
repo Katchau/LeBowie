@@ -9,7 +9,9 @@ $firstName = $_POST['first_name'];
 $lastName = $_POST['last_name'];
 $description = $_POST['description'];
 
-echo "e-mail is $email";
+if ($email === null) {
+    echo "e-mail is null";
+}
 
 //updateUser($id, $email, $password, $firstName, $lastName, $description);
 //header('Location: ' . $BASE_URL . 'pages/users/?id=' . $id);
