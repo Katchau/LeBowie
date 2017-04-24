@@ -132,19 +132,19 @@ function updateUserDescription($userId, $description)
 
 function updateUser($userId, $email, $password, $firstName, $lastName, $description) 
 {
-    if ($email != null) {
+    if ($email != NULL) {
         updateUserEmail($userId, $email);
     }
-    if ($password != null) {
+    if ($password != NULL) {
         updateUserPassword($userId, $password);
     }
-    if ($firstName != null) {
+    if ($firstName != NULL) {
         updateUserFirstName($userId, $firstName);
     }
-    if ($lastName != null) {
+    if ($lastName != NULL) {
         updateUserFirstName($userId, $lastName);
     }
-    if ($description != null) {
+    if ($description != NULL) {
         updateUserDescriptin($serId, $description);
     }
 }

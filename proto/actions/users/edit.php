@@ -9,6 +9,8 @@ isset($_POST['first_name']) ? ($firstName = $_POST['first_name']) : ($firstName 
 isset($_POST['last_name']) ? ($lastName = $_POST['last_name']) : ($lastName = NULL);
 isset($_POST['description']) ? ($description = $_POST['description']) : ($description = $_POST['description']);
 
+echo "First name is $firstName\n";
+
 updateUser($id, $email, $password, $firstName, $lastName, $description);
-header('Location: ' . $BASE_URL . 'pages/users/?id=' . $id);
+//header('Location: ' . $BASE_URL . 'pages/users/?id=' . $id);
 ?>
