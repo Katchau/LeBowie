@@ -52,8 +52,18 @@ function delete($params)
 function put($params) 
 {
     if (!isset($_SESSION["id"])) {
-
+        // TODO: Verificar autorização
     }
     $id = $params["id"];
+    $email = $params["email"];
+    $password = $params["password"];
+    $firstName = $params["firstName"];
+    $lastName = $params["lastName"];
+    $description = $params["description"];
+    try {
+        updateUser($userId, $email, $password, $firstName, $lastName, $description);
+    } catch (PDOException $e) {
+        http_response_code(500);
+    }
 }
 ?>
