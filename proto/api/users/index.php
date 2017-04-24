@@ -23,7 +23,7 @@ function get($params)
     $id = $params["id"];
     try {
         $user = getUserById($id);
-        if (!isset($user["id"])) {
+        if (getUserById($id) == null) {
             http_response_code(404);
             exit;
         }
