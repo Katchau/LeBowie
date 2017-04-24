@@ -20,6 +20,7 @@ function post($params)
     }
     $id = $params['id'];
     try {
+        echo "The id is $id";
         if (getQuestionById($id) == NULL) {
             http_response_code(404);
             return;
