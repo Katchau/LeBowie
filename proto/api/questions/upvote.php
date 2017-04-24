@@ -19,6 +19,7 @@ function post($params)
         return;
     }
     $id = $params['id'];
+    echo "ID=$id";
     try {
         if (getQuestionById($id) == NULL) {
             http_response_code(404);
