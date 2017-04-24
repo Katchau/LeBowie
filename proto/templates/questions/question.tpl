@@ -22,10 +22,10 @@
           <hr>
           <div class="extras_tools">
             <button type="button" class="btn btn-default">
-              <span aria-hidden="true" href="{$BASE_URL}pages/questions/answer.php?id={$question.post_id}"> answer</span>
+              <a aria-hidden="true" href="{$BASE_URL}pages/questions/answer.php?id={$question.post_id}"> answer</a>
             </button>
             <button type="button" class="btn btn-default">
-              <span aria-hidden="true" href="{$BASE_URL}pages/questions/ask.php"> ask a question</span>
+              <a aria-hidden="true" href="{$BASE_URL}pages/questions/ask.php"> ask a question</a>
             </button>
           </div>
           <hr>
