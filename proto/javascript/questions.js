@@ -1,7 +1,9 @@
+const BASE_URL = '...';
+
 $(function() {
     let questionId = $('#question-id').val();
     $('#upvote-btn').click(function() {
-        $.post('api/questions/upvote.php', { id: questionId });    
+        $.post(`${BASE_URL}api/questions/upvote.php`, { id: questionId });    
     });
     $('#downvote-btn').click(downvoteQuestion);
 });
