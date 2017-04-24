@@ -23,7 +23,7 @@ function get($params)
     $id = $params["id"];
     try {
         $user = getUserById($id);
-        if (getUserById($id) == null) {
+        if ($user == null) {
             http_response_code(404);
             exit;
         }
@@ -42,6 +42,9 @@ function delete($params)
     }
     $id = $params["id"];
     try {
+        if (getUserById($id) == null) {
+            http_response_code(404);
+        }
         deleteUser($id);
     } catch (PDOException $e) {
         http_response_code(500);
@@ -61,6 +64,7 @@ function put($params)
     $description = $params["description"];
     try {
         echo "EMAIL = " . $email;
+        echo "UserId = " . $id;
         updateUser($id, $email, $password, $firstName, $lastName, $description);
         echo serializeUser($user);
     } catch (PDOException $e) {
