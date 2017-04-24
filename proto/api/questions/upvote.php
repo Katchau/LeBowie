@@ -21,7 +21,7 @@ function post($params)
     $id = $params['id'];
     try {
         if (getQuestionById($id) == NULL) {
-            http_response_code(404);
+            //http_response_code(404);
             //return;
         }
         upvoteQuestion($id);
