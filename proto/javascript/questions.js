@@ -1,4 +1,4 @@
-const BASE_URL = '...';
+const BASE_URL = window.location.origin;
 
 $(function() {
     let questionId = $('#question-id').val();
