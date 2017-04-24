@@ -16,5 +16,5 @@ $smarty->assign('user', $user);
 $smarty->assign('answers', $userAnswers);
 $smarty->assign('questions', $userQuestions);
 $smarty->assign('topics', $userTopics);
-$smarty->display('user/profile.tpl');
+$smarty->display('users/profile.tpl');
 ?>
