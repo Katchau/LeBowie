@@ -4,15 +4,11 @@ require_once $BASE_DIR . 'database/users.php';
 
 $id = $_SESSION['userid'];
 isset($_POST['email']) ? ($email = $_POST['email']) : ($email = NULL);
-$password = $_POST['password'];
-$firstName = $_POST['first_name'];
-$lastName = $_POST['last_name'];
-$description = $_POST['description'];
+isset($_POST['password']) ? ($password = $_POST['password']) : ($password = NULL);
+isset($_POST['first_name']) ? ($firstName = $_POST['first_name']) : ($firstName = NULL);
+isset($_POST['last_name']) ? ($lastName = $_POST['last_name']) : ($lastName = NULL);
+isset($_POST['description']) ? ($description = $_POST['description']) : ($description = $_POST['description']);
 
-if ($email == NULL) {
-    echo "e-mail is null";
-}
-
-//updateUser($id, $email, $password, $firstName, $lastName, $description);
-//header('Location: ' . $BASE_URL . 'pages/users/?id=' . $id);
+updateUser($id, $email, $password, $firstName, $lastName, $description);
+header('Location: ' . $BASE_URL . 'pages/users/?id=' . $id);
 ?>
