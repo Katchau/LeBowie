@@ -6,6 +6,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 $params = json_decode(file_get_contents('php://input'), true);
 switch ($method) {
     case 'POST':
+        echo 'Got here';
         post($params);
         break;
     default:
@@ -15,8 +16,8 @@ switch ($method) {
 function post($params)
 {
     if (!isset($_SESSION['userid'])) {
-        //http_response_code(401);
-        //return;
+        http_response_code(401);
+        return;
     }
     $id = $params['id'];
     try {
