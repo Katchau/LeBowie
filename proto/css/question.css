@@ -92,7 +92,7 @@
     color: white;
     text-decoration: none;
 }
-.extras button{
+.extras .btn{
   font-size: 0.5em;
   background-color: orange;
   border-color: white;
@@ -100,12 +100,12 @@
   margin-bottom:0.25em;
   width: 50%;
 }
-.extras button:hover{
+.extras .btn:hover{
   background-color: #cc8400;
   color: white;
   border-color: #cc8400;
 }
-.extras button:active{
+.extras .btn:active{
   background-color: white;
   color: white;
   border-color: transparent;
@@ -176,4 +176,9 @@
     color: white;
     background-color: orange;
     font-weight: bold;
+}
+.edit_prof input{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 1.1em;
 }

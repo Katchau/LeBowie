@@ -1,6 +1,6 @@
 {include file='common/header.tpl'}
 {include file='common/scriptlist.tpl'}
-	
+
 	<!-- profile area -->
     <div class="container profile">
       <div class="row">
@@ -11,7 +11,7 @@
               {if $user.image == NULL}
 			  <img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}img/profile.png" alt="user_image">
 			  {else}
-			  <img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}img/{$user.id}/{$user.image} alt="user_image">
+			  <img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}img/{$user.id}/{$user.image}" alt="user_image">
 			  {/if}
               <hr>
               <div class="profile-info">
@@ -23,7 +23,7 @@
                 <br>
                 <span class="info-start">Country: </span>{$user.name}
                 <form action="{$BASE_URL}pages/users/edit.php?username={$user.username}">
-                  <input type="submit" value="Edit Profile">
+                  <input type="submit" value="Edit Profile" class="btn btn-default">
                 </form>
                 <hr>
                 <div class="profile-badges">
@@ -192,5 +192,5 @@
         </div>
       </div>
     </div>
-	
+
 	  {include file='common/footer.tpl'}

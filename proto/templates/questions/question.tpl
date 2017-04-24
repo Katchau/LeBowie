@@ -21,12 +21,8 @@
           <label class="tools_label"> tools <span class="glyphicon glyphicon-wrench"></span></label>
           <hr>
           <div class="extras_tools">
-            <button type="button" class="btn btn-default">
-              <a aria-hidden="true" href="{$BASE_URL}pages/questions/answer.php?id={$question.post_id}"> answer</a>
-            </button>
-            <button type="button" class="btn btn-default">
-              <a aria-hidden="true" href="{$BASE_URL}pages/questions/ask.php"> ask a question</a>
-            </button>
+             <a aria-hidden="true" href="{$BASE_URL}pages/questions/answer.php?id={$question.post_id}" class="btn btn-default"> answer</a>
+             <a aria-hidden="true" href="{$BASE_URL}pages/questions/ask.php" class="btn btn-default"> ask a question</a>
           </div>
           <hr>
           <div class="extras_suggested">
