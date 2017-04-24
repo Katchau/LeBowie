@@ -4,7 +4,7 @@
 <div class="container">
 	    <div class="row">
 		<div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-		    <form role="form" class="register well text-center" method="post" action="{$BASE_URL}actions/register.php">
+		    <form role="form" class="register well text-center" method="post" action="{$BASE_URL}actions/users/register.php">
 			<h2>Welcome to Newton's Apple!</h2>
 			<h3><small>By becoming a new member, you now can ask anything you want, our help out other people! Just complete this registration process:</small></h3>
 			<hr class="colorgraph">

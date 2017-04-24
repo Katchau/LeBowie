@@ -1,6 +1,6 @@
 <?php
-require_once '../config/init.php';
-require_once $BASE_DIR .'database/users.php';
+require_once '../../config/init.php';
+require_once $BASE_DIR . 'database/users.php';
 
 if (!$_POST['first_name'] || !$_POST['last_name'] || !$_POST['display_name'] || !$_POST['email'] || !$_POST['password'] || !$_POST['password_confirmation'] || !$_POST['birth'] || !$_POST['country']) {
     $_SESSION['error_messages'][] = 'Not all fields inserted';

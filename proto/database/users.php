@@ -83,8 +83,8 @@ function createUser($firstname, $lastname, $username, $email, $password, $birth,
 {
     global $conn;
     $salt = generateRandomString(8);
-    $stmt = $conn->prepare('INSERT INTO UserAcc(first_name,last_name,salt,username,email,password,birth,country) VALUES (?,?,?,?,?,?,?,?)');
-    return $stmt->execute(array($firstname,$lastname,$salt,$username,$email,getHash($password, $salt),$birth,$country));
+    $stmt = $conn->prepare('INSERT INTO useracc (first_name, last_name, salt, username, email, password, birth, country) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
+    $stmt->execute(array($firstname, $lastname, $salt, $username, $email, getHash($password, $salt), $birth, $country));
 }
 
 function deleteUser($userId) 
@@ -94,9 +94,65 @@ function deleteUser($userId)
     $stmt->execute(array($userId));
 }
 
-function serializeUser($user, $badges) 
+function updateUserEmail($userId, $email) 
+{
+    global $conn;
+    $stmt = $conn->prepare('UPDATE useracc SET email = ? WHERE id = ?');
+    $stmt->execute(array($email, $userId));
+}
+
+function updateUserPassword($userId, $password) 
+{
+    global $conn;
+    $salt = generateRandomString(8);
+    $stmt = $conn->prepare('UPDATE useracc SET password = ?, salt = ? WHERE id = ?');
+    $stmt->execute(array(getHash($password, $salt), $salt, $userId));
+}
+
+function updateUserFirstName($userId, $firstname) 
+{
+    global $conn;
+    $stmt = $conn->prepare('UPDATE useracc SET first_name = ? WHERE id = ?');
+    $stmt->execute(array($firstName, $userId));
+}
+
+function updateUserLastName($userId, $lastName) 
+{
+    global $conn;
+    $stmt = $conn->prepare('UPDATE useracc SET last_name = ? WHERE id = ?');
+    $stmt->execute(array($lastName, $userId));
+}
+
+function updateUserDescription($userId, $description)
+{
+    global $conn;
+    $stmt = $conn->prepare('UPDATE useracc SET description = ? WHERE id = ?');
+    $stmt->execute(array($description, $userId));
+}
+
+function updateUser($userId, $email, $password, $firstName, $lastName, $description) 
+{
+    if ($email != null) {
+        updateUserEmail($userId, $email);
+    }
+    if ($password != null) {
+        updateUserPassword($userId, $password);
+    }
+    if ($firstName != null) {
+        updateUserFirstName($userId, $firstName);
+    }
+    if ($lastName != null) {
+        updateUserFirstName($userId, $lastName);
+    }
+    if ($description != null) {
+        updateUserDescriptin($serId, $description);
+    }
+}
+
+function serializeUser($user) 
 {
     $badgesObject = [];
+    $badges = getUserBadges($id);
     foreach ($badges as $badge) {
         $badgesObject[] = [
             "id" => $badge["id"],

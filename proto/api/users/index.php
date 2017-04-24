@@ -23,26 +23,31 @@ function get($params)
     $id = $params["id"];
     try {
         $user = getUserById($id);
-        $badges = getUserBadges($id);
-        if (!isset($user["id"])) {
+        if ($user == null) {
             http_response_code(404);
-            exit;
+            return;
         }
     } catch (PDOException $e) {
         http_response_code(500);
     }
-    echo serializeUser($user, $badges);
+    echo serializeUser($user);
 }
 
 function delete($params) 
 {
     if (!isset($_SESSION["id"])) {
-        // TODO:
-        // Se o utilizador nao estiver autenticado OU nao for moderador/admin
-        // entao devolver o codigo http correcto
+        http_response_code(401);
+        return;
+    } else {
+        // TODO: Se estiver autenticado verificar se tem autorizacao
+        // e se nao tiver devolver 403 - forbidden
     }
     $id = $params["id"];
     try {
+        if (getUserById($id) == null) {
+            http_response_code(404);
+            return;
+        }
         deleteUser($id);
     } catch (PDOException $e) {
         http_response_code(500);
@@ -52,8 +57,28 @@ function delete($params)
 function put($params) 
 {
     if (!isset($_SESSION["id"])) {
-
+        http_response_code(401);
+        return;
+    } else {
+        // TODO: Se estiver autenticado verificar se tem autorizacao
+        // e se nao tiver devolver 403 - forbidden
     }
     $id = $params["id"];
+    $email = $params["email"];
+    $password = $params["password"];
+    $firstName = $params["firstName"];
+    $lastName = $params["lastName"];
+    $description = $params["description"];
+    try {
+        if (getUserById($id) == null) {
+            http_response_code(404);
+            return;
+        }
+        updateUser($id, $email, $password, $firstName, $lastName, $description);
+        $user = getUserById($id);
+        echo serializeUser($user);
+    } catch (PDOException $e) {
+        http_response_code(500);
+    }
 }
 ?>

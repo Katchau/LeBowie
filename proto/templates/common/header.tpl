@@ -72,7 +72,7 @@
           {if $USERNAME}
 			<li class="navbar-highlight"><a href="{$BASE_URL}pages/questions/ask.php">ask</a></li>
           <li><a href="{$BASE_URL}pages/users/index.php?username={$USERNAME}">{$USERNAME}</a></li>
-          <li><a href="{$BASE_URL}actions/logout.php">sign out</a></li>
+          <li><a href="{$BASE_URL}actions/users/logout.php">sign out</a></li>
           {else}
 			<li class="navbar-highlight"><a href="#" data-toggle="modal" data-target="#myModal">ask</a></li>
           <li><a href="{$BASE_URL}pages/users/signup.php">sign up</a></li>
@@ -91,7 +91,7 @@
                   <h4 class="modal-title"><center>Sign in to Newton's Apple</center></h4>
                 </div>
                 <div class="modal-body">
-				  <form method="post" action="{$BASE_URL}actions/login.php">
+				  <form method="post" action="{$BASE_URL}actions/users/login.php">
                   <div class="form-group">
             			    <input type="text" name="username" id="display_name" class="form-control input-lg" placeholder="Username/Email" tabindex="3">
             			</div>
