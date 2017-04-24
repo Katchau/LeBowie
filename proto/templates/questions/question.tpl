@@ -21,12 +21,16 @@
           <label class="tools_label"> tools <span class="glyphicon glyphicon-wrench"></span></label>
           <hr>
           <div class="extras_tools">
-            <button type="button" class="btn btn-default">
-              <a aria-hidden="true" href="{$BASE_URL}pages/questions/answer.php?id={$question.post_id}"> answer</a>
-            </button>
-            <button type="button" class="btn btn-default">
-              <a aria-hidden="true" href="{$BASE_URL}pages/questions/ask.php"> ask a question</a>
-            </button>
+              <form action="{$BASE_URL}pages/questions/answer.php?id={$question.post_id}">
+                  <input class="btn btn-default" type="submit">
+                    <span aria-hidden="true"> answer</span>
+                  </input>
+              </form>
+              <form action="{$BASE_URL}pages/questions/ask.php">
+                <button type="submit" class="btn btn-default">
+                  <span aria-hidden="true"> ask a question</span>
+                </button>
+              </form>
           </div>
           <hr>
           <div class="extras_suggested">

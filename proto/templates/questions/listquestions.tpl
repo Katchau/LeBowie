@@ -1,10 +1,10 @@
 
   {foreach $questions as $question}
-		
+
 	<div class="question well">
 		<h2 class ="questionTitle"><a href="{$BASE_URL}pages/questions/index.php?id={$question.post_id}">{$question.title}</a> </h2>
 		<p class="questionInfo">
-			asked by <a href="{$BASE_URL}pages/users/index.php?username={$question.username}" class="writer"> {$question.username} </a> on {$question.creation} 
+			asked by <a href="{$BASE_URL}pages/users/index.php?username={$question.username}" class="writer"> {$question.username} </a> on {$question.creation}
 			{if $type != 1}
 			in <a class="topic" href="{$BASE_URL}pages/topic/list.php?id={$question.id}"> {$question.topicname} </a>
 			{/if}
@@ -32,9 +32,11 @@
 					There hasn't been an accepted answer to this question!
 				</p>
 				{/if}
-				<button type="button" class="btn btn-default">
-					<span aria-hidden="true"> Add an Answer </span>
-				</button>
+                <form action="{$BASE_URL}pages/questions/answer.php?id={$question.post_id}">
+    				<input type="submit" class="btn btn-default">
+    					<span aria-hidden="true"> Add an Answer </span>
+    				</input>
+                </form>
 			</div>
 		</div>
 	</div>

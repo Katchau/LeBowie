@@ -23,7 +23,7 @@
 .question .questionInfo{
     text-align: left;
     color: gray;
-    font-size: 75%;
+    font-size: 0.9em;
 }
 
 .question .questionInfo button{
@@ -34,7 +34,7 @@
 .question .writerInfo{
     text-align: left;
     color: gray;
-    font-size: 50%;
+    font-size: 0.9em;
 }
 
 .question .postBody{
