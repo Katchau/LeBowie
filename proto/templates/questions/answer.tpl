@@ -1,6 +1,7 @@
 {include file='common/header.tpl'}
 {include file='common/scriptlist.tpl'}
 
+
 <div id="extras-side-nav" class="side-nav">
       <div class="side-nav-options">
         <a href="#">answer question</a>
@@ -21,10 +22,10 @@
           <label class="tools_label"> tools <span class="glyphicon glyphicon-wrench"></span></label>
           <hr>
           <div class="extras_tools">
-            <button type="button" class="btn btn-default" href="{$BASE_URL}pages/questions/answer.php?id={$question.post_id}">
+            <button type="button" class="btn btn-default">
               <span aria-hidden="true"> answer</span>
             </button>
-            <button type="button" class="btn btn-default" href="{$BASE_URL}pages/questions/ask.php">
+            <button type="button" class="btn btn-default">
               <span aria-hidden="true"> ask a question</span>
             </button>
           </div>
@@ -83,14 +84,19 @@
 		<div class="col-lg-8 answers">
 
 			<div class="answers_header">
-				Answers <span class="answer_no">{sizeof($answers)}</span>
+				Answer this question
 			</div>
-
-			{foreach $answers as $answer}
-				{include file='answers/list.tpl' answer=$answer}
-			{/foreach}
+            <div class="answer_area">
+                  <form action="" method="post" id="form-answer">
+                      <div class="form-group">
+                          <textarea name="answer-body" rows="4" cols="100" class="form-control input-lg" placeholder="Enter your answer here."></textarea>
+                      </div>
+                      <input type="submit" value="Submit Answer" form="form-answer" class="btn btn-default" tabindex="7">
+                  </form>
+                  <hr>
+            </div>
 		</div>
 	</div>
 </div>
 
-  {include file='common/footer.tpl'}
+{include file='common/footer.tpl'}
