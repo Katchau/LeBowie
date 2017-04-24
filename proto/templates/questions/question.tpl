@@ -61,7 +61,7 @@
 							</div>
 							<div class="question_votes">
 								<label> Was this question relevant? Please leave a vote! </label>
-								<input id="quetion-id" type="hidden" value="{$question.post_id}">
+								<input id="question-id" type="hidden" value="{$question.post_id}">
 								<button type="button" class="btn btn-default">
 									<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
 								</button>
