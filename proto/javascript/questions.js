@@ -1,4 +1,5 @@
 $(function() {
+    let questionId = $('#question-id').val();
     $('#upvote-btn').click(function() {
         $.post('api/questions/upvote.php', { id: questionId });    
     });
