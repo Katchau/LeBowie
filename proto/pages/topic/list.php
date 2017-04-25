@@ -2,15 +2,25 @@
 require_once '../../config/init.php';
 
 $topicId = $_GET['id'];
-if(!isset($topicId)) {
-    $smarty->assign('topic', $topic);
-	$smarty->display('topic/list.tpl');
-	exit;
+if(isset($topicId)) {
+    try{
+		$questions = getAllQuestionsTopic($topicId);
+		$topic = getTopicInfo($topicId);
+			
+		$smarty->assign('questions', $questions);
+		$smarty->assign('topic', $topic);
+		$smarty->display('topic/list.tpl');
+	}
+	catch(PDOException $e){
+		$smarty->assign('errorMessage', "No such topic found!");
+		$smarty->display('common/error.tpl');
+		exit(1);
+	}
 }
-$questions = getAllQuestionsTopic($topicId);
-$topic = getTopicInfo($topicId);
-    
-$smarty->assign('questions', $questions);
-$smarty->assign('topic', $topic);
-$smarty->display('topic/list.tpl');
+else{
+	$smarty->assign('errorMessage', "Invalid Page! Link's probably dead!");
+	$smarty->display('common/error.tpl');
+	exit(1);
+}
+
 ?>

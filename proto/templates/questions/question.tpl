@@ -16,6 +16,9 @@
 </div>
 
 <div class="container">
+	{if !isset($question) || $question == NULL}
+		<h3>No such question found! It probably was deleted or the link is dead.</h3>
+	{else}
 	<div class="row">
 		<div class="extras hidden-xs col-sm-4 col-lg-push-8 col-md-push-8 col-sm-push-8">
           <label class="tools_label"> tools <span class="glyphicon glyphicon-wrench"></span></label>
@@ -88,6 +91,7 @@
 			{/foreach}
 		</div>
 	</div>
+	{/if}
 </div>
 
 <script src="{$BASE_URL}javascript/posts/posts.js"></script>
