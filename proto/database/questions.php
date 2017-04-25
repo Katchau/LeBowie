@@ -96,13 +96,12 @@ function upvoteQuestion($questionId, $userId)
 {
     // TODO: Isto devia ser uma transação
     global $conn;
-    // if (getLastActionByUserOnPost() != 'Upvote') {
-    if (true) {
+    if (getLastActionByUserOnPost() != 'Upvote') {
         $stmt = $conn->prepare("UPDATE post SET up_score = up_score + 1 WHERE id = ?");
         $stmt->execute(array($questionId));
         
         $stmt = $conn->prepare("INSERT INTO activity (post_id, user_id, action) VALUES (?, ?, ?)");
-        $stmt->execute(array($userId, $questionId, 'Upvote'));
+        $stmt->execute(array(1, $questionId, 'Upvote'));
     }
 }
 
