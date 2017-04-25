@@ -1,6 +1,6 @@
 <?php
 require_once '../../config/init.php';
-require_once $BASE_DIR . 'database/questions.php';
+require_once $BASE_DIR . 'database/posts.php';
 
 $method = $_SERVER['REQUEST_METHOD'];
 $params = json_decode(file_get_contents('php://input'), true);
@@ -18,13 +18,13 @@ function post($params)
         http_response_code(401);
         return;
     }
-    $id = $params["id"];
+    $id = $params['id'];
     try {
         if (getQuestionById($id) == NULL) {
             http_response_code(404);
             return;
         }
-        $successful = upvoteQuestion($id, $_SESSION['userid']);
+        $successful = downvotePost($id, $_SESSION['userid']);
         if (!$successful) {
             http_response_code(400);
             return;

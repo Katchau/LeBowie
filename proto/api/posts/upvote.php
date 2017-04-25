@@ -1,6 +1,6 @@
 <?php
 require_once '../../config/init.php';
-require_once $BASE_DIR . 'database/questions.php';
+require_once $BASE_DIR . 'database/posts.php';
 
 $method = $_SERVER['REQUEST_METHOD'];
 $params = json_decode(file_get_contents('php://input'), true);
@@ -24,8 +24,7 @@ function post($params)
             http_response_code(404);
             return;
         }
-        $successful = downvoteQuestion($id, $_SESSION['userid']);
-        echo "The last action for this post was a $successful";
+        $successful = upvotePost($id, $_SESSION['userid']);
         if (!$successful) {
             http_response_code(400);
             return;

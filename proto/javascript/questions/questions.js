@@ -1,14 +1,15 @@
 const BASE_URL = window.location.origin + '/~lbaw1651/proto/';
+const url = `${BASE_URL}api/posts/upvote.php`;
 let firstVote = true;
 
 $(function () {
     firstVote = true;
-    $('#js-upvote-btn').click(upvoteQuestion);
-    $('#js-downvote-btn').click(downvoteQuestion);
+    // $('#js-upvote-btn').click(upvoteQuestion);
+    // $('#js-downvote-btn').click(downvoteQuestion);
 });
 
 function upvoteQuestion() {
-    $.post(`${BASE_URL}api/questions/upvote.php`,
+    $.post(url,
     {
         'id': $('#js-question-id').val()
     },
@@ -24,12 +25,11 @@ function upvoteQuestion() {
             }
             firstVote = false;
         }
-    
     });
 }
 
-function downvoteQuestion(questionId) {
-    $.post(`${BASE_URL}api/questions/downvote.php`,
+function downvoteQuestion() {
+    $.post(url,
     {
         id: $('#js-question-id').val()
     },

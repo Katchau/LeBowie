@@ -1,4 +1,5 @@
 <?php
+require 'posts.php';
 
 function getRecentAnswers($questionId)
 {
@@ -24,13 +25,12 @@ function getSelectedAnswer($questionId)
     return $stmt->fetchAll();
 }
 
-function createAnswer($userId, $question_id, $answer_body){
+function createAnswer($userId, $question_id, $answer_body)
+{
     global $conn;
     $lastId = createPost($userId, $answer_body);
 
     $stmt = $conn->prepare("INSERT INTO answer (post_id, question_id) VALUES (?, ?)");
     $stmt->execute(array($lastId, $question_id));
-
 }
-
 ?>

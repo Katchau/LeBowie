@@ -14,10 +14,51 @@ function createPost($userId, $description)
     return $lastId;
 }
 
-function getLastVoteByUserOnPost($postId, $userId) {
+function getLastVoteByUserOnPost($postId, $userId) 
+{
     global $conn;
     $stmt = $conn->prepare("SELECT action FROM activity WHERE post_id = ? AND user_id = ? AND (action = ? or action = ?) ORDER BY id DESC LIMIT 1");
     $stmt->execute(array($postId, $userId, 'Upvote', 'Downvote'));
     return $stmt->fetch()['action'];
+}
+
+function upvotePost($postId, $userId)
+{
+    // TODO: Isto devia ser uma transação
+    global $conn;
+    $lastVote = getLastVoteByUserOnPost($postId, $userId);
+    if ($lastVote != 'Upvote') {
+        if ($lastVote) {
+            $stmt = $conn->prepare("UPDATE post SET down_score = down_score - 1 WHERE id = ?");
+            $stmt->execute(array($postId));
+        }
+        $stmt = $conn->prepare("UPDATE post SET up_score = up_score + 1 WHERE id = ?");
+        $stmt->execute(array($postId));
+        
+        $stmt = $conn->prepare("INSERT INTO activity (post_id, user_id, action) VALUES (?, ?, ?)");
+        $stmt->execute(array($postId, $userId, 'Upvote'));
+        return true;
+    }
+    return false;
+}
+
+function downvotePost($postId, $userId)
+{
+    // TODO: Isto devia ser uma transação
+    global $conn;
+    $lastVote = getLastVoteByUserOnPost($postId, $userId);
+    if ($lastVote != 'Downvote') {
+        if ($lastVote) {
+            $stmt = $conn->prepare("UPDATE post SET up_score = up_score - 1 WHERE id = ?");
+            $stmt->execute(array($postId));
+        }
+        $stmt = $conn->prepare("UPDATE post SET down_score = down_score + 1 WHERE id = ?");
+        $stmt->execute(array($postId));
+        
+        $stmt = $conn->prepare("INSERT INTO activity (post_id, user_id, action) VALUES (?, ?, ?)");
+        $stmt->execute(array($postId, $userId, 'Downvote'));
+        return true;
+    }
+    return false;
 }
 ?>
