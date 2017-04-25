@@ -13,7 +13,7 @@ function upvoteQuestion(questionId) {
                 let downvotes = parseInt(downvotebtn.text());
                 downvotebtn.text(downvotes - 1);
             }
-            firstVote = false;
+            //firstVote = false;
             console.log("STATUS = " + xhr.status);
         }
     });
