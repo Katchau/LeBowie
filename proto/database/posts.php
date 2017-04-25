@@ -14,10 +14,10 @@ function createPost($userId, $description)
     return $lastId;
 }
 
-function getLastActionByUserOnPost($postId, $userId) {
+function getLastVoteByUserOnPost($postId, $userId) {
     global $conn;
-    $stmt = $conn->prepare("SELECT action FROM activity WHERE post_id = ? AND user_id = ? ORDER BY id DESC LIMIT 1");
-    $stmt->execute(array($postId, $userId));
+    $stmt = $conn->prepare("SELECT action FROM activity WHERE post_id = ? AND user_id = ? AND (action = ? or action = ?) ORDER BY id DESC LIMIT 1");
+    $stmt->execute(array($postId, $userId, 'Upvote', 'Downvote'));
     return $stmt->fetch()['action'];
 }
 ?>
