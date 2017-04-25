@@ -63,10 +63,10 @@
 								<button type="button" class="btn btn-default">
 									<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
 								</button>
-								<button onclick="upvoteQuestion({$question.post_id})" id="js-upvote-btn" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
+								<button onclick="upvotePost({$question.post_id})" id="js-upvote-btn" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 									<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">{$question.up_score}</span>
 								</button>
-								<button onclick="downvoteQuestion({$question.post_id})" id="js-downvote-btn" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
+								<button onclick="downvotePost({$question.post_id})" id="js-downvote-btn" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 									<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">{$question.down_score}</span>
 								</button>
 							</div>
@@ -90,6 +90,6 @@
 	</div>
 </div>
 
-<script src="{$BASE_URL}javascript/questions/questions.js"></script>
+<script src="{$BASE_URL}javascript/posts/posts.js"></script>
 
 {include file='common/footer.tpl'}

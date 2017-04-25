@@ -8,7 +8,7 @@ function upvoteQuestion(questionId) {
             let upvotebtn = $('#js-upvote-btn span');
             let upvotes = parseInt(upvotebtn.text());
             upvotebtn.text(upvotes + 1);
-            if (true) {
+            if (xhr.status = 200) {
                 let downvotebtn = $('#js-downvote-btn span');
                 let downvotes = parseInt(downvotebtn.text());
                 downvotebtn.text(downvotes - 1);
