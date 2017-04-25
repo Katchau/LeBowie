@@ -59,14 +59,14 @@
 							</div>
 							<div class="question_votes">
 								<label> Was this question relevant? Please leave a vote! </label>
-								<input id="js-question-id" type="hidden" value="{$question.post_id}">
+								<input type="hidden" value="{$question.post_id}">
 								<button type="button" class="btn btn-default">
 									<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
 								</button>
-								<button onclick="upvotePost({$question.post_id})" id="js-upvote-btn" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
+								<button onclick="upvotePost({$question.post_id})" id="js-upvote-btn-{$question.post_id}" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 									<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">{$question.up_score}</span>
 								</button>
-								<button onclick="downvotePost({$question.post_id})" id="js-downvote-btn" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
+								<button onclick="downvotePost({$question.post_id})" id="js-downvote-btn-{$question.post_id}" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 									<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">{$question.down_score}</span>
 								</button>
 							</div>
