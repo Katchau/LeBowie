@@ -98,7 +98,7 @@ function upvoteQuestion($questionId, $userId)
     global $conn;
     $lastVote = getLastVoteByUserOnPost($questionId, $userId);
     if ($lastVote != 'Upvote') {
-        if ($lastVote == NULL) {
+        if ($lastVote) {
             $stmt = $conn->prepare("UPDATE post SET down_score = down_score - 1 WHERE id = ?");
             $stmt->execute(array($questionId));
         }
@@ -107,7 +107,7 @@ function upvoteQuestion($questionId, $userId)
         
         $stmt = $conn->prepare("INSERT INTO activity (post_id, user_id, action) VALUES (?, ?, ?)");
         $stmt->execute(array($questionId, $userId, 'Upvote'));
-        return true;
+        return $lastVote;
     }
     return false;
 }
@@ -118,7 +118,7 @@ function downvoteQuestion($questionId, $userId)
     global $conn;
     $lastVote = getLastVoteByUserOnPost($questionId, $userId);
     if ($lastVote != 'Downvote') {
-        if ($lastVote == NULL) {
+        if ($lastVote) {
             $stmt = $conn->prepare("UPDATE post SET up_score = up_score - 1 WHERE id = ?");
             $stmt->execute(array($questionId));
         }
