@@ -2,11 +2,11 @@ const BASE_URL = window.location.origin + '/~lbaw1651/proto/';
 const url = `${BASE_URL}api/posts/upvote.php`;
 let firstVote = true;
 
-$(function () {
+/* $(function () {
     firstVote = true;
     // $('#js-upvote-btn').click(upvoteQuestion);
     // $('#js-downvote-btn').click(downvoteQuestion);
-});
+}); */
 
 function upvoteQuestion(questionId) {
     $.post(url,
