@@ -1,13 +1,18 @@
 const BASE_URL = window.location.origin + '/~lbaw1651/proto/';
 
 $(function() {
-    let questionId = parseInt($('#question-id').val());
+    let questionId = $('#question-id').val();
     $('#upvote-btn').click(function() {
-        $.post(`${BASE_URL}api/questions/upvote.php`, { 'id': 282 }, function(data) {
-            console.log(data);
+        $.post(`${BASE_URL}api/questions/upvote.php`, 
+        { 
+            'id': questionId 
+        }, function(data, status) {
+            if (status == 200) {
+                $('#upvote-btn span').val(parseInt(questionId) + 1)
+            }
         });    
     });
     $('#downvote-btn').click(function() {
-        $.post(`${BASE_URL}api/questions/downvote.php`, { id: questionId });
+        $.post(`${BASE_URL}api/questions/downvote.php`, { 'id': questionId });
     });
 });
