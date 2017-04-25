@@ -28,7 +28,7 @@ function downvoteQuestion(questionId) {
         if (status == 'success') {
             let downvotebtn = $('#js-downvote-btn span');
             let downvotes = parseInt(downvotebtn.text());
-            downvotebtn.text(upvotes + 1);
+            downvotebtn.text(downvotes + 1);
         }
     });
 }
