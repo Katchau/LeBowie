@@ -29,7 +29,7 @@ function post($params)
             http_response_code(400);
             return;
         }
-        if ($previousVote == NULL) {
+        if (!$previousVote) {
             http_response_code(201);
             return; 
         }
