@@ -15,8 +15,8 @@ switch ($method) {
 function post($params)
 {
     if (!isset($_SESSION['userid'])) {
-         http_response_code(401);
-         return;
+        http_response_code(401);
+        return;
     }
     $id = $_POST["id"];
     try {

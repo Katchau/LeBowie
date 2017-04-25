@@ -22,7 +22,7 @@ function upvoteQuestion() {
 function downvoteQuestion(questionId) {
     $.post(`${BASE_URL}api/questions/downvote.php`,
     {
-        id: questionId
+        id: $('#js-question-id').val()
     },
     function (data, status) {
         if (status == 'success') {

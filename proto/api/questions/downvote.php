@@ -6,7 +6,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 $params = json_decode(file_get_contents('php://input'), true);
 switch ($method) {
     case 'POST':
-        post($params);
+        post($_POST);
         break;
     default:
         http_response_code(405);
