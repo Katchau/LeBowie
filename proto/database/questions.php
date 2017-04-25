@@ -107,16 +107,17 @@ function upvoteQuestion($questionId, $userId)
     return false;
 }
 
-function downvoteQuestion($questionId)
+function downvoteQuestion($questionId, $userId)
 {
     // TODO: Isto devia ser uma transação
     global $conn;
-    if (getLastActionByUserOnPost() != 'Downvote') {
+    if (getLastActionByUserOnPost($questinId, $userId) != 'Downvote') {
         $stmt = $conn->prepare("UPDATE post SET down_score = down_score + 1 WHERE id = ?");
         $stmt->execute(array($questionId));
         
         $stmt = $conn->prepare("INSERT INTO activity (post_id, user_id, action) VALUES (?, ?, ?)");
-        $stmt->execute(array($userId, $questionId, 'Downvote'));
-        
+        $stmt->execute(array($questionId, $userId, 'Downvote'));
+        return true;
     }
+    return false;
 }

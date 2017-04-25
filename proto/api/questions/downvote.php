@@ -24,7 +24,11 @@ function post($params)
             http_response_code(404);
             return;
         }
-        downvoteQuestion($id, $_SESSION['userid']);
+        $successful = downvoteQuestion($id, $_SESSION['userid']);
+        if (!$successful) {
+            http_response_code(400);
+            return;
+        }
     } catch (PDOException $e) {
         http_response_code(500);
     }
