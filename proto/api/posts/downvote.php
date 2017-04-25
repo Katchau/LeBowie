@@ -29,6 +29,12 @@ function post($params)
             http_response_code(400);
             return;
         }
+        $firstVote = getLastVoteByUserOnPost() ? false : true;
+        echo "First Vote ? $firstVote";
+        if ($firstVote) {
+            http_response_code(201);
+            return;
+        }
     } catch (PDOException $e) {
         http_response_code(500);
     }

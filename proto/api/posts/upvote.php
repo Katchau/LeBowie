@@ -24,14 +24,10 @@ function post($params)
             http_response_code(404);
             return;
         }
-        $previousVote = upvotePost($id, $_SESSION['userid']);
-        if ($previousVote == 'Upvote') {
+        $successful = upvotePost($id, $_SESSION['userid']);
+        if (!$successful) {
             http_response_code(400);
             return;
-        }
-        if (!$previousVote) {
-            http_response_code(201);
-            return; 
         }
     } catch (PDOException $e) {
         http_response_code(500);

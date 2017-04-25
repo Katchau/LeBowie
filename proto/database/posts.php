@@ -45,8 +45,9 @@ function upvotePost($postId, $userId)
         
         $stmt = $conn->prepare("INSERT INTO activity (post_id, user_id, action) VALUES (?, ?, ?)");
         $stmt->execute(array($postId, $userId, 'Upvote'));
+        return true;
     }
-    return $lastVote;
+    return false;
 }
 
 function downvotePost($postId, $userId)
