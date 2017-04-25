@@ -8,7 +8,7 @@ $(function() {
             'id': questionId 
         }, function(data, status) {
             console.log(status);
-            if (status == 200) {
+            if (status == 'success') {
                 $('#upvote-btn span').val(parseInt(questionId) + 1);
             }
         });    
