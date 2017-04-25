@@ -41,7 +41,7 @@ function upvotePost($postId, $userId)
 	INSERT INTO activity (post_id, user_id, action) 
 	SELECT ?, ?, ?
 	WHERE NOT EXISTS(
-		SELECT user_id, post_id, action
+		SELECT post_id, user_id, action
 		FROM Activity
 		WHERE post_id = ?
 		AND user_id = ?
@@ -72,7 +72,7 @@ function downvotePost($postId, $userId)
 	INSERT INTO activity (post_id, user_id, action) 
 	SELECT ?, ?, ?
 	WHERE NOT EXISTS(
-		SELECT user_id, post_id, action
+		SELECT post_id, user_id, action
 		FROM Activity
 		WHERE post_id = ?
 		AND user_id = ?
