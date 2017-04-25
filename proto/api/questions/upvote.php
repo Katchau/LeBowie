@@ -14,18 +14,17 @@ switch ($method) {
 
 function post($params)
 {
-    // if (!isset($_SESSION['userid'])) {
-    //     http_response_code(401);
-    //     return;
-    // }
-    $id = $params["id"];
+    if (!isset($_SESSION['userid'])) {
+         http_response_code(401);
+         return;
+    }
+    $id = $_POST["id"];
     try {
-        // if (getQuestionById($id) == NULL) {
-        //     http_response_code(404);
-        //     return;
-        // }
+        if (getQuestionById($id) == NULL) {
+            http_response_code(404);
+            return;
+        }
         upvoteQuestion($id);
-        echo "Upvoted question $id";
     } catch (PDOException $e) {
         http_response_code(500);
     }
