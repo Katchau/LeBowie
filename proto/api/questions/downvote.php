@@ -25,6 +25,7 @@ function post($params)
             return;
         }
         $successful = downvoteQuestion($id, $_SESSION['userid']);
+        echo "The last action for this post was a $successful";
         if (!$successful) {
             http_response_code(400);
             return;
