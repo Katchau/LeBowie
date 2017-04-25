@@ -6,11 +6,10 @@ $(function() {
 });
 
 function upvoteQuestion() {
-    let questionId = $('#js-question-id').val();
-    console.log(questionId);
+    let questionId = 1;
     $.post(`${BASE_URL}api/questions/upvote.php`),
     {
-        'id': questionId
+        'id': $('#js-question-id').val()
     },
     function(data, status) {
         if (status == 'success') {
