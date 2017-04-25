@@ -6,7 +6,8 @@ $(function() {
 });
 
 function upvoteQuestion() {
-    let questionId = $('#question-id').val();
+    let questionId = $('#js-question-id').val();
+    console.log(questionId);
     $.post(`${BASE_URL}api/questions/upvote.php`),
     {
         id: questionId
