@@ -18,7 +18,7 @@ function post($params)
     //     http_response_code(401);
     //     return;
     // }
-    $id = $params['id'];
+    $id = $_POST['id'];
     try {
         // if (getQuestionById($id) == NULL) {
         //     http_response_code(404);
