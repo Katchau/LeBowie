@@ -25,6 +25,7 @@ function post($params)
         //     return;
         // }
         upvoteQuestion($id);
+        echo "Upvoted question $id";
     } catch (PDOException $e) {
         http_response_code(500);
     }
