@@ -17,7 +17,7 @@ function createQuestion($userId, $title, $description, $topic, $tags)
     $stmt = $conn->prepare("INSERT INTO question (post_id, topic_id, title) VALUES (?, ?, ?)");
     $stmt->execute(array($lastId, $topic, $title));
 
-    foreach($tags as $tag) {
+    foreach ($tags as $tag) {
         addTag($lastId, $tag);
     }
 }
@@ -95,14 +95,17 @@ function getQuestionTags($questionId)
 function upvoteQuestion($questionId)
 {
     global $conn;
-    $stmt = $conn->prepare("UPDATE post SET up_score = up_score + 1 WHERE id = ?");
-    $stmt->execute(array($questionId));
+    if (!hasUserUpvotedPost()) {
+        $stmt = $conn->prepare("UPDATE post SET up_score = up_score + 1 WHERE id = ?");
+        $stmt->execute(array($questionId));
+    }
 }
 
 function downvoteQuestion($questionId)
 {
     global $conn;
-    $stmt = $conn->prepare("UPDATE post SET down_score = down_score + 1 WHERE id = ?");
-    $stmt->execute(array($questionId));
+    if (!hasUserDownvotedPost()) {
+        $stmt = $conn->prepare("UPDATE post SET down_score = down_score + 1 WHERE id = ?");
+        $stmt->execute(array($questionId));
+    }
 }
-?>

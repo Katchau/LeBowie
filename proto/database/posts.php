@@ -13,4 +13,20 @@ function createPost($userId, $description)
     $stmt->execute(array($lastId, $userId, "Create"));
     return $lastId;
 }
+
+function hasUserUpvotedPost($postId, $userId)
+{
+    global $conn;
+    $stmt = $conn->prepare("SELECT * FROM activity WHERE post_id = ?, user_id = ?, action = ?");
+    $stmt->execute(array($postId, $userId, 'Upvote'));
+    return $stmt->fetch();
+}
+
+function hasUserDownvotedPost($postId, $userId)
+{
+    global $conn;
+    $stmt = $conn->prepare("SELECT * FROM activity WHERE post_id = ?, user_id = ?, action = ?");
+    $stmt->execute(array($postId, $userId, 'Downvote'));
+    return $stmt->fetch();
+}
 ?>
