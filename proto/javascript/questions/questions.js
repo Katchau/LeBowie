@@ -1,14 +1,9 @@
-const BASE_URL = window.location.origin + '/~lbaw1651/proto/';
-const upvoteUrl = `${BASE_URL}api/posts/upvote.php`;
-const downvoteUrl = `${BASE_URL}api/posts/downvote.php`;
-let firstVote = true;
-
 function upvoteQuestion(questionId) {
     $.post(upvoteUrl,
     {
         'id': questionId
     },
-    function (data, status) {
+    function (data, status, xhr) {
         if (status == 'success') {
             let upvotebtn = $('#js-upvote-btn span');
             let upvotes = parseInt(upvotebtn.text());
@@ -19,6 +14,7 @@ function upvoteQuestion(questionId) {
                 downvotebtn.text(downvotes - 1);
             }
             firstVote = false;
+            console.log("STATUS = " + xhr.status);
         }
     });
 }
