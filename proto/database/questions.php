@@ -96,7 +96,8 @@ function upvoteQuestion($questionId, $userId)
 {
     // TODO: Isto devia ser uma transação
     global $conn;
-    if (getLastActionByUserOnPost() != 'Upvote') {
+    // if (getLastActionByUserOnPost() != 'Upvote') {
+    if (true) {
         $stmt = $conn->prepare("UPDATE post SET up_score = up_score + 1 WHERE id = ?");
         $stmt->execute(array($questionId));
         
