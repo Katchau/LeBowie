@@ -8,10 +8,11 @@ $(function () {
     // $('#js-downvote-btn').click(downvoteQuestion);
 });
 
-function upvoteQuestion() {
+function upvoteQuestion(questionId) {
     $.post(url,
     {
-        'id': $('#js-question-id').val()
+        //'id': $('#js-question-id').val()
+        'id': questionId
     },
     function (data, status) {
         if (status == 'success') {
@@ -28,10 +29,11 @@ function upvoteQuestion() {
     });
 }
 
-function downvoteQuestion() {
+function downvoteQuestion(questionId) {
     $.post(url,
     {
-        id: $('#js-question-id').val()
+        //id: $('#js-question-id').val()
+        'id': questionId
     },
     function (data, status) {
         if (status == 'success') {
