@@ -1,17 +1,11 @@
 const BASE_URL = window.location.origin + '/~lbaw1651/proto/';
-const url = `${BASE_URL}api/posts/upvote.php`;
+const upvoteUrl = `${BASE_URL}api/posts/upvote.php`;
+const downvoteUrl = `${BASE_URL}api/posts/downvote.php`;
 let firstVote = true;
 
-/* $(function () {
-    firstVote = true;
-    // $('#js-upvote-btn').click(upvoteQuestion);
-    // $('#js-downvote-btn').click(downvoteQuestion);
-}); */
-
 function upvoteQuestion(questionId) {
-    $.post(url,
+    $.post(upvoteUrl,
     {
-        //'id': $('#js-question-id').val()
         'id': questionId
     },
     function (data, status) {
@@ -30,9 +24,8 @@ function upvoteQuestion(questionId) {
 }
 
 function downvoteQuestion(questionId) {
-    $.post(url,
+    $.post(downvoteUrl,
     {
-        //id: $('#js-question-id').val()
         'id': questionId
     },
     function (data, status) {
