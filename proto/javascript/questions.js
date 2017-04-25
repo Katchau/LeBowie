@@ -2,8 +2,8 @@ const BASE_URL = window.location.origin + '/~lbaw1651/proto/';
 
 $(function() {
     let questionId = $('#question-id').val();
-    $('#upvote-btn').click(upvoteQuestion(questionId));
-    $('#downvote-btn').click(downvoteQuestion(questionId));
+    $('#js-upvote-btn').click(upvoteQuestion(questionId));
+    $('#js-downvote-btn').click(downvoteQuestion(questionId));
 });
 
 function upvoteQuestion(questionId) {
