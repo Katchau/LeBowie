@@ -7,10 +7,10 @@ $(function() {
         { 
             'id': questionId 
         }, function(data, status) {
-            console.log(status);
             if (status == 'success') {
-                console.log('Got here')
-                $('#upvote-btn span').text(parseInt(questionId) + 1);
+                let upvoteElem = $('#upvote-btn span');
+                let upvotes = parseInt(upvoteElem.text());
+                upvoteElem.text(upvotes + 1);
             }
         });    
     });
