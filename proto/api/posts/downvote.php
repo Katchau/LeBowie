@@ -28,7 +28,7 @@ function get($params)
             return;
         }
         $downvote = (getLastVoteByUserOnPost($id, $_SESSION['userid']) == 'Downvote') ? true : false;
-        return json_encode($downvote);
+        echo json_encode($downvote);
     } catch (PDOException $e) {
         http_response_code(500);
     }

@@ -28,7 +28,7 @@ function get($params)
             return;
         }
         $upvote = (getLastVoteByUserOnPost($id, $_SESSION['userid']) == 'Upvote') ? true : false;
-        return json_encode($downvote);
+        echo json_encode($upvote);
     } catch (PDOException $e) {
         http_response_code(500);
     }

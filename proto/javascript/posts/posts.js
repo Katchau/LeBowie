@@ -6,10 +6,11 @@ function upvotePost(postId) {
     },
     function(data, status) {
         if (status === 'success') {
-            let el = $(`#js-upvote-btn-${postId} span`);
-            let upvotes = parseInt(el.text());
-            el.text(upvotes + 1);
+            incrementUpvoteCounter(postId);
         }
+    })
+    .fail(function() {
+        incrementDownvoteCounter(postId);
     });
 }
 
@@ -21,11 +22,24 @@ function downvotePost(postId) {
     },
     function(data, status) {
         if (status === 'success') {
-            let el = $(`#js-downvote-btn-${postId} span`);
-            let downvotes = parseInt(el.text());
-            el.text(downvotes + 1);
+            incrementDownvoteCounter(postId);
         }
+    })
+    .fail(function() {
+        incrementUpvoteCounter(postId);
     });
+}
+
+function incrementDownvoteCounter(postId) {
+    let el = $(`#js-downvote-btn-${postId} span`);
+    let downvotes = parseInt(el.text());
+    el.text(downvotes + 1);
+}
+
+function incrementUpvoteCounter(postId) {
+    let el = $(`#js-upvote-btn-${postId} span`);
+    let upvotes = parseInt(el.text());
+    el.text(upvotes + 1);
 }
 
 function decrementDownvoteCounter(postId) {
