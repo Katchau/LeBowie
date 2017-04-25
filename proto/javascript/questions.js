@@ -10,7 +10,7 @@ $(function() {
             console.log(status);
             if (status == 'success') {
                 console.log('Got here')
-                $('#upvote-btn span').val(parseInt(questionId) + 1);
+                $('#upvote-btn span').text(parseInt(questionId) + 1);
             }
         });    
     });
