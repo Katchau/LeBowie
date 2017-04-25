@@ -24,8 +24,11 @@ function post($params)
             http_response_code(404);
             return;
         }
-        $lastAction = upvoteQuestion($id, $_SESSION['userid']);
-        echo "The last action was $lastAction";
+        $successful = upvoteQuestion($id, $_SESSION['userid']);
+        if (!$successful) {
+            http_response_code(400);
+            return;
+        }
     } catch (PDOException $e) {
         http_response_code(500);
     }
