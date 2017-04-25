@@ -65,10 +65,10 @@
 								<button type="button" class="btn btn-default">
 									<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
 								</button>
-								<button id="upvote-btn" type="button" class="btn btn-default">
+								<button id="upvote-btn" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 									<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">{$question.up_score}</span>
 								</button>
-								<button id="downvote-btn" type="button" class="btn btn-default">
+								<button id="downvote-btn" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 									<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">{$question.down_score}</span>
 								</button>
 							</div>

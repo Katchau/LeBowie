@@ -4,8 +4,9 @@ require_once $BASE_DIR . 'database/users.php';
 
 $username = $_GET['username'];
 if(!isset($username)) {
-    echo 'Invalid User!'. '<br>';
-    exit;
+    $smarty->assign('user', $user);
+	$smarty->display('users/profile.tpl');
+	exit;
 }    
 $user = getUser($username);
 $userAnswers = getUserAnswers($username);

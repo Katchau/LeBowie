@@ -9,21 +9,21 @@
 			in <a class="topic" href="{$BASE_URL}pages/topic/list.php?id={$question.id}"> {$question.topicname} </a>
 			{/if}
 			{if $type != 0}
-			<button type="button" class="btn btn-default">
+			<button type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 				<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> {$question.up_score} </span>
 			</button>
-			<button type="button" class="btn btn-default">
+			<button type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 				<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> {$question.down_score} </span>
 			</button>
 			{/if}
 		</p>
 		<div class="postBody">
-			{include file='common/shrinkcontent.tpl' description=$question.description}
+			{include file='common/shrinkcontent.tpl' description=$question.description|unescape:'html'}
 			<hr>
 			<div class="bestanswer">
 				{if isset($question.answer)}
 				 <span class="top-answer">Accepted Answer</span>
-				{include file='common/shrinkcontent.tpl' description=$question.answer_desc}
+				{include file='common/shrinkcontent.tpl' description=$question.answer_desc|unescape:'html'}
 				<p class="writerInfo">
 					answered by <a href="#" class="writer"> {$question.answer_user_name} </a> on {$question.answer_creation}
 				</p>

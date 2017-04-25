@@ -137,21 +137,22 @@
     </div>
 
     <div id="my-side-nav" class="side-nav">
-      <div class="side-nav-auth">
-        <a href="#">sign up</a>
-        <a href="#" data-toggle="modal" data-target="#myModal">sign in</a>
-      </div>
-      <hr>
-      <div class="side-nav-options">
-        <a href="#">ask</a>
-      </div>
-      <hr>
-      <div class="side-nav-topics">
-        <a href="#">programming</a>
-        <a href="#">mathematics</a>
-        <a href="#">biology</a>
-        <a href="#">rocket science</a>
-      </div>
+		<div class="side-nav-auth">
+			<a href="#">sign up</a>
+			<a href="#" data-toggle="modal" data-target="#myModal">sign in</a>
+		</div>
+		<hr>
+		<div class="side-nav-options">
+			<a href="#">ask</a>
+		</div>
+		<hr>
+		<div class="side-nav-topics">
+			{foreach $headerTopics as $headerTopic}
+				<a href="{$BASE_URL}pages/topic/list.php?id={$headerTopic.id}">
+				{$headerTopic.topicname}
+				</a>
+			{/foreach}
+		</div>
     </div>
   </nav>
   <div id="error_messages">

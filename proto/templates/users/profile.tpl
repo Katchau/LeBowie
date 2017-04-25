@@ -6,36 +6,41 @@
       <div class="row">
 
         <div class="hidden-xs col-lg-8 media">
-          <div class="profile-upper">
-            <div class="profile-image-and-info">
-              {if $user.image == NULL}
-			  <img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}img/profile.png" alt="user_image">
-			  {else}
-			  <img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}img/{$user.id}/{$user.image}" alt="user_image">
-			  {/if}
-              <hr>
-              <div class="profile-info">
-                <span class="info-start">Email: </span>{$user.email}
-                <br>
-                <span class="info-start">Name: </span>{$user.first_name}
-                <br>
-                <span class="info-start">Surname: </span>{$user.last_name}
-                <br>
-                <span class="info-start">Country: </span>{$user.name}
-                <form action="{$BASE_URL}pages/users/edit.php?username={$user.username}">
-                  <input type="submit" value="Edit Profile" class="btn btn-default">
-                </form>
-                <hr>
-                <div class="profile-badges">
-                  <span class="info-start">User Badges </span>
-                  <br>
-                  <span class="label label-default">2 years club</span>
-                  <span class="label label-primary">200 questions</span>
-                  <br>
-                  <span class="label label-success">400 answers</span>
-                  <span class="label label-info">{$user.score} user score </span>
-                </div>
-              </div>
+			<div class="profile-upper">
+				{if !isset($user) || $user == NULL}
+				Invalid Username! Maybe the account was deleted?
+				{/if}
+				<div class="profile-image-and-info">
+				{if $user.image == NULL}
+				<img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}images/profile.png" alt="user_image">
+				{else}
+				<img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}images/{$user.id}/{$user.image}" alt="user_image">
+				{/if}
+				<hr>
+				<div class="profile-info">
+					<span class="info-start">Email: </span>{$user.email}
+					<br>
+					<span class="info-start">Name: </span>{$user.first_name}
+					<br>
+					<span class="info-start">Surname: </span>{$user.last_name}
+					<br>
+					<span class="info-start">Country: </span>{$user.name}
+					{if $user.username == $USERNAME}
+					<form action="{$BASE_URL}pages/users/edit.php?username={$user.username}">
+						<input type="submit" value="Edit Profile" class="btn btn-default">
+					</form>
+					{/if}
+					<hr>
+					<div class="profile-badges">
+						<span class="info-start">User Badges </span>
+						<br>
+						<span class="label label-default">2 years club</span>
+						<span class="label label-primary">200 questions</span>
+						<br>
+						<span class="label label-success">400 answers</span>
+						<span class="label label-info">{$user.score} user score </span>
+					</div>
+				</div>
               <hr>
               <div class="profile-down">
                 <div class="profile-topics">

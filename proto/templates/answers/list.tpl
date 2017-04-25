@@ -1,9 +1,9 @@
     <div class="answer">
 		<div class="media">
 			<div class="media-left">
-               <a href="#">
+				<a href="#">
 					<img class="hidden-xs media-object user_profile_pic" src="http://placehold.it/64x64" alt="user_image" height="50px">
-               </a>
+				</a>
 			</div>
 			<div class="media-body answer_area">
 				<div class="answer_body">
@@ -24,10 +24,10 @@
 					<button type="button" class="btn btn-default">
 						<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
 					</button>
-					<button type="button" class="btn btn-default">
+					<button type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 						<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">{$answer.up_score}</span>
 					</button>
-					<button type="button" class="btn btn-default">
+					<button type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 						<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">{$answer.down_score}</span>
 					</button>
 				</div>
