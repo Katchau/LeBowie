@@ -20,15 +20,15 @@ function upvoteQuestion() {
 }
 
 function downvoteQuestion(questionId) {
-    $.post(`${BASE_URL}api/questions/downvote.php`),
-        {
-            id: questionId
-        },
-        function (data, status) {
-            if (status == 'success') {
-                let downvotebtn = $('#js-downvote-btn span');
-                let downvotes = parseInt(downvotebtn.text());
-                downvotebtn.text(upvotes + 1);
-            }
+    $.post(`${BASE_URL}api/questions/downvote.php`,
+    {
+        id: questionId
+    },
+    function (data, status) {
+        if (status == 'success') {
+            let downvotebtn = $('#js-downvote-btn span');
+            let downvotes = parseInt(downvotebtn.text());
+            downvotebtn.text(upvotes + 1);
         }
+    });
 }
