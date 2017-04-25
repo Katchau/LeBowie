@@ -95,7 +95,7 @@ function getQuestionTags($questionId)
 function upvoteQuestion($questionId)
 {
     global $conn;
-    if (!hasUserUpvotedPost()) {
+    if (true) {
         $stmt = $conn->prepare("UPDATE post SET up_score = up_score + 1 WHERE id = ?");
         $stmt->execute(array($questionId));
     }
