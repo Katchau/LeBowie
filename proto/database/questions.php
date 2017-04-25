@@ -98,7 +98,7 @@ function upvoteQuestion($questionId, $userId)
     global $conn;
     $lastVote = getLastVoteByUserOnPost($questionId, $userId);
     if ($lastVote != 'Upvote') {
-        if ($lastVote == '') {
+        if ($lastVote == NULL) {
             $stmt = $conn->prepare("UPDATE post SET down_score = down_score - 1 WHERE id = ?");
             $stmt->execute(array($questionId));
         }
@@ -118,7 +118,7 @@ function downvoteQuestion($questionId, $userId)
     global $conn;
     $lastVote = getLastVoteByUserOnPost($questionId, $userId);
     if ($lastVote != 'Downvote') {
-        if ($lastVote == '') {
+        if ($lastVote == NULL) {
             $stmt = $conn->prepare("UPDATE post SET up_score = up_score - 1 WHERE id = ?");
             $stmt->execute(array($questionId));
         }
