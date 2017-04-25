@@ -111,7 +111,7 @@ function downvoteQuestion($questionId, $userId)
 {
     // TODO: Isto devia ser uma transação
     global $conn;
-    if (getLastActionByUserOnPost($questinId, $userId) != 'Downvote') {
+    if (getLastActionByUserOnPost($questionId, $userId) != 'Downvote') {
         $stmt = $conn->prepare("UPDATE post SET down_score = down_score + 1 WHERE id = ?");
         $stmt->execute(array($questionId));
         
