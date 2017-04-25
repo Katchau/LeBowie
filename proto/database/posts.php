@@ -18,7 +18,7 @@ function getPostById($postId)
 {
     global $conn;
     $stmt = $conn->prepare("SELECT * FROM post WHERE id = ?");
-    $stmt->execute(array($questionId));
+    $stmt->execute(array($postId));
     return $stmt->fetch();    
 }
 
