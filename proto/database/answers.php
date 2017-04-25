@@ -1,5 +1,5 @@
 <?php
-require 'posts.php';
+require_once 'posts.php';
 
 function getRecentAnswers($questionId)
 {
