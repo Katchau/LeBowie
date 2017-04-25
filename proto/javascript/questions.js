@@ -10,7 +10,7 @@ function upvoteQuestion() {
     console.log(questionId);
     $.post(`${BASE_URL}api/questions/upvote.php`),
     {
-        id: questionId
+        'id': questionId
     },
     function(data, status) {
         if (status == 'success') {
