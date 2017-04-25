@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="{$BASE_URL}css/footer.css">
 	  <link rel="stylesheet" href="{$BASE_URL}css/profile.css">
     <link rel="stylesheet" href="{$BASE_URL}css/tabs.css">
+
+    {include file='common/scriptlist.tpl'}
   </head>
   <header>
     <!-- Add your site or application content here -->
