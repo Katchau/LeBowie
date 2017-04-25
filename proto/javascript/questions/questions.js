@@ -1,7 +1,8 @@
 const BASE_URL = window.location.origin + '/~lbaw1651/proto/';
+let firstVote = true;
 
 $(function () {
-    let firstVote = true;
+    firstVote = true;
     $('#js-upvote-btn').click(upvoteQuestion);
     $('#js-downvote-btn').click(downvoteQuestion);
 });
