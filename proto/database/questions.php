@@ -92,20 +92,29 @@ function getQuestionTags($questionId)
     return $tags;
 }
 
-function upvoteQuestion($questionId)
+function upvoteQuestion($questionId, $userId)
 {
+    // TODO: Isto devia ser uma transação
     global $conn;
-    if (!hasUserUpvotedPost()) {
+    if (getLastActionByUserOnPost() != 'Upvote') {
         $stmt = $conn->prepare("UPDATE post SET up_score = up_score + 1 WHERE id = ?");
         $stmt->execute(array($questionId));
+        
+        $stmt = $conn->prepare("INSERT INTO activity (post_id, user_id, action) VALUES (?, ?, ?)");
+        $stmt->execute(array($userId, $questionId, 'Upvote'));
     }
 }
 
 function downvoteQuestion($questionId)
 {
+    // TODO: Isto devia ser uma transação
     global $conn;
-    if (!hasUserDownvotedPost()) {
+    if (getLastActionByUserOnPost() != 'Downvote') {
         $stmt = $conn->prepare("UPDATE post SET down_score = down_score + 1 WHERE id = ?");
         $stmt->execute(array($questionId));
+        
+        $stmt = $conn->prepare("INSERT INTO activity (post_id, user_id, action) VALUES (?, ?, ?)");
+        $stmt->execute(array($userId, $questionId, 'Downvote'));
+        
     }
 }

@@ -14,19 +14,10 @@ function createPost($userId, $description)
     return $lastId;
 }
 
-function hasUserUpvotedPost($postId, $userId)
-{
+function getLastActionByUserOnPost($postId, $userId) {
     global $conn;
-    $stmt = $conn->prepare("SELECT * FROM activity WHERE post_id = ? AND user_id = ? AND action = ?");
-    $stmt->execute(array($postId, $userId, 'Upvote'));
-    return $stmt->fetch();
-}
-
-function hasUserDownvotedPost($postId, $userId)
-{
-    global $conn;
-    $stmt = $conn->prepare("SELECT * FROM activity WHERE post_id = ? AND user_id = ? AND action = ?");
-    $stmt->execute(array($postId, $userId, 'Downvote'));
-    return $stmt->fetch();
+    $stmt = $conn->prepare("SELECT action FROM activity WHERE post_id = ? AND user_id = ? ORDER BY id DESC LIMIT 1");
+    $stmt->execute(array($postId, $userId));
+    return $stmt->fetch()['action'];
 }
 ?>
