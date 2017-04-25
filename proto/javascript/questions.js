@@ -1,12 +1,12 @@
 const BASE_URL = window.location.origin + '/~lbaw1651/proto/';
 
 $(function() {
-    let questionId = $('#question-id').val();
-    $('#js-upvote-btn').click(upvoteQuestion(questionId));
-    $('#js-downvote-btn').click(downvoteQuestion(questionId));
+    $('#js-upvote-btn').click(upvoteQuestion);
+    $('#js-downvote-btn').click(downvoteQuestion);
 });
 
-function upvoteQuestion(questionId) {
+function upvoteQuestion() {
+    let questionId = $('#question-id').val();
     $.post(`${BASE_URL}api/questions/upvote.php`),
     {
         id: questionId
