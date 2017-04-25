@@ -20,7 +20,7 @@ function post($params)
     }
     $id = $params['id'];
     try {
-        if (getQuestionById($id) == NULL) {
+        if (getPostById($id) == NULL) {
             http_response_code(404);
             return;
         }

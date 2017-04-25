@@ -14,6 +14,14 @@ function createPost($userId, $description)
     return $lastId;
 }
 
+function getPostById($postId)
+{
+    global $conn;
+    $stmt = $conn->prepare("SELECT * FROM post WHERE id = ?");
+    $stmt->execute(array($questionId));
+    return $stmt->fetch();    
+}
+
 function getLastVoteByUserOnPost($postId, $userId) 
 {
     global $conn;
