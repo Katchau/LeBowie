@@ -104,6 +104,7 @@ function upvoteQuestion($questionId, $userId)
         $stmt = $conn->prepare("INSERT INTO activity (post_id, user_id, action) VALUES (?, ?, ?)");
         $stmt->execute(array($questionId, $userId, 'Upvote'));
     }
+    return getLastActionByUserOnPost($postId, $userId);
 }
 
 function downvoteQuestion($questionId)
