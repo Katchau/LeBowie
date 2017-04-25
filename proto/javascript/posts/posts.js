@@ -24,7 +24,7 @@ function downvotePost(postId) {
     },
     function(data, status, xhr) {
         if (status === 'success') {
-            let el = $(`js-downvote-btn-${postId} span`);
+            let el = $(`#js-downvote-btn-${postId} span`);
             let downvotes = parseInt(el.text());
             el.text(downvotes + 1);
             if (xhr.status === 200) {
