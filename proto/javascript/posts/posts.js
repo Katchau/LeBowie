@@ -18,9 +18,9 @@ function upvotePost(postId) {
 }
 
 function downvotePost(postId) {
-    $.post(upvoteUrl,
+    $.post(downvoteUrl,
     {
-        'id': postOd
+        'id': postId
     },
     function(data, status, xhr) {
         if (status === 'success') {
