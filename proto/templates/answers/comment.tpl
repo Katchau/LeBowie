@@ -87,7 +87,27 @@
 				Answer this question
 			</div>
             <div class="answer_area">
-                  {include file='answers/list.tpl' answer=$answer}
+                <div class="answer">
+                  <div class="media">
+                      <div class="media-left">
+                          <a href="#">
+                              <img class="hidden-xs media-object user_profile_pic" src="http://placehold.it/64x64" alt="user_image" height="50px">
+                          </a>
+                      </div>
+                      <div class="media-body answer_area">
+                          <div class="answer_body">
+                              {$answer.description|unescape:'html'}
+                          </div>
+                          <div class="answer_details"> answered by
+                              <a class="answer_author" href="#">{$answer.username}</a>
+                              on
+                              <span class="answer_date">{$answer.creation}</span>
+                          </div>            
+                          <hr>
+                          <hr>
+                      </div>
+                  </div>
+                </div>
             </div>
 		</div>
 	</div>
