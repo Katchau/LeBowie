@@ -1,6 +1,6 @@
 {include file='common/header.tpl'}
 {include file='common/scriptlist.tpl'}
-
+<script src="{$BASE_URL}javascript/common/register.js"></script>
 <div class="container">
 	    <div class="row">
 		<div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
@@ -29,7 +29,7 @@
 			<div class="row">
 			    <div class="col-xs-12 col-sm-6 col-md-6">
 				<div class="form-group">
-				    <input required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Password must contain at least 8 characters, 1 alphabet character and 1 number" type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
+				    <input required title="Password must contain at least 8 characters, 1 alphabet character and 1 number" type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
 				</div>
 			    </div>
 			    <div class="col-xs-12 col-sm-6 col-md-6">
