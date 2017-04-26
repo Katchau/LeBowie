@@ -112,7 +112,7 @@
                         <input name="comment-answer-id" type="hidden" value="{$question.post_id}" >
                         <textarea name="comment-body" rows="4" cols="100" class="form-control input-lg" placeholder="Enter your comment here."></textarea>
                     </div>
-                    <input type="submit" value="Submit Comment" form="form-answer" class="btn btn-default" tabindex="7">
+                    <input type="submit" value="Submit Comment" form="form-comment" class="btn btn-default" tabindex="7">
                 </form>
                 <hr>
                 <br>
