@@ -2,6 +2,7 @@
 require_once '../../config/init.php';
 require_once $BASE_DIR .'database/questions.php';
 require_once $BASE_DIR .'database/answers.php';
+require_once $BASE_DIR .'database/comments.php';
 
 $questionId = $_GET["id"];
 if(isset($questionId)) {
