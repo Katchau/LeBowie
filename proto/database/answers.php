@@ -33,4 +33,22 @@ function createAnswer($userId, $question_id, $answer_body)
     $stmt = $conn->prepare("INSERT INTO answer (post_id, question_id) VALUES (?, ?)");
     $stmt->execute(array($lastId, $question_id));
 }
+
+function getQuestionFromAnswer($answerId){
+
+    global $conn;
+
+    $stmt = $conn->prepare("SELECT question_id FROM Answer WHERE post_id = ?");
+    $stmt->execute(array($answerId));
+    return $stmt->fetchAll();
+
+}
+
+function getAnswerInfo($answerId){
+    global $conn;
+    $stmt = $conn->prepare("SELECT * FROM answer_display WHERE post_id = ?");
+    $stmt->exectue(array($answerId));
+    return $stmt->fetchAll();
+}
+
 ?>
