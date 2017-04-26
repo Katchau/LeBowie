@@ -24,7 +24,7 @@ function getUserEmail($email)
 {
     global $conn;
     $stmt = $conn->prepare("SELECT * FROM useracc WHERE email = ?");
-    $stmt->execute(array($username));
+    $stmt->execute(array($email));
     return $stmt->fetch();
 }
     
