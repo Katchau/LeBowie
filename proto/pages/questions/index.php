@@ -12,9 +12,8 @@ if(isset($questionId)) {
 		$answers = getBestAnswers($questionId);
 		$selected = ($question['answer_desc'] != null) ? getSelectedAnswer($questionId) : null;
 
-        for ($i = 0; $i < sizeof($answers); $i++){
-            //$comments[$i] = getComments($answers[i]);
-            echo $answers[i];
+        foreach($answers as $answer){
+            $comment[$answer] = getComments($answer["answer"]);
         }
 
 		$smarty->assign('question', $question);

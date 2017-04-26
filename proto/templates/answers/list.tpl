@@ -33,8 +33,10 @@
 				<hr>
 
                 <div class="comments">
-                    {foreach $comments as $comment}
-                        {include file='comments/list.tpl' comment=$comment}
+                    {foreach $comments as $answerComments}
+                        {foreach $answerComments as $comment}
+                            {include file='comments/list.tpl' comment=$comment}
+                        {/foreach}
                     {/foreach}
                 </div>
 
