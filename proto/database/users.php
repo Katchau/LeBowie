@@ -84,7 +84,7 @@ function createUser($firstname, $lastname, $username, $email, $password, $birth,
     global $conn;
     $salt = generateRandomString(8);
     $stmt = $conn->prepare('INSERT INTO useracc (first_name, last_name, salt, username, email, password, birth, country) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
-    $stmt->execute(array($firstname, $lastname, $salt, $username, $email, getHash($password, $salt), $birth, $country));
+    return $stmt->execute(array($firstname, $lastname, $salt, $username, $email, getHash($password, $salt), $birth, $country));
 }
 
 function deleteUser($userId) 

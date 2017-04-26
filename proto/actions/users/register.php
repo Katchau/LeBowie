@@ -20,7 +20,7 @@ try{
 
     $success = createUser($_POST['first_name'], $_POST['last_name'], $_POST['display_name'], $_POST['email'], $_POST['password'], $_POST['birth'], $_POST['country']);
 
-    if ($success === true) {
+    if ($success == true) {
         $user = getUser($_POST['display_name']);
         $_SESSION['username'] = $_POST['display_name'];
         $_SESSION['userid'] = $user['id'];
