@@ -6,10 +6,6 @@ require_once $BASE_DIR .'database/answers.php';
 
 $answerId = $_GET["id"];
 $questionId = getQuestionFromAnswer($answerId)["question"];
-
-echo "QuestioID: " . $questionId . "\n";
-echo "QuestionID[0]: " . $questionId["question"] . "\n";
-
 $question = getQuestionInfo($questionId);
 $tags = getQuestionTags($questionId);
 $answer = getAnswerInfo($answerId);

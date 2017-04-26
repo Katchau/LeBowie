@@ -48,7 +48,7 @@ function getAnswerInfo($answerId){
     global $conn;
     $stmt = $conn->prepare("SELECT * FROM answer_display WHERE answer = ?");
     $stmt->execute(array($answerId));
-    return $stmt->fetchAll();
+    return $stmt->fetch();
 }
 
 ?>

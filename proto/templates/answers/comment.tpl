@@ -84,7 +84,7 @@
 		<div class="col-lg-12 answers">
 
 			<div class="answers_header">
-				Answer this question
+				Comment on this answer
 			</div>
             <div class="answer_area">
                 <div class="answer">
@@ -102,7 +102,7 @@
                               <a class="answer_author" href="#">{$answer.username}</a>
                               on
                               <span class="answer_date">{$answer.creation}</span>
-                          </div>            
+                          </div>
                           <hr>
                           <hr>
                       </div>
