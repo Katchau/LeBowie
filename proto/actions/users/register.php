@@ -1,5 +1,5 @@
 <?php
-//try{
+try{
 
     require_once '../../config/init.php';
     require_once $BASE_DIR . 'database/users.php';
@@ -11,13 +11,26 @@
         exit;
     }
 
+    //Check if username exists
+    if(!getUser($_POST['display_name'])){
+        $_SESSION['error_messages'][] = 'Username already in use.';
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
+    }
+
+    //Check if email exists
+    if(!getUserEmail($_POST['email'])){
+        $_SESSION['error_messages'][] = 'Email already in use.';
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
+    }
+
+    //Check if passwords are equal
     if ($_POST['password'] !== $_POST['password_confirmation']) {
         $_SESSION['error_messages'][] = 'Passwords are not identical';
         $_SESSION['form_values'] = $_POST;
         header('Location: ' . $_SERVER['HTTP_REFERER']);
         exit;
     }
-
+    //Create a user
     $success = createUser($_POST['first_name'], $_POST['last_name'], $_POST['display_name'], $_POST['email'], $_POST['password'], $_POST['birth'], $_POST['country']);
 
     if ($success == true) {
@@ -34,10 +47,10 @@
         exit;
     }
 
-/*}
+}
 catch(Exception $e){
     $_SESSION['error_messages'][] = 'Internal server error, try again later.';
     header('Location: ' . $_SERVER['HTTP_REFERER']);
-}*/
+}
 
 ?>
