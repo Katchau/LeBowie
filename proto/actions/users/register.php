@@ -41,7 +41,7 @@ try{
         $user = getUser($_POST['display_name']);
         $_SESSION['username'] = $_POST['display_name'];
         $_SESSION['userid'] = $user['id'];
-        $_SESSION['sucess_messages'][] = 'Register successful';
+        $_SESSION['success_messages'][] = 'Register successful';
         header("Location: $BASE_URL");
         exit;
     } else {
