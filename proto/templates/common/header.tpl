@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{$BASE_URL}css/footer.css">
 	  <link rel="stylesheet" href="{$BASE_URL}css/profile.css">
     <link rel="stylesheet" href="{$BASE_URL}css/tabs.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 
     {include file='common/scriptlist.tpl'}
   </head>
