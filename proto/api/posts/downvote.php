@@ -49,6 +49,9 @@ function post($params)
             return;
         }
     } catch (PDOException $e) {
+        global $conn;
+        $conn->rollBack();
+        echo $e->getMessage();
         http_response_code(500);
     }
 }
