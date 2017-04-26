@@ -29,8 +29,8 @@ function upvotePost($postId, $userId)
         
 	$conn->beginTransaction();
 
-	$stmt = $conn->prepare("BEGIN");
-	$stmt->execute();
+	//$stmt = $conn->prepare("BEGIN");
+	//$stmt->execute();
 	$stmt = $conn->prepare("SET TRANSACTION ISOLATION LEVEL SERIALIZABLE READ WRITE");
 	$stmt->execute();
 	
