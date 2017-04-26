@@ -5,9 +5,12 @@ require_once $BASE_DIR .'database/questions.php';
 require_once $BASE_DIR .'database/answers.php';
 
 $answerId = $_GET["id"];
-$questionId = getQuestionFromAnswer($answerId);
+$questionId = getQuestionFromAnswer($answerId)["question"];
 
-$question = getQuestionInfo($questionId["question"]);
+echo "QuestioID: " . $questionId . "\n";
+echo "QuestionID[0]: " . $questionId["question"] . "\n";
+
+$question = getQuestionInfo($questionId[0]);
 $tags = getQuestionTags($questionId);
 $answer = getAnswerInfo($answerId);
 
