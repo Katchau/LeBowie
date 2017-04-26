@@ -5,6 +5,9 @@ require_once $BASE_DIR . 'database/posts.php';
 $method = $_SERVER['REQUEST_METHOD'];
 $params = json_decode(file_get_contents('php://input'), true);
 switch ($method) {
+    case 'GET':
+        get($_GET);
+        break;
     case 'POST':
         post($_POST);
         break;
