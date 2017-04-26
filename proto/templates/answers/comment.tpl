@@ -108,6 +108,12 @@
                       </div>
                   </div>
                 </div>
+                <form action="" method="post" id="form-comment">
+                    <div class="form-group">
+                        <textarea name="comment-body" rows="4" cols="100" class="form-control input-lg" placeholder="Enter your comment here."></textarea>
+                    </div>
+                    <input type="submit" value="Submit Comment" form="form-answer" class="btn btn-default" tabindex="7">
+                </form>
             </div>
 		</div>
 	</div>
