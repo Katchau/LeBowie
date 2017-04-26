@@ -46,7 +46,7 @@ function getQuestionFromAnswer($answerId){
 
 function getAnswerInfo($answerId){
     global $conn;
-    $stmt = $conn->prepare("SELECT * FROM answer_display WHERE post_id = ?");
+    $stmt = $conn->prepare("SELECT * FROM answer_display WHERE answer = ?");
     $stmt->execute(array($answerId));
     return $stmt->fetchAll();
 }
