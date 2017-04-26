@@ -31,6 +31,13 @@
 				</div>
 
 				<hr>
+
+                <div class="comments">
+                    {foreach $comments as $comment}
+                        {include file='comments/list.tpl' comment=$comment}
+                    {/foreach}
+                </div>
+
 				<hr>
 			</div>
 		</div>

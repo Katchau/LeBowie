@@ -10,11 +10,17 @@ if(isset($questionId)) {
 		$tags = getQuestionTags($questionId);
 		$answers = getBestAnswers($questionId);
 		$selected = ($question['answer_desc'] != null) ? getSelectedAnswer($questionId) : null;
+
+        foreach ($i = 0; $i < sizeof($answers); $i++){
+            $comments[$i] = getComments($answers[i]);
+        }
+
 		$smarty->assign('question', $question);
 		$smarty->assign('tags', $tags);
 		$smarty->assign('answers', $answers);
 		$smarty->assign('selected', $selected);
-		$smarty->display('questions/question.tpl');
+		$smarty->display('questions/question.tpl')
+
 	}
 	catch(PDOException $e){
 		$smarty->assign('errorMessage', "No such question found!");
@@ -31,4 +37,3 @@ else{
 
 
 ?>
-
