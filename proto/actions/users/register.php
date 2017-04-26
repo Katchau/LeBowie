@@ -12,15 +12,17 @@ try{
     }
 
     //Check if username exists
-    if(!getUser($_POST['display_name'])){
+    if($test = getUser($_POST['display_name'])){
         $_SESSION['error_messages'][] = 'Username already in use.';
         header('Location: ' . $_SERVER['HTTP_REFERER']);
+        exit;
     }
 
     //Check if email exists
-    if(!getUserEmail($_POST['email'])){
+    if($test = getUserEmail($_POST['email'])){
         $_SESSION['error_messages'][] = 'Email already in use.';
         header('Location: ' . $_SERVER['HTTP_REFERER']);
+        exit;
     }
 
     //Check if passwords are equal
