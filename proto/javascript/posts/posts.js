@@ -31,9 +31,8 @@ function updateUpvoteCounter(postId) {
     },
     function(data, status) {
         if (status === 'success') {
-            console.log(data);
             let el = $(`#js-upvote-btn-${postId} span`);
-            el.text(data.up_score);
+            el.text(data);
         }
     });
 }
@@ -45,9 +44,8 @@ function updateDownvoteCounter(postId) {
     },
     function(data, status) {
         if (status === 'success') {
-            console.log(data);
             let el = $(`#js-downvote-btn-${postId} span`);
-            el.text(data.down_score);
+            el.text(data);
         }
     });
 }
