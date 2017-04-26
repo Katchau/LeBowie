@@ -22,10 +22,10 @@
 					<button type="button" class="btn btn-default">
 						<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
 					</button>
-					<button onclick="upvotePost({$anser.answer})" id="js-upvote-btn-{$question.answer}" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
+					<button onclick="upvotePost({$answer.answer})" id="js-upvote-btn-{$answer.answer}" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 						<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">{$answer.up_score}</span>
 					</button>
-					<button onclick="downvotePost({$anser.answer})" id="js-downvote-btn-{$question.answer}" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
+					<button onclick="downvotePost({$answer.answer})" id="js-downvote-btn-{$answer.answer}" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 						<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">{$answer.down_score}</span>
 					</button>
 				</div>
