@@ -1,5 +1,5 @@
 <?php
-try{
+//try{
 
     require_once '../../config/init.php';
     require_once $BASE_DIR . 'database/users.php';
@@ -34,10 +34,10 @@ try{
         exit;
     }
 
-}
+/*}
 catch(Exception $e){
     $_SESSION['error_messages'][] = 'Internal server error, try again later.';
     header('Location: ' . $_SERVER['HTTP_REFERER']);
-}
+}*/
 
 ?>
