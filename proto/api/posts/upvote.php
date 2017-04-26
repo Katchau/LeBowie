@@ -24,7 +24,7 @@ function get($params)
             http_response_code(404);
             return;
         }
-        echo json_encode($post.up_score);
+        echo json_encode($post['up_score']);
     } catch (PDOException $e) {
         echo $e->getMessage();
         http_response_code(500);
@@ -50,7 +50,7 @@ function post($params)
         }
     } catch (PDOException $e) {
         global $conn;
-        $conn->rollback();
+        $conn->rollBack();
         echo $e->getMessage();
         http_response_code(500);
     }

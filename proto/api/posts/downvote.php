@@ -24,7 +24,7 @@ function get($params)
             http_response_code(404);
             return;
         }
-        echo json_encode($post.down_score);
+        echo json_encode($post['down_score']);
     } catch (PDOException $e) {
         echo $e->getMessage();
         http_response_code(500);
