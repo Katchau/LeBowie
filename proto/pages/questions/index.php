@@ -12,10 +12,6 @@ if(isset($questionId)) {
 		$answers = getBestAnswers($questionId);
 		$selected = ($question['answer_desc'] != null) ? getSelectedAnswer($questionId) : null;
 
-        foreach($answers as $answer){
-            $comment[$answer["answer"]] = getComments($answer["answer"]);
-        }
-
 		$smarty->assign('question', $question);
 		$smarty->assign('tags', $tags);
 		$smarty->assign('answers', $answers);
