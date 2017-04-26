@@ -87,7 +87,7 @@
 				Answer this question
 			</div>
             <div class="answer_area">
-                  {include file='answers/list.tpl' answer=$answer'}
+                  {include file='answers/list.tpl' answer=$answer}
             </div>
 		</div>
 	</div>
