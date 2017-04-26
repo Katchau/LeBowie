@@ -30,6 +30,7 @@ function post($params)
             return;
         }
     } catch (PDOException $e) {
+        echo $e->getMessage();
         http_response_code(500);
     }
 }
