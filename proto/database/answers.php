@@ -40,7 +40,7 @@ function getQuestionFromAnswer($answerId){
 
     $stmt = $conn->prepare("SELECT question_id FROM Answer WHERE post_id = ?");
     $stmt->execute(array($answerId));
-    return $stmt->fetchAll();
+    return $stmt->fetch();
 
 }
 
