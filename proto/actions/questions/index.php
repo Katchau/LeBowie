@@ -11,6 +11,9 @@ $commaSeparatedTags = strip_tags($_POST["question-tags"]);
 $untrimmedTags = explode(",", $commaSeparatedTags);
 $tags = array_map('trim', $untrimmedTags);
 
-createQuestion($id, $title, $description, $topic, $tags);
-header("Location: $BASE_URL" . "pages/questions/ask.php");
+$questionId = createQuestion($id, $title, $description, $topic, $tags);
+if(!$questionId)
+	header("Location: $BASE_URL" . "pages/questions/ask.php");
+else
+	header("Location: $BASE_URL" . "pages/questions/index.php?id=" . $questionId);
 ?>
