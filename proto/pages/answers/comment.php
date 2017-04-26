@@ -10,7 +10,7 @@ $questionId = getQuestionFromAnswer($answerId)["question"];
 echo "QuestioID: " . $questionId . "\n";
 echo "QuestionID[0]: " . $questionId["question"] . "\n";
 
-$question = getQuestionInfo($questionId[0]);
+$question = getQuestionInfo($questionId);
 $tags = getQuestionTags($questionId);
 $answer = getAnswerInfo($answerId);
 
