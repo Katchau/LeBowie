@@ -5,7 +5,14 @@ require_once $BASE_DIR .'database/questions.php';
 require_once $BASE_DIR .'database/answers.php';
 
 $answerId = $_GET["id"];
-$questionId = getQuestionFromAnswer($answerId)[0];
+$questionId = getQuestionFromAnswer($answerId);
+
+$i = 0;
+
+foreach ($questionId as $question){
+    echo "QuestionId : " . $question . " ----- " . $i . "\n";
+    $i++;
+}
 
 $question = getQuestionInfo($questionId);
 $tags = getQuestionTags($questionId);
