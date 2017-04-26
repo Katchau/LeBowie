@@ -13,33 +13,22 @@ function createQuestion($userId, $title, $description, $topic, $tags)
 {
     global $conn;	
 	try{
+	
 		$conn->beginTransaction();
-		$stmt = $conn->prepare("SET TRANSACTION 
-				ISOLATION LEVEL REPEATABLE READ
-				READ WRITE;");
-		$stmt->execute();
-		echo 'cenas';
-		$stmt = $conn->prepare("
-				INSERT INTO Post(current_state)
-				VALUES ('Published');");
-		$stmt->execute();
-		$stmt = $conn->prepare("INSERT INTO postinstance (post_id, user_id, description)
-				VALUES (currval(pg_get_serial_sequence('Post', 'id')),?,?);");
-		$stmt->execute(array($userId,$description));
-		$stmt = $conn->prepare("INSERT INTO activity (post_id, user_id, action) 
-				VALUES (currval(pg_get_serial_sequence('Post', 'id')),?,'Create');");
-		$stmt->execute(array($userId));
+		$lastId = createPost($userId,$description);
 		$stmt = $conn->prepare("INSERT INTO question (post_id, topic_id, title) 
-				VALUES (currval(pg_get_serial_sequence('Post', 'id')), ?, ?);");
-		$stmt->execute(array($topic, $itle));
+				VALUES (?, ?, ?)");
+		$stmt->execute(array($lastId,$topic, $title));
 		$conn->commit();
 		foreach ($tags as $tag) {
 			addTag($lastId, $tag);
 		}
+		return $lastId;
 	}
-	catch (Exception $e) {
+	catch (PDOException $e) {
 		$conn->rollBack();
 		echo "Failed: " . $e->getMessage();
+		return 0;
 	}
 
 }
