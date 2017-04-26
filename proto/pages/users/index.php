@@ -5,7 +5,7 @@ require_once $BASE_DIR . 'database/users.php';
 $username = $_GET['username'];
 if(isset($username)) {
     try{
-		$user = getUser($username);
+		$user = getUserProfileInfo($username);
 		$userAnswers = getUserAnswers($username);
 		$userQuestions = getUserQuestions($username);
 		$userTopics = getUserFrequentTopics($user['id']);

@@ -35,7 +35,15 @@ function getUserInfo($userOrEmail)
     $stmt->execute(array($userOrEmail,$userOrEmail));
     return $stmt->fetch();
 }
-    
+ 
+function getUserProfileInfo($username) 
+{
+    global $conn;
+    $stmt = $conn->prepare("SELECT * FROM user_info WHERE username = ?");
+    $stmt->execute(array($username));
+    return $stmt->fetch();
+}
+ 
 function getUserAnswers($username) 
 {
     global $conn;
