@@ -24,33 +24,32 @@ function getPostById($postId)
 
 function upvotePost($postId, $userId)
 {
-    //WIP
     global $conn;
+	$ret = false;
         
-	$stmt = $conn->prepare("
-	BEGIN;
-	SET TRANSACTION 
-	ISOLATION LEVEL SERIALIZABLE
-	READ WRITE;
+	$conn->beginTransaction();
+
+	$stmt = $conn->prepare("BEGIN");
+	$stmt->execute();
+	$stmt = $conn->prepare("SET TRANSACTION ISOLATION LEVEL SERIALIZABLE READ WRITE");
+	$stmt->execute();
 	
-	DELETE FROM activity
-	WHERE post_id = ?
-	AND user_id = ?
-	AND action = ?;
-	
-	INSERT INTO activity (post_id, user_id, action) 
-	SELECT ?, ?, ?
-	WHERE NOT EXISTS(
-		SELECT post_id, user_id, action
-		FROM Activity
-		WHERE post_id = ?
-		AND user_id = ?
-		AND action = ?
-	);
-	COMMIT;
-	");
-	$stmt->execute(array($postId, $userId, 'Downvote', $postId, $userId, 'Upvote', $postId, $userId, 'Upvote'));
-    return true; //TODO nao sei para que isto serve :)
+	$stmt = $conn->prepare("DELETE FROM activity WHERE post_id = ? AND user_id = ? AND action = ?");
+	$stmt->execute(array($postId, $userId, 'Downvote'));
+
+	$stmt = $conn->prepare("SELECT * FROM activity WHERE post_id = ? AND user_id = ? AND action = ?");
+	$stmt->execute($postId, $userId, 'Upvote');
+	$results = $stmt->fetchAll();
+
+	if (count($results) == 0) {
+		$stmt = $conn->prepare("INSERT INTO activity (post_id, user_id, action) VALUES (?, ?, ?)");
+		$stmt->execute(array($postId, $userId, 'Upvote'));
+		$ret = true;
+	}
+
+	$conn->commit();
+
+    return $ret; //TODO nao sei para que isto serve :)
 }
 
 function downvotePost($postId, $userId)
