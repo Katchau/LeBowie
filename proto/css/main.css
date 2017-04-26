@@ -12,9 +12,12 @@
 
 html {
     color: #222;
-    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     line-height: 1.4;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 /*
