@@ -18,9 +18,7 @@
 					{if $answer.accepted == true}
 					<a class="badge" href="#"><span class="glyphicon glyphicon-ok"></span></a>
 					{/if}
-					<button type="button" class="btn btn-default comment_btn">
-						<span aria-hidden="true">comment</span>
-					</button>
+                    <a aria-hidden="true" href="{$BASE_URL}pages/answers/comment.php?id={$answer.post_id}" class="btn btn-default comment_btn"> answer</a>
 					<button type="button" class="btn btn-default">
 						<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
 					</button>
