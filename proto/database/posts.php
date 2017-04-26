@@ -29,8 +29,6 @@ function upvotePost($postId, $userId)
         
 	$conn->beginTransaction();
 
-	//$stmt = $conn->prepare("BEGIN");
-	//$stmt->execute();
 	$stmt = $conn->prepare("SET TRANSACTION ISOLATION LEVEL SERIALIZABLE READ WRITE");
 	$stmt->execute();
 	
@@ -38,7 +36,7 @@ function upvotePost($postId, $userId)
 	$stmt->execute(array($postId, $userId, 'Downvote'));
 
 	$stmt = $conn->prepare("SELECT * FROM activity WHERE post_id = ? AND user_id = ? AND action = ?");
-	$stmt->execute($postId, $userId, 'Upvote');
+	$stmt->execute(array($postId, $userId, 'Upvote'));
 	$results = $stmt->fetchAll();
 
 	if (count($results) == 0) {
@@ -48,7 +46,6 @@ function upvotePost($postId, $userId)
 	}
 
 	$conn->commit();
-
     return $ret; //TODO nao sei para que isto serve :)
 }
 
