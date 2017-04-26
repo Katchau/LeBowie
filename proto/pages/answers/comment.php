@@ -12,6 +12,7 @@ $answer = getAnswerInfo($answerId);
 
 $smarty->assign('question', $question);
 $smarty->assign('tags', $tags);
+$smarty->assign('answer', $answer);
 
 $smarty->display('answers/comment.tpl');
 
