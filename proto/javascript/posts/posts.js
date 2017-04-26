@@ -25,7 +25,7 @@ function downvotePost(postId) {
 }
 
 function updateUpvoteCounter(postId) {
-    $.get('upvoteUrl',
+    $.get(upvoteUrl,
     {
         id: postId
     },
@@ -38,7 +38,7 @@ function updateUpvoteCounter(postId) {
 }
 
 function updateDownvoteCounter(postId) {
-    $.get('downvoteUrl',
+    $.get(downvoteUrl,
     {
         id: postId
     },
