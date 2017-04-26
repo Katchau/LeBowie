@@ -14,6 +14,7 @@ try{
     //Check if username exists
     if(getUser($_POST['display_name']) == true){
         $_SESSION['error_messages'][] = 'Username already in use.';
+        $_SESSION['form_values'] = $_POST;
         header('Location: ' . $_SERVER['HTTP_REFERER']);
         exit;
     }
@@ -21,6 +22,7 @@ try{
     //Check if email exists
     if(getUserEmail($_POST['email']) == true){
         $_SESSION['error_messages'][] = 'Email already in use.';
+        $_SESSION['form_values'] = $_POST;
         header('Location: ' . $_SERVER['HTTP_REFERER']);
         exit;
     }
