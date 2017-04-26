@@ -106,8 +106,10 @@
                         </div>
                     </div>
                 </div>
-                <form action="" method="post" id="form-comment">
+                <form action="{$BASE_URL}actions/comments/" method="post" id="form-comment">
                     <div class="form-group">
+                        <input name="comment-user-id" type="hidden" value="{$USERID}" >
+                        <input name="comment-answer-id" type="hidden" value="{$question.post_id}" >
                         <textarea name="comment-body" rows="4" cols="100" class="form-control input-lg" placeholder="Enter your comment here."></textarea>
                     </div>
                     <input type="submit" value="Submit Comment" form="form-answer" class="btn btn-default" tabindex="7">
