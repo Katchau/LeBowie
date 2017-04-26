@@ -3,7 +3,7 @@ function createPost($userId, $description)
 {
     global $conn;
     $stmt = $conn->prepare("SET TRANSACTION 
-			ISOLATION LEVEL REPEATABLE READ
+			ISOLATION LEVEL READ COMMITED
 			READ WRITE");
 	$stmt->execute();
 	$stmt = $conn->prepare("
