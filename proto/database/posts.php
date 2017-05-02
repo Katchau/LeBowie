@@ -94,7 +94,7 @@ function updatePost($postId, $userId, $description)
 
 	$postContentId = $conn->lastInsertId();
 
-	$stmt = $conn->prepare("INSERT INTO activity (post_id, post_content_id, user_id, action) VALUES (?, ?, ?)");
+	$stmt = $conn->prepare("INSERT INTO activity (post_id, post_content_id, user_id, action) VALUES (?, ?, ?, ?)");
 	$stmt->execute(array($postId, $postContentId, $userId, 'Update'));
 
 	$conn->commit();
