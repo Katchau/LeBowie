@@ -8,8 +8,8 @@ function getComments($answerId)
     return $stmt->fetchAll();
 }
 
-function createComment($userId, $answerId, $commentBody){
-
+function createComment($userId, $answerId, $commentBody)
+{
     global $conn;
     try{
         $conn->beginTransaction();
@@ -24,7 +24,6 @@ function createComment($userId, $answerId, $commentBody){
         echo "Failed: " . $e->getMessage();
         return 0;
     }
-
 }
 
 ?>

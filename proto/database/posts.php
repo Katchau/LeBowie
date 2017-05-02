@@ -81,4 +81,22 @@ function downvotePost($postId, $userId)
 	$conn->commit();
 	return $ret;
 }
+
+function updatePost($postId, $userId, $description) 
+{
+	global $conn;
+	$conn->beginTransaction();
+
+	$stmt = $conn->prepare("SET TRANSACTION ISOLATION LEVEL READ COMMITED READ WRITE");
+
+	$stmt = $conn->prepare("INSERT INTO postinstance (post_id, user_id, description) VALUES (?, ?, ?)");
+	$stmt->execute(array($postId, $userId, $description));
+
+	$postContentId = $conn->lastInsertId();
+
+	$stmt = $conn->prepare("INSERT INTO activity (post_id, post_content_id, user_id, action) VALUES (?, ?, ?)");
+	$stmt->execute(array($postId, $postContentId, $userId, 'Update'));
+
+	$conn->commit();
+}
 ?>
