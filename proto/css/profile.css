@@ -15,6 +15,10 @@
 .profile-desc{
 
 }
+.profile-info .btn {
+    background-color:orange;
+    margin-top: 0.5em;
+}
 .container{padding-top:10px;}
 .profile-image-and-info{
     float:left;
@@ -92,5 +96,3 @@
     font-size: 0.5em;
     padding-left: 15px;
 }
-
-
