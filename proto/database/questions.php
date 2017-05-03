@@ -57,6 +57,14 @@ function getBestQuestions()
     return $stmt->fetchAll();
 }
 
+function getTextSearch($string)
+{
+    global $conn;
+    $stmt = $conn->prepare("SELECT * FROM top_10_questions");
+    $stmt->execute(array($string));
+    return $stmt->fetchAll();
+}
+
 function addTag($postId, $tag)
 {
     global $conn;
