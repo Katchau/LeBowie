@@ -27,11 +27,11 @@ function getSelectedAnswer($questionId)
 
 function createAnswer($userId, $question_id, $answer_body)
 {
-	global $conn;	
+	global $conn;
 	try{
 		$conn->beginTransaction();
 		$lastId = createPost($userId,$description);
-		$stmt = $conn->prepare("INSERT INTO answer (post_id, question_id) 
+		$stmt = $conn->prepare("INSERT INTO answer (post_id, question_id)
 								VALUES (?, ?)");
 		$stmt->execute(array($lastId, $question_id));
 		$conn->commit();
@@ -59,6 +59,13 @@ function getAnswerInfo($answerId){
     $stmt = $conn->prepare("SELECT * FROM answer_display WHERE answer = ?");
     $stmt->execute(array($answerId));
     return $stmt->fetch();
+}
+
+function acceptAnswer($answer_id) {
+    global $conn;
+    $stmt = $conn->prepare("UPDATE Answer SET accepted = TRUE WHERE post_id = ?");
+    $stmt->execute(array($answer_id));
+    return 0;
 }
 
 ?>

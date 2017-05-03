@@ -18,6 +18,9 @@
 					{if $answer.accepted == true}
 					<a class="badge" href="#"><span class="glyphicon glyphicon-ok"></span></a>
 					{/if}
+                    {if ($USERNAME == $question.username)}
+                    <a aria-hidden="true" href="{$BASE_URL}pages/answers/comment.php?id={$answer.answer}" class="btn btn-default accept_btn"> accept this answer</a>
+                    {/if}
                     <a aria-hidden="true" href="{$BASE_URL}pages/answers/comment.php?id={$answer.answer}" class="btn btn-default comment_btn"> comment</a>
 					<button type="button" class="btn btn-default">
 						<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
