@@ -35,7 +35,15 @@ function getUserInfo($userOrEmail)
     $stmt->execute(array($userOrEmail,$userOrEmail));
     return $stmt->fetch();
 }
- 
+
+function getUserSessionId($user) 
+{
+    global $conn;
+    $stmt = $conn->prepare("SELECT id FROM UserAcc WHERE username = ?");
+    $stmt->execute(array($user));
+    return $stmt->fetch();
+}
+
 function getUserProfileInfo($username) 
 {
     global $conn;
@@ -191,5 +199,18 @@ function serializeUser($user)
     ];
     
     return json_encode($userObject);
+}
+function checkUserExists($username){
+    global $conn;
+    $stmt = $conn->prepare("SELECT id FROM useracc WHERE username = ?");
+    $stmt->execute(array($username));
+    return $stmt->fetch() == true;
+}
+
+function checkEmailExists($email){
+    global $conn;
+    $stmt = $conn->prepare("SELECT id FROM useracc WHERE email = ?");
+    $stmt->execute(array($email));
+    return $stmt->fetch() == true;
 }
 ?>

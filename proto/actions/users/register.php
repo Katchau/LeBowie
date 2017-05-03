@@ -12,7 +12,7 @@ try{
     }
 
     //Check if username exists
-    if(getUser($_POST['display_name']) == true){
+    if(checkUserExists($_POST['display_name']) == true){
         $_SESSION['error_messages'][] = 'Username already in use.';
         $_SESSION['form_values'] = $_POST;
         header('Location: ' . $_SERVER['HTTP_REFERER']);
@@ -20,7 +20,7 @@ try{
     }
 
     //Check if email exists
-    if(getUserEmail($_POST['email']) == true){
+    if(checkEmailExists($_POST['email']) == true){
         $_SESSION['error_messages'][] = 'Email already in use.';
         $_SESSION['form_values'] = $_POST;
         header('Location: ' . $_SERVER['HTTP_REFERER']);
@@ -38,7 +38,7 @@ try{
     $success = createUser($_POST['first_name'], $_POST['last_name'], $_POST['display_name'], $_POST['email'], $_POST['password'], $_POST['birth'], $_POST['country']);
 
     if ($success == true) {
-        $user = getUser($_POST['display_name']);
+        $user = getUserSessionId($_POST['display_name']);
         $_SESSION['username'] = $_POST['display_name'];
         $_SESSION['userid'] = $user['id'];
         $_SESSION['success_messages'][] = 'Register successful';
