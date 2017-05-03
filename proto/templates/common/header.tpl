@@ -123,7 +123,7 @@
 
         </ul>
 
-        <form class="navbar-form navbar-right" method="get" action="{$BASE_URL}actions/questions/search.php">
+        <form class="navbar-form navbar-right" method="get" action="{$BASE_URL}pages/questions/search.php">
           <div class="input-group">
             <input type="text" class="form-control" name="string" placeholder="Search">
             <div class="input-group-btn">
