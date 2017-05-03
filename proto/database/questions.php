@@ -90,7 +90,7 @@ function getTextSearch($string)
     question_display.answer_user_name
     FROM question_display
     JOIN first_post_instance ON question_display.post_id = first_post_instance.id
-    WHERE to_tsvector('english',question_display.username || ' ' || question_display.description) @@ to_tsquery('english', ?);
+    WHERE to_tsvector('english',question_display.username || ' ' || question_display.description) @@ plainto_tsquery('english', ?);
     ");
     $stmt->execute(array($string));
     return $stmt->fetchAll();
