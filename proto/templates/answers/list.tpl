@@ -19,7 +19,7 @@
 					<a class="badge" href="#"><span class="glyphicon glyphicon-ok"></span></a>
 					{/if}
                     {if ($USERNAME == $question.username)}
-                    <a aria-hidden="true" href="{$BASE_URL}pages/answers/comment.php?id={$answer.answer}" class="btn btn-default comment_btn"> accept this answer</a>
+                    <a aria-hidden="true" href="{$BASE_URL}pages/questions/index.php?id={$question.post_id}" class="btn btn-default accept_btn"> accept this answer</a>
                     {/if}
                     <a aria-hidden="true" href="{$BASE_URL}pages/answers/comment.php?id={$answer.answer}" class="btn btn-default comment_btn"> comment</a>
 					<button type="button" class="btn btn-default">
