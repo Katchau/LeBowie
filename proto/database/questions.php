@@ -38,7 +38,7 @@ function getQuestionApproximateTitle($title){
 	$capt = ucfirst($title);
 	$tit1 = substr_replace(substr_replace($title, '%', strlen($title), 0), '%', 0, 0);
 	$tit2 = substr_replace(substr_replace($capt, '%', strlen($capt), 0), '%', 0, 0);
-	$stmt = $conn->prepare('SELECT title FROM Question 
+	$stmt = $conn->prepare('SELECT * FROM question_display 
 							WHERE title LIKE ? or 
 							title LIKE ?');
 	$stmt->execute(array($tit1,$tit2));
