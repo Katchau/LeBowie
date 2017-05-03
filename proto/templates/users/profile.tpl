@@ -26,9 +26,9 @@
 					<br>
 					<span class="info-start">Country: </span>{$user.name}
 					{if $user.username == $USERNAME}
-					<form action="{$BASE_URL}pages/users/edit.php?username={$user.username}">
+					<center><form action="{$BASE_URL}pages/users/edit.php?username={$user.username}">
 						<input type="submit" value="Edit Profile" class="btn btn-default">
-					</form>
+					</form></center>
 					{/if}
 					<hr>
 					<div class="profile-badges">
