@@ -91,7 +91,7 @@
       <div class="col-sm-8 searchResults col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
         <div class="topicSearch">
           <div class="jumbotrona well">
-            <center><h3>Showing search Results for 'Lovely Music'</h3></center>
+            <center><h3>Showing search Results for '{$string}'</h3></center>
           </div>
         </div>
         <div class="questionSearch">
