@@ -72,7 +72,26 @@ function getBestQuestions()
 function getTextSearch($string)
 {
     global $conn;
-    $stmt = $conn->prepare("SELECT * FROM top_10_questions");
+    $stmt = $conn->prepare("
+    SELECT question_display.id,
+    question_display.topicname,
+    question_display.post_id,
+    question_display.title,
+    question_display.description,
+    question_display.up_score,
+    question_display.down_score,
+    question_display.creation,
+    question_display.user_id,
+    question_display.username,
+    question_display.answer,
+    question_display.answer_desc,
+    question_display.answer_user_id,
+    question_display.answer_creation,
+    question_display.answer_user_name
+    FROM question_display
+    JOIN first_post_instance ON question_display.post_id = first_post_instance.id
+    WHERE to_tsvector('english',question_display.username || ' ' || question_display.description) @@ to_tsquery('english', ?);
+    ");
     $stmt->execute(array($string));
     return $stmt->fetchAll();
 }
