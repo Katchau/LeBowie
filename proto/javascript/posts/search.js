@@ -31,9 +31,13 @@ function searchText(event){
 	getQuestions(textS);
 }
 
+function updateTopic(event){
+	console.log('olá');
+}
+
 function loadDocument(){
 	$('.navbar .collapse .navbar-form .input-group input[type=text]').keypress(searchText);
-	
+	$('.advanced_topic_search ul a').click(updateTopic);
 }
 
 $(document).ready(loadDocument);
