@@ -4,7 +4,7 @@ require_once $BASE_DIR . 'database/questions.php';
 
 $string = $_GET["string"];
 
-$questions = getTextSearch($string);
+$questions = getQuestionApproximateTitle($string);
 
 
 $smarty->assign('string',$string);

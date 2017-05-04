@@ -103,4 +103,20 @@
       </div>
     </div>
 
-   {include file='common/footer.tpl'}
+<script type="text/javascript">
+{literal}
+function searchText(){
+	var text = $(this).val() + String.fromCharCode(event.which);
+	console.log(text);
+	
+}
+
+function loadDocument(){
+	$('.navbar .collapse .navbar-form .input-group input[type=text]').keypress(searchText);
+}
+
+$(document).ready(loadDocument);
+{/literal}
+</script>
+
+{include file='common/footer.tpl'}
