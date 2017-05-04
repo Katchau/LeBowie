@@ -20,7 +20,7 @@
 					<ul class="dropdown-menu" role="menu" aria-labelledby="advanced_topic_search">
 					{foreach $headerTopics as $headerTopic}
 						<li role="presentation">
-							<a role="menuitem" href="{$BASE_URL}pages/topic/list.php?id={$headerTopic.id}">
+							<a role="menuitem" href="#">
 							{$headerTopic.topicname}
 							</a>
 						</li>
