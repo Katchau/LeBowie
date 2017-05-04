@@ -1,23 +1,39 @@
-// function updateDownvoteCounter(postId) {
-    // $.get(downvoteUrl,
-    // {
-        // id: postId
-    // },
-    // function(data, status) {
-        // if (status === 'success') {
-            // let el = $(`#js-downvote-btn-${postId} span`);
-            // el.text(data);
-        // }
-    // });
-// }
+//finish this crap
+function displayQuestions(questions){
+	var baseDir = '.searchResults .questionSearch';
+	$(baseDir).empty();
+	for(var i = 0; i < questions.length; i++){
+		var question = questions[i];
+		$(baseDir).append('<div class="question well">');
+		var qDir = baseDir + ' .question:last-child';
+		$(qDir).append('<h2 class = questionTitle>'
+		+ '<a href=' + BASE_URL + 'pages/questions/index.php?id='
+		+ question['post_id'] + '>' + question['title'] + '</a> </h2>');
+	}
+}
+
+function getQuestions(search){
+	$.get(getSearchUrl,
+	{
+		title : search
+	},
+	function(data, status){
+		if(status === 'success'){
+			var questions = JSON.parse(data);
+			displayQuestions(questions);
+		}
+	});
+}
 
 function searchText(event){
-	console.log(event.type + ": " +  event.which);
-	console.log($(this).attr('class'));
+	var textS = $(this).val() + String.fromCharCode(event.which);
+	$('.searchResults .jumbotrona h3').text("Showing search Results for '" + textS + "'");
+	getQuestions(textS);
 }
 
 function loadDocument(){
 	$('.navbar .collapse .navbar-form .input-group input[type=text]').keypress(searchText);
+	
 }
 
 $(document).ready(loadDocument);
