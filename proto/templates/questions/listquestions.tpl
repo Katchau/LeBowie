@@ -6,7 +6,7 @@
 		<p class="questionInfo">
 			asked by <a href="{$BASE_URL}pages/users/index.php?username={$question.username}" class="writer"> {$question.username} </a> on {$question.creation}
 			{if $type != 1}
-			in <a class="topic" href="{$BASE_URL}pages/topic/list.php?id={$question.id}"> {$question.topicname} </a>
+			in <a id={$question.id} class="topic" href="{$BASE_URL}pages/topic/list.php?id={$question.id}"> {$question.topicname} </a>
 			{/if}
 			{if $type != 0}
 			<button type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>

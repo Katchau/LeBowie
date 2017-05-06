@@ -32,7 +32,17 @@ function searchText(event){
 }
 
 function updateTopic(event){
-	console.log('olá');
+	var id = $(this).attr('id');
+	var children = $('.questionSearch').children();
+	if(id == 0){
+		children.show(400);
+		return;
+	}
+	for(var i = 0; i < children.length; i++){
+		var child = children.eq(i);
+		var topic = child.find('.topic');
+		topic.attr('id') != id ? child.hide(400) : child.show(400);
+	}
 }
 
 function loadDocument(){

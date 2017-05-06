@@ -18,9 +18,14 @@
 					<button class="btn btn-default dropdown-toggle" type="button" id="advanced_topic_search" data-toggle="dropdown">Pick Topic
 					<span class="caret"></span></button>
 					<ul class="dropdown-menu" role="menu" aria-labelledby="advanced_topic_search">
+						<li role="presentation">
+							<a id="0" role="menuitem" href="#">
+							Any Topic
+							</a>
+						</li>
 					{foreach $headerTopics as $headerTopic}
 						<li role="presentation">
-							<a role="menuitem" href="#">
+							<a id={$headerTopic.id} role="menuitem" href="#">
 							{$headerTopic.topicname}
 							</a>
 						</li>
