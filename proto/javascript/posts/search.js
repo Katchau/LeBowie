@@ -1,7 +1,15 @@
 //filter vars
+//the month function requires to add 1 (Jan = 0)
+var tags = [];
 var topicId = 0;
 var userNames = [];
-var byNew = true;
+var minDate = null;
+var maxDate = null;
+var byRecent = true;
+var byBest = false;
+var minScore = null;
+var maxScore = null;
+
 
 //finish this crap
 function displayQuestions(questions){
@@ -65,8 +73,24 @@ function usersFilter(child){
 	return needsChange;
 }
 
+function updateTags(){
+	var textS = $('.advanced_tags_search textarea').val();
+	tags = textS.split(',');
+}
+
+function updateOrderDate(){
+	byRecent = $(this).text() == "newest";
+}
+
+function updateDateGap(){
+	minDate = $('.advanced_date_limits input[type=date]').first().val();
+	maxDate = $('.advanced_date_limits input[type=date]').last().val();
+}
+
 function updateFilters(event){
+	updateTags();
 	updateUsers();
+	updateDateGap();
 	var children = $('.questionSearch').children();
 	children.hide(100);//i like the animation xD
 	for(var i = 0; i < children.length; i++){
@@ -79,6 +103,7 @@ function updateFilters(event){
 function loadDocument(){
 	$('.navbar .collapse .navbar-form .input-group input[type=text]').keypress(searchText);
 	$('.advanced_topic_search ul a').click(updateTopic);
+	$('.advanced_date_search  ul a').click(updateOrderDate);
 	$('.apply_filters_btn').click(updateFilters);
 }
 
