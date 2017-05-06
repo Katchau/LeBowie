@@ -1,8 +1,9 @@
+//filter vars
+var topicId = 0;
+var userNames = [];
+var byNew = true;
+
 //finish this crap
-
-var topicId;
-var byNew;
-
 function displayQuestions(questions){
 	var baseDir = '.searchResults .questionSearch';
 	$(baseDir).empty();
@@ -39,16 +40,39 @@ function updateTopic(){
 	topicId = $(this).attr('id');
 }
 
-function updateFilters(event){
-	var children = $('.questionSearch').children();
+function topicFilter(child){
 	if(topicId == 0){
-		children.show(400);
-		return;
+		child.show(400);
+		return false;
 	}
+	var topic = child.find('.topic');
+	var needsChange = topic.attr('id') != topicId;
+	needsChange ? child.hide(400) : child.show(400);
+	return needsChange;
+}
+
+function updateUsers(){
+	var textS = $('.advanced_user_search textarea').val();
+	userNames = textS.split(',');
+}
+
+function usersFilter(child){
+	if(userNames.length == 0) return false;
+	if(userNames[0] == "") return false;
+	var user = child.find('.questionInfo a.writer').text();
+	var needsChange = userNames.indexOf(user) == -1;
+	needsChange ? child.hide(400) : child.show(400);
+	return needsChange;
+}
+
+function updateFilters(event){
+	updateUsers();
+	var children = $('.questionSearch').children();
+	children.hide(100);//i like the animation xD
 	for(var i = 0; i < children.length; i++){
 		var child = children.eq(i);
-		var topic = child.find('.topic');
-		topic.attr('id') != topicId ? child.hide(400) : child.show(400);
+		if(topicFilter(child))continue;
+		if(usersFilter(child))continue;
 	}
 }
 
