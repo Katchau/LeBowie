@@ -1,4 +1,8 @@
 //finish this crap
+
+var topicId;
+var byNew;
+
 function displayQuestions(questions){
 	var baseDir = '.searchResults .questionSearch';
 	$(baseDir).empty();
@@ -31,23 +35,27 @@ function searchText(event){
 	getQuestions(textS);
 }
 
-function updateTopic(event){
-	var id = $(this).attr('id');
+function updateTopic(){
+	topicId = $(this).attr('id');
+}
+
+function updateFilters(event){
 	var children = $('.questionSearch').children();
-	if(id == 0){
+	if(topicId == 0){
 		children.show(400);
 		return;
 	}
 	for(var i = 0; i < children.length; i++){
 		var child = children.eq(i);
 		var topic = child.find('.topic');
-		topic.attr('id') != id ? child.hide(400) : child.show(400);
+		topic.attr('id') != topicId ? child.hide(400) : child.show(400);
 	}
 }
 
 function loadDocument(){
 	$('.navbar .collapse .navbar-form .input-group input[type=text]').keypress(searchText);
 	$('.advanced_topic_search ul a').click(updateTopic);
+	$('.apply_filters_btn').click(updateFilters);
 }
 
 $(document).ready(loadDocument);
