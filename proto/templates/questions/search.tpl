@@ -12,7 +12,7 @@
 				<p>You can apply the following filters to narrow down the results:</p>
 				<hr>
 				<div class="advanced_topic_search text-left">
-					<h3>topic</h3>
+					<h3>Topic</h3>
 					<label class="advanced_search_label">within this topic:</label>
 					<div class="input-group dropdown advanced_topic_dropdown pull-right">
 					<button class="btn btn-default dropdown-toggle" type="button" id="advanced_topic_search" data-toggle="dropdown">Pick Topic
@@ -34,23 +34,14 @@
 					</div>
 				</div>
 				<div class="advanced_tags_search text-left">
-					<h3>tags</h3>
+					<h3>Tags</h3>
 					<label class="advanced_search_label">containing tags:</label>
 					<textarea class="form-control pull-right" rows="1" placeholder="enter your tags, separated by commas"></textarea>
 				</div>
 				<div class="advanced_score_search text-left">
-					<h3>score</h3>
-					<label class="advanced_search_label">by relevancy:</label>
-					<div class="input-group dropdown advanced_topic_dropdown pull-right">
-					<button class="btn btn-default dropdown-toggle" type="button" id="advanced_score_search" data-toggle="dropdown">Pick Relevancy
-					<span class="caret"></span></button>
-					<ul class="dropdown-menu" role="menu" aria-labelledby="advanced_topic_search">
-						<li role="presentation"><a role="menuitem" href="#">hottest</a></li>
-						<li role="presentation"><a role="menuitem" href="#">controversial</a></li>
-						<li role="presentation"><a role="menuitem" href="#">best</a></li>
-					</ul>
-					</div>
-					<br>
+					<h3>Score</h3>
+					<label class="advanced_search_label">Order by Score</label>
+					<input type="checkbox" name="score" value="false"><br></input>
 					<label class="advanced_search_label">within score:</label>
 					<div class="advanced_score_limits">
 					<label class="glyphicon glyphicon-thumbs-up"></label>
@@ -58,20 +49,14 @@
 					<span>-</span>
 					<textarea class="form-control" rows="1"></textarea>
 					</div>
-					<div class="advanced_score_limits">
-					<label class="glyphicon glyphicon-thumbs-down"></label>
-					<textarea class="form-control" rows="1"></textarea>
-					<span>-</span>
-					<textarea class="form-control" rows="1"></textarea>
-					</div>
 				</div>
 				<div class="advanced_user_search text-left">
-					<h3>user</h3>
+					<h3>User</h3>
 					<label class="advanced_search_label">containing user(s):</label>
 					<textarea class="form-control pull-right" rows="1" placeholder="usernames, separated by commas"></textarea>
 				</div>
 				<div class="advanced_date_search text-left">
-					<h3>date</h3>
+					<h3>Date</h3>
 					<label class="advanced_search_label">by relevancy:</label>
 					<div class="input-group dropdown advanced_topic_dropdown pull-right">
 					<button class="btn btn-default dropdown-toggle" type="button" id="advanced_date_search" data-toggle="dropdown">Pick Relevancy
@@ -103,7 +88,7 @@
 					</div>
 				</div>
 				<div class="questionSearch">
-					{include file='questions/listquestions.tpl' questions=$questions type=0}
+					{include file='questions/listquestions.tpl' questions=$questions type=2}
 				</div>
 			</div>
 		</div>

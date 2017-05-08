@@ -10,19 +10,10 @@ var byBest = false;
 var minScore = null;
 var maxScore = null;
 
-
-//finish this crap
 function displayQuestions(questions){
 	var baseDir = '.searchResults .questionSearch';
 	$(baseDir).empty();
-	for(var i = 0; i < questions.length; i++){
-		var question = questions[i];
-		$(baseDir).append('<div class="question well">');
-		var qDir = baseDir + ' .question:last-child';
-		$(qDir).append('<h2 class = questionTitle>'
-		+ '<a href=' + BASE_URL + 'pages/questions/index.php?id='
-		+ question['post_id'] + '>' + question['title'] + '</a> </h2>');
-	}
+	$(baseDir).append(questions);
 }
 
 function getQuestions(search){
@@ -31,9 +22,9 @@ function getQuestions(search){
 		title : search
 	},
 	function(data, status){
+		//TODO tratar da mensagem de erro?
 		if(status === 'success'){
-			var questions = JSON.parse(data);
-			displayQuestions(questions);
+			displayQuestions(data);
 		}
 	});
 }
