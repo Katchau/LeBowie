@@ -9,6 +9,8 @@ var byRecent = true;
 var byBest = false;
 var minScore = null;
 var maxScore = null;
+var needToAjax = false;
+var nameToSearch = "";
 
 function displayQuestions(questions){
 	var baseDir = '.searchResults .questionSearch';
@@ -16,23 +18,37 @@ function displayQuestions(questions){
 	$(baseDir).append(questions);
 }
 
-function getQuestions(search){
+function getQuestions(){
 	$.get(getSearchUrl,
 	{
-		title : search
+		'title' : nameToSearch,
+		'tags[]' : tags,
+		'recent' : byRecent,
+		'best' : byBest
 	},
 	function(data, status){
 		//TODO tratar da mensagem de erro?
 		if(status === 'success'){
-			displayQuestions(data);
+			//displayQuestions(data);
 		}
 	});
 }
 
-function searchText(event){
+function searchText(){
+	needToAjax = true;
+	if(event.which == 8){
+		var textS  = "Showing search Results for '" + $(this).val().substring(0,$(this).val().length-1) + "'";
+		$('.searchResults .jumbotrona h3').text(textS);
+	}
+}
+
+function updateSearch(){
 	var textS = $(this).val() + String.fromCharCode(event.which);
 	$('.searchResults .jumbotrona h3').text("Showing search Results for '" + textS + "'");
-	getQuestions(textS);
+}
+
+function updateQuestionTitle(){
+	nameToSearch = $('.navbar .collapse .navbar-form .input-group input[type=text]').val();
 }
 
 function updateTopic(){
@@ -64,14 +80,18 @@ function usersFilter(child){
 function updateTags(){
 	var textS = $('.advanced_tags_search textarea').val();
 	tags = textS.split(',');
+	if(needToAjax)return;
+	needToAjax = !(tags.length == 1 && tags[0] == "");
 }
 
 function updateOrderDate(){
 	byRecent = $(this).text() == "newest";
+	needToAjax = true;
 }
 
 function updateOrderScore(){
 	byBest = $(this).is(":checked");
+	needToAjax = true;
 }
 
 function updateVoteGap(){
@@ -121,8 +141,11 @@ function updateFilters(){
 	updateUsers();
 	updateVoteGap();
 	updateDateGap();
+	updateQuestionTitle();
 	var children = $('.questionSearch').children();
 	children.hide(100);//i like the animation xD
+	if(needToAjax)getQuestions();
+	needToAjax = false;
 	for(var i = 0; i < children.length; i++){
 		var child = children.eq(i);
 		if(topicFilter(child))continue;
@@ -134,7 +157,8 @@ function updateFilters(){
 }
 
 function loadDocument(){
-	$('.navbar .collapse .navbar-form .input-group input[type=text]').keypress(searchText);
+	$('.navbar .collapse .navbar-form .input-group input[type=text]').keydown(searchText);
+	$('.navbar .collapse .navbar-form .input-group input[type=text]').keypress(updateSearch);
 	$('.advanced_topic_search ul a').click(updateTopic);
 	$('.advanced_score_search input[type=checkbox]').click(updateOrderScore);
 	$('.advanced_date_search  ul a').click(updateOrderDate);

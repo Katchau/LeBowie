@@ -15,15 +15,20 @@ switch ($method) {
 function get($params, $smarty)
 {
     $title = $params['title'];
+	$tags = $params['tags'];
+	$byBest = $params['best'];
+	$byRecent = $params['recent'];
     try {
         $question = getQuestionApproximateTitle($title);
         if ($question == null) {
             http_response_code(404);
             return;
         }
-		$smarty->assign('questions', $question);
-		$smarty->assign('type', 2);
-		$smarty->display('questions/listquestions.tpl');
+		var_dump($tags);
+		// $smarty->assign('questions', $question);
+		// $smarty->assign('type', 2);
+		// $smarty->display('questions/listquestions.tpl');
+		
     } catch (PDOException $e) {
         echo $e->getMessage();
         http_response_code(500);
