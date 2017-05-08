@@ -73,6 +73,30 @@ function updateOrderDate(){
 	byRecent = $(this).text() == "newest";
 }
 
+function updateOrderScore(){
+	byBest = $(this).is(":checked");
+}
+
+function updateVoteGap(){
+	minScore = $('.advanced_score_search textarea').first().val();
+	maxScore = $('.advanced_score_search textarea').last().val();
+	if(minScore == "") minScore = null;
+	if(maxScore == "") maxScore = null;
+}
+
+function votesFilter(child){
+	if(minScore == null && maxScore == null)return false;//needs show?
+	var upVote = child.find('.questionInfo button span').first().attr('id');
+	var dowVote = child.find('.questionInfo button span').last().attr('id');
+	var vote = upVote - dowVote;
+	if((minScore != null && minScore > vote)||(maxScore != null && maxScore < vote)){
+		child.hide(400);
+		return true;
+	}
+	child.show(400);
+	return false;
+}
+
 function updateDateGap(){
 	minDate = $('.advanced_date_limits input[type=date]').first().val();
 	maxDate = $('.advanced_date_limits input[type=date]').last().val();
@@ -81,6 +105,7 @@ function updateDateGap(){
 function updateFilters(event){
 	updateTags();
 	updateUsers();
+	updateVoteGap();
 	updateDateGap();
 	var children = $('.questionSearch').children();
 	children.hide(100);//i like the animation xD
@@ -88,12 +113,14 @@ function updateFilters(event){
 		var child = children.eq(i);
 		if(topicFilter(child))continue;
 		if(usersFilter(child))continue;
+		if(votesFilter(child))continue;
 	}
 }
 
 function loadDocument(){
 	$('.navbar .collapse .navbar-form .input-group input[type=text]').keypress(searchText);
 	$('.advanced_topic_search ul a').click(updateTopic);
+	$('.advanced_score_search input[type=checkbox]').click(updateOrderScore);
 	$('.advanced_date_search  ul a').click(updateOrderDate);
 	$('.apply_filters_btn').click(updateFilters);
 }

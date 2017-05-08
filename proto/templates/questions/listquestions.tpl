@@ -10,10 +10,10 @@
 			{/if}
 			{if $type != 0}
 			<button type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
-				<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> {$question.up_score} </span>
+				<span id={$question.up_score} class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> {$question.up_score} </span>
 			</button>
 			<button type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
-				<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> {$question.down_score} </span>
+				<span id={$question.down_score} class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> {$question.down_score} </span>
 			</button>
 			{/if}
 		</p>
