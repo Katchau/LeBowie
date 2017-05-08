@@ -3,8 +3,8 @@
 var tags = [];
 var topicId = 0;
 var userNames = [];
-var minDate = null;
-var maxDate = null;
+var minDate = [];
+var maxDate = [];
 var byRecent = true;
 var byBest = false;
 var minScore = null;
@@ -40,13 +40,10 @@ function updateTopic(){
 }
 
 function topicFilter(child){
-	if(topicId == 0){
-		child.show(400);
-		return false;
-	}
+	if(topicId == 0)return false;
 	var topic = child.find('.topic');
 	var needsChange = topic.attr('id') != topicId;
-	needsChange ? child.hide(400) : child.show(400);
+	if(needsChange) child.hide(400);
 	return needsChange;
 }
 
@@ -60,7 +57,7 @@ function usersFilter(child){
 	if(userNames[0] == "") return false;
 	var user = child.find('.questionInfo a.writer').text();
 	var needsChange = userNames.indexOf(user) == -1;
-	needsChange ? child.hide(400) : child.show(400);
+	if(needsChange) child.hide(400);
 	return needsChange;
 }
 
@@ -93,16 +90,33 @@ function votesFilter(child){
 		child.hide(400);
 		return true;
 	}
-	child.show(400);
 	return false;
 }
 
 function updateDateGap(){
-	minDate = $('.advanced_date_limits input[type=date]').first().val();
-	maxDate = $('.advanced_date_limits input[type=date]').last().val();
+	minDat = $('.advanced_date_limits input[type=date]').first().val();
+	maxDat = $('.advanced_date_limits input[type=date]').last().val();
+	minDate = minDat.split('-');
+	maxDate = maxDat.split('-');
 }
 
-function updateFilters(event){
+function datesFilter(child){
+	if(minDate.length != 3 && maxDate.length != 3)return false;//needs show?
+	var date = child.find('.questionInfo a').first().attr('id').split('-');
+	for(var i = 0; i < date.length; i++){
+		if((minDate.length == 3 && minDate[i] > date[i])||
+		(maxDate.length == 3 && maxDate[i] < date[i])){
+			child.hide(400);
+			return true;
+		}
+		if((minDate.length == 3 && minDate[i] == date[i])||
+		(maxDate.length == 3 && maxDate[i] == date[i]))continue;
+		else break;
+	}
+	return false;
+}
+
+function updateFilters(){
 	updateTags();
 	updateUsers();
 	updateVoteGap();
@@ -114,6 +128,8 @@ function updateFilters(event){
 		if(topicFilter(child))continue;
 		if(usersFilter(child))continue;
 		if(votesFilter(child))continue;
+		if(datesFilter(child))continue;
+		child.show(400);
 	}
 }
 
