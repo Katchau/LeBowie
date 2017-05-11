@@ -24,7 +24,13 @@ function get($params, $smarty)
             http_response_code(404);
             return;
         }
-		var_dump($tags);
+		if($tags != null || sizeof($tags) > 0){
+			echo 'We have tags';
+			$question = getQuestionByTags($title,$tags,$byBest,$byRecent);
+			var_dump($question);
+		}
+		else echo 'kek';
+		//gnomo.fe.up.pt/~lbaw1651/proto_jonas/api/posts/search.php?title=tit&tags[]=java&tags[]=kek&best=true&recent=true
 		// $smarty->assign('questions', $question);
 		// $smarty->assign('type', 2);
 		// $smarty->display('questions/listquestions.tpl');

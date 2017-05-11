@@ -45,6 +45,25 @@ function getQuestionApproximateTitle($title){
 	return $stmt->fetchAll();
 }
 
+function getQuestionByTags($title, $tags, $best, $time){
+	global $conn;
+	$capt = ucfirst($title);
+	$tit1 = substr_replace(substr_replace($title, '%', strlen($title), 0), '%', 0, 0);
+	$tit2 = substr_replace(substr_replace($capt, '%', strlen($capt), 0), '%', 0, 0);
+	$statement = 'SELECT question_display.* from 
+			(question_display inner join QuestionTag on question_id = post_id)
+			inner join Tag on Tag.id = tag_id 
+			where title LIKE ? or title LIKE ?';
+	for($i = 0; $i < sizeof($tags); $i++){
+		$statement = $statement . ' or Tag.text=?';
+	}
+	$stmt = $conn->prepare($statement);
+	$titles = array($tit1,$tit2);
+	$values = array_merge((array)$titles, (array)$tags);
+	$stmt->execute($values);
+	return $stmt->fetchAll();
+}
+
 function getHotQuestions()
 {
     global $conn;

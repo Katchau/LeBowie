@@ -80,6 +80,7 @@ function usersFilter(child){
 function updateTags(){
 	var textS = $('.advanced_tags_search textarea').val();
 	tags = textS.split(',');
+	if(tags.length == 1 && tags[0] == "") tags = [];
 	if(needToAjax)return;
 	needToAjax = !(tags.length == 1 && tags[0] == "");
 }
