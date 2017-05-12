@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row edit_prof">
         <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-            <form action="{$BASE_URL}actions/users/edit.php" method="post" role="form" class="register well text-center">
+            <form enctype="multipart/form-data" action="{$BASE_URL}actions/users/edit.php" method="post" role="form" class="register well text-center">
                 <h2>Update your Newton's Apple account</h2>
                 <hr class="colorgraph">
                 <div class="row">
@@ -33,6 +33,9 @@
                             <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirm Password" tabindex="6">
                         </div>
                     </div>
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<input type="file" name="userfile" id="userfile" accept="image/*">
+					</div>
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
                             <textarea name="description" rows="4" cols="100" class="form-control input-lg" placeholder="Description"></textarea>
