@@ -15,25 +15,21 @@ switch ($method) {
 function get($params, $smarty)
 {
     $title = $params['title'];
-	$tags = $params['tags'];
+	$tags = array();
+	if(isset($params['tags']))
+		$tags = $params['tags'];
 	$byBest = $params['best'];
 	$byRecent = $params['recent'];
-    try {
-        $question = getQuestionApproximateTitle($title);
-        if ($question == null) {
+    try {        
+		$question = searchQuestions($title,$tags,$byBest,$byRecent);
+		if ($question == null) {
             http_response_code(404);
             return;
         }
-		if($tags != null || sizeof($tags) > 0){
-			echo 'We have tags';
-			$question = getQuestionByTags($title,$tags,$byBest,$byRecent);
-			var_dump($question);
-		}
-		else echo 'kek';
 		//gnomo.fe.up.pt/~lbaw1651/proto_jonas/api/posts/search.php?title=tit&tags[]=java&tags[]=kek&best=true&recent=true
-		// $smarty->assign('questions', $question);
-		// $smarty->assign('type', 2);
-		// $smarty->display('questions/listquestions.tpl');
+		$smarty->assign('questions', $question);
+		$smarty->assign('type', 2);
+		$smarty->display('questions/listquestions.tpl');
 		
     } catch (PDOException $e) {
         echo $e->getMessage();

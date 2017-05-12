@@ -45,18 +45,29 @@ function getQuestionApproximateTitle($title){
 	return $stmt->fetchAll();
 }
 
-function getQuestionByTags($title, $tags, $best, $time){
+//TODO uma opcao para poder escolher text search
+function searchQuestions($title, $tags, $best, $time){
 	global $conn;
 	$capt = ucfirst($title);
 	$tit1 = substr_replace(substr_replace($title, '%', strlen($title), 0), '%', 0, 0);
 	$tit2 = substr_replace(substr_replace($capt, '%', strlen($capt), 0), '%', 0, 0);
-	$statement = 'SELECT question_display.* from 
-			(question_display inner join QuestionTag on question_id = post_id)
-			inner join Tag on Tag.id = tag_id 
-			where title LIKE ? or title LIKE ?';
-	for($i = 0; $i < sizeof($tags); $i++){
+	$statement = 'SELECT DISTINCT question_display.* from 
+			(question_display left outer join QuestionTag on question_id = post_id)
+			left outer join Tag on Tag.id = tag_id 
+			where (title LIKE ? or title LIKE ? ) ';
+	if(sizeof($tags) > 0)
+		$statement = $statement . 'and ( Tag.text = ?';
+	for($i = 1; $i < sizeof($tags); $i++){
 		$statement = $statement . ' or Tag.text=?';
 	}
+	if(sizeof($tags) > 0)
+		$statement = $statement . ' )';
+	$statement = $statement . ' ORDER BY ';
+	if($best == 'true')
+		$statement = $statement . 'up_score-down_score DESC NULLS LAST, ';
+	if($time == 'true')
+		$statement = $statement . ' post_id';
+	else $statement = $statement . ' post_id DESC NULLS LAST';
 	$stmt = $conn->prepare($statement);
 	$titles = array($tit1,$tit2);
 	$values = array_merge((array)$titles, (array)$tags);

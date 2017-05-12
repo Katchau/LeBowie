@@ -19,6 +19,7 @@ function displayQuestions(questions){
 }
 
 function getQuestions(){
+	console.log('wtf');
 	$.get(getSearchUrl,
 	{
 		'title' : nameToSearch,
@@ -29,7 +30,7 @@ function getQuestions(){
 	function(data, status){
 		//TODO tratar da mensagem de erro?
 		if(status === 'success'){
-			//displayQuestions(data);
+			displayQuestions(data);
 		}
 	});
 }
@@ -77,12 +78,14 @@ function usersFilter(child){
 	return needsChange;
 }
 
+function writeTags(){
+	needToAjax = true;
+}
+
 function updateTags(){
 	var textS = $('.advanced_tags_search textarea').val();
 	tags = textS.split(',');
 	if(tags.length == 1 && tags[0] == "") tags = [];
-	if(needToAjax)return;
-	needToAjax = !(tags.length == 1 && tags[0] == "");
 }
 
 function updateOrderDate(){
@@ -160,6 +163,7 @@ function updateFilters(){
 function loadDocument(){
 	$('.navbar .collapse .navbar-form .input-group input[type=text]').keydown(searchText);
 	$('.navbar .collapse .navbar-form .input-group input[type=text]').keypress(updateSearch);
+	$('.advanced_tags_search textarea').keydown(writeTags);
 	$('.advanced_topic_search ul a').click(updateTopic);
 	$('.advanced_score_search input[type=checkbox]').click(updateOrderScore);
 	$('.advanced_date_search  ul a').click(updateOrderDate);
