@@ -45,7 +45,7 @@
 
                 <hr class="colorgraph">
                 <div class="row">
-                    <div class="col-xs-12 col-md-12"><input type="submit" value="Update" class="btn btn-primary btn-block btn-lg btn-warning" tabindex="7"></div>
+                    <div class="col-xs-12 col-md-12"><input type="submit" name="submited" value="Update" class="btn btn-primary btn-block btn-lg btn-warning" tabindex="7"></div>
                 </div>
 
                 <div class="row">

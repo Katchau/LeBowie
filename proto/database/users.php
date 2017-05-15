@@ -154,7 +154,14 @@ function updateUserDescription($userId, $description)
     $stmt->execute(array($description, $userId));
 }
 
-function updateUser($userId, $email, $password, $firstName, $lastName, $description) 
+function updateUserImage($userId, $image)
+{
+    global $conn;
+    $stmt = $conn->prepare('UPDATE useracc SET image = ? WHERE id = ?');
+    $stmt->execute(array($image, $userId));
+}
+
+function updateUser($userId, $email, $password, $firstName, $lastName, $description, $image) 
 {
     if ($email != NULL) {
         updateUserEmail($userId, $email);
@@ -171,6 +178,9 @@ function updateUser($userId, $email, $password, $firstName, $lastName, $descript
     if ($description != NULL) {
         updateUserDescription($userId, $description);
     }
+	if($image != NULL){
+		updateUserImage($userId, $image);
+	}
 }
 
 function serializeUser($user) 

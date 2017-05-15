@@ -14,7 +14,7 @@
 				{if $user.image == NULL}
 				<img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}images/profile.png" alt="user_image">
 				{else}
-				<img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}images/{$user.id}/{$user.image}" alt="user_image">
+				<img class="user_profile_pic2 img-thumbnail" src="{$BASE_URL}images/users/{$user.id}/{$user.image}" alt="user_image">
 				{/if}
 				<hr>
 				<div class="profile-info">

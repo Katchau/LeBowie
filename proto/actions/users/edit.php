@@ -19,21 +19,23 @@ try{
     $password = postValueOrNull('password');
     $firstName = postValueOrNull('first_name');
     $lastName = postValueOrNull('last_name');
-	$image = postValueOrNull('userfile');
     $description = postValueOrNull('description');
+	$image = null;
 	
-	if($image != null){
-		$target_dir = $BASE_DIR . 'images/users/';
+	if(isset($_POST['submited'])){
+		$target_dir = $BASE_DIR . 'images/users/' . $id . '/';
+		if(!file_exists($target_dir))mkdir($target_dir , 0777);
 		$target_file = $target_dir . basename($_FILES["userfile"]["name"]);
 		$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 		// Check if image file is a actual image or fake image
 		$check = getimagesize($_FILES["userfile"]["tmp_name"]);
 		if($check !== false) {
-			move_uploaded_file($_FILES["userfile"]["tmp_name"], $target_file);
+			if(move_uploaded_file($_FILES["userfile"]["tmp_name"], $target_file))
+				$image = basename($_FILES["userfile"]["name"]);
 		}
 	}
 	
-    updateUser($id, $email, $password, $firstName, $lastName, $description);
+    updateUser($id, $email, $password, $firstName, $lastName, $description, $image);
     header('Location: ' . $BASE_URL . 'pages/users/?username=' . $_SESSION['username']);
 }
 catch(Exception $e){
