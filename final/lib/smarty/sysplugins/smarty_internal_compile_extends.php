@@ -5,15 +5,15 @@
  *
  * Compiles the {extends} tag
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
- * @author Uwe Tews
+ * @author     Uwe Tews
  */
 
 /**
  * Smarty Internal Plugin Compile extend Class
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  */
 class Smarty_Internal_Compile_Extends extends Smarty_Internal_CompileBase
@@ -36,8 +36,8 @@ class Smarty_Internal_Compile_Extends extends Smarty_Internal_CompileBase
     /**
      * Compiles code for the {extends} tag
      *
-     * @param array $args     array with attributes from parser
-     * @param object $compiler compiler object
+     * @param  array  $args     array with attributes from parser
+     * @param  object $compiler compiler object
      * @return string compiled code
      */
     public function compile($args, $compiler)
@@ -58,7 +58,7 @@ class Smarty_Internal_Compile_Extends extends Smarty_Internal_CompileBase
             $compiler->trigger_template_error('variable template file name not allowed', $compiler->lex->taglineno);
         }
 
-        $name = trim($_attr['file'],"\"'");
+        $name = trim($_attr['file'], "\"'");
         // create template object
         $_template = new $compiler->smarty->template_class($name, $compiler->smarty, $compiler->template);
         // check for recursion
@@ -79,7 +79,7 @@ class Smarty_Internal_Compile_Extends extends Smarty_Internal_CompileBase
                 $compiler->extends_uid[$uid] = true;
             }
         }
-        unset ($_template);
+        unset($_template);
         $compiler->inheritance_child = true;
         $compiler->lex->yypushstate(Smarty_Internal_Templatelexer::CHILDBODY);
         return '';

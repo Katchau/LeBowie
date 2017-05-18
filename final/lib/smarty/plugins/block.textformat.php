@@ -2,7 +2,7 @@
 /**
  * Smarty plugin to format text blocks
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage PluginsBlock
  */
 
@@ -23,12 +23,12 @@
  * - wrap_boundary - boolean (true)
  * </pre>
  *
- * @link http://www.smarty.net/manual/en/language.function.textformat.php {textformat}
+ * @link   http://www.smarty.net/manual/en/language.function.textformat.php {textformat}
  *       (Smarty online manual)
- * @param array                    $params   parameters
- * @param string                   $content  contents of the block
- * @param Smarty_Internal_Template $template template object
- * @param boolean                  &$repeat  repeat flag
+ * @param  array                    $params   parameters
+ * @param  string                   $content  contents of the block
+ * @param  Smarty_Internal_Template $template template object
+ * @param  boolean                  &$repeat  repeat flag
  * @return string content re-formatted
  * @author Monte Ohrt <monte at ohrt dot com>
  */
@@ -49,25 +49,25 @@ function smarty_block_textformat($params, $content, $template, &$repeat)
 
     foreach ($params as $_key => $_val) {
         switch ($_key) {
-            case 'style':
-            case 'indent_char':
-            case 'wrap_char':
-            case 'assign':
-                $$_key = (string) $_val;
-                break;
+        case 'style':
+        case 'indent_char':
+        case 'wrap_char':
+        case 'assign':
+            $$_key = (string) $_val;
+            break;
 
-            case 'indent':
-            case 'indent_first':
-            case 'wrap':
-                $$_key = (int) $_val;
-                break;
+        case 'indent':
+        case 'indent_first':
+        case 'wrap':
+            $$_key = (int) $_val;
+            break;
 
-            case 'wrap_cut':
-                $$_key = (bool) $_val;
-                break;
+        case 'wrap_cut':
+            $$_key = (bool) $_val;
+            break;
 
-            default:
-                trigger_error("textformat: unknown attribute '$_key'");
+        default:
+            trigger_error("textformat: unknown attribute '$_key'");
         }
     }
 
@@ -90,7 +90,7 @@ function smarty_block_textformat($params, $content, $template, &$repeat)
         }
         // wordwrap sentences
         if (Smarty::$_MBSTRING) {
-            require_once(SMARTY_PLUGINS_DIR . 'shared.mb_wordwrap.php');
+            include_once SMARTY_PLUGINS_DIR . 'shared.mb_wordwrap.php';
             $_paragraph = smarty_mb_wordwrap($_paragraph, $wrap - $indent, $wrap_char, $wrap_cut);
         } else {
             $_paragraph = wordwrap($_paragraph, $wrap - $indent, $wrap_char, $wrap_cut);

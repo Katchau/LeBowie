@@ -4,15 +4,15 @@
  *
  * Compiles the {include} tag
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
- * @author Uwe Tews
+ * @author     Uwe Tews
  */
 
 /**
  * Smarty Internal Plugin Compile Include Class
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  */
 class Smarty_Internal_Compile_Include extends Smarty_Internal_CompileBase
@@ -53,9 +53,9 @@ class Smarty_Internal_Compile_Include extends Smarty_Internal_CompileBase
     /**
      * Compiles code for the {include} tag
      *
-     * @param  array $args      array with attributes from parser
+     * @param  array  $args      array with attributes from parser
      * @param  object $compiler  compiler object
-     * @param  array $parameter array with compilation parameter
+     * @param  array  $parameter array with compilation parameter
      * @return string compiled code
      */
     public function compile($args, $compiler, $parameter)
@@ -88,7 +88,7 @@ class Smarty_Internal_Compile_Include extends Smarty_Internal_CompileBase
         $merge_compiled_includes = ($compiler->smarty->merge_compiled_includes || $_attr['inline'] === true) && !$compiler->template->source->recompiled;
 
         // set default when in nocache mode
-//       if ($compiler->template->caching && ($compiler->nocache || $compiler->tag_nocache || $compiler->forceNocache == 2)) {
+        //       if ($compiler->template->caching && ($compiler->nocache || $compiler->tag_nocache || $compiler->forceNocache == 2)) {
         if ($compiler->template->caching && ((!$compiler->inheritance && !$compiler->nocache && !$compiler->tag_nocache) || ($compiler->inheritance && ($compiler->nocache ||$compiler->tag_nocache)))) {
             $_caching = self::CACHING_NOCACHE_CODE;
         }
@@ -122,9 +122,9 @@ class Smarty_Internal_Compile_Include extends Smarty_Internal_CompileBase
         if ($_attr['nocache'] === true) {
             $compiler->tag_nocache = true;
             if ($merge_compiled_includes || $compiler->inheritance) {
-            $_caching = self::CACHING_NOCACHE_CODE;
+                $_caching = self::CACHING_NOCACHE_CODE;
             } else {
-            $_caching = Smarty::CACHING_OFF;
+                $_caching = Smarty::CACHING_OFF;
             }
         }
 
@@ -164,7 +164,7 @@ class Smarty_Internal_Compile_Include extends Smarty_Internal_CompileBase
             $nocache = false;
             eval("\$tpl_name = $include_file;");
             if (!isset($compiler->smarty->merged_templates_func[$tpl_name][$uid]) || $compiler->inheritance) {
-                $tpl = new $compiler->smarty->template_class ($tpl_name, $compiler->smarty, $compiler->template, $compiler->template->cache_id, $compiler->template->compile_id);
+                $tpl = new $compiler->smarty->template_class($tpl_name, $compiler->smarty, $compiler->template, $compiler->template->cache_id, $compiler->template->compile_id);
                 // save unique function name
                 $compiler->smarty->merged_templates_func[$tpl_name][$uid]['func'] = $tpl->properties['unifunc'] = 'content_' . str_replace('.', '_', uniqid('', true));
                 // use current nocache hash for inlined code
@@ -199,7 +199,7 @@ class Smarty_Internal_Compile_Include extends Smarty_Internal_CompileBase
                     }
                     $compiler->merged_templates[$tpl->properties['unifunc']] = $compiled_code;
                     $has_compiled_template = true;
-                    unset ($tpl);
+                    unset($tpl);
                 }
             } else {
                 $has_compiled_template = true;

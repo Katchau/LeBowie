@@ -4,10 +4,10 @@
  *
  * These are classes to build parsetrees in the template parser
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
- * @author Thue Kristensen
- * @author Uwe Tews
+ * @author     Thue Kristensen
+ * @author     Uwe Tews
  */
 
 /**
@@ -19,11 +19,13 @@ abstract class _smarty_parsetree
 {
     /**
      * Parser object
+     *
      * @var object
      */
     public $parser;
     /**
      * Buffer content
+     *
      * @var mixed
      */
     public $data;
@@ -40,7 +42,7 @@ abstract class _smarty_parsetree
 /**
  * A complete smarty tag.
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  * @ignore
  */
@@ -48,6 +50,7 @@ class _smarty_tag extends _smarty_parsetree
 {
     /**
      * Saved block nesting level
+     *
      * @var int
      */
     public $saved_block_nesting;
@@ -93,7 +96,7 @@ class _smarty_tag extends _smarty_parsetree
 /**
  * Code fragment inside a tag.
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  * @ignore
  */
@@ -126,7 +129,7 @@ class _smarty_code extends _smarty_parsetree
 /**
  * Double quoted string inside a tag.
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  * @ignore
  */
@@ -204,7 +207,7 @@ class _smarty_doublequoted extends _smarty_parsetree
 /**
  * Raw chars as part of a double quoted string.
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  * @ignore
  */
@@ -237,7 +240,7 @@ class _smarty_dq_content extends _smarty_parsetree
 /**
  * Template element
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  * @ignore
  */
@@ -329,7 +332,7 @@ class _smarty_template_buffer extends _smarty_parsetree
 /**
  * template text
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  * @ignore
  */
@@ -362,7 +365,7 @@ class _smarty_text extends _smarty_parsetree
 /**
  * template linebreaks
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  * @ignore
  */

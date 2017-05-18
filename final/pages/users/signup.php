@@ -1,4 +1,9 @@
 <?php
-	include_once('../../config/init.php');
-	$smarty->display('user/register.tpl');
+    require_once '../../config/init.php';
+    require_once $BASE_DIR . 'database/countries.php';
+    //Get list of all countries
+    $countries = getListCountries();
+
+    $smarty->assign('countries', $countries);
+    $smarty->display('users/register.tpl');
 ?>

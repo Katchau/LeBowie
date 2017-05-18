@@ -4,15 +4,15 @@
  *
  * Compiles the {for} {forelse} {/for} tags
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
- * @author Uwe Tews
+ * @author     Uwe Tews
  */
 
 /**
  * Smarty Internal Plugin Compile For Class
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  */
 class Smarty_Internal_Compile_For extends Smarty_Internal_CompileBase
@@ -87,7 +87,7 @@ class Smarty_Internal_Compile_For extends Smarty_Internal_CompileBase
 /**
  * Smarty Internal Plugin Compile Forelse Class
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  */
 class Smarty_Internal_Compile_Forelse extends Smarty_Internal_CompileBase
@@ -116,7 +116,7 @@ class Smarty_Internal_Compile_Forelse extends Smarty_Internal_CompileBase
 /**
  * Smarty Internal Plugin Compile Forclose Class
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  */
 class Smarty_Internal_Compile_Forclose extends Smarty_Internal_CompileBase

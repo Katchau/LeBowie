@@ -2,9 +2,9 @@
 /**
  * Smarty Resource Plugin
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage TemplateResources
- * @author Rodney Rehm
+ * @author     Rodney Rehm
  */
 
 /**
@@ -12,28 +12,32 @@
  *
  * Base implementation for resource plugins
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage TemplateResources
  */
 abstract class Smarty_Resource
 {
     /**
      * cache for Smarty_Template_Source instances
+     *
      * @var array
      */
     public static $sources = array();
     /**
      * cache for Smarty_Template_Compiled instances
+     *
      * @var array
      */
     public static $compileds = array();
     /**
      * cache for Smarty_Resource instances
+     *
      * @var array
      */
     public static $resources = array();
     /**
      * resource types provided by the core
+     *
      * @var array
      */
     protected static $sysplugins = array(
@@ -47,18 +51,21 @@ abstract class Smarty_Resource
 
     /**
      * Name of the Class to compile this resource's contents with
+     *
      * @var string
      */
     public $compiler_class = 'Smarty_Internal_SmartyTemplateCompiler';
 
     /**
      * Name of the Class to tokenize this resource's contents with
+     *
      * @var string
      */
     public $template_lexer_class = 'Smarty_Internal_Templatelexer';
 
     /**
      * Name of the Class to parse this resource's contents with
+     *
      * @var string
      */
     public $template_parser_class = 'Smarty_Internal_Templateparser';
@@ -95,9 +102,9 @@ abstract class Smarty_Resource
     /**
      * modify resource_name according to resource handlers specifications
      *
-     * @param  Smarty $smarty        Smarty instance
-     * @param  string $resource_name resource_name to make unique
-     * @param  boolean $is_config    flag for config resource
+     * @param  Smarty  $smarty        Smarty instance
+     * @param  string  $resource_name resource_name to make unique
+     * @param  boolean $is_config     flag for config resource
      * @return string unique resource name
      */
     protected function buildUniqueResourceName(Smarty $smarty, $resource_name, $is_config = false)
@@ -140,7 +147,7 @@ abstract class Smarty_Resource
         // set basename if not specified
         $_basename = $this->getBasename($compiled->source);
         if ($_basename === null) {
-            $_basename = basename( preg_replace('![^\w\/]+!', '_', $compiled->source->name) );
+            $_basename = basename(preg_replace('![^\w\/]+!', '_', $compiled->source->name));
         }
         // separate (optional) basename by dot
         if ($_basename) {
@@ -324,8 +331,10 @@ abstract class Smarty_Resource
                     throw new SmartyException("Default template handler not callable");
                 }
             }
-            $_return = call_user_func_array($_default_handler,
-                array($source->type, $source->name, &$_content, &$_timestamp, $source->smarty));
+            $_return = call_user_func_array(
+                $_default_handler,
+                array($source->type, $source->name, &$_content, &$_timestamp, $source->smarty)
+            );
             if (is_string($_return)) {
                 $source->timestamp = @filemtime($_return);
                 $source->exists = !!$source->timestamp;
@@ -373,8 +382,8 @@ abstract class Smarty_Resource
     /**
      * Load Resource Handler
      *
-     * @param  Smarty          $smarty smarty object
-     * @param  string          $type   name of the resource
+     * @param  Smarty $smarty smarty object
+     * @param  string $type   name of the resource
      * @return Smarty_Resource Resource Handler
      */
     public static function load(Smarty $smarty, $type)
@@ -424,12 +433,14 @@ abstract class Smarty_Resource
 
                 return $smarty->_resource_handlers[$type] = self::$resources[$type];
             } else {
-                $smarty->registerResource($type, array(
+                $smarty->registerResource(
+                    $type, array(
                     "smarty_resource_{$type}_source",
                     "smarty_resource_{$type}_timestamp",
                     "smarty_resource_{$type}_secure",
                     "smarty_resource_{$type}_trusted"
-                ));
+                    )
+                );
 
                 // give it another try, now that the resource is registered properly
                 return self::load($smarty, $type);
@@ -459,7 +470,7 @@ abstract class Smarty_Resource
     /**
      * extract resource_type and resource_name from template_resource and config_resource
      *
-     * @note "C:/foo.tpl" was forced to file resource up till Smarty 3.1.3 (including).
+     * @note   "C:/foo.tpl" was forced to file resource up till Smarty 3.1.3 (including).
      * @param  string $resource_name    template_resource or config_resource to parse
      * @param  string $default_resource the default resource_type defined in $smarty
      * @param  string &$name            the parsed resource name
@@ -562,7 +573,7 @@ abstract class Smarty_Resource
 
         // make sure configs are not loaded via anything smarty can't handle
         if (isset($_incompatible_resources[$type])) {
-            throw new SmartyException ("Unable to use resource '{$type}' for config");
+            throw new SmartyException("Unable to use resource '{$type}' for config");
         }
 
         // load resource handler, identify unique resource name
@@ -592,9 +603,9 @@ abstract class Smarty_Resource
  *
  * Meta Data Container for Template Files
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage TemplateResources
- * @author Rodney Rehm
+ * @author     Rodney Rehm
  *
  * @property integer $timestamp Source Timestamp
  * @property boolean $exists    Source Existence
@@ -605,84 +616,98 @@ class Smarty_Template_Source
 {
     /**
      * Name of the Class to compile this resource's contents with
+     *
      * @var string
      */
     public $compiler_class = null;
 
     /**
      * Name of the Class to tokenize this resource's contents with
+     *
      * @var string
      */
     public $template_lexer_class = null;
 
     /**
      * Name of the Class to parse this resource's contents with
+     *
      * @var string
      */
     public $template_parser_class = null;
 
     /**
      * Unique Template ID
+     *
      * @var string
      */
     public $uid = null;
 
     /**
      * Template Resource (Smarty_Internal_Template::$template_resource)
+     *
      * @var string
      */
     public $resource = null;
 
     /**
      * Resource Type
+     *
      * @var string
      */
     public $type = null;
 
     /**
      * Resource Name
+     *
      * @var string
      */
     public $name = null;
 
     /**
      * Unique Resource Name
+     *
      * @var string
      */
     public $unique_resource = null;
 
     /**
      * Source Filepath
+     *
      * @var string
      */
     public $filepath = null;
 
     /**
      * Source is bypassing compiler
+     *
      * @var boolean
      */
     public $uncompiled = null;
 
     /**
      * Source must be recompiled on every occasion
+     *
      * @var boolean
      */
     public $recompiled = null;
 
     /**
      * The Components an extended template is made of
+     *
      * @var array
      */
     public $components = null;
 
     /**
      * Resource Handler
+     *
      * @var Smarty_Resource
      */
     public $handler = null;
 
     /**
      * Smarty instance
+     *
      * @var Smarty
      */
     public $smarty = null;
@@ -752,48 +777,48 @@ class Smarty_Template_Source
     /**
      * <<magic>> Generic Setter.
      *
-     * @param  string          $property_name valid: timestamp, exists, content, template
-     * @param  mixed           $value         new value (is not checked)
+     * @param  string $property_name valid: timestamp, exists, content, template
+     * @param  mixed  $value         new value (is not checked)
      * @throws SmartyException if $property_name is not valid
      */
     public function __set($property_name, $value)
     {
         switch ($property_name) {
             // regular attributes
-            case 'timestamp':
-            case 'exists':
-            case 'content':
+        case 'timestamp':
+        case 'exists':
+        case 'content':
             // required for extends: only
-            case 'template':
-                $this->$property_name = $value;
-                break;
+        case 'template':
+            $this->$property_name = $value;
+            break;
 
-            default:
-                throw new SmartyException("invalid source property '$property_name'.");
+        default:
+            throw new SmartyException("invalid source property '$property_name'.");
         }
     }
 
     /**
      * <<magic>> Generic getter.
      *
-     * @param  string          $property_name valid: timestamp, exists, content
+     * @param  string $property_name valid: timestamp, exists, content
      * @return mixed
      * @throws SmartyException if $property_name is not valid
      */
     public function __get($property_name)
     {
         switch ($property_name) {
-            case 'timestamp':
-            case 'exists':
-                $this->handler->populateTimestamp($this);
+        case 'timestamp':
+        case 'exists':
+            $this->handler->populateTimestamp($this);
 
-                return $this->$property_name;
+            return $this->$property_name;
 
-            case 'content':
-                return $this->content = $this->handler->getContent($this);
+        case 'content':
+            return $this->content = $this->handler->getContent($this);
 
-            default:
-                throw new SmartyException("source property '$property_name' does not exist.");
+        default:
+            throw new SmartyException("source property '$property_name' does not exist.");
         }
     }
 
@@ -804,9 +829,9 @@ class Smarty_Template_Source
  *
  * Meta Data Container for Template Files
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage TemplateResources
- * @author Rodney Rehm
+ * @author     Rodney Rehm
  *
  * @property string $content compiled content
  */
@@ -814,36 +839,42 @@ class Smarty_Template_Compiled
 {
     /**
      * Compiled Filepath
+     *
      * @var string
      */
     public $filepath = null;
 
     /**
      * Compiled Timestamp
+     *
      * @var integer
      */
     public $timestamp = null;
 
     /**
      * Compiled Existence
+     *
      * @var boolean
      */
     public $exists = false;
 
     /**
      * Compiled Content Loaded
+     *
      * @var boolean
      */
     public $loaded = false;
 
     /**
      * Template was compiled
+     *
      * @var boolean
      */
     public $isCompiled = false;
 
     /**
      * Source Object
+     *
      * @var Smarty_Template_Source
      */
     public $source = null;
@@ -852,6 +883,7 @@ class Smarty_Template_Compiled
      * Metadata properties
      *
      * populated by Smarty_Internal_Template::decodeProperties()
+     *
      * @var array
      */
     public $_properties = null;

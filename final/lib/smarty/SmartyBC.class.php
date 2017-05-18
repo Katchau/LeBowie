@@ -22,17 +22,17 @@
  * Smarty mailing list. Send a blank e-mail to
  * smarty-discussion-subscribe@googlegroups.com
  *
- * @link http://www.smarty.net/
+ * @link      http://www.smarty.net/
  * @copyright 2008 New Digital Group, Inc.
- * @author Monte Ohrt <monte at ohrt dot com>
- * @author Uwe Tews
- * @author Rodney Rehm
- * @package Smarty
+ * @author    Monte Ohrt <monte at ohrt dot com>
+ * @author    Uwe Tews
+ * @author    Rodney Rehm
+ * @package   Smarty
  */
 /**
  * @ignore
  */
-require(dirname(__FILE__) . '/Smarty.class.php');
+require dirname(__FILE__) . '/Smarty.class.php';
 
 /**
  * Smarty Backward Compatability Wrapper Class
@@ -43,6 +43,7 @@ class SmartyBC extends Smarty
 {
     /**
      * Smarty 2 BC
+     *
      * @var string
      */
     public $_version = self::SMARTY_VERSION;
@@ -305,10 +306,10 @@ class SmartyBC extends Smarty
     /**
      * clear cached content for the given template and cache id
      *
-     * @param  string  $tpl_file   name of template file
-     * @param  string  $cache_id   name of cache_id
-     * @param  string  $compile_id name of compile_id
-     * @param  string  $exp_time   expiration time
+     * @param  string $tpl_file   name of template file
+     * @param  string $cache_id   name of cache_id
+     * @param  string $compile_id name of compile_id
+     * @param  string $exp_time   expiration time
      * @return boolean
      */
     public function clear_cache($tpl_file = null, $cache_id = null, $compile_id = null, $exp_time = null)
@@ -319,7 +320,7 @@ class SmartyBC extends Smarty
     /**
      * clear the entire contents of cache (all templates)
      *
-     * @param  string  $exp_time expire time
+     * @param  string $exp_time expire time
      * @return boolean
      */
     public function clear_all_cache($exp_time = null)
@@ -330,9 +331,9 @@ class SmartyBC extends Smarty
     /**
      * test to see if valid cache exists for this template
      *
-     * @param  string  $tpl_file   name of template file
-     * @param  string  $cache_id
-     * @param  string  $compile_id
+     * @param  string $tpl_file   name of template file
+     * @param  string $cache_id
+     * @param  string $compile_id
      * @return boolean
      */
     public function is_cached($tpl_file, $cache_id = null, $compile_id = null)
@@ -353,9 +354,9 @@ class SmartyBC extends Smarty
      * or all compiled template files if one is not specified.
      * This function is for advanced use only, not normally needed.
      *
-     * @param  string  $tpl_file
-     * @param  string  $compile_id
-     * @param  string  $exp_time
+     * @param  string $tpl_file
+     * @param  string $compile_id
+     * @param  string $exp_time
      * @return boolean results of {@link smarty_core_rm_auto()}
      */
     public function clear_compiled_tpl($tpl_file = null, $compile_id = null, $exp_time = null)
@@ -366,7 +367,7 @@ class SmartyBC extends Smarty
     /**
      * Checks whether requested template exists.
      *
-     * @param  string  $tpl_file
+     * @param  string $tpl_file
      * @return boolean
      */
     public function template_exists($tpl_file)
@@ -445,10 +446,10 @@ class SmartyBC extends Smarty
 /**
  * Smarty {php}{/php} block function
  *
- * @param array   $params   parameter list
- * @param string  $content  contents of the block
- * @param object  $template template object
- * @param boolean &$repeat  repeat flag
+ * @param  array   $params   parameter list
+ * @param  string  $content  contents of the block
+ * @param  object  $template template object
+ * @param  boolean &$repeat  repeat flag
  * @return string content re-formatted
  */
 function smarty_php_tag($params, $content, $template, &$repeat)

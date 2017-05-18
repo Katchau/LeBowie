@@ -5,26 +5,26 @@
  *
  * Implements the file system as resource for PHP templates
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage TemplateResources
- * @author Uwe Tews
- * @author Rodney Rehm
+ * @author     Uwe Tews
+ * @author     Rodney Rehm
  */
 class Smarty_Internal_Resource_PHP extends Smarty_Resource_Uncompiled
 {
     /**
      * container for short_open_tag directive's value before executing PHP templates
+     *
      * @var string
      */
     protected $short_open_tag;
 
     /**
      * Create a new PHP Resource
-     *
      */
     public function __construct()
     {
-        $this->short_open_tag = ini_get( 'short_open_tag' );
+        $this->short_open_tag = ini_get('short_open_tag');
     }
 
     /**
@@ -106,8 +106,8 @@ class Smarty_Internal_Resource_PHP extends Smarty_Resource_Uncompiled
         extract($_template->getTemplateVars());
 
         // include PHP template with short open tags enabled
-        ini_set( 'short_open_tag', '1' );
-        include($source->filepath);
-        ini_set( 'short_open_tag', $this->short_open_tag );
+        ini_set('short_open_tag', '1');
+        include $source->filepath;
+        ini_set('short_open_tag', $this->short_open_tag);
     }
 }

@@ -2,16 +2,16 @@
 /**
  * Smarty Internal Plugin
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Cacher
  */
 
 /**
  * Cache Handler API
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Cacher
- * @author Rodney Rehm
+ * @author     Rodney Rehm
  */
 abstract class Smarty_CacheResource_Custom extends Smarty_CacheResource
 {
@@ -34,10 +34,10 @@ abstract class Smarty_CacheResource_Custom extends Smarty_CacheResource
      * {@internal implementing this method is optional.
      *  Only implement it if modification times can be accessed faster than loading the complete cached content.}}
      *
-     * @param  string          $id         unique cache content identifier
-     * @param  string          $name       template name
-     * @param  string          $cache_id   cache id
-     * @param  string          $compile_id compile id
+     * @param  string $id         unique cache content identifier
+     * @param  string $name       template name
+     * @param  string $cache_id   cache id
+     * @param  string $compile_id compile id
      * @return integer|boolean timestamp (epoch) the template was modified, or false if not found
      */
     protected function fetchTimestamp($id, $name, $cache_id, $compile_id)

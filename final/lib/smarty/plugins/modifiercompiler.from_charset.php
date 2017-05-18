@@ -2,7 +2,7 @@
 /**
  * Smarty plugin
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage PluginsModifierCompiler
  */
 
@@ -14,7 +14,7 @@
  * Purpose:  convert character encoding from $charset to internal encoding
  *
  * @author Rodney Rehm
- * @param array $params parameters
+ * @param  array $params parameters
  * @return string with compiled code
  */
 function smarty_modifiercompiler_from_charset($params, $compiler)

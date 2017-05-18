@@ -5,15 +5,15 @@
  *
  * Compiles the {insert} tag
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
- * @author Uwe Tews
+ * @author     Uwe Tews
  */
 
 /**
  * Smarty Internal Plugin Compile Insert Class
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  */
 class Smarty_Internal_Compile_Insert extends Smarty_Internal_CompileBase
@@ -96,7 +96,7 @@ class Smarty_Internal_Compile_Insert extends Smarty_Internal_CompileBase
             }
             // code for script file loading
             $_output .= "require_once '{$_filepath}' ;";
-            require_once $_filepath;
+            include_once $_filepath;
             if (!is_callable($_function)) {
                 $compiler->trigger_template_error(" {insert} function '{$_function}' is not callable in script file '{$_script}'", $compiler->lex->taglineno);
             }

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-04-19 11:34:05
+<?php /* Smarty version Smarty-3.1.15, created on 2017-04-19 18:46:40
          compiled from "/opt/lbaw/lbaw1651/public_html/proto/templates/common/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:55573126158f6401454e895-82440280%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '07bcb3ac321c811c3ad1c2dc543f50f04572e59f' => 
     array (
       0 => '/opt/lbaw/lbaw1651/public_html/proto/templates/common/header.tpl',
-      1 => 1492598041,
+      1 => 1492623998,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'variables' => 
   array (
     'BASE_URL' => 0,
+    'DEF_TOPIC' => 0,
+    'headerTopics' => 0,
+    'headerTopic' => 0,
     'USERNAME' => 0,
+    'ERROR_MESSAGES' => 0,
+    'error' => 0,
+    'SUCCESS_MESSAGES' => 0,
+    'success' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -55,6 +62,8 @@ css/topic.css">
 css/register.css">
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 css/footer.css">
+	<link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+css/profile.css">
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 css/tabs.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -90,28 +99,43 @@ css/tabs.css">
         <!-- Topic chosing dropdown -->
         <ul class="nav navbar-nav navbar-choose-topic">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">programming <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $_smarty_tpl->tpl_vars['DEF_TOPIC']->value;?>
+<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">mathematics</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">biology</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">rocket science</a></li>
+			  <?php  $_smarty_tpl->tpl_vars['headerTopic'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['headerTopic']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['headerTopics']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['headerTopic']->key => $_smarty_tpl->tpl_vars['headerTopic']->value) {
+$_smarty_tpl->tpl_vars['headerTopic']->_loop = true;
+?>
+				<li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/topic/list.php?id=<?php echo $_smarty_tpl->tpl_vars['headerTopic']->value['id'];?>
+">
+				<?php echo $_smarty_tpl->tpl_vars['headerTopic']->value['topicname'];?>
+
+				</a></li>
+				<li role="separator" class="divider"></li>
+			  <?php } ?>
             </ul>
           </li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
           <?php if ($_smarty_tpl->tpl_vars['USERNAME']->value) {?>
-	  <li class="navbar-highlight"><a href="../../pages/questions/ask.php">ask</a></li>
-          <li><a href="#"><?php echo $_smarty_tpl->tpl_vars['USERNAME']->value;?>
+			<li class="navbar-highlight"><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/questions/ask.php">ask</a></li>
+          <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/users/index.php?username=<?php echo $_smarty_tpl->tpl_vars['USERNAME']->value;?>
+"><?php echo $_smarty_tpl->tpl_vars['USERNAME']->value;?>
 </a></li>
-          <li><a href="#">sign out</a></li>
+          <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+actions/logout.php">sign out</a></li>
           <?php } else { ?>
-	  <li class="navbar-highlight"><a href="#" data-toggle="modal" data-target="#myModal">ask</a></li>
-          <li><a href="#">sign up</a></li>
+			<li class="navbar-highlight"><a href="#" data-toggle="modal" data-target="#myModal">ask</a></li>
+          <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/users/signup.php">sign up</a></li>
           <li><a href="#" data-toggle="modal" data-target="#myModal">sign in</a></li>
           <?php }?>
+		  
 
           <!-- Modal -->
           <div id="myModal" class="modal fade container col-xs-12" role="dialog">
@@ -124,14 +148,15 @@ css/tabs.css">
                   <h4 class="modal-title"><center>Sign in to Newton's Apple</center></h4>
                 </div>
                 <div class="modal-body">
-				  <form>
+				  <form method="post" action="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+actions/login.php">
                   <div class="form-group">
-            			    <input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Username/Email" tabindex="3">
+            			    <input type="text" name="username" id="display_name" class="form-control input-lg" placeholder="Username/Email" tabindex="3">
             			</div>
                   <div class="form-group">
-          				    <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Password" tabindex="6">
+          				    <input type="password" name="password" id="password_confirmation" class="form-control input-lg" placeholder="Password" tabindex="6">
           				</div>
-                  <div><button type="button" class="btn btn-default" data-dismiss="modal">Sign in</button></div>
+                  <div><button type="submit" class="btn btn-default">Sign in</button></div>
 				 </form>
                 </div>
 
@@ -187,4 +212,24 @@ css/tabs.css">
       </div>
     </div>
   </nav>
+  <div id="error_messages">
+    <?php  $_smarty_tpl->tpl_vars['error'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['error']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['ERROR_MESSAGES']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['error']->key => $_smarty_tpl->tpl_vars['error']->value) {
+$_smarty_tpl->tpl_vars['error']->_loop = true;
+?>
+      <div class="error"><?php echo $_smarty_tpl->tpl_vars['error']->value;?>
+<a class="close" href="#">X</a></div>
+    <?php } ?>
+    </div>
+    <div id="success_messages">
+    <?php  $_smarty_tpl->tpl_vars['success'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['success']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['SUCCESS_MESSAGES']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['success']->key => $_smarty_tpl->tpl_vars['success']->value) {
+$_smarty_tpl->tpl_vars['success']->_loop = true;
+?>
+      <div class="success"><?php echo $_smarty_tpl->tpl_vars['success']->value;?>
+<a class="close" href="#">X</a></div>
+    <?php } ?>
+    </div>
 </header><?php }} ?>
