@@ -45,7 +45,7 @@
     <div class="ask_area col-sm-8 col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
         <h1 class="hidden-lg hidden-md hidden-sm">Create a Report</h1>
 
-        <form action="{$BASE_URL}actions/questions/" method="post" id="form-ask">
+        <form action="{$BASE_URL}actions/reports/" method="post" id="form-ask">
             <input name="user-id" type="hidden" value="{$USERID}">
             <input name="post-id" type="hidden" value="{$post_id}">
 
