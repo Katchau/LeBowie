@@ -13,9 +13,8 @@
 		<div class="guidelines_side">
 			<h1>About {$topic.topicname}</h1>
 			<p class="topicInfo">{$topic.description}</p>
-			<button type="button" class="btn btn-default askButton">
-			<span aria-hidden="true"> ask a question</span>
-			</button>
+			<a href="{$BASE_URL}pages/questions/ask.php" class="btn btn-default askButton">ask a question</a>
+			
 		</div>
 		<hr>
 		{/if}
