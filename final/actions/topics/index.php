@@ -10,9 +10,9 @@ $topicId = createTopic($admin_id, $title, $description);
 
 if (!$topicId) {
     $_SESSION["error messages"][] = "Topic creation failed";
-    header("Location: $BASE_URL" . "pages/topics/new.php");
+    header("Location: $BASE_URL" . "pages/topic/new.php");
 }
 else {
-    header("Location: $BASE_URL" . "pages/topics/index.php?id=" . $topicId);
+    header("Location: $BASE_URL" . "pages/topic/list.php?id=" . $topicId);
 }
 ?>
