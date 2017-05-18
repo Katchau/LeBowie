@@ -1,4 +1,10 @@
 
+  {if !$questions}
+  	<div class="">
+		This is empty.
+	</div>
+  {/if}
+  
   {foreach $questions as $question}
 
 	<div class="question well">
