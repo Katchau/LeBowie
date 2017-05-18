@@ -6,7 +6,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
- 
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -21,10 +21,11 @@
     <link rel="stylesheet" href="{$BASE_URL}css/topic.css">
     <link rel="stylesheet" href="{$BASE_URL}css/register.css">
     <link rel="stylesheet" href="{$BASE_URL}css/footer.css">
-	<link rel="stylesheet" href="{$BASE_URL}css/profile.css">
+	  <link rel="stylesheet" href="{$BASE_URL}css/profile.css">
     <link rel="stylesheet" href="{$BASE_URL}css/tabs.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-	<script src="js/navbar.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+
+    {include file='common/scriptlist.tpl'}
   </head>
   <header>
     <!-- Add your site or application content here -->
@@ -56,14 +57,14 @@
         <!-- Topic chosing dropdown -->
         <ul class="nav navbar-nav navbar-choose-topic">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{$DEF_TOPIC}<span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Topic list<span class="caret"></span></a>
             <ul class="dropdown-menu">
-			  {foreach $headerTopics as $headerTopic}
-				<li><a href="{$BASE_URL}pages/topic/list.php?id={$headerTopic.id}">
-				{$headerTopic.topicname}
-				</a></li>
-				<li role="separator" class="divider"></li>
-			  {/foreach}
+                {foreach $headerTopics as $headerTopic}
+                <li><a href="{$BASE_URL}pages/topic/list.php?id={$headerTopic.id}">
+                {$headerTopic.topicname}
+                </a></li>
+                <li role="separator" class="divider"></li>
+                {/foreach}
             </ul>
           </li>
         </ul>
@@ -72,13 +73,13 @@
           {if $USERNAME}
 			<li class="navbar-highlight"><a href="{$BASE_URL}pages/questions/ask.php">ask</a></li>
           <li><a href="{$BASE_URL}pages/users/index.php?username={$USERNAME}">{$USERNAME}</a></li>
-          <li><a href="{$BASE_URL}actions/logout.php">sign out</a></li>
+          <li><a href="{$BASE_URL}actions/users/logout.php">sign out</a></li>
           {else}
 			<li class="navbar-highlight"><a href="#" data-toggle="modal" data-target="#myModal">ask</a></li>
           <li><a href="{$BASE_URL}pages/users/signup.php">sign up</a></li>
           <li><a href="#" data-toggle="modal" data-target="#myModal">sign in</a></li>
           {/if}
-		  
+
 
           <!-- Modal -->
           <div id="myModal" class="modal fade container col-xs-12" role="dialog">
@@ -91,7 +92,7 @@
                   <h4 class="modal-title"><center>Sign in to Newton's Apple</center></h4>
                 </div>
                 <div class="modal-body">
-				  <form method="post" action="{$BASE_URL}actions/login.php">
+				  <form method="post" action="{$BASE_URL}actions/users/login.php">
                   <div class="form-group">
             			    <input type="text" name="username" id="display_name" class="form-control input-lg" placeholder="Username/Email" tabindex="3">
             			</div>
@@ -122,9 +123,9 @@
 
         </ul>
 
-        <form class="navbar-form navbar-right">
+        <form class="navbar-form navbar-right" method="get" action="{$BASE_URL}pages/questions/search.php">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search">
+            <input type="text" class="form-control" name="string" placeholder="Search">
             <div class="input-group-btn">
               <button class="btn btn-default" type="submit">
                 <i class="glyphicon glyphicon-search"></i>
@@ -137,21 +138,22 @@
     </div>
 
     <div id="my-side-nav" class="side-nav">
-      <div class="side-nav-auth">
-        <a href="#">sign up</a>
-        <a href="#" data-toggle="modal" data-target="#myModal">sign in</a>
-      </div>
-      <hr>
-      <div class="side-nav-options">
-        <a href="#">ask</a>
-      </div>
-      <hr>
-      <div class="side-nav-topics">
-        <a href="#">programming</a>
-        <a href="#">mathematics</a>
-        <a href="#">biology</a>
-        <a href="#">rocket science</a>
-      </div>
+		<div class="side-nav-auth">
+			<a href="#">sign up</a>
+			<a href="#" data-toggle="modal" data-target="#myModal">sign in</a>
+		</div>
+		<hr>
+		<div class="side-nav-options">
+			<a href="#">ask</a>
+		</div>
+		<hr>
+		<div class="side-nav-topics">
+			{foreach $headerTopics as $headerTopic}
+				<a href="{$BASE_URL}pages/topic/list.php?id={$headerTopic.id}">
+				{$headerTopic.topicname}
+				</a>
+			{/foreach}
+		</div>
     </div>
   </nav>
   <div id="error_messages">

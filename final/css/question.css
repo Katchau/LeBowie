@@ -88,7 +88,11 @@
 .extras .tools_label span{
   font-size: 0.70em;
 }
-.extras button{
+.extras_tools .btn-default a {
+    color: white;
+    text-decoration: none;
+}
+.extras .btn{
   font-size: 0.5em;
   background-color: orange;
   border-color: white;
@@ -96,12 +100,12 @@
   margin-bottom:0.25em;
   width: 50%;
 }
-.extras button:hover{
+.extras .btn:hover{
   background-color: #cc8400;
   color: white;
   border-color: #cc8400;
 }
-.extras button:active{
+.extras .btn:active{
   background-color: white;
   color: white;
   border-color: transparent;
@@ -116,22 +120,22 @@
   z-index: 2;
 }
 .extras_suggested ul{
-	text-align: left;
-	list-style-type: none;
+    text-align: left;
+    list-style-type: none;
 }
 .extras_suggested .suggestion{
-	font-size: 0.5em;
-	border: none;
-	border-radius: 0px;
-	background-color: #fCfCfC;
-	border-bottom: 1px solid orange;
+    font-size: 0.5em;
+    border: none;
+    border-radius: 0px;
+    background-color: #fCfCfC;
+    border-bottom: 1px solid orange;
 }
 .extras_suggested .suggestion span{
-	background-color: orange;
+    background-color: orange;
 }
 .extras_btn{
-	font-size: 0.75em;
-	color: #f3f3f3;
+    font-size: 0.75em;
+    color: #f3f3f3;
 }
 .guidelines_side{
   font-size: 0.5em;
@@ -164,4 +168,17 @@
   background-color: orange;
   color: white;
   font-weight: bolder;
+}
+.answer_area textarea{
+    font-size: 1em;
+}
+.answer_area .btn {
+    color: white;
+    background-color: orange;
+    font-weight: bold;
+}
+.edit_prof input{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 1.1em;
 }

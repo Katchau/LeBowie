@@ -2,7 +2,7 @@
 /**
  * Smarty plugin
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage PluginsModifierCompiler
  */
 
@@ -13,9 +13,9 @@
  * Name:     wordwrap<br>
  * Purpose:  wrap a string of text at a given length
  *
- * @link http://smarty.php.net/manual/en/language.modifier.wordwrap.php wordwrap (Smarty online manual)
+ * @link   http://smarty.php.net/manual/en/language.modifier.wordwrap.php wordwrap (Smarty online manual)
  * @author Uwe Tews
- * @param array $params parameters
+ * @param  array $params parameters
  * @return string with compiled code
  */
 function smarty_modifiercompiler_wordwrap($params, $compiler)
@@ -31,7 +31,7 @@ function smarty_modifiercompiler_wordwrap($params, $compiler)
     }
     $function = 'wordwrap';
     if (Smarty::$_MBSTRING) {
-    if ($compiler->template->caching && ($compiler->tag_nocache | $compiler->nocache)) {
+        if ($compiler->template->caching && ($compiler->tag_nocache | $compiler->nocache)) {
             $compiler->template->required_plugins['nocache']['wordwrap']['modifier']['file'] = SMARTY_PLUGINS_DIR .'shared.mb_wordwrap.php';
             $compiler->template->required_plugins['nocache']['wordwrap']['modifier']['function'] = 'smarty_mb_wordwrap';
         } else {

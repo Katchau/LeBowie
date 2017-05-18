@@ -4,15 +4,15 @@
  *
  * Smarty filter handler class
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage PluginsInternal
- * @author Uwe Tews
+ * @author     Uwe Tews
  */
 
 /**
  * Class for filter processing
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage PluginsInternal
  */
 class Smarty_Internal_Filter_Handler

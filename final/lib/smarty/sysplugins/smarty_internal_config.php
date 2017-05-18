@@ -2,9 +2,9 @@
 /**
  * Smarty Internal Plugin Config
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Config
- * @author Uwe Tews
+ * @author     Uwe Tews
  */
 
 /**
@@ -12,7 +12,7 @@
  *
  * Main class for config variables
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Config
  *
  * @property Smarty_Config_Source   $source
@@ -35,6 +35,7 @@ class Smarty_Internal_Config
     public $data = null;
     /**
      * Config resource
+     *
      * @var string
      */
     public $config_resource = null;
@@ -58,6 +59,7 @@ class Smarty_Internal_Config
     public $compiled_timestamp = null;
     /**
      * flag if compiled config file is invalid and must be (re)compiled
+     *
      * @var bool
      */
     public $mustCompile = null;
@@ -143,7 +145,7 @@ class Smarty_Internal_Config
     public function mustCompile()
     {
         return $this->mustCompile === null ?
-            $this->mustCompile = ($this->smarty->force_compile || $this->getCompiledTimestamp () === false || $this->smarty->compile_check && $this->getCompiledTimestamp () < $this->source->timestamp):
+            $this->mustCompile = ($this->smarty->force_compile || $this->getCompiledTimestamp() === false || $this->smarty->compile_check && $this->getCompiledTimestamp() < $this->source->timestamp):
             $this->mustCompile;
     }
 
@@ -231,7 +233,7 @@ class Smarty_Internal_Config
             }
         }
         $_config_vars = array();
-        include($this->getCompiledFilepath());
+        include $this->getCompiledFilepath();
         // copy global config vars
         foreach ($_config_vars['vars'] as $variable => $value) {
             if ($this->smarty->config_overwrite || !isset($scope_ptr->config_vars[$variable])) {
@@ -259,18 +261,18 @@ class Smarty_Internal_Config
     /**
      * set Smarty property in template context
      *
-     * @param  string          $property_name property name
-     * @param  mixed           $value         value
+     * @param  string $property_name property name
+     * @param  mixed  $value         value
      * @throws SmartyException if $property_name is not valid
      */
     public function __set($property_name, $value)
     {
         switch ($property_name) {
-            case 'source':
-            case 'compiled':
-                $this->$property_name = $value;
+        case 'source':
+        case 'compiled':
+            $this->$property_name = $value;
 
-                return;
+            return;
         }
 
         throw new SmartyException("invalid config property '$property_name'.");
@@ -279,24 +281,24 @@ class Smarty_Internal_Config
     /**
      * get Smarty property in template context
      *
-     * @param  string          $property_name property name
+     * @param  string $property_name property name
      * @throws SmartyException if $property_name is not valid
      */
     public function __get($property_name)
     {
         switch ($property_name) {
-            case 'source':
-                if (empty($this->config_resource)) {
-                    throw new SmartyException("Unable to parse resource name \"{$this->config_resource}\"");
-                }
-                $this->source = Smarty_Resource::config($this);
+        case 'source':
+            if (empty($this->config_resource)) {
+                throw new SmartyException("Unable to parse resource name \"{$this->config_resource}\"");
+            }
+            $this->source = Smarty_Resource::config($this);
 
-                return $this->source;
+            return $this->source;
 
-            case 'compiled':
-                $this->compiled = $this->source->getCompiled($this);
+        case 'compiled':
+            $this->compiled = $this->source->getCompiled($this);
 
-                return $this->compiled;
+            return $this->compiled;
         }
 
         throw new SmartyException("config attribute '$property_name' does not exist.");

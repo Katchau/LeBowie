@@ -4,20 +4,20 @@
  *
  * This file contains the basic classes and methodes for compiling Smarty templates with lexer/parser
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
- * @author Uwe Tews
+ * @author     Uwe Tews
  */
 
 /**
  * @ignore
  */
-include 'smarty_internal_parsetree.php';
+require 'smarty_internal_parsetree.php';
 
 /**
  * Class SmartyTemplateCompiler
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  */
 class Smarty_Internal_SmartyTemplateCompiler extends Smarty_Internal_TemplateCompilerBase
@@ -98,8 +98,9 @@ class Smarty_Internal_SmartyTemplateCompiler extends Smarty_Internal_TemplateCom
             // start state on child templates
             $this->lex->yypushstate(Smarty_Internal_Templatelexer::CHILDBODY);
         }
-        if ($this->smarty->_parserdebug)
-            $this->parser->PrintTrace();
+        if ($this->smarty->_parserdebug) {
+            $this->parser->PrintTrace(); 
+        }
         // get tokens from lexer and parse them
         while ($this->lex->yylex() && !$this->abort_and_recompile) {
             if ($this->smarty->_parserdebug) {

@@ -2,15 +2,15 @@
 /**
  * Smarty write file plugin
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage PluginsInternal
- * @author Monte Ohrt
+ * @author     Monte Ohrt
  */
 
 /**
  * Smarty Internal Write File Class
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage PluginsInternal
  */
 class Smarty_Internal_Write_File
@@ -18,9 +18,9 @@ class Smarty_Internal_Write_File
     /**
      * Writes file in a safe way to disk
      *
-     * @param  string  $_filepath complete filepath
-     * @param  string  $_contents file content
-     * @param  Smarty  $smarty    smarty instance
+     * @param  string $_filepath complete filepath
+     * @param  string $_contents file content
+     * @param  Smarty $smarty    smarty instance
      * @return boolean true
      */
     public static function writeFile($_filepath, $_contents, Smarty $smarty)

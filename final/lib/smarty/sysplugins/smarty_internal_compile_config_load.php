@@ -4,15 +4,15 @@
  *
  * Compiles the {config load} tag
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
- * @author Uwe Tews
+ * @author     Uwe Tews
  */
 
 /**
  * Smarty Internal Plugin Compile Config Load Class
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  */
 class Smarty_Internal_Compile_Config_Load extends Smarty_Internal_CompileBase
@@ -69,9 +69,9 @@ class Smarty_Internal_Compile_Config_Load extends Smarty_Internal_CompileBase
             $_attr['scope'] = trim($_attr['scope'], "'\"");
             if (isset($_is_legal_scope[$_attr['scope']])) {
                 $scope = $_attr['scope'];
-           } else {
+            } else {
                 $compiler->trigger_template_error('illegal value for "scope" attribute', $compiler->lex->taglineno);
-           }
+            }
         }
         // create config object
         $_output = "<?php  \$_config = new Smarty_Internal_Config($conf_file, \$_smarty_tpl->smarty, \$_smarty_tpl);";

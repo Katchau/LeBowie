@@ -2,9 +2,9 @@
 /**
  * Smarty Resource Plugin
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage TemplateResources
- * @author Rodney Rehm
+ * @author     Rodney Rehm
  */
 
 /**
@@ -12,7 +12,7 @@
  *
  * Base implementation for resource plugins that don't use the compiler
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage TemplateResources
  */
 abstract class Smarty_Resource_Uncompiled extends Smarty_Resource

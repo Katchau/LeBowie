@@ -2,9 +2,9 @@
 /**
  * Smarty Resource Plugin
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage TemplateResources
- * @author Rodney Rehm
+ * @author     Rodney Rehm
  */
 
 /**
@@ -12,7 +12,7 @@
  *
  * Wrapper Implementation for custom resource plugins
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage TemplateResources
  */
 abstract class Smarty_Resource_Custom extends Smarty_Resource
@@ -32,7 +32,7 @@ abstract class Smarty_Resource_Custom extends Smarty_Resource
      * {@internal implementing this method is optional.
      *  Only implement it if modification times can be accessed faster than loading the complete template source.}}
      *
-     * @param  string          $name template name
+     * @param  string $name template name
      * @return integer|boolean timestamp (epoch) the template was modified, or false if not found
      */
     protected function fetchTimestamp($name)
@@ -57,8 +57,9 @@ abstract class Smarty_Resource_Custom extends Smarty_Resource
         } else {
             $this->fetch($source->name, $content, $timestamp);
             $source->timestamp = isset($timestamp) ? $timestamp : false;
-            if( isset($content) )
-                $source->content = $content;
+            if(isset($content) ) {
+                $source->content = $content; 
+            }
         }
         $source->exists = !!$source->timestamp;
     }

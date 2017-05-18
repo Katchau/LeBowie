@@ -2,7 +2,7 @@
 /**
  * Smarty Internal Plugin
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Cacher
  */
 
@@ -27,19 +27,21 @@
  * cache groups: if your cache groups look somewhat like »a|b|$page|$items|$whatever«
  * consider using »a|b|c|$page-$items-$whatever« instead.
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Cacher
- * @author Rodney Rehm
+ * @author     Rodney Rehm
  */
 abstract class Smarty_CacheResource_KeyValueStore extends Smarty_CacheResource
 {
     /**
      * cache for contents
+     *
      * @var array
      */
     protected $contents = array();
     /**
      * cache for timestamps
+     *
      * @var array
      */
     protected $timestamps = array();
@@ -128,8 +130,8 @@ abstract class Smarty_CacheResource_KeyValueStore extends Smarty_CacheResource
      * @param  Smarty  $smarty   Smarty object
      * @param  integer $exp_time expiration time [being ignored]
      * @return integer number of cache files deleted [always -1]
-     * @uses purge() to clear the whole store
-     * @uses invalidate() to mark everything outdated if purge() is inapplicable
+     * @uses   purge() to clear the whole store
+     * @uses   invalidate() to mark everything outdated if purge() is inapplicable
      */
     public function clearAll(Smarty $smarty, $exp_time=null)
     {
@@ -151,9 +153,9 @@ abstract class Smarty_CacheResource_KeyValueStore extends Smarty_CacheResource
      * @param  string  $compile_id    compile id
      * @param  integer $exp_time      expiration time [being ignored]
      * @return integer number of cache files deleted [always -1]
-     * @uses buildCachedFilepath() to generate the CacheID
-     * @uses invalidate() to mark CacheIDs parent chain as outdated
-     * @uses delete() to remove CacheID from cache
+     * @uses   buildCachedFilepath() to generate the CacheID
+     * @uses   invalidate() to mark CacheIDs parent chain as outdated
+     * @uses   delete() to remove CacheID from cache
      */
     public function clear(Smarty $smarty, $resource_name, $cache_id, $compile_id, $exp_time)
     {
@@ -351,7 +353,7 @@ abstract class Smarty_CacheResource_KeyValueStore extends Smarty_CacheResource
      * @param  string $compile_id    compile id
      * @param  string $resource_uid  source's filepath
      * @return array  list of InvalidationKeys
-     * @uses $invalidationKeyPrefix to prepend to each InvalidationKey
+     * @uses   $invalidationKeyPrefix to prepend to each InvalidationKey
      */
     protected function listInvalidationKeys($cid, $resource_name = null, $cache_id = null, $compile_id = null, $resource_uid = null)
     {
@@ -445,8 +447,8 @@ abstract class Smarty_CacheResource_KeyValueStore extends Smarty_CacheResource
     /**
      * Save values for a set of keys to cache
      *
-     * @param  array   $keys   list of values to save
-     * @param  int     $expire expiration time
+     * @param  array $keys   list of values to save
+     * @param  int   $expire expiration time
      * @return boolean true on success, false on failure
      */
     abstract protected function write(array $keys, $expire=null);
@@ -454,7 +456,7 @@ abstract class Smarty_CacheResource_KeyValueStore extends Smarty_CacheResource
     /**
      * Remove values from cache
      *
-     * @param  array   $keys list of keys to delete
+     * @param  array $keys list of keys to delete
      * @return boolean true on success, false on failure
      */
     abstract protected function delete(array $keys);

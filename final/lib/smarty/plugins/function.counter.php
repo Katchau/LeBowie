@@ -1,7 +1,8 @@
 <?php
 /**
  * Smarty plugin
- * @package Smarty
+ *
+ * @package    Smarty
  * @subpackage PluginsFunction
  */
 
@@ -13,10 +14,10 @@
  * Purpose:  print out a counter value
  *
  * @author Monte Ohrt <monte at ohrt dot com>
- * @link http://www.smarty.net/manual/en/language.function.counter.php {counter}
+ * @link   http://www.smarty.net/manual/en/language.function.counter.php {counter}
  *       (Smarty online manual)
- * @param array                    $params   parameters
- * @param Smarty_Internal_Template $template template object
+ * @param  array                    $params   parameters
+ * @param  Smarty_Internal_Template $template template object
  * @return string|null
  */
 function smarty_function_counter($params, $template)
@@ -66,10 +67,12 @@ function smarty_function_counter($params, $template)
         $counter['direction'] = $params['direction'];
     }
 
-    if ($counter['direction'] == "down")
-        $counter['count'] -= $counter['skip'];
-    else
-        $counter['count'] += $counter['skip'];
+    if ($counter['direction'] == "down") {
+        $counter['count'] -= $counter['skip']; 
+    }
+    else {
+        $counter['count'] += $counter['skip']; 
+    }
 
     return $retval;
 

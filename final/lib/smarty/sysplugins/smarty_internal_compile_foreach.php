@@ -4,15 +4,15 @@
  *
  * Compiles the {foreach} {foreachelse} {/foreach} tags
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
- * @author Uwe Tews
+ * @author     Uwe Tews
  */
 
 /**
  * Smarty Internal Plugin Compile Foreach Class
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  */
 class Smarty_Internal_Compile_Foreach extends Smarty_Internal_CompileBase
@@ -171,7 +171,7 @@ class Smarty_Internal_Compile_Foreach extends Smarty_Internal_CompileBase
 /**
  * Smarty Internal Plugin Compile Foreachelse Class
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  */
 class Smarty_Internal_Compile_Foreachelse extends Smarty_Internal_CompileBase
@@ -200,7 +200,7 @@ class Smarty_Internal_Compile_Foreachelse extends Smarty_Internal_CompileBase
 /**
  * Smarty Internal Plugin Compile Foreachclose Class
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Compiler
  */
 class Smarty_Internal_Compile_Foreachclose extends Smarty_Internal_CompileBase

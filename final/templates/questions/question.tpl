@@ -16,17 +16,16 @@
 </div>
 
 <div class="container">
+	{if !isset($question) || $question == NULL}
+		<h3>No such question found! It probably was deleted or the link is dead.</h3>
+	{else}
 	<div class="row">
 		<div class="extras hidden-xs col-sm-4 col-lg-push-8 col-md-push-8 col-sm-push-8">
           <label class="tools_label"> tools <span class="glyphicon glyphicon-wrench"></span></label>
           <hr>
           <div class="extras_tools">
-            <button type="button" class="btn btn-default">
-              <span aria-hidden="true"> answer</span>
-            </button>
-            <button type="button" class="btn btn-default">
-              <span aria-hidden="true"> ask a question</span>
-            </button>
+             <a aria-hidden="true" href="{$BASE_URL}pages/questions/answer.php?id={$question.post_id}" class="btn btn-default"> answer</a>
+             <a aria-hidden="true" href="{$BASE_URL}pages/questions/ask.php" class="btn btn-default"> ask a question</a>
           </div>
           <hr>
           <div class="extras_suggested">
@@ -35,7 +34,7 @@
           </div>
           <hr>
         </div>
-		
+
 		<div class="col-sm-8 question_area col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
 			<div class="question">
 				<div class="media">
@@ -63,13 +62,14 @@
 							</div>
 							<div class="question_votes">
 								<label> Was this question relevant? Please leave a vote! </label>
+								<input type="hidden" value="{$question.post_id}">
 								<button type="button" class="btn btn-default">
 									<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
 								</button>
-								<button type="button" class="btn btn-default">
+								<button onclick="upvotePost({$question.post_id})" id="js-upvote-btn-{$question.post_id}" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 									<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">{$question.up_score}</span>
 								</button>
-								<button type="button" class="btn btn-default">
+								<button onclick="downvotePost({$question.post_id})" id="js-downvote-btn-{$question.post_id}" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 									<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">{$question.down_score}</span>
 								</button>
 							</div>
@@ -79,17 +79,21 @@
 			</div>
 			<hr>
 		</div>
-	</div>
 
-	<div class="col-lg-8 answers">
-		<div class="answers_header"> 
-			Answers <span class="answer_no">(0)</span>
-		</div>
+		<div class="col-lg-8 answers">
 
-		<div class="answer">
+			<div class="answers_header">
+				Answers <span class="answer_no">{sizeof($answers)}</span>
+			</div>
+
+			{foreach $answers as $answer}
+				{include file='answers/list.tpl' answer=$answer}
+			{/foreach}
 		</div>
 	</div>
+	{/if}
 </div>
 
+<script src="{$BASE_URL}javascript/posts/posts.js"></script>
 
-  {include file='common/footer.tpl'}
+{include file='common/footer.tpl'}

@@ -4,15 +4,15 @@
  *
  * Class to collect data for the Smarty Debugging Consol
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Debug
- * @author Uwe Tews
+ * @author     Uwe Tews
  */
 
 /**
  * Smarty Internal Plugin Debug Class
  *
- * @package Smarty
+ * @package    Smarty
  * @subpackage Debug
  */
 class Smarty_Internal_Debug extends Smarty_Internal_Data

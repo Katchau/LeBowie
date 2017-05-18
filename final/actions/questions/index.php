@@ -1,6 +1,6 @@
 <?php
-include_once("../../config/init.php");
-include_once($BASE_DIR . "database/questions.php");
+require_once "../../config/init.php";
+require_once $BASE_DIR . "database/questions.php";
 
 $id = strip_tags($_POST["question-user-id"]);
 $title = strip_tags($_POST["question-title"]);
@@ -11,6 +11,9 @@ $commaSeparatedTags = strip_tags($_POST["question-tags"]);
 $untrimmedTags = explode(",", $commaSeparatedTags);
 $tags = array_map('trim', $untrimmedTags);
 
-createQuestion($id, $title, $description, $topic, $tags);
-header("Location: $BASE_URL" . "pages/questions/ask.php");
+$questionId = createQuestion($id, $title, $description, $topic, $tags);
+if(!$questionId)
+	header("Location: $BASE_URL" . "pages/questions/ask.php");
+else
+	header("Location: $BASE_URL" . "pages/questions/index.php?id=" . $questionId);
 ?>
