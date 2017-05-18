@@ -1,6 +1,6 @@
 <?php
 require_once "../../config/init.php";
-require_once $BASE_DIR . "database/topics.php";
+require_once $BASE_DIR . "database/topic.php";
 
 $admin_id = strip_tags($_POST["topic-admin-id"]);
 $title = strip_tags($_POST["topic-title"]);
