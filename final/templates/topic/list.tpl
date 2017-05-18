@@ -21,7 +21,7 @@
 			<a href="" class="btn btn-default askButton">assign moderators</a>
 		</div>
 		<hr>
-		<hr>
+		{/if}
 	</div>
 	<div class="ask_area col-sm-8 col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
         <h1 class="hidden-lg hidden-md hidden-sm topicTitle">{$topic.topicname}</h1>
