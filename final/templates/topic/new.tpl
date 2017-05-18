@@ -19,7 +19,8 @@
 
     <div class="ask_area col-sm-8 col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
       <h1 class="hidden-lg hidden-md hidden-sm">Create Topic</h1>
-      <form action="" method="post" id="form-topic-new">
+      <form action="{$BASE_URL}actions/topics/" method="post" id="form-topic-new">
+        <input name="topic-admin-id" type="hidden" value="{$USERID}" >
         <div class="form-group well">
           <label for="question_header_title" class="col-2 col-form-label">Topic Name</label>
           <textarea class="form-control" name="topic-title" rows="1" id="question_header_title" placeholder="enter your topic name here"></textarea>
