@@ -139,12 +139,12 @@
 
     <div id="my-side-nav" class="side-nav">
 		<div class="side-nav-auth">
-			<a href="#">sign up</a>
+			<a href="{$BASE_URL}pages/users/signup.php">sign up</a>
 			<a href="#" data-toggle="modal" data-target="#myModal">sign in</a>
 		</div>
 		<hr>
 		<div class="side-nav-options">
-			<a href="#">ask</a>
+			<a href="{$BASE_URL}pages/questions/ask.php">ask</a>
 		</div>
 		<hr>
 		<div class="side-nav-topics">
