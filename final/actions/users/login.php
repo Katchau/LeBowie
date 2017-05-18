@@ -18,6 +18,16 @@ try{
         $_SESSION['username'] = $username;
         $_SESSION['userid'] = $user['id'];
         $_SESSION['success_messages'][] = 'Login successful';
+
+        $_SESSION['moderator'] = false;
+        $_SESSION['administrator'] = false;
+
+        if($user['user_type'] == 'Moderator')
+            $_SESSION['moderator'] = true;
+        else if ($user['user_type'] == 'Administrator'){
+            $_SESSION['moderator'] = true;
+            $_SESSION['administrator'] = true;
+        }
     } else {
         $_SESSION['error_messages'][] = 'Login failed';
     }
