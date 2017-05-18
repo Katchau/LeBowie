@@ -14,10 +14,14 @@
 			<h1>About {$topic.topicname}</h1>
 			<p class="topicInfo">{$topic.description}</p>
 			<a href="{$BASE_URL}pages/questions/ask.php" class="btn btn-default askButton">ask a question</a>
-			
+		</div>
+		<div class="mod_tools">
+			<h1>Moderation</h1>
+			<a href="" class="btn btn-default askButton">edit topic</a>
+			<a href="" class="btn btn-default askButton">assign moderators</a>
 		</div>
 		<hr>
-		{/if}
+		<hr>
 	</div>
 	<div class="ask_area col-sm-8 col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
         <h1 class="hidden-lg hidden-md hidden-sm topicTitle">{$topic.topicname}</h1>
