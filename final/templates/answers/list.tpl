@@ -27,17 +27,19 @@
 				<a aria-hidden="true" href="{$BASE_URL}pages/answers/comment.php?id={$answer.answer}" class="btn btn-default accept_btn"> accept this answer</a>
 				{/if}
 				
-				<a aria-hidden="true" href="{$BASE_URL}pages/answers/comment.php?id={$answer.answer}" class="btn btn-default comment_btn" {if !$USERNAME} disabled{/if}> comment</a>
+				{if isset($USERID)}
+				<a aria-hidden="true" href="{$BASE_URL}pages/answers/comment.php?id={$answer.answer}" class="btn btn-default comment_btn">comment</a>
 
-				<a class="btn btn-default" href="{$BASE_URL}/pages/reports/report.php?id={$answer.answer}" class="btn btn-default" {if !$USERNAME} disabled{/if}>
+				<a class="btn btn-default" href="{$BASE_URL}/pages/reports/report.php?id={$answer.answer}" class="btn btn-default">
 					<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
 				</a>
-				<button onclick="upvotePost({$answer.answer})" id="js-upvote-btn-{$answer.answer}" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
+				<button onclick="upvotePost({$answer.answer})" id="js-upvote-btn-{$answer.answer}" type="button" class="btn btn-default">
 					<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">{$answer.up_score}</span>
 				</button>
-				<button onclick="downvotePost({$answer.answer})" id="js-downvote-btn-{$answer.answer}" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
+				<button onclick="downvotePost({$answer.answer})" id="js-downvote-btn-{$answer.answer}" type="button" class="btn btn-default">
 					<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">{$answer.down_score}</span>
 				</button>
+				{/if}
 			</div>
 			<hr>
 
