@@ -11,16 +11,15 @@
 		<label class="tools_label topicTitle"> {$topic.topicname} </label>
 		<hr>
 		<div class="guidelines_side">
-			<h1>About {$topic.topicname}</h1>
+			<h4>About {$topic.topicname}</h4>
 			<p class="topicInfo">{$topic.description}</p>
 			<a href="{$BASE_URL}pages/questions/ask.php" class="btn btn-default askButton">ask a question</a>
 		</div>
 		{if $ADMINISTRATOR}
-		<br>
 		<hr>
 		<br>
 		<div class="guidelines_side mod_tools">
-			<h1>Moderation</h1>
+			<h4>Moderation</h4>
 			<a href="" class="btn btn-default askButton">edit topic</a>
 			<a href="" class="btn btn-default askButton">assign moderators</a>
 		</div>
