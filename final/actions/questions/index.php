@@ -12,8 +12,10 @@ $untrimmedTags = explode(",", $commaSeparatedTags);
 $tags = array_map('trim', $untrimmedTags);
 
 $questionId = createQuestion($id, $title, $description, $topic, $tags);
-if(!$questionId)
+if(!$questionId) {
+	$_SESSION["error_messages"][] = "Question creation failed";
 	header("Location: $BASE_URL" . "pages/questions/ask.php");
-else
+} else {
 	header("Location: $BASE_URL" . "pages/questions/index.php?id=" . $questionId);
+}
 ?>

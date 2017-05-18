@@ -64,7 +64,7 @@
             </div>
         </form>
 
-        <div class="text-right"><button class="btn" type="submit" form="form-ask" value="Submit">Submit Question</button></div>
+        <div class="text-right"><button class="btn" type="submit" form="form-ask" value="Submit">Submit Report</button></div>
 
         <div class="buffer_area"></div>
     </div>
