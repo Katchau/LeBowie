@@ -134,7 +134,9 @@
   color: white;
   background-color: orange;
 }
-
+.dropdown-menu .new_topic_drop_btn i {
+  padding-left: 30px; 
+}
 .navbar-default .navbar-nav > .open > a {
   color: #fafafa;
   background-color: #3f3f3f;
