@@ -3,7 +3,11 @@
 
 		<div class="media-left">
 			<a href="#">
-				<img class="hidden-xs media-object user_profile_pic" src="http://placehold.it/64x64" alt="user_image" height="50px">
+				{if $answer.image == NULL}
+				<img class="hidden-xs media-object user_profile_pic" src="http://placehold.it/64x64" alt="user_image"> 
+				{else}
+				<img class="hidden-xs media-object user_profile_pic" src="{$BASE_URL}images/users/{$answer.user_id}/{$answer.image}" alt="user_image">
+				{/if}
 			</a>
 		</div>
 
