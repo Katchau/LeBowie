@@ -48,6 +48,7 @@
         <form action="{$BASE_URL}actions/reports/" method="post" id="form-ask">
             <input name="user-id" type="hidden" value="{$USERID}">
             <input name="post-id" type="hidden" value="{$post_id}">
+            <input name="question-id" type="hidden" value="{$question_id}">
 
             <div class="form-group well">
                 <label for="report-title" class="col-2 col-form-label">Your Report</label>
