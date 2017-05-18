@@ -95,7 +95,7 @@ function getUserBadges($userId)
 function getUserApproximate($string){
 	global $conn;
 	$stmt = $conn->prepare('SELECT * FROM UserAcc 
-							WHERE username LIKE ?  OR email LIKE ?');
+							WHERE LOWER(username) LIKE LOWER(?)  OR LOWER(email) LIKE LOWER(?)');
 	$stmt->execute(array('%'.$string.'%','%'.$string.'%'));
 	return $stmt->fetchAll();
 }
