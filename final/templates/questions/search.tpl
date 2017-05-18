@@ -120,7 +120,7 @@
 						</div>
 
 						<div class="tab-pane fade in" id="usersearch">
-							
+							{include file='users/listusers.tpl' users=$users}
 						</div>
 						</div>
 					</div>
