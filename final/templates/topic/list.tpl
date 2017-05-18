@@ -15,11 +15,13 @@
 			<p class="topicInfo">{$topic.description}</p>
 			<a href="{$BASE_URL}pages/questions/ask.php" class="btn btn-default askButton">ask a question</a>
 		</div>
+		{if $ADMINISTRATOR}
 		<div class="mod_tools">
 			<h1>Moderation</h1>
 			<a href="" class="btn btn-default askButton">edit topic</a>
 			<a href="" class="btn btn-default askButton">assign moderators</a>
 		</div>
+		{/if}
 		<hr>
 		{/if}
 	</div>
