@@ -33,7 +33,7 @@
 				
 				{if isset($USERID)}
 				<a aria-hidden="true" href="{$BASE_URL}pages/answers/comment.php?id={$answer.answer}" class="btn btn-default comment_btn"> comment</a>
-				<a class="btn btn-default" href="{$BASE_URL}/pages/reports/report.php?id={$answer.answer}&question={$question.post_id} class="btn btn-default">
+				<a class="btn btn-default" href="{$BASE_URL}/pages/reports/report.php?id={$answer.answer}&question={$question.post_id}" class="btn btn-default">
 					<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
 				</a>
 				<button onclick="upvotePost({$answer.answer})" id="js-upvote-btn-{$answer.answer}" type="button" class="btn btn-default">
