@@ -97,6 +97,8 @@
                   </form>
                   <hr>
             </div>
+			<br>
+			<br>
 		</div>
 	</div>
 </div>
