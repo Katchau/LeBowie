@@ -1,5 +1,5 @@
 
-  {if !$questions}
+  {if $questions|@count == 0}
   	<div class="">
 		This is empty.
 	</div>
