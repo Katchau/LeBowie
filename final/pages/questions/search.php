@@ -10,5 +10,6 @@ $users = getUserApproximate($string);
 
 $smarty->assign('string',$string);
 $smarty->assign('questions',$questions);
+$smarty->assign('users',$users);
 $smarty->display('questions/search.tpl');
 ?>

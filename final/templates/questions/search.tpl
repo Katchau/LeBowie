@@ -87,6 +87,51 @@
 						<center><h3>Showing search Results for '{$string}'</h3></center>
 					</div>
 				</div>
+
+				<div class="row questionSearch">
+					<div class="col-lg-1"></div>
+					<div class="col-lg-10 board-inner">
+
+						<ul class="nav nav-tabs" id="tabs">
+						<div class="liner"></div>
+
+						<li class="question_tab active">
+							<a href="#questionsearch" data-toggle="tab" title="Questions">
+							<span class="round-tabs one">
+								<i class="glyphicon glyphicon-fire"></i> hot
+							</span>
+							</a>
+						</li>
+
+						<li class="question_tab">
+							<a href="#usersearch" data-toggle="tab" title="Users">
+							<span class="round-tabs one">
+								<i class="glyphicon glyphicon-time"></i> newest
+							</span>
+							</a>
+						</li>
+
+						</ul>
+
+						<div class="tab-content">
+
+						<div class="tab-pane fade in active" id="questionsearch">
+							{include file='questions/listquestions.tpl' questions=$questions type=0}
+						</div>
+
+						<div class="tab-pane fade in" id="usersearch">
+							
+						</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
 				<div class="questionSearch">
 					{include file='questions/listquestions.tpl' questions=$questions type=2}
 				</div>
