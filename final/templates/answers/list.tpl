@@ -22,12 +22,14 @@
 				{if $answer.accepted == true}
 				<a class="badge" href="#"><span class="glyphicon glyphicon-ok"></span></a>
 				{/if}
+
 				{if ($USERNAME == $question.username)}
 				<a aria-hidden="true" href="{$BASE_URL}pages/answers/comment.php?id={$answer.answer}" class="btn btn-default accept_btn"> accept this answer</a>
 				{/if}
-				<a aria-hidden="true" href="{$BASE_URL}pages/answers/comment.php?id={$answer.answer}" class="btn btn-default comment_btn"> comment</a>
+				
+				<a aria-hidden="true" href="{$BASE_URL}pages/answers/comment.php?id={$answer.answer}" class="btn btn-default comment_btn" {if !$USERNAME} disabled{/if}> comment</a>
 
-				<a class="btn btn-default" href="{$BASE_URL}/pages/reports/report.php?id={$answer.answer}" class="btn btn-default">
+				<a class="btn btn-default" href="{$BASE_URL}/pages/reports/report.php?id={$answer.answer}" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 					<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
 				</a>
 				<button onclick="upvotePost({$answer.answer})" id="js-upvote-btn-{$answer.answer}" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
