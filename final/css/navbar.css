@@ -130,6 +130,11 @@
   margin: 0;
 }
 
+.dropdown-menu .new_topic_drop_btn {
+  color: white;
+  background-color: orange;
+}
+
 .navbar-default .navbar-nav > .open > a {
   color: #fafafa;
   background-color: #3f3f3f;
