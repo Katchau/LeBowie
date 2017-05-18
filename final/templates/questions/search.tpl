@@ -116,7 +116,7 @@
 						<div class="tab-content">
 
 						<div class="tab-pane fade in active" id="questionsearch">
-							{include file='questions/listquestions.tpl' questions=$questions type=0}
+							{include file='questions/listquestions.tpl' questions=$questions type=2}
 						</div>
 
 						<div class="tab-pane fade in" id="usersearch">
@@ -124,16 +124,6 @@
 						</div>
 						</div>
 					</div>
-				</div>
-
-
-
-
-
-
-
-				<div class="questionSearch">
-					{include file='questions/listquestions.tpl' questions=$questions type=2}
 				</div>
 			</div>
 		</div>
