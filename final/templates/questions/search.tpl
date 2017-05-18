@@ -98,7 +98,7 @@
 						<li class="question_tab active">
 							<a href="#questionsearch" data-toggle="tab" title="Questions">
 							<span class="round-tabs one">
-								<i class="glyphicon glyphicon-fire"></i> hot
+								 Questions
 							</span>
 							</a>
 						</li>
@@ -106,7 +106,7 @@
 						<li class="question_tab">
 							<a href="#usersearch" data-toggle="tab" title="Users">
 							<span class="round-tabs one">
-								<i class="glyphicon glyphicon-time"></i> newest
+								 Users
 							</span>
 							</a>
 						</li>
