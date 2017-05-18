@@ -25,5 +25,4 @@ function createComment($userId, $answerId, $commentBody)
         return 0;
     }
 }
-
 ?>
