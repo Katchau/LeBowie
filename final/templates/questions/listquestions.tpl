@@ -1,6 +1,6 @@
 
   {if $questions|@count == 0}
-  	<div class="jumbotron">
+  	<div class="none_found jumbotron">
 			No questions found at this time.
 	</div>
   {/if}
