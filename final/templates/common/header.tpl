@@ -65,6 +65,9 @@
                 </a></li>
                 <li role="separator" class="divider"></li>
                 {/foreach}
+                {if $ADMINISTRATOR}
+                <li role="separator" class="divider"></li>
+                <li><a href="">New Topic></li>
             </ul>
           </li>
         </ul>

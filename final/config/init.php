@@ -36,6 +36,8 @@ if (is_null($DEF_TOPIC)) {
   $smarty->assign('SUCCESS_MESSAGES', $_SESSION['success_messages']);
   $smarty->assign('FORM_VALUES', $_SESSION['form_values']);
   $smarty->assign('USERNAME', $_SESSION['username']);
+  $smarty->assign('MODERATOR', $_SESSION['moderator']);
+  $smarty->assign('ADMINISTRATOR', $_SESSION['administrator']);
   $smarty->assign('USERID', $_SESSION['userid']);
   
   unset($_SESSION['success_messages']);
