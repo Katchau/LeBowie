@@ -68,6 +68,7 @@
                 {if $ADMINISTRATOR}
                 <li role="separator" class="divider"></li>
                 <li><a href="">New Topic></li>
+                {/if}
             </ul>
           </li>
         </ul>
