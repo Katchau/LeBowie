@@ -65,17 +65,19 @@
 								{/foreach}
 							</div>
 							<div class="question_votes">
+								{if isset($USERID)}
 								<label> Was this question relevant? Please leave a vote! </label>
 								<input type="hidden" value="{$question.post_id}">
-								<button type="button" class="btn btn-default">
+								<a class="btn btn-default" href="{$BASE_URL}/pages/reports/report.php?id={$question.post_id}&question={$question.post_id}">
 									<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
-								</button>
+								</a>
 								<button onclick="upvotePost({$question.post_id})" id="js-upvote-btn-{$question.post_id}" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 									<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">{$question.up_score}</span>
 								</button>
 								<button onclick="downvotePost({$question.post_id})" id="js-downvote-btn-{$question.post_id}" type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 									<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">{$question.down_score}</span>
 								</button>
+								{/if}
 							</div>
 						</div>
 					</div>
