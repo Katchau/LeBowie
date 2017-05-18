@@ -1,4 +1,10 @@
 
+  {if $questions|@count == 0}
+  	<div class="">
+		This is empty.
+	</div>
+  {/if}
+  
   {foreach $questions as $question}
 
 	<div class="question well">
