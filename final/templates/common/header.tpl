@@ -67,7 +67,7 @@
                 {/foreach}
                 {if $ADMINISTRATOR}
                 <li role="separator" class="divider"></li>
-                <li><a href="">New Topic></li>
+                <li><a href="">New Topic</a></li>
                 {/if}
             </ul>
           </li>
