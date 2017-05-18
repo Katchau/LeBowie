@@ -91,6 +91,14 @@ function getUserBadges($userId)
     }
     return $badges;
 }
+
+function getUserApproximate($string){
+	global $conn;
+	$stmt = $conn->prepare('SELECT * FROM UserAcc 
+							WHERE username LIKE ?  OR email LIKE ?');
+	$stmt->execute(array('%'.$string.'%','%'.$string.'%'));
+	return $stmt->fetchAll();
+}
     
 function generateRandomString($length) 
 {
