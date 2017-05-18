@@ -8,4 +8,7 @@ $postId = strip_tags($_POST["post-id"]);
 $title = strip_tags($_POST["report-title"]);
 $reason = strip_tags($_POST["report-reason"]);
 $content = strip_tags($_POST["report-content"]);
+
+createReport($postId, $userId, $title, $content, $reason);
+header("Location: $BASE_URL" . "pages/questions/index.php?id=$postId");
 ?>
