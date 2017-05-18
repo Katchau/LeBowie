@@ -15,7 +15,7 @@ try{
     $user = getUserInfo($username);
 
     if ($user != false && ($user['password'] === getHash($_POST['password'], $user['salt']))) {
-        $_SESSION['username'] = $username;
+        $_SESSION['username'] = $user['username'];
         $_SESSION['userid'] = $user['id'];
         $_SESSION['success_messages'][] = 'Login successful';
 
