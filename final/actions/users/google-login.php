@@ -3,14 +3,14 @@ require_once '../../config/init.php';
 require_once $BASE_DIR . 'database/users.php';
 
 if (!$_POST['email']) {
-    header('Location: ' . $_SERVER['HTTP_REFERER']);
+    header('Location: ' . $BASE_DIR);
     exit;
 }
 
 $email = $_POST['email'];
 $user = getUserInfo($email);
 
-if ($user != false && $user['google'] === true) {
+if ($user != false && $user['gosogle'] === true) {
     $_SESSION['username'] = $user['username'];
         $_SESSION['userid'] = $user['id'];
         $_SESSION['success_messages'][] = 'Login successful';
