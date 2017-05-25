@@ -13,3 +13,6 @@
 <script src="{$BASE_URL}javascript/common/main.js"></script>
 <script src="{$BASE_URL}javascript/common/navbar.js"></script>
 
+<!-- Google login -->
+<script src="{$BASE_URL}javascript/google-login/google-login.js"></script>
+
