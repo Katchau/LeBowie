@@ -115,7 +115,13 @@
                 <div class="modal-footer">
                   <div class="row">
                     <div class="col-xs-6 col-md-6">
-                      <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                      <form id="google-signin" method="post" action="{$BASE_URL}pages/users/signup-google.php">
+                        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                        <input id="google-signin-email" type="hidden" name="email" value="">
+                        <input id="google-signin-first-name" type="hidden" name="first-name" value="">
+                        <input id="google-signin-last-name" type="hidden" name="last-name" value="">
+                        <input id="google-signin-image" type="hidden" name="image" value="">
+                      </form>
                     </div>
                     <div class="col-lg-3"></div>
                     <div class="col-md-3"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div>

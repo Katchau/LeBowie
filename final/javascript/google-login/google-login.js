@@ -1,17 +1,16 @@
 function onSignIn(googleUser) {
-    console.log("HERE");
     var profile = googleUser.getBasicProfile();
     console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
     console.log('Name: ' + profile.getName());
     console.log('Image URL: ' + profile.getImageUrl());
     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 
-    $.post(`${BASE_URL}pages/users/signup-google.php`, {
-        email: profile.getEmail(),
-        first_name: profile.getGivenName(),
-        last_name: profile.getFamilyName(),
-        image: profile.getImageUrl()
-    });
+    document.getElementById('google-signin-email').value = profile.getEmail();
+    document.getElementById('google-signin-first_name').value = profile.getGivenName();
+    document.getElementById('google-signin-last-name').value = profile.getFamilyName();
+    document.getElementById('google-signin-image').value = profile.getImageUrl();
+
+    document.getElementById('google-signin').submit();
 }
 
 function signOut() {
