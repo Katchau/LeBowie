@@ -5,7 +5,12 @@
     //Get list of all countries
     $countries = getListCountries();
 
-    $user = getUserById();
+    $email = $_POST['email'];
+    $first_name = $_POST['first-name'];
+    $last_name = $_POST['last-name'];
+    $image = $_POST['image'];
+
+    $user = getUserEmail($email);
     if ($user != null) {
         header('Location: ' . $BASE_DIR . 'actions/google-login.php');
     }
