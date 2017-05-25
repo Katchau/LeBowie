@@ -119,6 +119,15 @@ function createUser($firstname, $lastname, $username, $email, $password, $birth,
     return $stmt->execute(array($firstname, $lastname, $salt, $username, $email, getHash($password, $salt), $birth, $country));
 }
 
+function createUserGoogle($firstName, $lastName, $username, $email, $birth, $country) 
+{
+    global $conn;
+    $password = generateRandomString(32);
+    $salt = generateRandomString(8);
+    $stmt = $conn->prepare('INSERT INTO useracc (first_name, last_name, salt, username, email, password, birth, country, google) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)');
+    return $stmt->execute(array($firstname, $lastname, $salt, $username, $email, getHash($password, $salt), $birth, $country, true));
+}
+
 function deleteUser($userId) 
 {
     global $conn;

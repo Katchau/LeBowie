@@ -13,6 +13,11 @@
                     <input required type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Username" tabindex="3">
                 </div>
 
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="form-group date text-center" data-provide="datepicker">
+                        <input required type="date" class="form-control" name="birth">
+                    </div>
+                </div>
                 <div class="form-group">
                     <select class="form-control input-lg" name="country" required id="country_select">
   						<option selected="selected" value="">Country</option>
@@ -21,6 +26,11 @@
   						{/foreach}
   					</select>
                 </div>
+
+                <input type="hidden" name="email" value="{$email}">
+                <input type="hidden" name="first_name" value="{$first-name}">
+                <input type="hidden" name="last_name" value="{$last-name}">
+                <input type="hidden" name="image" value="{$image}"
 
                 <hr class="colorgraph">
                 <div class="row">
