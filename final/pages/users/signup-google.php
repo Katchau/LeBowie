@@ -12,7 +12,7 @@ $image = $_POST['image'];
 
 $user = getUserEmail($email);
 if ($user != null) {
-    header('Location: ' . $BASE_DIR . 'actions/google-login.php');
+    header('Location: ' . $BASE_DIR . 'actions/users/google-login.php');
 }
 
 $smarty->assign('countries', $countries);
