@@ -13,8 +13,8 @@ if(isset($questionId)) {
 		$selected = ($question['answer_desc'] != null) ? getSelectedAnswer($questionId) : null;
 		$allComments = [];
 		foreach($answers as $answer){
-			$comments = getComments($answer.id);
-			array_push($allComments, $comments);
+			//$comments = getComments($answer.answer);
+			//array_push($allComments, $comments);
 		}
 
 		$smarty->assign('question', $question);
