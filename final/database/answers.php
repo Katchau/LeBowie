@@ -30,7 +30,7 @@ function createAnswer($userId, $question_id, $answer_body)
 	global $conn;
 	try{
 		$conn->beginTransaction();
-		$lastId = createPost($userId,$description);
+		$lastId = createPost($userId,$answer_body);
 		$stmt = $conn->prepare("INSERT INTO answer (post_id, question_id)
 								VALUES (?, ?)");
 		$stmt->execute(array($lastId, $question_id));
