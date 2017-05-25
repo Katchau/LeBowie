@@ -77,7 +77,7 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          {if $USERNAME}
+          {if $GOOGLE}
           <li class="navbar-highlight"><a href="{$BASE_URL}pages/questions/ask.php">ask</a></li>
           <li><a href="{$BASE_URL}pages/users/index.php?username={$USERNAME}">{$USERNAME}</a></li>
           <li><a href="#" onclick="signOut();">sign out</a></li>

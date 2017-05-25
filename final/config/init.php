@@ -39,6 +39,7 @@ if (is_null($DEF_TOPIC)) {
   $smarty->assign('MODERATOR', $_SESSION['moderator']);
   $smarty->assign('ADMINISTRATOR', $_SESSION['administrator']);
   $smarty->assign('USERID', $_SESSION['userid']);
+  $smarty->assign('GOOGLE', $_SESSION['google-email']);
   
   unset($_SESSION['success_messages']);
   unset($_SESSION['error_messages']);  
