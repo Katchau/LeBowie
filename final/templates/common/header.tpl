@@ -77,7 +77,7 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          {if $GOOGLE}
+          {if $USERNAME}
           <li class="navbar-highlight"><a href="{$BASE_URL}pages/questions/ask.php">ask</a></li>
           <li><a href="{$BASE_URL}pages/users/index.php?username={$USERNAME}">{$USERNAME}</a></li>
           <li><a href="#" onclick="signOut();">sign out</a></li>
@@ -115,7 +115,7 @@
                 <div class="modal-footer">
                   <div class="row">
                     <div class="col-xs-6 col-md-6">
-                      {if $USERNAME}
+                      {if $GOOGLE}
                       {else}
                       <form id="google-signin" method="post" action="{$BASE_URL}pages/users/signup-google.php">
                         <div class="g-signin2" data-onsuccess="onSignIn"></div>
