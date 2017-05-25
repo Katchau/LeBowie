@@ -10,6 +10,10 @@
     color: orange;
     font-weight: bold;
 }
+a.orange:hover, a.orange:active{
+    color: orange;
+	text-decoration: underline;
+}
 .welcome .btn{
     background-color: orange;
 }

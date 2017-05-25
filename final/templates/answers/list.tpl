@@ -48,8 +48,9 @@
 
 
 			<div class="comments">
-				
+				<a href="#" class="orange">View comments for this answer</a>
 			</div>
+			
 			<hr>
 		</div>
 	</div>
