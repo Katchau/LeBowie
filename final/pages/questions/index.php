@@ -14,7 +14,7 @@ if(isset($questionId)) {
 		$allComments = [];
 		foreach($answers as $answer){
 			$comments = getComments($answer.answer);
-			array_push($allComments, $comments);
+			//array_push($allComments, $comments);
 		}
 
 		$smarty->assign('question', $question);
