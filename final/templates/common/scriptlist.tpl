@@ -14,4 +14,5 @@
 
 <!-- Google login -->
 <script src="{$BASE_URL}javascript/google-login/google-login.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 
