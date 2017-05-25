@@ -1,4 +1,4 @@
-{include file='common/header.tpl'} {include file='common/scriptlist.tpl'}
+{include file='common/header.tpl'}
 
 <div id="extras-side-nav" class="side-nav">
 	<div class="panel side-nav-guidelines">
