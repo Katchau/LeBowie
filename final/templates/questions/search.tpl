@@ -99,7 +99,7 @@
 						<li class="question_tab active">
 							<a href="#questionsearch" data-toggle="tab" title="Questions">
 							<span class="round-tabs one">
-								 Questions <i class="glyphicon glyphicon-question-sign"></i>
+								 <i class="glyphicon glyphicon-question-sign"></i> Questions 
 							</span>
 							</a>
 						</li>
@@ -107,7 +107,7 @@
 						<li class="question_tab">
 							<a href="#usersearch" data-toggle="tab" title="Users">
 							<span class="round-tabs one">
-								 Users <i class="glyphicon glyphicon-user"></i>
+								 <i class="glyphicon glyphicon-user"></i>  Users
 							</span>
 							</a>
 						</li>
