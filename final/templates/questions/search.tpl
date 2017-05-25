@@ -2,7 +2,9 @@
 {include file='common/scriptlist.tpl'}
 
 
-	<div id="searchBody">	
+	<div class="container" id="searchBody">
+		<div class="row">
+	
 			<div class="extras hidden-xs col-sm-4 col-md-push-8 col-sm-push-8">
 				<label class="tools_label"> advanced search <span class="glyphicon glyphicon-search"></span></label>
 				<hr>
@@ -124,7 +126,7 @@
 					</div>
 				</div>
 			</div>
-		
+		</div>
 	</div>
 
 <script src="{$BASE_URL}javascript/posts/search.js"></script>
