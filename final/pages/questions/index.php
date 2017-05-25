@@ -13,7 +13,7 @@ if(isset($questionId)) {
 		$selected = ($question['answer_desc'] != null) ? getSelectedAnswer($questionId) : null;
 		$allComments = [];
 		foreach($answers as $answer){
-			$comments = getComments($answer.id);
+			$comments = getComments($answer.answer);
 			array_push($allComments, $comments);
 		}
 
