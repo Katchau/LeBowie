@@ -11,11 +11,17 @@ if(isset($questionId)) {
 		$tags = getQuestionTags($questionId);
 		$answers = getBestAnswers($questionId);
 		$selected = ($question['answer_desc'] != null) ? getSelectedAnswer($questionId) : null;
+		$allComments = [];
+		foreach($answers as $answer){
+			$comments = getComments($answer.id);
+			array_push($allComments, $comments);
+		}
 
 		$smarty->assign('question', $question);
 		$smarty->assign('tags', $tags);
 		$smarty->assign('answers', $answers);
 		$smarty->assign('selected', $selected);
+		$smarty->assign('allcomments', $allComments);
 		$smarty->display('questions/question.tpl');
 
 	}
