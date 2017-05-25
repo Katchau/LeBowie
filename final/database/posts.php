@@ -2,9 +2,7 @@
 function createPost($userId, $description) 
 {
     global $conn;
-    $stmt = $conn->prepare("SET TRANSACTION 
-			ISOLATION LEVEL READ COMMITED
-			READ WRITE");
+    $stmt = $conn->prepare("SET TRANSACTION ISOLATION LEVEL READ COMMITTED READ WRITE");
 	$stmt->execute();
 	$stmt = $conn->prepare("
 			INSERT INTO Post(current_state)
