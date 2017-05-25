@@ -2,7 +2,7 @@
 
 <div class="container">
 
-  {if $FIRST_VISIT}
+  {if !$FIRST_VISIT}
   <div class="row welcome in" id="welcome">
     <div class="col-lg-1"></div>
     <div class="col-lg-10 jumbotron text-center">
