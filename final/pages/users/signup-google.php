@@ -15,12 +15,10 @@ if ($user != null) {
     header('Location: ' . $BASE_DIR . 'actions/google-login.php');
 }
 
-echo 'FIRST_NAME=' . $first_name;
-
 $smarty->assign('countries', $countries);
 $smarty->assign('email', $email);
-$smarty->assign('first-name', $first_name);
-$smarty->assign('last-name', $last_name);
+$smarty->assign('first_name', $first_name);
+$smarty->assign('last_name', $last_name);
 $smarty->assign('image', $image);
 
 $smarty->display('users/register_google.tpl');

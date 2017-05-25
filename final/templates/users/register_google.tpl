@@ -28,8 +28,8 @@
                 </div>
 
                 <input type="hidden" name="email" value={$email}>
-                <input type="hidden" name="first_name" value={$first-name}>
-                <input type="hidden" name="last_name" value={$last-name}>
+                <input type="hidden" name="first_name" value={$first_name}>
+                <input type="hidden" name="last_name" value={$last_name}>
                 <input type="hidden" name="image" value={$image}>
 
                 <hr class="colorgraph">
