@@ -56,19 +56,24 @@
         <div class="tab-content">
 
           <div class="tab-pane fade in active" id="hotq">
-	  {include file='questions/listquestions.tpl' questions=$hquestions type=0}
+	        {include file='questions/listquestions.tpl' questions=$hquestions type=0}
           </div>
 
           <div class="tab-pane fade in" id="newq">
-	  {include file='questions/listquestions.tpl' questions=$rquestions type=0}
+      	  {include file='questions/listquestions.tpl' questions=$rquestions type=0}
           </div>
           <div class="tab-pane fade in  " id="bestq">
-  	  {include file='questions/listquestions.tpl' questions=$bquestions type=0}
+  	      {include file='questions/listquestions.tpl' questions=$bquestions type=0}
           </div>
         </div>
       </div>
     </div>
     <div class="col-lg-1"></div>
   </div>
+
+  <script async defer src="https://apis.google.com/js/api.js" 
+    onload="this.onload=function(){};handleClientLoad()" 
+    onreadystatechange="if (this.readyState === 'complete') this.onload()">
+  </script>
   
   {include file='common/footer.tpl'}
