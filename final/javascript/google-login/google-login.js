@@ -1,4 +1,4 @@
-let credentials = {
+/*let credentials = {
     apiKey: 'AIzaSyBEns6eMAJ0KUf9DckGX_80FnhyyRcSC2g',
     discoveryDocs: ["https://people.googleapis.com/$discovery/rest?version=v1"],
     clientId: '368853933346-n6sheti6h9gnvhrl28hflukm3ussbjiq.apps.googleusercontent.com',
@@ -38,4 +38,12 @@ function makeApiCall() {
     }).then(function(resp) {
         console.log(resp.result.names[0].givenName);
     });
+}*/
+
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 }

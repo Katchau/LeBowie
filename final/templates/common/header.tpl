@@ -7,6 +7,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta name="google-signin-client_id" content="368853933346-n6sheti6h9gnvhrl28hflukm3ussbjiq.apps.googleusercontent.com">
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -115,6 +117,7 @@
             				<a id="google-login-btn" class="btn btn-block btn-social btn-google">
             				    <i class="fa fa-google" aria-hidden="true"></i> Sign in with Google
             				</a>
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
             			    </div>
                       <div class="col-lg-3"></div>
             			    <div class="col-md-3"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div>
