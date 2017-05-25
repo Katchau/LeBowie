@@ -17,7 +17,6 @@ function hideComments(id){
 
 function getComment(){
 	var id = $(this).attr("id");
-	console.log(isHidden);
 	if(isHidden){
 		$.get(getCommentsUrl,
 		{
