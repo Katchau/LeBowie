@@ -16,9 +16,8 @@ function createQuestion($userId, $title, $description, $topic, $tags)
 	
 		$conn->beginTransaction();
 		$lastId = createPost($userId,$description);
-		$stmt = $conn->prepare("INSERT INTO question (post_id, topic_id, title) 
-				VALUES (?, ?, ?)");
-		$stmt->execute(array($lastId,$topic, $title));
+		$stmt = $conn->prepare("INSERT INTO question (post_id, topic_id, title) VALUES (?, ?, ?)");
+		$stmt->execute(array($lastId, $topic, $title));
 		$conn->commit();
 		foreach ($tags as $tag) {
 			addTag($lastId, $tag);
@@ -27,6 +26,7 @@ function createQuestion($userId, $title, $description, $topic, $tags)
 	}
 	catch (PDOException $e) {
 		$conn->rollBack();
+        $_SESSION["error_messages"][] = "Question creation failed";
 		echo "Failed: " . $e->getMessage();
 		return 0;
 	}

@@ -8,7 +8,6 @@ function createReport($post_id, $user_id, $title, $content, $reason)
         $stmt = $conn->prepare("INSERT INTO Report (post_id, user_id, title, content, reason) VALUES (?,?,?,?,?) ");
         $stmt->execute(array($post_id, $user_id, $title, $content, $reason));
         $conn->commit();
-
     } catch (PDOException $e){
         $conn->rollBack();
         echo 'Failed: ' . $e->getMessage();
