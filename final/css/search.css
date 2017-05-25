@@ -17,6 +17,7 @@
 .questionSearch .tab-content{
     overflow-y: scroll;
     max-height: 450px;
+    overflow-x: hide;
 }
 #searchBody{
     text-align: justify;
