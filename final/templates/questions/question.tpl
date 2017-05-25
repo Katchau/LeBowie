@@ -97,5 +97,6 @@
 </div>
 
 <script src="{$BASE_URL}javascript/posts/posts.js"></script>
+<script src="{$BASE_URL}javascript/posts/comments.js"></script>
 
 {include file='common/footer.tpl'}

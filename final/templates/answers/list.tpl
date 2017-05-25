@@ -44,14 +44,16 @@
 				</button>
 				{/if}
 			</div>
-			<hr>
 
 
-			<div class="comments">
-				<a href="#" class="orange">View comments for this answer</a>
+			<div id={$answer.answer} class="comments">
+				<a id={$answer.answer} href="#" class="orange">View comments for this answer</a>
+				<div>
+				</div>
 			</div>
 			
 			<hr>
+			<br>
 		</div>
 	</div>
 </div>

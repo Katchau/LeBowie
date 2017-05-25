@@ -1,35 +1,39 @@
+var isHidden = true;
 
-function displayQuestions(questions){
-	var baseDir = '.searchResults .questionSearch';
+function displayComments(comments, id){
+	var baseDir = ".comments" + '#' + id + " div";
 	$(baseDir).empty();
-	$(baseDir).append(questions);
+	$(baseDir).append(comments);
+	isHidden = !isHidden;
+	$('.comments a').text('Hide comments for this answer');
+}
+
+function hideComments(id){
+	var baseDir = ".comments" + '#' + id + " div";
+	$(baseDir).empty();
+	isHidden = !isHidden;
+	$('.comments a').text('View comments for this answer');
 }
 
 function getComment(){
-	console.log('wtf');
-	$.get(getSearchUrl,
-	{
-		'title' : nameToSearch,
-		'tags[]' : tags,
-		'recent' : byRecent,
-		'best' : byBest
-	},
-	function(data, status){
-		//TODO tratar da mensagem de erro?
-		if(status === 'success'){
-			displayQuestions(data);
-		}
-	});
+	var id = $(this).attr("id");
+	console.log(isHidden);
+	if(isHidden){
+		$.get(getCommentsUrl,
+		{
+			'answer' : id,
+		},
+		function(data, status){
+			if(status === 'success'){
+				displayComments(data, id);
+			}
+		});
+	}
+	else hideComments(id);
 }
 
 function loadDocument(){
-	$('.navbar .collapse .navbar-form .input-group input[type=text]').keydown(searchText);
-	$('.navbar .collapse .navbar-form .input-group input[type=text]').keypress(updateSearch);
-	$('.advanced_tags_search textarea').keydown(writeTags);
-	$('.advanced_topic_search ul a').click(updateTopic);
-	$('.advanced_score_search input[type=checkbox]').click(updateOrderScore);
-	$('.advanced_date_search  ul a').click(updateOrderDate);
-	$('.apply_filters_btn').click(updateFilters);
+	$('.comments a').click(getComment);
 }
 
 $(document).ready(loadDocument);
