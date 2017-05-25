@@ -10,9 +10,10 @@ $first_name = $_POST['first-name'];
 $last_name = $_POST['last-name'];
 $image = $_POST['image'];
 
+$_SESSION['google-email'] = $email;
+
 $user = getUserEmail($email);
 if ($user != null) {
-    $_SESSION['google-email'] = $email;
     header('Location: ' . $BASE_URL . 'actions/users/google-login.php');
     exit;
 }
