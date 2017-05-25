@@ -2,15 +2,15 @@
 require_once '../../config/init.php';
 require_once $BASE_DIR . 'database/users.php';
 
-if (!$_POST['email']) {
-    header('Location: ' . $BASE_DIR);
+if (!$_SESSION['google-email']) {
+    header('Location: ' . $BASE_URL);
     exit;
 }
 
-$email = $_POST['email'];
+$email = $_SESSION['google-email'];
 $user = getUserInfo($email);
 
-if ($user != false && $user['gosogle'] === true) {
+if ($user != false && $user['google'] === true) {
     $_SESSION['username'] = $user['username'];
         $_SESSION['userid'] = $user['id'];
         $_SESSION['success_messages'][] = 'Login successful';

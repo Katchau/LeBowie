@@ -12,6 +12,7 @@ $image = $_POST['image'];
 
 $user = getUserEmail($email);
 if ($user != null) {
+    $_SESSION['google-email'] = $email;
     header('Location: ' . $BASE_URL . 'actions/users/google-login.php');
     exit;
 }
