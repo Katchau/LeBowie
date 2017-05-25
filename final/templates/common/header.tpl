@@ -70,7 +70,7 @@
               <li role="separator" class="divider"></li>
               <li role="separator" class="divider"></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#" class="new_topic_drop_btn">new topic<i class="glyphicon glyphicon-plus-sign"></i></a></li>
+              <li><a href="{$BASE_URL}pages/topic/new.php" class="new_topic_drop_btn">new topic<i class="glyphicon glyphicon-plus-sign"></i></a></li>
               {/if}
             </ul>
           </li>
@@ -80,7 +80,7 @@
           {if $USERNAME}
           <li class="navbar-highlight"><a href="{$BASE_URL}pages/questions/ask.php">ask</a></li>
           <li><a href="{$BASE_URL}pages/users/index.php?username={$USERNAME}">{$USERNAME}</a></li>
-          <li><a href="{$BASE_URL}actions/users/logout.php" onclick="signOut();">sign out</a></li>
+          <li><a href="#" onclick="signOut();">sign out</a></li>
           {else}
           <li class="navbar-highlight"><a href="#" data-toggle="modal" data-target="#myModal">ask</a></li>
           <li><a href="{$BASE_URL}pages/users/signup.php">sign up</a></li>
