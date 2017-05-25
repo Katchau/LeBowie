@@ -14,10 +14,9 @@
     padding-top:10px;
     padding-left: 5px;
 }
-.questionSearch .tab-content{
+.questionSearch #usersearch{
     overflow-y: scroll;
     max-height: 450px;
-    overflow-x: hide;
 }
 #searchBody{
     text-align: justify;
