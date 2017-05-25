@@ -12,8 +12,8 @@ $image = $_POST['image'];
 
 $user = getUserEmail($email);
 if ($user != null) {
-    echo 'Location: ' . $BASE_DIR . 'actions/users/google-login.php';
-    // header('Location: ' . $BASE_DIR . 'actions/users/google-login.php');
+    header('Location: ' . $BASE_URL . 'actions/users/google-login.php');
+    exit;
 }
 
 $smarty->assign('countries', $countries);
