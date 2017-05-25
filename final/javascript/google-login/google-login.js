@@ -1,4 +1,4 @@
-let credentials = {
+let googleCredentials = {
     apiKey: 'AIzaSyBEns6eMAJ0KUf9DckGX_80FnhyyRcSC2g',
     discoveryDocs: ["https://people.googleapis.com/$discovery/rest?version=v1"],
     clientId: '368853933346-n6sheti6h9gnvhrl28hflukm3ussbjiq.apps.googleusercontent.com',
