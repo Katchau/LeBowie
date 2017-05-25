@@ -12,6 +12,7 @@ function handleClientLoad() {
 }
 
 function initClient() {
+    gapi.api.init();
     gapi.client.init(credentials).then(function() {
         gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
         updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
