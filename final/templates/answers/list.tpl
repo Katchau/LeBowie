@@ -2,7 +2,7 @@
 	<div class="media">
 
 		<div class="media-left">
-			<a href="#">
+			<a href="{$BASE_URL}pages/users/index.php?username={$answer.username}">
 				{if $answer.image == NULL}
 				<img class="hidden-xs media-object user_profile_pic" src="http://placehold.it/64x64" alt="user_image"> 
 				{else}
@@ -17,7 +17,7 @@
 			</div>
 
 			<div class="answer_details"> answered by
-				<a class="answer_author" href="#">{$answer.username}</a>
+				<a class="answer_author" href="{$BASE_URL}pages/users/index.php?username={$answer.username}">{$answer.username}</a>
 				on
 				<span class="answer_date">{$answer.creation}</span>
 			</div>

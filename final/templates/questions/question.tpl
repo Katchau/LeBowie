@@ -39,7 +39,7 @@
 			<div class="question">
 				<div class="media">
 					<div class="media-left">
-						<a href="#">
+						<a href="{$BASE_URL}pages/users/index.php?username={$question.username}>"
 							{if $question.image == NULL}
 							<img class="hidden-xs media-object user_profile_pic" src="http://placehold.it/64x64" alt="user_image"> 
 							{else}
