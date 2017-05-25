@@ -11,7 +11,7 @@ function onSignIn(googleUser) {
     document.getElementById('google-signin-last-name').value = profile.getFamilyName();
     document.getElementById('google-signin-image').value = profile.getImageUrl();
 
-    //document.getElementById('google-signin').submit();
+    document.getElementById('google-signin').submit();
 }
 
 function signOut() {
