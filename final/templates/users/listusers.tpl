@@ -15,7 +15,7 @@
 				{/if}
 			</a>
 			<h3 class ="writer"><a href="{$BASE_URL}pages/users/index.php?username={$userr.username}">{$userr.username}</a> </h3>
-			<span class="">{$userr.first_name}." ".{$userr.last_name}</span>
+			<span class="">{$userr.first_name} {$userr.last_name}</span>
 	</div>
 
   {/foreach}
