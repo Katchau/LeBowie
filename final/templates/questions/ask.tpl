@@ -60,7 +60,9 @@
 					<textarea name="question-title" class="form-control" rows="1" id="question_header_title" placeholder="enter your question here"></textarea>
 					<hr>
 					<label for="question_header_contents" class="col-2 col-form-label">More Information (optional)</label>
-					<textarea id="post-editor" name="question-description" class="form-control" rows="5" id="question_header_contents" placeholder="provide context for your question"></textarea>
+					<form method="post">
+						<textarea id="post-editor" name="question-description" class="form-control" rows="5" id="question_header_contents" placeholder="provide context for your question"></textarea>
+					</form>
 				</div>
 				<div class="well pick_topic">
 					<div class="form-group">
