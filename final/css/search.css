@@ -18,6 +18,10 @@
     overflow-y: scroll;
     max-height: 450px;
 }
+.questionSearch .well{
+    padding-top:0px;
+    padding-bottom:0px;
+}
 #searchBody{
     text-align: justify;
 }
