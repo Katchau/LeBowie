@@ -12,3 +12,7 @@ tinymce.init({
       'save table contextmenu directionality emoticons template paste textcolor'
     ],
 });
+
+function hideBanner() {
+    document.cookie = "first_visit=false"
+}

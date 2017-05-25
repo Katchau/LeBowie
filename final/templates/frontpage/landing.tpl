@@ -2,6 +2,7 @@
 
 <div class="container">
 
+  {if $FIRST_VISIT}
   <div class="row welcome in" id="welcome">
     <div class="col-lg-1"></div>
     <div class="col-lg-10 jumbotron text-center">
@@ -11,10 +12,11 @@
       <p>To ask a question, simply press the <span class="orange">ask</span> button above. Make sure to browse existing questions
         though, as your question might have already been answered.</p>
       <br>
-      <center><button class="btn btn-warning" data-toggle="collapse" data-target="#welcome">Ok!</button></center><br>
+      <center><button class="btn btn-warning" data-toggle="collapse" data-target="#welcome" onclick="hideBanner()">Got it!</button></center><br>
     </div>
     <div class="col-lg-1"></div>
   </div>
+  {/if}
 
   <div class="row">
     <!--<div class="col-lg-12 text-center">Newton's Apple</div>-->
