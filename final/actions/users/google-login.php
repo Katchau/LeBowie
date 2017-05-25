@@ -27,5 +27,5 @@ if ($user != false && $user['gosogle'] === true) {
 } else {
     $_SESSION['error_messages'][] = 'Login failed';
 }
-header('Location: ' . $BASE_DIR);
+header('Location: ' . $BASE_URL);
 ?>
