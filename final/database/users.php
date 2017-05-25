@@ -125,7 +125,7 @@ function createUserGoogle($firstName, $lastName, $username, $email, $birth, $cou
     $password = generateRandomString(32);
     $salt = generateRandomString(8);
     $stmt = $conn->prepare('INSERT INTO useracc (first_name, last_name, salt, username, email, password, birth, country, google) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)');
-return $stmt->execute(array($firstname, $lastname, $salt, $username, $email, getHash($password, $salt), $birth, $country, true));
+return $stmt->execute(array($firstName, $lastName, $salt, $username, $email, getHash($password, $salt), $birth, $country, true));
 }
 
 function deleteUser($userId) 
