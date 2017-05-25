@@ -26,7 +26,7 @@ function createQuestion($userId, $title, $description, $topic, $tags)
 	}
 	catch (PDOException $e) {
 		$conn->rollBack();
-        $_SESSION["error_messages"][] = "Question creation failed";
+        $_SESSION["error_messages"][] = $e->getMessage();
 		echo "Failed: " . $e->getMessage();
 		return 0;
 	}
