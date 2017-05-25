@@ -1,8 +1,8 @@
 let credentials = {
-    apiKey = 'AIzaSyBEns6eMAJ0KUf9DckGX_80FnhyyRcSC2g',
-    discoveryDocs = ["https://people.googleapis.com/$discovery/rest?version=v1"],
-    clientId = '368853933346-n6sheti6h9gnvhrl28hflukm3ussbjiq.apps.googleusercontent.com',
-    scopes = 'profile'
+    apiKey: 'AIzaSyBEns6eMAJ0KUf9DckGX_80FnhyyRcSC2g',
+    discoveryDocs: ["https://people.googleapis.com/$discovery/rest?version=v1"],
+    clientId: '368853933346-n6sheti6h9gnvhrl28hflukm3ussbjiq.apps.googleusercontent.com',
+    scopes: 'profile'
 }
 
 let button = document.getElementById('google-login-button');
