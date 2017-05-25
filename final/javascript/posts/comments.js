@@ -5,14 +5,14 @@ function displayComments(comments, id){
 	$(baseDir).empty();
 	$(baseDir).append(comments);
 	isHidden = !isHidden;
-	$('.comments a').text('Hide comments for this answer');
+	$('.comments a#' + id).text('Hide comments for this answer');
 }
 
 function hideComments(id){
 	var baseDir = ".comments" + '#' + id + " div";
 	$(baseDir).empty();
 	isHidden = !isHidden;
-	$('.comments a').text('View comments for this answer');
+	$('.comments a#' + id).text('View comments for this answer');
 }
 
 function getComment(){
