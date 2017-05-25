@@ -10,6 +10,10 @@
 .questionSearch .jumbotrona .dropdown li a{
     color: gray;
 }
+.questionSearch .username_results {
+    padding-top:10px;
+    padding-left: 5px;
+}
 #searchBody{
     text-align: justify;
 }

@@ -14,7 +14,7 @@
 				{/if}
 			</a>
 	</div>
-	<div class="media-body">
+	<div class="media-body username_results">
 		<h4 class="media-heading"><a href="{$BASE_URL}pages/users/index.php?username={$userr.username}">{$userr.username}</a> </h4>
 		<span>{$userr.first_name} {$userr.last_name}</span>
 	</div>
