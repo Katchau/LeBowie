@@ -112,7 +112,7 @@
                 <div class="modal-footer">
                   <div class="row">
             			    <div class="col-xs-6 col-md-6">
-            				<a class="btn btn-block btn-social btn-google">
+            				<a id="google-login-btn" class="btn btn-block btn-social btn-google">
             				    <i class="fa fa-google" aria-hidden="true"></i> Sign in with Google
             				</a>
             			    </div>
