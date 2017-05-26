@@ -19,7 +19,6 @@ function displayQuestions(questions){
 }
 
 function getQuestions(){
-	console.log('wtf');
 	$.get(getSearchUrl,
 	{
 		'title' : nameToSearch,
@@ -110,6 +109,7 @@ function votesFilter(child){
 	var upVote = child.find('.questionInfo button span').first().attr('id');
 	var dowVote = child.find('.questionInfo button span').last().attr('id');
 	var vote = upVote - dowVote;
+	console.log(vote);
 	if((minScore != null && minScore > vote)||(maxScore != null && maxScore < vote)){
 		child.hide(400);
 		return true;
@@ -146,7 +146,7 @@ function updateFilters(){
 	updateVoteGap();
 	updateDateGap();
 	updateQuestionTitle();
-	var children = $('.questionSearch').children();
+	var children = $('#questionsearch').children();
 	children.hide(100);//i like the animation xD
 	if(needToAjax)getQuestions();
 	needToAjax = false;
