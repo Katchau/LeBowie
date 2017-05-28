@@ -77,7 +77,7 @@
         {/if}
     </div>
 
-    <div class="ask_area col-log-8">
+    <div class="ask_area col-lg-8">
         <h1 class="hidden-lg hidden-md hidden-sm">Create a Report</h1>
 
         <form action="{$BASE_URL}actions/reports/" method="post" id="form-ask">
