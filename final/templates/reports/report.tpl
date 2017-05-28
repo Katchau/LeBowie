@@ -77,33 +77,31 @@
         {/if}
     </div>
 
-    <div class="row">
-        <div class="ask_area col-sm-8 col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
-            <h1 class="hidden-lg hidden-md hidden-sm">Create a Report</h1>
+    <div class="ask_area col-log-8">
+        <h1 class="hidden-lg hidden-md hidden-sm">Create a Report</h1>
 
-            <form action="{$BASE_URL}actions/reports/" method="post" id="form-ask">
-                <input name="user-id" type="hidden" value="{$USERID}">
-                <input name="post-id" type="hidden" value="{$post_id}">
-                <input name="question-id" type="hidden" value="{$question_id}">
+        <form action="{$BASE_URL}actions/reports/" method="post" id="form-ask">
+            <input name="user-id" type="hidden" value="{$USERID}">
+            <input name="post-id" type="hidden" value="{$post_id}">
+            <input name="question-id" type="hidden" value="{$question_id}">
 
-                <div class="form-group well">
-                    <label for="report-title" class="col-2 col-form-label">Your Report</label>
-                    <textarea name="report-title" class="form-control" rows="1" id="report-title" placeholder="enter the title here"></textarea>
+            <div class="form-group well">
+                <label for="report-title" class="col-2 col-form-label">Your Report</label>
+                <textarea name="report-title" class="form-control" rows="1" id="report-title" placeholder="enter the title here"></textarea>
 
-                    <hr>
-                    <label for="report-reason" class="col-2 col-form-label">Report Reason</label>
-                    <textarea name="report-reason" class="form-control" rows="1" id="report-reason" placeholder="enter the reason for your report here"></textarea>
+                <hr>
+                <label for="report-reason" class="col-2 col-form-label">Report Reason</label>
+                <textarea name="report-reason" class="form-control" rows="1" id="report-reason" placeholder="enter the reason for your report here"></textarea>
 
-                    <hr>
-                    <label for="report-content" class="col-2 col-form-label">Report Content</label>
-                    <textarea name="report-content" class="form-control" rows="5" id="report-content" placeholder="provide context for your report"></textarea>
-                </div>
-            </form>
+                <hr>
+                <label for="report-content" class="col-2 col-form-label">Report Content</label>
+                <textarea name="report-content" class="form-control" rows="5" id="report-content" placeholder="provide context for your report"></textarea>
+            </div>
+        </form>
 
-            <div class="text-right"><button class="btn" type="submit" form="form-ask" value="Submit">Submit Report</button></div>
+        <div class="text-right"><button class="btn" type="submit" form="form-ask" value="Submit">Submit Report</button></div>
 
-            <div class="buffer_area"></div>
-        </div>
+        <div class="buffer_area"></div>
     </div>
 </div>
 
