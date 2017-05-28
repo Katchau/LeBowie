@@ -56,21 +56,25 @@
                     </div>
                 </div>
             </div>
-            <hr> {/if} {if !isset($content) || $content == NULL} {else}
-            <div class="col-sm-8 question_area col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
-                <div class="question">
-                    <div class="media">
-                        <div class="media-body question_area">
-                            <hr>
-                            <div class="question_body">
-                                {$content.description|unescape:'html'}
-                            </div>
+        </div>
+        <hr> 
+        {/if}
+
+        {if !isset($content) || $content == NULL} {else}
+        <div class="col-sm-8 question_area col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
+            <div class="question">
+                <div class="media">
+                    <div class="media-body question_area">
+                        <hr>
+                        <div class="question_body">
+                            {$content.description|unescape:'html'}
                         </div>
                     </div>
                 </div>
-                <hr> {/if}
             </div>
+            <hr>
         </div>
+        {/if}
     </div>
 
     <div class="row">
