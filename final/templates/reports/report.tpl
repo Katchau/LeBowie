@@ -86,16 +86,12 @@
             <input name="question-id" type="hidden" value="{$question_id}">
 
             <div class="form-group well">
-                <label for="report-title" class="col-2 col-form-label">Your Report</label>
-                <textarea name="report-title" class="form-control" rows="1" id="report-title" placeholder="enter the title here"></textarea>
+                <input type="hidden" name="report-title" value="">
 
-                <hr>
                 <label for="report-reason" class="col-2 col-form-label">Report Reason</label>
                 <textarea name="report-reason" class="form-control" rows="1" id="report-reason" placeholder="enter the reason for your report here"></textarea>
 
-                <hr>
-                <label for="report-content" class="col-2 col-form-label">Report Content</label>
-                <textarea name="report-content" class="form-control" rows="5" id="report-content" placeholder="provide context for your report"></textarea>
+                <input type="hidden" name="report-content" value="">
             </div>
         </form>
 
