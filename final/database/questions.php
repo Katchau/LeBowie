@@ -170,4 +170,22 @@ function getQuestionTags($questionId)
     }
     return $tags;
 }
+
+function getRelatedQuestions($questionId) {
+/*
+    select s.content_item_id,
+           ts_rank(s.terms, replace(strip(original.terms)::text, ' ', ' | ')::tsquery) as similarity
+
+    from search_items s,
+            (select terms, content_item_id from search_items limit 1) as original
+            where s.content_item_id != original.content_item_id
+
+    order by similarity desc;
+  */
+    global $conn;
+    $stmt = $conn->prepare("SELECT s.post_id, ts.rank(s.description, replace(strip(original.description)::text, ' ', ' | ')::tsquery) AS similarity
+        FROM question s, (SELECT description, post_id FROM question WHERE post_id = ?) AS original
+        WHERE s.post_id != original.post_id
+        ORDER BY similarity DESC");
+}
 ?>
