@@ -11,7 +11,7 @@ $title = strip_tags($_POST["report-title"]);
 $reason = strip_tags($_POST["report-reason"]);
 $content = strip_tags($_POST["report-content"]);
 
-$postInstanceId = getLatestPostInstance($postId);
+$postInstanceId = getLatestPostInstance($postId)['id'];
 
 try {
     createReport($postInstanceId, $userId, $title, $content, $reason);
