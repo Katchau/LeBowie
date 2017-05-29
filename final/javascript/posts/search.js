@@ -7,15 +7,24 @@ var minDate = [];
 var maxDate = [];
 var byRecent = true;
 var byBest = false;
+var fts = false;
 var minScore = null;
 var maxScore = null;
 var needToAjax = false;
 var nameToSearch = "";
 
 function displayQuestions(questions){
-	var baseDir = '.searchResults .questionSearch';
+	var baseDir = '.searchResults #questionsearch';
 	$(baseDir).empty();
 	$(baseDir).append(questions);
+}
+
+function displayError(){
+	var baseDir = '.searchResults #questionsearch';
+	$(baseDir).empty();
+	$(baseDir).append("<div class='jumbotrona well'>"
+					 +"<h3>No Question Found!</h3>"
+					 +"</div>");
 }
 
 function getQuestions(){
@@ -24,13 +33,16 @@ function getQuestions(){
 		'title' : nameToSearch,
 		'tags[]' : tags,
 		'recent' : byRecent,
-		'best' : byBest
+		'best' : byBest,
+		'fts' : fts
 	},
 	function(data, status){
 		//TODO tratar da mensagem de erro?
 		if(status === 'success'){
 			displayQuestions(data);
 		}
+	}).fail(function() {
+		displayError();
 	});
 }
 
@@ -94,6 +106,11 @@ function updateOrderDate(){
 
 function updateOrderScore(){
 	byBest = $(this).is(":checked");
+	needToAjax = true;
+}
+
+function updateFTS(){
+	fts = $(this).is(":checked");
 	needToAjax = true;
 }
 
@@ -166,6 +183,7 @@ function loadDocument(){
 	$('.advanced_tags_search textarea').keydown(writeTags);
 	$('.advanced_topic_search ul a').click(updateTopic);
 	$('.advanced_score_search input[type=checkbox]').click(updateOrderScore);
+	$('.advanced_search_fts input[type=checkbox]').click(updateFTS);
 	$('.advanced_date_search  ul a').click(updateOrderDate);
 	$('.apply_filters_btn').click(updateFilters);
 }

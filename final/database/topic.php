@@ -76,9 +76,28 @@ function updateTopic($topicId, $newName, $newDescription){
 function getTopicMods($topicId){
     if ($topicId != NULL){
         global $conn;
-        $stmt = $conn->prepare("SELECT mod_id FROM TopicUserAcc WHERE topic_id = ?");
+        $stmt = $conn->prepare(
+        "SELECT UserAcc.id, UserAcc.username 
+        FROM UserAcc INNER JOIN TopicUserAcc 
+        ON UserAcc.id = TopicUserAcc.mod_id WHERE TopicUserAcc.topic_id = ?");
         $stmt->execute(array($topicId));
         return $stmt->fetchAll();
+    }
+}
+
+function addMod($topicId, $userId){
+    if ($topicId != NULL && $userId != NULL){
+        global $conn;
+        $stmt = $conn->prepare("INSERT INTO TopicUserAcc (mod_id, topic_id) VALUES (?,?) ");
+        $stmt->execute(array($userId, $topicId));
+    }
+}
+
+function removeMod($topicId, $userId) {
+    if ($topicId != NULL && $userId != NULL){
+        global $conn;
+        $stmt = $conn->prepare("DELETE FROM TopicUserAcc WHERE mod_id = ? AND topic_id = ?");
+        $stmt->execute(array($userId, $topicId));   
     }
 }
 
