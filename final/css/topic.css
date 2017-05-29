@@ -63,3 +63,11 @@
 .question .viewmore{
     color: orange;
 }
+
+.mod_tools a {
+    color: #3f3f3f;
+    text-decoration: none;
+}
+.mod_tools .badge {
+    color: white;
+}
