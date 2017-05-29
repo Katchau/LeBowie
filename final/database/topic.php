@@ -85,5 +85,21 @@ function getTopicMods($topicId){
     }
 }
 
+function addMod($topicId, $userId){
+    if ($topicId != NULL && $userId != NULL){
+        global $conn;
+        $stmt = $conn->prepare("INSERT INTO TopicUserAcc (mod_id, topic_id) VALUES (?,?) ");
+        $stmt->execute(array($userId, $topicId));
+    }
+}
+
+function removeMod($topicId, $userId) {
+    if ($topicId != NULL && $userId != NULL){
+        global $conn;
+        $stmt = $conn->prepare("DELETE FROM TopicUserAcc WHERE mod_id = ? AND topic_id = ?");
+        $stmt->execute(array($userId, $topicId));   
+    }
+}
+
 
 ?>

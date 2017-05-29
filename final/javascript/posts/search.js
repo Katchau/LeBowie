@@ -14,9 +14,17 @@ var needToAjax = false;
 var nameToSearch = "";
 
 function displayQuestions(questions){
-	var baseDir = '.searchResults .questionSearch';
+	var baseDir = '.searchResults #questionsearch';
 	$(baseDir).empty();
 	$(baseDir).append(questions);
+}
+
+function displayError(){
+	var baseDir = '.searchResults #questionsearch';
+	$(baseDir).empty();
+	$(baseDir).append("<div class='jumbotrona well'>"
+					 +"<h3>No Question Found!</h3>"
+					 +"</div>");
 }
 
 function getQuestions(){
@@ -33,6 +41,8 @@ function getQuestions(){
 		if(status === 'success'){
 			displayQuestions(data);
 		}
+	}).fail(function() {
+		displayError();
 	});
 }
 
