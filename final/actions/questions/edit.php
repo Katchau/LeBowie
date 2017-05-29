@@ -2,7 +2,7 @@
 
 require_once '../../config/init.php';
 require_once $BASE_DIR . 'database/questions.php';
-require_once $BASE_DIR . 'database/topics.php';
+require_once $BASE_DIR . 'database/topic.php';
 
 function postValueOrNull($name)
 {
