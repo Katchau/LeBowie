@@ -15,10 +15,10 @@ function getMoreHotQuestions() {
         if (xhr.status == 200) {
             offsetHot += limitHot;
             $('#hotq').append(data);
-            $('#view-more').detach().appendTo('#hotq');
+            $('#view-more-hot').detach().appendTo('#hotq');
         } else if (!atEndHot) {
             $('#hotq').append('<div class="col-lg-8" style="padding: 10px;"> No more questions </div>');
-            $('#view-more').detach().appendTo('#hotq');
+            $('#view-more-hot').detach().appendTo('#hotq');
             atEndHot = true;
         }
     });
@@ -29,10 +29,10 @@ function getMoreNewQuestions() {
         if (xhr.status == 200) {
             offsetNew += limitNew;
             $('#newq').append(data);
-            $('#view-more').detach().appendTo('#newq');
+            $('#view-more-new').detach().appendTo('#newq');
         } else if (!atEndNew) {
             $('#newq').append('<div class="col-lg-8" style="padding: 10px;"> No more questions </div>');
-            $('#view-more').detach().appendTo('#newq');
+            $('#view-more-new').detach().appendTo('#newq');
             atEndNew = true;
         }
     });
@@ -43,10 +43,10 @@ function getMoreBestQuestions() {
         if (xhr.status == 200) {
             offsetBest += limitBest;
             $('#bestq').append(data);
-            $('#view-more').detach().appendTo('#bestq');
+            $('#view-more-best').detach().appendTo('#bestq');
         } else if (!atEndBest) {
             $('#bestq').append('<div class="col-lg-8" style="padding: 10px;"> No more questions </div>');
-            $('#view-more').detach().appendTo('#bestq');
+            $('#view-more-best').detach().appendTo('#bestq');
             atEndBest = true;
         }
     });
