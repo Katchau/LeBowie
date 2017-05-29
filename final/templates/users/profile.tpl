@@ -145,23 +145,31 @@
             <div class="extras_suggested ">
                 <label class="related_label "> Submitted Questions </label>
                 <ul class="list-group ">
-                    {assign "value " 0} {foreach $questions as $question} {assign "value " $value+1}
+                    {assign "value " 0} {if $questions|@count == 0}
+                    <div class="none_found jumbotron">
+                        No questions submitted yet!
+                    </div>
+                    {else} {foreach $questions as $question} {assign "value " $value+1}
                     <li><a class="list-group-item suggestion " href="{$BASE_URL}pages/questions/index.php?id={$question.post_id} ">
 			  {substr($question.title,0,200)}
 			  <span class="badge ">{$question.up_score}</span>
 			  </a></li>
-                    {if $value == 4} {break} {/if} {/foreach}
+                    {if $value == 4} {break} {/if} {/foreach} {/if}
                 </ul>
             </div>
             <hr>
             <div class="extras_suggested ">
                 <label class="related_label "> Submitted Answers </label>
                 <ul class="list-group ">
-                    {assign "value " 0} {foreach $answers as $answer} {assign "value " $value+1}
+                    {assign "value " 0} {if $answers|@count == 0}
+                    <div class="none_found jumbotron">
+                        No answers submitted yet!
+                    </div>
+                    {else} {foreach $answers as $answer} {assign "value " $value+1}
                     <li><a class="list-group-item suggestion " href="{$BASE_URL}pages/questions/index.php?id={$answer.question} ">
 			  {substr($answer.description,0,200)}
                         <span class="badge ">{$answer.up_score}</span></a></li>
-			   {if $value == 3} {break} {/if} {/foreach}
+                    {if $value == 3} {break} {/if} {/foreach} {/if}
                 </ul>
             </div>
             <hr>
