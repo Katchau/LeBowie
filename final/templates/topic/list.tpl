@@ -20,7 +20,7 @@
 		<br>
 		<div class="guidelines_side mod_tools">
 			<h4>Moderation</h4>
-			<a href="" class="btn btn-default askButton">edit topic</a>
+			<a href="{$BASE_URL}pages/topic/edit.php" class="btn btn-default askButton">edit topic</a>
 			<a href="" class="btn btn-default askButton">assign moderators</a>
 		</div>
 		{/if}

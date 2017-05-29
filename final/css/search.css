@@ -18,6 +18,9 @@
     overflow-y: scroll;
     max-height: 450px;
 }
+.questionSearch .tab-content{
+    border-bottom: 1px solid #ddd;
+}
 .questionSearch .well{
     margin-top:0px;
     margin-bottom:0px;
