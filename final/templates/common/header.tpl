@@ -153,7 +153,7 @@
     <div id="my-side-nav" class="side-nav">
       <div class="side-nav-auth">
         <a href="{$BASE_URL}pages/users/signup.php">sign up</a>
-        <a href="#" data-toggle="modal" data-target="#myModal">sign in</a>
+        <a href="{$BASE_URL}pages/users/signinmobile.php">sign in</a>
       </div>
       <hr>
       <div class="side-nav-options">
