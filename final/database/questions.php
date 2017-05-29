@@ -78,7 +78,7 @@ function getHotQuestions($offset, $limit)
 {
     global $conn;
     $stmt = $conn->prepare("SELECT * FROM hot_questions LIMIT ? OFFSET ?");
-    $stmt->execute(array($offset, $limit));
+    $stmt->execute(array($limit, $offset));
     return $stmt->fetchAll();
 }
 
