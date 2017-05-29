@@ -24,7 +24,7 @@ try{
     header('Location: ' . $BASE_URL . 'pages/topic/list?id=' . $id);
 }
 catch(Exception $e){
-    $_SESSION['error_messages'][] = 'Internal server error, try again later.' . $id . ";" . $topicname ";" . $description;
+    $_SESSION['error_messages'][] = 'Internal server error, try again later.' . $id . ';' . $topicname . ';' . $description;
     header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
 ?>
