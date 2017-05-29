@@ -5,15 +5,26 @@
 {/if} {foreach $questions as $question}
 
 <div class="question well">
-	<h2 class="questionTitle"><a href="{$BASE_URL}pages/questions/index.php?id={$question.post_id}">{$question.title}</a> </h2>
+	<h2 class="questionTitle"><a href="{$BASE_URL}pages/questions/index.php?id={$question.post_id}">{$question.title}</a></h2>
 	<p class="questionInfo">
-		asked by <a id={$question.creation} href="{$BASE_URL}pages/users/index.php?username={$question.username}" class="writer">{$question.username}</a>		on {$question.creation} {if $type != 1} in <a id={$question.id} class="topic" href="{$BASE_URL}pages/topic/list.php?id={$question.id}"> {$question.topicname} </a>		{/if} {if $type != 0}
+		asked by 
+		<!-- <a id={$question.creation} href="{$BASE_URL}pages/users/index.php?username={$question.username}" class="writer">{$question.username}</a>		on {$question.creation} {if $type != 1} in <a id={$question.id} class="topic" href="{$BASE_URL}pages/topic/list.php?id={$question.id}"> {$question.topicname} </a>		{/if} {if $type != 0} -->
+		<a href="{$BASE_URL}pages/users/index.php?username={$question.username}" class="writer">{$question.username}</a> 
+		on {$question.creation} 
+		{if $type != 1}
+		in <a class="topic" href="{$BASE_URL}pages/topic/list.php?id={$question.id}">{$question.topicname}</a>
+		{/if} 
+
+		{if $type != 0}
 		<button type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
-				<span id={$question.up_score} class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> {$question.up_score} </span>
-			</button>
+			<!-- <span id={$question.up_score} class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> {$question.up_score} </span> -->
+			<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> {$question.up_score} </span>
+		</button>
 		<button type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
-				<span id={$question.down_score} class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> {$question.down_score} </span>
-			</button> {/if}
+			<!-- <span id={$question.down_score} class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> {$question.down_score} </span> -->
+			<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> {$question.down_score} </span>
+		</button> 
+		{/if}
 	</p>
 	<div class="postBody">
 		{include file='common/shrinkcontent.tpl' description=$question.description|unescape:'html'}
