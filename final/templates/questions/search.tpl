@@ -13,7 +13,7 @@
 				<div class="advanced_search_fts text-left">
 					<h3>Description and FTS</h3>
 					<label class="advanced_search_label">Include description on search</label>
-					<input type="checkbox" name="score" value="false"><br>
+					<input title="score" type="checkbox" name="score" value="false"><br>
 				</div>
 				<div class="advanced_topic_search text-left">
 					<h3>Topic</h3>
@@ -40,24 +40,24 @@
 				<div class="advanced_tags_search text-left">
 					<h3>Tags</h3>
 					<label class="advanced_search_label">containing tags:</label>
-					<textarea class="form-control pull-right" rows="1" placeholder="enter your tags, separated by commas"></textarea>
+					<textarea title="tags" class="form-control pull-right" rows="1" placeholder="enter your tags, separated by commas"></textarea>
 				</div>
 				<div class="advanced_score_search text-left">
 					<h3>Score</h3>
 					<label class="advanced_search_label">Order by Score</label>
-					<input type="checkbox" name="score" value="false"><br>
+					<input title="score" type="checkbox" name="score" value="false"><br>
 					<label class="advanced_search_label">within score:</label>
 					<div class="advanced_score_limits">
 						<label class="glyphicon glyphicon-thumbs-up"></label>
-						<textarea class="form-control" rows="1"></textarea>
+						<textarea title="score from" class="form-control" rows="1"></textarea>
 						<span>-</span>
-						<textarea class="form-control" rows="1"></textarea>
+						<textarea title="score to" class="form-control" rows="1"></textarea>
 					</div>
 				</div>
 				<div class="advanced_user_search text-left">
 					<h3>User</h3>
 					<label class="advanced_search_label">containing user(s):</label>
-					<textarea class="form-control pull-right" rows="1" placeholder="usernames, separated by commas"></textarea>
+					<textarea title="usernames" class="form-control pull-right" rows="1" placeholder="usernames, separated by commas"></textarea>
 				</div>
 				<div class="advanced_date_search text-left">
 					<h3>Date</h3>
@@ -73,9 +73,9 @@
 					<br>
 					<label class="advanced_search_label">within date:</label>
 					<div class="advanced_date_limits">
-						<input type="date" class="form-control">
+						<input title="date from" type="date" class="form-control">
 						<span>-</span>
-						<input type="date" class="form-control">
+						<input title="date to" type="date" class="form-control">
 					</div>
 					<br>
 					<button class="btn btn-default apply_filters_btn">Apply Filters</button>
@@ -95,7 +95,7 @@
 				<div class="col-lg-12 board-inner">
 
 					<ul class="nav nav-tabs" id="tabs">
-						<li><div class="liner"></div><li>
+						<li><div class="liner"></div></li>
 
 						<li class="question_tab active">
 							<a href="#questionsearch" data-toggle="tab" title="Questions">

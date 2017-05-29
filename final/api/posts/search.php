@@ -6,14 +6,15 @@ $method = $_SERVER['REQUEST_METHOD'];
 $params = json_decode(file_get_contents('php://input'), true);
 switch ($method) {
     case 'GET':
-        get($_GET, $smarty);
+        get2($_GET, $smarty);
         break;
     default:
         http_response_code(405);
 }
 
-function get($params, $smarty)
+function get2($params, $smarty)
 {
+	$title = "";
     $title = $params['title'];
 	$tags = array();
 	if(isset($params['tags']))
@@ -31,11 +32,9 @@ function get($params, $smarty)
 		$smarty->assign('questions', $question);
 		$smarty->assign('type', 2);
 		$smarty->display('questions/listquestions.tpl');
-		
     } catch (PDOException $e) {
         echo $e->getMessage();
         http_response_code(500);
     }
 }
-
 
