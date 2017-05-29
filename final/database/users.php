@@ -128,11 +128,11 @@ function createUserGoogle($firstName, $lastName, $username, $email, $birth, $cou
 return $stmt->execute(array($firstName, $lastName, $salt, $username, $email, getHash($password, $salt), $birth, $country, true));
 }
 
-function deleteUser($userId) 
+function deleteUser($userId, $username) 
 {
-    global $conn;
-    $stmt = $conn->prepare("DELETE FROM useracc WHERE id = ?");
-    $stmt->execute(array($userId));
+	$password = "3rumg93ji" . $username . "1m40_g3t_b4nned_B0Y";
+    updateUserPassword($userId, $password);
+	return $password;
 }
 
 function updateUserEmail($userId, $email) 
