@@ -11,7 +11,7 @@ function getAllQuestionsTopic($topicId, $offset, $limit)
 {
     global $conn;
     $stmt = $conn->prepare("SELECT * FROM question_display WHERE id = ? LIMIT ? OFFSET ?");
-    $stmt->execute(array($topicId));
+    $stmt->execute(array($topicId, $offset, $limit));
     return $stmt->fetchAll();
 }
 
