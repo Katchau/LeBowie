@@ -9,7 +9,7 @@ if(isset($questionId)) {
         $question = getQuestionInfo($questionId);
 
 		$smarty->assign('questionId', $questionId);
-        $smarty->assign('question', $questionId);
+        $smarty->assign('question', $question);
         $smarty->display('questions/edit.tpl');
 	}
 	catch(PDOException $e){

@@ -1,5 +1,7 @@
 <?php
 require_once 'posts.php';
+require_once 'answers.php';
+require_once 'comments.php';
 
 function getQuestionById($questionId)
 {
@@ -201,5 +203,31 @@ function getQuestionTags($questionId)
         $tags[] = $tag;
     }
     return $tags;
+}
+
+function updateQuestion($id, $userId, $newTitle, $newDesc, $topic){
+
+    global $conn;
+
+    if (isset($id)){
+
+        $answers = getRecentAnswers($id);
+
+        $conn->beginTransaction();
+		$lastId = createPost($userId,$newDesc);
+		$stmt = $conn->prepare("INSERT INTO question (post_id, topic_id, title) VALUES (?, ?, ?)");
+		$stmt->execute(array($lastId, $topic, $newTitle));
+        foreach($answers as $answer){
+            $newAnswerId = createAnswer($answer['user_id'], $lastId, $answer['description']);
+            $comments = getComments($answer['post_id']);
+            foreach($comments as $comment){
+                createComment($comment['user_id'], $newAnswerId, $comment['descriptinon']);
+            }
+        }
+		$conn->commit();
+
+        return $lastId;
+    }
+
 }
 ?>
