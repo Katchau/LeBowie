@@ -15,7 +15,7 @@ function postValueOrNull($name)
 try{
 
     $id = postValueOrNull('id');
-    $topicname = postValueOrNull('topicname')
+    $topicname = postValueOrNull('topicname');
     $description = postValueOrNull('topicdescription');
 	
     updateTopic($id, $topicname, $description);
