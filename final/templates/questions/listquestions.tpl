@@ -2,7 +2,7 @@
 <div class="none_found jumbotron">
 	No questions.
 </div>
-{/if} {if $type == 2} {foreach $questions as $question}
+{/if} {if $htype == 2} {foreach $questions as $question}
 
 <li>
 	<a class="list-group-item suggestion" href="{$BASE_URL}pages/questions/index.php?id={$question.post_id}">{$question.title}
