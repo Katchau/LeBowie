@@ -97,4 +97,12 @@ function updatePost($postId, $userId, $description)
 
 	$conn->commit();
 }
+
+function getLatestPostInstance($postId) 
+{
+	global $conn;	
+	$stmt = $conn->prepare("SELECT * FROM postinstance WHERE post_id = ? ORDER BY id DESC LIMIT 1");
+	$stmt->execute(array($postId));
+	return $stmt->fetch();
+}
 ?>

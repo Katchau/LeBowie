@@ -67,7 +67,7 @@
                     <div class="media-body question_area">
                         <hr>
                         <div class="question_body">
-                            {$content|unescape:'html'}
+                            {$.description|unescape:'html'}
                         </div>
                     </div>
                 </div>

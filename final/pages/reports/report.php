@@ -15,7 +15,7 @@ if ($postId == $questionId) {
     $question = getQuestionInfo($questionId);
     $smarty->assign('question', $question);
 } else {
-    $content = getPostById($postId);
+    $content = getLatestPostInstance($postId);
     $smarty->assign('content', $content);
 }
 
