@@ -17,3 +17,7 @@ tinymce.init({
 function hideBanner() {
     document.cookie = "first_visit=false"
 }
+
+if ($(document.body).height() < $(window).height()) {
+  $('#footer-wrapper').attr('style', 'position: fixed!important; bottom: 0px;');
+}
