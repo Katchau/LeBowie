@@ -43,7 +43,7 @@
 			{if isset($question.answer)}
 			<span class="top-answer">Accepted Answer</span> {$question.answer_desc|unescape:'html'}
 			<p class="writerInfo">
-				answered by <a href="#" class="writer"> {$question.answer_user_name} </a> on {$question.answer_creation}
+				answered by <a href="{$BASE_URL}pages/users/index.php?username={$question.answer_user_name|escape:'url'}" class="writer"> {$question.answer_user_name} </a> on {$question.answer_creation}
 			</p>
 			{else}
 			<p>
