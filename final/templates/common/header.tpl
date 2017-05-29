@@ -1,10 +1,10 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>Newton's Apple - Collaborative Q&amp;A</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -86,58 +86,55 @@
           <li><a href="{$BASE_URL}pages/users/signup.php">sign up</a></li>
           <li><a href="#" data-toggle="modal" data-target="#myModal">sign in</a></li>
           {/if}
+        </ul>
 
+        <!-- Modal -->
+        <div id="myModal" class="modal fade container col-xs-12" role="dialog">
+          <div class="modal-dialog">
 
-          <!-- Modal -->
-          <div id="myModal" class="modal fade container col-xs-12" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">
-                    <center>Sign in to Newton's Apple</center>
-                  </h4>
-                </div>
-                <div class="modal-body">
-                  <form method="post" action="{$BASE_URL}actions/users/login.php">
-                    <div class="form-group">
-                      <input type="text" name="username" id="display_name" class="form-control input-lg" placeholder="Username/Email" tabindex="3">
-                    </div>
-                    <div class="form-group">
-                      <input type="password" name="password" id="password_confirmation" class="form-control input-lg" placeholder="Password" tabindex="6">
-                    </div>
-                    <div><button type="submit" class="btn btn-default">Sign in</button></div>
-                  </form>
-                </div>
-
-                <div class="modal-footer">
-                  <div class="row">
-                    <div class="col-xs-6 col-md-6">
-                      {if $GOOGLE}
-                      {else}
-                      <form id="google-signin" method="post" action="{$BASE_URL}pages/users/signup-google.php">
-                        <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                        <input id="google-signin-email" type="hidden" name="email" value="">
-                        <input id="google-signin-first-name" type="hidden" name="first-name" value="">
-                        <input id="google-signin-last-name" type="hidden" name="last-name" value="">
-                        <input id="google-signin-image" type="hidden" name="image" value="">
-                      </form>
-                      {/if}
-                    </div>
-                    <div class="col-lg-3"></div>
-                    <div class="col-md-3"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div>
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">
+                  <center>Sign in to Newton's Apple</center>
+                </h4>
+              </div>
+              <div class="modal-body">
+                <form method="post" action="{$BASE_URL}actions/users/login.php">
+                  <div class="form-group">
+                    <input type="text" name="username" id="display_name" class="form-control input-lg" placeholder="Username/Email" tabindex="3">
                   </div>
+                  <div class="form-group">
+                    <input type="password" name="password" id="password_confirmation" class="form-control input-lg" placeholder="Password" tabindex="6">
+                  </div>
+                  <div><button type="submit" class="btn btn-default">Sign in</button></div>
+                </form>
+              </div>
 
+              <div class="modal-footer">
+                <div class="row">
+                  <div class="col-xs-6 col-md-6">
+                    {if $GOOGLE} {else}
+                    <form id="google-signin" method="post" action="{$BASE_URL}pages/users/signup-google.php">
+                      <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                      <input id="google-signin-email" type="hidden" name="email" value="">
+                      <input id="google-signin-first-name" type="hidden" name="first-name" value="">
+                      <input id="google-signin-last-name" type="hidden" name="last-name" value="">
+                      <input id="google-signin-image" type="hidden" name="image" value="">
+                    </form>
+                    {/if}
+                  </div>
+                  <div class="col-lg-3"></div>
+                  <div class="col-md-3"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div>
                 </div>
 
               </div>
 
             </div>
-          </div>
 
-        </ul>
+          </div>
+        </div>
 
         <form class="navbar-form navbar-right" method="get" action="{$BASE_URL}pages/questions/search.php">
           <div class="input-group">
