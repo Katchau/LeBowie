@@ -1,11 +1,17 @@
-let limit = 10;
-let offset = 10;
+let limitHot = 10;
+let offsetHot = 10;
+let atEndHot = false;
 
 function getMoreHotQuestions() {
-    $.get(BASE_URL + 'api/questions/hot-questions.php?offset=' + offset + '&limit=' + limit, function(data) {
-        offset += limit;
-        
-        $('#hotq').append(data);
-        $('#view-more').detach().appendTo('#hotq');
+    $.get(BASE_URL + 'api/questions/hot-questions.php?offset=' + offsetHot + '&limit=' + limitHot, function(data, status, xhr) {
+        if (xhr.status === 200) {
+            offsetHot += limitHot;
+            $('#hotq').append(data);
+            $('#view-more').detach().appendTo('#hotq');
+        } else if (!atEndHot) {
+            $('#hotq').append("No more questions");
+            $('#view-more').detach().appendTo('#hotq');
+            atEndHot = true;
+        }
     });
 }

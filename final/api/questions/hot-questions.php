@@ -25,7 +25,7 @@ function get($params)
         $output = $smarty->fetch('questions/listquestions.tpl');
         echo $output;
     } else {
-        http_response_code(404);
+        http_response_code(204);
     }
 }
 ?>
