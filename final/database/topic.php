@@ -73,6 +73,14 @@ function updateTopic($topicId, $newName, $newDescription){
     }
 }
 
+function getTopicMods($topicId){
+    if ($topicId != NULL){
+        global $conn;
+        $stmt = $conn->('SELECT mod_id FROM TopicUserAcc WHERE topic_id = ?');
+        $stmt->execute(array($topicId));
+        return $stmt->fetchAll();
+    }
+}
 
 
 ?>

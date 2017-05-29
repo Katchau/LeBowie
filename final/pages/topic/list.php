@@ -10,6 +10,7 @@ if(isset($topicId)) {
 		$smarty->assign('questions', $questions);
 		$smarty->assign('topic', $topic);
 		$smarty->assign('topicId', $topicId);
+		$smarty->assign('topicMods', $topicMods);
 		$smarty->display('topic/list.tpl');
 	}
 	catch(PDOException $e){
