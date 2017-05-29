@@ -36,10 +36,10 @@
 				<a class="btn btn-default" href="{$BASE_URL}/pages/reports/report.php?id={$answer.answer}&question={$question.post_id}">
 					<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
 				</a>
-				<button onclick="upvotePost({$answer.answer})" id="js-upvote-btn-{$answer.answer}" type="button" class="btn btn-default">
+				<button onclick="upvotePost({$answer.answer})" id="js-upvote-btn-{$answer.answer}" type="button" class="btn btn-default" {if ($USERNAME == $answer.username)} disabled {/if}>
 					<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">{$answer.up_score}</span>
 				</button>
-				<button onclick="downvotePost({$answer.answer})" id="js-downvote-btn-{$answer.answer}" type="button" class="btn btn-default">
+				<button onclick="downvotePost({$answer.answer})" id="js-downvote-btn-{$answer.answer}" type="button" class="btn btn-default" {if ($USERNAME == $answer.username)} disabled {/if}>
 					<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">{$answer.down_score}</span>
 				</button>
 				{/if}

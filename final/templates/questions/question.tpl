@@ -23,7 +23,7 @@
 			<label class="tools_label"> tools <span class="glyphicon glyphicon-wrench"></span></label>
 			<hr>
 			<div class="extras_tools">
-				<a aria-hidden="true" href="{$BASE_URL}pages/questions/answer.php?id={$question.post_id}" class="btn btn-default"> answer</a>
+				<a aria-hidden="true" href="{$BASE_URL}pages/questions/answer.php?id={$question.post_id}" class="btn btn-default" {if ($USERNAME == $question.username)} disabled {/if}> answer</a>
 			</div>
 			<hr>
 			<div class="extras_suggested">
@@ -69,11 +69,11 @@
 									<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
 								</a>
 								<button onclick="upvotePost({$question.post_id})" id="js-upvote-btn-{$question.post_id}" type="button" class="btn btn-default"
-								 {if !$USERNAME} disabled{/if}>
+								 {if !$USERNAME || $USERNAME == $question.username} disabled{/if}>
 									<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">{$question.up_score}</span>
 								</button>
 								<button onclick="downvotePost({$question.post_id})" id="js-downvote-btn-{$question.post_id}" type="button" class="btn btn-default"
-								 {if !$USERNAME} disabled{/if}>
+								 {if !$USERNAME || $USERNAME == $question.username } disabled{/if}>
 									<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">{$question.down_score}</span>
 								</button> {/if}
 							</div>
