@@ -1,5 +1,6 @@
 {include file='common/header.tpl'}
 
+{if $question.current_state != 'Deleted'}
 <div id="extras-side-nav" class="side-nav">
 	<div class="side-nav-options">
 		<a href="#">answer question</a>
@@ -103,6 +104,11 @@
 	</div>
 	{/if}
 </div>
+{else}
+<div class="container">
+	<h3>No such question found! It probably was deleted!</h3>
+</div>
+{/if}
 
 <script src="{$BASE_URL}javascript/posts/posts.js"></script>
 <script src="{$BASE_URL}javascript/posts/comments.js"></script>
