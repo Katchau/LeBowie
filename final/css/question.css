@@ -125,6 +125,8 @@
 .extras_suggested ul{
     text-align: left;
     list-style-type: none;
+    max-height: 250px;
+    overflow: auto;
 }
 .extras_suggested .suggestion{
     min-height: 2.5em;
