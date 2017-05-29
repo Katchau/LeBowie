@@ -19,15 +19,16 @@
 		</div>
 	</div>
 	<div class="question_votes">
-		<button type="button" class="btn btn-default">
+		<button name="dismiss" type="button" class="btn btn-default">
 			<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
 		</button>
-		<button type="button" class="btn btn-default">
+		<button name="deletePost" type="button" class="btn btn-default">
 			<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
 		</button>
-		<button type="button" class="btn btn-default">
+		<button name="banUser" type="button" class="btn btn-default">
 			<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
 		</button>
+		<input type="hidden" name="id" value={$report.id}>
 	</div>
 </div>
 

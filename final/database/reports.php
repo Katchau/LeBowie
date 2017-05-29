@@ -34,7 +34,7 @@ function getReport($post_id, $user_id)
 function getAllReports()
 {
 	global $conn;
-    $stmt = $conn->prepare("SELECT * from all_reports");
+    $stmt = $conn->prepare("SELECT * from all_reports order by id");
     $stmt->execute();
     return $stmt->fetchAll();
 }

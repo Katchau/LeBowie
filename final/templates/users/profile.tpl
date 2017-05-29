@@ -170,7 +170,7 @@
         </div>
     </div>
 	{if $MODERATOR && $user.username == $USERNAME}
-    <div>
+    <div class="report-section">
         <div class="media-body profile-username">
             Report Section
         </div>
@@ -178,5 +178,7 @@
     </div>
     {/if}
 </div>
+
+<script src="{$BASE_URL}javascript/users/reports.js"></script>
 
 {include file='common/footer.tpl'}
