@@ -25,6 +25,11 @@
 			<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> {$question.down_score} </span>
 		</button> 
 		{/if}
+		<input type="hidden" name="creation" value={$question.creation}>
+		<input type="hidden" name="upscore" value={$question.up_score}>
+		<input type="hidden" name="downscore" value={$question.down_score}>
+		<input type="hidden" name="topic" value={$question.id}>
+		
 	</div>
 	<div class="postBody">
 		<!-- {include file='common/shrinkcontent.tpl' description=$question.description|unescape:'html'} -->
