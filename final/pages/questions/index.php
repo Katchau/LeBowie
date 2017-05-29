@@ -3,6 +3,19 @@ require_once '../../config/init.php';
 require_once $BASE_DIR .'database/questions.php';
 require_once $BASE_DIR .'database/answers.php';
 require_once $BASE_DIR .'database/comments.php';
+require_once $BASE_DIR . 'database/users.php';
+require_once $BASE_DIR . 'database/topic.php';
+
+function isMod($topicMods){
+	if (!isset($topicMods)) return FALSE;
+	$user = getUserProfileInfo($_SESSION['username']);
+	for ($i = 0; $i < count($topicMods); ++$i){
+		if ($user['id'] === $topicMods[$i]['id']){
+			return TRUE;
+		}
+	}
+	return FALSE;
+}
 
 $questionId = $_GET["id"];
 if(isset($questionId)) {
@@ -13,7 +26,12 @@ if(isset($questionId)) {
 		$selected = ($question['answer_desc'] != null) ? getSelectedAnswer($questionId) : null;
 		//testar
 		$relquestions = getRelatedQuestions($questionId);
-
+		$topicId = $question['id'];
+		$topicMods = getTopicMods($topicId);
+		
+		if (isMod($topicMods)) $smarty->assign('TOPICMODERATOR', TRUE);
+		else $smarty->assign('TOPICMODERATOR', FALSE);
+		
 		$smarty->assign('question', $question);
 		$smarty->assign('relquestions',$relquestions);
 		$smarty->assign('tags', $tags);
