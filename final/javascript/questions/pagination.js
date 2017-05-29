@@ -51,3 +51,21 @@ function getMoreBestQuestions() {
         }
     });
 }
+
+offsetTopic = 10;
+limitTopic = 10;
+atEndTopic = false;
+
+function getMoreTopicQuestions(topicId) {
+    $.get(`${BASE_URL}api/topics/questions.php?topic=${topic}&offset=${offset}&limit=${limit}`, function(data, status, xhr) {
+        if (xhr.status == 200) {
+            offsetTopic += limitTopic;
+            $('#topic-questions').append(data);
+            $('#view-more').detach().appendTo('#topic-questions');
+        } else if (!atEndTopic) {
+            $('#topic-questions').append('<div class="col-lg-12" style="padding: 10px;"> No more questions </div>');
+            $('#view-more').detach().appendTo('#topic-questions');
+            atEndTopic = true;
+        }
+    });
+}
