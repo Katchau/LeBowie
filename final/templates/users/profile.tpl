@@ -24,6 +24,13 @@
                             <input type="submit" value="Edit Profile" class="btn btn-default">
                         </form>
                         {/if}
+						{if $ADMINISTRATOR}
+						<div class="ban-user">
+							<input type="submit" name="banUser2" value="Ban User" class="btn btn-default">
+							<input type="hidden" name="user_id" value={$user.id}>
+							<input type="hidden" name="username" value={$user.username}>
+						</div>
+						{/if}
                         <hr>
                         <div class="profile-badges">
                             <span class="info-start">User Badges </span>
@@ -113,8 +120,8 @@
                         <hr>
                     </div>
                 </div>
-
                 <div class="row ">
+					
                     <div class="col-xs-6 profile-badges ">
                         <span class="info-start ">User Badges </span>
                         <br>
@@ -176,7 +183,7 @@
 
         </div>
     </div>
-    {if $MODERATOR && $user.username == $USERNAME}
+    {if $ADMINISTRATOR && $user.username == $USERNAME}
     <div class="report-section">
         <div class="media-body profile-username">
             Report Section
