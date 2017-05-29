@@ -46,7 +46,7 @@
         <!-- Brand -->
         <a id="brand" class="navbar-brand" href="../../index.php">newton's<span class="brand-highlight">apple</span></a>
         <form id="mobile-search">
-          <input id="mobile-search-bar" type="text" class="form-control" placeholder="search">
+          <input title="search" id="mobile-search-bar" type="text" class="form-control" placeholder="search">
         </form>
         <i class="glyphicon glyphicon-option-vertical navbar-search"></i>
         <i id="mobile-close-search" class="glyphicon glyphicon-remove navbar-search"></i>
