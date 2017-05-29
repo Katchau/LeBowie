@@ -10,7 +10,7 @@ function getMoreHotQuestions() {
             $('#hotq').append(data);
             $('#view-more').detach().appendTo('#hotq');
         } else if (!atEndHot) {
-            $('#hotq').append("No more questions");
+            $('#hotq').append('<div class="col-lg-8" No more questions </div>');
             $('#view-more').detach().appendTo('#hotq');
             atEndHot = true;
         }
