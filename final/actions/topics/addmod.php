@@ -1,6 +1,7 @@
 <?php
 require_once '../../config/init.php';
 require_once $BASE_DIR . 'database/topic.php';
+require_once $BASE_DIR . 'database/users.php';
 
 function postValueOrNull($name)
 {
@@ -14,7 +15,10 @@ function postValueOrNull($name)
 try{
 
     $id = postValueOrNull('id');
-    $userid = postValueOrNull('userid');
+    $username = postValueOrNull('username');
+
+    $userid = getUserSessionId($username);
+
 	
     addMod($id, $userid);
     header('Location: ' . $BASE_URL . 'pages/topic/list.php?id=' . $id);

@@ -39,7 +39,7 @@
 						<button type="submit" class="badge btn-success"><span class="glyphicon glyphicon-plus"></span></button>
 						<br>
 						<br>
-						<input name="userid" class="form-group-item">
+						<input name="username" class="form-group-item">
 					</li>
 
 					<input type="hidden" name="id" value="{$topicId}">
