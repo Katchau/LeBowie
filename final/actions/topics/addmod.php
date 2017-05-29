@@ -19,8 +19,11 @@ try{
 
     $userid = getUserSessionId($username)['id'];
 
-	
-    addMod($id, $userid);
+    if(addMod($id, $userid);){
+        $_SESSION['success_messages'][] = 'Successfully added mod.';
+    }else{
+        $_SESSION['error_messages'][] = 'Internal server error, try again later.';
+    }
     header('Location: ' . $BASE_URL . 'pages/topic/list.php?id=' . $id);
 }
 catch(Exception $e){
