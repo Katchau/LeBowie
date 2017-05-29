@@ -88,12 +88,12 @@ function searchQuestions($title, $tags, $best, $time, $fts){
 
 function getRelatedQuestions($questionId)
 {
-    $query = "SELECT *,COUNT(*) FROM question JOIN questiontag ON question.post_id = questiontag.question_id
+    $query = "SELECT * FROM question_display WHERE post_id IN(
+              SELECT post_id FROM question 
+              JOIN questiontag ON question.post_id = questiontag.question_id
               AND questiontag.tag_id IN(SELECT tag_id FROM questiontag WHERE question_id = ?)
               WHERE question.post_id != ?
-              GROUP BY question.post_id
-              ORDER BY COUNT(*) DESC
-              LIMIT 4";
+              GROUP BY post_id,topic_id)";
 
 
     //Get tags
@@ -201,23 +201,5 @@ function getQuestionTags($questionId)
         $tags[] = $tag;
     }
     return $tags;
-}
-
-function getRelatedQuestions($questionId) {
-/*
-    select s.content_item_id,
-           ts_rank(s.terms, replace(strip(original.terms)::text, ' ', ' | ')::tsquery) as similarity
-
-    from search_items s,
-            (select terms, content_item_id from search_items limit 1) as original
-            where s.content_item_id != original.content_item_id
-
-    order by similarity desc;
-  */
-    global $conn;
-    $stmt = $conn->prepare("SELECT s.post_id, ts.rank(s.description, replace(strip(original.description)::text, ' ', ' | ')::tsquery) AS similarity
-        FROM question s, (SELECT description, post_id FROM question WHERE post_id = ?) AS original
-        WHERE s.post_id != original.post_id
-        ORDER BY similarity DESC");
 }
 ?>
