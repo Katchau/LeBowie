@@ -147,7 +147,7 @@
                 <ul class="list-group ">
                     {assign "value " 0} {foreach $questions as $question} {assign "value " $value+1}
                     <li><a class="list-group-item suggestion " href="{$BASE_URL}pages/questions/index.php?id={$question.post_id} ">
-			  {substr($question.title,0,200)}
+			  {substr($question.title,0,200)|unescape:'html'}
 			  <span class="badge ">{$question.up_score}</span>
 			  </a></li>
                     {if $value == 4} {break} {/if} {/foreach}
@@ -159,7 +159,7 @@
                 <ul class="list-group ">
                     {assign "value " 0} {foreach $answers as $answer} {assign "value " $value+1}
                     <li><a class="list-group-item suggestion " href="{$BASE_URL}pages/questions/index.php?id={$answer.question} ">
-			  {substr($answer.description,0,200)}
+			  {substr($answer.description,0,200)|unescape:'html'}
                         <span class="badge ">{$answer.up_score}</span></a></li>
 			   {if $value == 3} {break} {/if} {/foreach}
                 </ul>
