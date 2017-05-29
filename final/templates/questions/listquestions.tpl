@@ -36,7 +36,7 @@
 		<input type="hidden" name="topic" value={$question.id}>
 
 	</div>
-	{if $type != 2}
+	{if $type != 8}
 	<div class="postBody">
 		{$question.description|unescape:'html'}
 		<hr>
