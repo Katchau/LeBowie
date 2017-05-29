@@ -151,11 +151,6 @@
   list-style-type: none;
 }
 
-.question .well {
-  overflow: scroll;
-  overflow-x: hidden;
-}
-
 .guidelines_side .well{
   border-color: orange;
   border-radius: 0;
@@ -190,4 +185,9 @@
     padding-top: 12px;
     padding-bottom: 12px;
     font-size: 1.1em;
+}
+
+.tab_content .question .well {
+  overflow: scroll;
+  overflow-x: hidden;
 }
