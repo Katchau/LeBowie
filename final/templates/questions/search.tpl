@@ -40,7 +40,7 @@
 				<div class="advanced_score_search text-left">
 					<h3>Score</h3>
 					<label class="advanced_search_label">Order by Score</label>
-					<input type="checkbox" name="score" value="false"><br></input>
+					<input type="checkbox" name="score" value="false"><br>
 					<label class="advanced_search_label">within score:</label>
 					<div class="advanced_score_limits">
 						<label class="glyphicon glyphicon-thumbs-up"></label>
@@ -68,14 +68,12 @@
 					<br>
 					<label class="advanced_search_label">within date:</label>
 					<div class="advanced_date_limits">
-						<input type="date" class="form-control" rows="1"></input>
+						<input type="date" class="form-control">
 						<span>-</span>
-						<input type="date" class="form-control" rows="1"></input>
+						<input type="date" class="form-control">
 					</div>
 					<br>
-					<center>
-						<button class="btn btn-default apply_filters_btn">Apply Filters</button>
-					</center>
+					<button class="btn btn-default apply_filters_btn">Apply Filters</button>
 				</div>
 			</div>
 		</div>
@@ -83,9 +81,7 @@
 		<div class="col-sm-8 searchResults col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
 			<div class="topicSearch">
 				<div class="jumbotrona well">
-					<center>
-						<h3>Showing search Results for '{$string}'</h3>
-					</center>
+					<h3>Showing search Results for '{$string}'</h3>
 				</div>
 			</div>
 
@@ -94,7 +90,7 @@
 				<div class="col-lg-12 board-inner">
 
 					<ul class="nav nav-tabs" id="tabs">
-						<div class="liner"></div>
+						<li><div class="liner"></div><li>
 
 						<li class="question_tab active">
 							<a href="#questionsearch" data-toggle="tab" title="Questions">
