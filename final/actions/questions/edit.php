@@ -21,9 +21,8 @@ try{
     $userId = postValueOrNull('userId');
     $questionTopic = getTopicByName(postValueOrNull('questionTopic'));
 
-    echo $id . ";" . $questiontitle . ";" . $questiondescription . ";" . $userId . ";" . $questionTopic['id'];
-    //$newId = updateQuestion($id, $userId, $questiontitle, $questiondescription, $questionTopic);
-    //header('Location: ' . $BASE_URL . 'pages/questions/index.php?id=' . $newId);
+    $newId = updateQuestion($id, $userId, $questiontitle, $questiondescription, $questionTopic['id']);
+    header('Location: ' . $BASE_URL . 'pages/questions/index.php?id=' . $newId);
 }
 catch(Exception $e){
     $_SESSION['error_messages'][] = 'Internal server error, try again later.';
