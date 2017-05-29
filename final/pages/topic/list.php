@@ -6,8 +6,6 @@ if(isset($topicId)) {
     try{
 		$questions = getAllQuestionsTopic($topicId);
 		$topic = getTopicInfo($topicId);
-
-		$topicMods = getTopicMods($topicId);
 			
 		$smarty->assign('questions', $questions);
 		$smarty->assign('topic', $topic);
