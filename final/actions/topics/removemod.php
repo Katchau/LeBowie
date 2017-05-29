@@ -16,7 +16,11 @@ try{
     $id = postValueOrNull('id');
     $userid = postValueOrNull('userid');
 	
-    removeMod($id, $userid);
+    if(removeMod($id, $userid)){
+        $_SESSION['success_messages'][] = 'Successfully removed mod.';
+    }else{
+        $_SESSION['error_messages'][] = 'Internal server error, try again later.';
+    }
     header('Location: ' . $BASE_URL . 'pages/topic/list.php?id=' . $id);
 }
 catch(Exception $e){
