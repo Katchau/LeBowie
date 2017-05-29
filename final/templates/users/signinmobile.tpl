@@ -1,6 +1,7 @@
 {include file='common/header.tpl'}
 
 <div class="container">
+    <br><br>
     <div class="row">
         <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
             <form method="post" action="{$BASE_URL}actions/users/login.php">
@@ -12,7 +13,7 @@
                     <input title="password" type="password" name="password" id="password_confirmation" class="form-control input-lg" placeholder="Password"
                         tabindex="6">
                 </div>
-                <div><button type="submit" class="btn btn-default">Sign in</button></div>
+                <div><center><button type="submit" class="btn btn-default">Sign in</button></center></div>
             </form>
         </div>
     </div>
@@ -29,7 +30,6 @@
             {/if}
         </div>
         <div class="col-lg-3"></div>
-        <div class="col-md-3"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div>
     </div>
 </div>
 
