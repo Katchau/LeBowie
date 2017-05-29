@@ -54,7 +54,7 @@ function updateTopicName($topicId, $topicName){
 function updateTopicDescription($topicId, $topicDescription){
     global $conn;
     $stmt = $conn->prepare('UPDATE topic SET description = ? WHERE id = ?');
-    $stmt->execute(array($topicName, $topicId));
+    $stmt->execute(array($topicDescription, $topicId));
 }
 
 function updateTopic($topicId, $newName, $newDescription){
