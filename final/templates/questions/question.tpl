@@ -26,7 +26,7 @@
 				<a aria-hidden="true" href="{$BASE_URL}pages/questions/answer.php?id={$question.post_id}" class="btn btn-default"> answer</a>
 			</div>
 				{if $USERID == $question.user_id}
-					<a aria-hidden="true" href="" class="btn btn-default">edit</a>
+					<a aria-hidden="true" href="{$BASE_URL}pages/questions/edit.php?id={$question.post_id}" class="btn btn-default">edit</a>
 				 {/if}
 			<hr>
 			<div class="extras_suggested">
