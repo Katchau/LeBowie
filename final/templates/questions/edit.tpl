@@ -8,16 +8,16 @@
             <!-- TODO -->
 
             <form enctype="multipart/form-data" action="" method="post" role="form" class="register well text-center">
-                <h2>Update this Question</h2>
+                <h2>Update your Question</h2>
                 <hr class="colorgraph">
                 <input type="hidden" name="id" value="{$questionId}">
                 <div class="form-group">
-                    <input type="text" name="questiontitle" class="form-control input-lg" placeholder="{$question.title}" tabindex="4">
+                    <input type="text" name="questiontitle" class="form-control input-lg" value="{$question.title}" tabindex="4">
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <textarea name="questiondescription" rows="6" cols="100" class="form-control input-lg" placeholder="{$question.description}"></textarea>
+                            <textarea name="questiondescription" rows="6" cols="100" class="form-control input-lg" value="{$question.description}"></textarea>
                         </div>
                     </div>
                 </div>
