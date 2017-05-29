@@ -4,10 +4,11 @@ require_once $BASE_DIR . 'database/users.php';
 require_once $BASE_DIR . 'database/topic.php';
 
 $topicId = $_GET['id'];
+if (isset($topicId)) $topicMods = getTopicMods($topicId);
 
 function isMod(){
+	if (!isset($topicMods)) return FALSE;
 	$user = getUserProfileInfo($_SESSION['username']);
-	$topicMods = getTopicMods($topicId);
 	for ($i = 0; $i < count($topicMods); ++$i){
 		if ($user['id'] === $topicMods[$i]){
 			return TRUE;
@@ -23,7 +24,7 @@ if(isset($topicId)) {
 		
 		if (isMod()) $smarty->assign('TOPICMODERATOR', TRUE);
 		else $smarty->assign('TOPICMODERATOR', FALSE);
-			
+
 		$smarty->assign('questions', $questions);
 		$smarty->assign('topic', $topic);
 		$smarty->assign('topicId', $topicId);
