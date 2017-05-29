@@ -89,11 +89,11 @@ function searchQuestions($title, $tags, $best, $time, $fts){
 function getRelatedQuestions($questionId)
 {
     $query = "SELECT * FROM question_display WHERE post_id IN(
-              SELECT post_id FROM question 
+              SELECT post_id,count(*) FROM question 
               JOIN questiontag ON question.post_id = questiontag.question_id
               AND questiontag.tag_id IN(SELECT tag_id FROM questiontag WHERE question_id = ?)
               WHERE question.post_id != ?
-              GROUP BY post_id,topic_id)";
+              GROUP BY post_id,topic_id ORDER BY COUNT(*) DESC LIMIT 5)";
 
 
     //Get tags
