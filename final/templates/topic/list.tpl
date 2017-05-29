@@ -23,22 +23,20 @@
 				<h5>Moderators:</h5>
 				<div class="list-group">
 					{foreach $topicMods as $mod}
-					<form enctype="multipart/form-data" action="{$BASE_URL}actions/topics/removemod.php" method="post">
+					<form>
 					<li class="list-group-item">
 						<a href="{$BASE_URL}pages/users/index.php?username={$mod.username}">{$mod.username}</a>
-						<a role="button" type="submit" class="badge btn-danger" href="#"><span class="glyphicon glyphicon-remove"></span></a>
+						<a role="button" class="badge btn-danger" href="#"><span class="glyphicon glyphicon-remove"></span></a>
 					</li>
-					<input type="hidden" name="id" value="{$topicId}">
 					</form>
 					{/foreach}
-					<form enctype="multipart/form-data" action="{$BASE_URL}actions/topics/addmod.php" method="post">
+					<form>
 					<li class="list-group-item list-group-item-warning">Add a moderator
-						<a role="button" type="submit" class="badge btn-success" href="#"><span class="glyphicon glyphicon-plus"></span></a>
+						<a role="button" class="badge btn-success" href="#"><span class="glyphicon glyphicon-plus"></span></a>
 						<br>
 						<br>
 						<input name="mod_to_add" class="form-group-item">
 					</li>
-					<input type="hidden" name="id" value="{$topicId}">
 					</form>
 				</div>
 				{/if}
@@ -55,7 +53,7 @@
 				<h3>No such topic was found!</h3>
 				{else} 
 				{include file='questions/listquestions.tpl' questions=$questions type=1} 
-				<button class="btn btn-default" id="view-more" onclick="getMoreHotQuestions({$topicId})">View more</button> 
+				<button class="btn btn-default" id="view-more" onclick="getMoreTopicQuestions({$topicId})">View more</button> 
 				{/if}
 			</div>
 		</div>
