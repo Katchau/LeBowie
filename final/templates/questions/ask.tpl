@@ -22,7 +22,6 @@
 		</div>
 	</div>
 </div>
-</nav>
 
 <div class="container">
 
@@ -59,13 +58,13 @@
 					<label for="question_header_title" class="col-2 col-form-label">Your Question</label>
 					<textarea name="question-title" class="form-control" rows="1" id="question_header_title" placeholder="enter your question here"></textarea>
 					<hr>
-					<label for="question_header_contents" class="col-2 col-form-label">More Information (optional)</label>
-					<textarea id="post-editor" name="question-description" class="form-control" rows="5" id="question_header_contents" placeholder="provide context for your question"></textarea>
+					<label for="post_editor" class="col-2 col-form-label">More Information (optional)</label>
+					<textarea id="post-editor" name="question-description" class="form-control" rows="5" placeholder="provide context for your question"></textarea>
 				</div>
 				<div class="well pick_topic">
 					<div class="form-group">
 						<label>Topic:</label>
-						<select name="question-topic" class="form-control">
+						<select title="topic" name="question-topic" class="form-control">
 							{foreach $topics as $topic}
               		      	<option value="{$topic.id}">{$topic.topicname}</option>
               		      	{/foreach}
@@ -74,7 +73,7 @@
 				</div>
 				<div class="well pick_tags">
 					<label>Pick tags (optional):</label>
-					<textarea name="question-tags" class="form-control" rows="1" placeholder="enter your tags, separated by commas"></textarea>
+					<textarea title="tags" name="question-tags" class="form-control" rows="1" placeholder="enter your tags, separated by commas"></textarea>
 				</div>
 			</form>
 
