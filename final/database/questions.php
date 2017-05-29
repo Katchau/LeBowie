@@ -239,12 +239,11 @@ function getQuestionScore($id){
     global $conn;
     $stmt = $conn->prepare("SELECT up_score, down_score FROM Post WHERE id = ?");
     $stmt->execute(array($id));
-    return $stmt->fetchAll();
+    return $stmt->fetch();
 }
 
 function setQuestionScore($oldId, $newId){
     $scores = getQuestionScore($oldId);
-    echo $scores['up_score'] . ";" . $scores['down_score'];
     global $conn;
     $stmt = $conn->prepare("UPDATE Post SET up_score = ?, down_score = ? WHERE id = ?");
     $stmt->execute(array($scores['up_score'], $scores['down_score'], $newId));
