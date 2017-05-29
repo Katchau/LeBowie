@@ -71,3 +71,7 @@
 .mod_tools .badge {
     color: white;
 }
+
+.mod_tools input {
+    width: 100%;
+}
