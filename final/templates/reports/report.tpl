@@ -102,12 +102,12 @@
             <input name="question-id" type="hidden" value="{$question_id}">
 
             <div class="form-group well">
-                <input type="hidden" name="report-title" value="">
+                <input type="hidden" name="report-title" value="_">
 
                 <label for="report-reason" class="col-2 col-form-label">Report Reason</label>
                 <textarea name="report-reason" class="form-control" rows="1" id="report-reason" placeholder="enter the reason for your report here"></textarea>
 
-                <input type="hidden" name="report-content" value="">
+                <input type="hidden" name="report-content" value="_">
             </div>
         </form>
 
