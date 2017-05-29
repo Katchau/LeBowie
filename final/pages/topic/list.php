@@ -32,7 +32,6 @@ if(isset($topicId)) {
 		$smarty->display('topic/list.tpl');
 	}
 	catch(PDOException $e){
-		$_SESSION['error_messages'][] = $e->getMessage();
 		$smarty->assign('errorMessage', "No such topic found!");
 		$smarty->display('common/error.tpl');
 		exit(1);
