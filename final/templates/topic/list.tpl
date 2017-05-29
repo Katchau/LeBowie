@@ -20,7 +20,9 @@
 		<br>
 		<div class="guidelines_side mod_tools">
 			<h4>Moderation</h4>
-			<a href="{$BASE_URL}pages/topic/edit.php" class="btn btn-default askButton">edit topic</a>
+			<form action="{$BASE_URL}pages/topic/edit.php?id={$topicId}"> 
+				<input type="submit" value="edit profile" class="btn btn-default">
+			</form>
 			<a href="" class="btn btn-default askButton">assign moderators</a>
 		</div>
 		{/if}
