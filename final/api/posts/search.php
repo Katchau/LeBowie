@@ -6,13 +6,13 @@ $method = $_SERVER['REQUEST_METHOD'];
 $params = json_decode(file_get_contents('php://input'), true);
 switch ($method) {
     case 'GET':
-        get($_GET, $smarty);
+        get2($_GET, $smarty);
         break;
     default:
         http_response_code(405);
 }
 
-function get($params, $smarty)
+function get2($params, $smarty)
 {
     $title = $params['title'];
 	$tags = array();
