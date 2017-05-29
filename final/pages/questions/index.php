@@ -15,7 +15,6 @@ if(isset($questionId)) {
 		$questions = getHotQuestions(0, 10);
 
 		$smarty->assign('question', $question);
-		$smarty->assign('questions',$questions);
 		$smarty->assign('tags', $tags);
 		$smarty->assign('answers', $answers);
 		$smarty->assign('selected', $selected);
