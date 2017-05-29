@@ -10,7 +10,7 @@ function isMod(){
 	if (!isset($topicMods)) return FALSE;
 	$user = getUserProfileInfo($_SESSION['username']);
 	for ($i = 0; $i < count($topicMods); ++$i){
-		if ($user['id'] === $topicMods[$i]){
+		if ($user['id'] === $topicMods[$i]['id']){
 			return TRUE;
 		}
 	}

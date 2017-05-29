@@ -23,7 +23,7 @@
 				<h5>Moderators:</h5>
 				<div class="list-group">
 					{foreach $topicMods as $mod}
-					<li class="list-group-item">{$mod}
+					<li class="list-group-item">{$mod.username}
 						<a role="button" class="badge btn-danger" href="#"><span class="glyphicon glyphicon-remove"></span></a>
 					</li>
 					{/foreach}
