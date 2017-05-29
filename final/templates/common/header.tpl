@@ -46,7 +46,7 @@
         <!-- Brand -->
         <a id="brand" class="navbar-brand" href="../../index.php">newton's<span class="brand-highlight">apple</span></a>
         <form id="mobile-search">
-          <input id="mobile-search-bar" type="text" class="form-control" placeholder="search">
+          <input title="search" id="mobile-search-bar" type="text" class="form-control" placeholder="search">
         </form>
         <i class="glyphicon glyphicon-option-vertical navbar-search"></i>
         <i id="mobile-close-search" class="glyphicon glyphicon-remove navbar-search"></i>
@@ -103,10 +103,10 @@
               <div class="modal-body">
                 <form method="post" action="{$BASE_URL}actions/users/login.php">
                   <div class="form-group">
-                    <input type="text" name="username" id="display_name" class="form-control input-lg" placeholder="Username/Email" tabindex="3">
+                    <input title="username" type="text" name="username" id="display_name" class="form-control input-lg" placeholder="Username/Email" tabindex="3">
                   </div>
                   <div class="form-group">
-                    <input type="password" name="password" id="password_confirmation" class="form-control input-lg" placeholder="Password" tabindex="6">
+                    <input title="password" type="password" name="password" id="password_confirmation" class="form-control input-lg" placeholder="Password" tabindex="6">
                   </div>
                   <div><button type="submit" class="btn btn-default">Sign in</button></div>
                 </form>
@@ -138,7 +138,7 @@
 
         <form class="navbar-form navbar-right" method="get" action="{$BASE_URL}pages/questions/search.php">
           <div class="input-group">
-            <input type="text" class="form-control" name="string" placeholder="Search">
+            <input title="search" type="text" class="form-control" name="string" placeholder="Search">
             <div class="input-group-btn">
               <button class="btn btn-default" type="submit">
                 <i class="glyphicon glyphicon-search"></i>

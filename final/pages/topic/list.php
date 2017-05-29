@@ -19,7 +19,7 @@ function isMod(){
 
 if(isset($topicId)) {
     try{
-		$questions = getAllQuestionsTopic($topicId);
+		$questions = getAllQuestionsTopic($topicId, 0, 10);
 		$topic = getTopicInfo($topicId);
 		
 		if (isMod()) $smarty->assign('TOPICMODERATOR', TRUE);
