@@ -215,12 +215,15 @@ function updateQuestion($id, $userId, $newTitle, $newDesc, $topic){
 
         $conn->beginTransaction();
 		$lastId = createPost($userId,$newDesc);
+        echo "Last ID: " . $lastId;
 		$stmt = $conn->prepare("INSERT INTO question (post_id, topic_id, title) VALUES (?, ?, ?)");
 		$stmt->execute(array($lastId, $topic, $newTitle));
         foreach($answers as $answer){
+            echo "Entered Loop";
             $newAnswerId = createAnswer($answer['user_id'], $lastId, $answer['description']);
             $comments = getComments($answer['post_id']);
             foreach($comments as $comment){
+                echo "Entered comment loop";
                 createComment($comment['user_id'], $newAnswerId, $comment['descriptinon']);
             }
         }
