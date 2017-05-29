@@ -14,7 +14,7 @@ $content = strip_tags($_POST["report-content"]);
 $postInstanceId = getLatestPostInstance($postId);
 
 try {
-    createReport($postId, $userId, $title, $content, $reason);
+    createReport($postInstanceId, $userId, $title, $content, $reason);
     $_SESSION["success_messages"][] = "Report created successfuly";
 } catch (PDOException $e) {
     $_SESSION["error_messages"][] = "Report creation failed";
