@@ -12,19 +12,17 @@ function postValueOrNull($name)
     return $value;
 }
 
-
+try{
 
     $id = postValueOrNull('id');
     $topicname = postValueOrNull('topicname');
     $description = postValueOrNull('topicdescription');
-
-try{
 	
     updateTopic($id, $topicname, $description);
-    header('Location: ' . $BASE_URL . 'pages/topic/list?id=' . $id);
+    header('Location: ' . $BASE_URL . 'pages/topic/list.php?id=' . $id);
 }
 catch(Exception $e){
-    $_SESSION['error_messages'][] = 'Internal server error, try again later.' . $id . ';' . $topicname . ';' . $description;
+    $_SESSION['error_messages'][] = 'Internal server error, try again later.';
     header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
 ?>
