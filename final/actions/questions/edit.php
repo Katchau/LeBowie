@@ -21,7 +21,7 @@ try{
     $userId = postValueOrNull('userId');
     $questionTopic = getTopicByName(postValueOrNull('questionTopic'));
 
-    echo $id . ";" . $questiontitle . ";" . $questiondescription . ";" . $userId . ";" . $questionTopic['topicname'];
+    echo $id . ";" . $questiontitle . ";" . $questiondescription . ";" . $userId . ";" . implode("|",$questionTopic);;
     //$newId = updateQuestion($id, $userId, $questiontitle, $questiondescription, $questionTopic);
     //header('Location: ' . $BASE_URL . 'pages/questions/index.php?id=' . $newId);
 }
