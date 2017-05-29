@@ -7,7 +7,7 @@
 
             <!-- TODO -->
 
-            <form enctype="multipart/form-data" action="" method="post" role="form" class="register well text-center">
+            <form enctype="multipart/form-data" action="{$BASE_URL}actions/questions/edit.php" method="post" role="form" class="register well text-center">
                 <h2>Update your Question</h2>
                 <hr class="colorgraph">
                 <input type="hidden" name="id" value="{$questionId}">
