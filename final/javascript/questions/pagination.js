@@ -9,5 +9,5 @@ function getMoreHotQuestions() {
         data.forEach(function(element) {
             $('#hotq').append(`<div>${element.title}<div>`);
         }, this);
-    }, json);
+    }, 'json');
 }
