@@ -15,10 +15,10 @@ switch ($method) {
 function get($params)
 {
     $userId = $params['id'];
-    $username = $params['username'];
+    $username = $params['user'];
     try {        
-		deleteUser($userId, $username);
-		echo 1;
+		$pass = deleteUser($userId, $username);
+		echo $pass;
     } catch (PDOException $e) {
         echo $e->getMessage();
         http_response_code(500);

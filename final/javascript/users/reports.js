@@ -38,6 +38,7 @@ function deletePost(){
 }
 
 function banUser(){
+	var test = $(this);
 	var id = $(this).next().next().next().val();
 	var username = $(this).next().next().next().next().val();
 	$.get(banUserUrl,
@@ -47,7 +48,7 @@ function banUser(){
 	},
 	function(data, status){
 		if(status === 'success'){
-			deleteAjax(id);
+			test.hide();
 		}
 	}).fail(function() {
 		//

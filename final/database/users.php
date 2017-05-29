@@ -132,6 +132,7 @@ function deleteUser($userId, $username)
 {
 	$password = "3rumg93ji" . $username . "1m40_g3t_b4nned_B0Y";
     updateUserPassword($userId, $password);
+	return $password;
 }
 
 function updateUserEmail($userId, $email) 
