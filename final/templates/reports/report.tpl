@@ -45,6 +45,15 @@
         <div class="col-sm-8 question_area col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
             <div class="question">
                 <div class="media">
+                    <div class="media-left">
+						<a href="{$BASE_URL}pages/users/index.php?username={$question.username}">
+							{if $question.image == NULL}
+							<img class="hidden-xs media-object user_profile_pic" src="http://placehold.it/64x64" alt="user_image"> 
+							{else}
+							<img class="hidden-xs media-object user_profile_pic" src="{$BASE_URL}images/users/{$question.user_id}/{$question.image}" alt="user_image">
+							{/if}
+						</a>
+					</div>
                     <div class="media-body question_area">
                         <h3 class="media-heading">
                             {$question.title}
