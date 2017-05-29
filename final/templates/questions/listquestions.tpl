@@ -33,7 +33,8 @@
 	</div>
 	{if $type != 2}
 	<div class="postBody">
-		{include file='common/shrinkcontent.tpl' description=$question.description|unescape:'html'}
+		<!-- {include file='common/shrinkcontent.tpl' description=$question.description|unescape:'html'} -->
+		{$question.description|unescape:'html'}
 		<hr>
 		<div class="bestanswer">
 			{if isset($question.answer)}
