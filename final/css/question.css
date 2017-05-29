@@ -128,7 +128,7 @@
     max-height: 250px;
     overflow: auto;
 }
-.suggested_questions{
+.extras_suggested .suggested_questions{
   max-height: unset;
 }
 .extras_suggested .suggestion{
