@@ -24,11 +24,11 @@
 
 			<div class="answer_votes">
 				{if $answer.accepted == true}
-				<a class="badge" href="#"><span class="glyphicon glyphicon-ok"></span></a>
+				<a id="accepted-badge" class="badge" href="#"><span class="glyphicon glyphicon-ok"></span></a>
 				{/if}
 
 				{if ($USERNAME == $question.username)}
-				<button id="accept" onclick="acceptAnswer({$answer.answer})" class="btn btn-default accept_btn">accept this answer</button>
+				<button onclick="acceptAnswer(this, {$answer.answer})" class="btn btn-default accept_btn">accept this answer</button>
 				{/if}
 				
 				{if isset($USERID)}
