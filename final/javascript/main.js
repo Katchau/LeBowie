@@ -5,6 +5,7 @@ const downvoteUrl = `${BASE_URL}api/posts/downvote.php`;
 const getSearchUrl = `${BASE_URL}api/posts/search.php`;
 const getCommentsUrl = `${BASE_URL}api/posts/comments.php`;
 const deleteReportUrl = `${BASE_URL}api/reports/delete.php`;
+const deletePostUrl = `${BASE_URL}api/posts/delete.php`;
 
 tinymce.init({
     selector: '#post-editor',

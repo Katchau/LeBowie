@@ -18,6 +18,24 @@ function createPost($userId, $description)
     return $lastId;
 }
 
+function deletePost($postId)
+{
+    global $conn;
+	$post = getPostId($postId);
+	$id = $post['post_id'];
+    $stmt = $conn->prepare("UPDATE Post set current_state = 'Deleted' where id = ?");
+    $stmt->execute(array($id));
+	return $id;
+}
+
+function getPostId($postInstanceId)
+{
+	global $conn;
+    $stmt = $conn->prepare("SELECT * FROM postinstance WHERE id = ?");
+    $stmt->execute(array($postInstanceId));
+    return $stmt->fetch();    
+}
+
 function getPostById($postId)
 {
     global $conn;
