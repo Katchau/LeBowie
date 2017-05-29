@@ -244,6 +244,7 @@ function getQuestionScore($id){
 
 function setQuestionScore($oldId, $newId){
     $scores = getQuestionScore($oldId);
+    echo $scores['up_score'] . ";" . $scores['down_score'];
     global $conn;
     $stmt = $conn->prepare("UPDATE Post SET up_score = ?, down_score = ? WHERE id = ?");
     $stmt->execute(array($scores['up_score'], $scores['down_score'], $newId));
