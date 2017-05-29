@@ -46,7 +46,6 @@ function getQuestionApproximateTitle($title){
 	return $stmt->fetchAll();
 }
 
-//TODO uma opcao para poder escolher text search
 function searchQuestions($title, $tags, $best, $time, $fts){
 	global $conn;
 	$capt = ucfirst($title);
@@ -57,7 +56,7 @@ function searchQuestions($title, $tags, $best, $time, $fts){
 			left outer join Tag on Tag.id = tag_id 
 			where (title LIKE ? or title LIKE ? ) ';
 	if($fts == 'true'){
-		$statement = "SELECT question_display.id,
+		$statement = "SELECT DISTINCT question_display.id,
 			question_display.*
 			FROM (question_display left outer join QuestionTag on question_id = post_id)
 			left outer join Tag on Tag.id = tag_id 
