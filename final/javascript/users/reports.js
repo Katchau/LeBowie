@@ -36,6 +36,21 @@ function postAjax(id, reportId){
 	});
 }
 
+function deletePost2(){
+	var id = $(this).next().val();
+	$.get(deletePostUrl,
+	{
+		'id' : id,
+	},
+	function(data, status){
+		if(status === 'success'){
+			//
+		}
+	}).fail(function() {
+		//
+	});
+}
+
 function deletePost(){
 	var id = $(this).next().next().next().val();
 	var reportId = $(this).next().next().val();
@@ -84,6 +99,7 @@ function banUser2(){
 function loadDocument(){
 	$('.report-section button[name=dismiss]').click(deleteRequest);
 	$('.report-section button[name=deletePost]').click(deletePost);
+	$('.side-nave-options button[name=deletePost]').click(deletePost2);
 	$('.report-section button[name=banUser]').click(banUser);
 	$('.ban-user input[name=banUser2]').click(banUser2);
 }

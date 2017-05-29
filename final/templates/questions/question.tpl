@@ -4,6 +4,12 @@
 <div id="extras-side-nav" class="side-nav">
 	<div class="side-nav-options">
 		<a href="#">answer question</a>
+		{if $ADMINISTRATOR || $TOPICMODERATOR}
+		<button name="deletePost" type="button" class="btn btn-default">
+			<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+		</button>
+		<input type="hidden" name="id" value={$question.id_post}>
+		{/if}
 	</div>
 	<hr>
 	<div class="side-nav-options">
@@ -112,5 +118,6 @@
 
 <script src="{$BASE_URL}javascript/posts/posts.js"></script>
 <script src="{$BASE_URL}javascript/posts/comments.js"></script>
+<script src="{$BASE_URL}javascript/users/reports.js"></script>
 
 {include file='common/footer.tpl'}
