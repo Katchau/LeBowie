@@ -18,6 +18,6 @@ function get($params)
     $limit = $_GET["limit"];
 
     $questions = getHotQuestions($offset, $limit);
-    echo josn_encode($questions);
+    echo json_encode($questions);
 }
 ?>
