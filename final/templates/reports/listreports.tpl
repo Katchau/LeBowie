@@ -31,6 +31,7 @@
 		<input type="hidden" name="id" value={$report.id}>
 		<input type="hidden" name="post_id" value={$report.post_id}>
 		<input type="hidden" name="user_id" value={$report.user_id}>
+		<input type="hidden" name="username" value={$report.username}>
 	</div>
 </div>
 
