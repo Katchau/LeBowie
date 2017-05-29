@@ -165,7 +165,7 @@
   margin-top:87px;
 }
 .ask_area .well{
-  box-shadow: orange;
+  box-shadow: 1px 1px orange;
   background-color: #EDEDED;
 }
 .ask_area .btn {
