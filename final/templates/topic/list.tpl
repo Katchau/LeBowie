@@ -17,16 +17,20 @@
 			<hr>
 			<br>
 			<div class="guidelines_side mod_tools">
-				<h4>Moderation</h4>
+				<h3>Moderation</h3>
+				<hr>
 				{if $ADMINISTRATOR}
 				<h5>Moderators:</h5>
 				<div class="list-group">
 					{foreach $topicMods as $mod}
-					<li class="list-group-item" href="{$BASE_URL}pages/users/index.php?username={$mod.username}">{$mod.username}
+					<li class="list-group-item">
+						<a class="list-group-item" href="{$BASE_URL}pages/users/index.php?username={$mod.username}">{$mod.username}</a>
 						<a role="button" class="badge btn-danger" href="#"><span class="glyphicon glyphicon-remove"></span></a>
 					</li>
 					{/foreach}
-					<li class="list-group-item-warning">Add a moderator</li>
+					<li class="list-group-item list-group-item-warning">Add a moderator
+						<a role="button" class="badge btn-success" href="#"><span class="glyphicon glyphicon-plus"></span></a>
+					</li>
 				</div>
 				{/if}
 				<a href="{$BASE_URL}pages/topic/edit.php?id={$topicId}" class="btn btn-default askButton">edit topic</a> 
