@@ -48,10 +48,13 @@
 		<div class="ask_area col-sm-8 col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
 			<h1 class="hidden-lg hidden-md hidden-sm topicTitle">{$topic.topicname}</h1>
 			<p class="hidden-lg hidden-md hidden-sm">{$topic.description}</p>
-			<div>
+			<div id="topic-questions">
 				{if !isset($topic) || $topic == NULL}
 				<h3>No such topic was found!</h3>
-				{else} {include file='questions/listquestions.tpl' questions=$questions type=1} {/if}
+				{else} 
+				{include file='questions/listquestions.tpl' questions=$questions type=1} 
+				<button class="btn btn-default" id="view-more" onclick="getMoreHotQuestions({$topicId})">View more</button> 
+				{/if}
 			</div>
 		</div>
 	</div>
