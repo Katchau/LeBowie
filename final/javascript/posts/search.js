@@ -57,8 +57,8 @@ function updateTopic(){
 
 function topicFilter(child){
 	if(topicId == 0)return false;
-	var topic = child.find('.topic');
-	var needsChange = topic.attr('id') != topicId;
+	var topic = child.find('input[name=topic]').val();
+	var needsChange = topic != topicId;
 	if(needsChange) child.hide(400);
 	return needsChange;
 }
@@ -106,8 +106,8 @@ function updateVoteGap(){
 
 function votesFilter(child){
 	if(minScore == null && maxScore == null)return false;//needs show?
-	var upVote = child.find('.questionInfo button span').first().attr('id');
-	var dowVote = child.find('.questionInfo button span').last().attr('id');
+	var upVote = child.find('input[name=upscore]').val();
+	var dowVote = child.find('input[name=downscore]').val();
 	var vote = upVote - dowVote;
 	console.log(vote);
 	if((minScore != null && minScore > vote)||(maxScore != null && maxScore < vote)){
@@ -126,7 +126,7 @@ function updateDateGap(){
 
 function datesFilter(child){
 	if(minDate.length != 3 && maxDate.length != 3)return false;//needs show?
-	var date = child.find('.questionInfo a').first().attr('id').split('-');
+	var date = child.find('input[name=creation]').val().split('-');
 	for(var i = 0; i < date.length; i++){
 		if((minDate.length == 3 && minDate[i] > date[i])||
 		(maxDate.length == 3 && maxDate[i] < date[i])){
