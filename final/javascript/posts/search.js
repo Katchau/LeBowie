@@ -14,7 +14,7 @@ var needToAjax = false;
 var nameToSearch = "";
 
 function displayQuestions(questions){
-	var baseDir = '.searchResults .questionSearch';
+	var baseDir = '.searchResults #questionsearch';
 	$(baseDir).empty();
 	$(baseDir).append(questions);
 }
