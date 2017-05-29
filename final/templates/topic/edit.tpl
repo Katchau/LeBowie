@@ -7,16 +7,17 @@
 
             <!-- TODO -->
 
-            <form enctype="multipart/form-data" action="" method="post" role="form" class="register well text-center">
+            <form enctype="multipart/form-data" action="{$BASE_URL}actions/topic/edit.php" method="post" role="form" class="register well text-center">
                 <h2>Update this Topic</h2>
                 <hr class="colorgraph">
+                <input type="hidden" name="id" value="{$topicId}">
                 <div class="form-group">
                     <input type="text" name="topicname" class="form-control input-lg" placeholder="Topic Name" tabindex="4">
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <textarea name="topicdescription" rows="6" cols="100" class="form-control input-lg" placeholder="Topic's Description'"></textarea>
+                            <textarea name="topicdescription" rows="6" cols="100" class="form-control input-lg" placeholder="Topic's Description"></textarea>
                         </div>
                     </div>
                 </div>
