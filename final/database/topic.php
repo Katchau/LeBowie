@@ -60,7 +60,7 @@ function updateTopicDescription($topicId, $topicDescription){
 function updateTopic($topicId, $newName, $newDescription){
 
     if ($topicId != NULL) {
-        if ($nameName != NULL) {
+        if ($newName != NULL) {
             updateTopicName($topicId, $newName);
         }
         if ($newDescription != NULL){
