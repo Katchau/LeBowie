@@ -28,11 +28,11 @@ function getMoreNewQuestions() {
     $.get(BASE_URL + 'api/questions/new-questions.php?offset=' + offsetNew + '&limit=' + limitNew, function(data, status, xhr) {
         if (xhr.status == 200) {
             offsetNew += limitNew;
-            $('#hotq').append(data);
-            $('#view-more').detach().appendTo('#hotq');
+            $('#newq').append(data);
+            $('#view-more').detach().appendTo('#newq');
         } else if (!atEndNew) {
-            $('#hotq').append('<div class="col-lg-8" style="padding: 10px;"> No more questions </div>');
-            $('#view-more').detach().appendTo('#hotq');
+            $('#newq').append('<div class="col-lg-8" style="padding: 10px;"> No more questions </div>');
+            $('#view-more').detach().appendTo('#newq');
             atEndNew = true;
         }
     });
@@ -42,11 +42,11 @@ function getMoreBestQuestions() {
     $.get(BASE_URL + 'api/questions/best-questions.php?offset=' + offsetBest + '&limit=' + limitBest, function(data, status, xhr) {
         if (xhr.status == 200) {
             offsetBest += limitBest;
-            $('#hotq').append(data);
-            $('#view-more').detach().appendTo('#hotq');
+            $('#bestq').append(data);
+            $('#view-more').detach().appendTo('#bestq');
         } else if (!atEndBest) {
-            $('#hotq').append('<div class="col-lg-8" style="padding: 10px;"> No more questions </div>');
-            $('#view-more').detach().appendTo('#hotq');
+            $('#bestq').append('<div class="col-lg-8" style="padding: 10px;"> No more questions </div>');
+            $('#view-more').detach().appendTo('#bestq');
             atEndBest = true;
         }
     });
