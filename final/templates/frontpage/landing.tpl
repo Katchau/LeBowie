@@ -59,14 +59,16 @@
 
         <div class="tab-pane fade in active" id="hotq">
           {include file='questions/listquestions.tpl' questions=$hquestions type=0}
-          <button id="view-more" onclick="getMoreHotQuestions()">View more</button>
+          <button class="btn btn-default" id="view-more" onclick="getMoreHotQuestions()">View more</button>
         </div>
 
         <div class="tab-pane fade in" id="newq">
           {include file='questions/listquestions.tpl' questions=$rquestions type=0}
+          <button class="btn btn-default" id="view-more" onclick="getMoreNewQuestions()">View more</button>
         </div>
         <div class="tab-pane fade in  " id="bestq">
           {include file='questions/listquestions.tpl' questions=$bquestions type=0}
+          <button class="btn btn-default" id="view-more" onclick="getMoreBestQuestions()">View more</button>
         </div>
       </div>
     </div>

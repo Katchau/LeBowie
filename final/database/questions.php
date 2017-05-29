@@ -82,19 +82,19 @@ function getHotQuestions($offset, $limit)
     return $stmt->fetchAll();
 }
 
-function getRecentQuestions()
+function getRecentQuestions($offset, $limit)
 {
     global $conn;
-    $stmt = $conn->prepare("SELECT * FROM recent_questions");
-    $stmt->execute();
+    $stmt = $conn->prepare("SELECT * FROM recent_questions LIMIT ? OFFSET ?");
+    $stmt->execute(array($limit, $offset));
     return $stmt->fetchAll();
 }
 
-function getBestQuestions()
+function getBestQuestions($offset, $limit)
 {
     global $conn;
-    $stmt = $conn->prepare("SELECT * FROM top_10_questions");
-    $stmt->execute();
+    $stmt = $conn->prepare("SELECT * FROM top_10_questions LIMIT ? OFFSET ?");
+    $stmt->execute(array($limit, $offset));
     return $stmt->fetchAll();
 }
 
