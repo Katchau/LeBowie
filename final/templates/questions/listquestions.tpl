@@ -1,7 +1,7 @@
  {if $questions|@count == 0}
-<div class="none_found jumbotron">
+<li class="none_found jumbotron">
 	No questions.
-</div>
+</li>
 {/if} {if $type == 2} {foreach $questions as $question}
 
 <div>
