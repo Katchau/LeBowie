@@ -86,6 +86,26 @@ function searchQuestions($title, $tags, $best, $time, $fts){
 	return $stmt->fetchAll();
 }
 
+function getRelatedQuestions($questionId)
+{
+    $query = "SELECT *,COUNT(*) FROM question JOIN questiontag ON question.post_id = questiontag.question_id
+              AND questiontag.tag_id IN(SELECT tag_id FROM questiontag WHERE question_id = ?)
+              WHERE question.post_id != ?
+              GROUP BY question.post_id
+              ORDER BY COUNT(*) DESC
+              LIMIT 4";
+
+
+    //Get tags
+    global $conn;
+    $stmt = $conn->prepare($query);
+    $stmt->execute(array($questionId,$questionId));
+    $results = $stmt->fetchAll();
+
+    return $results;
+}
+
+
 function getHotQuestions($offset, $limit)
 {
     global $conn;
