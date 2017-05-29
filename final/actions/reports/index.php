@@ -16,5 +16,6 @@ try {
 } catch (PDOException $e) {
     $_SESSION["error_messages"][] = "Report creation failed";
 }
-header("Location: $BASE_URL" . "pages/questions/index.php?id=$questionId");
+echo $postId . " " . $userId . " " . $title . " " . $content . " " . $reason;
+//header("Location: $BASE_URL" . "pages/questions/index.php?id=$questionId");
 ?>
