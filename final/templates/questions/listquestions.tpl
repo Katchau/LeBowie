@@ -2,7 +2,10 @@
 <div class="none_found jumbotron">
 	No questions.
 </div>
-{/if} {foreach $questions as $question}
+{/if} 
+
+{if type != 2}
+{foreach $questions as $question}
 
 <div class="question well">
 	<h2 class="questionTitle"><a href="{$BASE_URL}pages/questions/index.php?id={$question.post_id}">{$question.title}</a></h2>
@@ -54,3 +57,14 @@
 </div>
 
 {/foreach}
+{else}
+ {foreach $questions as $question}
+<li>
+	<a class="list-group-item suggestion" href="{$BASE_URL}pages/questions/index.php?id={$question.post_id}">{$question.title}
+		<span class="badge">
+			{$question.up_score}
+		</span>
+	</a>
+</li>
+{/foreach}
+{/if}
