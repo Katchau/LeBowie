@@ -15,6 +15,7 @@
 {/foreach} {else} 
 
 {foreach $questions as $question}
+{if $question.current_state != 'Deleted'}
 <div class="question well">
 	<h2 class="questionTitle"><a href="{$BASE_URL}pages/questions/index.php?id={$question.post_id}">{$question.title}</a></h2>
 	<div class="questionInfo">
@@ -55,5 +56,5 @@
 	</div>
 	{/if}
 </div>
-
+{/if}
 {/foreach} {/if}
