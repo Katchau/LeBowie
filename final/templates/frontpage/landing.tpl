@@ -27,7 +27,7 @@
     <div class="col-lg-10 board-inner">
 
       <ul class="nav nav-tabs" id="tabs">
-        <div class="liner"></div>
+        <span class="liner"></span>
 
         <li class="question_tab active">
           <a href="#hotq" data-toggle="tab" title="hottest questions">
