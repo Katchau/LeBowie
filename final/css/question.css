@@ -150,6 +150,12 @@
 .guidelines_side ul{
   list-style-type: none;
 }
+
+.question .well {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
 .guidelines_side .well{
   border-color: orange;
   border-radius: 0;
