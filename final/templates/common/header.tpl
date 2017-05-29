@@ -153,7 +153,11 @@
     <div id="my-side-nav" class="side-nav">
       <div class="side-nav-auth">
         <a href="{$BASE_URL}pages/users/signup.php">sign up</a>
+        {if $USERNAME}
         <a href="{$BASE_URL}pages/users/signinmobile.php">sign in</a>
+        {else}
+        <a href="#" onclick="signOut();">sign out</a>
+        {/if}
       </div>
       <hr>
       <div class="side-nav-options">
