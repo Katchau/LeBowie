@@ -45,7 +45,7 @@ function getQuestionApproximateTitle($title){
 }
 
 //TODO uma opcao para poder escolher text search
-function searchQuestions($title, $tags, $best, $time){
+function searchQuestions($title, $tags, $best, $time, $fts){
 	global $conn;
 	$capt = ucfirst($title);
 	$tit1 = substr_replace(substr_replace($title, '%', strlen($title), 0), '%', 0, 0);
@@ -54,6 +54,15 @@ function searchQuestions($title, $tags, $best, $time){
 			(question_display left outer join QuestionTag on question_id = post_id)
 			left outer join Tag on Tag.id = tag_id 
 			where (title LIKE ? or title LIKE ? ) ';
+	if($fts == 'true'){
+		$statement = "SELECT question_display.id,
+			question_display.*
+			FROM (question_display left outer join QuestionTag on question_id = post_id)
+			left outer join Tag on Tag.id = tag_id 
+			JOIN first_post_instance ON question_display.post_id = first_post_instance.id
+			WHERE to_tsvector('english',question_display.title 
+			|| ' ' || question_display.description) @@ plainto_tsquery('english', ?) ";
+	}
 	if(sizeof($tags) > 0)
 		$statement = $statement . 'and ( Tag.text = ?';
 	for($i = 1; $i < sizeof($tags); $i++){
@@ -69,10 +78,33 @@ function searchQuestions($title, $tags, $best, $time){
 	else $statement = $statement . ' post_id DESC NULLS LAST';
 	$stmt = $conn->prepare($statement);
 	$titles = array($tit1,$tit2);
+	if($fts == 'true'){
+		$titles = array($title);
+	}
 	$values = array_merge((array)$titles, (array)$tags);
 	$stmt->execute($values);
 	return $stmt->fetchAll();
 }
+
+function getRelatedQuestions($questionId)
+{
+    $query = "SELECT *,COUNT(*) FROM question JOIN questiontag ON question.post_id = questiontag.question_id
+              AND questiontag.tag_id IN(SELECT tag_id FROM questiontags WHERE question_id = ?)
+              WHERE question.post_id != ?
+              GROUP BY question.post_id
+              ORDER BY COUNT(*) DESC
+              LIMIT 4";
+
+
+    //Get tags
+    global $conn;
+    $stmt = $conn->prepare($query);
+    $stmt->execute(array($questionId,$questionId));
+    $results = $stmt->fetchAll();
+
+    return $results;
+}
+
 
 function getHotQuestions($offset, $limit)
 {

@@ -20,8 +20,9 @@ function get($params, $smarty)
 		$tags = $params['tags'];
 	$byBest = $params['best'];
 	$byRecent = $params['recent'];
+	$fts = $params['fts'];
     try {        
-		$question = searchQuestions($title,$tags,$byBest,$byRecent);
+		$question = searchQuestions($title,$tags,$byBest,$byRecent,$fts);
 		if ($question == null) {
             http_response_code(404);
             return;

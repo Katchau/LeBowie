@@ -10,6 +10,11 @@
 			<div class="advanced_search">
 				<p>You can apply the following filters to narrow down the results:</p>
 				<hr>
+				<div class="advanced_search_fts text-left">
+					<h3>Description and FTS</h3>
+					<label class="advanced_search_label">Include description on search</label>
+					<input type="checkbox" name="score" value="false"><br>
+				</div>
 				<div class="advanced_topic_search text-left">
 					<h3>Topic</h3>
 					<label class="advanced_search_label">within this topic:</label>
