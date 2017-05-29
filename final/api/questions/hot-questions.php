@@ -20,8 +20,8 @@ function get($params)
     $limit = $_GET["limit"];
 
     $questions = getHotQuestions($offset, $limit);
-    $smarty->assign('questions/listquestions.tpl', $questions);
-    $output = $smarty->fetch();
+    $smarty->assign('questions', $questions);
+    $output = $smarty->fetch('questions/listquestions.tpl');
     echo $output;
 }
 ?>
