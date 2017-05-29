@@ -1,5 +1,6 @@
 <?php
 require_once '../../config/init.php';
+require_once $BASE_DIR .'database/questions.php';
 
 $questionId = $_GET['id'];
 
