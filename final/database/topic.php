@@ -76,7 +76,10 @@ function updateTopic($topicId, $newName, $newDescription){
 function getTopicMods($topicId){
     if ($topicId != NULL){
         global $conn;
-        $stmt = $conn->prepare("SELECT mod_id FROM TopicUserAcc WHERE topic_id = ?");
+        $stmt = $conn->prepare(
+        "SELECT UserAcc.id, UserAcc.username 
+        FROM UserAcc INNER JOIN TopicUserAcc 
+        ON UserAcc.id = TopicUserAcc.mod_id WHERE TopicUserAcc.topic_id = ?");
         $stmt->execute(array($topicId));
         return $stmt->fetchAll();
     }

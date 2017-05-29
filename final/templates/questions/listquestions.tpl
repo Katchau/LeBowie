@@ -33,12 +33,12 @@
 	</div>
 	{if $type != 2}
 	<div class="postBody">
-		<!-- {include file='common/shrinkcontent.tpl' description=$question.description|unescape:'html'} -->
 		{$question.description|unescape:'html'}
 		<hr>
 		<div class="bestanswer">
 			{if isset($question.answer)}
-			<span class="top-answer">Accepted Answer</span> {include file='common/shrinkcontent.tpl' description=$question.answer_desc|unescape:'html'}
+			<span class="top-answer">Accepted Answer</span> 
+			{$question.answer_desc|unescape:'html'}
 			<p class="writerInfo">
 				answered by <a href="#" class="writer"> {$question.answer_user_name} </a> on {$question.answer_creation}
 			</p>
