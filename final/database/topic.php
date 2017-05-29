@@ -15,6 +15,13 @@ function getAllQuestionsTopic($topicId, $offset, $limit)
     return $stmt->fetchAll();
 }
 
+function getTopicByName($topicName){
+    global $conn;
+    $stmt = $conn->prepare("SELECT id FROM topic WHERE topicname = ?");
+    $stmt->execute(array($topicName));
+    return $stmt->fetch();
+}
+
 function getTopicInfo($topicId)
 {
     global $conn;

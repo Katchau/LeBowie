@@ -11,6 +11,8 @@
                 <h2>Update your Question</h2>
                 <hr class="colorgraph">
                 <input type="hidden" name="id" value="{$questionId}">
+                <input type="hidden" name="questionTopic" value="{$question.topicname">
+                <input type="hidden" name="userId" value={$USERID}>
                 <div class="form-group">
                     <input type="text" name="questiontitle" class="form-control input-lg" value="{$question.title}" tabindex="4">
                 </div>
