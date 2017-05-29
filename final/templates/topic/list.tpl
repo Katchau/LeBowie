@@ -24,10 +24,10 @@
 				<div class="list-group">
 					{foreach $topicMods as $mod}
 					<form enctype="multipart/form-data" action="{$BASE_URL}actions/topics/removemod.php" method="post">
-					<li class="list-group-item">
+					<div class="list-group-item">
 						<a href="{$BASE_URL}pages/users/index.php?username={$mod.username}">{$mod.username}</a>
 						<button type="submit" class="badge btn-danger"><span class="glyphicon glyphicon-remove"></span></button>
-					</li>
+					</div>
 
 					<input type="hidden" name="id" value="{$topicId}">
 					<input type="hidden" name="userid" value="{$mod.id}">
@@ -35,12 +35,12 @@
 					</form>
 					{/foreach}
 					<form enctype="multipart/form-data" action="{$BASE_URL}actions/topics/addmod.php" method="post">
-					<li class="list-group-item list-group-item-warning">Add a moderator
+					<div class="list-group-item list-group-item-warning">Add a moderator
 						<button type="submit" class="badge btn-success"><span class="glyphicon glyphicon-plus"></span></button>
 						<br>
 						<br>
 						<input name="username" class="form-group-item">
-					</li>
+					</div>
 
 					<input type="hidden" name="id" value="{$topicId}">
 

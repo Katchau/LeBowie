@@ -7,7 +7,7 @@
 <div class="lelel well">
 	<h2 class="questionTitle orange">Report created on {$report.creation} </h2>
 	<p class="questionInfo">
-		reported user: <a id={$report.creation} class="answer_author" href="{$BASE_URL}pages/users/index.php?username={$report.username}">{$report.username}</a>
+		Reported user: <a id={$report.creation} class="answer_author" href="{$BASE_URL}pages/users/index.php?username={$report.username}">{$report.username}</a>
 	</p>
 	<div class="postBody">
 		Reason:
