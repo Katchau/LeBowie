@@ -40,7 +40,7 @@
 				<div class="advanced_score_search text-left">
 					<h3>Score</h3>
 					<label class="advanced_search_label">Order by Score</label>
-					<input type="checkbox" name="score" value="false"><br></input>
+					<input type="checkbox" name="score" value="false"><br>
 					<label class="advanced_search_label">within score:</label>
 					<div class="advanced_score_limits">
 						<label class="glyphicon glyphicon-thumbs-up"></label>
@@ -68,14 +68,12 @@
 					<br>
 					<label class="advanced_search_label">within date:</label>
 					<div class="advanced_date_limits">
-						<input type="date" class="form-control" rows="1"></input>
+						<input type="date" class="form-control" rows="1">
 						<span>-</span>
-						<input type="date" class="form-control" rows="1"></input>
+						<input type="date" class="form-control" rows="1">
 					</div>
 					<br>
-					<center>
-						<button class="btn btn-default apply_filters_btn">Apply Filters</button>
-					</center>
+					<button class="btn btn-default apply_filters_btn">Apply Filters</button>
 				</div>
 			</div>
 		</div>
