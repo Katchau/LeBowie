@@ -1,5 +1,4 @@
 {include file='common/header.tpl'}
-{include file='common/scriptlist.tpl'}
 
 	<!-- profile area -->
     <div class="container profile">
