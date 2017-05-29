@@ -1,5 +1,7 @@
 <?php
 
+require_once 'posts.php';
+
 function getComments($answerId)
 {
     global $conn;
@@ -14,7 +16,7 @@ function createComment($userId, $answerId, $commentBody)
     try{
         $conn->beginTransaction();
         $lastId = createPost($userId, $commentBody);
-        $stmt=$conn->prepare("INSERT INTO comment (post_id, answer_id)
+        $stmt=$conn->prepare("INSERT INTO AnswerComment (post_id, answer_id)
                                 VALUES (? , ?)");
         $stmt->execute(array($lastId, $answerId));
         $conn->commit();

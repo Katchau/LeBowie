@@ -41,37 +41,40 @@
                 <div class="media">
                     <div class="media-left">
                         <a href="#">
-                            <img class="hidden-xs media-object user_profile_pic" src="http://placehold.it/64x64" alt="user_image">
+                            {if $answer.image == NULL}
+							<img class="hidden-xs media-object user_profile_pic" src="http://placehold.it/64x64" alt="user_image"> 
+							{else}
+							<img class="hidden-xs media-object user_profile_pic" src="{$BASE_URL}images/users/{$answer.user_id}/{$answer.image}" alt="user_image">
+							{/if}
                         </a>
                     </div>
                     <div class="media-body question_area">
                         <h3 class="media-heading">
-                            {$question.title}
+                            You selected to comment on this:
                         </h3>
-                        <div class="question_details"> asked by
-                            <a class="question_author" href="{$BASE_URL}pages/users/index.php?username={$question.username}">{$question.username}</a> on <span class="question_date">{$question.creation}</span> in <a class="question_topic" href="{$BASE_URL}pages/topic/list.php?id={$question.id}">{$question.topicname}</a>
+                        <div class="question_details"> answered by
+                            <a class="question_author" href="{$BASE_URL}pages/users/index.php?username={$answer.username}">{$answer.username}</a> on <span class="question_date">{$answer.creation}</span> 
                         </div>
                         <hr>
                         <div class="question_body">
-                            {$question.description|unescape:'html'}
+                            {$answer.description|unescape:'html'}
                         </div>
+                     
                         <div class="question_coda">
-                            <div class="question_tags">
-                                {foreach $tags as $tag}
-                                <a class="label label-default" href="#">{$tag}</a>
-                                {/foreach}
-                            </div>
                             <div class="question_votes">
-                                <label> Was this question relevant? Please leave a vote! </label>
+								{if isset($USERID)}
+                                <label> Was this answer relevant? Please leave a vote! </label>
                                 <button type="button" class="btn btn-default">
                                     <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
                                 </button>
+								
                                 <button type="button" class="btn btn-default">
-                                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">{$question.up_score}</span>
+                                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" {if ($USERNAME == $answer.username)} disabled {/if}>{$answer.up_score}</span>
                                 </button>
                                 <button type="button" class="btn btn-default">
-                                    <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">{$question.down_score}</span>
+                                    <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true" {if ($USERNAME == $answer.username)} disabled {/if} >{$answer.down_score}</span>
                                 </button>
+								{/if}
                             </div>
                         </div>
                     </div>
@@ -86,35 +89,17 @@
                 Comment on this answer
             </div>
             <div class="answer_area">
-                <div class="answer">
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#">
-                                <img class="hidden-xs media-object user_profile_pic" src="http://placehold.it/64x64" alt="user_image" height="50px">
-                            </a>
-                        </div>
-                        <div class="media-body answer_area">
-                            <div class="answer_body">
-                                {$answer.description|unescape:'html'}
-                            </div>
-                            <div class="answer_details"> answered by
-                                <a class="answer_author" href="#">{$answer.username}</a>
-                                on
-                                <span class="answer_date">{$answer.creation}</span>
-                            </div>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
+				{if isset($USERID)}
                 <form action="{$BASE_URL}actions/comments/" method="post" id="form-comment">
                     <div class="form-group">
                         <input name="comment-user-id" type="hidden" value="{$USERID}" >
                         <input name="comment-answer-id" type="hidden" value="{$answer.answer}" >
-                        <input name="comment-question-id" type="hidden" value="{$question.post_id}">
+                        <input name="comment-question-id" type="hidden" value="{$answer.question}">
                         <textarea name="comment-body" rows="4" cols="100" class="form-control input-lg" placeholder="Enter your comment here."></textarea>
                     </div>
                     <input type="submit" value="Submit Comment" form="form-comment" class="btn btn-default" tabindex="7">
                 </form>
+				{/if}
                 <hr>
                 <br>
             </div>
