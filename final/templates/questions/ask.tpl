@@ -58,7 +58,7 @@
 					<label for="question_header_title" class="col-2 col-form-label">Your Question</label>
 					<textarea name="question-title" class="form-control" rows="1" id="question_header_title" placeholder="enter your question here"></textarea>
 					<hr>
-					<label for="post_editor" class="col-2 col-form-label">More Information (optional)</label>
+					<label class="col-2 col-form-label">More Information (optional)</label>
 					<textarea id="post-editor" name="question-description" class="form-control" rows="5" placeholder="provide context for your question"></textarea>
 				</div>
 				<div class="well pick_topic">
