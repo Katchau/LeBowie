@@ -20,7 +20,7 @@
 				<h3>Moderation</h3>
 				<hr>
 				{if $ADMINISTRATOR}
-				<h5>Moderators:</h5>
+				<h4>Moderators:</h4>
 				<div class="list-group">
 					{foreach $topicMods as $mod}
 					<form enctype="multipart/form-data" action="{$BASE_URL}actions/topics/removemod.php" method="post">
@@ -39,7 +39,7 @@
 						<button type="submit" class="badge btn-success"><span class="glyphicon glyphicon-plus"></span></button>
 						<br>
 						<br>
-						<input name="username" class="form-group-item">
+						<input title="username" name="username" class="form-group-item">
 					</div>
 
 					<input type="hidden" name="id" value="{$topicId}">
