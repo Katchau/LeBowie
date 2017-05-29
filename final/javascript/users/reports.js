@@ -22,25 +22,32 @@ function deleteRequest(){
 	deleteAjax(id);
 }
 
-function deletePost(){
-	var id = $(this).next().next().next().val();
+function postAjax(id, reportId){
 	$.get(deletePostUrl,
 	{
 		'id' : id,
 	},
 	function(data, status){
 		if(status === 'success'){
-			deleteAjax(id);
+			deleteAjax(reportId);
 		}
 	}).fail(function() {
 		//
 	});
 }
 
+function deletePost(){
+	var id = $(this).next().next().next().val();
+	var reportId = $(this).next().next().val();
+	postAjax(id, reportId);
+}
+
 function banUser(){
 	var test = $(this);
 	var id = $(this).next().next().next().val();
 	var username = $(this).next().next().next().next().val();
+	var postId = $(this).next().next().val();
+	var reportId = $(this).next().val();
 	$.get(banUserUrl,
 	{
 		'id' : id,
@@ -49,6 +56,7 @@ function banUser(){
 	function(data, status){
 		if(status === 'success'){
 			test.hide();
+			postAjax(postId, reportId);
 		}
 	}).fail(function() {
 		//
