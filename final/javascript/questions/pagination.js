@@ -57,7 +57,7 @@ limitTopic = 10;
 atEndTopic = false;
 
 function getMoreTopicQuestions(topicId) {
-    $.get(`${BASE_URL}api/topics/questions.php?topic=${topic}&offset=${offset}&limit=${limit}`, function(data, status, xhr) {
+    $.get(`${BASE_URL}api/topics/questions.php?topic=${topicId}&offset=${offsetTopic}&limit=${limitTopic}`, function(data, status, xhr) {
         if (xhr.status == 200) {
             offsetTopic += limitTopic;
             $('#topic-questions').append(data);
