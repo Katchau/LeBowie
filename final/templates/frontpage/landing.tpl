@@ -59,6 +59,7 @@
 
         <div class="tab-pane fade in active" id="hotq">
           {include file='questions/listquestions.tpl' questions=$hquestions type=0}
+          <button onclick="getMoreHotQuestions()">View more</button>
         </div>
 
         <div class="tab-pane fade in" id="newq">

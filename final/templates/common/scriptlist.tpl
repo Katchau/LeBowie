@@ -12,6 +12,7 @@
 <script src="{$BASE_URL}javascript/common/responsive-tabs.js"></script>
 <script src="{$BASE_URL}javascript/common/plugins.js"></script>
 <script src="{$BASE_URL}javascript/common/navbar.js"></script>
+<script src="{$BASE_URL}javascript/questions/pagination.js"></script>
 
 <!-- Google login -->
 <script src="{$BASE_URL}javascript/google-login/google-login.js"></script>
