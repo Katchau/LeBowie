@@ -52,7 +52,7 @@ function updateDownvoteCounter(postId) {
 
 function acceptAnswer(controller, answerId) {
     console.log($("#accepted-badge").parent());
-    previousId = $("#accepted-badge").parent().children("input[type=hidden][name=answerId]").val();
+    previousId = $("#accepted-badge").parent().find("input[type=hidden][name=answerId]").val();
     if (previousId) {
         $.get(`${BASE_URL}api/answers/unaccept.php?id=${previousId}`, function(data) {
             $("#accepted-badge").remove();
