@@ -74,11 +74,11 @@ function searchQuestions($title, $tags, $best, $time){
 	return $stmt->fetchAll();
 }
 
-function getHotQuestions()
+function getHotQuestions($offset, $limit)
 {
     global $conn;
-    $stmt = $conn->prepare("SELECT * FROM hot_questions");
-    $stmt->execute();
+    $stmt = $conn->prepare("SELECT * FROM hot_questions LIMIT ? OFFSET ?");
+    $stmt->execute(array($offset, $limit));
     return $stmt->fetchAll();
 }
 
