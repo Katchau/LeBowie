@@ -17,14 +17,14 @@ try{
     $id = postValueOrNull('id');
     $username = postValueOrNull('username');
 
-    $userid = getUserSessionId($username);
+    $userid = getUserSessionId($username)['id'];
 
 	
     addMod($id, $userid);
     header('Location: ' . $BASE_URL . 'pages/topic/list.php?id=' . $id);
 }
 catch(Exception $e){
-    $_SESSION['error_messages'][] = 'Internal server error, try again later.' . $id . $userid['id'];
+    $_SESSION['error_messages'][] = 'Internal server error, try again later.';
     header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
 ?>
