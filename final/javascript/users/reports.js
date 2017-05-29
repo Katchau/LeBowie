@@ -63,10 +63,29 @@ function banUser(){
 	});
 }
 
+function banUser2(){
+	var test = $(this);
+	var id = $(this).next().val();
+	var username = $(this).next().next().val();
+	$.get(banUserUrl,
+	{
+		'id' : id,
+		'user' : username
+	},
+	function(data, status){
+		if(status === 'success'){
+			test.hide();
+		}
+	}).fail(function() {
+		//
+	});
+}
+
 function loadDocument(){
 	$('.report-section button[name=dismiss]').click(deleteRequest);
 	$('.report-section button[name=deletePost]').click(deletePost);
 	$('.report-section button[name=banUser]').click(banUser);
+	$('.ban-user input[name=banUser2]').click(banUser2);
 }
 
 $(document).ready(loadDocument);
