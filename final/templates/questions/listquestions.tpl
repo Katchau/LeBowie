@@ -31,6 +31,7 @@
 		<input type="hidden" name="topic" value={$question.id}>
 		
 	</div>
+	{if $type != 2}
 	<div class="postBody">
 		{include file='common/shrinkcontent.tpl' description=$question.description|unescape:'html'}
 		<hr>
@@ -48,6 +49,7 @@
 			<a aria-hidden="true" href="{$BASE_URL}pages/questions/answer.php?id={$question.post_id}" class="btn btn-default"> Add an Answer </a>
 		</div>
 	</div>
+	{/if}
 </div>
 
 {/foreach}
