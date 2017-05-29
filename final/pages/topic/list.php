@@ -1,5 +1,7 @@
 <?php
 require_once '../../config/init.php';
+require_once $BASE_DIR . 'database/users.php';
+require_once $BASE_DIR . 'database/topic.php';
 
 $topicId = $_GET['id'];
 
