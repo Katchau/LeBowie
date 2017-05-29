@@ -64,22 +64,33 @@
               </div>
             </div>
 
-            <div class="profile-user-and-desc">
-              <div class="media-body profile-username">
-                {$user.username}
-              </div>
-              <div class="profile-user-score">
-                <span class="user_score"> {$user.score} </span> user score
-              </div>
-              <hr>
-              <div class="profile-desc">
-			  {if $user.description == NULL }
-			  This user hasn't added a description!
-			  {else}
-			  {$user.description}
-			  {/if}
-              </div>
-            </div>
+			<div class="profile-user-and-desc">
+				<div class="media-body profile-username">
+					{$user.username}
+				</div>
+				<div class="profile-user-score">
+					<span class="user_score"> {$user.score} </span> user score
+				</div>
+			<hr>
+				<div class="profile-desc">
+					{if $user.description == NULL }
+						This user hasn't added a description!
+					{else}
+						{$user.description}
+					{/if}
+				</div>
+				<hr>
+			</div>
+			{if $MODERATOR && $user.username == $USERNAME}
+			<div>
+				<div class="media-body profile-username">
+					Report Section
+				</div>
+				{if $reports != false}
+				We got reports bby
+				{/if}
+			</div>
+			{/if}
           </div>
 
         </div>

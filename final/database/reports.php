@@ -30,4 +30,13 @@ function getReport($post_id, $user_id)
     $stmt->execute(array($post_id, $user_id));
     return $stmt->fetchAll();
 }
+
+function getAllReports()
+{
+	global $conn;
+    $stmt = $conn->prepare("SELECT * from all_reports");
+    $stmt->execute();
+    return $stmt->fetchAll();
+}
+
 ?>
