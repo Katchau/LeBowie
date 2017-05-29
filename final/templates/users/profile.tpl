@@ -147,7 +147,7 @@
                 <ul class="list-group ">
                     {assign "value " 0} {if $questions|@count == 0}
                     <div class="none_found jumbotron">
-                        No questions.
+                        No questions submitted yet!
                     </div>
                     {else} {foreach $questions as $question} {assign "value " $value+1}
                     <li><a class="list-group-item suggestion " href="{$BASE_URL}pages/questions/index.php?id={$question.post_id} ">
@@ -163,7 +163,7 @@
                 <ul class="list-group ">
                     {assign "value " 0} {if $answers|@count == 0}
                     <div class="none_found jumbotron">
-                        No questions.
+                        No answers submitted yet!
                     </div>
                     {else} {foreach $answers as $answer} {assign "value " $value+1}
                     <li><a class="list-group-item suggestion " href="{$BASE_URL}pages/questions/index.php?id={$answer.question} ">
