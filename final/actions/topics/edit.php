@@ -19,7 +19,7 @@ try{
     $description = postValueOrNull('topicdescription');
 	
     updateTopic($id, $topicname, $description);
-    header('Location: ' . $BASE_URL . 'pages/users/?topic=' . $id);
+    header('Location: ' . $BASE_URL . 'pages/topic/list?id=' . $id);
 }
 catch(Exception $e){
     $_SESSION['error_messages'][] = 'Internal server error, try again later.';
