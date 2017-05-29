@@ -12,8 +12,10 @@ switch ($method) {
         http_response_code(405);
 }
 
-function get($params) 
+function get($params)
 {
+    global $smarty;
+
     $offset = $_GET["offset"];
     $limit = $_GET["limit"];
 
