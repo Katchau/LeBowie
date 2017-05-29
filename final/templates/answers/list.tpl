@@ -46,8 +46,9 @@
 			</div>
 
 
-			<div id={$answer.answer} class="comments">
-				<a id={$answer.answer} href="#" class="orange">View comments for this answer</a>
+			<div class="comments">
+				<input type="hidden" name="answerId" value={$answer.answer}>
+				<a href="#" class="orange">View comments for this answer</a>
 				<div>
 				</div>
 			</div>
