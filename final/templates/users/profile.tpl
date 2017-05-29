@@ -110,13 +110,7 @@
                 <hr>
 
                 <div class="row ">
-                    <div class="col-xs-12 profile-desc ">
-                        Prism letterpress farm-to-table, food truck butcher seitan tilde tacos glossier affogato activated charcoal kombucha dreamcatcher.
-                        Copper mug wayfarers tumeric snackwave normcore, freegan kitsch organic humblebrag kickstarter hella
-                        quinoa skateboard. Jean shorts ethical pug, fashion axe wayfarers trust fund YOLO man bun live-edge
-                        af brunch mumblecore fam actually thundercats. Master cleanse VHS pork belly, flannel live-edge glossier
-                        man bun. Aesthetic celiac you probably haven't heard of them.
-
+                    <div class="col-xs-12 profile-desc ">{if $user.description == NULL } This user hasn't added a description! {else} {$user.description} {/if}
                         <hr>
                     </div>
                 </div>
