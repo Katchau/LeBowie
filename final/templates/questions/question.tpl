@@ -61,7 +61,10 @@
 						<div class="question_coda">
 							<div class="question_tags">
 								{foreach $tags as $tag}
-								<a class="label label-default" href="#">{$tag}</a> {/foreach}
+								{if $tag != ""}
+								<a class="label label-default" href="#">{$tag}</a> 
+								{/if}
+								{/foreach}
 							</div>
 							<div class="question_votes">
 								{if isset($USERID)}

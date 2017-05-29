@@ -94,20 +94,20 @@
 
         <form action="{$BASE_URL}actions/reports/" method="post" id="form-ask">
             {if !isset($question) || $question == NULL}
-            <input name="user-id" type="hidden" value="{$question.user_id}">
-            {else}
             <input name="user-id" type="hidden" value="{$content.user_id}">
+            {else}
+            <input name="user-id" type="hidden" value="{$question.user_id}">
             {/if}
             <input name="post-id" type="hidden" value="{$post_id}">
             <input name="question-id" type="hidden" value="{$question_id}">
 
             <div class="form-group well">
-                <input type="hidden" name="report-title" value="">
+                <input type="hidden" name="report-title" value="IGNORE">
 
                 <label for="report-reason" class="col-2 col-form-label">Report Reason</label>
                 <textarea name="report-reason" class="form-control" rows="1" id="report-reason" placeholder="enter the reason for your report here"></textarea>
 
-                <input type="hidden" name="report-content" value="">
+                <input type="hidden" name="report-content" value="IGNORE">
             </div>
         </form>
 
