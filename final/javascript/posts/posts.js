@@ -49,3 +49,9 @@ function updateDownvoteCounter(postId) {
         }
     });
 }
+
+function acceptAnswer(answerId) {
+    $.get(`${BASE_URL}api/answers/accept.php?id=${answerId}`, function(data) {
+        $('#accept').prepend('<a class="badge" href="#"><span class="glyphicon glyphicon-ok"></span></a>');
+    });
+}

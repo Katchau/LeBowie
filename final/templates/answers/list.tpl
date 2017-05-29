@@ -28,7 +28,7 @@
 				{/if}
 
 				{if ($USERNAME == $question.username)}
-				<button class="btn btn-default accept_btn">accept this answer</a>
+				<button id="accept" onclick="acceptAnswer({$answer.answer})" class="btn btn-default accept_btn">accept this answer</button>
 				{/if}
 				
 				{if isset($USERID)}
