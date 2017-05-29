@@ -1,6 +1,23 @@
 <?php
 require_once '../../config/init.php';
-$smarty->assign("topicId", $_GET['id']);
-$smarty->display('topic/edit.tpl');
+
+$topicId = $_GET['id'];
+
+if(isset($topicId)) {
+    try{
+		$smarty->assign('topicId', $topicId);
+        $smarty->display('topic/edit.tpl');
+	}
+	catch(PDOException $e){
+		$smarty->assign('errorMessage', "No such topic found!");
+		$smarty->display('common/error.tpl');
+		exit(1);
+	}
+}
+else{
+	$smarty->assign('errorMessage', "Invalid Page! Link's probably dead!");
+	$smarty->display('common/error.tpl');
+	exit(1);
+}
 
 ?>

@@ -20,7 +20,6 @@
 		<br>
 		<div class="guidelines_side mod_tools">
 			<h4>Moderation</h4>
-			{if $topicId == NULL} <h1>NULO BOY </h1> {/if}
 			<form action="{$BASE_URL}pages/topic/edit.php?id={$topicId}"> 
 				<input type="submit" value="edit profile" class="btn btn-default askButton">
 			</form>
