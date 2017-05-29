@@ -28,7 +28,7 @@
 					{/foreach}
 					<li class="list-group-item-warning">Add a moderator</li>
 				</div>
-				/if
+				{/if}
 				<a href="{$BASE_URL}pages/topic/edit.php?id={$topicId}" class="btn btn-default askButton">edit topic</a> 
 			</div>
 			{/if}
