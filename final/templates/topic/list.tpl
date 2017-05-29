@@ -21,7 +21,7 @@
 		<div class="guidelines_side mod_tools">
 			<h4>Moderation</h4>
 			<form action="{$BASE_URL}pages/topic/edit.php?id={$topicId}"> 
-				<input type="submit" value="edit profile" class="btn btn-default">
+				<input type="submit" value="edit profile" class="btn btn-default askButton">
 			</form>
 			<a href="" class="btn btn-default askButton">assign moderators</a>
 		</div>
