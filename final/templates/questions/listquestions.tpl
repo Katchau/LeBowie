@@ -15,7 +15,7 @@
 		in <a class="topic" href="{$BASE_URL}pages/topic/list.php?id={$question.id}">{$question.topicname}</a>
 		{/if}
 
-		{if $type != 0}
+		{if $type != 0 && $type != 2}
 		<button type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 			<!-- <span id={$question.up_score} class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> {$question.up_score} </span> -->
 			<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> {$question.up_score} </span>
