@@ -215,19 +215,39 @@ function updateQuestion($id, $userId, $newTitle, $newDesc, $topic){
 
         $conn->beginTransaction();
 		$lastId = createPost($userId,$newDesc);
+        echo "Last ID: " . $lastId;
 		$stmt = $conn->prepare("INSERT INTO question (post_id, topic_id, title) VALUES (?, ?, ?)");
 		$stmt->execute(array($lastId, $topic, $newTitle));
+		$conn->commit();
         foreach($answers as $answer){
+            echo "Entered Loop";
             $newAnswerId = createAnswer($answer['user_id'], $lastId, $answer['description']);
             $comments = getComments($answer['post_id']);
             foreach($comments as $comment){
+                echo "Entered comment loop";
                 createComment($comment['user_id'], $newAnswerId, $comment['descriptinon']);
             }
         }
-		$conn->commit();
+
+        setQuestionScore($id, $lastId);
 
         return $lastId;
     }
+}
+
+function getQuestionScore($id){
+    global $conn;
+    $stmt = $conn->prepare("SELECT up_score, down_score FROM Post WHERE id = ?");
+    $stmt->execute(array($id));
+    return $stmt->fetch();
+}
+
+function setQuestionScore($oldId, $newId){
+    $scores = getQuestionScore($oldId);
+    echo $scores['up_score'] . ";" . $scores['down_score'];
+    global $conn;
+    $stmt = $conn->prepare("UPDATE Post SET up_score = ?, down_score = ? WHERE id = ?");
+    $stmt->execute(array($scores['up_score'], $scores['down_score'], $newId));
 
 }
 ?>

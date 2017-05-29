@@ -1,4 +1,5 @@
 <div class="answer">
+	{if $answer.current_state != 'Deleted'}
 	<div class="media">
 
 		<div class="media-left">
@@ -57,4 +58,5 @@
 			<br>
 		</div>
 	</div>
+	{/if}
 </div>
