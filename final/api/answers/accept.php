@@ -1,3 +1,4 @@
+<?php
 require_once '../../config/init.php';
 require_once $BASE_DIR . 'database/answers.php';
 
@@ -16,3 +17,4 @@ function get($params)
     $id = params['id'];
     acceptAnswer($id);
 }
+?>
