@@ -160,8 +160,8 @@
                     {assign "value " 0} {foreach $answers as $answer} {assign "value " $value+1}
                     <li><a class="list-group-item suggestion " href="{$BASE_URL}pages/questions/index.php?id={$answer.question} ">
 			  {substr($answer.description,0,200)}
-                        <span class="badge ">{$answer.up_score}</span></li>
-			  </a> {if $value == 3} {break} {/if} {/foreach}
+                        <span class="badge ">{$answer.up_score}</span></a></li>
+			   {if $value == 3} {break} {/if} {/foreach}
                 </ul>
             </div>
             <hr>
