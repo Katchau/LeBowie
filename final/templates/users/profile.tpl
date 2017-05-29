@@ -87,7 +87,7 @@
 					Report Section
 				</div>
 				{if $reports != false}
-				We got reports bby
+					{include file='reports/listreports.tpl' reports=$reports}
 				{/if}
 			</div>
 			{/if}
