@@ -68,4 +68,11 @@ function acceptAnswer($answer_id) {
     return 0;
 }
 
+function unacceptAnswer($answer_id) {
+    global $conn;
+    $stmt = $conn->prepare("UPDATE Answer SET accepted = FALSE WHERE post_id = ?");
+    $stmt->execute(array($answer_id));
+    return 0;
+}
+
 ?>

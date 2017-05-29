@@ -51,8 +51,12 @@ function updateDownvoteCounter(postId) {
 }
 
 function acceptAnswer(controller, answerId) {
-    $.get(`${BASE_URL}api/answers/accept.php?id=${answerId}`, function(data) {
+    previousId = $("input[type=hidden][name=answerId]").val()
+    $.get(`${BASE_URL}api/answers/unaccept.php?id=${previousId}`, function(data) {
         $("#accepted-badge").remove();
+    });
+
+    $.get(`${BASE_URL}api/answers/accept.php?id=${answerId}`, function(data) {
         $(controller).before('<a id="accepted-badge" class="badge" href="#"><span class="glyphicon glyphicon-ok"></span></a>');
     });
 }
