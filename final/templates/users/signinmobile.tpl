@@ -19,9 +19,12 @@
         </div>
         <div class="col-xs-2"></div>
     </div>
+    <br>
+    <hr>
+    <br>
     <div class="row">
-        <div class="col-xs-2"></div>
-        <div class="col-xs-8 col-md-6">
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4 col-md-6"><center>
             {if $GOOGLE} {else}
             <form id="google-signin" method="post" action="{$BASE_URL}pages/users/signup-google.php">
                 <div class="g-signin2" data-onsuccess="onSignIn"></div>
@@ -31,10 +34,14 @@
                 <input id="google-signin-image" type="hidden" name="image" value="">
             </form>
             {/if}
+            </center>
         </div>  
-        <div class="col-xs-2"></div>
+        <div class="col-xs-4"></div>
     </div>
     
+    <br>
+    <br>
+
 </div>
 
 {include file='common/footer.tpl'}
