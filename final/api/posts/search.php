@@ -14,6 +14,7 @@ switch ($method) {
 
 function get2($params, $smarty)
 {
+	$title = "";
     $title = $params['title'];
 	$tags = array();
 	if(isset($params['tags']))
@@ -31,7 +32,6 @@ function get2($params, $smarty)
 		$smarty->assign('questions', $question);
 		$smarty->assign('type', 2);
 		$smarty->display('questions/listquestions.tpl');
-		
     } catch (PDOException $e) {
         echo $e->getMessage();
         http_response_code(500);
