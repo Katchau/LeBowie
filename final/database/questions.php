@@ -218,6 +218,7 @@ function updateQuestion($id, $userId, $newTitle, $newDesc, $topic){
         echo "Last ID: " . $lastId;
 		$stmt = $conn->prepare("INSERT INTO question (post_id, topic_id, title) VALUES (?, ?, ?)");
 		$stmt->execute(array($lastId, $topic, $newTitle));
+		$conn->commit();
         foreach($answers as $answer){
             echo "Entered Loop";
             $newAnswerId = createAnswer($answer['user_id'], $lastId, $answer['description']);
@@ -227,7 +228,6 @@ function updateQuestion($id, $userId, $newTitle, $newDesc, $topic){
                 createComment($comment['user_id'], $newAnswerId, $comment['descriptinon']);
             }
         }
-		$conn->commit();
 
         return $lastId;
     }
