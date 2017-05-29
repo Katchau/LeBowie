@@ -94,9 +94,9 @@
 
         <form action="{$BASE_URL}actions/reports/" method="post" id="form-ask">
             {if !isset($question) || $question == NULL}
-            <input name="user-id" type="hidden" value="{$question.user_id}">
-            {else}
             <input name="user-id" type="hidden" value="{$content.user_id}">
+            {else}
+            <input name="user-id" type="hidden" value="{$question.user_id}">
             {/if}
             <input name="post-id" type="hidden" value="{$post_id}">
             <input name="question-id" type="hidden" value="{$question_id}">
