@@ -52,6 +52,7 @@ function updateDownvoteCounter(postId) {
 
 function acceptAnswer(controller, answerId) {
     $.get(`${BASE_URL}api/answers/accept.php?id=${answerId}`, function(data) {
-        $(controller).before('<a class="badge" href="#"><span class="glyphicon glyphicon-ok"></span></a>');
+        $("#accepted-badge").remove();
+        $(controller).before('<a id="accepted-badge" class="badge" href="#"><span class="glyphicon glyphicon-ok"></span></a>');
     });
 }
