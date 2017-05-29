@@ -23,7 +23,7 @@ function deleteRequest(){
 }
 
 function deletePost(){
-	var id = $(this).next().next().val();
+	var id = $(this).next().next().next().val();
 	$.get(deletePostUrl,
 	{
 		'id' : id,
