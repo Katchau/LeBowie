@@ -31,6 +31,7 @@ a.orange:hover, a.orange:active{
 }
 .tab-content .well{
     border-radius :0;
+    overflow: scroll;
 }
 .tab-content a {
     color: orange;
