@@ -24,7 +24,7 @@
 				<div class="list-group">
 					{foreach $topicMods as $mod}
 					<li class="list-group-item">
-						<a class="list-group-item" href="{$BASE_URL}pages/users/index.php?username={$mod.username}">{$mod.username}</a>
+						<a href="{$BASE_URL}pages/users/index.php?username={$mod.username}">{$mod.username}</a>
 						<a role="button" class="badge btn-danger" href="#"><span class="glyphicon glyphicon-remove"></span></a>
 					</li>
 					{/foreach}
