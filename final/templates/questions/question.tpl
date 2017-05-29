@@ -65,7 +65,7 @@
 								{if isset($USERID)}
 								<label> Was this question relevant? Please leave a vote! </label>
 								<input type="hidden" value="{$question.post_id}">
-								<a class="btn btn-default" href="{$BASE_URL}/pages/reports/report.php?id={$question.post_id}&question={$question.post_id}">
+								<a class="btn btn-default" href="{$BASE_URL}pages/reports/report.php?id={$question.post_id}&question={$question.post_id}">
 									<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
 								</a>
 								<button onclick="upvotePost({$question.post_id})" id="js-upvote-btn-{$question.post_id}" type="button" class="btn btn-default"
