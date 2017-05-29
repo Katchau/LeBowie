@@ -64,14 +64,6 @@
                     </div>
                     <hr>
                 </div>
-                {if $MODERATOR && $user.username == $USERNAME}
-                <div>
-                    <div class="media-body profile-username">
-                        Report Section
-                    </div>
-                    {if $reports != false} {include file='reports/listreports.tpl' reports=$reports} {/if}
-                </div>
-                {/if}
             </div>
 
         </div>
@@ -177,6 +169,14 @@
 
         </div>
     </div>
+	{if $MODERATOR && $user.username == $USERNAME}
+    <div>
+        <div class="media-body profile-username">
+            Report Section
+        </div>
+        {if $reports != false} {include file='reports/listreports.tpl' reports=$reports} {/if}
+    </div>
+    {/if}
 </div>
 
 {include file='common/footer.tpl'}
