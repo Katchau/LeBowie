@@ -11,12 +11,8 @@
 	</p>
 	<div class="postBody">
 		Description of report:
-		{include file='common/shrinkcontent.tpl' description=$report.reason|unescape:'html'}
+		{$report.reason}
 		<hr>
-		Content of the reported post:
-		<div class="bestanswer">
-			{include file='common/shrinkcontent.tpl' description=$report.description|unescape:'html'}
-		</div>
 	</div>
 	<div class="question_votes">
 		<button name="dismiss" type="button" class="btn btn-default">
