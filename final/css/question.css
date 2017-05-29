@@ -128,6 +128,9 @@
     max-height: 250px;
     overflow: auto;
 }
+.suggested_questions{
+  max-height: unset;
+}
 .extras_suggested .suggestion{
     min-height: 2.5em;
     font-size: 0.5em;
