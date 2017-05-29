@@ -1,23 +1,23 @@
 <div class="collapse-group">
 	{assign "size" 300}
 	{if strlen($description) < $size}
-		<p class="smallText">
+		<div class="smallText">
 			{$description}
-		</p>
+		</div>
 	{else}
 		{assign "cut" substr($description, $size, strlen($description))}
 		{assign "pos" strpos($cut, ' ') + $size}
 		{if $pos == $size}
-			<p class="smallText">
+			<div class="smallText">
 				{$description}
-			</p>
+			</div>
 		{else}
-			<p class="smallText">
+			<div class="smallText">
 				{substr($description,0,$pos)}
-			</p>
-			<p class="collapse">
+			</div>
+			<div class="collapse">
 				{substr($description,$pos,strlen($description))}
-			</p>
+			</div>
 			<p><a class="viewmore" href="#">View more..</a></p>
 		{/if}
 	{/if}
