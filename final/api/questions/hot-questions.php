@@ -18,6 +18,7 @@ function get($params)
     $limit = $_GET["limit"];
 
     $questions = getHotQuestions($offset, $limit);
-    echo json_encode($questions);
+    $smarty->assign('questions', $questions);
+    $smarty->fetch();
 }
 ?>

@@ -82,9 +82,7 @@ function getMoreHotQuestions() {
     $.get(BASE_URL + 'api/questions/hot-questions.php?offset=' + offset + '&limit=' + limit, function(data) {
         offset += limit;
 
-        data.forEach(function(element) {
-            $('#hotq').append('<div>' + element.title + '</div>');
-        }, this);
+        console.log(data);
 
         $('#view-more').detach().appendTo('#hotq');
     }, 'json');
