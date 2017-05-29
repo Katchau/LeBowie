@@ -20,8 +20,12 @@ function get($params)
     $limit = $_GET["limit"];
 
     $questions = getHotQuestions($offset, $limit);
-    $smarty->assign('questions', $questions);
-    $output = $smarty->fetch('questions/listquestions.tpl');
-    echo $output;
+    if ($questions != null) {
+        $smarty->assign('questions', $questions);
+        $output = $smarty->fetch('questions/listquestions.tpl');
+        echo $output;
+    } else {
+        http_response_code(404);
+    }
 }
 ?>
