@@ -28,7 +28,7 @@
 				{/if}
 
 				{if ($USERNAME == $question.username)}
-				<a aria-hidden="true" href="{$BASE_URL}pages/answers/comment.php?id={$answer.answer}" class="btn btn-default accept_btn"> accept this answer</a>
+				<a aria-hidden="true" href="{$BASE_URL}api/answers/accept.php?id={$answer.answer}" class="btn btn-default accept_btn"> accept this answer</a>
 				{/if}
 				
 				{if isset($USERID)}
