@@ -23,20 +23,22 @@
 				<h5>Moderators:</h5>
 				<div class="list-group">
 					{foreach $topicMods as $mod}
-					<form>
+					<form enctype="multipart/form-data" action="{$BASE_URL}actions/topics/removemod.php" method="post">
 					<li class="list-group-item">
 						<a href="{$BASE_URL}pages/users/index.php?username={$mod.username}">{$mod.username}</a>
 						<a role="button" class="badge btn-danger" href="#"><span class="glyphicon glyphicon-remove"></span></a>
 					</li>
-					{/foreach}
+					<input type="hidden" name="id" value="{$topicId}">
 					</form>
-					<form>
+					{/foreach}
+					<form enctype="multipart/form-data" action="{$BASE_URL}actions/topics/addmod.php" method="post">
 					<li class="list-group-item list-group-item-warning">Add a moderator
 						<a role="button" class="badge btn-success" href="#"><span class="glyphicon glyphicon-plus"></span></a>
 						<br>
 						<br>
 						<input name="mod_to_add" class="form-group-item">
 					</li>
+					<input type="hidden" name="id" value="{$topicId}">
 					</form>
 				</div>
 				{/if}
