@@ -1,4 +1,4 @@
 <?php
     require_once '../../config/init.php';
-    $smarty->display('users/signinmobile.tpl');*/
+    $smarty->display('users/signinmobile.tpl');
 ?>
