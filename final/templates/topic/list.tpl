@@ -30,7 +30,7 @@
 					</li>
 
 					<input type="hidden" name="id" value="{$topicId}">
-					<input type="hidden" name="userid" value="{$BASE_URL}pages/users/index.php?username={$mod.username}">
+					<input type="hidden" name="userid" value="{$mod.id}">
 
 					</form>
 					{/foreach}
