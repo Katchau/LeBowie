@@ -14,8 +14,8 @@ switch ($method) {
 
 function get($params) 
 {
-    $offset = $params["offset"];
-    $limit = $params["limit"];
+    $offset = $_GET["offset"];
+    $limit = $_GET["limit"];
 
     $questions = getHotQuestions(offset, limit);
     echo josn_encode($questions);
