@@ -79,11 +79,11 @@ let limit = 10;
 let offset = 10;
 
 function getMoreHotQuestions() {
-    $.get(`${BASE_URL}api/questions/hot-questions.php?offset=${offset}&limit=${limit}`, function(data) {
+    $.get(BASE_URL + 'api/questions/hot-questions.php?offset=' + offset + '&limit=' + limit, function(data) {
         offset += limit;
 
         data.forEach(function(element) {
-            $('#hotq').append(`<div>${element.title}</div>`);
+            $('#hotq').append('<div>' + element.title + '</div>');
         }, this);
 
         $('#view-more').detach().appendTo('#hotq');
