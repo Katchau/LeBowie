@@ -167,6 +167,7 @@
 .ask_area .well{
   box-shadow: 1px 1px orange;
   background-color: #EDEDED;
+  overflow-x: scroll;
 }
 .ask_area .btn {
   background-color: orange;

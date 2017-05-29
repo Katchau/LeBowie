@@ -1,22 +1,22 @@
 var isHidden = true;
 
 function displayComments(comments, id){
-	var baseDir = ".comments" + '#' + id + " div";
-	$(baseDir).empty();
-	$(baseDir).append(comments);
+	var baseDir = $(".comments input[value=" + id + "]").next().next();
+	baseDir.empty();
+	baseDir.append(comments);
 	isHidden = !isHidden;
-	$('.comments#' + id + '> a').text('Hide comments for this answer');
+	$(".comments input[value=" + id + "]").next().text('Hide comments for this answer');
 }
 
 function hideComments(id){
-	var baseDir = ".comments" + '#' + id + " div";
-	$(baseDir).empty();
+	var baseDir = baseDir = $(".comments input[value=" + id + "]").next().next();
+	baseDir.empty();
 	isHidden = !isHidden;
-	$('.comments#' + id + '> a').text('View comments for this answer');
+	$(".comments input[value=" + id + "]").next().text('View comments for this answer');
 }
 
 function getComment(){
-	var id = $(this).attr("id");
+	var id = $(this).prev().val();
 	if(isHidden){
 		$.get(getCommentsUrl,
 		{
