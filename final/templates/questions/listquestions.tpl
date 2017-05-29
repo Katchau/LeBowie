@@ -4,13 +4,13 @@
 </div>
 {/if} {if $type == 2} {foreach $questions as $question}
 
-<li>
+<div>
 	<a class="list-group-item suggestion" href="{$BASE_URL}pages/questions/index.php?id={$question.post_id}">{$question.title}
 		<span class="badge">
 			{$question.up_score}
 		</span>
 	</a>
-</li>
+</div>
 
 {/foreach} {else} 
 
