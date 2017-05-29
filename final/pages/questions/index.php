@@ -11,8 +11,11 @@ if(isset($questionId)) {
 		$tags = getQuestionTags($questionId);
 		$answers = getBestAnswers($questionId);
 		$selected = ($question['answer_desc'] != null) ? getSelectedAnswer($questionId) : null;
+		//testar
+		$relquestions = getHotQuestions(0, 10);
 
 		$smarty->assign('question', $question);
+		$smarty->assign('relquestions',$relquestions);
 		$smarty->assign('tags', $tags);
 		$smarty->assign('answers', $answers);
 		$smarty->assign('selected', $selected);

@@ -28,7 +28,9 @@
 			<hr>
 			<div class="extras_suggested">
 				<label class="related_label"> related questions </label>
-				<ul class="list-group"></ul>
+				<ul class="list-group">
+					{include file='questions/listquestions.tpl' questions=$relquestions type=2}
+				</ul>
 			</div>
 			<hr>
 		</div>

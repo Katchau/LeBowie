@@ -15,7 +15,7 @@
 		in <a class="topic" href="{$BASE_URL}pages/topic/list.php?id={$question.id}">{$question.topicname}</a>
 		{/if}
 
-		{if $type != 0}
+		{if $type != 0 && $type != 2}
 		<button type="button" class="btn btn-default" {if !$USERNAME} disabled{/if}>
 			<!-- <span id={$question.up_score} class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> {$question.up_score} </span> -->
 			<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> {$question.up_score} </span>
@@ -25,9 +25,15 @@
 			<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> {$question.down_score} </span>
 		</button> 
 		{/if}
+		<input type="hidden" name="creation" value={$question.creation}>
+		<input type="hidden" name="upscore" value={$question.up_score}>
+		<input type="hidden" name="downscore" value={$question.down_score}>
+		<input type="hidden" name="topic" value={$question.id}>
+		
 	</div>
+	{if $type != 2}
 	<div class="postBody">
-		{include file='common/shrinkcontent.tpl' description=$question.description|unescape:'html'}
+		{$question.description|unescape:'html'}
 		<hr>
 		<div class="bestanswer">
 			{if isset($question.answer)}
@@ -43,6 +49,7 @@
 			<a aria-hidden="true" href="{$BASE_URL}pages/questions/answer.php?id={$question.post_id}" class="btn btn-default"> Add an Answer </a>
 		</div>
 	</div>
+	{/if}
 </div>
 
 {/foreach}
