@@ -7,10 +7,10 @@ function getTopics()
     return $stmt->fetchAll();
 }
 
-function getAllQuestionsTopic($topicId)
+function getAllQuestionsTopic($topicId, $offset, $limit)
 {
     global $conn;
-    $stmt = $conn->prepare("SELECT * FROM question_display WHERE id = ?");
+    $stmt = $conn->prepare("SELECT * FROM question_display WHERE id = ? LIMIT ? OFFSET ?");
     $stmt->execute(array($topicId));
     return $stmt->fetchAll();
 }
