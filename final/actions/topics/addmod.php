@@ -19,7 +19,7 @@ try{
 
     $userid = getUserSessionId($username)['id'];
 
-    if(addMod($id, $userid);){
+    if(addMod($id, $userid)){
         $_SESSION['success_messages'][] = 'Successfully added mod.';
     }else{
         $_SESSION['error_messages'][] = 'Internal server error, try again later.';
