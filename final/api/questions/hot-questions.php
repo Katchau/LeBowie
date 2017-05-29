@@ -19,6 +19,7 @@ function get($params)
 
     $questions = getHotQuestions($offset, $limit);
     $smarty->assign('questions', $questions);
-    $smarty->fetch();
+    $output = $smarty->fetch();
+    echo $output;
 }
 ?>
