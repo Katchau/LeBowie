@@ -12,7 +12,7 @@ if(isset($questionId)) {
 		$answers = getBestAnswers($questionId);
 		$selected = ($question['answer_desc'] != null) ? getSelectedAnswer($questionId) : null;
 		//testar
-		$relquestions = getHotQuestions(0, 10);
+		$relquestions = getRelatedQuestions($questionId);
 
 		$smarty->assign('question', $question);
 		$smarty->assign('relquestions',$relquestions);
