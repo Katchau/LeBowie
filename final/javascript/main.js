@@ -18,7 +18,8 @@ function hideBanner() {
     document.cookie = "first_visit=false"
 }
 
-if ($(document.body).height() < $(window).height()) {
-    console.log(Am here);
-    $('#footer').attr('style', 'position: fixed!important; bottom: 0px;');
-}
+$(document).ready(function () {
+    if ($(document.body).height() < $(window).height()) {
+        $('#footer').attr('style', 'position: fixed!important; bottom: 0px;');
+    }
+});
