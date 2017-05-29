@@ -14,7 +14,7 @@ switch ($method) {
 
 function get($params)
 {
-    $id = params['id'];
+    $id = $_GET["id"];
     acceptAnswer($id);
 }
 ?>
