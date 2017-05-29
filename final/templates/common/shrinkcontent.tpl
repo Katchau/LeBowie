@@ -8,16 +8,16 @@
 		{assign "cut" substr($description, $size, strlen($description))}
 		{assign "pos" strpos($cut, ' ') + $size}
 		{if $pos == $size}
-			<div class="smallText">
+			<span class="smallText">
 				{$description}
-			</div>
+			</span>
 		{else}
-			<div class="smallText">
+			<span class="smallText">
 				{substr($description,0,$pos)}
-			</div>
-			<div class="collapse">
+			</span>
+			<span class="collapse">
 				{substr($description,$pos,strlen($description))}
-			</div>
+			</span>
 			<p><a class="viewmore" href="#">View more..</a></p>
 		{/if}
 	{/if}
