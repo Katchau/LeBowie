@@ -17,7 +17,7 @@ function get($params)
     $offset = $_GET["offset"];
     $limit = $_GET["limit"];
 
-    $questions = getHotQuestions(offset, limit);
+    $questions = getHotQuestions($offset, $limit);
     echo josn_encode($questions);
 }
 ?>
