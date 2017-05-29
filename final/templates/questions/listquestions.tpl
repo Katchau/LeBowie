@@ -9,7 +9,7 @@
 	<p class="questionInfo">
 		asked by 
 		<!-- <a id={$question.creation} href="{$BASE_URL}pages/users/index.php?username={$question.username}" class="writer">{$question.username}</a>		on {$question.creation} {if $type != 1} in <a id={$question.id} class="topic" href="{$BASE_URL}pages/topic/list.php?id={$question.id}"> {$question.topicname} </a>		{/if} {if $type != 0} NEW FROM HERE{/if}-->
-		<a href="{$BASE_URL}pages/users/index.php?username={$question.username}" class="writer">{$question.username}</a> 
+		<a href="{$BASE_URL}pages/users/index.php?username={$question.username|escape:'url'}" class="writer">{$question.username}</a> 
 		on {$question.creation} 
 		{if $type != 1}
 		in <a class="topic" href="{$BASE_URL}pages/topic/list.php?id={$question.id}">{$question.topicname}</a>
