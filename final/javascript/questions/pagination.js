@@ -17,7 +17,7 @@ function getMoreHotQuestions() {
             $('#hotq').append(data);
             $('#view-more-hot').detach().appendTo('#hotq');
         } else if (!atEndHot) {
-            $('#hotq').append('<div class="col-lg-8" style="padding: 10px;"> No more questions </div>');
+            $('#hotq').append('<div class="col-lg-12" style="padding: 10px;"> No more questions </div>');
             $('#view-more-hot').detach().appendTo('#hotq');
             atEndHot = true;
         }
@@ -31,7 +31,7 @@ function getMoreNewQuestions() {
             $('#newq').append(data);
             $('#view-more-new').detach().appendTo('#newq');
         } else if (!atEndNew) {
-            $('#newq').append('<div class="col-lg-8" style="padding: 10px;"> No more questions </div>');
+            $('#newq').append('<div class="col-lg-12" style="padding: 10px;"> No more questions </div>');
             $('#view-more-new').detach().appendTo('#newq');
             atEndNew = true;
         }
@@ -45,7 +45,7 @@ function getMoreBestQuestions() {
             $('#bestq').append(data);
             $('#view-more-best').detach().appendTo('#bestq');
         } else if (!atEndBest) {
-            $('#bestq').append('<div class="col-lg-8" style="padding: 10px;"> No more questions </div>');
+            $('#bestq').append('<div class="col-lg-12" style="padding: 10px;"> No more questions </div>');
             $('#view-more-best').detach().appendTo('#bestq');
             atEndBest = true;
         }
