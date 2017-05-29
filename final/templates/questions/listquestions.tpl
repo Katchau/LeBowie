@@ -57,7 +57,6 @@
 </div>
 
 {/foreach}
-{/if}
 {else}
  {foreach $questions as $question}
 <li>
