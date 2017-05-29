@@ -1,5 +1,5 @@
 <!-- Footer -->
-    <div class="footer">
+    <div id="footer" class="footer">
       <ul>
         <li><a href="#">about us</a></li>
         <li><a href="#">contact</a></li>

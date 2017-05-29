@@ -19,5 +19,5 @@ function hideBanner() {
 }
 
 if ($(document.body).height() < $(window).height()) {
-  $('#footer-wrapper').attr('style', 'position: fixed!important; bottom: 0px;');
+  $('#footer').attr('style', 'position: fixed!important; bottom: 0px;');
 }
