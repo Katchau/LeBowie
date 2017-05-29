@@ -55,7 +55,7 @@
 				<h3>No such topic was found!</h3>
 				{else} 
 				{include file='questions/listquestions.tpl' questions=$questions type=1} 
-				<button class="btn btn-default" id="view-more" onclick="getMoreHotQuestions({$topicId})">View more</button> 
+				<button class="btn btn-default" id="view-more" onclick="getMoreTopicQuestions({$topicId})">View more</button> 
 				{/if}
 			</div>
 		</div>
